@@ -24,46 +24,46 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eric_Version_UVA_JAHRNEU_01_pruefen recording.
+    ///The Sichern_Eric_log_UVA_VORJAHR_12 recording.
     /// </summary>
-    [TestModule("24decaec-665c-4bc9-95b5-b022f9f569c0", ModuleType.Recording, 1)]
-    public partial class Eric_Version_UVA_JAHRNEU_01_pruefen : ITestModule
+    [TestModule("0e56961b-6fb2-4cce-aaeb-e56898acc9f8", ModuleType.Recording, 1)]
+    public partial class Sichern_Eric_log_UVA_VORJAHR_12 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Eric_Version_UVA_JAHRNEU_01_pruefen instance = new Eric_Version_UVA_JAHRNEU_01_pruefen();
+        static Sichern_Eric_log_UVA_VORJAHR_12 instance = new Sichern_Eric_log_UVA_VORJAHR_12();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eric_Version_UVA_JAHRNEU_01_pruefen()
+        public Sichern_Eric_log_UVA_VORJAHR_12()
         {
-            Eric_UVA_JAHRNEU_01_39_2 = "Datei: checkUStVA_2024.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0";
+            Eric_log_Inhalt_aktuell = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eric_Version_UVA_JAHRNEU_01_pruefen Instance
+        public static Sichern_Eric_log_UVA_VORJAHR_12 Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Eric_UVA_JAHRNEU_01_39_2;
+        string _Eric_log_Inhalt_aktuell;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_UVA_JAHRNEU_01_39_2.
+        /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
         /// </summary>
-        [TestVariable("af486e2c-a6cb-4f58-a2ab-ebea31728676")]
-        public string Eric_UVA_JAHRNEU_01_39_2
+        [TestVariable("7c7e6c4e-0d29-47cc-bd0c-02bab9b6cdf2")]
+        public string Eric_log_Inhalt_aktuell
         {
-            get { return _Eric_UVA_JAHRNEU_01_39_2; }
-            set { _Eric_UVA_JAHRNEU_01_39_2 = value; }
+            get { return _Eric_log_Inhalt_aktuell; }
+            set { _Eric_log_Inhalt_aktuell = value; }
         }
 
 #endregion
@@ -92,8 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_UVA_JAHRNEU_01_39_2) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_UVA_JAHRNEU_01_39_2);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_uva_2023_12", "log");
             
         }
 

@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eric_Version_UVA_JAHRNEU_01_pruefen recording.
+    ///The Pruefung_Inhalt_XML_Version_VORVORJAHR recording.
     /// </summary>
-    [TestModule("24decaec-665c-4bc9-95b5-b022f9f569c0", ModuleType.Recording, 1)]
-    public partial class Eric_Version_UVA_JAHRNEU_01_pruefen : ITestModule
+    [TestModule("c005ee96-b98e-460e-b338-8e17bbaa63f5", ModuleType.Recording, 1)]
+    public partial class Pruefung_Inhalt_XML_Version_VORVORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Eric_Version_UVA_JAHRNEU_01_pruefen instance = new Eric_Version_UVA_JAHRNEU_01_pruefen();
+        static Pruefung_Inhalt_XML_Version_VORVORJAHR instance = new Pruefung_Inhalt_XML_Version_VORVORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eric_Version_UVA_JAHRNEU_01_pruefen()
+        public Pruefung_Inhalt_XML_Version_VORVORJAHR()
         {
-            Eric_UVA_JAHRNEU_01_39_2 = "Datei: checkUStVA_2024.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0";
+            XML_JUVA_VERSION_VORVORJAHR = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eric_Version_UVA_JAHRNEU_01_pruefen Instance
+        public static Pruefung_Inhalt_XML_Version_VORVORJAHR Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Eric_UVA_JAHRNEU_01_39_2;
+        string _XML_JUVA_VERSION_VORVORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_UVA_JAHRNEU_01_39_2.
+        /// Gets or sets the value of variable XML_JUVA_VERSION_VORVORJAHR.
         /// </summary>
-        [TestVariable("af486e2c-a6cb-4f58-a2ab-ebea31728676")]
-        public string Eric_UVA_JAHRNEU_01_39_2
+        [TestVariable("ba4199fe-2ed2-4cbd-8596-115d1e217cea")]
+        public string XML_JUVA_VERSION_VORVORJAHR
         {
-            get { return _Eric_UVA_JAHRNEU_01_39_2; }
-            set { _Eric_UVA_JAHRNEU_01_39_2 = value; }
+            get { return _XML_JUVA_VERSION_VORVORJAHR; }
+            set { _XML_JUVA_VERSION_VORVORJAHR = value; }
         }
 
 #endregion
@@ -92,8 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_UVA_JAHRNEU_01_39_2) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_UVA_JAHRNEU_01_39_2);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VERSION_VORVORJAHR) on item 'XMLEditor_UVA_ZM4.Text15'.", repo.XMLEditor_UVA_ZM4.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM4.Text15Info, "Text", XML_JUVA_VERSION_VORVORJAHR, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }
 

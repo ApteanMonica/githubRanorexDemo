@@ -42,7 +42,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         public UVA_Formular_VORJAHR_Monat_VORJAHR_12_auswaehlen()
         {
             VORJAHR = "2023";
-            Monat_1 = "1";
+            Monat_12 = "12";
             UVA_VORJAHR_Form_Name = "UVA-Deutschland 2023 Elster";
         }
 
@@ -68,16 +68,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             set { _VORJAHR = value; }
         }
 
-        string _Monat_1;
+        string _Monat_12;
 
         /// <summary>
-        /// Gets or sets the value of variable Monat_1.
+        /// Gets or sets the value of variable Monat_12.
         /// </summary>
         [TestVariable("2f676d97-c067-4781-9670-933447543f51")]
-        public string Monat_1
+        public string Monat_12
         {
-            get { return _Monat_1; }
-            set { _Monat_1 = value; }
+            get { return _Monat_12; }
+            set { _Monat_12 = value; }
         }
 
         /// <summary>
@@ -136,8 +136,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             // Jahr/Monat wird in 521 nicht aus Werten übernommen
-            Report.Log(ReportLevel.Info, "Keyboard", "Jahr/Monat wird in 521 nicht aus Werten übernommen\r\nKey sequence from variable '$Monat_1' with focus on 'DlgUVADruck.Text'.", repo.DlgUVADruck.TextInfo, new RecordItemIndex(6));
-            repo.DlgUVADruck.Text.PressKeys(Monat_1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Jahr/Monat wird in 521 nicht aus Werten übernommen\r\nKey sequence from variable '$Monat_12' with focus on 'DlgUVADruck.Text'.", repo.DlgUVADruck.TextInfo, new RecordItemIndex(6));
+            repo.DlgUVADruck.Text.PressKeys(Monat_12);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -145,8 +145,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$VORJAHR) on item 'DlgUVADruck.FormulardruckFuerJahrMonatVon'.", repo.DlgUVADruck.FormulardruckFuerJahrMonatVonInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgUVADruck.FormulardruckFuerJahrMonatVonInfo, "Text", VORJAHR);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_1) on item 'DlgUVADruck.Text'.", repo.DlgUVADruck.TextInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.DlgUVADruck.TextInfo, "Text", Monat_1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_12) on item 'DlgUVADruck.Text'.", repo.DlgUVADruck.TextInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgUVADruck.TextInfo, "Text", Monat_12);
             
         }
 
