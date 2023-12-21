@@ -439,13 +439,13 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				</item>
 				<item
 				addcaps="cell,accessible"
-				capname="row"
+				capname="unknown"
 				id="a1d2988c-0e3d-4228-bab2-f14b18ef886f"
 				name="Row_mit_Variable_PLZ_NEU_ORT"
 				refimgid="5909a7b8-a51b-403c-9b9c-fa34f84470d5"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblPostleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PLZ_NEU_ORT]
+					/form[@controlname='tblPostleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PLZ_NEU_ORT]/rsc
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -613,6 +613,26 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]/cell[@accessiblename~'colBlz_name']
 				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="31af674b-69b4-431f-9cf2-031be8685a35"
+				name="ColBlzOrt"
+				refimgid="9fd1bfcc-859e-4289-b5ac-b4e8427c688c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]/cell[@accessiblename~'colBlz_ort']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c2b3ab28-2282-45a0-8b9f-0dcb31f9a668"
+				name="ColBlzSwift"
+				refimgid="c72e697d-bccc-4443-9fab-5f2da210fb18"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]/cell[@accessiblename~'colBlz_swift']
+				</item>
 				<basepath>
 					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]
 				</basepath>
@@ -620,12 +640,12 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			<item
 			addcaps="cell,accessible"
 			capname="cell"
-			id="31af674b-69b4-431f-9cf2-031be8685a35"
-			name="ColBlzOrtRow882"
-			refimgid="9fd1bfcc-859e-4289-b5ac-b4e8427c688c"
+			id="4f83f3a0-63bc-4a23-bc3b-e8777eef1714"
+			name="Row882Column0"
+			refimgid="b8e63875-4dd3-4b37-96f6-d659c8665d4e"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblBankleitzahl']/cell[@accessiblename~'colBlz_ort']
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 882']/cell
 			</item>
 			<basepath>
 				/form[@controlname='tblBankleitzahl']
@@ -670,6 +690,7 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 		<var
 		id="db543b42-6442-4052-9c8e-5f7cf07f3c12"
 		name="BLZ_NEU">
+			XBARX
 		</var>
 	</variables>
 </repository>

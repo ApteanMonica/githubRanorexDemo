@@ -15,6 +15,20 @@
 			name="Neuanlage_BLZ"
 			ref="55547a62-292e-4826-b95f-ef32c4a4cb11"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="BLZ_NEU_Bezeichnung"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="9ed75a3f-2900-40c4-ad40-4bae399899e9"
+					variablename="BLZ_NEU_Bezeichnung">
+					</var>
+					<var
+					dataname="BLZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="2d15d5ee-10ae-49ca-ac28-cecad79691d7"
+					variablename="BLZ_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b"
@@ -25,6 +39,20 @@
 			name="Ueberpruefung_Anlage_BLZ"
 			ref="0338f1e1-08a0-4e77-a49a-741291347968"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="BLZ_NEU_Bezeichnung"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="0f065ab5-5a41-4059-80af-f98e47c5cb23"
+					variablename="BLZ_NEU_Bezeichnung">
+					</var>
+					<var
+					dataname="BLZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="440f716f-8d1f-4c11-bbf6-43aa2b121a79"
+					variablename="BLZ_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
@@ -79,6 +107,22 @@
 					name="Programm_BLZ"
 					value="S_LAND Aufrufart=BLZ">
 					</param>
+					<param
+					name="BLZ_NEU"
+					value="XBARX">
+					</param>
+					<param
+					name="BLZ_NEU_Bezeichnung"
+					value="BAR_BANK">
+					</param>
+					<param
+					name="BLZ_NEU_Ort"
+					value="Salzburg">
+					</param>
+					<param
+					name="BLZ_NEU_SWIFT"
+					value="HYWWYXX">
+					</param>
 				</parameters>
 			</testcase>
 			<teardown
@@ -126,16 +170,22 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="acb9b936-651e-4885-8cec-af5ff6d005c0"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_PLZ"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="2baa9a3b-f757-48a9-9356-5bdc40810f51"
 					variablename="Programm_PLZ">
+					</var>
+					<var
+					dataname="Programm_BLZ"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="669ba2e1-9391-4b28-8300-49e47ecf22a1"
+					variablename="Programm_BLZ">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="acb9b936-651e-4885-8cec-af5ff6d005c0"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -297,6 +347,26 @@
 			name="Aendern_Einstellungen_BLZ_NEU"
 			ref="bf744873-e32c-4ae5-b31a-0cda659bb9d9"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="BLZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="db543b42-6442-4052-9c8e-5f7cf07f3c12"
+					variablename="BLZ_NEU">
+					</var>
+					<var
+					dataname="BLZ_NEU_Ort"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="21fe658e-bfd7-4559-871e-bcb58b8b9875"
+					variablename="BLZ_NEU_Ort">
+					</var>
+					<var
+					dataname="BLZ_NEU_SWIFT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="e1662081-0786-4e0f-8d91-ca407498b06c"
+					variablename="BLZ_NEU_SWIFT">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="cdcd8d89-9c00-4211-bc69-453d3cf1b2e4"
@@ -316,6 +386,12 @@
 			id="d4c37f0f-dc4c-4266-9139-400073216222"
 			name="Verwalten_PLZ_Aufrufart_PLZ">
 			</testcase>
+			<testmodule
+			id="d6ab9433-a33c-4ae6-b142-5c98a234fb3c"
+			name="LOESCHEN_BLZ_NEU"
+			ref="d7252b29-d228-4d6b-a277-93a0d4a0b575"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d8c58d8f-31de-4a21-9200-32ee656efc23"
 			name="Meldung_Loeschen_Datensatz_nicht_moeglich"
@@ -497,6 +573,10 @@
 						id="be71502d-ae12-4e9d-bf2d-c7df4403ba9d"
 						name="Aendern_Einstellungen_BLZ_NEU">
 						</testmodule>
+						<testmodule
+						id="d6ab9433-a33c-4ae6-b142-5c98a234fb3c"
+						name="LOESCHEN_BLZ_NEU">
+						</testmodule>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -510,6 +590,9 @@
 		name="TestRun">
 			<testcontainer
 			id="09f23af2-7bef-410f-a614-ba5035f92246">
+			</testcontainer>
+			<testcontainer
+			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b">
 			</testcontainer>
 			<testcontainer
 			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444">

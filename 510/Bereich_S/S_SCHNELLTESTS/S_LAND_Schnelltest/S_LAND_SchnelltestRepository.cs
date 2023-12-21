@@ -103,7 +103,7 @@ namespace S_LAND_Schnelltest
             set { _PLZ_NEU_ORT = value; }
         }
 
-        string _BLZ_NEU = "";
+        string _BLZ_NEU = "XBARX";
 
         /// <summary>
         /// Gets or sets the value of variable BLZ_NEU.
@@ -1229,7 +1229,7 @@ namespace S_LAND_Schnelltest
             {
                 _colplzcd_plz_neuInfo = new RepoItemInfo(this, "ColPlzCd_PLZ_NEU", "cell[@accessiblename~'colPlz_cd']", "", 30000, null, "91915355-e84a-48c0-bdfa-29d07ec2cf14");
                 _colplzort_ort_neuInfo = new RepoItemInfo(this, "ColPlzOrt_Ort_NEU", "cell[@accessiblename~'colPlz_ort']", "", 30000, null, "51200fcd-820a-4ab0-8d4c-bc64ab904a30");
-                _row_mit_variable_plz_neu_ortInfo = new RepoItemInfo(this, "Row_mit_Variable_PLZ_NEU_ORT", "", "", 30000, null, "a1d2988c-0e3d-4228-bab2-f14b18ef886f");
+                _row_mit_variable_plz_neu_ortInfo = new RepoItemInfo(this, "Row_mit_Variable_PLZ_NEU_ORT", "rsc", "", 30000, null, "a1d2988c-0e3d-4228-bab2-f14b18ef886f");
                 _colplzvorwahl_plz_neuInfo = new RepoItemInfo(this, "ColPlzVorwahl_PLZ_NEU", "cell[@accessiblename~'colPlz_vorwahl']", "", 30000, null, "ac023483-4ab1-4533-8506-5be289eff8a2");
                 _colplzkm_plz_neuInfo = new RepoItemInfo(this, "ColPlzKm_PLZ_NEU", "cell[@accessiblename~'colPlz_km']", "", 30000, null, "3f003cd6-2ced-4514-9c44-15303d87e884");
             }
@@ -1310,11 +1310,11 @@ namespace S_LAND_Schnelltest
             /// The Row_mit_Variable_PLZ_NEU_ORT item.
             /// </summary>
             [RepositoryItem("a1d2988c-0e3d-4228-bab2-f14b18ef886f")]
-            public virtual Ranorex.Row Row_mit_Variable_PLZ_NEU_ORT
+            public virtual Ranorex.Unknown Row_mit_Variable_PLZ_NEU_ORT
             {
                 get
                 {
-                    return _row_mit_variable_plz_neu_ortInfo.CreateAdapter<Ranorex.Row>(true);
+                    return _row_mit_variable_plz_neu_ortInfo.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 
@@ -1394,7 +1394,7 @@ namespace S_LAND_Schnelltest
             RepoItemInfo _colblzcdrow502Info;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _row1column0Info;
-            RepoItemInfo _colblzortrow882Info;
+            RepoItemInfo _row882column0Info;
 
             /// <summary>
             /// Creates a new TblBankleitzahl  folder.
@@ -1411,7 +1411,7 @@ namespace S_LAND_Schnelltest
                 _colblzcdrow502Info = new RepoItemInfo(this, "ColBlzCdRow502", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 502']/cell[@accessiblename='colBlz_cd Row 502']", "", 30000, null, "ad72f77f-c545-402c-9f39-0b6eadf69db5");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "8cee2676-aae6-4d4e-8fdd-f979b9030009");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "cee18cc5-aaf9-429b-b858-574c364b35fc");
-                _colblzortrow882Info = new RepoItemInfo(this, "ColBlzOrtRow882", "cell[@accessiblename~'colBlz_ort']", "", 30000, null, "31af674b-69b4-431f-9cf2-031be8685a35");
+                _row882column0Info = new RepoItemInfo(this, "Row882Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 882']/cell", "", 30000, null, "4f83f3a0-63bc-4a23-bc3b-e8777eef1714");
             }
 
             /// <summary>
@@ -1631,26 +1631,26 @@ namespace S_LAND_Schnelltest
             }
 
             /// <summary>
-            /// The ColBlzOrtRow882 item.
+            /// The Row882Column0 item.
             /// </summary>
-            [RepositoryItem("31af674b-69b4-431f-9cf2-031be8685a35")]
-            public virtual Ranorex.Cell ColBlzOrtRow882
+            [RepositoryItem("4f83f3a0-63bc-4a23-bc3b-e8777eef1714")]
+            public virtual Ranorex.Cell Row882Column0
             {
                 get
                 {
-                    return _colblzortrow882Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _row882column0Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The ColBlzOrtRow882 item info.
+            /// The Row882Column0 item info.
             /// </summary>
-            [RepositoryItemInfo("31af674b-69b4-431f-9cf2-031be8685a35")]
-            public virtual RepoItemInfo ColBlzOrtRow882Info
+            [RepositoryItemInfo("4f83f3a0-63bc-4a23-bc3b-e8777eef1714")]
+            public virtual RepoItemInfo Row882Column0Info
             {
                 get
                 {
-                    return _colblzortrow882Info;
+                    return _row882column0Info;
                 }
             }
 
@@ -1672,6 +1672,8 @@ namespace S_LAND_Schnelltest
         {
             RepoItemInfo _colblzcd_blzInfo;
             RepoItemInfo _colblznameInfo;
+            RepoItemInfo _colblzortInfo;
+            RepoItemInfo _colblzswiftInfo;
 
             /// <summary>
             /// Creates a new ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu  folder.
@@ -1681,6 +1683,8 @@ namespace S_LAND_Schnelltest
             {
                 _colblzcd_blzInfo = new RepoItemInfo(this, "ColBlzCd_BLZ", "cell[@accessiblename~'colBlz_cd']", "", 30000, null, "993ba02d-245b-44dc-8e95-c6adbbeb91fd");
                 _colblznameInfo = new RepoItemInfo(this, "ColBlzName", "cell[@accessiblename~'colBlz_name']", "", 30000, null, "548606b8-ef6c-407e-a977-6155e64b1314");
+                _colblzortInfo = new RepoItemInfo(this, "ColBlzOrt", "cell[@accessiblename~'colBlz_ort']", "", 30000, null, "31af674b-69b4-431f-9cf2-031be8685a35");
+                _colblzswiftInfo = new RepoItemInfo(this, "ColBlzSwift", "cell[@accessiblename~'colBlz_swift']", "", 30000, null, "c2b3ab28-2282-45a0-8b9f-0dcb31f9a668");
             }
 
             /// <summary>
@@ -1752,6 +1756,54 @@ namespace S_LAND_Schnelltest
                 get
                 {
                     return _colblznameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColBlzOrt item.
+            /// </summary>
+            [RepositoryItem("31af674b-69b4-431f-9cf2-031be8685a35")]
+            public virtual Ranorex.Cell ColBlzOrt
+            {
+                get
+                {
+                    return _colblzortInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBlzOrt item info.
+            /// </summary>
+            [RepositoryItemInfo("31af674b-69b4-431f-9cf2-031be8685a35")]
+            public virtual RepoItemInfo ColBlzOrtInfo
+            {
+                get
+                {
+                    return _colblzortInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColBlzSwift item.
+            /// </summary>
+            [RepositoryItem("c2b3ab28-2282-45a0-8b9f-0dcb31f9a668")]
+            public virtual Ranorex.Cell ColBlzSwift
+            {
+                get
+                {
+                    return _colblzswiftInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBlzSwift item info.
+            /// </summary>
+            [RepositoryItemInfo("c2b3ab28-2282-45a0-8b9f-0dcb31f9a668")]
+            public virtual RepoItemInfo ColBlzSwiftInfo
+            {
+                get
+                {
+                    return _colblzswiftInfo;
                 }
             }
         }

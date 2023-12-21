@@ -41,6 +41,9 @@ namespace S_LAND_Schnelltest.Recordings
         /// </summary>
         public Aendern_Einstellungen_BLZ_NEU()
         {
+            BLZ_NEU = "XBARX";
+            BLZ_NEU_Ort = "Salzburg";
+            BLZ_NEU_SWIFT = "HYWWYXX";
         }
 
         /// <summary>
@@ -52,6 +55,40 @@ namespace S_LAND_Schnelltest.Recordings
         }
 
 #region Variables
+
+        string _BLZ_NEU_Ort;
+
+        /// <summary>
+        /// Gets or sets the value of variable BLZ_NEU_Ort.
+        /// </summary>
+        [TestVariable("21fe658e-bfd7-4559-871e-bcb58b8b9875")]
+        public string BLZ_NEU_Ort
+        {
+            get { return _BLZ_NEU_Ort; }
+            set { _BLZ_NEU_Ort = value; }
+        }
+
+        string _BLZ_NEU_SWIFT;
+
+        /// <summary>
+        /// Gets or sets the value of variable BLZ_NEU_SWIFT.
+        /// </summary>
+        [TestVariable("e1662081-0786-4e0f-8d91-ca407498b06c")]
+        public string BLZ_NEU_SWIFT
+        {
+            get { return _BLZ_NEU_SWIFT; }
+            set { _BLZ_NEU_SWIFT = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable BLZ_NEU.
+        /// </summary>
+        [TestVariable("db543b42-6442-4052-9c8e-5f7cf07f3c12")]
+        public string BLZ_NEU
+        {
+            get { return repo.BLZ_NEU; }
+            set { repo.BLZ_NEU = value; }
+        }
 
 #endregion
 
@@ -79,8 +116,38 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'yourtext' with focus on 'TblBankleitzahl.ColBlzOrtRow882'.", repo.TblBankleitzahl.ColBlzOrtRow882Info, new RecordItemIndex(0));
-            repo.TblBankleitzahl.ColBlzOrtRow882.PressKeys("yourtext");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BLZ_NEU_Ort' with focus on 'TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzOrt'.", repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzOrtInfo, new RecordItemIndex(0));
+            repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzOrt.PressKeys(BLZ_NEU_Ort);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BLZ_NEU_SWIFT' with focus on 'TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzSwift'.", repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzSwiftInfo, new RecordItemIndex(2));
+            repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzSwift.PressKeys(BLZ_NEU_SWIFT);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessSave' at Center.", repo.TblBankleitzahl.PbDataAccessSaveInfo, new RecordItemIndex(4));
+            repo.TblBankleitzahl.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessLoad' at Center.", repo.TblBankleitzahl.PbDataAccessLoadInfo, new RecordItemIndex(5));
+            repo.TblBankleitzahl.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(6));
+            repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button2_Alle' at Center.", repo.DlgMessageBox.Button2_AlleInfo, new RecordItemIndex(8));
+            repo.DlgMessageBox.Button2_Alle.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BLZ_NEU_Ort) on item 'TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzOrt'.", repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzOrtInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzOrtInfo, "Text", BLZ_NEU_Ort);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BLZ_NEU_SWIFT) on item 'TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzSwift'.", repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzSwiftInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblBankleitzahl.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu.ColBlzSwiftInfo, "Text", BLZ_NEU_SWIFT);
             
         }
 
