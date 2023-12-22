@@ -20,35 +20,36 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace L_DISP.Recordings
+namespace S_LAND_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Start_IBAN recording.
     /// </summary>
-    [TestModule("8168a0fe-3e25-4455-b818-1f386297aafb", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("10359a7f-e0b5-483c-9465-264ece901f8a", ModuleType.Recording, 1)]
+    public partial class Start_IBAN : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP.L_DISP_001Repository repository.
+        /// Holds an instance of the global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repository.
         /// </summary>
-        public static global::L_DISP.L_DISP_001Repository repo = global::L_DISP.L_DISP_001Repository.Instance;
+        public static global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repo = global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Start_IBAN instance = new Start_IBAN();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Start_IBAN()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "L_DISP";
+            Programm_BLZ = "S_LAND Aufrufart=BLZ";
+            Programm_IBAN = "S_LAND Aufrufart=IBAN";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Start_IBAN Instance
         {
             get { return instance; }
         }
@@ -60,23 +61,35 @@ namespace L_DISP.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("ca17fc57-0785-4832-87da-abe4e7101508")]
+        [TestVariable("b2d442cc-2bf5-40c0-a6a7-e69f9b6ec8f8")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
         }
 
-        string _Programm;
+        string _Programm_BLZ;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm.
+        /// Gets or sets the value of variable Programm_BLZ.
         /// </summary>
-        [TestVariable("fdeb9c92-27c6-4393-9b78-4a0680c4e05e")]
-        public string Programm
+        [TestVariable("f38e74f3-8a4f-4b0a-aeaa-5b1c7108216f")]
+        public string Programm_BLZ
         {
-            get { return _Programm; }
-            set { _Programm = value; }
+            get { return _Programm_BLZ; }
+            set { _Programm_BLZ = value; }
+        }
+
+        string _Programm_IBAN;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_IBAN.
+        /// </summary>
+        [TestVariable("568571c6-6983-4466-b5c9-5470cb2aaf2e")]
+        public string Programm_IBAN
+        {
+            get { return _Programm_IBAN; }
+            set { _Programm_IBAN = value; }
         }
 
 #endregion
@@ -105,15 +118,14 @@ namespace L_DISP.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_BLZ in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_BLZ, "", false);
             
-            // BAR: wait for erhöht von 2 auf 3 Min.
-            Report.Log(ReportLevel.Info, "Wait", "BAR: wait for erhöht von 2 auf 3 Min.\r\nWaiting 3m to exist. Associated repository item: 'FrmDispo.TitleBar100BestellvorschlagGenerier'", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bestellvorschlag') on item 'FrmDispo.TitleBar100BestellvorschlagGenerier'.", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, "Text", "Bestellvorschlag");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bankleitzahl') on item 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'.", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, "Text", "Bankleitzahl");
             
         }
 

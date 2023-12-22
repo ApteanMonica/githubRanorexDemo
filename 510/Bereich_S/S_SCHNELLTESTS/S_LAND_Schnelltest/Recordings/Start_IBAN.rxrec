@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8168a0fe-3e25-4455-b818-1f386297aafb"
-mode="Desktop">
+id="10359a7f-e0b5-483c-9465-264ece901f8a"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,19 +19,24 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="StartAUT"
-	namespace="L_DISP.Recordings">
+	classname="Start_IBAN"
+	namespace="S_LAND_Schnelltest.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="ca17fc57-0785-4832-87da-abe4e7101508"
+		id="b2d442cc-2bf5-40c0-a6a7-e69f9b6ec8f8"
 		name="Startfile">
 			C:\Testdaten\Allgemein\Start.bat
 		</var>
 		<var
-		id="fdeb9c92-27c6-4393-9b78-4a0680c4e05e"
-		name="Programm">
-			L_DISP
+		id="f38e74f3-8a4f-4b0a-aeaa-5b1c7108216f"
+		name="Programm_BLZ">
+			S_LAND Aufrufart=BLZ
+		</var>
+		<var
+		id="568571c6-6983-4466-b5c9-5470cb2aaf2e"
+		name="Programm_IBAN">
+			S_LAND Aufrufart=IBAN
 		</var>
 	</variables>
 	<recorditems>
@@ -43,16 +48,16 @@ mode="Desktop">
 			</comment>
 			<bindings>
 				<binding
-				target="Arguments"
-				variable="Programm">
-				</binding>
-				<binding
 				target="FileName"
 				variable="Startfile">
 				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm_BLZ">
+				</binding>
 			</bindings>
 			<filename>
-				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+				yourapp
 			</filename>
 			<args>
 			</args>
@@ -60,16 +65,15 @@ mode="Desktop">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="537cf660-0545-413b-b6f6-5f29cae16849"
+		searchpropertyid="50241927-da24-4a63-afad-9b13d8a1a2b4"
 		waitaction="Exists"
-		waittimeout="180000ms">
+		waittimeout="120000ms">
 			<comment>
-				BAR: wait for erhöht von 2 auf 3 Min.
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="59de5ece-076d-4420-8f15-80ce365826dd"
+			id="a1e98f8d-c6c8-4c7d-95b9-d1116f519d49"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -77,9 +81,9 @@ mode="Desktop">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="5"
+				index="18"
 				prefcap="titlebar"
-				rect="501,79,934,28"
+				rect="326,178,964,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -87,7 +91,7 @@ mode="Desktop">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Bestellvorschlag generieren
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -107,11 +111,11 @@ mode="Desktop">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Bestellvorschlag generieren
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmDispo']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblKonvertierung']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -121,13 +125,13 @@ mode="Desktop">
 		action="AttributeContains"
 		enabled="True"
 		optional="False"
-		searchpropertyid="e9777272-0aa8-4f5f-8171-95fc04ad6421">
+		searchpropertyid="508ed285-be30-406d-b0fa-11c1ece98010">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="59de5ece-076d-4420-8f15-80ce365826dd"
+			id="a1e98f8d-c6c8-4c7d-95b9-d1116f519d49"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -135,9 +139,9 @@ mode="Desktop">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="5"
+				index="18"
 				prefcap="titlebar"
-				rect="501,79,934,28"
+				rect="326,178,964,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -145,7 +149,7 @@ mode="Desktop">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Bestellvorschlag generieren
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -165,11 +169,11 @@ mode="Desktop">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Bestellvorschlag generieren
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmDispo']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblKonvertierung']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -178,26 +182,26 @@ mode="Desktop">
 				Text
 			</matchname>
 			<matchvalue>
-				Bestellvorschlag
+				Bankleitzahl
 			</matchvalue>
 		</validationitem>
 	</recorditems>
 	<repository
-	id="d9b47c83-f20c-43ea-b1f9-f31a3317a5ff"
-	name="L_DISP_001Repository"
-	relativepath="..\L_DISP_001Repository.rxrep">
+	id="2229f8b9-dfc7-4400-b0f2-1ad1ad2f17b1"
+	name="S_LAND_SchnelltestRepository"
+	relativepath="..\S_LAND_SchnelltestRepository.rxrep">
 		<codegen
-		classname="L_DISP_001Repository"
-		namespace="L_DISP">
+		classname="S_LAND_SchnelltestRepository"
+		namespace="S_LAND_Schnelltest">
 		</codegen>
 		<rootfolder
-		id="509c24a5-2fbe-4b2e-9554-60d397d5ef5f"
+		id="29e1d00d-4956-4400-b6eb-36fe3aed7db9"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartAUT.UserCode.cs
+		Start_IBAN.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
