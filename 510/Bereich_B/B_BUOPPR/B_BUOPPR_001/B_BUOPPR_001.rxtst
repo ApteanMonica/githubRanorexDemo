@@ -69,6 +69,38 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="0d3fe2cb-33c2-41a4-a68c-73af2e264c23"
+			name="Tabelle_OP_Differenzen_pruefen"
+			ref="969eb2c6-426f-4f46-b3a7-11e48032a3b7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Beleg_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
+					</var>
+					<var
+					dataname="Tabelle_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="14c13a95-6fa0-458f-98ef-1ee068256808"
+					variablename="Tabelle_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Tabelle_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="471a4e96-47d1-4e44-ae83-6c3e95a7954a"
+					variablename="Tabelle_OP_Diff_2_LF_1">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0eef85ef-5ef1-4c7d-bc7e-8e80de93ab04"
 			name="Meldungen_LF1_Salden_Differenzen"
 			ref="76ad2ee0-954c-4f34-b884-eeb6a97a2629"
@@ -119,11 +151,12 @@
 					value="2018">
 					</param>
 					<param
-					name="Meldung_OP_Diff_1_LF_1"
-					value="Konto: 303006	Beleg: B_BUOPPR_001_9
-
-Summe-Offen	900,00
-Summe-Beträge	0,00">
+					name="Beleg_OP_Diff_1_LF_1"
+					value="B_BUOPPR_001_9">
+					</param>
+					<param
+					name="Beleg_OP_Diff_2_LF_1"
+					value="B_BUOPPR_001_10">
 					</param>
 					<param
 					name="Meldung_OP_Diff_2_LF_1"
@@ -131,6 +164,13 @@ Summe-Beträge	0,00">
 
 Summe-Offen	0,00
 Summe-Beträge	500,00">
+					</param>
+					<param
+					name="Meldung_OP_Diff_1_LF_1"
+					value="Konto: 303006	Beleg: B_BUOPPR_001_9
+
+Summe-Offen	900,00
+Summe-Beträge	0,00">
 					</param>
 					<param
 					name="Meldung_Salden_DIFF_LF_1"
@@ -203,14 +243,6 @@ Saldo Korrigieren ?">
 					<param
 					name="LF_2_Saldo_richtig_KLSALD"
 					value="-300,00">
-					</param>
-					<param
-					name="NewParameter"
-					value="">
-					</param>
-					<param
-					name="NewParameter1"
-					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -551,6 +583,9 @@ Saldo Korrigieren ?">
 			name="Meldungen_LF1_Salden_Differenzen"
 			ref="76ad2ee0-954c-4f34-b884-eeb6a97a2629"
 			type="Recording">
+				<description>
+					<![CDATA[Saldendiff LF 303006 nicht korrigieren - löst sich durch OP-Korrektur/Offen-Beträge automatisch!]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Meldung_Salden_DIFF_LF_1"
@@ -569,18 +604,21 @@ Saldo Korrigieren ?">
 			name="Tabelle_OP_Differenzen_korrigieren"
 			ref="8e3de480-32e1-4f91-9cf7-4ba27e85f8eb"
 			type="Recording">
+				<description>
+					<![CDATA[Diff-Tabelle geht auf 2. Bildschirm auf, lange Rep-Pfade funktionieren tw nicht, Elemente werden tw nicht gefunden]]>
+				</description>
 				<databinding>
 					<var
-					dataname="Tabelle_OP_Diff_2_LF_1"
+					dataname="Beleg_OP_Diff_1_LF_1"
 					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
-					variableid="7a7a7101-ff39-453b-8fa7-6c34f659fa3d"
-					variablename="Tabelle_OP_Diff_2_LF_1">
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
 					</var>
 					<var
-					dataname="Tabelle_OP_Diff_1_LF_1"
+					dataname="Beleg_OP_Diff_2_LF_1"
 					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
-					variableid="05d205aa-5d92-4500-a4b1-c1660b8cee5d"
-					variablename="Tabelle_OP_Diff_1_LF_1">
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -722,6 +760,18 @@ Saldo Korrigieren ?">
 					variableid="399dbf96-121c-4512-bd5f-bbcb31a6c718"
 					variablename="Tabelle_OP_Diff_2_LF_1">
 					</var>
+					<var
+					dataname="Beleg_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -766,13 +816,25 @@ Saldo Korrigieren ?">
 					variableid="399dbf96-121c-4512-bd5f-bbcb31a6c718"
 					variablename="Tabelle_OP_Diff_2_LF_1">
 					</var>
+					<var
+					dataname="Beleg_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
 			id="afe3a8cf-cf3d-4642-bdd2-e51269f3f765"
 			name="TestCase3_Differenzen_Korrektur">
 				<description>
-					<![CDATA[<p>Update zum Zurücksetzen der Korrektur: </p><p>update s_klsa set klsa_fibsaldo = 100 where firm_nr = '100' and adr_nr = '303007';<br>update b_buop set buop_offen = 900 where firm_nr = '100' and busa_keybel = 101 and busa_keypos = 1 and adr_nr = '303006';<br>update b_buop set buop_offen = 0 where firm_nr = '100' and busa_keybel = 102 and busa_keypos = 1 and adr_nr = '303006';</p>]]>
+					<![CDATA[<p>SQL Update zum Zurücksetzen der Korrektur/Erzeugen der Differenzen:</p><p>Sollte bereits die Saldendifferenz von LF 303006 korrigiert worden sien, die nur aus den OP-Diffenzen entsteht, muss vor den SQL Updates zurerst alle OP-Differenzen bereinigt und eine Saldenkorrektur durchgeführt werden.</p><p>update s_klsa set klsa_fibsaldo = 100 where firm_nr = '100' and adr_nr = '303007';<br>update b_buop set buop_offen = 900 where firm_nr = '100' and busa_keybel = 101 and busa_keypos = 1 and adr_nr = '303006';<br>update b_buop set buop_offen = 0 where firm_nr = '100' and busa_keybel = 102 and busa_keypos = 1 and adr_nr = '303006';</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -879,14 +941,23 @@ Saldo Korrigieren ?">
 					variableid="f15ee1b7-6059-46f9-8a3b-22dcaf147bef"
 					variablename="Tabelle_OP_Diff_1_LF_1">
 					</var>
+					<var
+					dataname="Beleg_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
 			id="bd5f8fab-a445-44b5-a964-f08faff34b13"
 			name="Abschlussprüfung_ohne_Fehler">
-				<description>
-					<![CDATA[<p>Update zum Zurücksetzen der Korrektur: </p><p>update s_klsa set klsa_fibsaldo = 100 where firm_nr = '100' and adr_nr = '303007';<br>update b_buop set buop_offen = 900 where firm_nr = '100' and busa_keybel = 101 and busa_keypos = 1 and adr_nr = '303006';<br>update b_buop set buop_offen = 0 where firm_nr = '100' and busa_keybel = 102 and busa_keypos = 1 and adr_nr = '303006';</p>]]>
-				</description>
 			</testcase>
 			<testmodule
 			id="be93c348-2380-4f99-be7f-c57932738661"
@@ -1139,6 +1210,18 @@ Saldo Korrigieren ?">
 					variableid="f15ee1b7-6059-46f9-8a3b-22dcaf147bef"
 					variablename="Tabelle_OP_Diff_1_LF_1">
 					</var>
+					<var
+					dataname="Beleg_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
+					</var>
 				</databinding>
 			</testmodule>
 			<setup
@@ -1170,6 +1253,18 @@ Saldo Korrigieren ?">
 					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
 					variableid="399dbf96-121c-4512-bd5f-bbcb31a6c718"
 					variablename="Tabelle_OP_Diff_2_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_1_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="fef3559f-e814-453e-9d53-6b97716d8a18"
+					variablename="Beleg_OP_Diff_1_LF_1">
+					</var>
+					<var
+					dataname="Beleg_OP_Diff_2_LF_1"
+					datasourceid="0fff4b09-519b-48f2-80e5-750768ac1988"
+					variableid="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+					variablename="Beleg_OP_Diff_2_LF_1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1447,6 +1542,10 @@ Saldo Korrigieren ?">
 						<testmodule
 						id="a641f0f7-ce98-4437-8ed1-a08416e34068"
 						name="Meldung_Saldenpruefung_beendet">
+						</testmodule>
+						<testmodule
+						id="0d3fe2cb-33c2-41a4-a68c-73af2e264c23"
+						name="Tabelle_OP_Differenzen_pruefen">
 						</testmodule>
 						<testmodule
 						id="7092c0a6-a1dd-4ea1-a2db-94f13f09e053"

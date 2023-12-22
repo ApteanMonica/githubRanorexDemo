@@ -63,6 +63,30 @@ namespace B_BUOPPR_001
 
 #region Variables
 
+        string _Beleg_OP_Diff_1_LF_1 = "B_BUOPPR_001_9";
+
+        /// <summary>
+        /// Gets or sets the value of variable Beleg_OP_Diff_1_LF_1.
+        /// </summary>
+        [TestVariable("fef3559f-e814-453e-9d53-6b97716d8a18")]
+        public string Beleg_OP_Diff_1_LF_1
+        {
+            get { return _Beleg_OP_Diff_1_LF_1; }
+            set { _Beleg_OP_Diff_1_LF_1 = value; }
+        }
+
+        string _Beleg_OP_Diff_2_LF_1 = "B_BUOPPR_001_10";
+
+        /// <summary>
+        /// Gets or sets the value of variable Beleg_OP_Diff_2_LF_1.
+        /// </summary>
+        [TestVariable("5b64a3cf-8a52-4366-be32-3ee09fa240e2")]
+        public string Beleg_OP_Diff_2_LF_1
+        {
+            get { return _Beleg_OP_Diff_2_LF_1; }
+            set { _Beleg_OP_Diff_2_LF_1 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -581,10 +605,13 @@ namespace B_BUOPPR_001
         public partial class TblDiffAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100differenzenInfo;
-            RepoItemInfo _coladrnrrow1Info;
-            RepoItemInfo _coladrnrrow2Info;
-            RepoItemInfo _row1column0Info;
-            RepoItemInfo _pbextrasupdateoffenInfo;
+            RepoItemInfo _schliessenInfo;
+            RepoItemInfo _pbextrasupdateoffen_any_optionalInfo;
+            RepoItemInfo _row_mit_beleg_b_buoppr_001_9Info;
+            RepoItemInfo _row_mit_beleg_b_buoppr_001_10Info;
+            RepoItemInfo _colinforow1Info;
+            RepoItemInfo _column0_in_zeile_mit_beleg_b_buoppr_001_9_any_optionalInfo;
+            RepoItemInfo _column0_in_zeile_mit_beleg_b_buoppr_001_10_any_optionalInfo;
 
             /// <summary>
             /// Creates a new TblDiff  folder.
@@ -593,10 +620,13 @@ namespace B_BUOPPR_001
                     base("TblDiff", "/form[@controlname='tblDiff']", parentFolder, 30000, null, true, "2726d032-a62b-42ec-8ad5-97d6328b42cd", "")
             {
                 _titlebar100differenzenInfo = new RepoItemInfo(this, "TitleBar100Differenzen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "062ed35b-786a-4172-9f82-d9b03b4c85c1");
-                _coladrnrrow1Info = new RepoItemInfo(this, "ColAdrNrRow1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "a50f2da8-11c4-4847-9db0-4dc4256c6fa8");
-                _coladrnrrow2Info = new RepoItemInfo(this, "ColAdrNrRow2", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "383e99c8-bf1d-49f9-b810-2ab3c2bd17ce");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "9c72500e-ae1b-4dfd-bf49-2d1e683e0542");
-                _pbextrasupdateoffenInfo = new RepoItemInfo(this, "PbExtrasUpdateOffen", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbExtras_UpdateOffen']", "", 30000, null, "84f8d548-d19f-47ee-899b-f41d94a9f283");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "b2327cf4-65a6-49c9-817c-cb6c2921140d");
+                _pbextrasupdateoffen_any_optionalInfo = new RepoItemInfo(this, "PbExtrasUpdateOffen_any_optional", "?/?/button[@controlname='pbExtras_UpdateOffen']", "", 30000, null, "84f8d548-d19f-47ee-899b-f41d94a9f283");
+                _row_mit_beleg_b_buoppr_001_9Info = new RepoItemInfo(this, "Row_mit_Beleg_B_BUOPPR_001_9", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_1_LF_1]", "", 30000, null, "a50f2da8-11c4-4847-9db0-4dc4256c6fa8");
+                _row_mit_beleg_b_buoppr_001_10Info = new RepoItemInfo(this, "Row_mit_Beleg_B_BUOPPR_001_10", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_2_LF_1]", "", 30000, null, "383e99c8-bf1d-49f9-b810-2ab3c2bd17ce");
+                _colinforow1Info = new RepoItemInfo(this, "ColInfoRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colInfo Row 1']", "", 30000, null, "f1cee8e1-5344-4c84-8d8f-4961dc4d6b4c");
+                _column0_in_zeile_mit_beleg_b_buoppr_001_9_any_optionalInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional", "?/?/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_1_LF_1]/cell[@accessiblename~'Column 0']", "", 30000, null, "94c2904d-f8fc-4145-81c2-e9ba20532c03");
+                _column0_in_zeile_mit_beleg_b_buoppr_001_10_any_optionalInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional", "?/?/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_2_LF_1]/cell[@accessiblename~'Column 0']", "", 30000, null, "7cb7fb20-ba33-44eb-93ea-5a9a60896158");
             }
 
             /// <summary>
@@ -648,98 +678,170 @@ namespace B_BUOPPR_001
             }
 
             /// <summary>
-            /// The ColAdrNrRow1 item.
+            /// The Schliessen item.
             /// </summary>
-            [RepositoryItem("a50f2da8-11c4-4847-9db0-4dc4256c6fa8")]
-            public virtual Ranorex.Row ColAdrNrRow1
+            [RepositoryItem("b2327cf4-65a6-49c9-817c-cb6c2921140d")]
+            public virtual Ranorex.Button Schliessen
             {
                 get
                 {
-                    return _coladrnrrow1Info.CreateAdapter<Ranorex.Row>(true);
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The ColAdrNrRow1 item info.
+            /// The Schliessen item info.
             /// </summary>
-            [RepositoryItemInfo("a50f2da8-11c4-4847-9db0-4dc4256c6fa8")]
-            public virtual RepoItemInfo ColAdrNrRow1Info
+            [RepositoryItemInfo("b2327cf4-65a6-49c9-817c-cb6c2921140d")]
+            public virtual RepoItemInfo SchliessenInfo
             {
                 get
                 {
-                    return _coladrnrrow1Info;
+                    return _schliessenInfo;
                 }
             }
 
             /// <summary>
-            /// The ColAdrNrRow2 item.
-            /// </summary>
-            [RepositoryItem("383e99c8-bf1d-49f9-b810-2ab3c2bd17ce")]
-            public virtual Ranorex.Row ColAdrNrRow2
-            {
-                get
-                {
-                    return _coladrnrrow2Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColAdrNrRow2 item info.
-            /// </summary>
-            [RepositoryItemInfo("383e99c8-bf1d-49f9-b810-2ab3c2bd17ce")]
-            public virtual RepoItemInfo ColAdrNrRow2Info
-            {
-                get
-                {
-                    return _coladrnrrow2Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("9c72500e-ae1b-4dfd-bf49-2d1e683e0542")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("9c72500e-ae1b-4dfd-bf49-2d1e683e0542")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
-                }
-            }
-
-            /// <summary>
-            /// The PbExtrasUpdateOffen item.
+            /// The PbExtrasUpdateOffen_any_optional item.
             /// </summary>
             [RepositoryItem("84f8d548-d19f-47ee-899b-f41d94a9f283")]
-            public virtual Ranorex.Button PbExtrasUpdateOffen
+            public virtual Ranorex.Button PbExtrasUpdateOffen_any_optional
             {
                 get
                 {
-                    return _pbextrasupdateoffenInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _pbextrasupdateoffen_any_optionalInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The PbExtrasUpdateOffen item info.
+            /// The PbExtrasUpdateOffen_any_optional item info.
             /// </summary>
             [RepositoryItemInfo("84f8d548-d19f-47ee-899b-f41d94a9f283")]
-            public virtual RepoItemInfo PbExtrasUpdateOffenInfo
+            public virtual RepoItemInfo PbExtrasUpdateOffen_any_optionalInfo
             {
                 get
                 {
-                    return _pbextrasupdateoffenInfo;
+                    return _pbextrasupdateoffen_any_optionalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row_mit_Beleg_B_BUOPPR_001_9 item.
+            /// </summary>
+            [RepositoryItem("a50f2da8-11c4-4847-9db0-4dc4256c6fa8")]
+            public virtual Ranorex.Row Row_mit_Beleg_B_BUOPPR_001_9
+            {
+                get
+                {
+                    return _row_mit_beleg_b_buoppr_001_9Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row_mit_Beleg_B_BUOPPR_001_9 item info.
+            /// </summary>
+            [RepositoryItemInfo("a50f2da8-11c4-4847-9db0-4dc4256c6fa8")]
+            public virtual RepoItemInfo Row_mit_Beleg_B_BUOPPR_001_9Info
+            {
+                get
+                {
+                    return _row_mit_beleg_b_buoppr_001_9Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row_mit_Beleg_B_BUOPPR_001_10 item.
+            /// </summary>
+            [RepositoryItem("383e99c8-bf1d-49f9-b810-2ab3c2bd17ce")]
+            public virtual Ranorex.Row Row_mit_Beleg_B_BUOPPR_001_10
+            {
+                get
+                {
+                    return _row_mit_beleg_b_buoppr_001_10Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row_mit_Beleg_B_BUOPPR_001_10 item info.
+            /// </summary>
+            [RepositoryItemInfo("383e99c8-bf1d-49f9-b810-2ab3c2bd17ce")]
+            public virtual RepoItemInfo Row_mit_Beleg_B_BUOPPR_001_10Info
+            {
+                get
+                {
+                    return _row_mit_beleg_b_buoppr_001_10Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColInfoRow1 item.
+            /// </summary>
+            [RepositoryItem("f1cee8e1-5344-4c84-8d8f-4961dc4d6b4c")]
+            public virtual Ranorex.Cell ColInfoRow1
+            {
+                get
+                {
+                    return _colinforow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColInfoRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("f1cee8e1-5344-4c84-8d8f-4961dc4d6b4c")]
+            public virtual RepoItemInfo ColInfoRow1Info
+            {
+                get
+                {
+                    return _colinforow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional item.
+            /// </summary>
+            [RepositoryItem("94c2904d-f8fc-4145-81c2-e9ba20532c03")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_beleg_b_buoppr_001_9_any_optionalInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional item info.
+            /// </summary>
+            [RepositoryItemInfo("94c2904d-f8fc-4145-81c2-e9ba20532c03")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optionalInfo
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_beleg_b_buoppr_001_9_any_optionalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional item.
+            /// </summary>
+            [RepositoryItem("7cb7fb20-ba33-44eb-93ea-5a9a60896158")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_beleg_b_buoppr_001_10_any_optionalInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional item info.
+            /// </summary>
+            [RepositoryItemInfo("7cb7fb20-ba33-44eb-93ea-5a9a60896158")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optionalInfo
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_beleg_b_buoppr_001_10_any_optionalInfo;
                 }
             }
         }

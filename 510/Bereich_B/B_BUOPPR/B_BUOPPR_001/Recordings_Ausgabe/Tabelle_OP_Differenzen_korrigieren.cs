@@ -41,8 +41,6 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
         /// </summary>
         public Tabelle_OP_Differenzen_korrigieren()
         {
-            Tabelle_OP_Diff_1_LF_1 = "";
-            Tabelle_OP_Diff_2_LF_1 = "";
         }
 
         /// <summary>
@@ -55,28 +53,24 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
 
 #region Variables
 
-        string _Tabelle_OP_Diff_1_LF_1;
-
         /// <summary>
-        /// Gets or sets the value of variable Tabelle_OP_Diff_1_LF_1.
+        /// Gets or sets the value of variable Beleg_OP_Diff_1_LF_1.
         /// </summary>
-        [TestVariable("05d205aa-5d92-4500-a4b1-c1660b8cee5d")]
-        public string Tabelle_OP_Diff_1_LF_1
+        [TestVariable("fef3559f-e814-453e-9d53-6b97716d8a18")]
+        public string Beleg_OP_Diff_1_LF_1
         {
-            get { return _Tabelle_OP_Diff_1_LF_1; }
-            set { _Tabelle_OP_Diff_1_LF_1 = value; }
+            get { return repo.Beleg_OP_Diff_1_LF_1; }
+            set { repo.Beleg_OP_Diff_1_LF_1 = value; }
         }
 
-        string _Tabelle_OP_Diff_2_LF_1;
-
         /// <summary>
-        /// Gets or sets the value of variable Tabelle_OP_Diff_2_LF_1.
+        /// Gets or sets the value of variable Beleg_OP_Diff_2_LF_1.
         /// </summary>
-        [TestVariable("7a7a7101-ff39-453b-8fa7-6c34f659fa3d")]
-        public string Tabelle_OP_Diff_2_LF_1
+        [TestVariable("5b64a3cf-8a52-4366-be32-3ee09fa240e2")]
+        public string Beleg_OP_Diff_2_LF_1
         {
-            get { return _Tabelle_OP_Diff_2_LF_1; }
-            set { _Tabelle_OP_Diff_2_LF_1 = value; }
+            get { return repo.Beleg_OP_Diff_2_LF_1; }
+            set { repo.Beleg_OP_Diff_2_LF_1 = value; }
         }
 
 #endregion
@@ -105,38 +99,71 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblDiff.TitleBar100Differenzen'.", repo.TblDiff.TitleBar100DifferenzenInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.TblDiff.TitleBar100DifferenzenInfo);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional' at Center.", repo.TblDiff.Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optionalInfo, new RecordItemIndex(0));
+            repo.TblDiff.Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_OP_Diff_1_LF_1) on item 'TblDiff.ColAdrNrRow1'.", repo.TblDiff.ColAdrNrRow1Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.TblDiff.ColAdrNrRow1Info, "Text", Tabelle_OP_Diff_1_LF_1);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Down}{LControlKey up}'.", new RecordItemIndex(1));
+            //Keyboard.Press("{LControlKey down}{Down}{LControlKey up}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_OP_Diff_2_LF_1) on item 'TblDiff.ColAdrNrRow2'.", repo.TblDiff.ColAdrNrRow2Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblDiff.ColAdrNrRow2Info, "Text", Tabelle_OP_Diff_2_LF_1);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.Row1Column0' at Center.", repo.TblDiff.Row1Column0Info, new RecordItemIndex(3));
-            repo.TblDiff.Row1Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.PbExtrasUpdateOffen_any_optional' at Center.", repo.TblDiff.PbExtrasUpdateOffen_any_optionalInfo, new RecordItemIndex(3));
+            repo.TblDiff.PbExtrasUpdateOffen_any_optional.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}{Down}{LShiftKey up}' with focus on 'TblDiff.Row1Column0'.", repo.TblDiff.Row1Column0Info, new RecordItemIndex(4));
-            repo.TblDiff.Row1Column0.PressKeys("{LShiftKey down}{Down}{LShiftKey up}");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.PbExtrasUpdateOffen' at Center.", repo.TblDiff.PbExtrasUpdateOffenInfo, new RecordItemIndex(5));
-            repo.TblDiff.PbExtrasUpdateOffen.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Offenen Betrag der ausgewählten Zeilen anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Offenen Betrag der ausgewählten Zeilen anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Offenen Betrag der ausgewählten Zeilen anpassen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at 23;12.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(7));
-            repo.DlgMessageBox.Button0_OK.Click("23;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(6));
+            repo.DlgMessageBox.Button0_OK.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='offene Beträge wurden angepasst.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "offene Beträge wurden angepasst.");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at 29;12.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(9));
-            repo.DlgMessageBox.Button0_OK.Click("29;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(9));
+            repo.DlgMessageBox.Button0_OK.Click();
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblDiff.TitleBar100Differenzen'.", repo.TblDiff.TitleBar100DifferenzenInfo, new RecordItemIndex(10));
-            Host.Current.CloseApplication(repo.TblDiff.TitleBar100Differenzen, new Duration(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional' at Center.", repo.TblDiff.Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optionalInfo, new RecordItemIndex(11));
+            repo.TblDiff.Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.PbExtrasUpdateOffen_any_optional' at Center.", repo.TblDiff.PbExtrasUpdateOffen_any_optionalInfo, new RecordItemIndex(13));
+            repo.TblDiff.PbExtrasUpdateOffen_any_optional.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(14));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Offenen Betrag der ausgewählten Zeilen anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Offenen Betrag der ausgewählten Zeilen anpassen?");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(16));
+            repo.DlgMessageBox.Button0_OK.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(17));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='offene Beträge wurden angepasst.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "offene Beträge wurden angepasst.");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(19));
+            repo.DlgMessageBox.Button0_OK.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(20));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDiff.Schliessen' at Center.", repo.TblDiff.SchliessenInfo, new RecordItemIndex(21));
+            repo.TblDiff.Schliessen.Click();
             
         }
 

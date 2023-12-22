@@ -223,46 +223,76 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
-			addcaps="cell,accessible"
-			capname="row"
-			id="a50f2da8-11c4-4847-9db0-4dc4256c6fa8"
-			name="ColAdrNrRow1"
-			refimgid="5c8d5754-a448-40e3-a447-c5ec2f73ec5d"
+			addcaps="button,accessible"
+			capname="button"
+			id="b2327cf4-65a6-49c9-817c-cb6c2921140d"
+			name="Schliessen"
+			refimgid="e80f64e2-001c-4b9c-a3d9-d06e366efc91"
+			refpath="/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="row"
-			id="383e99c8-bf1d-49f9-b810-2ab3c2bd17ce"
-			name="ColAdrNrRow2"
-			refimgid="b78d1ce7-24de-4c70-ad3a-e34da81075aa"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="9c72500e-ae1b-4dfd-bf49-2d1e683e0542"
-			name="Row1Column0"
-			refimgid="c191fdbd-4ca2-44f9-8f03-dcf013939a2a"
-			refpath="/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']
+				/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="84f8d548-d19f-47ee-899b-f41d94a9f283"
-			name="PbExtrasUpdateOffen"
+			name="PbExtrasUpdateOffen_any_optional"
 			refimgid="890a18a4-b097-413d-9540-24bd7961711e"
-			refpath="/form[@controlname='tblDiff']/container[@controlname='RibbonBar']/container[@controlname='ExtrasGroup']/button[@controlname='pbExtras_UpdateOffen']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblDiff']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbExtras_UpdateOffen']
+				/form[@controlname='tblDiff']/?/?/button[@controlname='pbExtras_UpdateOffen']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="row"
+			id="a50f2da8-11c4-4847-9db0-4dc4256c6fa8"
+			name="Row_mit_Beleg_B_BUOPPR_001_9"
+			refimgid="5c8d5754-a448-40e3-a447-c5ec2f73ec5d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_1_LF_1]
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="row"
+			id="383e99c8-bf1d-49f9-b810-2ab3c2bd17ce"
+			name="Row_mit_Beleg_B_BUOPPR_001_10"
+			refimgid="b78d1ce7-24de-4c70-ad3a-e34da81075aa"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_2_LF_1]
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="f1cee8e1-5344-4c84-8d8f-4961dc4d6b4c"
+			name="ColInfoRow1"
+			refimgid="bff1a620-55da-43c4-b7e7-219841027168"
+			refpath="/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colInfo Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblDiff']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colInfo Row 1']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="94c2904d-f8fc-4145-81c2-e9ba20532c03"
+			name="Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_9_any_optional"
+			refimgid="a5ad60a9-877c-4e9d-a6df-591a1c888457"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblDiff']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_1_LF_1]/cell[@accessiblename~'Column 0']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="7cb7fb20-ba33-44eb-93ea-5a9a60896158"
+			name="Column0_in_Zeile_mit_Beleg_B_BUOPPR_001_10_any_optional"
+			refimgid="a5ad60a9-877c-4e9d-a6df-591a1c888457"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblDiff']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beleg_OP_Diff_2_LF_1]/cell[@accessiblename~'Column 0']
 			</item>
 			<basepath>
 				/form[@controlname='tblDiff']
@@ -770,5 +800,15 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="fef3559f-e814-453e-9d53-6b97716d8a18"
+		name="Beleg_OP_Diff_1_LF_1">
+			B_BUOPPR_001_9
+		</var>
+		<var
+		id="5b64a3cf-8a52-4366-be32-3ee09fa240e2"
+		name="Beleg_OP_Diff_2_LF_1">
+			B_BUOPPR_001_10
+		</var>
 	</variables>
 </repository>
