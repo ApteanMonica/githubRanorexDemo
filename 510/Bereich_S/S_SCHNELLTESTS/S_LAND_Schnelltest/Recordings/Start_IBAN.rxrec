@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="db7582ed-1b78-4a5a-9d07-b88a64bdc989"
+id="10359a7f-e0b5-483c-9465-264ece901f8a"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,24 +19,24 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Start_BLZ"
+	classname="Start_IBAN"
 	namespace="S_LAND_Schnelltest.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="acb9b936-651e-4885-8cec-af5ff6d005c0"
+		id="b2d442cc-2bf5-40c0-a6a7-e69f9b6ec8f8"
 		name="Startfile">
 			C:\Testdaten\Allgemein\Start.bat
 		</var>
 		<var
-		id="2baa9a3b-f757-48a9-9356-5bdc40810f51"
-		name="Programm_PLZ">
-			S_LAND Aufrufart=PLZ
-		</var>
-		<var
-		id="669ba2e1-9391-4b28-8300-49e47ecf22a1"
+		id="f38e74f3-8a4f-4b0a-aeaa-5b1c7108216f"
 		name="Programm_BLZ">
 			S_LAND Aufrufart=BLZ
+		</var>
+		<var
+		id="568571c6-6983-4466-b5c9-5470cb2aaf2e"
+		name="Programm_IBAN">
+			S_LAND Aufrufart=IBAN
 		</var>
 	</variables>
 	<recorditems>
@@ -73,7 +73,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="6daf7826-32f1-4137-abfd-57125c3c2303"
+			id="a1e98f8d-c6c8-4c7d-95b9-d1116f519d49"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -81,9 +81,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="14"
+				index="18"
 				prefcap="titlebar"
-				rect="16,-5,1904,28"
+				rect="326,178,964,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -91,7 +91,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Bankleitzahl verwalten
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -111,11 +111,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Bankleitzahl verwalten
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblKonvertierung']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -131,7 +131,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="6daf7826-32f1-4137-abfd-57125c3c2303"
+			id="a1e98f8d-c6c8-4c7d-95b9-d1116f519d49"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -139,9 +139,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="14"
+				index="18"
 				prefcap="titlebar"
-				rect="16,-5,1904,28"
+				rect="326,178,964,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -149,7 +149,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Bankleitzahl verwalten
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -169,11 +169,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Bankleitzahl verwalten
+						[100]  Konvertieren der Bankverbindung von BLZ u. KontoNr nach IBAN verwalten
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblKonvertierung']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -201,7 +201,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Start_BLZ.UserCode.cs
+		Start_IBAN.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

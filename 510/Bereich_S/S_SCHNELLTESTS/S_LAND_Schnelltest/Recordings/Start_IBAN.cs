@@ -24,32 +24,32 @@ namespace S_LAND_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_BLZ recording.
+    ///The Start_IBAN recording.
     /// </summary>
-    [TestModule("db7582ed-1b78-4a5a-9d07-b88a64bdc989", ModuleType.Recording, 1)]
-    public partial class Start_BLZ : ITestModule
+    [TestModule("10359a7f-e0b5-483c-9465-264ece901f8a", ModuleType.Recording, 1)]
+    public partial class Start_IBAN : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repository.
         /// </summary>
         public static global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repo = global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository.Instance;
 
-        static Start_BLZ instance = new Start_BLZ();
+        static Start_IBAN instance = new Start_IBAN();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_BLZ()
+        public Start_IBAN()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_PLZ = "S_LAND Aufrufart=PLZ";
             Programm_BLZ = "S_LAND Aufrufart=BLZ";
+            Programm_IBAN = "S_LAND Aufrufart=IBAN";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_BLZ Instance
+        public static Start_IBAN Instance
         {
             get { return instance; }
         }
@@ -61,23 +61,11 @@ namespace S_LAND_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("acb9b936-651e-4885-8cec-af5ff6d005c0")]
+        [TestVariable("b2d442cc-2bf5-40c0-a6a7-e69f9b6ec8f8")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
-        }
-
-        string _Programm_PLZ;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_PLZ.
-        /// </summary>
-        [TestVariable("2baa9a3b-f757-48a9-9356-5bdc40810f51")]
-        public string Programm_PLZ
-        {
-            get { return _Programm_PLZ; }
-            set { _Programm_PLZ = value; }
         }
 
         string _Programm_BLZ;
@@ -85,11 +73,23 @@ namespace S_LAND_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Programm_BLZ.
         /// </summary>
-        [TestVariable("669ba2e1-9391-4b28-8300-49e47ecf22a1")]
+        [TestVariable("f38e74f3-8a4f-4b0a-aeaa-5b1c7108216f")]
         public string Programm_BLZ
         {
             get { return _Programm_BLZ; }
             set { _Programm_BLZ = value; }
+        }
+
+        string _Programm_IBAN;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_IBAN.
+        /// </summary>
+        [TestVariable("568571c6-6983-4466-b5c9-5470cb2aaf2e")]
+        public string Programm_IBAN
+        {
+            get { return _Programm_IBAN; }
+            set { _Programm_IBAN = value; }
         }
 
 #endregion
@@ -121,11 +121,11 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_BLZ in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm_BLZ, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBankleitzahl.TitleBar100BankleitzahlVerwalten'", repo.TblBankleitzahl.TitleBar100BankleitzahlVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblBankleitzahl.TitleBar100BankleitzahlVerwaltenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bankleitzahl') on item 'TblBankleitzahl.TitleBar100BankleitzahlVerwalten'.", repo.TblBankleitzahl.TitleBar100BankleitzahlVerwaltenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblBankleitzahl.TitleBar100BankleitzahlVerwaltenInfo, "Text", "Bankleitzahl");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bankleitzahl') on item 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'.", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, "Text", "Bankleitzahl");
             
         }
 

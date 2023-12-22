@@ -31,6 +31,7 @@ namespace S_LAND_Schnelltest
         S_LAND_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         S_LAND_SchnelltestRepositoryFolders.TblPostleitzahlAppFolder _tblpostleitzahl;
         S_LAND_SchnelltestRepositoryFolders.TblBankleitzahlAppFolder _tblbankleitzahl;
+        S_LAND_SchnelltestRepositoryFolders.TblKonvertierungAppFolder _tblkonvertierung;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_LAND_SchnelltestRepository element repository.
@@ -51,6 +52,7 @@ namespace S_LAND_Schnelltest
             _dlgmessagebox = new S_LAND_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder(this);
             _tblpostleitzahl = new S_LAND_SchnelltestRepositoryFolders.TblPostleitzahlAppFolder(this);
             _tblbankleitzahl = new S_LAND_SchnelltestRepositoryFolders.TblBankleitzahlAppFolder(this);
+            _tblkonvertierung = new S_LAND_SchnelltestRepositoryFolders.TblKonvertierungAppFolder(this);
         }
 
 #region Variables
@@ -163,6 +165,15 @@ namespace S_LAND_Schnelltest
         public virtual S_LAND_SchnelltestRepositoryFolders.TblBankleitzahlAppFolder TblBankleitzahl
         {
             get { return _tblbankleitzahl; }
+        }
+
+        /// <summary>
+        /// The TblKonvertierung folder.
+        /// </summary>
+        [RepositoryFolder("822b9c57-13df-4f12-9b8a-a4876a53c291")]
+        public virtual S_LAND_SchnelltestRepositoryFolders.TblKonvertierungAppFolder TblKonvertierung
+        {
+            get { return _tblkonvertierung; }
         }
     }
 
@@ -1387,6 +1398,7 @@ namespace S_LAND_Schnelltest
         {
             S_LAND_SchnelltestRepositoryFolders.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neuFolder _colblzcdrow882_zeile_mit__variable_blz_neu;
             RepoItemInfo _titlebar100bankleitzahlverwaltenInfo;
+            RepoItemInfo _maximierenInfo;
             RepoItemInfo _pbdataaccessnewInfo;
             RepoItemInfo _dflandcdInfo;
             RepoItemInfo _pbdataaccessloadInfo;
@@ -1394,7 +1406,8 @@ namespace S_LAND_Schnelltest
             RepoItemInfo _colblzcdrow502Info;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _row1column0Info;
-            RepoItemInfo _row882column0Info;
+            RepoItemInfo _row_mit_variiable_blz_neuInfo;
+            RepoItemInfo _buttonupInfo;
 
             /// <summary>
             /// Creates a new TblBankleitzahl  folder.
@@ -1404,6 +1417,7 @@ namespace S_LAND_Schnelltest
             {
                 _colblzcdrow882_zeile_mit__variable_blz_neu = new S_LAND_SchnelltestRepositoryFolders.ColBlzCdRow882_Zeile_mit__Variable_BLZ_neuFolder(this);
                 _titlebar100bankleitzahlverwaltenInfo = new RepoItemInfo(this, "TitleBar100BankleitzahlVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "6daf7826-32f1-4137-abfd-57125c3c2303");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "e67168c1-6cb2-4f95-97c2-a006d1f9642e");
                 _pbdataaccessnewInfo = new RepoItemInfo(this, "PbDataAccessNew", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']", "", 30000, null, "d39f7d08-f72d-4fc5-9f8b-102fe1e18e27");
                 _dflandcdInfo = new RepoItemInfo(this, "DfLandCd", "container[@controlname='ToolBar']/text[@controlname='dfLand_cd']", "", 30000, null, "6228179d-9e65-429b-adeb-5716198ccf02");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "1afde164-6a10-4665-9aeb-00f0bf844ba7");
@@ -1411,7 +1425,8 @@ namespace S_LAND_Schnelltest
                 _colblzcdrow502Info = new RepoItemInfo(this, "ColBlzCdRow502", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 502']/cell[@accessiblename='colBlz_cd Row 502']", "", 30000, null, "ad72f77f-c545-402c-9f39-0b6eadf69db5");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "8cee2676-aae6-4d4e-8fdd-f979b9030009");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "cee18cc5-aaf9-429b-b858-574c364b35fc");
-                _row882column0Info = new RepoItemInfo(this, "Row882Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 882']/cell", "", 30000, null, "4f83f3a0-63bc-4a23-bc3b-e8777eef1714");
+                _row_mit_variiable_blz_neuInfo = new RepoItemInfo(this, "Row_mit_Variiable_BLZ_NEU", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]", "", 30000, null, "4f83f3a0-63bc-4a23-bc3b-e8777eef1714");
+                _buttonupInfo = new RepoItemInfo(this, "ButtonUp", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Vertical']/button[@text='Up']", "", 30000, null, "a8b2374f-23f4-474f-a4f2-267d9b085dd6");
             }
 
             /// <summary>
@@ -1459,6 +1474,30 @@ namespace S_LAND_Schnelltest
                 get
                 {
                     return _titlebar100bankleitzahlverwaltenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item.
+            /// </summary>
+            [RepositoryItem("e67168c1-6cb2-4f95-97c2-a006d1f9642e")]
+            public virtual Ranorex.Button Maximieren
+            {
+                get
+                {
+                    return _maximierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item info.
+            /// </summary>
+            [RepositoryItemInfo("e67168c1-6cb2-4f95-97c2-a006d1f9642e")]
+            public virtual RepoItemInfo MaximierenInfo
+            {
+                get
+                {
+                    return _maximierenInfo;
                 }
             }
 
@@ -1631,26 +1670,50 @@ namespace S_LAND_Schnelltest
             }
 
             /// <summary>
-            /// The Row882Column0 item.
+            /// The Row_mit_Variiable_BLZ_NEU item.
             /// </summary>
             [RepositoryItem("4f83f3a0-63bc-4a23-bc3b-e8777eef1714")]
-            public virtual Ranorex.Cell Row882Column0
+            public virtual Ranorex.Row Row_mit_Variiable_BLZ_NEU
             {
                 get
                 {
-                    return _row882column0Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _row_mit_variiable_blz_neuInfo.CreateAdapter<Ranorex.Row>(true);
                 }
             }
 
             /// <summary>
-            /// The Row882Column0 item info.
+            /// The Row_mit_Variiable_BLZ_NEU item info.
             /// </summary>
             [RepositoryItemInfo("4f83f3a0-63bc-4a23-bc3b-e8777eef1714")]
-            public virtual RepoItemInfo Row882Column0Info
+            public virtual RepoItemInfo Row_mit_Variiable_BLZ_NEUInfo
             {
                 get
                 {
-                    return _row882column0Info;
+                    return _row_mit_variiable_blz_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonUp item.
+            /// </summary>
+            [RepositoryItem("a8b2374f-23f4-474f-a4f2-267d9b085dd6")]
+            public virtual Ranorex.Button ButtonUp
+            {
+                get
+                {
+                    return _buttonupInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonUp item info.
+            /// </summary>
+            [RepositoryItemInfo("a8b2374f-23f4-474f-a4f2-267d9b085dd6")]
+            public virtual RepoItemInfo ButtonUpInfo
+            {
+                get
+                {
+                    return _buttonupInfo;
                 }
             }
 
@@ -1804,6 +1867,72 @@ namespace S_LAND_Schnelltest
                 get
                 {
                     return _colblzswiftInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblKonvertierungAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("822b9c57-13df-4f12-9b8a-a4876a53c291")]
+        public partial class TblKonvertierungAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100konvertierenderbankverbInfo;
+
+            /// <summary>
+            /// Creates a new TblKonvertierung  folder.
+            /// </summary>
+            public TblKonvertierungAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblKonvertierung", "/form[@controlname='tblKonvertierung']", parentFolder, 30000, null, true, "822b9c57-13df-4f12-9b8a-a4876a53c291", "")
+            {
+                _titlebar100konvertierenderbankverbInfo = new RepoItemInfo(this, "TitleBar100KonvertierenDerBankverb", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "a1e98f8d-c6c8-4c7d-95b9-d1116f519d49");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("822b9c57-13df-4f12-9b8a-a4876a53c291")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("822b9c57-13df-4f12-9b8a-a4876a53c291")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100KonvertierenDerBankverb item.
+            /// </summary>
+            [RepositoryItem("a1e98f8d-c6c8-4c7d-95b9-d1116f519d49")]
+            public virtual Ranorex.TitleBar TitleBar100KonvertierenDerBankverb
+            {
+                get
+                {
+                    return _titlebar100konvertierenderbankverbInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100KonvertierenDerBankverb item info.
+            /// </summary>
+            [RepositoryItemInfo("a1e98f8d-c6c8-4c7d-95b9-d1116f519d49")]
+            public virtual RepoItemInfo TitleBar100KonvertierenDerBankverbInfo
+            {
+                get
+                {
+                    return _titlebar100konvertierenderbankverbInfo;
                 }
             }
         }

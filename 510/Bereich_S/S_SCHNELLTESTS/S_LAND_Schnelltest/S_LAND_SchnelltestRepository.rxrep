@@ -509,6 +509,17 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 				/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="e67168c1-6cb2-4f95-97c2-a006d1f9642e"
+			name="Maximieren"
+			refimgid="35ca55f1-f6ae-473d-83aa-015a216b3dd7"
+			refpath="/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="d39f7d08-f72d-4fc5-9f8b-102fe1e18e27"
@@ -639,16 +650,64 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			</folder>
 			<item
 			addcaps="cell,accessible"
-			capname="cell"
+			capname="row"
 			id="4f83f3a0-63bc-4a23-bc3b-e8777eef1714"
-			name="Row882Column0"
+			name="Row_mit_Variiable_BLZ_NEU"
 			refimgid="b8e63875-4dd3-4b37-96f6-d659c8665d4e"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 882']/cell
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]
+			</item>
+			<item
+			addcaps="button"
+			capname="button"
+			id="a8b2374f-23f4-474f-a4f2-267d9b085dd6"
+			name="ButtonUp"
+			refimgid="34ab1f98-454f-4dbc-bc5e-faf795a79782"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Vertical']/button[@text='Up']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Vertical']/button[@text='Up']
 			</item>
 			<basepath>
 				/form[@controlname='tblBankleitzahl']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="822b9c57-13df-4f12-9b8a-a4876a53c291"
+		isrooted="True"
+		name="TblKonvertierung"
+		refpath="/form[@controlname='tblKonvertierung']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="a1e98f8d-c6c8-4c7d-95b9-d1116f519d49"
+			name="TitleBar100KonvertierenDerBankverb"
+			refimgid="5bea59f1-e65d-4c55-8096-a76a9dec9243"
+			refpath="/form[@controlname='tblKonvertierung']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblKonvertierung']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@controlname='tblKonvertierung']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

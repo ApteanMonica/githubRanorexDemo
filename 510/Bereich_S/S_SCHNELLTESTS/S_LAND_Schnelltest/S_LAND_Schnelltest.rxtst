@@ -4,7 +4,7 @@
 		<flatlistofchildren>
 			<testcase
 			id="09f23af2-7bef-410f-a614-ba5035f92246"
-			name="Veralten_BLZ_Aufrufart_BLZ">
+			name="Verwalten_BLZ_Aufrufart_BLZ">
 			</testcase>
 			<setup
 			id="1076f805-803a-4b20-8d7a-6c3062d4d943"
@@ -17,19 +17,23 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="BLZ_NEU_Bezeichnung"
-					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="9ed75a3f-2900-40c4-ad40-4bae399899e9"
-					variablename="BLZ_NEU_Bezeichnung">
-					</var>
-					<var
 					dataname="BLZ_NEU"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="2d15d5ee-10ae-49ca-ac28-cecad79691d7"
 					variablename="BLZ_NEU">
 					</var>
+					<var
+					dataname="BLZ_NEU_Bezeichnung"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="9ed75a3f-2900-40c4-ad40-4bae399899e9"
+					variablename="BLZ_NEU_Bezeichnung">
+					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="200ac785-1814-4ce0-8aee-8ef40bfc44da"
+			name="Verwalten_IBAN_Konventieren">
+			</testcase>
 			<testcase
 			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b"
 			name="Verwalten_Land_Aufrufart_LAND">
@@ -41,16 +45,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="BLZ_NEU_Bezeichnung"
-					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="0f065ab5-5a41-4059-80af-f98e47c5cb23"
-					variablename="BLZ_NEU_Bezeichnung">
-					</var>
-					<var
 					dataname="BLZ_NEU"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="440f716f-8d1f-4c11-bbf6-43aa2b121a79"
 					variablename="BLZ_NEU">
+					</var>
+					<var
+					dataname="BLZ_NEU_Bezeichnung"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="0f065ab5-5a41-4059-80af-f98e47c5cb23"
+					variablename="BLZ_NEU_Bezeichnung">
 					</var>
 				</databinding>
 			</testmodule>
@@ -123,10 +127,18 @@
 					name="BLZ_NEU_SWIFT"
 					value="HYWWYXX">
 					</param>
+					<param
+					name="Programm_IBAN"
+					value="S_LAND Aufrufart=IBAN">
+					</param>
 				</parameters>
 			</testcase>
 			<teardown
 			id="575eee4d-1251-4afc-8297-ca25b60e8ac7"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="5f56a158-ef0d-492e-80c5-8eed6c387549"
 			name="teardown">
 			</teardown>
 			<testmodule
@@ -176,16 +188,16 @@
 					variablename="Programm_PLZ">
 					</var>
 					<var
-					dataname="Programm_BLZ"
-					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="669ba2e1-9391-4b28-8300-49e47ecf22a1"
-					variablename="Programm_BLZ">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="acb9b936-651e-4885-8cec-af5ff6d005c0"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_BLZ"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="669ba2e1-9391-4b28-8300-49e47ecf22a1"
+					variablename="Programm_BLZ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -342,6 +354,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="ba953a2d-549e-4121-b41a-187b8a2019fd"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="be71502d-ae12-4e9d-bf2d-c7df4403ba9d"
 			name="Aendern_Einstellungen_BLZ_NEU"
@@ -349,10 +365,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="BLZ_NEU"
+					dataname="BLZ_NEU_SWIFT"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="db543b42-6442-4052-9c8e-5f7cf07f3c12"
-					variablename="BLZ_NEU">
+					variableid="e1662081-0786-4e0f-8d91-ca407498b06c"
+					variablename="BLZ_NEU_SWIFT">
 					</var>
 					<var
 					dataname="BLZ_NEU_Ort"
@@ -361,13 +377,17 @@
 					variablename="BLZ_NEU_Ort">
 					</var>
 					<var
-					dataname="BLZ_NEU_SWIFT"
+					dataname="BLZ_NEU"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="e1662081-0786-4e0f-8d91-ca407498b06c"
-					variablename="BLZ_NEU_SWIFT">
+					variableid="db543b42-6442-4052-9c8e-5f7cf07f3c12"
+					variablename="BLZ_NEU">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="cd511801-6bec-4226-8aeb-e8efa6cdf08e"
+			name="setup">
+			</setup>
 			<testmodule
 			id="cdcd8d89-9c00-4211-bc69-453d3cf1b2e4"
 			name="CloseLAND"
@@ -382,6 +402,12 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="d05b9531-a185-4e64-9cdb-59fd016b7fe0"
+			name="CloseBLZ"
+			ref="0389f2b6-2071-4417-90cf-d1e4740543cf"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="d4c37f0f-dc4c-4266-9139-400073216222"
 			name="Verwalten_PLZ_Aufrufart_PLZ">
@@ -391,6 +417,14 @@
 			name="LOESCHEN_BLZ_NEU"
 			ref="d7252b29-d228-4d6b-a277-93a0d4a0b575"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="BLZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="db543b42-6442-4052-9c8e-5f7cf07f3c12"
+					variablename="BLZ_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d8c58d8f-31de-4a21-9200-32ee656efc23"
@@ -410,6 +444,12 @@
 			id="dde56ca2-28f4-4eaa-8c4b-9baf8dbe43ba"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="e0986478-a786-4f0b-9b57-7bd8c5a803cf"
+			name="CloseIBAN"
+			ref="d123e21e-c8e3-4134-b88e-12f7e90a1c62"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="eb07c9d1-18f0-4aad-a219-811ae859db7b"
 			name="Start_PLZ"
@@ -440,6 +480,32 @@
 			id="ed516115-917c-42f9-9f5a-c6487460f1cc"
 			name="setup">
 			</setup>
+			<testmodule
+			id="fbef2d11-344a-41a5-9ad8-d03c8f784882"
+			name="Start_IBAN"
+			ref="10359a7f-e0b5-483c-9465-264ece901f8a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="b2d442cc-2bf5-40c0-a6a7-e69f9b6ec8f8"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_BLZ"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="f38e74f3-8a4f-4b0a-aeaa-5b1c7108216f"
+					variablename="Programm_BLZ">
+					</var>
+					<var
+					dataname="Programm_IBAN"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="568571c6-6983-4466-b5c9-5470cb2aaf2e"
+					variablename="Programm_IBAN">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="fdfde233-de5a-4f61-a716-ae7ae85301f4"
 			name="Aendern_Einstellungen_PLZ_NEU"
@@ -552,7 +618,7 @@
 					</testcase>
 					<testcase
 					id="09f23af2-7bef-410f-a614-ba5035f92246"
-					name="Veralten_BLZ_Aufrufart_BLZ">
+					name="Verwalten_BLZ_Aufrufart_BLZ">
 						<setup
 						id="9d01c797-9fdb-4c5b-a32b-8a72bf91f46c"
 						name="setup">
@@ -577,6 +643,34 @@
 						id="d6ab9433-a33c-4ae6-b142-5c98a234fb3c"
 						name="LOESCHEN_BLZ_NEU">
 						</testmodule>
+						<teardown
+						id="5f56a158-ef0d-492e-80c5-8eed6c387549"
+						name="teardown">
+							<testmodule
+							id="d05b9531-a185-4e64-9cdb-59fd016b7fe0"
+							name="CloseBLZ">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="200ac785-1814-4ce0-8aee-8ef40bfc44da"
+					name="Verwalten_IBAN_Konventieren">
+						<setup
+						id="cd511801-6bec-4226-8aeb-e8efa6cdf08e"
+						name="setup">
+							<testmodule
+							id="fbef2d11-344a-41a5-9ad8-d03c8f784882"
+							name="Start_IBAN">
+							</testmodule>
+						</setup>
+						<teardown
+						id="ba953a2d-549e-4121-b41a-187b8a2019fd"
+						name="teardown">
+							<testmodule
+							id="e0986478-a786-4f0b-9b57-7bd8c5a803cf"
+							name="CloseIBAN">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -590,6 +684,9 @@
 		name="TestRun">
 			<testcontainer
 			id="09f23af2-7bef-410f-a614-ba5035f92246">
+			</testcontainer>
+			<testcontainer
+			id="200ac785-1814-4ce0-8aee-8ef40bfc44da">
 			</testcontainer>
 			<testcontainer
 			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b">

@@ -103,40 +103,43 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessNew' at Center.", repo.TblBankleitzahl.PbDataAccessNewInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.Maximieren' at Center.", repo.TblBankleitzahl.MaximierenInfo, new RecordItemIndex(0));
+            repo.TblBankleitzahl.Maximieren.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessNew' at Center.", repo.TblBankleitzahl.PbDataAccessNewInfo, new RecordItemIndex(1));
             repo.TblBankleitzahl.PbDataAccessNew.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'AT{Tab}' with focus on 'TblBankleitzahl.DfLandCd'.", repo.TblBankleitzahl.DfLandCdInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'AT{Tab}' with focus on 'TblBankleitzahl.DfLandCd'.", repo.TblBankleitzahl.DfLandCdInfo, new RecordItemIndex(2));
             repo.TblBankleitzahl.DfLandCd.PressKeys("AT{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessLoad' at Center.", repo.TblBankleitzahl.PbDataAccessLoadInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessLoad' at Center.", repo.TblBankleitzahl.PbDataAccessLoadInfo, new RecordItemIndex(3));
             repo.TblBankleitzahl.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1_Nein' at Center.", repo.DlgMessageBox.Button1_NeinInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1_Nein' at Center.", repo.DlgMessageBox.Button1_NeinInfo, new RecordItemIndex(6));
             repo.DlgMessageBox.Button1_Nein.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.Row0Column0' at Center.", repo.TblBankleitzahl.Row0Column0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.Row0Column0' at Center.", repo.TblBankleitzahl.Row0Column0Info, new RecordItemIndex(7));
             repo.TblBankleitzahl.Row0Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BLZ_NEU'.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BLZ_NEU'.", new RecordItemIndex(9));
             Keyboard.Press(BLZ_NEU);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BLZ_NEU_Bezeichnung'.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BLZ_NEU_Bezeichnung'.", new RecordItemIndex(11));
             Keyboard.Press(BLZ_NEU_Bezeichnung);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessSave' at Center.", repo.TblBankleitzahl.PbDataAccessSaveInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessSave' at Center.", repo.TblBankleitzahl.PbDataAccessSaveInfo, new RecordItemIndex(12));
             repo.TblBankleitzahl.PbDataAccessSave.Click();
             
         }

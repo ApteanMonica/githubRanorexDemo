@@ -53,6 +53,16 @@ namespace S_LAND_Schnelltest.Recordings
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable BLZ_NEU.
+        /// </summary>
+        [TestVariable("db543b42-6442-4052-9c8e-5f7cf07f3c12")]
+        public string BLZ_NEU
+        {
+            get { return repo.BLZ_NEU; }
+            set { repo.BLZ_NEU = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,36 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.ButtonUp' at Center.", repo.TblBankleitzahl.ButtonUpInfo, new RecordItemIndex(0));
+            repo.TblBankleitzahl.ButtonUp.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'End' Press.", new RecordItemIndex(1));
+            Keyboard.Press(System.Windows.Forms.Keys.End, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Middle Click item 'TblBankleitzahl.Row_mit_Variiable_BLZ_NEU' at Center.", repo.TblBankleitzahl.Row_mit_Variiable_BLZ_NEUInfo, new RecordItemIndex(2));
+            repo.TblBankleitzahl.Row_mit_Variiable_BLZ_NEU.Click(System.Windows.Forms.MouseButtons.Middle);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessSave' at Center.", repo.TblBankleitzahl.PbDataAccessSaveInfo, new RecordItemIndex(4));
+            repo.TblBankleitzahl.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBankleitzahl.PbDataAccessLoad' at Center.", repo.TblBankleitzahl.PbDataAccessLoadInfo, new RecordItemIndex(5));
+            repo.TblBankleitzahl.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(6));
+            repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden bereits 500 Daten gelesen.\r\nWollen Sie weitere Daten einlesen?");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button2_Alle' at Center.", repo.DlgMessageBox.Button2_AlleInfo, new RecordItemIndex(8));
+            repo.DlgMessageBox.Button2_Alle.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblBankleitzahl.Row_mit_Variiable_BLZ_NEU'.", repo.TblBankleitzahl.Row_mit_Variiable_BLZ_NEUInfo, new RecordItemIndex(9));
+            Validate.NotExists(repo.TblBankleitzahl.Row_mit_Variiable_BLZ_NEUInfo);
+            
         }
 
 #region Image Feature Data
