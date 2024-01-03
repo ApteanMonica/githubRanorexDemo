@@ -44,7 +44,7 @@ namespace E_INFO_002.Recordings
             Kunde = "200010";
             Artikel1 = "100012";
             Status_W = "W";
-            Rahmennummer = "RB2300001";
+            Rahmennummer = "RB2400001";
             Artikel2 = "100035";
             Status_B = "B";
         }
