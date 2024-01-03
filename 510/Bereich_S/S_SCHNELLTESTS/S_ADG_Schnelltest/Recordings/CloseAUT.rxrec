@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8e933bce-d596-428d-8f5a-a1b47e061cd3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ADG_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="425ffddf-c79f-4611-9d24-5c4d0e29c24e"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="0883275d-ec0d-4387-bb48-00f0e28d7a67">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="e1806ded-20c9-41f1-8d70-0f8383474fed"
+	name="S_ADG_SchnelltestRepository"
+	relativepath="..\S_ADG_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ADG_SchnelltestRepository"
+		namespace="S_ADG_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="42e92c67-d8b8-456d-a369-d2a2330c5a40"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
