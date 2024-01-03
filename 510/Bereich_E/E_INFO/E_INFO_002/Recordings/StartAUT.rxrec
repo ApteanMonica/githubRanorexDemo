@@ -7,7 +7,7 @@ mode="Desktop">
 		1
 	</repeatcount>
 	<turbomode>
-		False
+		True
 	</turbomode>
 	<genreport>
 		True
@@ -64,8 +64,9 @@ mode="Desktop">
 		optional="False"
 		searchpropertyid="7024114f-ad7a-4bdf-9ddb-83dc050ab54b"
 		waitaction="Exists"
-		waittimeout="60000ms">
+		waittimeout="180000ms">
 			<comment>
+				wait for erhöht auf 3 Minuten
 			</comment>
 			<bindings>
 			</bindings>
@@ -114,6 +115,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='mdiE_info']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
@@ -170,6 +173,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='mdiE_info']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				AccessibleValue

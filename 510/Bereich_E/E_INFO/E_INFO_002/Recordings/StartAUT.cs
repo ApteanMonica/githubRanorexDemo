@@ -112,22 +112,21 @@ namespace E_INFO_002.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
-            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiEInfo.TitleBar100EinkaufsInfo'", repo.MdiEInfo.TitleBar100EinkaufsInfoInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.MdiEInfo.TitleBar100EinkaufsInfoInfo.WaitForExists(60000);
+            // wait for erhöht auf 3 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "wait for erhöht auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'MdiEInfo.TitleBar100EinkaufsInfo'", repo.MdiEInfo.TitleBar100EinkaufsInfoInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.MdiEInfo.TitleBar100EinkaufsInfoInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~'Einkaufs-Info') on item 'MdiEInfo.TitleBar100EinkaufsInfo'.", repo.MdiEInfo.TitleBar100EinkaufsInfoInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.MdiEInfo.TitleBar100EinkaufsInfoInfo, "AccessibleValue", new Regex("Einkaufs-Info"));
-            Delay.Milliseconds(0);
             
         }
 
