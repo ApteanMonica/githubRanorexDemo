@@ -118,14 +118,14 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_BLZ in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_BLZ, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_IBAN in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_IBAN, "", false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bankleitzahl') on item 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'.", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, "Text", "Bankleitzahl");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Konvertieren der Bankverbindung') on item 'TblKonvertierung.TitleBar100KonvertierenDerBankverb'.", repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblKonvertierung.TitleBar100KonvertierenDerBankverbInfo, "Text", "Konvertieren der Bankverbindung");
             
         }
 
