@@ -137,8 +137,8 @@ namespace Z_UHR_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbRegistryAuswaerts' at Center.", repo.FrmUhr.PbRegistryAuswaertsInfo, new RecordItemIndex(6));
             repo.FrmUhr.PbRegistryAuswaerts.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3{Tab}'.", new RecordItemIndex(7));
-            Keyboard.Press("3{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3{Tab}' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.Zeittyp'.", repo.DlgAuswaerts.CGroupBoxAllgemein.ZeittypInfo, new RecordItemIndex(7));
+            repo.DlgAuswaerts.CGroupBoxAllgemein.Zeittyp.PressKeys("3{Tab}");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon'.", repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVonInfo, new RecordItemIndex(8));
             Keyboard.PrepareFocus(repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon);
