@@ -75,7 +75,7 @@ namespace S_ADG_Schnelltest
             set { _ADRSSART_ALT = value; }
         }
 
-        string _ADRESSART_ALT = "Betriebsstätten";
+        string _ADRESSART_ALT = "01";
 
         /// <summary>
         /// Gets or sets the value of variable ADRESSART_ALT.
@@ -731,7 +731,7 @@ namespace S_ADG_Schnelltest
             /// Creates a new Row_mit_Variable_Adressart_ALT  folder.
             /// </summary>
             public Row_mit_Variable_Adressart_ALTFolder(RepoGenBaseFolder parentFolder) :
-                    base("Row_mit_Variable_Adressart_ALT", "row[@accessiblerole~'Row' and @accessiblevalue~$ADRESSART_ALT]/?", parentFolder, 30000, null, false, "01bb60b4-666b-4fdd-b10e-ccce597fa9f6", "")
+                    base("Row_mit_Variable_Adressart_ALT", "row[@accessiblerole~'Row' and @accessiblevalue~$ADRESSART_ALT]", parentFolder, 30000, null, false, "01bb60b4-666b-4fdd-b10e-ccce597fa9f6", "")
             {
             }
 
@@ -739,11 +739,11 @@ namespace S_ADG_Schnelltest
             /// The Self item.
             /// </summary>
             [RepositoryItem("01bb60b4-666b-4fdd-b10e-ccce597fa9f6")]
-            public virtual Ranorex.Unknown Self
+            public virtual Ranorex.Row Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Unknown>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.Row>(true);
                 }
             }
 

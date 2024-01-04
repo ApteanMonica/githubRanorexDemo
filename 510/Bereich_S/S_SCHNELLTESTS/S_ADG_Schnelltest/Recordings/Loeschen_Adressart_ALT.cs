@@ -41,7 +41,7 @@ namespace S_ADG_Schnelltest.Recordings
         /// </summary>
         public Loeschen_Adressart_ALT()
         {
-            ADRESSART_ALT = "Betriebsstätten";
+            ADRESSART_ALT = "01";
         }
 
         /// <summary>
