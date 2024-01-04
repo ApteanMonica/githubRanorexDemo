@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="75e5c96b-4ee4-4306-8479-30115cc736dc"
+id="8e933bce-d596-428d-8f5a-a1b47e061cd3"
 mode="Desktop">
 	<repeatcount>
 		1
 	</repeatcount>
 	<turbomode>
-		False
+		True
 	</turbomode>
 	<genreport>
 		True
@@ -19,34 +19,32 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="StartAUT"
+	classname="Close_ADA"
 	namespace="S_ADG_Schnelltest.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="eae2fd7f-aa06-41d0-965a-9418f3de6dc6"
-		name="StartAutProcessIDVar">
-		</var>
 	</variables>
 	<recorditems>
-		<runapprecorditem
+		<closeapprecorditem
 		enabled="True"
-		maximized="False"
-		optional="False">
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="da569bff-09e3-4e24-b291-1da493b311c8">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="StartAutProcessIDVar">
-				</binding>
 			</bindings>
-			<filename>
-				C:\Program Files\Google\Chrome\Application\chrome.exe
-			</filename>
-			<args>
-			</args>
-		</runapprecorditem>
+			<info
+			id="5a1ceea9-00ff-43e4-9717-0ad9c9676fba"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblAda']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="e1806ded-20c9-41f1-8d70-0f8383474fed"
@@ -63,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartAUT.UserCode.cs
+		Close_ADA.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -24,46 +24,59 @@ namespace S_ADG_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Start_ADA recording.
     /// </summary>
     [TestModule("75e5c96b-4ee4-4306-8479-30115cc736dc", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    public partial class Start_ADA : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repo = global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Start_ADA instance = new Start_ADA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Start_ADA()
         {
-            StartAutProcessIDVar = "";
+            Programm_ADA = "S_ADG Aufrufart=ADA";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Start_ADA Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _StartAutProcessIDVar;
+        string _Programm_ADA;
 
         /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
+        /// Gets or sets the value of variable Programm_ADA.
         /// </summary>
-        [TestVariable("eae2fd7f-aa06-41d0-965a-9418f3de6dc6")]
-        public string StartAutProcessIDVar
+        [TestVariable("7421f7da-44b0-4639-b288-6cbc01559183")]
+        public string Programm_ADA
         {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
+            get { return _Programm_ADA; }
+            set { _Programm_ADA = value; }
+        }
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("d04de293-ec84-45cf-91e1-2137803d9519")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
         }
 
 #endregion
@@ -86,15 +99,20 @@ namespace S_ADG_Schnelltest.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "", "", false));
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_ADA in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_ADA, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAda.TitleBar100Adressarten'", repo.TblAda.TitleBar100AdressartenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblAda.TitleBar100AdressartenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Postleitzahl') on item 'TblAda.TitleBar100Adressarten'.", repo.TblAda.TitleBar100AdressartenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblAda.TitleBar100AdressartenInfo, "Text", "Postleitzahl");
             
         }
 

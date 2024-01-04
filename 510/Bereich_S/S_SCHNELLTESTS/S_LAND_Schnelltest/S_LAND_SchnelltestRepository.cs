@@ -1083,7 +1083,6 @@ namespace S_LAND_Schnelltest
         public partial class FlexGrid_TabelleFolder : RepoGenBaseFolder
         {
             RepoItemInfo _row0column0Info;
-            RepoItemInfo _colplzcdrow1Info;
             RepoItemInfo _colplzortrow1Info;
             RepoItemInfo _row1column0Info;
 
@@ -1094,7 +1093,6 @@ namespace S_LAND_Schnelltest
                     base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "f430c4f7-eca7-4abc-a4bc-533d957667b9", "")
             {
                 _row0column0Info = new RepoItemInfo(this, "Row0Column0", "row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']", "", 30000, null, "d5077fca-857c-4a7f-89a3-0ed2af7b1eaa");
-                _colplzcdrow1Info = new RepoItemInfo(this, "ColPlzCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPlz_cd Row 1']", "", 30000, null, "3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc");
                 _colplzortrow1Info = new RepoItemInfo(this, "ColPlzOrtRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPlz_ort Row 1']", "", 30000, null, "b2762d35-e40b-4006-ae9f-89085102ec02");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblerole='Row' and @accessiblevalue~$PLZ_NEU_ORT]/cell[@accessiblename~'Column 0']", "", 30000, null, "5d586fae-98a3-4833-ac39-899af42d0f30");
             }
@@ -1144,30 +1142,6 @@ namespace S_LAND_Schnelltest
                 get
                 {
                     return _row0column0Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColPlzCdRow1 item.
-            /// </summary>
-            [RepositoryItem("3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc")]
-            public virtual Ranorex.Cell ColPlzCdRow1
-            {
-                get
-                {
-                    return _colplzcdrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColPlzCdRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc")]
-            public virtual RepoItemInfo ColPlzCdRow1Info
-            {
-                get
-                {
-                    return _colplzcdrow1Info;
                 }
             }
 
@@ -1403,7 +1377,6 @@ namespace S_LAND_Schnelltest
             RepoItemInfo _dflandcdInfo;
             RepoItemInfo _pbdataaccessloadInfo;
             RepoItemInfo _row0column0Info;
-            RepoItemInfo _colblzcdrow502Info;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _row1column0Info;
             RepoItemInfo _row_mit_variiable_blz_neuInfo;
@@ -1422,7 +1395,6 @@ namespace S_LAND_Schnelltest
                 _dflandcdInfo = new RepoItemInfo(this, "DfLandCd", "container[@controlname='ToolBar']/text[@controlname='dfLand_cd']", "", 30000, null, "6228179d-9e65-429b-adeb-5716198ccf02");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "1afde164-6a10-4665-9aeb-00f0bf844ba7");
                 _row0column0Info = new RepoItemInfo(this, "Row0Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']", "", 30000, null, "b51b236a-a08e-4266-ad30-4acff9b6d71e");
-                _colblzcdrow502Info = new RepoItemInfo(this, "ColBlzCdRow502", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 502']/cell[@accessiblename='colBlz_cd Row 502']", "", 30000, null, "ad72f77f-c545-402c-9f39-0b6eadf69db5");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "8cee2676-aae6-4d4e-8fdd-f979b9030009");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "cee18cc5-aaf9-429b-b858-574c364b35fc");
                 _row_mit_variiable_blz_neuInfo = new RepoItemInfo(this, "Row_mit_Variiable_BLZ_NEU", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]", "", 30000, null, "4f83f3a0-63bc-4a23-bc3b-e8777eef1714");
@@ -1598,30 +1570,6 @@ namespace S_LAND_Schnelltest
             }
 
             /// <summary>
-            /// The ColBlzCdRow502 item.
-            /// </summary>
-            [RepositoryItem("ad72f77f-c545-402c-9f39-0b6eadf69db5")]
-            public virtual Ranorex.Cell ColBlzCdRow502
-            {
-                get
-                {
-                    return _colblzcdrow502Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBlzCdRow502 item info.
-            /// </summary>
-            [RepositoryItemInfo("ad72f77f-c545-402c-9f39-0b6eadf69db5")]
-            public virtual RepoItemInfo ColBlzCdRow502Info
-            {
-                get
-                {
-                    return _colblzcdrow502Info;
-                }
-            }
-
-            /// <summary>
             /// The PbDataAccessSave item.
             /// </summary>
             [RepositoryItem("8cee2676-aae6-4d4e-8fdd-f979b9030009")]
@@ -1733,8 +1681,6 @@ namespace S_LAND_Schnelltest
         [RepositoryFolder("79e8e2b8-bd62-4f62-b76a-2c0c0f00cdc7")]
         public partial class ColBlzCdRow882_Zeile_mit__Variable_BLZ_neuFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _colblzcd_blzInfo;
-            RepoItemInfo _colblznameInfo;
             RepoItemInfo _colblzortInfo;
             RepoItemInfo _colblzswiftInfo;
 
@@ -1744,8 +1690,6 @@ namespace S_LAND_Schnelltest
             public ColBlzCdRow882_Zeile_mit__Variable_BLZ_neuFolder(RepoGenBaseFolder parentFolder) :
                     base("ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]", parentFolder, 30000, null, false, "79e8e2b8-bd62-4f62-b76a-2c0c0f00cdc7", "")
             {
-                _colblzcd_blzInfo = new RepoItemInfo(this, "ColBlzCd_BLZ", "cell[@accessiblename~'colBlz_cd']", "", 30000, null, "993ba02d-245b-44dc-8e95-c6adbbeb91fd");
-                _colblznameInfo = new RepoItemInfo(this, "ColBlzName", "cell[@accessiblename~'colBlz_name']", "", 30000, null, "548606b8-ef6c-407e-a977-6155e64b1314");
                 _colblzortInfo = new RepoItemInfo(this, "ColBlzOrt", "cell[@accessiblename~'colBlz_ort']", "", 30000, null, "31af674b-69b4-431f-9cf2-031be8685a35");
                 _colblzswiftInfo = new RepoItemInfo(this, "ColBlzSwift", "cell[@accessiblename~'colBlz_swift']", "", 30000, null, "c2b3ab28-2282-45a0-8b9f-0dcb31f9a668");
             }
@@ -1771,54 +1715,6 @@ namespace S_LAND_Schnelltest
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColBlzCd_BLZ item.
-            /// </summary>
-            [RepositoryItem("993ba02d-245b-44dc-8e95-c6adbbeb91fd")]
-            public virtual Ranorex.Cell ColBlzCd_BLZ
-            {
-                get
-                {
-                    return _colblzcd_blzInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBlzCd_BLZ item info.
-            /// </summary>
-            [RepositoryItemInfo("993ba02d-245b-44dc-8e95-c6adbbeb91fd")]
-            public virtual RepoItemInfo ColBlzCd_BLZInfo
-            {
-                get
-                {
-                    return _colblzcd_blzInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColBlzName item.
-            /// </summary>
-            [RepositoryItem("548606b8-ef6c-407e-a977-6155e64b1314")]
-            public virtual Ranorex.Cell ColBlzName
-            {
-                get
-                {
-                    return _colblznameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBlzName item info.
-            /// </summary>
-            [RepositoryItemInfo("548606b8-ef6c-407e-a977-6155e64b1314")]
-            public virtual RepoItemInfo ColBlzNameInfo
-            {
-                get
-                {
-                    return _colblznameInfo;
                 }
             }
 

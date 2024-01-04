@@ -24,46 +24,44 @@ namespace S_ADG_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Loeschen_Adressart_ALT recording.
     /// </summary>
-    [TestModule("8e933bce-d596-428d-8f5a-a1b47e061cd3", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("70f28132-1625-431b-a772-09e790cd5511", ModuleType.Recording, 1)]
+    public partial class Loeschen_Adressart_ALT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repo = global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Loeschen_Adressart_ALT instance = new Loeschen_Adressart_ALT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Loeschen_Adressart_ALT()
         {
-            CloseAutProcessIDVar = "-1";
+            ADRESSART_ALT = "Betriebsstätten";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Loeschen_Adressart_ALT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _CloseAutProcessIDVar;
-
         /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
+        /// Gets or sets the value of variable ADRESSART_ALT.
         /// </summary>
-        [TestVariable("425ffddf-c79f-4611-9d24-5c4d0e29c24e")]
-        public string CloseAutProcessIDVar
+        [TestVariable("6bf4fe29-b0b9-4b5a-88ed-a164d49566a5")]
+        public string ADRESSART_ALT
         {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
+            get { return repo.ADRESSART_ALT; }
+            set { repo.ADRESSART_ALT = value; }
         }
 
 #endregion
@@ -86,15 +84,29 @@ namespace S_ADG_Schnelltest.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
-            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT' at Center.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.SelfInfo, new RecordItemIndex(0));
+            repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.Self.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(1));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessSave' at Center.", repo.TblAda.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
+            repo.TblAda.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAda.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(3));
+            repo.TblAda.RibbonBar.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAda.FlexGrid.Row1Column0'", repo.TblAda.FlexGrid.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.TblAda.FlexGrid.Row1Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.SelfInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.SelfInfo);
             
         }
 

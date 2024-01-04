@@ -84,26 +84,74 @@
     <Compile Include="Program.cs">
       <id>6e9c5720-c403-41d0-ae00-82df96410fac</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Aendern_Adressart_Neu.cs">
+      <BoundTo>c8989fec-a3e5-42eb-b8b7-403cee2d1894</BoundTo>
+      <DependentUpon>Aendern_Adressart_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4140711b-842a-48e6-aa54-36d7fc373cba</id>
+    </Compile>
+    <Compile Include="Recordings\Aendern_Adressart_Neu.UserCode.cs">
+      <BoundTo>c8989fec-a3e5-42eb-b8b7-403cee2d1894</BoundTo>
+      <DependentUpon>Aendern_Adressart_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a5a62bcd-8a82-4e6a-8c1e-559ce8d8c47d</id>
+    </Compile>
+    <Compile Include="Recordings\Close_ADA.cs">
+      <DependentUpon>Close_ADA.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>62494b8d-9be3-443a-8ab8-fd16d4b8de91</id>
       <BoundTo>8590b921-650a-4cac-80dd-8d46f68d5800</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Close_ADA.UserCode.cs">
+      <DependentUpon>Close_ADA.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2db28571-4450-4492-a759-eb455bf819a6</id>
       <BoundTo>8590b921-650a-4cac-80dd-8d46f68d5800</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Loeschen_Adressart_ALT.cs">
+      <BoundTo>8c0af15a-cd39-4197-8801-bdfe567cb906</BoundTo>
+      <DependentUpon>Loeschen_Adressart_ALT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>31c49390-30b0-4c02-926c-5550720f42f3</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Adressart_ALT.UserCode.cs">
+      <BoundTo>8c0af15a-cd39-4197-8801-bdfe567cb906</BoundTo>
+      <DependentUpon>Loeschen_Adressart_ALT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83659b29-562b-4c72-a657-6e38d5c06e79</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Adressart_Neu.cs">
+      <BoundTo>1e4994c1-0b70-44ae-ac63-216b2f7c4320</BoundTo>
+      <DependentUpon>Loeschen_Adressart_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e7175359-5f60-47f4-a42e-7a15e71289eb</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Adressart_Neu.UserCode.cs">
+      <BoundTo>1e4994c1-0b70-44ae-ac63-216b2f7c4320</BoundTo>
+      <DependentUpon>Loeschen_Adressart_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86defe1f-7097-46a8-b05d-d2cc35401cd6</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_Adressart.cs">
+      <BoundTo>2613a169-e2f7-4fc6-9166-574e800f569e</BoundTo>
+      <DependentUpon>Neuanlage_Adressart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5bd74b1-0a27-42ad-84f0-92504f464b8f</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_Adressart.UserCode.cs">
+      <BoundTo>2613a169-e2f7-4fc6-9166-574e800f569e</BoundTo>
+      <DependentUpon>Neuanlage_Adressart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23b83c7a-0ac1-4ede-997d-b5716c7ce6a4</id>
+    </Compile>
+    <Compile Include="Recordings\Start_ADA.cs">
+      <DependentUpon>Start_ADA.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>37288d2d-16b6-4740-82ac-51a863f0460f</id>
       <BoundTo>fc12843f-0d76-4e39-b63b-4374594f7ea0</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Start_ADA.UserCode.cs">
+      <DependentUpon>Start_ADA.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8b8a22ca-10fe-4ddf-b2e0-f7e440910cbb</id>
       <BoundTo>fc12843f-0d76-4e39-b63b-4374594f7ea0</BoundTo>
@@ -119,12 +167,32 @@
     <None Include="app.config">
       <id>b8a14e03-7cea-4d7d-a15a-bb1d0e250ea8</id>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
+    <None Include="Recordings\Aendern_Adressart_Neu.rxrec">
+      <BoundTo>b498cc93-a726-4bb9-ada0-797790341544</BoundTo>
+      <id>c8989fec-a3e5-42eb-b8b7-403cee2d1894</id>
+      <recordtableid>a2ce9173-fc76-4760-9a80-8f37843ae386</recordtableid>
+    </None>
+    <None Include="Recordings\Close_ADA.rxrec">
       <BoundTo>b498cc93-a726-4bb9-ada0-797790341544</BoundTo>
       <id>8590b921-650a-4cac-80dd-8d46f68d5800</id>
       <recordtableid>8e933bce-d596-428d-8f5a-a1b47e061cd3</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT.rxrec">
+    <None Include="Recordings\Loeschen_Adressart_ALT.rxrec">
+      <BoundTo>b498cc93-a726-4bb9-ada0-797790341544</BoundTo>
+      <id>8c0af15a-cd39-4197-8801-bdfe567cb906</id>
+      <recordtableid>70f28132-1625-431b-a772-09e790cd5511</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_Adressart_Neu.rxrec">
+      <BoundTo>b498cc93-a726-4bb9-ada0-797790341544</BoundTo>
+      <id>1e4994c1-0b70-44ae-ac63-216b2f7c4320</id>
+      <recordtableid>eb6ce8ea-6b4f-4a73-87c6-0eedae3943a7</recordtableid>
+    </None>
+    <None Include="Recordings\Neuanlage_Adressart.rxrec">
+      <BoundTo>b498cc93-a726-4bb9-ada0-797790341544</BoundTo>
+      <id>2613a169-e2f7-4fc6-9166-574e800f569e</id>
+      <recordtableid>b87e12ed-7685-470c-aa67-6ee6ade8f8db</recordtableid>
+    </None>
+    <None Include="Recordings\Start_ADA.rxrec">
       <BoundTo>b498cc93-a726-4bb9-ada0-797790341544</BoundTo>
       <id>fc12843f-0d76-4e39-b63b-4374594f7ea0</id>
       <recordtableid>75e5c96b-4ee4-4306-8479-30115cc736dc</recordtableid>

@@ -3,10 +3,24 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="0a65ea84-d021-4a7b-a487-7074d4ac622e"
-			name="Recording1"
-			ref="d1062d30-b36b-41ef-9f45-cabc18762039"
+			id="04034bf8-8f7a-4e93-b7d4-8d3edd1c1725"
+			name="Neuanlage_Adressart"
+			ref="b87e12ed-7685-470c-aa67-6ee6ade8f8db"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ADRSSART_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="6c59f2d1-3743-4a73-899b-ac0bfa5a3699"
+					variablename="ADRSSART_NEU">
+					</var>
+					<var
+					dataname="ADRESSART_NEU_BEZEICHNUNG"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="33d1c1ba-fee5-41be-9065-b41a93524bc7"
+					variablename="ADRESSART_NEU_BEZEICHNUNG">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="1206ff21-42f2-4623-9c5e-702cddad27da"
@@ -14,7 +28,7 @@
 			</teardown>
 			<testcase
 			id="28edab52-2a1a-4eb6-8c77-d66357840a13"
-			name="TestCase">
+			name="Verwalten_Adressarten_Aufrufart_ADA">
 			</testcase>
 			<setup
 			id="2de8fd60-7740-46c6-9a77-b072cf58d3bb"
@@ -26,8 +40,8 @@
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="AppProcessID"
-					value="">
+					name="Startfile"
+					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
 					name="Programm_ADA"
@@ -43,43 +57,94 @@
 					</param>
 					<param
 					name="Programm ADGZ"
-					value="S_ADG Aufrufart=Adress-Zuordnung">
+					value="S_ADG Aufrufart=ADGZ">
 					</param>
 					<param
 					name="Programm ADGZUORD"
 					value="S_ADG Aufrufart=ADGZUORD">
 					</param>
 					<param
-					name="NewParameter"
-					value="">
+					name="ADRSSART_NEU"
+					value="51">
+					</param>
+					<param
+					name="ADRESSART_NEU_BEZEICHNUNG"
+					value="TEST_ADRESSART_BAR">
+					</param>
+					<param
+					name="ADRESSART_ALT"
+					value="Betriebsstätten">
 					</param>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="3c84104d-8d86-4989-9ad7-bbf5f9b25d14"
+			name="Aendern_Adressart_Neu"
+			ref="a2ce9173-fc76-4760-9a80-8f37843ae386"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ADRSSART_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="37368c07-b567-4cbf-8a6c-ef4c8c594015"
+					variablename="ADRSSART_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3e04325c-4055-42b3-bc03-e2c3565c6a9a"
-			name="StartAUT"
+			name="Start_ADA"
 			ref="75e5c96b-4ee4-4306-8479-30115cc736dc"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="AppProcessID"
+					dataname="Programm_ADA"
 					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
-					variableid="eae2fd7f-aa06-41d0-965a-9418f3de6dc6"
-					variablename="StartAutProcessIDVar">
+					variableid="7421f7da-44b0-4639-b288-6cbc01559183"
+					variablename="Programm_ADA">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="d04de293-ec84-45cf-91e1-2137803d9519"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="4b6609f9-bbb9-4296-8340-6a09f9d06f4c"
-			name="CloseAUT"
+			name="Close_ADA"
 			ref="8e933bce-d596-428d-8f5a-a1b47e061cd3"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5d17649d-08af-4cd7-a776-68ec166c868a"
+			name="Loeschen_Adressart_ALT"
+			ref="70f28132-1625-431b-a772-09e790cd5511"
+			type="Recording">
+				<description>
+					<![CDATA[Achtung beim Löschen einer vorhanden Adressart kommt es zu keiner Meldung, Datensatz wird nicht gelöscht. evtl Ticket anlagen nach Rücksprache mit VRI!]]>
+				</description>
+				<databinding>
+					<var
+					dataname="ADRESSART_ALT"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="6bf4fe29-b0b9-4b5a-88ed-a164d49566a5"
+					variablename="ADRESSART_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7d358b7c-f05c-4afb-a42d-7d5acd976c37"
+			name="Loeschen_Adressart_Neu"
+			ref="eb6ce8ea-6b4f-4a73-87c6-0eedae3943a7"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="AppProcessID"
+					dataname="ADRSSART_NEU"
 					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
-					variableid="425ffddf-c79f-4611-9d24-5c4d0e29c24e"
-					variablename="CloseAutProcessIDVar">
+					variableid="37368c07-b567-4cbf-8a6c-ef4c8c594015"
+					variablename="ADRSSART_NEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -117,25 +182,37 @@
 				name="S_ADG_Schnelltest">
 					<testcase
 					id="28edab52-2a1a-4eb6-8c77-d66357840a13"
-					name="TestCase">
+					name="Verwalten_Adressarten_Aufrufart_ADA">
 						<setup
 						id="2de8fd60-7740-46c6-9a77-b072cf58d3bb"
 						name="setup">
 							<testmodule
 							id="3e04325c-4055-42b3-bc03-e2c3565c6a9a"
-							name="StartAUT">
+							name="Start_ADA">
 							</testmodule>
 						</setup>
 						<testmodule
-						id="0a65ea84-d021-4a7b-a487-7074d4ac622e"
-						name="Recording1">
+						id="04034bf8-8f7a-4e93-b7d4-8d3edd1c1725"
+						name="Neuanlage_Adressart">
+						</testmodule>
+						<testmodule
+						id="3c84104d-8d86-4989-9ad7-bbf5f9b25d14"
+						name="Aendern_Adressart_Neu">
+						</testmodule>
+						<testmodule
+						id="7d358b7c-f05c-4afb-a42d-7d5acd976c37"
+						name="Loeschen_Adressart_Neu">
+						</testmodule>
+						<testmodule
+						id="5d17649d-08af-4cd7-a776-68ec166c868a"
+						name="Loeschen_Adressart_ALT">
 						</testmodule>
 						<teardown
 						id="1206ff21-42f2-4623-9c5e-702cddad27da"
 						name="teardown">
 							<testmodule
 							id="4b6609f9-bbb9-4296-8340-6a09f9d06f4c"
-							name="CloseAUT">
+							name="Close_ADA">
 							</testmodule>
 						</teardown>
 					</testcase>
