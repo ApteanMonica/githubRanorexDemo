@@ -136,6 +136,7 @@ namespace S_ADG_Schnelltest
             S_ADG_SchnelltestRepositoryFolders.FlexGridFolder _flexgrid;
             RepoItemInfo _titlebar100adressartenInfo;
             RepoItemInfo _maximierenInfo;
+            RepoItemInfo _maximieren1Info;
 
             /// <summary>
             /// Creates a new TblAda  folder.
@@ -147,6 +148,7 @@ namespace S_ADG_Schnelltest
                 _flexgrid = new S_ADG_SchnelltestRepositoryFolders.FlexGridFolder(this);
                 _titlebar100adressartenInfo = new RepoItemInfo(this, "TitleBar100Adressarten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "5a1ceea9-00ff-43e4-9717-0ad9c9676fba");
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "container[@controlname='RibbonBar']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "57ed01cd-c2ca-46bb-ae26-dcfb4ae60be0");
+                _maximieren1Info = new RepoItemInfo(this, "Maximieren1", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "dacbeba7-c06b-4cfd-a6d6-644f6d36df38");
             }
 
             /// <summary>
@@ -218,6 +220,30 @@ namespace S_ADG_Schnelltest
                 get
                 {
                     return _maximierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren1 item.
+            /// </summary>
+            [RepositoryItem("dacbeba7-c06b-4cfd-a6d6-644f6d36df38")]
+            public virtual Ranorex.Button Maximieren1
+            {
+                get
+                {
+                    return _maximieren1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren1 item info.
+            /// </summary>
+            [RepositoryItemInfo("dacbeba7-c06b-4cfd-a6d6-644f6d36df38")]
+            public virtual RepoItemInfo Maximieren1Info
+            {
+                get
+                {
+                    return _maximieren1Info;
                 }
             }
 
@@ -368,6 +394,8 @@ namespace S_ADG_Schnelltest
             S_ADG_SchnelltestRepositoryFolders.Row_mit_Variable_Adressart_ALTFolder _row_mit_variable_adressart_alt;
             RepoItemInfo _row0column0Info;
             RepoItemInfo _row1column0Info;
+            RepoItemInfo _row9column0Info;
+            RepoItemInfo _row8column0Info;
 
             /// <summary>
             /// Creates a new FlexGrid  folder.
@@ -379,6 +407,8 @@ namespace S_ADG_Schnelltest
                 _row_mit_variable_adressart_alt = new S_ADG_SchnelltestRepositoryFolders.Row_mit_Variable_Adressart_ALTFolder(this);
                 _row0column0Info = new RepoItemInfo(this, "Row0Column0", "row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']", "", 30000, null, "b4c65f2e-7f02-440f-9199-2c675ed007da");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "c3a5a175-e362-4c51-ba13-04b681de2d3c");
+                _row9column0Info = new RepoItemInfo(this, "Row9Column0", "row[@accessiblename='Row 9']/cell[@accessiblename='Row 9 Column 0']", "", 30000, null, "f7ef44ea-0a5a-46f7-8a1d-d9b9e1946d92");
+                _row8column0Info = new RepoItemInfo(this, "Row8Column0", "row[@accessiblename='Row 8']/cell[@accessiblename='Row 8 Column 0']", "", 30000, null, "aa7a37ca-c3f5-4456-bec0-690d0be87fe4");
             }
 
             /// <summary>
@@ -450,6 +480,54 @@ namespace S_ADG_Schnelltest
                 get
                 {
                     return _row1column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row9Column0 item.
+            /// </summary>
+            [RepositoryItem("f7ef44ea-0a5a-46f7-8a1d-d9b9e1946d92")]
+            public virtual Ranorex.Cell Row9Column0
+            {
+                get
+                {
+                    return _row9column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row9Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("f7ef44ea-0a5a-46f7-8a1d-d9b9e1946d92")]
+            public virtual RepoItemInfo Row9Column0Info
+            {
+                get
+                {
+                    return _row9column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row8Column0 item.
+            /// </summary>
+            [RepositoryItem("aa7a37ca-c3f5-4456-bec0-690d0be87fe4")]
+            public virtual Ranorex.Cell Row8Column0
+            {
+                get
+                {
+                    return _row8column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row8Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("aa7a37ca-c3f5-4456-bec0-690d0be87fe4")]
+            public virtual RepoItemInfo Row8Column0Info
+            {
+                get
+                {
+                    return _row8column0Info;
                 }
             }
 
@@ -689,6 +767,7 @@ namespace S_ADG_Schnelltest
         public partial class SADGAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _zeileeinfuegenInfo;
+            RepoItemInfo _loeschenInfo;
 
             /// <summary>
             /// Creates a new SADG  folder.
@@ -697,6 +776,7 @@ namespace S_ADG_Schnelltest
                     base("SADG", "/contextmenu[@processname='S_ADG']", parentFolder, 30000, null, true, "4ad3d3a9-e3f7-4dfd-b080-52ee5c7e8ff4", "")
             {
                 _zeileeinfuegenInfo = new RepoItemInfo(this, "ZeileEinfuegen", "menuitem[@name='Zeile einfügen']", "", 30000, null, "088e3715-ff52-45ff-a4fb-ec5a36b13d8a");
+                _loeschenInfo = new RepoItemInfo(this, "Loeschen", "menuitem[@name='Löschen']", "", 30000, null, "0b62638f-fdb8-477c-8277-bdf9857e27d4");
             }
 
             /// <summary>
@@ -744,6 +824,30 @@ namespace S_ADG_Schnelltest
                 get
                 {
                     return _zeileeinfuegenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Loeschen item.
+            /// </summary>
+            [RepositoryItem("0b62638f-fdb8-477c-8277-bdf9857e27d4")]
+            public virtual Ranorex.MenuItem Loeschen
+            {
+                get
+                {
+                    return _loeschenInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Loeschen item info.
+            /// </summary>
+            [RepositoryItemInfo("0b62638f-fdb8-477c-8277-bdf9857e27d4")]
+            public virtual RepoItemInfo LoeschenInfo
+            {
+                get
+                {
+                    return _loeschenInfo;
                 }
             }
         }

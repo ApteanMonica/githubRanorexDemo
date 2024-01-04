@@ -89,11 +89,13 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU' at Center.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.SelfInfo, new RecordItemIndex(0));
-            repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.Self.Click();
+            // Achtung Mausklick absichtlich nicht auf "Center" eingestgellt beim Action Spot, da sonst das Löschen bzw. Markieren der Zeile nicht funktioniert!
+            Report.Log(ReportLevel.Info, "Mouse", "Achtung Mausklick absichtlich nicht auf \"Center\" eingestgellt beim Action Spot, da sonst das Löschen bzw. Markieren der Zeile nicht funktioniert!\r\nMouse Left Click item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU' at 7;8.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.SelfInfo, new RecordItemIndex(0));
+            repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.Self.Click("7;8");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblAda'.", repo.TblAda.SelfInfo, new RecordItemIndex(1));
+            repo.TblAda.Self.EnsureVisible();
+            Keyboard.Press("{Delete}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessSave' at Center.", repo.TblAda.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
             repo.TblAda.RibbonBar.PbDataAccessSave.Click();
@@ -101,7 +103,10 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAda.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(3));
             repo.TblAda.RibbonBar.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.SelfInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAda.FlexGrid.Row1Column0'", repo.TblAda.FlexGrid.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.TblAda.FlexGrid.Row1Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.SelfInfo, new RecordItemIndex(5));
             Validate.NotExists(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.SelfInfo);
             
         }

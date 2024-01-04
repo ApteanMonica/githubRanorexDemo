@@ -103,40 +103,37 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.Maximieren' at Center.", repo.TblAda.MaximierenInfo, new RecordItemIndex(0));
-            repo.TblAda.Maximieren.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblAda.FlexGrid.Row0Column0' at Center.", repo.TblAda.FlexGrid.Row0Column0Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblAda.FlexGrid.Row0Column0' at Center.", repo.TblAda.FlexGrid.Row0Column0Info, new RecordItemIndex(0));
             repo.TblAda.FlexGrid.Row0Column0.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SADG.ZeileEinfuegen' at Center.", repo.SADG.ZeileEinfuegenInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SADG.ZeileEinfuegen' at Center.", repo.SADG.ZeileEinfuegenInfo, new RecordItemIndex(1));
             repo.SADG.ZeileEinfuegen.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ADRSSART_NEU'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ADRSSART_NEU'.", new RecordItemIndex(2));
             Keyboard.Press(ADRSSART_NEU);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key from variable $ADRESSART_NEU_BEZEICHNUNG Press.", new RecordItemIndex(5));
-            Keyboard.Press(Keyboard.ToKey(ADRESSART_NEU_BEZEICHNUNG), Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ADRESSART_NEU_BEZEICHNUNG'.", new RecordItemIndex(4));
+            Keyboard.Press(ADRESSART_NEU_BEZEICHNUNG);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessSave' at Center.", repo.TblAda.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessSave' at Center.", repo.TblAda.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(6));
             repo.TblAda.RibbonBar.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAda.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAda.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(7));
             repo.TblAda.RibbonBar.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'TblAda.FlexGrid.Row1Column0'", repo.TblAda.FlexGrid.Row1Column0Info, new ActionTimeout(5000), new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'TblAda.FlexGrid.Row1Column0'", repo.TblAda.FlexGrid.Row1Column0Info, new ActionTimeout(5000), new RecordItemIndex(8));
             repo.TblAda.FlexGrid.Row1Column0Info.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ADRSSART_NEU) on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaCd'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaCdInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ADRSSART_NEU) on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaCd'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaCdInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaCdInfo, "Text", ADRSSART_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ADRESSART_NEU_BEZEICHNUNG) on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaBez'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaBezInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ADRESSART_NEU_BEZEICHNUNG) on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaBez'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaBezInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaBezInfo, "Text", ADRESSART_NEU_BEZEICHNUNG);
             
         }

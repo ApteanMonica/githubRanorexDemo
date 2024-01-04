@@ -18,6 +18,7 @@ name="S_ADG_SchnelltestRepository">
 		id="5d1482a4-99fb-4959-a474-98b4ad5fb50e"
 		isrooted="True"
 		name="TblAda"
+		refimgid="b5ccf3b8-6338-4583-b6eb-67547eccec94"
 		refpath="/form[@controlname='tblAda']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -122,7 +123,7 @@ name="S_ADG_SchnelltestRepository">
 				id="222430a7-4741-4afe-8e09-7e9c91d9d1e5"
 				isrooted="True"
 				name="Row_mit_Variable_Adressart_NEU"
-				refimgid="e093bbb9-a80b-4c29-ba86-eea54d448805"
+				refimgid="5e4fb7ff-2166-430f-8f05-b45cb9146656"
 				searchtimeout="30000ms"
 				usecache="False">
 					<item
@@ -191,10 +192,43 @@ name="S_ADG_SchnelltestRepository">
 						/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$ADRESSART_ALT]/?
 					</basepath>
 				</folder>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="f7ef44ea-0a5a-46f7-8a1d-d9b9e1946d92"
+				name="Row9Column0"
+				refimgid="b691c8f9-a3d2-4a43-9bfc-731ec92b8538"
+				refpath="/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 9']/cell[@accessiblename='Row 9 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 9']/cell[@accessiblename='Row 9 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="aa7a37ca-c3f5-4456-bec0-690d0be87fe4"
+				name="Row8Column0"
+				refimgid="ab6e427d-0238-4b98-a1ec-1a5fc3e27fea"
+				refpath="/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 8']/cell[@accessiblename='Row 8 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 8']/cell[@accessiblename='Row 8 Column 0']
+				</item>
 				<basepath>
 					/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="dacbeba7-c06b-4cfd-a6d6-644f6d36df38"
+			name="Maximieren1"
+			refimgid="f416800e-4312-4a7b-b163-fcd93b7d04be"
+			refpath="/form[@controlname='tblAda']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblAda']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']
+			</item>
 			<basepath>
 				/form[@controlname='tblAda']
 			</basepath>
@@ -231,6 +265,17 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/contextmenu[@processname='S_ADG']/menuitem[@name='Zeile einfügen']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="0b62638f-fdb8-477c-8277-bdf9857e27d4"
+			name="Loeschen"
+			refimgid="c1fb208a-97e4-4ced-b39d-329be01a3327"
+			refpath="/contextmenu[@processname='S_ADG']/menuitem[@name='Löschen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='S_ADG']/menuitem[@name='Löschen']
 			</item>
 			<basepath>
 				/contextmenu[@processname='S_ADG']

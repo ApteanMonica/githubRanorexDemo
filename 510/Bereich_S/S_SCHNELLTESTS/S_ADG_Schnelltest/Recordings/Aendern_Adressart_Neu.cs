@@ -119,8 +119,8 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaKzanzeige'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaKzanzeigeInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdaKzanzeigeInfo, "AccessibleValue", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourValue') on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdrKl'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdrKlInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdrKlInfo, "Text", "yourValue");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='L') on item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdrKl'.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdrKlInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_NEU.ColAdrKlInfo, "Text", "L");
             
         }
 

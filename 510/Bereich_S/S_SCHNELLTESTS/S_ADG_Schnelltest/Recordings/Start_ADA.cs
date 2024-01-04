@@ -111,8 +111,8 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAda.TitleBar100Adressarten'", repo.TblAda.TitleBar100AdressartenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.TblAda.TitleBar100AdressartenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Postleitzahl') on item 'TblAda.TitleBar100Adressarten'.", repo.TblAda.TitleBar100AdressartenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblAda.TitleBar100AdressartenInfo, "Text", "Postleitzahl");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Adressarten') on item 'TblAda.TitleBar100Adressarten'.", repo.TblAda.TitleBar100AdressartenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblAda.TitleBar100AdressartenInfo, "Text", "Adressarten");
             
         }
 

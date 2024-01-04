@@ -90,11 +90,13 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT' at Center.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.SelfInfo, new RecordItemIndex(0));
-            repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.Self.Click();
+            // Achtung Mausklick absichtlich nicht auf "Center" eingestgellt, da der Cursor sonst in die 2. Spalte der Zeile rein hüpft und die Zeile nicht markiert bzw. gelöscht werden kann!
+            Report.Log(ReportLevel.Info, "Mouse", "Achtung Mausklick absichtlich nicht auf \"Center\" eingestgellt, da der Cursor sonst in die 2. Spalte der Zeile rein hüpft und die Zeile nicht markiert bzw. gelöscht werden kann!\r\nMouse Left Click item 'TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT' at 9;12.", repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.SelfInfo, new RecordItemIndex(0));
+            repo.TblAda.FlexGrid.Row_mit_Variable_Adressart_ALT.Self.Click("9;12");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblAda'.", repo.TblAda.SelfInfo, new RecordItemIndex(1));
+            repo.TblAda.Self.EnsureVisible();
+            Keyboard.Press("{Delete}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAda.RibbonBar.PbDataAccessSave' at Center.", repo.TblAda.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
             repo.TblAda.RibbonBar.PbDataAccessSave.Click();
