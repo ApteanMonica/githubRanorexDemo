@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5d68b398-2ba8-42e8-9399-628a646a2abd"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_ADGA"
+	namespace="S_ADG_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="88d32f42-c72e-4905-b701-3f12ab9039af">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b075abd2-e31d-4360-bea9-05d1b75301a5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblAdga']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="e1806ded-20c9-41f1-8d70-0f8383474fed"
+	name="S_ADG_SchnelltestRepository"
+	relativepath="..\S_ADG_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ADG_SchnelltestRepository"
+		namespace="S_ADG_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="42e92c67-d8b8-456d-a369-d2a2330c5a40"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_ADGA.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

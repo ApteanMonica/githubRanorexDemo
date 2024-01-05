@@ -22,10 +22,56 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="050e1ee3-53ab-400b-9e84-9635a72f6e9c"
+			name="Close_ADGA"
+			ref="5d68b398-2ba8-42e8-9399-628a646a2abd"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="1206ff21-42f2-4623-9c5e-702cddad27da"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="17ad6860-cbfe-463a-a103-64e1eb29f397"
+			name="Neuanlage_Gruppenart"
+			ref="605f625f-44b3-4e33-b6cf-7f81a0e26afc"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_BEZEICHNUNG"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="e569498c-bc92-4df0-b3cf-4166ac638f0f"
+					variablename="GRUPPENART_BEZEICHNUNG">
+					</var>
+					<var
+					dataname="GRUPPENART_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="9737d9a9-a659-4dfc-82c8-12d64dc09970"
+					variablename="GRUPPENART_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1e3e3c77-9e94-4639-9d81-073c2c53c2ff"
+			name="Start_ADGA"
+			ref="560c3669-2915-47cc-b1a7-5a5d033880e9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="46ea092e-27f8-48fe-8aa3-ee884e990f91"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_ADGA"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="bb4ba745-7594-41dc-8653-c077c8c4242d"
+					variablename="Programm_ADGA">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="28edab52-2a1a-4eb6-8c77-d66357840a13"
 			name="Verwalten_Adressarten_Aufrufart_ADA">
@@ -75,6 +121,14 @@
 					name="ADRESSART_ALT"
 					value="01">
 					</param>
+					<param
+					name="GRUPPENART_NEU"
+					value="XX">
+					</param>
+					<param
+					name="GRUPPENART_BEZEICHNUNG"
+					value="Testgruppe BAR">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -111,6 +165,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="3f7f1433-8f5a-4f8c-8a4c-ab5cd14c0ef7"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="4b6609f9-bbb9-4296-8340-6a09f9d06f4c"
 			name="Close_ADA"
@@ -135,6 +193,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7c0f0260-6c9d-494e-9f82-9acc1925a291"
+			name="Loeschen_Adresse_Neu"
+			ref="c102cd30-7772-445a-8975-7ed2f40d5c01"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="79087cc8-7954-4dce-b3e2-9af4a2d16ce5"
+					variablename="GRUPPENART_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="7d358b7c-f05c-4afb-a42d-7d5acd976c37"
 			name="Loeschen_Adressart_Neu"
 			ref="eb6ce8ea-6b4f-4a73-87c6-0eedae3943a7"
@@ -148,6 +220,30 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a1c17d8e-b9b2-4ff4-9e86-5d3937ac1a6e"
+			name="Meldung_Pflichtfeld_fehlt"
+			ref="0bc7041f-f961-4365-bf92-0581ef411de5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="9f376c37-3875-438f-9864-2ba76e7ebc31"
+					variablename="GRUPPENART_NEU">
+					</var>
+					<var
+					dataname="GRUPPENART_BEZEICHNUNG"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="a4533522-d47d-4d73-8523-4bf636d180ce"
+					variablename="GRUPPENART_BEZEICHNUNG">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="cffdab9e-bb10-482a-94ef-9d10151a6b83"
+			name="setup">
+			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -172,6 +268,24 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testcase
+			id="d61d414e-7c13-4655-8d6f-0a681078ada8"
+			name="Verwalten_Gruppenarten_Aufrufart_ADAG">
+			</testcase>
+			<testmodule
+			id="f0a1e015-377c-4b3d-8d37-2b6069f9912c"
+			name="Aendern_Gruppenart_Neu"
+			ref="74483002-4a3a-4c21-992d-ca6e8d192381"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="79087cc8-7954-4dce-b3e2-9af4a2d16ce5"
+					variablename="GRUPPENART_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -216,6 +330,42 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="d61d414e-7c13-4655-8d6f-0a681078ada8"
+					name="Verwalten_Gruppenarten_Aufrufart_ADAG">
+						<setup
+						id="cffdab9e-bb10-482a-94ef-9d10151a6b83"
+						name="setup">
+							<testmodule
+							id="1e3e3c77-9e94-4639-9d81-073c2c53c2ff"
+							name="Start_ADGA">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="17ad6860-cbfe-463a-a103-64e1eb29f397"
+						name="Neuanlage_Gruppenart">
+						</testmodule>
+						<testmodule
+						id="a1c17d8e-b9b2-4ff4-9e86-5d3937ac1a6e"
+						name="Meldung_Pflichtfeld_fehlt">
+						</testmodule>
+						<testmodule
+						id="f0a1e015-377c-4b3d-8d37-2b6069f9912c"
+						name="Aendern_Gruppenart_Neu">
+						</testmodule>
+						<testmodule
+						id="7c0f0260-6c9d-494e-9f82-9acc1925a291"
+						name="Loeschen_Adresse_Neu">
+						</testmodule>
+						<teardown
+						id="3f7f1433-8f5a-4f8c-8a4c-ab5cd14c0ef7"
+						name="teardown">
+							<testmodule
+							id="050e1ee3-53ab-400b-9e84-9635a72f6e9c"
+							name="Close_ADGA">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -231,6 +381,9 @@
 			</testcontainer>
 			<testcontainer
 			id="34aa5473-01c2-4f7e-88e6-01f7059642a8">
+			</testcontainer>
+			<testcontainer
+			id="d61d414e-7c13-4655-8d6f-0a681078ada8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

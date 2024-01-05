@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="eb6ce8ea-6b4f-4a73-87c6-0eedae3943a7"
+id="c102cd30-7772-445a-8975-7ed2f40d5c01"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Loeschen_Adressart_Neu"
+	classname="Loeschen_Adresse_Neu"
 	namespace="S_ADG_Schnelltest.Recordings">
 	</codegen>
 	<variables>
@@ -30,23 +30,22 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="7;8"
+		loc="11;8"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="013f55fa-20da-4329-9fd8-facfd2dbbee1"
-		sx="666"
-		sy="579"
+		searchpropertyid="2593fdcf-1167-4fb9-ad3d-3757895d4f80"
+		sx="12"
+		sy="278"
 		warnoutofbounds="False">
 			<comment>
-				Achtung Mausklick absichtlich nicht auf &quot;Center&quot; eingestgellt beim Action Spot, da sonst das L&#246;schen bzw. Markieren der Zeile nicht funktioniert!
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="222430a7-4741-4afe-8e09-7e9c91d9d1e5"
+			id="4a17b46d-4ec6-4122-8308-310db7ce8237"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ADRSSART_NEU]
+					/form[@controlname='tblAdga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$GRUPPENART_NEU]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -59,13 +58,13 @@ mode="Global">
 		optional="False"
 		presstime="20ms"
 		repoItemActivation="EnsureVisible"
-		searchpropertyid="0138a0c7-d56d-4014-b36d-24ec1a84f397">
+		searchpropertyid="19d66ab8-715a-489a-8035-560914562cf9">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="5d1482a4-99fb-4959-a474-98b4ad5fb50e"
+			id="0eda2693-7b47-4007-9f2c-528d72e7a157"
 			sourcename="Recorder">
 				<element
 				capabilities="control, nativewindow"
@@ -75,7 +74,7 @@ mode="Global">
 				hasfocus="False"
 				index="1"
 				prefcap="form"
-				rect="650,278,621,484"
+				rect="-8,-8,1936,1056"
 				role="form"
 				snapElem=""
 				valid="True"
@@ -89,64 +88,64 @@ mode="Global">
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						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
-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
+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
 					</attribute>
 					<attribute
 					name="state"
 					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Normal
+						Maximized
 					</attribute>
 					<attribute
 					name="title"
 					type="System.String">
-						[100]  Adressarten
+						[100]  Gruppenarten
 					</attribute>
 					<attribute
 					name="controlname"
 					type="System.String">
-						tblAda
+						tblAdga
 					</attribute>
 					<attribute
 					name="controltext"
 					type="System.String">
-						[100]  Adressarten
+						[100]  Gruppenarten
 					</attribute>
 					<attribute
 					name="controltype"
 					type="System.String">
-						rssoft.stamm.s_adg.tblAda
+						rssoft.stamm.s_adg.tblAdga
 					</attribute>
 					<attribute
 					name="controltypename"
 					type="System.String">
-						tblAda
+						tblAdga
 					</attribute>
 					<attribute
 					name="apphung"
@@ -161,7 +160,7 @@ qE4BD5mDBw+qd7q7u++znh7H/Rn4px8mfFx4/HIpOBu+48XP+FONG42zweOYG499WaDvHcbmGo90
 					<attribute
 					name="handle"
 					type="System.IntPtr">
-						5441364
+						1385128
 					</attribute>
 					<attribute
 					name="instance"
@@ -171,7 +170,7 @@ qE4BD5mDBw+qd7q7u++znh7H/Rn4px8mfFx4/HIpOBu+48XP+FONG42zweOYG499WaDvHcbmGo90
 					<attribute
 					name="processid"
 					type="System.Int32">
-						14600
+						13768
 					</attribute>
 					<attribute
 					name="processname"
@@ -186,12 +185,12 @@ qE4BD5mDBw+qd7q7u++znh7H/Rn4px8mfFx4/HIpOBu+48XP+FONG42zweOYG499WaDvHcbmGo90
 					<attribute
 					name="windowstyle"
 					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, TiledWindow, ClipChildren, ClipSiblings, Visible
+						Tiled, TiledWindow, Maximize, ClipChildren, ClipSiblings, Visible
 					</attribute>
 					<attribute
 					name="windowtext"
 					type="System.String">
-						[100]  Adressarten
+						[100]  Gruppenarten
 					</attribute>
 					<dynamicattribute
 					description="No description available."
@@ -308,7 +307,7 @@ AAHn////9v///wEwAA8FAAAAAQAAAAgAAAAADwYAAAABAAAACAAAAAABBwAAAPb///8BMAAL
 					name="AllowAutoEditing"
 					readonly="False"
 					type="System.Boolean">
-						True
+						False
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -626,14 +625,14 @@ AAHn////9v///wEwAA8FAAAAAQAAAAgAAAAADwYAAAABAAAACAAAAAABBwAAAPb///8BMAAL
 					description="No description available."
 					name="Bottom"
 					type="System.Int32">
-						762
+						1048
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="Bounds"
 					readonly="False"
 					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						650,278,621,484
+						-8,-8,1936,1056
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -924,7 +923,7 @@ dGltZS40LCBWZXJzaW9uPTUwMjAxLjEzMDI3LjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNL
 ZXlUb2tlbj1udWxsBwQAAAAAAQAAABAAAAAEG1BQSi5SdW50aW1lLlNhbFdpbmRvd0hhbmRsZQIA
 AAAF9v///xtQUEouUnVudGltZS5TYWxXaW5kb3dIYW5kbGUBAAAABkhhbmRsZQMNU3lzdGVtLklu
 dFB0cgIAAAAE9f///w1TeXN0ZW0uSW50UHRyAQAAAAV2YWx1ZQAJAAAAAAAAAAAB9P////b///8B
-8/////X///9YJEcAAAAAAAHy////9v///wHx////9f///wAAAAAAAAAAAfD////2////Ae/////1
+8/////X///8EJQoAAAAAAAHy////9v///wHx////9f///wAAAAAAAAAAAfD////2////Ae/////1
 ////AAAAAAAAAAAB7v////b///8B7f////X///8AAAAAAAAAAAHs////9v///wHr////9f///wAA
 AAAAAAAAAer////2////Aen////1////AAAAAAAAAAAB6P////b///8B5/////X///8AAAAAAAAA
 AAHm////9v///wHl////9f///wAAAAAAAAAAAeT////2////AeP////1////AAAAAAAAAAAB4v//
@@ -954,13 +953,13 @@ dGltZS40LCBWZXJzaW9uPTUwMjAxLjEzMDI3LjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNL
 ZXlUb2tlbj1udWxsBwQAAAAAAQAAABAAAAAEG1BQSi5SdW50aW1lLlNhbFdpbmRvd0hhbmRsZQIA
 AAAF9v///xtQUEouUnVudGltZS5TYWxXaW5kb3dIYW5kbGUBAAAABkhhbmRsZQMNU3lzdGVtLklu
 dFB0cgIAAAAE9f///w1TeXN0ZW0uSW50UHRyAQAAAAV2YWx1ZQAJAAAAAAAAAAAB9P////b///8B
-8/////X///8AAAAAAAAAAAHy////9v///wHx////9f///5wkEwAAAAAAAfD////2////Ae/////1
+8/////X///8AAAAAAAAAAAHy////9v///wHx////9f///+oiFAAAAAAAAfD////2////Ae/////1
 ////AAAAAAAAAAAB7v////b///8B7f////X///8AAAAAAAAAAAHs////9v///wHr////9f///wAA
 AAAAAAAAAer////2////Aen////1////AAAAAAAAAAAB6P////b///8B5/////X///8AAAAAAAAA
-AAHm////9v///wHl////9f///wAAAAAAAAAAAeT////2////AeP////1////sig0AAAAAAAB4v//
-//b///8B4f////X///8YLAcAAAAAAAHg////9v///wHf////9f///wAAAAAAAAAAAd7////2////
+AAHm////9v///wHl////9f///wAAAAAAAAAAAeT////2////AeP////1////piQQAAAAAAAB4v//
+//b///8B4f////X///+MIQ4AAAAAAAHg////9v///wHf////9f///wAAAAAAAAAAAd7////2////
 Ad3////1////AAAAAAAAAAAB3P////b///8B2/////X///8AAAAAAAAAAAHa////9v///wHZ////
-9f///yYqCQAAAAAAAdj////2////Adf////1////AAAAAAAAAAAPBQAAAAEAAAAIDwAAAA8GAAAA
+9f///1YlCgAAAAAAAdj////2////Adf////1////AAAAAAAAAAAPBQAAAAEAAAAIDwAAAA8GAAAA
 AQAAAAgAAAAAAQcAAAD2////Adb////1////AAAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
@@ -1015,14 +1014,14 @@ AQAAAAgAAAAAAQcAAAD2////Adb////1////AAAAAAAAAAAL
 					description="No description available."
 					name="ClientRectangle"
 					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						0,0,605,445
+						0,0,1920,1017
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="ClientSize"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						605, 445
+						1920, 1017
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1424,14 +1423,12 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					isempty="True"
 					name="csSqlDelete"
 					readonly="False"
 					type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					isempty="True"
 					name="csSqlInsert"
 					readonly="False"
 					type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
@@ -1445,19 +1442,20 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					isempty="True"
 					name="csSqlSelect"
 					readonly="False"
 					type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
+					isempty="True"
 					name="csSqlSelectHint_cd"
 					readonly="False"
 					type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
+					isempty="True"
 					name="csSqlSelectPrg_cd"
 					readonly="False"
 					type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
@@ -1492,7 +1490,6 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					isempty="True"
 					name="csSqlUpdate"
 					readonly="False"
 					type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
@@ -1563,14 +1560,14 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					name="DesktopBounds"
 					readonly="False"
 					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						650,278,621,484
+						-8,-8,1936,1056
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="DesktopLocation"
 					readonly="False"
 					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						650, 278
+						-8, -8
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1589,7 +1586,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					description="No description available."
 					name="DisplayRectangle"
 					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						0,0,605,445
+						0,0,1920,1017
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2240,7 +2237,7 @@ c29mdC5md2cuYmFzaXMuRmVuc3RlckFrdGlvbggAAAAL
 					name="Height"
 					readonly="False"
 					type="System.Int32">
-						484
+						1056
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2255,34 +2252,34 @@ c29mdC5md2cuYmFzaXMuRmVuc3RlckFrdGlvbggAAAAL
 					readonly="False"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						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
-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
+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
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2483,7 +2480,7 @@ ZW4uSVBDQWt0aW9uQ2xpZW50CAAAAAs=
 					name="Left"
 					readonly="False"
 					type="System.Int32">
-						650
+						-8
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2528,7 +2525,7 @@ ZW4uSVBDQWt0aW9uQ2xpZW50CAAAAAs=
 					name="Location"
 					readonly="False"
 					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						650, 278
+						-8, -8
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2623,7 +2620,7 @@ ZW4uSVBDQWt0aW9uQ2xpZW50CAAAAAs=
 					name="MinimumSize"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						502, 140
+						591, 245
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2636,7 +2633,7 @@ ZW4uSVBDQWt0aW9uQ2xpZW50CAAAAAs=
 					name="Name"
 					readonly="False"
 					type="System.String">
-						tblAda
+						tblAdga
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2797,13 +2794,13 @@ ZW4uSVBDQWt0aW9uQ2xpZW50CAAAAAs=
 					description="No description available."
 					name="RestoreBounds"
 					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						650,278,621,484
+						736,176,599,370
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="Right"
 					type="System.Int32">
-						1271
+						1928
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2934,7 +2931,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					name="Size"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						621, 484
+						1936, 1056
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -2953,7 +2950,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					name="Size_P"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						621, 484
+						599, 370
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -3055,14 +3052,14 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					name="Text"
 					readonly="False"
 					type="System.String">
-						[100]  Adressarten
+						[100]  Gruppenarten
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="Top"
 					readonly="False"
 					type="System.Int32">
-						278
+						-8
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -3123,7 +3120,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					name="Viewname"
 					readonly="False"
 					type="System.String">
-						S_ADG.tblAda
+						S_ADG.tblAdga
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -3168,14 +3165,14 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					name="Width"
 					readonly="False"
 					type="System.Int32">
-						621
+						1936
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="WindowState"
 					readonly="False"
 					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Normal
+						Maximized
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6872,15 +6869,6 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					</dynamicaction>
 					<dynamicaction
 					description="No description available."
-					displayName="IstAktivierbar">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
 					displayName="IsVisible">
 						<returns
 						description="No description available."
@@ -6957,12 +6945,12 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 						<argument
 						description="No description available."
 						displayName="value"
-						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						type="System.Int32">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						type="System.Int32">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -7513,8 +7501,8 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					displayName="SetContextMenu">
 						<argument
 						description="No description available."
-						displayName="sMenuName"
-						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
+						displayName="menuType"
+						type="System.Type">
 						</argument>
 						<argument
 						description="No description available."
@@ -7546,8 +7534,8 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					displayName="SetCursor">
 						<argument
 						description="No description available."
-						displayName="sBlob"
-						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.13027.9.0, Culture=neutral, PublicKeyToken=null">
+						displayName="nResourceId"
+						type="System.Int32">
 						</argument>
 						<argument
 						description="No description available."
@@ -8176,7 +8164,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 					</dynamicaction>
 				</element>
 				<path>
-					/form[@controlname='tblAda']
+					/form[@controlname='tblAdga']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -8190,7 +8178,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="2f437476-ca74-4fb6-aaa1-87548326777d"
+		searchpropertyid="639cff0b-a162-40c7-88ba-991717a74a6e"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -8199,10 +8187,10 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 			<bindings>
 			</bindings>
 			<info
-			id="283fa880-3c68-4b36-a973-1f5ce85b3164"
+			id="b7dae1b0-1723-42ad-af86-d7743bd15081"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAda']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+					/form[@controlname='tblAdga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -8216,7 +8204,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="4dbb91ca-82bd-4ea4-a2a8-90ee68c846fe"
+		searchpropertyid="3985a6b3-8d3b-47d2-ab89-db3515e1ed45"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -8225,10 +8213,10 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 			<bindings>
 			</bindings>
 			<info
-			id="2eb34564-69ae-4478-a6f4-9005c6f24171"
+			id="f9d48d15-3515-492f-a17b-faf2b9291c5f"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAda']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+					/form[@controlname='tblAdga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -8237,7 +8225,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="8590464e-9fa7-4860-9e9c-27d3f22d6da5"
+		searchpropertyid="919dd88f-a095-4b2d-97fb-7dc530676b85"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -8245,10 +8233,10 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 			<bindings>
 			</bindings>
 			<info
-			id="c3a5a175-e362-4c51-ba13-04b681de2d3c"
+			id="b67147d4-8b9f-48b3-a423-5b60e080bfa3"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+					/form[@controlname='tblAdga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -8258,25 +8246,25 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 		action="NotExists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b38c4760-7e38-4e03-a579-39c5759f7530">
+		searchpropertyid="fc9e0746-90c9-4ef6-82b0-27a8bbc51278">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="222430a7-4741-4afe-8e09-7e9c91d9d1e5"
+			id="4a17b46d-4ec6-4122-8308-310db7ce8237"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAda']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ADRSSART_NEU]
+					/form[@controlname='tblAdga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$GRUPPENART_NEU]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 			<matchname>
-				(Choose)
+				Text
 			</matchname>
 			<matchvalue>
-				yourValue
+				yourtext
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -8295,7 +8283,7 @@ bmcDAAAAB21fdmFsdWUIbV9sZW5ndGgIbV9pc0Jsb2IBAAAIAQIAAAAGCgAAAAAAAAAAAAs=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Loeschen_Adressart_Neu.UserCode.cs
+		Loeschen_Adresse_Neu.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
