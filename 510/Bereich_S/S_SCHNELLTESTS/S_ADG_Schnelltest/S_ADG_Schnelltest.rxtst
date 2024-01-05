@@ -155,6 +155,14 @@
 					name="GRUPPENART_BEZEICHNUNG"
 					value="Testgruppe BAR">
 					</param>
+					<param
+					name="GRUPPE_NEU"
+					value="XYZ">
+					</param>
+					<param
+					name="GRUPPE_BEZEICHNUNG_NEU"
+					value="BAR_Gruppe_Neu">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -200,6 +208,26 @@
 			name="Close_ADA"
 			ref="8e933bce-d596-428d-8f5a-a1b47e061cd3"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4c0e116f-e84f-4319-b0c2-13f1caf84bee"
+			name="Neuanlage_Gruppe_Neu"
+			ref="524d3995-6a1f-4844-98e8-b629156eb5a8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPE_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="487124bc-2661-44c6-9710-7ee57f140368"
+					variablename="GRUPPE_NEU">
+					</var>
+					<var
+					dataname="GRUPPE_BEZEICHNUNG_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="312a298d-7de6-46ff-aa29-a4250696bed0"
+					variablename="GRUPPE_BEZEICHNUNG_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="5d17649d-08af-4cd7-a776-68ec166c868a"
@@ -415,6 +443,10 @@
 							name="Start_ADGR">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="4c0e116f-e84f-4319-b0c2-13f1caf84bee"
+						name="Neuanlage_Gruppe_Neu">
+						</testmodule>
 						<teardown
 						id="fbfe9ca5-0165-45b6-bb8f-ffeffca7e718"
 						name="teardown">
