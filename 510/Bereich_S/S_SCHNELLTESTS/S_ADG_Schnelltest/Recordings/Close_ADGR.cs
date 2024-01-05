@@ -24,60 +24,34 @@ namespace S_ADG_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_ADGA recording.
+    ///The Close_ADGR recording.
     /// </summary>
-    [TestModule("560c3669-2915-47cc-b1a7-5a5d033880e9", ModuleType.Recording, 1)]
-    public partial class Start_ADGA : ITestModule
+    [TestModule("04f97104-2fe7-4e32-9799-42c5ac4c8ee8", ModuleType.Recording, 1)]
+    public partial class Close_ADGR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repo = global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository.Instance;
 
-        static Start_ADGA instance = new Start_ADGA();
+        static Close_ADGR instance = new Close_ADGR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_ADGA()
+        public Close_ADGR()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_ADGA = "S_ADG Aufrufart=ADGA";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_ADGA Instance
+        public static Close_ADGR Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("46ea092e-27f8-48fe-8aa3-ee884e990f91")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_ADGA;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_ADGA.
-        /// </summary>
-        [TestVariable("bb4ba745-7594-41dc-8653-c077c8c4242d")]
-        public string Programm_ADGA
-        {
-            get { return _Programm_ADGA; }
-            set { _Programm_ADGA = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,8 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_ADGA in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_ADGA, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdga.TitleBar100Gruppenarten'", repo.TblAdga.TitleBar100GruppenartenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblAdga.TitleBar100GruppenartenInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Gruppenarten') on item 'TblAdga.TitleBar100Gruppenarten'.", repo.TblAdga.TitleBar100GruppenartenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblAdga.TitleBar100GruppenartenInfo, "Text", "Gruppenarten");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAdgr.TitleBar100Gruppen'.", repo.TblAdgr.TitleBar100GruppenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblAdgr.TitleBar100Gruppen, 1000);
             
         }
 

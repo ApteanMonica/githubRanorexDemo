@@ -76,6 +76,32 @@
 			id="28edab52-2a1a-4eb6-8c77-d66357840a13"
 			name="Verwalten_Adressarten_Aufrufart_ADA">
 			</testcase>
+			<testmodule
+			id="2acd2da6-7eff-4ffa-b811-9119ccaf29ae"
+			name="Close_ADGR"
+			ref="04f97104-2fe7-4e32-9799-42c5ac4c8ee8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2bf535a6-e0dd-481f-8b37-ae62d3353a2a"
+			name="Start_ADGR"
+			ref="2ed8abed-8643-44f9-b06e-00412d9e24b8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="aaa5504e-fd0a-4b67-a054-3be4710acfc3"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_ADGR"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="0658c859-62c7-419b-a4aa-730f08e44850"
+					variablename="Programm_ADGR">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="2de8fd60-7740-46c6-9a77-b072cf58d3bb"
 			name="setup">
@@ -192,6 +218,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="71f60c70-f600-4c4b-a898-6ca7b408f945"
+			name="setup">
+			</setup>
 			<testmodule
 			id="7c0f0260-6c9d-494e-9f82-9acc1925a291"
 			name="Loeschen_Adresse_Neu"
@@ -272,6 +302,10 @@
 			id="d61d414e-7c13-4655-8d6f-0a681078ada8"
 			name="Verwalten_Gruppenarten_Aufrufart_ADAG">
 			</testcase>
+			<testcase
+			id="dfeb0d4e-a57d-4ae5-be41-5230b73c0c1e"
+			name="Verwalten_Gruppen_Aufrufart_ADGR">
+			</testcase>
 			<testmodule
 			id="f0a1e015-377c-4b3d-8d37-2b6069f9912c"
 			name="Aendern_Gruppenart_Neu"
@@ -286,6 +320,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="fbfe9ca5-0165-45b6-bb8f-ffeffca7e718"
+			name="teardown">
+			</teardown>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -366,6 +404,26 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="dfeb0d4e-a57d-4ae5-be41-5230b73c0c1e"
+					name="Verwalten_Gruppen_Aufrufart_ADGR">
+						<setup
+						id="71f60c70-f600-4c4b-a898-6ca7b408f945"
+						name="setup">
+							<testmodule
+							id="2bf535a6-e0dd-481f-8b37-ae62d3353a2a"
+							name="Start_ADGR">
+							</testmodule>
+						</setup>
+						<teardown
+						id="fbfe9ca5-0165-45b6-bb8f-ffeffca7e718"
+						name="teardown">
+							<testmodule
+							id="2acd2da6-7eff-4ffa-b811-9119ccaf29ae"
+							name="Close_ADGR">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -384,6 +442,9 @@
 			</testcontainer>
 			<testcontainer
 			id="d61d414e-7c13-4655-8d6f-0a681078ada8">
+			</testcontainer>
+			<testcontainer
+			id="dfeb0d4e-a57d-4ae5-be41-5230b73c0c1e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

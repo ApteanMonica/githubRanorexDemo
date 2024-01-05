@@ -106,10 +106,28 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblAdga.FlexGrid.Row0Column0' at Center.", repo.TblAdga.FlexGrid.Row0Column0Info, new RecordItemIndex(0));
             repo.TblAdga.FlexGrid.Row0Column0.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SADG.ZeileEinfuegen' at Center.", repo.SADG.ZeileEinfuegenInfo, new RecordItemIndex(1));
-            repo.SADG.ZeileEinfuegen.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Return}'.", new RecordItemIndex(1));
+            Keyboard.Press("{Down}{Down}{Return}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SADG.ZeileEinfuegen' at Center.", repo.SADG.ZeileEinfuegenInfo, new RecordItemIndex(2));
+            //repo.SADG.ZeileEinfuegen.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GRUPPENART_NEU'.", new RecordItemIndex(3));
+            Keyboard.Press(GRUPPENART_NEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
+            Keyboard.Press("{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'K{Tab}'.", new RecordItemIndex(5));
+            Keyboard.Press("K{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GRUPPENART_BEZEICHNUNG'.", new RecordItemIndex(6));
+            Keyboard.Press(GRUPPENART_BEZEICHNUNG);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(8));
             repo.TblAdga.RibbonBar.PbDataAccessSave.Click();
             
         }

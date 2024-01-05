@@ -95,8 +95,8 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(1));
             repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung.PressKeys("{Delete}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(2));
-            repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung.PressKeys("2{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0{Tab}' with focus on 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(2));
+            repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung.PressKeys("0{Tab}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(3));
             repo.TblAdga.RibbonBar.PbDataAccessSave.Click();
@@ -107,8 +107,8 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdga.FlexGrid.Row0Column0'", repo.TblAdga.FlexGrid.Row0Column0Info, new ActionTimeout(120000), new RecordItemIndex(5));
             repo.TblAdga.FlexGrid.Row0Column0Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, "Text", "2");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, "Text", "0");
             
         }
 

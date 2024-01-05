@@ -112,32 +112,35 @@ namespace S_ADG_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.FlexGrid.ColAdgaKzzuordnungRow1' at Center.", repo.TblAdga.FlexGrid.ColAdgaKzzuordnungRow1Info, new RecordItemIndex(3));
+            repo.TblAdga.FlexGrid.ColAdgaKzzuordnungRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Tab}'.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Down}'.", new RecordItemIndex(4));
+            Keyboard.Press("{Down}{Down}{Down}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Tab}'.", new RecordItemIndex(5));
             Keyboard.Press("1{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(6));
             repo.TblAdga.RibbonBar.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAdga.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdga.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAdga.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(7));
             repo.TblAdga.RibbonBar.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdga.FlexGrid.Row0Column0'", repo.TblAdga.FlexGrid.Row0Column0Info, new ActionTimeout(120000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdga.FlexGrid.Row0Column0'", repo.TblAdga.FlexGrid.Row0Column0Info, new ActionTimeout(120000), new RecordItemIndex(8));
             repo.TblAdga.FlexGrid.Row0Column0Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GRUPPENART_NEU) on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaCd'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaCdInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GRUPPENART_NEU) on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaCd'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaCdInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaCdInfo, "Text", GRUPPENART_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKL'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKLInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKL'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKLInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKLInfo, "Text", "K");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GRUPPENART_BEZEICHNUNG) on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaBez'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaBezInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GRUPPENART_BEZEICHNUNG) on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaBez'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaBezInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaBezInfo, "Text", GRUPPENART_BEZEICHNUNG);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourValue') on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, "Text", "yourValue");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnung'.", repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblAdga.FlexGrid.Row_mit_Variable_Gruppenart_NEU.ColAdgaKzzuordnungInfo, "Text", "1");
             
         }
 
