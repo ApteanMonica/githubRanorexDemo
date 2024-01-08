@@ -41,8 +41,8 @@ namespace S_ADG_Schnelltest.Recordings
         /// </summary>
         public Neuanlage_Gruppe_Neu()
         {
-            GRUPPE_NEU = "XYZ";
-            GRUPPE_BEZEICHNUNG_NEU = "BAR_Gruppe_Neu";
+            GRUPPE_CD_NEU = "XYZ";
+            GRUPPE_CD_BEZEICHNUNG_NEU = "BAR_Gruppe_Neu";
         }
 
         /// <summary>
@@ -55,28 +55,26 @@ namespace S_ADG_Schnelltest.Recordings
 
 #region Variables
 
-        string _GRUPPE_NEU;
+        string _GRUPPE_CD_BEZEICHNUNG_NEU;
 
         /// <summary>
-        /// Gets or sets the value of variable GRUPPE_NEU.
-        /// </summary>
-        [TestVariable("487124bc-2661-44c6-9710-7ee57f140368")]
-        public string GRUPPE_NEU
-        {
-            get { return _GRUPPE_NEU; }
-            set { _GRUPPE_NEU = value; }
-        }
-
-        string _GRUPPE_BEZEICHNUNG_NEU;
-
-        /// <summary>
-        /// Gets or sets the value of variable GRUPPE_BEZEICHNUNG_NEU.
+        /// Gets or sets the value of variable GRUPPE_CD_BEZEICHNUNG_NEU.
         /// </summary>
         [TestVariable("312a298d-7de6-46ff-aa29-a4250696bed0")]
-        public string GRUPPE_BEZEICHNUNG_NEU
+        public string GRUPPE_CD_BEZEICHNUNG_NEU
         {
-            get { return _GRUPPE_BEZEICHNUNG_NEU; }
-            set { _GRUPPE_BEZEICHNUNG_NEU = value; }
+            get { return _GRUPPE_CD_BEZEICHNUNG_NEU; }
+            set { _GRUPPE_CD_BEZEICHNUNG_NEU = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPE_CD_NEU.
+        /// </summary>
+        [TestVariable("487124bc-2661-44c6-9710-7ee57f140368")]
+        public string GRUPPE_CD_NEU
+        {
+            get { return repo.GRUPPE_CD_NEU; }
+            set { repo.GRUPPE_CD_NEU = value; }
         }
 
 #endregion
@@ -105,6 +103,48 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdgr.RibbonBar.PbDataAccessNew' at Center.", repo.TblAdgr.RibbonBar.PbDataAccessNewInfo, new RecordItemIndex(0));
+            repo.TblAdgr.RibbonBar.PbDataAccessNew.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BR{Tab}' with focus on 'TblAdgr.DfAdgaCd'.", repo.TblAdgr.DfAdgaCdInfo, new RecordItemIndex(1));
+            repo.TblAdgr.DfAdgaCd.PressKeys("BR{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblAdgr.FlexGrid.Row0Column0' at Center.", repo.TblAdgr.FlexGrid.Row0Column0Info, new RecordItemIndex(2));
+            repo.TblAdgr.FlexGrid.Row0Column0.Click(System.Windows.Forms.MouseButtons.Right);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Return}'.", new RecordItemIndex(3));
+            Keyboard.Press("{Down}{Down}{Return}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GRUPPE_CD_NEU'.", new RecordItemIndex(4));
+            Keyboard.Press(GRUPPE_CD_NEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GRUPPE_CD_BEZEICHNUNG_NEU'.", new RecordItemIndex(6));
+            Keyboard.Press(GRUPPE_CD_BEZEICHNUNG_NEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdgr.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdgr.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(8));
+            repo.TblAdgr.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdgr.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAdgr.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(9));
+            repo.TblAdgr.RibbonBar.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdgr.FlexGrid.Row0Column0'", repo.TblAdgr.FlexGrid.Row0Column0Info, new ActionTimeout(120000), new RecordItemIndex(10));
+            repo.TblAdgr.FlexGrid.Row0Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='BR') on item 'TblAdgr.DfAdgaCd'.", repo.TblAdgr.DfAdgaCdInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblAdgr.DfAdgaCdInfo, "Text", "BR");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GRUPPE_CD_NEU) on item 'TblAdgr.FlexGrid.Row_mit_Variable.ColAdgrCd'.", repo.TblAdgr.FlexGrid.Row_mit_Variable.ColAdgrCdInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblAdgr.FlexGrid.Row_mit_Variable.ColAdgrCdInfo, "Text", GRUPPE_CD_NEU);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GRUPPE_CD_BEZEICHNUNG_NEU) on item 'TblAdgr.FlexGrid.Row_mit_Variable.ColAdgrBez'.", repo.TblAdgr.FlexGrid.Row_mit_Variable.ColAdgrBezInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblAdgr.FlexGrid.Row_mit_Variable.ColAdgrBezInfo, "Text", GRUPPE_CD_BEZEICHNUNG_NEU);
+            
         }
 
 #region Image Feature Data

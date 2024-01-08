@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="2ed8abed-8643-44f9-b06e-00412d9e24b8"
-mode="Global">
+id="4fa71fc2-482d-4eed-8ec8-7915bf705049"
+mode="Desktop">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,19 +19,19 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Start_ADGR"
-	namespace="S_ADG_Schnelltest.Recordings">
+	classname="StartAUT"
+	namespace="S_ADRDR.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="aaa5504e-fd0a-4b67-a054-3be4710acfc3"
+		id="c90f11d0-05fc-49d8-891d-a404609d3c77"
 		name="Startfile">
 			C:\Testdaten\Allgemein\Start.bat
 		</var>
 		<var
-		id="0658c859-62c7-419b-a4aa-730f08e44850"
-		name="Programm_ADGR">
-			S_ADG Aufrufart_ADGR
+		id="ce7f0c3e-8a84-448a-ab3a-d4be64afefc4"
+		name="Programm">
+			S_ADRDR
 		</var>
 	</variables>
 	<recorditems>
@@ -46,10 +46,6 @@ mode="Global">
 				target="FileName"
 				variable="Startfile">
 				</binding>
-				<binding
-				target="Arguments"
-				variable="Programm_ADGR">
-				</binding>
 			</bindings>
 			<filename>
 				yourapp
@@ -60,7 +56,7 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="26963f60-f3a2-4dc5-bfdf-54e2e7ec72a7"
+		searchpropertyid="5c5ecc0a-7911-4812-b903-cdd9ec2584b0"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -68,7 +64,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="7001fcd6-3650-4427-8ae1-8c55db2b4242"
+			id="50d3aa69-dfdd-45eb-9e3d-8c33e2eb7438"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -76,41 +72,26 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="9"
+				index="5"
 				prefcap="titlebar"
-				rect="723,305,491,28"
+				rect="528,112,560,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
-					name="text"
-					type="System.String">
-						[100]  Gruppen
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
 					name="accessiblerole"
 					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
+						None
 					</attribute>
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Gruppen
+						None
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblAdgr']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -120,13 +101,13 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b3dcce08-8932-4692-99e1-c5843f8b7068">
+		searchpropertyid="570a5281-0b89-410d-bf41-f1b718216835">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="7001fcd6-3650-4427-8ae1-8c55db2b4242"
+			id="50d3aa69-dfdd-45eb-9e3d-8c33e2eb7438"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -134,41 +115,26 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="9"
+				index="5"
 				prefcap="titlebar"
-				rect="723,305,491,28"
+				rect="528,112,560,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
-					name="text"
-					type="System.String">
-						[100]  Gruppen
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
 					name="accessiblerole"
 					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
+						None
 					</attribute>
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Gruppen
+						None
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblAdgr']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -177,26 +143,26 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Gruppen
+				Kundenliste
 			</matchvalue>
 		</validationitem>
 	</recorditems>
 	<repository
-	id="e1806ded-20c9-41f1-8d70-0f8383474fed"
-	name="S_ADG_SchnelltestRepository"
-	relativepath="..\S_ADG_SchnelltestRepository.rxrep">
+	id="4a97e626-a317-4795-997d-9125312198c6"
+	name="S_ADRDRRepository"
+	relativepath="..\S_ADRDRRepository.rxrep">
 		<codegen
-		classname="S_ADG_SchnelltestRepository"
-		namespace="S_ADG_Schnelltest">
+		classname="S_ADRDRRepository"
+		namespace="S_ADRDR">
 		</codegen>
 		<rootfolder
-		id="42e92c67-d8b8-456d-a369-d2a2330c5a40"
+		id="db2ae28f-bbfb-4a15-86fc-04918567b93c"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Start_ADGR.UserCode.cs
+		StartAUT.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

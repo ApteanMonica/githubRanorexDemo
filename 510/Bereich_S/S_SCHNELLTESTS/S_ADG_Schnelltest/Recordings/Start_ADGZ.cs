@@ -24,31 +24,31 @@ namespace S_ADG_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_ADGR recording.
+    ///The Start_ADGZ recording.
     /// </summary>
-    [TestModule("2ed8abed-8643-44f9-b06e-00412d9e24b8", ModuleType.Recording, 1)]
-    public partial class Start_ADGR : ITestModule
+    [TestModule("0d17b10b-a81f-422a-8d7b-56bbd63025fa", ModuleType.Recording, 1)]
+    public partial class Start_ADGZ : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repo = global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository.Instance;
 
-        static Start_ADGR instance = new Start_ADGR();
+        static Start_ADGZ instance = new Start_ADGZ();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_ADGR()
+        public Start_ADGZ()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_ADGR = "S_ADG Aufrufart_ADGR";
+            Programm_ADGZ = "S_ADG Aufrufart=ADGZ";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_ADGR Instance
+        public static Start_ADGZ Instance
         {
             get { return instance; }
         }
@@ -60,23 +60,23 @@ namespace S_ADG_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("aaa5504e-fd0a-4b67-a054-3be4710acfc3")]
+        [TestVariable("3a81386c-6447-4f65-baaf-fe9053d0ec1d")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
         }
 
-        string _Programm_ADGR;
+        string _Programm_ADGZ;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_ADGR.
+        /// Gets or sets the value of variable Programm_ADGZ.
         /// </summary>
-        [TestVariable("0658c859-62c7-419b-a4aa-730f08e44850")]
-        public string Programm_ADGR
+        [TestVariable("8967987e-c4dc-44d2-a90e-d90cf9a11ab0")]
+        public string Programm_ADGZ
         {
-            get { return _Programm_ADGR; }
-            set { _Programm_ADGR = value; }
+            get { return _Programm_ADGZ; }
+            set { _Programm_ADGZ = value; }
         }
 
 #endregion
@@ -105,14 +105,14 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_ADGR in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_ADGR, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_ADGZ in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_ADGZ, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdgr.TitleBar100Gruppen'", repo.TblAdgr.TitleBar100GruppenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblAdgr.TitleBar100GruppenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdgz.TitleBar100ZuordnungAdressen'", repo.TblAdgz.TitleBar100ZuordnungAdressenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblAdgz.TitleBar100ZuordnungAdressenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Gruppen') on item 'TblAdgr.TitleBar100Gruppen'.", repo.TblAdgr.TitleBar100GruppenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblAdgr.TitleBar100GruppenInfo, "Text", "Gruppen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Zuordnung Adressen') on item 'TblAdgz.TitleBar100ZuordnungAdressen'.", repo.TblAdgz.TitleBar100ZuordnungAdressenInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblAdgz.TitleBar100ZuordnungAdressenInfo, "Text", "Zuordnung Adressen");
             
         }
 

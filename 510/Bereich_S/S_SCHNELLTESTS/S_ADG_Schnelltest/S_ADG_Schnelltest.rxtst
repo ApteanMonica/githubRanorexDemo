@@ -28,10 +28,34 @@
 			ref="5d68b398-2ba8-42e8-9399-628a646a2abd"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="113188f0-c229-4677-b112-8303f331c555"
+			name="Verwalten_Zuordnung_Gruppenart">
+			</testcase>
 			<teardown
 			id="1206ff21-42f2-4623-9c5e-702cddad27da"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="14638934-3b72-43d9-8fb4-b96c92aed304"
+			name="Start_ADGZ"
+			ref="0d17b10b-a81f-422a-8d7b-56bbd63025fa"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="3a81386c-6447-4f65-baaf-fe9053d0ec1d"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_ADGZ"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="8967987e-c4dc-44d2-a90e-d90cf9a11ab0"
+					variablename="Programm_ADGZ">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="17ad6860-cbfe-463a-a103-64e1eb29f397"
 			name="Neuanlage_Gruppenart"
@@ -128,11 +152,11 @@
 					value="S_ADG Aufrufart=ADGR">
 					</param>
 					<param
-					name="Programm ADGZ"
+					name="Programm_ADGZ"
 					value="S_ADG Aufrufart=ADGZ">
 					</param>
 					<param
-					name="Programm ADGZUORD"
+					name="Programm_ADGZUORD"
 					value="S_ADG Aufrufart=ADGZUORD">
 					</param>
 					<param
@@ -156,11 +180,11 @@
 					value="Testgruppe BAR">
 					</param>
 					<param
-					name="GRUPPE_NEU"
+					name="GRUPPE_CD_NEU"
 					value="XYZ">
 					</param>
 					<param
-					name="GRUPPE_BEZEICHNUNG_NEU"
+					name="GRUPPE_CD_BEZEICHNUNG_NEU"
 					value="BAR_Gruppe_Neu">
 					</param>
 				</parameters>
@@ -203,6 +227,10 @@
 			id="3f7f1433-8f5a-4f8c-8a4c-ab5cd14c0ef7"
 			name="teardown">
 			</teardown>
+			<teardown
+			id="41d16afd-a9a3-4ea8-a457-dd80dd5b0c09"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="4b6609f9-bbb9-4296-8340-6a09f9d06f4c"
 			name="Close_ADA"
@@ -216,19 +244,37 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="GRUPPE_NEU"
+					dataname="GRUPPE_CD_NEU"
 					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
 					variableid="487124bc-2661-44c6-9710-7ee57f140368"
-					variablename="GRUPPE_NEU">
+					variablename="GRUPPE_CD_NEU">
 					</var>
 					<var
-					dataname="GRUPPE_BEZEICHNUNG_NEU"
+					dataname="GRUPPE_CD_BEZEICHNUNG_NEU"
 					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
 					variableid="312a298d-7de6-46ff-aa29-a4250696bed0"
-					variablename="GRUPPE_BEZEICHNUNG_NEU">
+					variablename="GRUPPE_CD_BEZEICHNUNG_NEU">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="4db6e8ba-9a4b-4479-9af0-43a57a20e911"
+			name="Aendern_Gruppe_Neu"
+			ref="8fffca23-bac0-4fd6-860a-c67fc9463b7b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPE_CD_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="85f9c4ff-c644-4912-a073-e11ab3e6617e"
+					variablename="GRUPPE_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="52a7d26e-1c0c-445e-87fa-6b88b39605ad"
+			name="setup">
+			</setup>
 			<testmodule
 			id="5d17649d-08af-4cd7-a776-68ec166c868a"
 			name="Loeschen_Adressart_ALT"
@@ -247,9 +293,31 @@
 				</databinding>
 			</testmodule>
 			<setup
+			id="5e45ddc2-dc6e-4dd1-a458-768f637e736a"
+			name="setup">
+			</setup>
+			<testcase
+			id="605a0d88-5b2d-4491-b64c-006f8a2023a4"
+			name="Verwalten_Zuordnung_Adressen">
+			</testcase>
+			<setup
 			id="71f60c70-f600-4c4b-a898-6ca7b408f945"
 			name="setup">
 			</setup>
+			<testmodule
+			id="7aa1423e-1357-4411-9349-8032ff1cf347"
+			name="Loeschen_Gruppe_Neu"
+			ref="47a99a63-3c35-4c2d-b426-e6830d236e3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPE_CD_NEU"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="85f9c4ff-c644-4912-a073-e11ab3e6617e"
+					variablename="GRUPPE_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="7c0f0260-6c9d-494e-9f82-9acc1925a291"
 			name="Loeschen_Adresse_Neu"
@@ -263,6 +331,12 @@
 					variablename="GRUPPENART_NEU">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="7c4eda63-4a44-4491-80fa-a08969286281"
+			name="Close_ADGZUORD"
+			ref="c832289f-12e7-49bd-9913-ed301d5b11e8"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="7d358b7c-f05c-4afb-a42d-7d5acd976c37"
@@ -297,6 +371,12 @@
 					variablename="GRUPPENART_BEZEICHNUNG">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b2fd5918-fa16-487b-8ec0-1cc494a02a58"
+			name="Close_ADGZ"
+			ref="f2bdeb40-60ec-436f-be5d-31cd776be971"
+			type="Recording">
 			</testmodule>
 			<setup
 			id="cffdab9e-bb10-482a-94ef-9d10151a6b83"
@@ -334,6 +414,10 @@
 			id="dfeb0d4e-a57d-4ae5-be41-5230b73c0c1e"
 			name="Verwalten_Gruppen_Aufrufart_ADGR">
 			</testcase>
+			<teardown
+			id="ebe4f095-2d80-48fd-89f4-0886eec96937"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="f0a1e015-377c-4b3d-8d37-2b6069f9912c"
 			name="Aendern_Gruppenart_Neu"
@@ -352,6 +436,26 @@
 			id="fbfe9ca5-0165-45b6-bb8f-ffeffca7e718"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="fd1a3850-8d3f-4a98-b306-58771733c344"
+			name="Start_ADGZUORD"
+			ref="1b1ff686-03ab-48d4-955d-e6afe21c2075"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="d3e1521b-1d76-4502-af99-73485374b33f"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_ADGZUORD"
+					datasourceid="34aa5473-01c2-4f7e-88e6-01f7059642a8"
+					variableid="3325c52e-0bb0-40fa-b59f-eb9f65f5bd4d"
+					variablename="Programm_ADGZUORD">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -447,12 +551,60 @@
 						id="4c0e116f-e84f-4319-b0c2-13f1caf84bee"
 						name="Neuanlage_Gruppe_Neu">
 						</testmodule>
+						<testmodule
+						id="4db6e8ba-9a4b-4479-9af0-43a57a20e911"
+						name="Aendern_Gruppe_Neu">
+						</testmodule>
+						<testmodule
+						id="7aa1423e-1357-4411-9349-8032ff1cf347"
+						name="Loeschen_Gruppe_Neu">
+						</testmodule>
 						<teardown
 						id="fbfe9ca5-0165-45b6-bb8f-ffeffca7e718"
 						name="teardown">
 							<testmodule
 							id="2acd2da6-7eff-4ffa-b811-9119ccaf29ae"
 							name="Close_ADGR">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="605a0d88-5b2d-4491-b64c-006f8a2023a4"
+					name="Verwalten_Zuordnung_Adressen">
+						<setup
+						id="52a7d26e-1c0c-445e-87fa-6b88b39605ad"
+						name="setup">
+							<testmodule
+							id="14638934-3b72-43d9-8fb4-b96c92aed304"
+							name="Start_ADGZ">
+							</testmodule>
+						</setup>
+						<teardown
+						id="41d16afd-a9a3-4ea8-a457-dd80dd5b0c09"
+						name="teardown">
+							<testmodule
+							id="b2fd5918-fa16-487b-8ec0-1cc494a02a58"
+							name="Close_ADGZ">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="113188f0-c229-4677-b112-8303f331c555"
+					name="Verwalten_Zuordnung_Gruppenart">
+						<setup
+						id="5e45ddc2-dc6e-4dd1-a458-768f637e736a"
+						name="setup">
+							<testmodule
+							id="fd1a3850-8d3f-4a98-b306-58771733c344"
+							name="Start_ADGZUORD">
+							</testmodule>
+						</setup>
+						<teardown
+						id="ebe4f095-2d80-48fd-89f4-0886eec96937"
+						name="teardown">
+							<testmodule
+							id="7c4eda63-4a44-4491-80fa-a08969286281"
+							name="Close_ADGZUORD">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -467,10 +619,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="113188f0-c229-4677-b112-8303f331c555">
+			</testcontainer>
+			<testcontainer
 			id="28edab52-2a1a-4eb6-8c77-d66357840a13">
 			</testcontainer>
 			<testcontainer
 			id="34aa5473-01c2-4f7e-88e6-01f7059642a8">
+			</testcontainer>
+			<testcontainer
+			id="605a0d88-5b2d-4491-b64c-006f8a2023a4">
 			</testcontainer>
 			<testcontainer
 			id="d61d414e-7c13-4655-8d6f-0a681078ada8">

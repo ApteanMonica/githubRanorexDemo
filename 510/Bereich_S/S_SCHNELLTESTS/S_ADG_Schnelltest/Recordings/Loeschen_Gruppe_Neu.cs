@@ -24,59 +24,43 @@ namespace S_ADG_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_ADGR recording.
+    ///The Loeschen_Gruppe_Neu recording.
     /// </summary>
-    [TestModule("2ed8abed-8643-44f9-b06e-00412d9e24b8", ModuleType.Recording, 1)]
-    public partial class Start_ADGR : ITestModule
+    [TestModule("47a99a63-3c35-4c2d-b426-e6830d236e3b", ModuleType.Recording, 1)]
+    public partial class Loeschen_Gruppe_Neu : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository repo = global::S_ADG_Schnelltest.S_ADG_SchnelltestRepository.Instance;
 
-        static Start_ADGR instance = new Start_ADGR();
+        static Loeschen_Gruppe_Neu instance = new Loeschen_Gruppe_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_ADGR()
+        public Loeschen_Gruppe_Neu()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_ADGR = "S_ADG Aufrufart_ADGR";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_ADGR Instance
+        public static Loeschen_Gruppe_Neu Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
-
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable GRUPPE_CD_NEU.
         /// </summary>
-        [TestVariable("aaa5504e-fd0a-4b67-a054-3be4710acfc3")]
-        public string Startfile
+        [TestVariable("85f9c4ff-c644-4912-a073-e11ab3e6617e")]
+        public string GRUPPE_CD_NEU
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_ADGR;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_ADGR.
-        /// </summary>
-        [TestVariable("0658c859-62c7-419b-a4aa-730f08e44850")]
-        public string Programm_ADGR
-        {
-            get { return _Programm_ADGR; }
-            set { _Programm_ADGR = value; }
+            get { return repo.GRUPPE_CD_NEU; }
+            set { repo.GRUPPE_CD_NEU = value; }
         }
 
 #endregion
@@ -105,14 +89,27 @@ namespace S_ADG_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_ADGR in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_ADGR, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdgr.FlexGrid.Row_mit_Variable' at 9;10.", repo.TblAdgr.FlexGrid.Row_mit_Variable.SelfInfo, new RecordItemIndex(0));
+            repo.TblAdgr.FlexGrid.Row_mit_Variable.Self.Click("9;10");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdgr.TitleBar100Gruppen'", repo.TblAdgr.TitleBar100GruppenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblAdgr.TitleBar100GruppenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblAdgr'.", repo.TblAdgr.SelfInfo, new RecordItemIndex(1));
+            repo.TblAdgr.Self.EnsureVisible();
+            Keyboard.Press("{Delete}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Gruppen') on item 'TblAdgr.TitleBar100Gruppen'.", repo.TblAdgr.TitleBar100GruppenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblAdgr.TitleBar100GruppenInfo, "Text", "Gruppen");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdgr.RibbonBar.PbDataAccessSave' at Center.", repo.TblAdgr.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(3));
+            repo.TblAdgr.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAdgr.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAdgr.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(4));
+            repo.TblAdgr.RibbonBar.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAdgr.FlexGrid.Row0Column0'", repo.TblAdgr.FlexGrid.Row0Column0Info, new ActionTimeout(120000), new RecordItemIndex(5));
+            repo.TblAdgr.FlexGrid.Row0Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblAdgr.FlexGrid.Row_mit_Variable'.", repo.TblAdgr.FlexGrid.Row_mit_Variable.SelfInfo, new RecordItemIndex(6));
+            Validate.NotExists(repo.TblAdgr.FlexGrid.Row_mit_Variable.SelfInfo);
             
         }
 
