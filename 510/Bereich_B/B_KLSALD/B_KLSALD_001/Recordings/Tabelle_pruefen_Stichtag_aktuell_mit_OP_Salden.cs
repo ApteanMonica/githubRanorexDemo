@@ -195,8 +195,8 @@ namespace B_KLSALD_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KU_2030003) on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColAdrNrRow7'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColAdrNrRow7Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColAdrNrRow7Info, "Text", KU_2030003);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.379,59') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragEbRow7'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragEbRow7Info, new RecordItemIndex(25));
-            Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragEbRow7Info, "Text", "1.379,59");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-620,41') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragEbRow7'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragEbRow7Info, new RecordItemIndex(25));
+            Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragEbRow7Info, "Text", "-620,41");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-620,41') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragRow7'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragRow7Info, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_7.ColBusaBetragRow7Info, "Text", "-620,41");
@@ -213,8 +213,8 @@ namespace B_KLSALD_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColAdrNameRow8'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColAdrNameRow8Info, new RecordItemIndex(30));
             Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColAdrNameRow8Info, "Text", "Summe");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.379,59') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragEbRow8'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragEbRow8Info, new RecordItemIndex(31));
-            Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragEbRow8Info, "Text", "1.379,59");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-620,41') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragEbRow8'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragEbRow8Info, new RecordItemIndex(31));
+            Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragEbRow8Info, "Text", "-620,41");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-620,41') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragRow8'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragRow8Info, new RecordItemIndex(32));
             Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_8.ColBusaBetragRow8Info, "Text", "-620,41");
