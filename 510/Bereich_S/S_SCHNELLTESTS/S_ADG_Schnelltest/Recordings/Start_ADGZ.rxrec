@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="2ed8abed-8643-44f9-b06e-00412d9e24b8"
+id="0d17b10b-a81f-422a-8d7b-56bbd63025fa"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,19 +19,19 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Start_ADGR"
+	classname="Start_ADGZ"
 	namespace="S_ADG_Schnelltest.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="aaa5504e-fd0a-4b67-a054-3be4710acfc3"
+		id="3a81386c-6447-4f65-baaf-fe9053d0ec1d"
 		name="Startfile">
 			C:\Testdaten\Allgemein\Start.bat
 		</var>
 		<var
-		id="0658c859-62c7-419b-a4aa-730f08e44850"
-		name="Programm_ADGR">
-			S_ADG Aufrufart_ADGR
+		id="8967987e-c4dc-44d2-a90e-d90cf9a11ab0"
+		name="Programm_ADGZ">
+			S_ADG Aufrufart=ADGZ
 		</var>
 	</variables>
 	<recorditems>
@@ -48,7 +48,7 @@ mode="Global">
 				</binding>
 				<binding
 				target="Arguments"
-				variable="Programm_ADGR">
+				variable="Programm_ADGZ">
 				</binding>
 			</bindings>
 			<filename>
@@ -60,7 +60,7 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="26963f60-f3a2-4dc5-bfdf-54e2e7ec72a7"
+		searchpropertyid="aa1b5c59-ad0e-492b-b808-73f9e871c713"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -68,7 +68,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="7001fcd6-3650-4427-8ae1-8c55db2b4242"
+			id="f2e606f5-d5c1-43bf-b9ae-3f4db652fffc"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -76,9 +76,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="9"
+				index="18"
 				prefcap="titlebar"
-				rect="723,305,491,28"
+				rect="520,223,576,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -86,7 +86,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Gruppen
+						[100]  Zuordnung Adressen
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -106,27 +106,27 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Gruppen
+						[100]  Zuordnung Adressen
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblAdgr']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblAdgz']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="AttributeContains"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b3dcce08-8932-4692-99e1-c5843f8b7068">
+		searchpropertyid="f856aa20-b98a-4493-a37c-0e7f19e03184">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="7001fcd6-3650-4427-8ae1-8c55db2b4242"
+			id="f2e606f5-d5c1-43bf-b9ae-3f4db652fffc"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -134,9 +134,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="9"
+				index="18"
 				prefcap="titlebar"
-				rect="723,305,491,28"
+				rect="520,223,576,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -144,7 +144,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Gruppen
+						[100]  Zuordnung Adressen
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -164,11 +164,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Gruppen
+						[100]  Zuordnung Adressen
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblAdgr']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblAdgz']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -177,7 +177,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Gruppen
+				Zuordnung Adressen
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -196,7 +196,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Start_ADGR.UserCode.cs
+		Start_ADGZ.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
