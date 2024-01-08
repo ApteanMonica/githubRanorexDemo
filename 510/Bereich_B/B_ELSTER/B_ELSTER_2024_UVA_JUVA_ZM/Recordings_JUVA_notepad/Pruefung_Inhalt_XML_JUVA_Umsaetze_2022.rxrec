@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="479cf6e0-8dec-4f2f-ba53-101cb79a60c3"
+id="0b24e57c-1451-498d-affe-8ea646eb3354"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,21 +19,41 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Pruefung_Inhalt_XML_JUVA_Header"
+	classname="Pruefung_Inhalt_XML_JUVA_Umsaetze_2022"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad">
 	</codegen>
 	<variables>
 		<var
-		id="cc9aa451-beae-4d31-ba3e-2887b5281bec"
-		name="XML_JUVA_Header_1">
+		id="25afc56e-2ad3-4b30-aeaf-d6c0bb386033"
+		name="XML_JUVA_2022_IG">
 		</var>
 		<var
-		id="abe019ba-8d25-40c3-b714-e5265caa7a07"
-		name="XML_JUVA_Header_2">
+		id="589e0d41-7927-4378-83f5-6165dbf39cbe"
+		name="XML_JUVA_2022_Umsaetze_stfrei">
 		</var>
 		<var
-		id="6b67dacf-f998-4ed9-9361-2a6dcfe28536"
-		name="XML_JUVA_Header_3">
+		id="5e4d9176-fa89-45d1-be95-3505d0397070"
+		name="XML_JUVA_2022_13a_drei">
+		</var>
+		<var
+		id="ee794012-6050-494e-a836-b5b78985d0b4"
+		name="XML_JUVA_2022_abz_Vst">
+		</var>
+		<var
+		id="a41a1207-8fb2-4649-b369-3c2ca220010d"
+		name="XML_JUVA_2022_Ber_Vst_15a">
+		</var>
+		<var
+		id="3c33b44d-cffa-4093-bc88-ec53999c6a2f"
+		name="XML_JUVA_2022_Umsaetze">
+		</var>
+		<var
+		id="ffab56ef-1a78-482f-b863-16e8201de670"
+		name="XML_JUVA_2022_Umsaetze_LuF">
+		</var>
+		<var
+		id="b747cec6-ce59-4321-a390-f06537fc38e8"
+		name="XML_JUVA_2022_13b_Erg">
 		</var>
 	</variables>
 	<recorditems>
@@ -47,11 +67,11 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="XML_JUVA_Header_1">
+				variable="XML_JUVA_2022_Umsaetze">
 				</binding>
 			</bindings>
 			<info
-			id="c40cef74-503b-4cc1-a3ae-ba376190d710"
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="nativewindow"
@@ -356,11 +376,11 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="XML_JUVA_Header_2">
+				variable="XML_JUVA_2022_Umsaetze_LuF">
 				</binding>
 			</bindings>
 			<info
-			id="c40cef74-503b-4cc1-a3ae-ba376190d710"
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="nativewindow"
@@ -665,11 +685,11 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="XML_JUVA_Header_3">
+				variable="XML_JUVA_2022_Umsaetze_stfrei">
 				</binding>
 			</bindings>
 			<info
-			id="c40cef74-503b-4cc1-a3ae-ba376190d710"
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="nativewindow"
@@ -962,6 +982,151 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be8391fb-fca1-4bcd-ae34-e0dd7a4d165f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="XML_JUVA_2022_IG">
+				</binding>
+			</bindings>
+			<info
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be8391fb-fca1-4bcd-ae34-e0dd7a4d165f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="XML_JUVA_2022_13a_drei">
+				</binding>
+			</bindings>
+			<info
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be8391fb-fca1-4bcd-ae34-e0dd7a4d165f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="XML_JUVA_2022_13b_Erg">
+				</binding>
+			</bindings>
+			<info
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be8391fb-fca1-4bcd-ae34-e0dd7a4d165f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="XML_JUVA_2022_abz_Vst">
+				</binding>
+			</bindings>
+			<info
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be8391fb-fca1-4bcd-ae34-e0dd7a4d165f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="XML_JUVA_2022_Ber_Vst_15a">
+				</binding>
+			</bindings>
+			<info
+			id="188e19a9-d97f-4bf3-b65a-7370399ab185"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -980,7 +1145,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Pruefung_Inhalt_XML_JUVA_Header.UserCode.cs
+		Pruefung_Inhalt_XML_JUVA_Umsaetze_2022.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

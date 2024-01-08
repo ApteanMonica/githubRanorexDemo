@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3()
         {
-            XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3 = "";
+            XML_JUVA_AUSLAND_U_Best_Art_3 = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
 #region Variables
 
-        string _XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3;
+        string _XML_JUVA_AUSLAND_U_Best_Art_3;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3.
+        /// Gets or sets the value of variable XML_JUVA_AUSLAND_U_Best_Art_3.
         /// </summary>
         [TestVariable("5d7c412e-42b9-4b1d-8e77-b881950fdb9f")]
-        public string XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3
+        public string XML_JUVA_AUSLAND_U_Best_Art_3
         {
-            get { return _XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3; }
-            set { _XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3 = value; }
+            get { return _XML_JUVA_AUSLAND_U_Best_Art_3; }
+            set { _XML_JUVA_AUSLAND_U_Best_Art_3 = value; }
         }
 
 #endregion
@@ -93,8 +93,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3) on item 'XMLEditor_UVA_ZM12.Text15'.", repo.XMLEditor_UVA_ZM12.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM12.Text15Info, "Text", XML_JUVA_VORJAHR_AUSLAND_U_Best_Art_3, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_AUSLAND_U_Best_Art_3) on item 'XMLEditor_UVA_ZM12.Text15'.", repo.XMLEditor_UVA_ZM12.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM12.Text15Info, "Text", XML_JUVA_AUSLAND_U_Best_Art_3, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }

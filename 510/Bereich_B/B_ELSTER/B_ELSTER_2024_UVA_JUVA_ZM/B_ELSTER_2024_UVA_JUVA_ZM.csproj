@@ -230,6 +230,18 @@
       <id>27622cf8-acab-4257-b422-abcf9a5176d3</id>
       <BoundTo>06f7c162-6ff5-4202-b431-9e1320af796e</BoundTo>
     </Compile>
+    <Compile Include="Recordings_B_ELSTER\Fenstersteuerung_AnlageUN.cs">
+      <DependentUpon>Fenstersteuerung_AnlageUN.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccd93ec5-9802-4d36-9d90-42400af5d15a</id>
+      <BoundTo>8a778be9-320b-42b0-9ab1-67fb351d9201</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ELSTER\Fenstersteuerung_AnlageUN.UserCode.cs">
+      <DependentUpon>Fenstersteuerung_AnlageUN.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed59566c-b696-4433-8196-3c8a96bd40cf</id>
+      <BoundTo>8a778be9-320b-42b0-9ab1-67fb351d9201</BoundTo>
+    </Compile>
     <Compile Include="Recordings_B_ELSTER\JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.cs">
       <DependentUpon>JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -326,26 +338,104 @@
       <id>ca980962-2dc6-47e8-b6fc-8d8e8da004b4</id>
       <BoundTo>d079e5dc-05d2-4bd9-9684-dd0a4a57a7c8</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2023.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aaee4e11-c2aa-4d0f-b012-da76899a793b</id>
+      <BoundTo>bf177d6c-c6c7-4cd8-93f3-f9651d81fa88</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2023.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>53b28644-2231-49a5-98a4-a616cd590bbf</id>
+      <BoundTo>bf177d6c-c6c7-4cd8-93f3-f9651d81fa88</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2023.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fc725486-a194-45c2-854d-fd9e1fb06658</id>
+      <BoundTo>e298f464-13ed-4df4-854c-5c515aee6247</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2023.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b12ad1e-0286-4d6a-bd1f-0bca259b1fea</id>
+      <BoundTo>e298f464-13ed-4df4-854c-5c515aee6247</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Inland_verbl_Ust_OHNE_Erstattung.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4afa9154-d7c0-4272-b912-86fb9fbc7410</id>
+      <BoundTo>9e37af69-d183-44d9-91c4-60b35a6e2af2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022.UserCode.cs">
+      <BoundTo>7c6f62d8-2e58-44d6-b895-d53d1fd95591</BoundTo>
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f52aff16-b481-4a8f-8fc5-f5026edcc685</id>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2023.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c807130-4017-423e-94b8-93acff371c1d</id>
+      <BoundTo>9e37af69-d183-44d9-91c4-60b35a6e2af2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_2023.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c4eef092-2716-47f9-9ad1-d3833ac2f836</id>
+      <BoundTo>292db501-efb9-42e7-969a-e4d267aa7096</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_2023.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2efff8dd-50cf-4eff-98d4-cc12a002a8b5</id>
+      <BoundTo>292db501-efb9-42e7-969a-e4d267aa7096</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_2023.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>84c8d769-31b9-4a0e-b1ff-5e3bbeb2f086</id>
+      <BoundTo>d12393a7-afaf-447c-a61f-ddc426e43cc6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_2023.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bff9fac3-f305-421f-933a-4857a27ef849</id>
+      <BoundTo>d12393a7-afaf-447c-a61f-ddc426e43cc6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fe815bc-bbfd-463b-a489-da0fef3b67fd</id>
+      <BoundTo>c868ee69-02be-4e6d-a41d-264d1a353021</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>49597993-abe4-4d82-a258-405239ce074a</id>
+      <BoundTo>c868ee69-02be-4e6d-a41d-264d1a353021</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>8f93f442-fe57-43f8-8d7c-b81bcbaf5390</id>
       <BoundTo>4eb0ca33-1923-4f3a-968b-fe56a2fcd9fd</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f6a1333f-525a-4e80-bf24-b8a2641bad93</id>
       <BoundTo>4eb0ca33-1923-4f3a-968b-fe56a2fcd9fd</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_VORVORJAHR.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_Version_VORVORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_2022.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Version_2022.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>e53cec43-5b8d-4d65-a995-a2a350a3212b</id>
       <BoundTo>cae011c8-763e-40bc-bb36-dc3104477535</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_VORVORJAHR.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_Version_VORVORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_2022.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Version_2022.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>393b532f-9304-4f9b-9145-ef829b9f7fe5</id>
       <BoundTo>cae011c8-763e-40bc-bb36-dc3104477535</BoundTo>
@@ -458,14 +548,14 @@
       <id>e907dbc0-8885-4c81-8bea-d990c7a84ecf</id>
       <BoundTo>e43c0ff4-c14b-4604-ba89-ce6495390fac</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2022.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2022.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0805e240-d7a7-475d-9b3f-0ccfd9002323</id>
       <BoundTo>fa0d57a1-2fe6-45bd-9b5f-7f5687ab2f27</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2022.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2022.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d8812360-a9bb-4000-ad86-34d8e9d03ec7</id>
       <BoundTo>fa0d57a1-2fe6-45bd-9b5f-7f5687ab2f27</BoundTo>
@@ -482,14 +572,14 @@
       <id>cf1d00e2-f02d-418a-acd9-8e4517014b73</id>
       <BoundTo>56bf8136-4118-4b55-a07b-3e1af6871b91</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2022.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2022.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ca272937-5a49-4b74-984c-1b7f97a80532</id>
       <BoundTo>75a5dea2-e4f5-433b-a035-cef226bb3ef1</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2022.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2022.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>bbbd2f78-22c3-40a9-a624-0012c4560e5b</id>
       <BoundTo>75a5dea2-e4f5-433b-a035-cef226bb3ef1</BoundTo>
@@ -530,62 +620,56 @@
       <id>13170ab8-fba0-4ad1-8dd2-ba7a19314a79</id>
       <BoundTo>bf2593ce-2328-4a1c-9235-2c651a974c72</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a137a397-d4b2-4fe7-8726-9138a2149560</id>
       <BoundTo>7c6f62d8-2e58-44d6-b895-d53d1fd95591</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Inland_verbl_Ust_OHNE_Erstattung.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4c0fbb10-9198-4fdc-a6f0-47c53fb8c721</id>
-      <BoundTo>7c6f62d8-2e58-44d6-b895-d53d1fd95591</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_2022.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze_2022.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f276e879-07df-4872-b819-a142b68bbbd8</id>
       <BoundTo>5ca4c292-c798-4900-91c7-e53b4a5e7b81</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_2022.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze_2022.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0237525c-a1a4-4b99-8270-55927d6d904b</id>
       <BoundTo>5ca4c292-c798-4900-91c7-e53b4a5e7b81</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_2022.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen_2022.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>9f34159d-2cb4-4ac0-a7b6-1d88652f846e</id>
       <BoundTo>54602179-f8de-4cb1-974a-a9353189ef65</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_2022.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen_2022.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>513ac800-76fe-4d39-868d-13c144be0f41</id>
       <BoundTo>54602179-f8de-4cb1-974a-a9353189ef65</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_VORJAHR.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_Version_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_2023.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Version_2023.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>54fdf29f-f95e-4341-b35c-a239a37ecd9b</id>
       <BoundTo>2d1af7b1-721d-4068-988c-6fb5815250f9</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_VORJAHR.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_Version_VORJAHR.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_2023.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Version_2023.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>19a78792-45e8-452c-9282-0efff49e012d</id>
       <BoundTo>2d1af7b1-721d-4068-988c-6fb5815250f9</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0d507db7-b5f6-4c00-9375-e9831a9ce9a4</id>
       <BoundTo>f69ca13f-311a-418e-b79d-9b13c9bca9fb</BoundTo>
     </Compile>
-    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende.UserCode.cs">
-      <DependentUpon>Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende.rxrec</DependentUpon>
+    <Compile Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>acebb218-7c44-4fb4-8114-d1f8144f3f10</id>
       <BoundTo>f69ca13f-311a-418e-b79d-9b13c9bca9fb</BoundTo>
@@ -1252,6 +1336,11 @@
       <recordtableid>19f7770e-cf1c-4933-9a1e-033535ffe983</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
+    <None Include="Recordings_B_ELSTER\Fenstersteuerung_AnlageUN.rxrec">
+      <id>8a778be9-320b-42b0-9ab1-67fb351d9201</id>
+      <recordtableid>dc742907-a68e-4f79-a61d-b6cff22d5bb7</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
     <None Include="Recordings_B_ELSTER\JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.rxrec">
       <id>307d7f93-c6c2-47c8-b580-e04179c6c2a4</id>
       <recordtableid>cb42792f-0582-4e31-b183-303d2a22dbf4</recordtableid>
@@ -1292,12 +1381,42 @@
       <id>d079e5dc-05d2-4bd9-9684-dd0a4a57a7c8</id>
       <recordtableid>0f90b73d-7a2d-4bee-8d17-201e524c5f9b</recordtableid>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2023.rxrec">
+      <id>bf177d6c-c6c7-4cd8-93f3-f9651d81fa88</id>
+      <recordtableid>85a98c7c-0b4f-4a61-a15e-bbfd1945716f</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2023.rxrec">
+      <id>e298f464-13ed-4df4-854c-5c515aee6247</id>
+      <recordtableid>5907092d-a552-448f-a2f2-e58dac23c217</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2023.rxrec">
+      <id>9e37af69-d183-44d9-91c4-60b35a6e2af2</id>
+      <recordtableid>3c98dddc-25b7-4e13-afe0-990e187c8765</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_2023.rxrec">
+      <id>292db501-efb9-42e7-969a-e4d267aa7096</id>
+      <recordtableid>95022393-9453-4512-ab6f-c3ac0e4b883a</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_2023.rxrec">
+      <id>d12393a7-afaf-447c-a61f-ddc426e43cc6</id>
+      <recordtableid>a778b4dd-acf1-4232-94e7-9839066faccd</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum.rxrec">
+      <id>c868ee69-02be-4e6d-a41d-264d1a353021</id>
+      <recordtableid>acb33087-9c22-4f14-bbd1-8838e7d949f6</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum.rxrec">
       <id>4eb0ca33-1923-4f3a-968b-fe56a2fcd9fd</id>
       <recordtableid>5ee66cac-8d66-4181-8af0-94f959c0e0b9</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_VORVORJAHR.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_2022.rxrec">
       <id>cae011c8-763e-40bc-bb36-dc3104477535</id>
       <recordtableid>c005ee96-b98e-460e-b338-8e17bbaa63f5</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
@@ -1347,7 +1466,7 @@
       <recordtableid>3b0aadf0-4405-4e57-beec-4c4bd7cf50ae</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_2022.rxrec">
       <id>fa0d57a1-2fe6-45bd-9b5f-7f5687ab2f27</id>
       <recordtableid>9c940495-7131-4644-8ef4-6a97a503917b</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
@@ -1357,7 +1476,7 @@
       <recordtableid>cf327855-693b-42b5-a201-df904d2a0743</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung_2022.rxrec">
       <id>75a5dea2-e4f5-433b-a035-cef226bb3ef1</id>
       <recordtableid>2fa47b34-58ae-46ea-b0ec-811eb0cd36a6</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
@@ -1377,27 +1496,27 @@
       <recordtableid>c9211864-0424-4a84-8478-6abee757d397</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022.rxrec">
       <id>7c6f62d8-2e58-44d6-b895-d53d1fd95591</id>
       <recordtableid>93627e78-aa22-4388-af9c-1876e5e2675e</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze_2022.rxrec">
       <id>5ca4c292-c798-4900-91c7-e53b4a5e7b81</id>
       <recordtableid>0b24e57c-1451-498d-affe-8ea646eb3354</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen_2022.rxrec">
       <id>54602179-f8de-4cb1-974a-a9353189ef65</id>
       <recordtableid>73d0c239-5fd3-43bb-851c-dd082c86c85b</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_VORJAHR.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_Version_2023.rxrec">
       <id>2d1af7b1-721d-4068-988c-6fb5815250f9</id>
       <recordtableid>e243f047-ff4c-47bf-ba20-ec14ebe92ac0</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende.rxrec">
+    <None Include="Recordings_JUVA_notepad\Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende.rxrec">
       <id>f69ca13f-311a-418e-b79d-9b13c9bca9fb</id>
       <recordtableid>dddb6907-4caf-4540-845d-4fe4e4c3d7fe</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 {
-    public partial class Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2023
+    public partial class Fenstersteuerung_AnlageUN
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
