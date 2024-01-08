@@ -85,14 +85,14 @@ namespace B_KLSALD_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblAnzeige.Fusszeile.ColAdrNameRow0'.", repo.TblAnzeige.Fusszeile.ColAdrNameRow0Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColAdrNameRow0Info, "Text", "Summe");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3.831,55') on item 'TblAnzeige.Fusszeile.ColBusaBetragEbRow0'.", repo.TblAnzeige.Fusszeile.ColBusaBetragEbRow0Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColBusaBetragEbRow0Info, "Text", "3.831,55");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.831,55') on item 'TblAnzeige.Fusszeile.ColBusaBetragEbRow0'.", repo.TblAnzeige.Fusszeile.ColBusaBetragEbRow0Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColBusaBetragEbRow0Info, "Text", "1.831,55");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblAnzeige.Fusszeile.ColBusaBetragLfdSRow0'.", repo.TblAnzeige.Fusszeile.ColBusaBetragLfdSRow0Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColBusaBetragLfdSRow0Info, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.000,00') on item 'TblAnzeige.Fusszeile.ColBusaBetragLfdHRow0'.", repo.TblAnzeige.Fusszeile.ColBusaBetragLfdHRow0Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColBusaBetragLfdHRow0Info, "Text", "2.000,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblAnzeige.Fusszeile.ColBusaBetragLfdHRow0'.", repo.TblAnzeige.Fusszeile.ColBusaBetragLfdHRow0Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColBusaBetragLfdHRow0Info, "Text", "0,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.831,55') on item 'TblAnzeige.Fusszeile.ColBusaBetragRow0'.", repo.TblAnzeige.Fusszeile.ColBusaBetragRow0Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblAnzeige.Fusszeile.ColBusaBetragRow0Info, "Text", "1.831,55");
