@@ -89,6 +89,18 @@ namespace E_INFO_001
             set { _Artikel1 = value; }
         }
 
+        string _Rechnung2 = "301900002";
+
+        /// <summary>
+        /// Gets or sets the value of variable Rechnung2.
+        /// </summary>
+        [TestVariable("99cff21c-5b76-4af8-b573-e2e01b6d5b5c")]
+        public string Rechnung2
+        {
+            get { return _Rechnung2; }
+            set { _Rechnung2 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -2221,7 +2233,7 @@ namespace E_INFO_001
         public partial class MdiEInfo1AppFolder : RepoGenBaseFolder
         {
             E_INFO_001RepositoryFolders.FlexGridFolder1 _flexgrid;
-            RepoItemInfo _colrechnrrow3Info;
+            E_INFO_001RepositoryFolders.Row_mit_Variable_Rechnung2Folder _row_mit_variable_rechnung2;
             RepoItemInfo _colreacdrow9Info;
             RepoItemInfo _collsknrInfo;
             RepoItemInfo _collsknrrow1Info;
@@ -2233,7 +2245,7 @@ namespace E_INFO_001
                     base("MdiEInfo1", "/form[@controltypename='mdiE_info']", parentFolder, 30000, null, true, "c3eac994-4d33-4e3e-99a6-5eccaaab33eb", "")
             {
                 _flexgrid = new E_INFO_001RepositoryFolders.FlexGridFolder1(this);
-                _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "?/?/form//table/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "7f8a4dc6-9ab0-412d-a2c2-4303571d877d");
+                _row_mit_variable_rechnung2 = new E_INFO_001RepositoryFolders.Row_mit_Variable_Rechnung2Folder(this);
                 _colreacdrow9Info = new RepoItemInfo(this, "ColReaCdRow9", "?/?/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']//?/cell[@accessiblename~'colRea_cd Row ' and @text='G']", "", 30000, null, "73f6123e-773e-4bec-b8b3-ea67502ff5fa");
                 _collsknrInfo = new RepoItemInfo(this, "ColLskNr", "element[@controltypename='MdiClient']/form[@controlname='tblLsk']/element[@controlname='colLsk_nr']", "", 30000, null, "a6fca414-87cf-4ec5-9be3-d032a95b8b9a");
                 _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "element[@controltypename='MdiClient']/form[@controlname='tblLsk']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_nr Row 1']", "", 30000, null, "00037b2d-d49b-4431-a4e3-a6f1390db9a3");
@@ -2260,30 +2272,6 @@ namespace E_INFO_001
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColRechNrRow3 item.
-            /// </summary>
-            [RepositoryItem("7f8a4dc6-9ab0-412d-a2c2-4303571d877d")]
-            public virtual Ranorex.Cell ColRechNrRow3
-            {
-                get
-                {
-                    return _colrechnrrow3Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColRechNrRow3 item info.
-            /// </summary>
-            [RepositoryItemInfo("7f8a4dc6-9ab0-412d-a2c2-4303571d877d")]
-            public virtual RepoItemInfo ColRechNrRow3Info
-            {
-                get
-                {
-                    return _colrechnrrow3Info;
                 }
             }
 
@@ -2366,6 +2354,15 @@ namespace E_INFO_001
             public virtual E_INFO_001RepositoryFolders.FlexGridFolder1 FlexGrid
             {
                 get { return _flexgrid; }
+            }
+
+            /// <summary>
+            /// The Row_mit_Variable_Rechnung2 folder.
+            /// </summary>
+            [RepositoryFolder("fa6a3b28-61e3-4f0e-b39e-63264e113414")]
+            public virtual E_INFO_001RepositoryFolders.Row_mit_Variable_Rechnung2Folder Row_mit_Variable_Rechnung2
+            {
+                get { return _row_mit_variable_rechnung2; }
             }
         }
 
@@ -2483,6 +2480,98 @@ namespace E_INFO_001
                 get
                 {
                     return _collspmatpreisrowInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Row_mit_Variable_Rechnung2Folder folder.
+        /// </summary>
+        [RepositoryFolder("fa6a3b28-61e3-4f0e-b39e-63264e113414")]
+        public partial class Row_mit_Variable_Rechnung2Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colrechnrrow3Info;
+            RepoItemInfo _copy_of_colrechstatusrow3Info;
+
+            /// <summary>
+            /// Creates a new Row_mit_Variable_Rechnung2  folder.
+            /// </summary>
+            public Row_mit_Variable_Rechnung2Folder(RepoGenBaseFolder parentFolder) :
+                    base("Row_mit_Variable_Rechnung2", "element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Rechnung2]", parentFolder, 30000, null, false, "fa6a3b28-61e3-4f0e-b39e-63264e113414", "")
+            {
+                _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "cell[@accessiblename~'colRech_nr']", "", 30000, null, "7f8a4dc6-9ab0-412d-a2c2-4303571d877d");
+                _copy_of_colrechstatusrow3Info = new RepoItemInfo(this, "Copy_of_ColRechStatusRow3", "cell[@accessiblename~'colRech_status']", "", 30000, null, "256b5b7e-0f0d-450f-af33-6f8abdd35e11");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("fa6a3b28-61e3-4f0e-b39e-63264e113414")]
+            public virtual Ranorex.Row Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("fa6a3b28-61e3-4f0e-b39e-63264e113414")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColRechNrRow3 item.
+            /// </summary>
+            [RepositoryItem("7f8a4dc6-9ab0-412d-a2c2-4303571d877d")]
+            public virtual Ranorex.Cell ColRechNrRow3
+            {
+                get
+                {
+                    return _colrechnrrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColRechNrRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("7f8a4dc6-9ab0-412d-a2c2-4303571d877d")]
+            public virtual RepoItemInfo ColRechNrRow3Info
+            {
+                get
+                {
+                    return _colrechnrrow3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_ColRechStatusRow3 item.
+            /// </summary>
+            [RepositoryItem("256b5b7e-0f0d-450f-af33-6f8abdd35e11")]
+            public virtual Ranorex.Cell Copy_of_ColRechStatusRow3
+            {
+                get
+                {
+                    return _copy_of_colrechstatusrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_ColRechStatusRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("256b5b7e-0f0d-450f-af33-6f8abdd35e11")]
+            public virtual RepoItemInfo Copy_of_ColRechStatusRow3Info
+            {
+                get
+                {
+                    return _copy_of_colrechstatusrow3Info;
                 }
             }
         }

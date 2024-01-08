@@ -908,17 +908,6 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		refpath="/form[@controltypename='mdiE_info']"
 		searchtimeout="30000ms"
 		usecache="True">
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="7f8a4dc6-9ab0-412d-a2c2-4303571d877d"
-			name="ColRechNrRow3"
-			refimgid="b9ab8ec5-6f01-4820-8386-44660c51226d"
-			refpath="/form[@controltypename='mdiE_info']/element/form/container/element/table/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controltypename='mdiE_info']/?/?/form//table/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']
-			</item>
 			<folder
 			addcaps="table,accessible"
 			capname="table"
@@ -993,6 +982,38 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controltypename='mdiE_info']/element[@controltypename='MdiClient']/form[@controlname='tblLsk']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_nr Row 1']
 			</item>
+			<folder
+			capname="row"
+			id="fa6a3b28-61e3-4f0e-b39e-63264e113414"
+			isrooted="True"
+			name="Row_mit_Variable_Rechnung2"
+			refimgid="f5e67113-3b17-4fc4-b686-56b21cc3e873"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="7f8a4dc6-9ab0-412d-a2c2-4303571d877d"
+				name="ColRechNrRow3"
+				refimgid="b9ab8ec5-6f01-4820-8386-44660c51226d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controltypename='mdiE_info']/element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Rechnung2]/cell[@accessiblename~'colRech_nr']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="256b5b7e-0f0d-450f-af33-6f8abdd35e11"
+				name="Copy_of_ColRechStatusRow3"
+				refimgid="8e8989d4-4e10-49c5-8b99-2ed54f1ece59"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controltypename='mdiE_info']/element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Rechnung2]/cell[@accessiblename~'colRech_status']
+				</item>
+				<basepath>
+					/form[@controltypename='mdiE_info']/element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Rechnung2]
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controltypename='mdiE_info']
 			</basepath>
@@ -1030,6 +1051,11 @@ QmCC
 		id="66cc1cf9-cfd1-4bd3-850c-2ebce9b499a6"
 		name="Artikel1">
 			100011
+		</var>
+		<var
+		id="99cff21c-5b76-4af8-b573-e2e01b6d5b5c"
+		name="Rechnung2">
+			301900002
 		</var>
 	</variables>
 </repository>
