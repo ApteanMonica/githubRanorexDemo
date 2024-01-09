@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         /// </summary>
         public Formular_VORJAHR_Formular_vorhanden_Drucken_aktiv()
         {
-            UVA_VORJAHR_Form_Code = "";
+            UVA_VORJAHR_Form_Code = "D23";
         }
 
         /// <summary>

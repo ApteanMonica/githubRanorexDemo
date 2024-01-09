@@ -43,7 +43,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         {
             Firma = "300";
             UVA_D20_Form_Name = "UVA-Deutschland 2020 Elster";
-            UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2023 Elster";
+            UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2024 Elster";
         }
 
         /// <summary>

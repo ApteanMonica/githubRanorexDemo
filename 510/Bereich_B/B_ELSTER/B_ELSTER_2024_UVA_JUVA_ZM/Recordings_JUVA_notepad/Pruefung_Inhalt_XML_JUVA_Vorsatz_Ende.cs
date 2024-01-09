@@ -24,72 +24,59 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_Inhalt_XML_JUVA_Header recording.
+    ///The Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende recording.
     /// </summary>
-    [TestModule("479cf6e0-8dec-4f2f-ba53-101cb79a60c3", ModuleType.Recording, 1)]
-    public partial class Pruefung_Inhalt_XML_JUVA_Header : ITestModule
+    [TestModule("dddb6907-4caf-4540-845d-4fe4e4c3d7fe", ModuleType.Recording, 1)]
+    public partial class Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Pruefung_Inhalt_XML_JUVA_Header instance = new Pruefung_Inhalt_XML_JUVA_Header();
+        static Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende instance = new Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_Inhalt_XML_JUVA_Header()
+        public Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende()
         {
-            XML_JUVA_Header_1 = "";
-            XML_JUVA_Header_2 = "";
-            XML_JUVA_Header_3 = "";
+            XML_JUVA_Vorsatz = "";
+            XML_JUVA_Ende = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_Inhalt_XML_JUVA_Header Instance
+        public static Pruefung_Inhalt_XML_JUVA_Vorsatz_Ende Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _XML_JUVA_Header_1;
+        string _XML_JUVA_Vorsatz;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_Header_1.
+        /// Gets or sets the value of variable XML_JUVA_Vorsatz.
         /// </summary>
-        [TestVariable("cc9aa451-beae-4d31-ba3e-2887b5281bec")]
-        public string XML_JUVA_Header_1
+        [TestVariable("5784283a-e343-4647-8ebd-c9f7902bcf30")]
+        public string XML_JUVA_Vorsatz
         {
-            get { return _XML_JUVA_Header_1; }
-            set { _XML_JUVA_Header_1 = value; }
+            get { return _XML_JUVA_Vorsatz; }
+            set { _XML_JUVA_Vorsatz = value; }
         }
 
-        string _XML_JUVA_Header_2;
+        string _XML_JUVA_Ende;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_Header_2.
+        /// Gets or sets the value of variable XML_JUVA_Ende.
         /// </summary>
-        [TestVariable("abe019ba-8d25-40c3-b714-e5265caa7a07")]
-        public string XML_JUVA_Header_2
+        [TestVariable("876c1747-5c9e-4cd4-b45c-c6ed238439a8")]
+        public string XML_JUVA_Ende
         {
-            get { return _XML_JUVA_Header_2; }
-            set { _XML_JUVA_Header_2 = value; }
-        }
-
-        string _XML_JUVA_Header_3;
-
-        /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_Header_3.
-        /// </summary>
-        [TestVariable("6b67dacf-f998-4ed9-9361-2a6dcfe28536")]
-        public string XML_JUVA_Header_3
-        {
-            get { return _XML_JUVA_Header_3; }
-            set { _XML_JUVA_Header_3 = value; }
+            get { return _XML_JUVA_Ende; }
+            set { _XML_JUVA_Ende = value; }
         }
 
 #endregion
@@ -119,19 +106,14 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_Header_1) on item 'XMLEditor_UVA_ZM3.Text15'.", repo.XMLEditor_UVA_ZM3.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM3.Text15Info, "Text", XML_JUVA_Header_1, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_Vorsatz) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", XML_JUVA_Vorsatz, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_Header_2) on item 'XMLEditor_UVA_ZM3.Text15'.", repo.XMLEditor_UVA_ZM3.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM3.Text15Info, "Text", XML_JUVA_Header_2, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_Ende) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", XML_JUVA_Ende, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_Header_3) on item 'XMLEditor_UVA_ZM3.Text15'.", repo.XMLEditor_UVA_ZM3.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM3.Text15Info, "Text", XML_JUVA_Header_3, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
         }
 

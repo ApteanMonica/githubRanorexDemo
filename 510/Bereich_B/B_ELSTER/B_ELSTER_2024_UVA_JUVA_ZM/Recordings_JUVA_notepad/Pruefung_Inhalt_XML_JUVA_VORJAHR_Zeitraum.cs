@@ -20,60 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv recording.
+    ///The Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum recording.
     /// </summary>
-    [TestModule("e409184a-dad1-4326-968a-8fe36694dcf2", ModuleType.Recording, 1)]
-    public partial class Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv : ITestModule
+    [TestModule("5ee66cac-8d66-4181-8af0-94f959c0e0b9", ModuleType.Recording, 1)]
+    public partial class Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv instance = new Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv();
+        static Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum instance = new Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv()
+        public Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum()
         {
-            UVA_JAHRNEU_Form_Code = "D24";
+            VORJAHR = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv Instance
+        public static Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _UVA_JAHRNEU_Form_Code;
+        string _VORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Code.
+        /// Gets or sets the value of variable VORJAHR.
         /// </summary>
-        [TestVariable("ed63b89c-e41b-458e-b6eb-03fcd3c66017")]
-        public string UVA_JAHRNEU_Form_Code
+        [TestVariable("97619d56-6b29-4822-9f62-f3c9442d7ad5")]
+        public string VORJAHR
         {
-            get { return _UVA_JAHRNEU_Form_Code; }
-            set { _UVA_JAHRNEU_Form_Code = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
-        /// </summary>
-        [TestVariable("3751c4e7-3923-4ce1-a791-05ede3e7ff24")]
-        public string UVA_JAHRNEU_Form_Name
-        {
-            get { return repo.UVA_JAHRNEU_Form_Name; }
-            set { repo.UVA_JAHRNEU_Form_Name = value; }
+            get { return _VORJAHR; }
+            set { _VORJAHR = value; }
         }
 
 #endregion
@@ -102,14 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PageDown' at Center.", repo.TblUVAF.PageDownInfo, new RecordItemIndex(0));
-            repo.TblUVAF.PageDown.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_JAHRNEU_Form_Code) on item 'TblUVAF.Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, "Text", UVA_JAHRNEU_Form_Code);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo, "AccessibleValue", "True");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", VORJAHR, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }
 

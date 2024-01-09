@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="93627e78-aa22-4388-af9c-1876e5e2675e"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad">
+	</codegen>
+	<variables>
+		<var
+		id="9e4754b4-99fe-4033-9821-aa98e4991754"
+		name="XML_JUVA_2022_Berech_Ust">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be8391fb-fca1-4bcd-ae34-e0dd7a4d165f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="XML_JUVA_2022_Berech_Ust">
+				</binding>
+			</bindings>
+			<info
+			id="d2c47f0b-1362-49bb-8ef8-e4506dc63ef0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
+	name="B_ELSTER_2024_UVA_JUVA_ZMRepository"
+	relativepath="..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
+		<codegen
+		classname="B_ELSTER_2024_UVA_JUVA_ZMRepository"
+		namespace="B_ELSTER_2024_UVA_JUVA_ZM">
+		</codegen>
+		<rootfolder
+		id="6796600a-bf80-4687-9882-251ca4f9081a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung_2022.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
