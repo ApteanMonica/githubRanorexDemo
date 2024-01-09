@@ -41,13 +41,14 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_ZM_Datei_VORJAHR_12_quart_32()
         {
-            XML_ZM_Version_VORJAHR = "";
-            XML_ZM_VORJAHR_12_Teil_1 = "";
-            XML_ZM_VORJAHR_12_Teil_2 = "";
-            XML_ZM_VORJAHR_12_Teil_3 = "";
-            XML_ZM_VORJAHR_12_Teil_4_quart32 = "";
+            XML_ZM_Version = "";
+            XML_ZM_Teil_1 = "";
+            XML_ZM_Teil_2 = "";
+            XML_ZM_Teil_3 = "";
+            XML_ZM_Teil_4 = "";
             VORJAHR = "";
-            XML_ZM_VORJAHR_12_Teil_5 = "";
+            XML_ZM_Teil_5 = "";
+            XML_ZM_Dezember = "";
         }
 
         /// <summary>
@@ -60,64 +61,64 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
 #region Variables
 
-        string _XML_ZM_Version_VORJAHR;
+        string _XML_ZM_Version;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_Version_VORJAHR.
+        /// Gets or sets the value of variable XML_ZM_Version.
         /// </summary>
         [TestVariable("c38b336f-ab42-41fe-a345-4ed30b496a4b")]
-        public string XML_ZM_Version_VORJAHR
+        public string XML_ZM_Version
         {
-            get { return _XML_ZM_Version_VORJAHR; }
-            set { _XML_ZM_Version_VORJAHR = value; }
+            get { return _XML_ZM_Version; }
+            set { _XML_ZM_Version = value; }
         }
 
-        string _XML_ZM_VORJAHR_12_Teil_1;
+        string _XML_ZM_Teil_1;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_VORJAHR_12_Teil_1.
+        /// Gets or sets the value of variable XML_ZM_Teil_1.
         /// </summary>
         [TestVariable("9cddde47-7b70-451a-bae6-0e03960393b3")]
-        public string XML_ZM_VORJAHR_12_Teil_1
+        public string XML_ZM_Teil_1
         {
-            get { return _XML_ZM_VORJAHR_12_Teil_1; }
-            set { _XML_ZM_VORJAHR_12_Teil_1 = value; }
+            get { return _XML_ZM_Teil_1; }
+            set { _XML_ZM_Teil_1 = value; }
         }
 
-        string _XML_ZM_VORJAHR_12_Teil_2;
+        string _XML_ZM_Teil_2;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_VORJAHR_12_Teil_2.
+        /// Gets or sets the value of variable XML_ZM_Teil_2.
         /// </summary>
         [TestVariable("74287c5a-4c98-423d-8ff8-c3a6144df619")]
-        public string XML_ZM_VORJAHR_12_Teil_2
+        public string XML_ZM_Teil_2
         {
-            get { return _XML_ZM_VORJAHR_12_Teil_2; }
-            set { _XML_ZM_VORJAHR_12_Teil_2 = value; }
+            get { return _XML_ZM_Teil_2; }
+            set { _XML_ZM_Teil_2 = value; }
         }
 
-        string _XML_ZM_VORJAHR_12_Teil_3;
+        string _XML_ZM_Teil_3;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_VORJAHR_12_Teil_3.
+        /// Gets or sets the value of variable XML_ZM_Teil_3.
         /// </summary>
         [TestVariable("9110658e-3c9b-4692-82bc-b6d7fde7edca")]
-        public string XML_ZM_VORJAHR_12_Teil_3
+        public string XML_ZM_Teil_3
         {
-            get { return _XML_ZM_VORJAHR_12_Teil_3; }
-            set { _XML_ZM_VORJAHR_12_Teil_3 = value; }
+            get { return _XML_ZM_Teil_3; }
+            set { _XML_ZM_Teil_3 = value; }
         }
 
-        string _XML_ZM_VORJAHR_12_Teil_4_quart32;
+        string _XML_ZM_Teil_4;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_VORJAHR_12_Teil_4_quart32.
+        /// Gets or sets the value of variable XML_ZM_Teil_4.
         /// </summary>
         [TestVariable("8fa7d616-a939-4ccf-be04-7b0fdf60aba5")]
-        public string XML_ZM_VORJAHR_12_Teil_4_quart32
+        public string XML_ZM_Teil_4
         {
-            get { return _XML_ZM_VORJAHR_12_Teil_4_quart32; }
-            set { _XML_ZM_VORJAHR_12_Teil_4_quart32 = value; }
+            get { return _XML_ZM_Teil_4; }
+            set { _XML_ZM_Teil_4 = value; }
         }
 
         string _VORJAHR;
@@ -132,16 +133,28 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
             set { _VORJAHR = value; }
         }
 
-        string _XML_ZM_VORJAHR_12_Teil_5;
+        string _XML_ZM_Teil_5;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_VORJAHR_12_Teil_5.
+        /// Gets or sets the value of variable XML_ZM_Teil_5.
         /// </summary>
         [TestVariable("5aec3901-3cf3-42c7-b723-1cd7e8bab6bb")]
-        public string XML_ZM_VORJAHR_12_Teil_5
+        public string XML_ZM_Teil_5
         {
-            get { return _XML_ZM_VORJAHR_12_Teil_5; }
-            set { _XML_ZM_VORJAHR_12_Teil_5 = value; }
+            get { return _XML_ZM_Teil_5; }
+            set { _XML_ZM_Teil_5 = value; }
+        }
+
+        string _XML_ZM_Dezember;
+
+        /// <summary>
+        /// Gets or sets the value of variable XML_ZM_Dezember.
+        /// </summary>
+        [TestVariable("6a6db28a-fcdf-4282-b338-56dc7cb4e9a3")]
+        public string XML_ZM_Dezember
+        {
+            get { return _XML_ZM_Dezember; }
+            set { _XML_ZM_Dezember = value; }
         }
 
 #endregion
@@ -171,39 +184,44 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_VORJAHR_12_Teil_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_VORJAHR_12_Teil_1, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Teil_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Teil_1, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_VORJAHR_12_Teil_2) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_VORJAHR_12_Teil_2, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Teil_2) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Teil_2, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_VORJAHR_12_Teil_3) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_VORJAHR_12_Teil_3, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Teil_3) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Teil_3, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Version_VORJAHR) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(3));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Version_VORJAHR, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Version) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(3));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Version, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_VORJAHR_12_Teil_4_quart32) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_VORJAHR_12_Teil_4_quart32, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Teil_4) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Teil_4, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(5));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", VORJAHR, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Dezember) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(5));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Dezember, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_VORJAHR_12_Teil_5) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(6));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_VORJAHR_12_Teil_5, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(6));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", VORJAHR, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_ZM_Teil_5) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(7));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_ZM_Teil_5, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
         }
 
