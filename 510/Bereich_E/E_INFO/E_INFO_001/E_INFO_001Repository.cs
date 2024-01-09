@@ -2490,8 +2490,8 @@ namespace E_INFO_001
         [RepositoryFolder("fa6a3b28-61e3-4f0e-b39e-63264e113414")]
         public partial class Row_mit_Variable_Rechnung2Folder : RepoGenBaseFolder
         {
-            RepoItemInfo _colrechnrrow3Info;
-            RepoItemInfo _copy_of_colrechstatusrow3Info;
+            RepoItemInfo _colrechnr_variableInfo;
+            RepoItemInfo _copy_of_colrechstatus_variableInfo;
 
             /// <summary>
             /// Creates a new Row_mit_Variable_Rechnung2  folder.
@@ -2499,8 +2499,8 @@ namespace E_INFO_001
             public Row_mit_Variable_Rechnung2Folder(RepoGenBaseFolder parentFolder) :
                     base("Row_mit_Variable_Rechnung2", "element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Rechnung2]", parentFolder, 30000, null, false, "fa6a3b28-61e3-4f0e-b39e-63264e113414", "")
             {
-                _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "cell[@accessiblename~'colRech_nr']", "", 30000, null, "7f8a4dc6-9ab0-412d-a2c2-4303571d877d");
-                _copy_of_colrechstatusrow3Info = new RepoItemInfo(this, "Copy_of_ColRechStatusRow3", "cell[@accessiblename~'colRech_status']", "", 30000, null, "256b5b7e-0f0d-450f-af33-6f8abdd35e11");
+                _colrechnr_variableInfo = new RepoItemInfo(this, "ColRechNr_Variable", "cell[@accessiblename~'colRech_nr']", "", 30000, null, "7f8a4dc6-9ab0-412d-a2c2-4303571d877d");
+                _copy_of_colrechstatus_variableInfo = new RepoItemInfo(this, "Copy_of_ColRechStatus_Variable", "cell[@accessiblename~'colRech_status']", "", 30000, null, "256b5b7e-0f0d-450f-af33-6f8abdd35e11");
             }
 
             /// <summary>
@@ -2528,50 +2528,50 @@ namespace E_INFO_001
             }
 
             /// <summary>
-            /// The ColRechNrRow3 item.
+            /// The ColRechNr_Variable item.
             /// </summary>
             [RepositoryItem("7f8a4dc6-9ab0-412d-a2c2-4303571d877d")]
-            public virtual Ranorex.Cell ColRechNrRow3
+            public virtual Ranorex.Cell ColRechNr_Variable
             {
                 get
                 {
-                    return _colrechnrrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _colrechnr_variableInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The ColRechNrRow3 item info.
+            /// The ColRechNr_Variable item info.
             /// </summary>
             [RepositoryItemInfo("7f8a4dc6-9ab0-412d-a2c2-4303571d877d")]
-            public virtual RepoItemInfo ColRechNrRow3Info
+            public virtual RepoItemInfo ColRechNr_VariableInfo
             {
                 get
                 {
-                    return _colrechnrrow3Info;
+                    return _colrechnr_variableInfo;
                 }
             }
 
             /// <summary>
-            /// The Copy_of_ColRechStatusRow3 item.
+            /// The Copy_of_ColRechStatus_Variable item.
             /// </summary>
             [RepositoryItem("256b5b7e-0f0d-450f-af33-6f8abdd35e11")]
-            public virtual Ranorex.Cell Copy_of_ColRechStatusRow3
+            public virtual Ranorex.Cell Copy_of_ColRechStatus_Variable
             {
                 get
                 {
-                    return _copy_of_colrechstatusrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _copy_of_colrechstatus_variableInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_ColRechStatusRow3 item info.
+            /// The Copy_of_ColRechStatus_Variable item info.
             /// </summary>
             [RepositoryItemInfo("256b5b7e-0f0d-450f-af33-6f8abdd35e11")]
-            public virtual RepoItemInfo Copy_of_ColRechStatusRow3Info
+            public virtual RepoItemInfo Copy_of_ColRechStatus_VariableInfo
             {
                 get
                 {
-                    return _copy_of_colrechstatusrow3Info;
+                    return _copy_of_colrechstatus_variableInfo;
                 }
             }
         }
