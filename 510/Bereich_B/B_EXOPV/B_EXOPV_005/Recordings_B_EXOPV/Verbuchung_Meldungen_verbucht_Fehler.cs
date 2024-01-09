@@ -97,8 +97,8 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7 Belege wurden verbucht') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "7 Belege wurden verbucht");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\r\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button0.Click();

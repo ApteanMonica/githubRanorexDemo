@@ -292,8 +292,8 @@ namespace E_INFO_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='F') on item 'MdiEInfo.FlexGrid2.ColRechStatusRow1'.", repo.MdiEInfo.FlexGrid2.ColRechStatusRow1Info, new RecordItemIndex(29));
             Validate.AttributeEqual(repo.MdiEInfo.FlexGrid2.ColRechStatusRow1Info, "Text", "F");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnung2) on item 'MdiEInfo1.Row_mit_Variable_Rechnung2.ColRechNr'.", repo.MdiEInfo1.Row_mit_Variable_Rechnung2.ColRechNrInfo, new RecordItemIndex(30));
-            Validate.AttributeEqual(repo.MdiEInfo1.Row_mit_Variable_Rechnung2.ColRechNrInfo, "Text", Rechnung2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnung2) on item 'MdiEInfo1.Row_mit_Variable_Rechnung2.ColRechNr_Variable'.", repo.MdiEInfo1.Row_mit_Variable_Rechnung2.ColRechNr_VariableInfo, new RecordItemIndex(30));
+            Validate.AttributeEqual(repo.MdiEInfo1.Row_mit_Variable_Rechnung2.ColRechNr_VariableInfo, "Text", Rechnung2);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='R') on item 'MdiEInfo.FlexGrid2.ColRechStatusRow3'.", repo.MdiEInfo.FlexGrid2.ColRechStatusRow3Info, new RecordItemIndex(31));
             Validate.AttributeEqual(repo.MdiEInfo.FlexGrid2.ColRechStatusRow3Info, "Text", "R");
