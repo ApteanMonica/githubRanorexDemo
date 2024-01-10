@@ -93,16 +93,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_4"
+					dataname="XML_UVA_Teil_4"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="2ec2c4fd-92e1-4366-bd20-41d963e7b15e"
-					variablename="XML_UVA_JAHRNEU_01_Teil_4">
+					variablename="XML_UVA_Teil_4">
 					</var>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_5_Monat_01"
+					dataname="XML_UVA_Monat_01"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="28f3fb56-9c7d-4275-9d66-4c2f6791653b"
-					variablename="XML_UVA_JAHRNEU_01_Teil_5_Monat_01">
+					variableid="31c584e6-0a13-49a7-abc6-d14264663605"
+					variablename="XML_UVA_Monat_01">
 					</var>
 					<var
 					dataname="XML_UVA_VERSION_JAHRNEU"
@@ -117,22 +117,28 @@
 					variablename="JAHRNEU">
 					</var>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_3"
+					dataname="XML_UVA_Teil_3"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="913808dd-d29e-4eb6-a2dd-9642b11211d5"
-					variablename="XML_UVA_JAHRNEU_01_Teil_3">
+					variablename="XML_UVA_Teil_3">
 					</var>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_2"
+					dataname="XML_UVA_Teil_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="f6f24fed-cac8-40fe-aba2-443e2eab3f3d"
-					variablename="XML_UVA_JAHRNEU_01_Teil_2">
+					variablename="XML_UVA_Teil_2">
 					</var>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_1"
+					dataname="XML_UVA_Teil_1"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="ec60737a-6339-4563-a9e4-7aadfa5e61f1"
-					variablename="XML_UVA_JAHRNEU_01_Teil_1">
+					variablename="XML_UVA_Teil_1">
+					</var>
+					<var
+					dataname="XML_UVA_Teil_5"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="28f3fb56-9c7d-4275-9d66-4c2f6791653b"
+					variablename="XML_UVA_Teil_5">
 					</var>
 				</databinding>
 			</testmodule>
@@ -212,6 +218,10 @@
 					value="300">
 					</param>
 					<param
+					name="Pfad"
+					value="c:\temp">
+					</param>
+					<param
 					name="Bank"
 					value="BAWAG">
 					</param>
@@ -220,23 +230,31 @@
 					value="AT026000000001349870">
 					</param>
 					<param
-					name="Pfad"
-					value="c:\temp">
-					</param>
-					<param
-					name="XML_Inhalt_aktuell"
-					value="">
+					name="Monat_1"
+					value="1">
 					</param>
 					<param
 					name="Monat_12"
 					value="12">
 					</param>
 					<param
-					name="Monat_1"
-					value="1">
+					name="UVA_D20_Form_Code"
+					value="D20">
 					</param>
 					<param
-					name="BEGINN***Jahr und Formular ändern****"
+					name="UVA_D20_Form_Name"
+					value="UVA-Deutschland 2020 Elster">
+					</param>
+					<param
+					name="XML_Inhalt_aktuell"
+					value="">
+					</param>
+					<param
+					name="Eric_log_Inhalt_aktuell"
+					value="">
+					</param>
+					<param
+					name="BEGINN***Jahr + Formulare + Eric/XML Versionen ändern****"
 					value="">
 					</param>
 					<param
@@ -276,16 +294,8 @@
 					value="UVA-Deutschland 2022 Elster">
 					</param>
 					<param
-					name="***ERIC***"
-					value="">
-					</param>
-					<param
-					name="Eric_ZM_VORJAHR_12_39_2"
+					name="Eric_ZM_VERSION_39_2"
 					value="Datei: checkZMDO.dll,  Fileversion: 2023, 39, 2, 4, Produktversion: 39, 2, 4, 0">
-					</param>
-					<param
-					name="Eric_ZM_JAHRNEU_01_39_2"
-					value="">
 					</param>
 					<param
 					name="Eric_JUVA_VORVORJAHR_39_2"
@@ -320,44 +330,16 @@
 					value="&lt;E50 xmlns = &quot;http://finkonsens.de/elster/elstererklaerung/ust/e50/v2023&quot; version = &quot;2023&quot;>">
 					</param>
 					<param
-					name="XML_ZM_Version_VORJAHR"
-					value="&lt;zm version=&quot;000005&quot;>">
-					</param>
-					<param
-					name="XML_ZM_Version_JAHRNEU"
-					value="&lt;zm version=&quot;000005&quot;>">
-					</param>
-					<param
-					name="XML_UVA_VORJAHR_12_Teil_5_Monat_12"
-					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>12&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
-					</param>
-					<param
-					name="XML_UVA_JAHRNEU_01_Teil_5_Monat_01"
-					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>01&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
-					</param>
-					<param
-					name="ENDE***Jahr und Formular ändern****"
-					value="">
-					</param>
-					<param
-					name="UVA_D20_Form_Code"
-					value="D20">
-					</param>
-					<param
-					name="UVA_D20_Form_Name"
-					value="UVA-Deutschland 2020 Elster">
-					</param>
-					<param
-					name="Eric_log_Pfad_Datei"
-					value="c:\temp\eric.log">
-					</param>
-					<param
-					name="Eric_log_Inhalt_aktuell"
+					name="ENDE***Jahr + Formulare + Eric/XML Versionen ändern****"
 					value="">
 					</param>
 					<param
 					name="Eric_log_Datei"
 					value="eric.log">
+					</param>
+					<param
+					name="Eric_log_Pfad_Datei"
+					value="c:\temp\eric.log">
 					</param>
 					<param
 					name="XML_ZM_Datei"
@@ -388,43 +370,35 @@
 					value="C:\temp\ZMDO.XML">
 					</param>
 					<param
-					name="XML_ZM_JAHRNEU_01_Teil_1"
+					name="XML_ZM_Version"
+					value="&lt;zm version=&quot;000005&quot;>">
+					</param>
+					<param
+					name="XML_ZM_Teil_1"
 					value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#13;&#10;&lt;Elster xmlns=&quot;http://www.elster.de/elsterxml/schema/v11&quot;>&#13;&#10;&#9;&lt;TransferHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&lt;Verfahren>ElsterExtern&lt;/Verfahren>&#13;&#10;&#9;&#9;&lt;DatenArt>ZMDO&lt;/DatenArt>&#13;&#10;&#9;&#9;&lt;Vorgang>send-Auth&lt;/Vorgang>&#13;&#10;&#9;&#9;&lt;HerstellerID>74931&lt;/HerstellerID>&#13;&#10;&#9;&#9;&lt;DatenLieferant>DE_ELSTER;Bahnhofstrasse 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&lt;Datei>&#13;&#10;&#9;&#9;&#9;&lt;Verschluesselung>PKCS#7v1.5&lt;/Verschluesselung>&#13;&#10;&#9;&#9;&#9;&lt;Kompression>GZIP&lt;/Kompression>&#13;&#10;&#9;&#9;&#9;&lt;DatenGroesse>3000&lt;/DatenGroesse>&#13;&#10;&#9;&#9;&#9;&lt;Transportschluessel>&lt;/Transportschluessel>&#13;&#10;&#9;&#9;&lt;/Datei>&#13;&#10;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&lt;VersionClient>">
 					</param>
 					<param
-					name="XML_ZM_JAHRNEU_01_Teil_2"
+					name="XML_ZM_Teil_2"
 					value="&lt;/VersionClient>&#13;&#10;&#9;&lt;/TransferHeader>&#13;&#10;&#9;&lt;DatenTeil>&#13;&#10;&#9;&#9;&lt;Nutzdatenblock>&#13;&#10;&#9;&#9;&#9;&lt;NutzdatenHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&lt;NutzdatenTicket>1&lt;/NutzdatenTicket>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Empfaenger id=&quot;L&quot;>BF&lt;/Empfaenger>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;ProduktName>RS2 by Aptean Austria GmbH A-5101 Bergheim&lt;/ProduktName>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;ProduktVersion>">
 					</param>
 					<param
-					name="XML_ZM_JAHRNEU_01_Teil_3"
+					name="XML_ZM_Teil_3"
 					value="&lt;/ProduktVersion>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&lt;DatenLieferant>DE_ELSTER;Bahnhofstrasse 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&#9;&lt;/NutzdatenHeader>&#13;&#10;&#9;&#9;&#9;&lt;Nutzdaten>">
 					</param>
 					<param
-					name="XML_ZM_JAHRNEU_01_Teil_4_quart21"
-					value="&lt;unternehmer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;knri>DE814207115&lt;/knri>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulassNr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulnr1>N&lt;/zulnr1>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulnr2>1111111&lt;/zulnr2>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zulassNr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;anschrift>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;name>DE_ELSTER&lt;/name>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;strasse>Bahnhofstrasse&lt;/strasse>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;hausnr>34&lt;/hausnr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;plz>20355&lt;/plz>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;ort>Hamburg&lt;/ort>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;staat>DE&lt;/staat>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/anschrift>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zm-zeilen waehrung=&quot;1&quot; meldeart=&quot;10&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;anzeige>false&lt;/anzeige>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;widerruf>false&lt;/widerruf>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;mzr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;quart>21&lt;/quart>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;jahr>">
+					name="XML_ZM_Teil_4"
+					value="&lt;unternehmer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;knri>DE814207115&lt;/knri>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulassNr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulnr1>N&lt;/zulnr1>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulnr2>1111111&lt;/zulnr2>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zulassNr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;anschrift>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;name>DE_ELSTER&lt;/name>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;strasse>Bahnhofstrasse&lt;/strasse>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;hausnr>34&lt;/hausnr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;plz>20355&lt;/plz>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;ort>Hamburg&lt;/ort>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;staat>DE&lt;/staat>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/anschrift>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zm-zeilen waehrung=&quot;1&quot; meldeart=&quot;10&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;anzeige>false&lt;/anzeige>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;widerruf>false&lt;/widerruf>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;mzr>">
 					</param>
 					<param
-					name="XML_ZM_JAHRNEU_01_Teil_5"
-					value="&lt;/jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/mzr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zeile umsatzart=&quot;L&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;knre>ATU22345678&lt;/knre>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;betrag>1000&lt;/betrag>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zeile>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zm-zeilen>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/unternehmer>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/zm>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
+					name="XML_ZM_Jaenner"
+					value="&lt;quart>21&lt;/quart>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;jahr>">
 					</param>
 					<param
-					name="XML_ZM_VORJAHR_12_Teil_1"
-					value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#13;&#10;&lt;Elster xmlns=&quot;http://www.elster.de/elsterxml/schema/v11&quot;>&#13;&#10;&#9;&lt;TransferHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&lt;Verfahren>ElsterExtern&lt;/Verfahren>&#13;&#10;&#9;&#9;&lt;DatenArt>ZMDO&lt;/DatenArt>&#13;&#10;&#9;&#9;&lt;Vorgang>send-Auth&lt;/Vorgang>&#13;&#10;&#9;&#9;&lt;HerstellerID>74931&lt;/HerstellerID>&#13;&#10;&#9;&#9;&lt;DatenLieferant>DE_ELSTER;Bahnhofstrasse 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&lt;Datei>&#13;&#10;&#9;&#9;&#9;&lt;Verschluesselung>PKCS#7v1.5&lt;/Verschluesselung>&#13;&#10;&#9;&#9;&#9;&lt;Kompression>GZIP&lt;/Kompression>&#13;&#10;&#9;&#9;&#9;&lt;DatenGroesse>3000&lt;/DatenGroesse>&#13;&#10;&#9;&#9;&#9;&lt;Transportschluessel>&lt;/Transportschluessel>&#13;&#10;&#9;&#9;&lt;/Datei>&#13;&#10;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&lt;VersionClient>">
+					name="XML_ZM_Dezember"
+					value="&lt;quart>32&lt;/quart>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;jahr>">
 					</param>
 					<param
-					name="XML_ZM_VORJAHR_12_Teil_2"
-					value="&lt;/VersionClient>&#13;&#10;&#9;&lt;/TransferHeader>&#13;&#10;&#9;&lt;DatenTeil>&#13;&#10;&#9;&#9;&lt;Nutzdatenblock>&#13;&#10;&#9;&#9;&#9;&lt;NutzdatenHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&lt;NutzdatenTicket>1&lt;/NutzdatenTicket>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Empfaenger id=&quot;L&quot;>BF&lt;/Empfaenger>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;ProduktName>RS2 by Aptean Austria GmbH A-5101 Bergheim&lt;/ProduktName>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;ProduktVersion>">
-					</param>
-					<param
-					name="XML_ZM_VORJAHR_12_Teil_3"
-					value="&lt;/ProduktVersion>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&lt;DatenLieferant>DE_ELSTER;Bahnhofstrasse 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&#9;&lt;/NutzdatenHeader>&#13;&#10;&#9;&#9;&#9;&lt;Nutzdaten>">
-					</param>
-					<param
-					name="XML_ZM_VORJAHR_12_Teil_4_quart32"
-					value="&lt;unternehmer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;knri>DE814207115&lt;/knri>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulassNr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulnr1>N&lt;/zulnr1>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zulnr2>1111111&lt;/zulnr2>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zulassNr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;anschrift>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;name>DE_ELSTER&lt;/name>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;strasse>Bahnhofstrasse&lt;/strasse>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;hausnr>34&lt;/hausnr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;plz>20355&lt;/plz>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;ort>Hamburg&lt;/ort>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;staat>DE&lt;/staat>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/anschrift>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zm-zeilen waehrung=&quot;1&quot; meldeart=&quot;10&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;anzeige>false&lt;/anzeige>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;widerruf>false&lt;/widerruf>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;mzr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;quart>32&lt;/quart>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;jahr>">
-					</param>
-					<param
-					name="XML_ZM_VORJAHR_12_Teil_5"
+					name="XML_ZM_Teil_5"
 					value="&lt;/jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/mzr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zeile umsatzart=&quot;L&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;knre>ATU22345678&lt;/knre>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;betrag>1000&lt;/betrag>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zeile>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zm-zeilen>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/unternehmer>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/zm>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
 					</param>
 					<param
@@ -432,20 +406,32 @@
 					value="">
 					</param>
 					<param
-					name="XML_UVA_JAHRNEU_01_Teil_1"
+					name="XML_UVA_Teil_1"
 					value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#13;&#10;&lt;Elster xmlns=&quot;http://www.elster.de/elsterxml/schema/v11&quot;>&#13;&#10;&#9;&lt;TransferHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&lt;Verfahren>ElsterAnmeldung&lt;/Verfahren>&#13;&#10;&#9;&#9;&lt;DatenArt>UStVA&lt;/DatenArt>&#13;&#10;&#9;&#9;&lt;Vorgang>send-Auth&lt;/Vorgang>&#13;&#10;&#9;&#9;&lt;HerstellerID>00704&lt;/HerstellerID>&#13;&#10;&#9;&#9;&lt;DatenLieferant>Deutschland f&amp;#252;r ELSTER;Bahnhofstra&amp;#223;e 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&lt;Datei>&#13;&#10;&#9;&#9;&#9;&lt;Verschluesselung>PKCS#7v1.5&lt;/Verschluesselung>&#13;&#10;&#9;&#9;&#9;&lt;Kompression>GZIP&lt;/Kompression>&#13;&#10;&#9;&#9;&#9;&lt;DatenGroesse>1200&lt;/DatenGroesse>&#13;&#10;&#9;&#9;&#9;&lt;TransportSchluessel>&lt;/TransportSchluessel>&#13;&#10;&#9;&#9;&lt;/Datei>&#13;&#10;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&lt;VersionClient>RS-Version">
 					</param>
 					<param
-					name="XML_UVA_JAHRNEU_01_Teil_2"
+					name="XML_UVA_Teil_2"
 					value="&lt;/TransferHeader>&#13;&#10;&#9;&lt;DatenTeil>&#13;&#10;&#9;&#9;&lt;Nutzdatenblock>&#13;&#10;&#9;&#9;&#9;&lt;NutzdatenHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&lt;NutzdatenTicket>1&lt;/NutzdatenTicket>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Empfaenger id=&quot;F&quot;>9181&lt;/Empfaenger>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;ProduktName>RS2 by Aptean Austria GmbH A-5101 Bergheim&lt;/ProduktName>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;ProduktVersion>">
 					</param>
 					<param
-					name="XML_UVA_JAHRNEU_01_Teil_3"
+					name="XML_UVA_Teil_3"
 					value="&lt;/ProduktVersion>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&lt;DatenLieferant>Deutschland f&amp;#252;r ELSTER;Bahnhofstra&amp;#223;e 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&#9;&lt;/NutzdatenHeader>&#13;&#10;&#9;&#9;&#9;&lt;Nutzdaten>">
 					</param>
 					<param
-					name="XML_UVA_JAHRNEU_01_Teil_4"
+					name="XML_UVA_Teil_4"
 					value="&lt;/Erstellungsdatum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Name>Deutschland f&amp;#252;r ELSTER&lt;/Name>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Strasse>Bahnhofstra&amp;#223;e 34&lt;/Strasse>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;PLZ>20355&lt;/PLZ>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Ort>Hamburg&lt;/Ort>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Jahr>">
+					</param>
+					<param
+					name="XML_UVA_Monat_12"
+					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>12&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
+					</param>
+					<param
+					name="XML_UVA_Monat_01"
+					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>01&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
+					</param>
+					<param
+					name="XML_UVA_Teil_5"
+					value="&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
 					</param>
 					<param
 					name="**
@@ -613,16 +599,16 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
-					variablename="Programm_2">
-					</var>
-					<var
 					dataname="Eric_log_Pfad_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
 					variablename="Eric_log_Pfad_Datei">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
+					variablename="Programm_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -847,6 +833,9 @@ Jahreserklärung JUVA***"
 			name="JUVA_Elster_XML_Ausgabe_ausl_U_starten"
 			ref="7ee0ce0e-3b52-4bc4-921b-4dbd02466d29"
 			type="Recording">
+				<description>
+					<![CDATA[bei 2 Bildschirmen PDF AnlageUN ggf. verschieben auf größeren Bildschirm, wenn auf kl. geöffnet, damit der "Weiter"-Button sichtbar ist.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Firma"
@@ -1349,10 +1338,10 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_ZM_VORJAHR_12_39_2"
+					dataname="Eric_ZM_VERSION_39_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="ae2ec29f-047c-4d05-8461-4c88c61d70f5"
-					variablename="Eric_ZM_VORJAHR_12_39_2">
+					variablename="Eric_ZM_VERSION_39_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1531,34 +1520,16 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_2"
+					dataname="XML_UVA_Teil_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="8bf93dbf-cb59-47a3-9ca0-20221841353e"
-					variablename="XML_UVA_JAHRNEU_01_Teil_2">
+					variablename="XML_UVA_Teil_2">
 					</var>
 					<var
-					dataname="XML_UVA_VERSION_VORJAHR"
+					dataname="XML_UVA_Teil_4"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="e6c9043d-8787-4048-8c72-ccbaabc41774"
-					variablename="XML_UVA_VERSION_VORJAHR">
-					</var>
-					<var
-					dataname="XML_UVA_VORJAHR_12_Teil_5_Monat_12"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="fd96c99a-ca6e-4ae8-b9d1-0602886cc226"
-					variablename="XML_UVA_VORJAHR_12_Teil_5_Monat_12">
-					</var>
-					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_1"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="68fefb4b-664b-46c4-8cae-c8021049aa35"
-					variablename="XML_UVA_JAHRNEU_01_Teil_1">
-					</var>
-					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_3"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="45b43b74-7ba4-47c7-ae5b-c9137d617389"
-					variablename="XML_UVA_JAHRNEU_01_Teil_3">
+					variableid="926425bc-afac-429d-809e-5f51b213edaa"
+					variablename="XML_UVA_Teil_4">
 					</var>
 					<var
 					dataname="VORJAHR"
@@ -1567,10 +1538,34 @@ Jahreserklärung JUVA***"
 					variablename="VORJAHR">
 					</var>
 					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_4"
+					dataname="XML_UVA_Teil_3"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="926425bc-afac-429d-809e-5f51b213edaa"
-					variablename="XML_UVA_JAHRNEU_01_Teil_4">
+					variableid="45b43b74-7ba4-47c7-ae5b-c9137d617389"
+					variablename="XML_UVA_Teil_3">
+					</var>
+					<var
+					dataname="XML_UVA_Teil_1"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="68fefb4b-664b-46c4-8cae-c8021049aa35"
+					variablename="XML_UVA_Teil_1">
+					</var>
+					<var
+					dataname="XML_UVA_Monat_12"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="fc1f1919-99d0-42f8-9df3-f1ff4632e37f"
+					variablename="XML_UVA_Monat_12">
+					</var>
+					<var
+					dataname="XML_UVA_VERSION_VORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="e6c9043d-8787-4048-8c72-ccbaabc41774"
+					variablename="XML_UVA_VERSION_VORJAHR">
+					</var>
+					<var
+					dataname="XML_UVA_Teil_5"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="fd96c99a-ca6e-4ae8-b9d1-0602886cc226"
+					variablename="XML_UVA_Teil_5">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1738,9 +1733,6 @@ Jahreserklärung JUVA***"
 			<smartfoldernode
 			id="6ac34871-6ba7-4eb8-aef5-97ba5f6041f9"
 			name="Formular_D20_nach_Formular_JAHRNEU_kopieren">
-				<description>
-					<![CDATA[<p>Formular D24 noch nicht vorhanden, vorerst kopieren von D20 nach D23 + Ausgabe Werte 01/2024 auf D23</p>]]>
-				</description>
 			</smartfoldernode>
 			<smartfoldernode
 			id="6ac8b3ef-471c-4a33-9b0f-b51789b70041"
@@ -1999,16 +1991,16 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Pfad"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
-					variablename="Pfad">
-					</var>
-					<var
 					dataname="Eric_log_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
 					variablename="Eric_log_Datei">
+					</var>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
+					variablename="Pfad">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2095,6 +2087,9 @@ Jahreserklärung JUVA***"
 			name="JUVA_Elster_XML_Ausgabe_ausl_U_starten"
 			ref="7ee0ce0e-3b52-4bc4-921b-4dbd02466d29"
 			type="Recording">
+				<description>
+					<![CDATA[bei 2 Bildschirmen PDF AnlageUN ggf. verschieben auf größeren Bildschirm, wenn auf kl. geöffnet, damit der "Weiter"-Button sichtbar ist.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Firma"
@@ -2630,34 +2625,22 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_ZM_JAHRNEU_01_Teil_2"
+					dataname="XML_ZM_Teil_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="9cabe337-fcfa-4443-b7c6-e12eae1a6685"
-					variablename="XML_ZM_JAHRNEU_01_Teil_2">
+					variablename="XML_ZM_Teil_2">
 					</var>
 					<var
-					dataname="XML_ZM_JAHRNEU_01_Teil_3"
+					dataname="XML_ZM_Teil_1"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="af7324a5-2aac-401c-8c10-d59bf416fcc5"
-					variablename="XML_ZM_JAHRNEU_01_Teil_3">
+					variableid="3a18b84c-0056-4767-9473-821624859d52"
+					variablename="XML_ZM_Teil_1">
 					</var>
 					<var
-					dataname="XML_ZM_JAHRNEU_01_Teil_4_quart21"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="0bb677cd-d7fb-4442-8742-4e03471816f2"
-					variablename="XML_ZM_JAHRNEU_01_Teil_4_quart21">
-					</var>
-					<var
-					dataname="XML_ZM_JAHRNEU_01_Teil_5"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="4a5fb84b-b042-45d8-9806-3392a508a849"
-					variablename="XML_ZM_JAHRNEU_01_Teil_5">
-					</var>
-					<var
-					dataname="XML_ZM_Version_JAHRNEU"
+					dataname="XML_ZM_Version"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="b6eb57f6-8115-4979-a651-8152bbcc5a68"
-					variablename="XML_ZM_Version_JAHRNEU">
+					variablename="XML_ZM_Version">
 					</var>
 					<var
 					dataname="JAHRNEU"
@@ -2666,12 +2649,38 @@ Jahreserklärung JUVA***"
 					variablename="JAHRNEU">
 					</var>
 					<var
-					dataname="XML_ZM_JAHRNEU_01_Teil_1"
+					dataname="XML_ZM_Teil_4"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="3a18b84c-0056-4767-9473-821624859d52"
-					variablename="XML_ZM_JAHRNEU_01_Teil_1">
+					variableid="0bb677cd-d7fb-4442-8742-4e03471816f2"
+					variablename="XML_ZM_Teil_4">
+					</var>
+					<var
+					dataname="XML_ZM_Teil_3"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="af7324a5-2aac-401c-8c10-d59bf416fcc5"
+					variablename="XML_ZM_Teil_3">
+					</var>
+					<var
+					dataname="XML_ZM_Jaenner"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="17b6bcdf-1d30-4074-9746-ffaf238d7c2a"
+					variablename="XML_ZM_Jaenner">
+					</var>
+					<var
+					dataname="XML_ZM_Teil_5"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="4a5fb84b-b042-45d8-9806-3392a508a849"
+					variablename="XML_ZM_Teil_5">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="XML_ZM_Version_JAHRNEU"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b6eb57f6-8115-4979-a651-8152bbcc5a68"
+					variablename="XML_ZM_Version_JAHRNEU">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="a4eb2777-96cc-4d80-a3af-6facc43118e2"
@@ -2854,16 +2863,16 @@ Jahreserklärung JUVA***"
 					variablename="XML_UVA_Pfad_Datei">
 					</var>
 					<var
-					dataname="XML_UVA_Datei"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="9a617ced-bff6-497b-9ff6-f6654650da33"
-					variablename="XML_UVA_Datei">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="6638446f-c51a-456d-92ba-02636d7bb748"
 					variablename="Programm_2">
+					</var>
+					<var
+					dataname="XML_UVA_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="9a617ced-bff6-497b-9ff6-f6654650da33"
+					variablename="XML_UVA_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2944,16 +2953,16 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_ZM_Datei"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="67608781-5791-47e5-84b3-4286cfc6d079"
-					variablename="XML_ZM_Datei">
-					</var>
-					<var
 					dataname="Pfad"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="4fc0d9d8-ce79-4659-84cd-9d79a4dfe789"
 					variablename="Pfad">
+					</var>
+					<var
+					dataname="XML_ZM_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="67608781-5791-47e5-84b3-4286cfc6d079"
+					variablename="XML_ZM_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3488,10 +3497,46 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_ZM_VORJAHR_12_Teil_3"
+					dataname="XML_ZM_Teil_4"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8fa7d616-a939-4ccf-be04-7b0fdf60aba5"
+					variablename="XML_ZM_Teil_4">
+					</var>
+					<var
+					dataname="XML_ZM_Dezember"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6a6db28a-fcdf-4282-b338-56dc7cb4e9a3"
+					variablename="XML_ZM_Dezember">
+					</var>
+					<var
+					dataname="XML_ZM_Teil_5"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="5aec3901-3cf3-42c7-b723-1cd7e8bab6bb"
+					variablename="XML_ZM_Teil_5">
+					</var>
+					<var
+					dataname="XML_ZM_Teil_3"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="9110658e-3c9b-4692-82bc-b6d7fde7edca"
-					variablename="XML_ZM_VORJAHR_12_Teil_3">
+					variablename="XML_ZM_Teil_3">
+					</var>
+					<var
+					dataname="XML_ZM_Teil_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="74287c5a-4c98-423d-8ff8-c3a6144df619"
+					variablename="XML_ZM_Teil_2">
+					</var>
+					<var
+					dataname="XML_ZM_Teil_1"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="9cddde47-7b70-451a-bae6-0e03960393b3"
+					variablename="XML_ZM_Teil_1">
+					</var>
+					<var
+					dataname="XML_ZM_Version"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="c38b336f-ab42-41fe-a345-4ed30b496a4b"
+					variablename="XML_ZM_Version">
 					</var>
 					<var
 					dataname="VORJAHR"
@@ -3499,11 +3544,19 @@ Jahreserklärung JUVA***"
 					variableid="fc33d717-1129-4162-a27d-d6359fcc0c39"
 					variablename="VORJAHR">
 					</var>
+				</databinding>
+				<missingdatabinding>
 					<var
-					dataname="XML_ZM_Version_VORJAHR"
+					dataname="XML_ZM_JAHRNEU_01_Teil_4_quart32"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="c38b336f-ab42-41fe-a345-4ed30b496a4b"
-					variablename="XML_ZM_Version_VORJAHR">
+					variableid="8fa7d616-a939-4ccf-be04-7b0fdf60aba5"
+					variablename="XML_ZM_VORJAHR_12_Teil_4_quart32">
+					</var>
+					<var
+					dataname="XML_ZM_VORJAHR_12_Teil_3"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="9110658e-3c9b-4692-82bc-b6d7fde7edca"
+					variablename="XML_ZM_VORJAHR_12_Teil_3">
 					</var>
 					<var
 					dataname="XML_ZM_VORJAHR_12_Teil_1"
@@ -3518,24 +3571,10 @@ Jahreserklärung JUVA***"
 					variablename="XML_ZM_VORJAHR_12_Teil_2">
 					</var>
 					<var
-					dataname="XML_ZM_VORJAHR_12_Teil_4_quart32"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="8fa7d616-a939-4ccf-be04-7b0fdf60aba5"
-					variablename="XML_ZM_VORJAHR_12_Teil_4_quart32">
-					</var>
-					<var
 					dataname="XML_ZM_VORJAHR_12_Teil_5"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="5aec3901-3cf3-42c7-b723-1cd7e8bab6bb"
 					variablename="XML_ZM_VORJAHR_12_Teil_5">
-					</var>
-				</databinding>
-				<missingdatabinding>
-					<var
-					dataname="XML_ZM_JAHRNEU_01_Teil_4_quart32"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="8fa7d616-a939-4ccf-be04-7b0fdf60aba5"
-					variablename="XML_ZM_VORJAHR_12_Teil_4_quart32">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -3739,6 +3778,9 @@ Jahreserklärung JUVA***"
 			<smartfoldernode
 			id="e5928bc3-8b57-43ed-912a-36c1786e4343"
 			name="ELSTER_Jahreserklärung_VORVORJAHR_Anlage_UN_ausl_Unternehmen">
+				<description>
+					<![CDATA[<p>bei 2 Bildschirmen PDF AnlageUN ggf. verschieben auf größeren Bildschirm, wenn auf kl. geöffnet, damit der "Weiter"-Button sichtbar ist.</p>]]>
+				</description>
 			</smartfoldernode>
 			<testmodule
 			id="e6b02885-1c98-4a58-af62-465de1ae54ef"
@@ -4095,6 +4137,9 @@ Jahreserklärung JUVA***"
 			<smartfoldernode
 			id="f5c27b18-5462-4ce3-92b1-9b1d049dbc8e"
 			name="ELSTER_Jahreserklärung_VORJAHR_Anlage_UN_ausl_Unternehmen">
+				<description>
+					<![CDATA[<p>bei 2 Bildschirmen PDF AnlageUN ggf. verschieben auf größeren Bildschirm, wenn auf kl. geöffnet, damit der "Weiter"-Button sichtbar ist.</p>]]>
+				</description>
 			</smartfoldernode>
 			<testmodule
 			id="f6cb96ea-f20d-48dc-9d72-04c89515d481"
@@ -4103,10 +4148,10 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_ZM_Pfad_Datei"
+					dataname="Programm_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="df096376-4aa3-413a-8fff-e4fda1159d58"
-					variablename="XML_ZM_Pfad_Datei">
+					variableid="991056f3-e775-476f-8477-857a2e94cc7a"
+					variablename="Programm_2">
 					</var>
 					<var
 					dataname="XML_ZM_Datei"
@@ -4115,10 +4160,10 @@ Jahreserklärung JUVA***"
 					variablename="XML_ZM_Datei">
 					</var>
 					<var
-					dataname="Programm_2"
+					dataname="XML_ZM_Pfad_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="991056f3-e775-476f-8477-857a2e94cc7a"
-					variablename="Programm_2">
+					variableid="df096376-4aa3-413a-8fff-e4fda1159d58"
+					variablename="XML_ZM_Pfad_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4199,16 +4244,16 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Pfad"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="452fee4c-86be-4eab-b309-afdc65151d57"
-					variablename="Pfad">
-					</var>
-					<var
 					dataname="XML_UVA_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="be048278-7473-4332-b476-d8d5506486af"
 					variablename="XML_UVA_Datei">
+					</var>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="452fee4c-86be-4eab-b309-afdc65151d57"
+					variablename="Pfad">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4219,12 +4264,20 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Eric_ZM_VERSION_39_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0018eb0b-531f-4dbe-98f3-f02e5d459375"
+					variablename="Eric_ZM_VERSION_39_2">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="Eric_ZM_JAHRNEU_01_39_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="0018eb0b-531f-4dbe-98f3-f02e5d459375"
 					variablename="Eric_ZM_JAHRNEU_01_39_2">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="ff292c65-c9d1-44ab-bcaa-361f28eb874d"
@@ -4292,6 +4345,238 @@ Jahreserklärung JUVA***"
 				<testcase
 				id="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 				name="B_ELSTER_2024_UVA_JUVA_ZM">
+					<testcase
+					id="1ac14b3e-9580-4fbf-9b48-6b7eac226602"
+					name="ZM_VORJAHR_2023_12_VORJAHR">
+						<smartfoldernode
+						id="4c9817dd-df37-4ca4-ba07-79cf6ef7acfb"
+						name="ZM_bis_Plausipruefung_VORJAHR_Dezember">
+							<setup
+							id="72981751-3298-41c8-96b1-995ae0e9d523"
+							name="setup">
+								<testmodule
+								id="eb9a7d6e-84d9-4854-8c7e-998f9e082af2"
+								name="StartAUT_ZM">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="a89bc121-79c3-4094-b5bf-fbaa718c1cec"
+							name="ZM_Einschraenkungen_VORJAHR_12">
+							</testmodule>
+							<testmodule
+							id="41ac945f-5354-469a-8c5d-29706b6aa554"
+							name="ZM_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="ab7c5bbb-509c-4a11-a449-56e8e2f171ab"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="ca17a957-fce5-48d7-9c3a-2310d1b38de1"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="f7b19c26-9e57-4e6e-ac37-d0576a7c9614"
+							name="Elster_Schnittstelle_pruefen">
+							</testmodule>
+							<testmodule
+							id="84d2baae-5b40-4fd1-9951-0bdf30f7cffb"
+							name="Elster_Plausipruefung_durchfuehren">
+							</testmodule>
+							<teardown
+							id="36e8e2ff-322b-42dd-92f4-8ce9f80870a2"
+							name="teardown">
+								<testmodule
+								id="81dbd572-9e21-477d-8763-e676535b6cb1"
+								name="CloseAUT_B_ELSTER">
+								</testmodule>
+								<testmodule
+								id="101c78e4-8f21-4c81-ad02-a6920024dd18"
+								name="CloseAUT_ZM">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="7393af81-f510-47c4-b3c9-0070e162a746"
+						name="ZM_XML_Datei_pruefen_VORJAHR_Dezember">
+							<setup
+							id="227811dc-dddb-43fa-b064-36de965a0a08"
+							name="setup">
+								<testmodule
+								id="ee1f0da4-1c81-43de-98b3-bbb26c5eb115"
+								name="Oeffnen_notepad_XML_Datei">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="f4acc7ea-f271-43a7-8bed-3be72c21e39d"
+							name="Sichern_XML_ZM_VORJAHR_12">
+							</testmodule>
+							<testmodule
+							id="d73756fd-58d5-4afb-a715-df9e7cda468d"
+							name="Pruefung_Inhalt_XML_ZM_Datei_VORJAHR_12_quart_32">
+							</testmodule>
+							<teardown
+							id="a035f360-53dd-4c66-b84c-6a551f5963dc"
+							name="teardown">
+								<testmodule
+								id="9b887257-5add-48aa-9ec1-23553a0189f3"
+								name="Close_notepad_XML">
+								</testmodule>
+								<testmodule
+								id="d2259a34-fa0f-468d-9be9-a96de1785fe7"
+								name="Loeschen_XML_ZM">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6ac8b3ef-471c-4a33-9b0f-b51789b70041"
+						name="ZM_Eric_log_Eric_Version_pruefen_VORJAHR_Dezember">
+							<setup
+							id="7bb56410-f0f6-462d-868d-feadbaae0eec"
+							name="setup">
+								<testmodule
+								id="d196452c-a8b8-40e9-a5b1-5e067cb5de21"
+								name="Oeffnen_notepad_Eric_log">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="0ff66637-fa9b-48c3-b8ea-b66669f97980"
+							name="Sichern_Eric_log_ZM_VORJAHR_12">
+							</testmodule>
+							<testmodule
+							id="491d0885-ee44-4c57-8368-3a4574c05298"
+							name="Eric_Version_ZM_VORJAHR_12_pruefen">
+							</testmodule>
+							<teardown
+							id="8f5850ca-3c9f-4739-951f-f774a15bc3d4"
+							name="teardown">
+								<testmodule
+								id="85cffd70-0441-4376-9e93-7bafeca8e1fb"
+								name="Close_notepad_Eric">
+								</testmodule>
+								<testmodule
+								id="b217c2d1-2376-4911-8cd3-c39116907483"
+								name="loeschen_Eric_log">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="08c1d0ee-d9bb-47d7-bd6b-d8af8741b1f4"
+					name="ZM_JAHRNEU_2024_01_JAHRNEU">
+						<smartfoldernode
+						id="9658e6fb-83a6-4ee8-856f-be2a45ccb9df"
+						name="ZM_bis_Plausipruefung_JAHRNEU_Januar">
+							<setup
+							id="12af8402-6d4f-44d3-bcae-fb31a7c9f859"
+							name="setup">
+								<testmodule
+								id="254e8b20-ade4-4ed8-9862-cb8dcf337185"
+								name="StartAUT_ZM">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="7424f7c2-331f-4127-8dd2-cd8965b7dae4"
+							name="ZM_Einschraenkungen_JAHRNEU_01">
+							</testmodule>
+							<testmodule
+							id="dbc14d00-d923-4861-8d84-a963c0b351f6"
+							name="ZM_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="ae24ccf7-1b76-42cb-8e1a-265b93fec11f"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="b558bea3-051b-48e3-b9b7-5ace31b36d17"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="86191f79-506a-4f93-bc75-74a91991a07f"
+							name="Elster_Schnittstelle_pruefen">
+							</testmodule>
+							<testmodule
+							id="7373e58a-eb06-43ff-9de0-56e9dd22b10a"
+							name="Elster_Plausipruefung_durchfuehren">
+							</testmodule>
+							<teardown
+							id="d9a05c9e-b4f1-4c3e-9270-b2177efadbd1"
+							name="teardown">
+								<testmodule
+								id="ea8311c7-4cbc-4561-90f7-6802a431d3e6"
+								name="CloseAUT_B_ELSTER">
+								</testmodule>
+								<testmodule
+								id="4b58d2d5-5edc-4248-bbbc-6a17b46d7948"
+								name="CloseAUT_ZM">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="73c5749f-3ada-48c6-8937-48f0edcb24ae"
+						name="ZM_XML_Datei_pruefen_JAHRNEU_Januar">
+							<setup
+							id="452619f9-2c9b-4538-9199-3fc824721887"
+							name="setup">
+								<testmodule
+								id="f6cb96ea-f20d-48dc-9d72-04c89515d481"
+								name="Oeffnen_notepad_XML_Datei">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="fa3f7e14-5fdb-4442-80a1-fa381bca610e"
+							name="Sichern_XML_ZM_JAHRNEU_01">
+							</testmodule>
+							<testmodule
+							id="a4e2ff4f-b951-4fdc-bb8c-9bc724747656"
+							name="Pruefung_Inhalt_XML_ZM_Datei_JAHRNEU_01_quart_21">
+							</testmodule>
+							<teardown
+							id="46eabd51-a0e3-4e86-8a44-0c7d8e8bdc24"
+							name="teardown">
+								<testmodule
+								id="b10a04ce-69dc-480e-8903-34d845e7d9e1"
+								name="Close_notepad_XML">
+								</testmodule>
+								<testmodule
+								id="b4c46e5e-d265-4e63-9d03-cacad9c6cfe0"
+								name="Loeschen_XML_ZM">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="ac1de4e7-90dc-4717-9820-809db82bdd00"
+						name="Eric_log_Eric_Version_pruefen_JAHRNEU_Januar">
+							<setup
+							id="8b9a05a9-022c-441f-a995-72662a998d26"
+							name="setup">
+								<testmodule
+								id="0a766ff5-747b-4cb7-be56-304be061486d"
+								name="Oeffnen_notepad_Eric_log">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="6b01972c-6d37-4d58-9219-2342f930fb3d"
+							name="Sichern_Eric_log_ZM_JAHRNEU_01">
+							</testmodule>
+							<testmodule
+							id="fe01e77e-01d3-4698-8e0a-a2ec7f16718d"
+							name="Eric_Version_ZM_JAHRNEU_01_pruefen">
+							</testmodule>
+							<teardown
+							id="21bcc42a-5cf4-4512-aefc-6947136a34a2"
+							name="teardown">
+								<testmodule
+								id="eb862dff-4477-41d5-83c4-215e7a8f9ed5"
+								name="Close_notepad_Eric">
+								</testmodule>
+								<testmodule
+								id="78bcadeb-129e-462e-a590-afd4d4e1173f"
+								name="loeschen_Eric_log">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+					</testcase>
 					<testcase
 					id="54b22638-fc27-47fa-aa02-18c579582b03"
 					name="Formulare_kopieren_D20_nach_JAHRNEU_VORJAHR_und_VORVORJAHR">
@@ -5276,238 +5561,6 @@ Jahreserklärung JUVA***"
 							</teardown>
 						</smartfoldernode>
 					</testcase>
-					<testcase
-					id="1ac14b3e-9580-4fbf-9b48-6b7eac226602"
-					name="ZM_VORJAHR_2023_12_VORJAHR">
-						<smartfoldernode
-						id="4c9817dd-df37-4ca4-ba07-79cf6ef7acfb"
-						name="ZM_bis_Plausipruefung_VORJAHR_Dezember">
-							<setup
-							id="72981751-3298-41c8-96b1-995ae0e9d523"
-							name="setup">
-								<testmodule
-								id="eb9a7d6e-84d9-4854-8c7e-998f9e082af2"
-								name="StartAUT_ZM">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="a89bc121-79c3-4094-b5bf-fbaa718c1cec"
-							name="ZM_Einschraenkungen_VORJAHR_12">
-							</testmodule>
-							<testmodule
-							id="41ac945f-5354-469a-8c5d-29706b6aa554"
-							name="ZM_ELSTER_Button_pruefen_aufrufen">
-							</testmodule>
-							<testmodule
-							id="ab7c5bbb-509c-4a11-a449-56e8e2f171ab"
-							name="Elster_DSGVO_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="ca17a957-fce5-48d7-9c3a-2310d1b38de1"
-							name="Elster_Meldung_RS_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="f7b19c26-9e57-4e6e-ac37-d0576a7c9614"
-							name="Elster_Schnittstelle_pruefen">
-							</testmodule>
-							<testmodule
-							id="84d2baae-5b40-4fd1-9951-0bdf30f7cffb"
-							name="Elster_Plausipruefung_durchfuehren">
-							</testmodule>
-							<teardown
-							id="36e8e2ff-322b-42dd-92f4-8ce9f80870a2"
-							name="teardown">
-								<testmodule
-								id="81dbd572-9e21-477d-8763-e676535b6cb1"
-								name="CloseAUT_B_ELSTER">
-								</testmodule>
-								<testmodule
-								id="101c78e4-8f21-4c81-ad02-a6920024dd18"
-								name="CloseAUT_ZM">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="7393af81-f510-47c4-b3c9-0070e162a746"
-						name="ZM_XML_Datei_pruefen_VORJAHR_Dezember">
-							<setup
-							id="227811dc-dddb-43fa-b064-36de965a0a08"
-							name="setup">
-								<testmodule
-								id="ee1f0da4-1c81-43de-98b3-bbb26c5eb115"
-								name="Oeffnen_notepad_XML_Datei">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="f4acc7ea-f271-43a7-8bed-3be72c21e39d"
-							name="Sichern_XML_ZM_VORJAHR_12">
-							</testmodule>
-							<testmodule
-							id="d73756fd-58d5-4afb-a715-df9e7cda468d"
-							name="Pruefung_Inhalt_XML_ZM_Datei_VORJAHR_12_quart_32">
-							</testmodule>
-							<teardown
-							id="a035f360-53dd-4c66-b84c-6a551f5963dc"
-							name="teardown">
-								<testmodule
-								id="9b887257-5add-48aa-9ec1-23553a0189f3"
-								name="Close_notepad_XML">
-								</testmodule>
-								<testmodule
-								id="d2259a34-fa0f-468d-9be9-a96de1785fe7"
-								name="Loeschen_XML_ZM">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="6ac8b3ef-471c-4a33-9b0f-b51789b70041"
-						name="ZM_Eric_log_Eric_Version_pruefen_VORJAHR_Dezember">
-							<setup
-							id="7bb56410-f0f6-462d-868d-feadbaae0eec"
-							name="setup">
-								<testmodule
-								id="d196452c-a8b8-40e9-a5b1-5e067cb5de21"
-								name="Oeffnen_notepad_Eric_log">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="0ff66637-fa9b-48c3-b8ea-b66669f97980"
-							name="Sichern_Eric_log_ZM_VORJAHR_12">
-							</testmodule>
-							<testmodule
-							id="491d0885-ee44-4c57-8368-3a4574c05298"
-							name="Eric_Version_ZM_VORJAHR_12_pruefen">
-							</testmodule>
-							<teardown
-							id="8f5850ca-3c9f-4739-951f-f774a15bc3d4"
-							name="teardown">
-								<testmodule
-								id="85cffd70-0441-4376-9e93-7bafeca8e1fb"
-								name="Close_notepad_Eric">
-								</testmodule>
-								<testmodule
-								id="b217c2d1-2376-4911-8cd3-c39116907483"
-								name="loeschen_Eric_log">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-					</testcase>
-					<testcase
-					id="08c1d0ee-d9bb-47d7-bd6b-d8af8741b1f4"
-					name="ZM_JAHRNEU_2024_01_JAHRNEU">
-						<smartfoldernode
-						id="9658e6fb-83a6-4ee8-856f-be2a45ccb9df"
-						name="ZM_bis_Plausipruefung_JAHRNEU_Januar">
-							<setup
-							id="12af8402-6d4f-44d3-bcae-fb31a7c9f859"
-							name="setup">
-								<testmodule
-								id="254e8b20-ade4-4ed8-9862-cb8dcf337185"
-								name="StartAUT_ZM">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="7424f7c2-331f-4127-8dd2-cd8965b7dae4"
-							name="ZM_Einschraenkungen_JAHRNEU_01">
-							</testmodule>
-							<testmodule
-							id="dbc14d00-d923-4861-8d84-a963c0b351f6"
-							name="ZM_ELSTER_Button_pruefen_aufrufen">
-							</testmodule>
-							<testmodule
-							id="ae24ccf7-1b76-42cb-8e1a-265b93fec11f"
-							name="Elster_DSGVO_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="b558bea3-051b-48e3-b9b7-5ace31b36d17"
-							name="Elster_Meldung_RS_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="86191f79-506a-4f93-bc75-74a91991a07f"
-							name="Elster_Schnittstelle_pruefen">
-							</testmodule>
-							<testmodule
-							id="7373e58a-eb06-43ff-9de0-56e9dd22b10a"
-							name="Elster_Plausipruefung_durchfuehren">
-							</testmodule>
-							<teardown
-							id="d9a05c9e-b4f1-4c3e-9270-b2177efadbd1"
-							name="teardown">
-								<testmodule
-								id="ea8311c7-4cbc-4561-90f7-6802a431d3e6"
-								name="CloseAUT_B_ELSTER">
-								</testmodule>
-								<testmodule
-								id="4b58d2d5-5edc-4248-bbbc-6a17b46d7948"
-								name="CloseAUT_ZM">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="73c5749f-3ada-48c6-8937-48f0edcb24ae"
-						name="ZM_XML_Datei_pruefen_JAHRNEU_Januar">
-							<setup
-							id="452619f9-2c9b-4538-9199-3fc824721887"
-							name="setup">
-								<testmodule
-								id="f6cb96ea-f20d-48dc-9d72-04c89515d481"
-								name="Oeffnen_notepad_XML_Datei">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="fa3f7e14-5fdb-4442-80a1-fa381bca610e"
-							name="Sichern_XML_ZM_JAHRNEU_01">
-							</testmodule>
-							<testmodule
-							id="a4e2ff4f-b951-4fdc-bb8c-9bc724747656"
-							name="Pruefung_Inhalt_XML_ZM_Datei_JAHRNEU_01_quart_21">
-							</testmodule>
-							<teardown
-							id="46eabd51-a0e3-4e86-8a44-0c7d8e8bdc24"
-							name="teardown">
-								<testmodule
-								id="b10a04ce-69dc-480e-8903-34d845e7d9e1"
-								name="Close_notepad_XML">
-								</testmodule>
-								<testmodule
-								id="b4c46e5e-d265-4e63-9d03-cacad9c6cfe0"
-								name="Loeschen_XML_ZM">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="ac1de4e7-90dc-4717-9820-809db82bdd00"
-						name="Eric_log_Eric_Version_pruefen_JAHRNEU_Januar">
-							<setup
-							id="8b9a05a9-022c-441f-a995-72662a998d26"
-							name="setup">
-								<testmodule
-								id="0a766ff5-747b-4cb7-be56-304be061486d"
-								name="Oeffnen_notepad_Eric_log">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="6b01972c-6d37-4d58-9219-2342f930fb3d"
-							name="Sichern_Eric_log_ZM_JAHRNEU_01">
-							</testmodule>
-							<testmodule
-							id="fe01e77e-01d3-4698-8e0a-a2ec7f16718d"
-							name="Eric_Version_ZM_JAHRNEU_01_pruefen">
-							</testmodule>
-							<teardown
-							id="21bcc42a-5cf4-4512-aefc-6947136a34a2"
-							name="teardown">
-								<testmodule
-								id="eb862dff-4477-41d5-83c4-215e7a8f9ed5"
-								name="Close_notepad_Eric">
-								</testmodule>
-								<testmodule
-								id="78bcadeb-129e-462e-a590-afd4d4e1173f"
-								name="loeschen_Eric_log">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -5522,7 +5575,13 @@ Jahreserklärung JUVA***"
 			id="07faec4f-5df9-4a2d-8826-e5d5286533c5">
 			</testcontainer>
 			<testcontainer
+			id="08c1d0ee-d9bb-47d7-bd6b-d8af8741b1f4">
+			</testcontainer>
+			<testcontainer
 			id="0da6a954-de06-47c0-a7f1-528a66abe2fe">
+			</testcontainer>
+			<testcontainer
+			id="1ac14b3e-9580-4fbf-9b48-6b7eac226602">
 			</testcontainer>
 			<testcontainer
 			id="27a5bb3b-f1b6-4ee1-8c7a-0b75ec021692">
@@ -5540,6 +5599,12 @@ Jahreserklärung JUVA***"
 			id="47c6031c-a595-4d15-809e-8113f798825a">
 			</testcontainer>
 			<testcontainer
+			id="4c9817dd-df37-4ca4-ba07-79cf6ef7acfb">
+			</testcontainer>
+			<testcontainer
+			id="51e5d514-58d9-486f-ace6-5d6fbadc54fe">
+			</testcontainer>
+			<testcontainer
 			id="54b22638-fc27-47fa-aa02-18c579582b03">
 			</testcontainer>
 			<testcontainer
@@ -5552,13 +5617,37 @@ Jahreserklärung JUVA***"
 			id="6ac34871-6ba7-4eb8-aef5-97ba5f6041f9">
 			</testcontainer>
 			<testcontainer
+			id="6ac8b3ef-471c-4a33-9b0f-b51789b70041">
+			</testcontainer>
+			<testcontainer
 			id="6cb04e50-45a4-4fc6-a03a-0b1df32dcab1">
+			</testcontainer>
+			<testcontainer
+			id="7393af81-f510-47c4-b3c9-0070e162a746">
+			</testcontainer>
+			<testcontainer
+			id="73c5749f-3ada-48c6-8937-48f0edcb24ae">
 			</testcontainer>
 			<testcontainer
 			id="8fb1ed68-e604-43c3-818f-a32d737a47e1">
 			</testcontainer>
 			<testcontainer
+			id="9658e6fb-83a6-4ee8-856f-be2a45ccb9df">
+			</testcontainer>
+			<testcontainer
+			id="9975d79f-4bf2-420e-a8c8-3c3970941246">
+			</testcontainer>
+			<testcontainer
+			id="9df3cd20-17e3-492a-83df-2eac162b2041">
+			</testcontainer>
+			<testcontainer
 			id="a15ca4d9-d04e-4779-b272-b3a5e8b4713f">
+			</testcontainer>
+			<testcontainer
+			id="a8ce33ab-9887-4e53-80d3-c9f9d743f5ec">
+			</testcontainer>
+			<testcontainer
+			id="ac1de4e7-90dc-4717-9820-809db82bdd00">
 			</testcontainer>
 			<testcontainer
 			id="ae522c47-c845-4745-a7b9-f88465482c8d">
@@ -5567,7 +5656,19 @@ Jahreserklärung JUVA***"
 			id="b131e530-5b6f-402a-8271-97e02b12755b">
 			</testcontainer>
 			<testcontainer
+			id="c74a331a-2d75-4797-a05a-b3bd4c251b7b">
+			</testcontainer>
+			<testcontainer
 			id="cc1d7118-bd90-4270-b342-fe38bf344582">
+			</testcontainer>
+			<testcontainer
+			id="ce6aa7a2-62e6-47ec-ab2c-f1e3334b71ae">
+			</testcontainer>
+			<testcontainer
+			id="d4617fa8-e636-4766-aa8a-6687246f54f5">
+			</testcontainer>
+			<testcontainer
+			id="d49b7a2b-5384-4629-99d6-00a27cdc325c">
 			</testcontainer>
 			<testcontainer
 			id="d88850d8-d152-4f09-b8de-03728bd80507">

@@ -24,7 +24,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Sichern_ERic_log_JUVA_VORVORJAHR recording.
+    ///The Sichern_Eric_log_JUVA_VORVORJAHR recording.
     /// </summary>
     [TestModule("a048f5bb-c6cf-4ef8-9923-6c5609ecfaa6", ModuleType.Recording, 1)]
     public partial class Sichern_Eric_log_JUVA_VORVORJAHR : ITestModule
