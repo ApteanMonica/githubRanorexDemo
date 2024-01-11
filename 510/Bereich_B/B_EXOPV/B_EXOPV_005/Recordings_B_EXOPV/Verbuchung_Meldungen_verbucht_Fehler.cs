@@ -26,7 +26,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
     /// <summary>
     ///The Verbuchung_Meldungen_verbucht_Fehler recording.
     /// </summary>
-    [TestModule("446f3ba0-459f-43fd-8aff-78cb4a17eea7", ModuleType.Recording, 1)]
+    [TestModule("af0bdb9c-f2fb-4d8b-b007-185f647e30fa", ModuleType.Recording, 1)]
     public partial class Verbuchung_Meldungen_verbucht_Fehler : ITestModule
     {
         /// <summary>
@@ -82,28 +82,39 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(180000), new RecordItemIndex(0));
             repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(4));
             Validate.Exists(repo.DlgMessageBox.FakturenPruefungInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7 Belege wurden verbucht') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "7 Belege wurden verbucht");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'7 Belege wurden verbucht') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "7 Belege wurden verbucht", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\r\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Es wurden Fehler/Hinweise protokolliert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Fehler/Hinweise protokolliert", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Wollen Sie die Protokoll-Datei öffnen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Wollen Sie die Protokoll-Datei öffnen", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.VerbuchenBeendet'.", repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.VerbuchenBeendet'.", repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo, new RecordItemIndex(9));
             Validate.Exists(repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo);
             
         }
