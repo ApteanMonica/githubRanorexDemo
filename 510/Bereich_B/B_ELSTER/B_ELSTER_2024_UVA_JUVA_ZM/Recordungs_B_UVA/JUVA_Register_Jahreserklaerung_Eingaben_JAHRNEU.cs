@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_Inhalt_XML_Version_2023 recording.
+    ///The JUVA_Register_Jahreserklaerung_Eingaben_JAHRNEU recording.
     /// </summary>
-    [TestModule("e243f047-ff4c-47bf-ba20-ec14ebe92ac0", ModuleType.Recording, 1)]
-    public partial class Pruefung_Inhalt_XML_Version_2023 : ITestModule
+    [TestModule("d7425fa1-2550-40ad-a95f-ab70d9bf1040", ModuleType.Recording, 1)]
+    public partial class JUVA_Register_Jahreserklaerung_Eingaben_JAHRNEU : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Pruefung_Inhalt_XML_Version_2023 instance = new Pruefung_Inhalt_XML_Version_2023();
+        static JUVA_Register_Jahreserklaerung_Eingaben_JAHRNEU instance = new JUVA_Register_Jahreserklaerung_Eingaben_JAHRNEU();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_Inhalt_XML_Version_2023()
+        public JUVA_Register_Jahreserklaerung_Eingaben_JAHRNEU()
         {
-            XML_JUVA_VERSION_2023 = "";
+            JAHRNEU = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_Inhalt_XML_Version_2023 Instance
+        public static JUVA_Register_Jahreserklaerung_Eingaben_JAHRNEU Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _XML_JUVA_VERSION_2023;
+        string _JAHRNEU;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_VERSION_2023.
+        /// Gets or sets the value of variable JAHRNEU.
         /// </summary>
-        [TestVariable("4d1a684f-98a9-40fc-8670-bdd310f1afd2")]
-        public string XML_JUVA_VERSION_2023
+        [TestVariable("542e392b-1b44-4bdb-822b-c6edd43e7148")]
+        public string JAHRNEU
         {
-            get { return _XML_JUVA_VERSION_2023; }
-            set { _XML_JUVA_VERSION_2023 = value; }
+            get { return _JAHRNEU; }
+            set { _JAHRNEU = value; }
         }
 
 #endregion
@@ -92,10 +92,17 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VERSION_2023) on item 'XMLEditor_UVA_ZM4.Text15'.", repo.XMLEditor_UVA_ZM4.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM4.Text15Info, "Text", XML_JUVA_VERSION_2023, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.TabPageJahreserklaerung' at Center.", repo.DlgUVADruck.TabPageJahreserklaerungInfo, new RecordItemIndex(0));
+            repo.DlgUVADruck.TabPageJahreserklaerung.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$JAHRNEU' with focus on 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(1));
+            repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahr.PressKeys(JAHRNEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$JAHRNEU) on item 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, "Text", JAHRNEU);
             
         }
 

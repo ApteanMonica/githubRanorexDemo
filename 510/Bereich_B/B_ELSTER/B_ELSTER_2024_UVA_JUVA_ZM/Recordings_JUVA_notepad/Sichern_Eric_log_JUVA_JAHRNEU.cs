@@ -24,22 +24,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Sichern_Eric_log_JUVA_VORJAHR_ausl_U recording.
+    ///The Sichern_Eric_log_JUVA_JAHRNEU recording.
     /// </summary>
-    [TestModule("c10353f3-cd5d-46be-9051-a4f98e2e33de", ModuleType.Recording, 1)]
-    public partial class Sichern_Eric_log_JUVA_VORJAHR_ausl_U : ITestModule
+    [TestModule("ebeb381b-cfe4-4bf1-ba9a-c3e2d765898f", ModuleType.Recording, 1)]
+    public partial class Sichern_Eric_log_JUVA_JAHRNEU : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Sichern_Eric_log_JUVA_VORJAHR_ausl_U instance = new Sichern_Eric_log_JUVA_VORJAHR_ausl_U();
+        static Sichern_Eric_log_JUVA_JAHRNEU instance = new Sichern_Eric_log_JUVA_JAHRNEU();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Sichern_Eric_log_JUVA_VORJAHR_ausl_U()
+        public Sichern_Eric_log_JUVA_JAHRNEU()
         {
             Eric_log_Inhalt_aktuell = "";
         }
@@ -47,7 +47,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Sichern_Eric_log_JUVA_VORJAHR_ausl_U Instance
+        public static Sichern_Eric_log_JUVA_JAHRNEU Instance
         {
             get { return instance; }
         }
@@ -59,7 +59,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// <summary>
         /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
         /// </summary>
-        [TestVariable("24cd7295-a2e1-44bc-812e-a601fc65bcbb")]
+        [TestVariable("09b9a71c-3bb5-44f5-a242-c64103ecc929")]
         public string Eric_log_Inhalt_aktuell
         {
             get { return _Eric_log_Inhalt_aktuell; }
@@ -95,7 +95,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
             Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_JUVA_2023_ausl_U", "log");
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_JUVA_2024", "log");
             
         }
 

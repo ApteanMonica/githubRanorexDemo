@@ -24,46 +24,46 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Sichern_Eric_log_JUVA_VORJAHR_ausl_U recording.
+    ///The Pruefung_Inhalt_XML_JUVA_Zeitraum_VORJAHR recording.
     /// </summary>
-    [TestModule("c10353f3-cd5d-46be-9051-a4f98e2e33de", ModuleType.Recording, 1)]
-    public partial class Sichern_Eric_log_JUVA_VORJAHR_ausl_U : ITestModule
+    [TestModule("5ee66cac-8d66-4181-8af0-94f959c0e0b9", ModuleType.Recording, 1)]
+    public partial class Pruefung_Inhalt_XML_JUVA_Zeitraum_VORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Sichern_Eric_log_JUVA_VORJAHR_ausl_U instance = new Sichern_Eric_log_JUVA_VORJAHR_ausl_U();
+        static Pruefung_Inhalt_XML_JUVA_Zeitraum_VORJAHR instance = new Pruefung_Inhalt_XML_JUVA_Zeitraum_VORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Sichern_Eric_log_JUVA_VORJAHR_ausl_U()
+        public Pruefung_Inhalt_XML_JUVA_Zeitraum_VORJAHR()
         {
-            Eric_log_Inhalt_aktuell = "";
+            VORJAHR = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Sichern_Eric_log_JUVA_VORJAHR_ausl_U Instance
+        public static Pruefung_Inhalt_XML_JUVA_Zeitraum_VORJAHR Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Eric_log_Inhalt_aktuell;
+        string _VORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
+        /// Gets or sets the value of variable VORJAHR.
         /// </summary>
-        [TestVariable("24cd7295-a2e1-44bc-812e-a601fc65bcbb")]
-        public string Eric_log_Inhalt_aktuell
+        [TestVariable("97619d56-6b29-4822-9f62-f3c9442d7ad5")]
+        public string VORJAHR
         {
-            get { return _Eric_log_Inhalt_aktuell; }
-            set { _Eric_log_Inhalt_aktuell = value; }
+            get { return _VORJAHR; }
+            set { _VORJAHR = value; }
         }
 
 #endregion
@@ -92,10 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
-            
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_JUVA_2023_ausl_U", "log");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", VORJAHR, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }
 
