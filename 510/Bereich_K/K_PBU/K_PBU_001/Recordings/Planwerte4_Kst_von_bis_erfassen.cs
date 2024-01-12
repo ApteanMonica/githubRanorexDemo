@@ -119,46 +119,52 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonEinfuegen' at Center.", repo.TblK.PbCommonEinfuegenInfo, new RecordItemIndex(0));
             repo.TblK.PbCommonEinfuegen.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4' at Center.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4Info, new RecordItemIndex(2));
+            repo.TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4Info, new RecordItemIndex(3));
             repo.TblK.FlexGrid_Tabelle.Row_4.ColKtoNrRow4.PressKeys(Konto);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle2' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColKs1NrRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKs1NrRow4Info, new RecordItemIndex(3));
-            repo.TblK.FlexGrid_Tabelle.Row_4.ColKs1NrRow4.PressKeys(Kostenstelle2);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostentraeger' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColKs2NrRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKs2NrRow4Info, new RecordItemIndex(5));
-            repo.TblK.FlexGrid_Tabelle.Row_4.ColKs2NrRow4.PressKeys(Kostentraeger);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle2' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColKs1NrRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKs1NrRow4Info, new RecordItemIndex(5));
+            repo.TblK.FlexGrid_Tabelle.Row_4.ColKs1NrRow4.PressKeys(Kostenstelle2);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColPosRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColPosRow4Info, new RecordItemIndex(7));
-            repo.TblK.FlexGrid_Tabelle.Row_4.ColPosRow4.PressKeys("4");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostentraeger' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColKs2NrRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColKs2NrRow4Info, new RecordItemIndex(7));
+            repo.TblK.FlexGrid_Tabelle.Row_4.ColKs2NrRow4.PressKeys(Kostentraeger);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4' with focus on 'TblK.FlexGrid_Tabelle.Row_4.ColPosRow4'.", repo.TblK.FlexGrid_Tabelle.Row_4.ColPosRow4Info, new RecordItemIndex(9));
+            repo.TblK.FlexGrid_Tabelle.Row_4.ColPosRow4.PressKeys("4");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1.000' with focus on 'TblK.FlexGrid_Tabelle.Row_4.Col01Row4'.", repo.TblK.FlexGrid_Tabelle.Row_4.Col01Row4Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1.000' with focus on 'TblK.FlexGrid_Tabelle.Row_4.Col01Row4'.", repo.TblK.FlexGrid_Tabelle.Row_4.Col01Row4Info, new RecordItemIndex(13));
             repo.TblK.FlexGrid_Tabelle.Row_4.Col01Row4.PressKeys("1.000");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid_Tabelle.Row_4.Col01Row4' at Center.", repo.TblK.FlexGrid_Tabelle.Row_4.Col01Row4Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid_Tabelle.Row_4.Col01Row4' at Center.", repo.TblK.FlexGrid_Tabelle.Row_4.Col01Row4Info, new RecordItemIndex(14));
             repo.TblK.FlexGrid_Tabelle.Row_4.Col01Row4.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000') on item 'TblK.FlexGrid_Tabelle.Row_4.Row4'.", repo.TblK.FlexGrid_Tabelle.Row_4.Row4Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000') on item 'TblK.FlexGrid_Tabelle.Row_4.Row4'.", repo.TblK.FlexGrid_Tabelle.Row_4.Row4Info, new RecordItemIndex(15));
             Validate.AttributeContains(repo.TblK.FlexGrid_Tabelle.Row_4.Row4Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonSpeichern' at Center.", repo.TblK.PbCommonSpeichernInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonSpeichern' at Center.", repo.TblK.PbCommonSpeichernInfo, new RecordItemIndex(16));
             repo.TblK.PbCommonSpeichern.Click();
             
         }

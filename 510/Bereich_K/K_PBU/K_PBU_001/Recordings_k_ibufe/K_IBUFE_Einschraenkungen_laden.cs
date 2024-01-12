@@ -155,8 +155,8 @@ namespace K_PBU_001.Recordings_k_ibufe
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12' with focus on 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(13));
-            repo.TblIbufe.ToolBar.Periode_bis.PressKeys("12");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12' with focus on 'TblIbufe.ToolBar.Periode_bis_530_510_accessiblerole'.", repo.TblIbufe.ToolBar.Periode_bis_530_510_accessibleroleInfo, new RecordItemIndex(13));
+            repo.TblIbufe.ToolBar.Periode_bis_530_510_accessiblerole.PressKeys("12");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -191,8 +191,8 @@ namespace K_PBU_001.Recordings_k_ibufe
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblIbufe.ToolBar.Periode_von'.", repo.TblIbufe.ToolBar.Periode_vonInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_vonInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(25));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bisInfo, "Text", "12");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'TblIbufe.ToolBar.Periode_bis_530_510_accessiblerole'.", repo.TblIbufe.ToolBar.Periode_bis_530_510_accessibleroleInfo, new RecordItemIndex(25));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bis_530_510_accessibleroleInfo, "Text", "12");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblIbufe.ToolBar.Kostenstelle_von_510_530_accessiblerole'.", repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessibleroleInfo, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessibleroleInfo, "Text", Kostenstelle);

@@ -3454,7 +3454,9 @@ namespace K_PBU_001
             RepoItemInfo _jahr_vonInfo;
             RepoItemInfo _periode_vonInfo;
             RepoItemInfo _jahr_bisInfo;
-            RepoItemInfo _periode_bisInfo;
+            RepoItemInfo _periode_bis_530_510_accessibleroleInfo;
+            RepoItemInfo _periode_bis_530Info;
+            RepoItemInfo _periode_bis_510_520Info;
             RepoItemInfo _kostenstelle_von_510_530_accessibleroleInfo;
             RepoItemInfo _kostenstellen_von_510_520Info;
             RepoItemInfo _dfks1von_530Info;
@@ -3471,7 +3473,9 @@ namespace K_PBU_001
                 _jahr_vonInfo = new RepoItemInfo(this, "Jahr_von", "text[@controlname='dfJahrV']/text[@accessiblename='Periode von']", "", 30000, null, "dad4e375-0f14-4f67-9243-06160e0ab166");
                 _periode_vonInfo = new RepoItemInfo(this, "Periode_von", "text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']", "", 30000, null, "d0f64ca1-85b5-4f81-b354-47d338c7fbc1");
                 _jahr_bisInfo = new RepoItemInfo(this, "Jahr_bis", "text[@controlname='dfJahrB']/text[@accessiblerole='Text']", "", 30000, null, "dc1ed656-a776-4a54-9bd5-01545e8a27d3");
-                _periode_bisInfo = new RepoItemInfo(this, "Periode_bis", "text[@controlname='dfPeriodeB']/text[@accessiblename='bis']", "", 30000, null, "77325648-2e45-435f-8659-961a79421d92");
+                _periode_bis_530_510_accessibleroleInfo = new RepoItemInfo(this, "Periode_bis_530_510_accessiblerole", "text[@controlname='dfPeriodeB']/text[@accessiblerole='Text']", "", 30000, null, "77325648-2e45-435f-8659-961a79421d92");
+                _periode_bis_530Info = new RepoItemInfo(this, "Periode_bis_530", "text[@controlname='dfPeriodeB']/text[@accessiblerole='Text']", "", 30000, null, "13208a06-f016-4fa5-9b71-20ab80a557ac");
+                _periode_bis_510_520Info = new RepoItemInfo(this, "Periode_bis_510_520", "text[@controlname='dfPeriodeB']/text[@accessiblename='bis']", "", 30000, null, "f9fe25bc-61ec-4888-b0d6-fab820d5b865");
                 _kostenstelle_von_510_530_accessibleroleInfo = new RepoItemInfo(this, "Kostenstelle_von_510_530_accessiblerole", "text[@controlname='dfKs1_von']/text[@accessiblerole='Text']", "", 30000, null, "a5910899-1125-430e-9bc9-e25bf1b695b1");
                 _kostenstellen_von_510_520Info = new RepoItemInfo(this, "Kostenstellen_von_510_520", "text[@controlname='dfKs1_von']/text[@accessiblename='Kostenstellen']", "", 30000, null, "cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f");
                 _dfks1von_530Info = new RepoItemInfo(this, "DfKs1Von_530", "text[@controlname='dfKs1_von']", "", 30000, null, "9a7460b2-61b2-45c1-9c55-8a0db62e59a2");
@@ -3623,26 +3627,74 @@ namespace K_PBU_001
             }
 
             /// <summary>
-            /// The Periode_bis item.
+            /// The Periode_bis_530_510_accessiblerole item.
             /// </summary>
             [RepositoryItem("77325648-2e45-435f-8659-961a79421d92")]
-            public virtual Ranorex.Text Periode_bis
+            public virtual Ranorex.Text Periode_bis_530_510_accessiblerole
             {
                 get
                 {
-                    return _periode_bisInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _periode_bis_530_510_accessibleroleInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Periode_bis item info.
+            /// The Periode_bis_530_510_accessiblerole item info.
             /// </summary>
             [RepositoryItemInfo("77325648-2e45-435f-8659-961a79421d92")]
-            public virtual RepoItemInfo Periode_bisInfo
+            public virtual RepoItemInfo Periode_bis_530_510_accessibleroleInfo
             {
                 get
                 {
-                    return _periode_bisInfo;
+                    return _periode_bis_530_510_accessibleroleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Periode_bis_530 item.
+            /// </summary>
+            [RepositoryItem("13208a06-f016-4fa5-9b71-20ab80a557ac")]
+            public virtual Ranorex.Text Periode_bis_530
+            {
+                get
+                {
+                    return _periode_bis_530Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Periode_bis_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("13208a06-f016-4fa5-9b71-20ab80a557ac")]
+            public virtual RepoItemInfo Periode_bis_530Info
+            {
+                get
+                {
+                    return _periode_bis_530Info;
+                }
+            }
+
+            /// <summary>
+            /// The Periode_bis_510_520 item.
+            /// </summary>
+            [RepositoryItem("f9fe25bc-61ec-4888-b0d6-fab820d5b865")]
+            public virtual Ranorex.Text Periode_bis_510_520
+            {
+                get
+                {
+                    return _periode_bis_510_520Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Periode_bis_510_520 item info.
+            /// </summary>
+            [RepositoryItemInfo("f9fe25bc-61ec-4888-b0d6-fab820d5b865")]
+            public virtual RepoItemInfo Periode_bis_510_520Info
+            {
+                get
+                {
+                    return _periode_bis_510_520Info;
                 }
             }
 

@@ -106,37 +106,40 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonNeu' at Center.", repo.TblK.PbCommonNeuInfo, new RecordItemIndex(0));
             repo.TblK.PbCommonNeu.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.CbBereich1' at Center.", repo.TblK.CbBereich1Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(1));
+            repo.TblK.CbBereich1.Element.SetAttributeValue("Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.CbBereich1' at Center.", repo.TblK.CbBereich1Info, new RecordItemIndex(2));
             repo.TblK.CbBereich1.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblK.CbBereich1Info, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(4));
             repo.TblK.PbCommonLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgLaden.TitleBar100AuswahlKostenstellen'", repo.DlgLaden.TitleBar100AuswahlKostenstellenInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgLaden.TitleBar100AuswahlKostenstellen'", repo.DlgLaden.TitleBar100AuswahlKostenstellenInfo, new ActionTimeout(60000), new RecordItemIndex(5));
             repo.DlgLaden.TitleBar100AuswahlKostenstellenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahl Kostenstellen') on item 'DlgLaden.TitleBar100AuswahlKostenstellen'.", repo.DlgLaden.TitleBar100AuswahlKostenstellenInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahl Kostenstellen') on item 'DlgLaden.TitleBar100AuswahlKostenstellen'.", repo.DlgLaden.TitleBar100AuswahlKostenstellenInfo, new RecordItemIndex(6));
             Validate.AttributeContains(repo.DlgLaden.TitleBar100AuswahlKostenstellenInfo, "Text", "Auswahl Kostenstellen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgLaden.TextKostenstellenVon' at Center.", repo.DlgLaden.TextKostenstellenVonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgLaden.TextKostenstellenVon' at Center.", repo.DlgLaden.TextKostenstellenVonInfo, new RecordItemIndex(7));
             repo.DlgLaden.TextKostenstellenVon.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'DlgLaden.TextKostenstellenVon'.", repo.DlgLaden.TextKostenstellenVonInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'DlgLaden.TextKostenstellenVon'.", repo.DlgLaden.TextKostenstellenVonInfo, new RecordItemIndex(8));
             repo.DlgLaden.TextKostenstellenVon.PressKeys(Kostenstelle);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle2' with focus on 'DlgLaden.TextBis'.", repo.DlgLaden.TextBisInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle2' with focus on 'DlgLaden.TextBis'.", repo.DlgLaden.TextBisInfo, new RecordItemIndex(10));
             repo.DlgLaden.TextBis.PressKeys(Kostenstelle2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgLaden.PbOk' at Center.", repo.DlgLaden.PbOkInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgLaden.PbOk' at Center.", repo.DlgLaden.PbOkInfo, new RecordItemIndex(12));
             repo.DlgLaden.PbOk.Click();
             
         }
