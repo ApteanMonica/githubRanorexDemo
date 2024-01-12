@@ -20,50 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Sichern_Eric_log_JUVA_VORJAHR_ausl_U recording.
+    ///The Formular_JAHRNEU_auswaehlen recording.
     /// </summary>
-    [TestModule("c10353f3-cd5d-46be-9051-a4f98e2e33de", ModuleType.Recording, 1)]
-    public partial class Sichern_Eric_log_JUVA_VORJAHR_ausl_U : ITestModule
+    [TestModule("6db6cb18-fc84-4aa2-b969-23a44757cdc4", ModuleType.Recording, 1)]
+    public partial class Formular_JAHRNEU_auswaehlen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Sichern_Eric_log_JUVA_VORJAHR_ausl_U instance = new Sichern_Eric_log_JUVA_VORJAHR_ausl_U();
+        static Formular_JAHRNEU_auswaehlen instance = new Formular_JAHRNEU_auswaehlen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Sichern_Eric_log_JUVA_VORJAHR_ausl_U()
+        public Formular_JAHRNEU_auswaehlen()
         {
-            Eric_log_Inhalt_aktuell = "";
+            UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2024 Elster";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Sichern_Eric_log_JUVA_VORJAHR_ausl_U Instance
+        public static Formular_JAHRNEU_auswaehlen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Eric_log_Inhalt_aktuell;
-
         /// <summary>
-        /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
+        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
         /// </summary>
-        [TestVariable("24cd7295-a2e1-44bc-812e-a601fc65bcbb")]
-        public string Eric_log_Inhalt_aktuell
+        [TestVariable("3751c4e7-3923-4ce1-a791-05ede3e7ff24")]
+        public string UVA_JAHRNEU_Form_Name
         {
-            get { return _Eric_log_Inhalt_aktuell; }
-            set { _Eric_log_Inhalt_aktuell = value; }
+            get { return repo.UVA_JAHRNEU_Form_Name; }
+            set { repo.UVA_JAHRNEU_Form_Name = value; }
         }
 
 #endregion
@@ -92,10 +90,17 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.CmbUvaFBez' at Center.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(0));
+            repo.DlgUVADruck.CmbUvaFBez.Click();
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_JUVA_2023_ausl_U", "log");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_JAHRNEU' at Center.", repo.List1000.Formular_Elster_JAHRNEUInfo, new RecordItemIndex(1));
+            repo.List1000.Formular_Elster_JAHRNEU.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_JAHRNEU_Form_Name) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", UVA_JAHRNEU_Form_Name);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'DlgUVADruck.PbElster'.", repo.DlgUVADruck.PbElsterInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgUVADruck.PbElsterInfo, "Enabled", "True");
             
         }
 

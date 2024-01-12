@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
-    public partial class Sichern_Eric_log_JUVA_VORJAHR_ausl_U
+    public partial class Pruefung_Inhalt_XML_JUVA_Version_2022
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

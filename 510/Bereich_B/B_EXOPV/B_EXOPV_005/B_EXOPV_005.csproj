@@ -95,6 +95,18 @@
     <Compile Include="Program.cs">
       <id>9765e2fb-e8c4-4716-b258-1d7b9f97d7d1</id>
     </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.cs">
+      <DependentUpon>Verbuchung_Meldungen_verbucht_Fehler.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee36d7bb-4b2b-4e90-ae8d-7392c511dc2c</id>
+      <BoundTo>3d468607-2d8c-4bb6-a13f-7aec9a65ee94</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.UserCode.cs">
+      <DependentUpon>Verbuchung_Meldungen_verbucht_Fehler.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3700589-7525-42e5-a1e3-803dea75e868</id>
+      <BoundTo>3d468607-2d8c-4bb6-a13f-7aec9a65ee94</BoundTo>
+    </Compile>
     <Compile Include="Recordings_B_EXOPV\Verbuchung_Dialog1_ER01_LF01_akzeptieren.cs">
       <DependentUpon>Verbuchung_Dialog1_ER01_LF01_akzeptieren.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -563,18 +575,6 @@
       <id>a9e54c95-afc4-4131-9070-66dacee52484</id>
       <BoundTo>4d21c9b0-3974-4188-9df6-bce8e1395e03</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.cs">
-      <BoundTo>46ca43a7-7f83-4212-96d4-d65565905038</BoundTo>
-      <DependentUpon>Verbuchung_Meldungen_verbucht_Fehler.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>f77215d7-c71c-47db-9063-85747bb6c63a</id>
-    </Compile>
-    <Compile Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.UserCode.cs">
-      <BoundTo>46ca43a7-7f83-4212-96d4-d65565905038</BoundTo>
-      <DependentUpon>Verbuchung_Meldungen_verbucht_Fehler.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ec41e0d3-3635-43ae-9407-d32312d28e3c</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="B_EXOPV_005Repository.rximg">
@@ -587,6 +587,11 @@
       <id>97d0b921-e07a-415f-9aea-9d2b33111f2e</id>
       <repoid>5a4c68c8-710c-4738-ad0b-11d204b6b604</repoid>
       <reporootid>0948a16f-ab80-40bc-b4e2-a08dafe19c03</reporootid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>3d468607-2d8c-4bb6-a13f-7aec9a65ee94</id>
+      <recordtableid>af0bdb9c-f2fb-4d8b-b007-185f647e30fa</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPV\Verbuchung_Dialog1_ER01_LF01_akzeptieren.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
@@ -782,11 +787,6 @@
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>4d21c9b0-3974-4188-9df6-bce8e1395e03</id>
       <recordtableid>ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86</recordtableid>
-    </None>
-    <None Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.rxrec">
-      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
-      <id>46ca43a7-7f83-4212-96d4-d65565905038</id>
-      <recordtableid>446f3ba0-459f-43fd-8aff-78cb4a17eea7</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

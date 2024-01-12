@@ -12207,49 +12207,21 @@ KKACiiigAooooAKKKKACiiigD//Z
 			<bindings>
 			</bindings>
 			<info
-			id="993833bc-21b5-4960-8064-635373aefffe"
+			id="be21e5c7-d146-44ea-9223-ef1f78f7d3c7"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="672"
-				prefcap="titlebar"
-				rect="-794,-30,592,28"
-				role="titlebar"
-				snapElem=""
-				valid="False"
-				visible="False">
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Invisible
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblDrucken']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="93c407be-f9c1-4ac0-9c5b-77ddaba51186">
+		searchpropertyid="34a588d0-7b75-4cba-916c-c4492bc9356b"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -12263,13 +12235,7 @@ KKACiiigAooooAKKKKACiiigD//Z
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Rechnung
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -12381,6 +12347,15 @@ KKACiiigAooooAKKKKACiiigD//Z
 				</robustPath>
 			</info>
 		</keyitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

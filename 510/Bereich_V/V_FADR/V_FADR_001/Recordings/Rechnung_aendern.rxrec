@@ -28,8 +28,41 @@ mode="Global">
 		name="Zahlungsbedingung">
 			030
 		</var>
+		<var
+		id="2f457d80-98e3-4002-af7c-321f2a2e5814"
+		name="Tagesdatum">
+		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<arguments
+			id="d9be9e32-4578-446c-847c-7a8870d7516f">
+				<argument
+				argname="expectedFormat"
+				id="3af700c9-6b6b-4349-8060-c20a729919b9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -47,17 +80,17 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="5685564b-cb2a-47d7-91d7-fd48537a4cc9"
+			id="d00fe5db-e3b9-4cbc-aa5b-f9625cb40a76"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'Column 0']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Tagesdatum]/cell[@accessiblename~'Column 0']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>

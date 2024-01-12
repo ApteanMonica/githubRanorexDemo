@@ -24,7 +24,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verbuchen_Meldungen_ER_04_Peri_UVA_nein recording.
+    ///The Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN recording.
     /// </summary>
     [TestModule("432d1afa-b3ad-403d-ae28-db5974a3a582", ModuleType.Recording, 1)]
     public partial class Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN : ITestModule

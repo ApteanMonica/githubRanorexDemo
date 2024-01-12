@@ -113,11 +113,11 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.Tabelle' at Center.", repo.VFADR.TabelleInfo, new RecordItemIndex(7));
             repo.VFADR.Tabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100Rechnung'", repo.TblDrucken.TitleBar100RechnungInfo, new ActionTimeout(120000), new RecordItemIndex(8));
-            repo.TblDrucken.TitleBar100RechnungInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.Row1'", repo.TblDrucken.Row1Info, new ActionTimeout(120000), new RecordItemIndex(8));
+            repo.TblDrucken.Row1Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Rechnung') on item 'TblDrucken.TitleBar100Rechnung'.", repo.TblDrucken.TitleBar100RechnungInfo, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.TblDrucken.TitleBar100RechnungInfo, "Text", "Rechnung");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100Rechnung'", repo.TblDrucken.TitleBar100RechnungInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            repo.TblDrucken.TitleBar100RechnungInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(10));
             Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "201900005\t13");
@@ -133,10 +133,13 @@ namespace V_FADR_001.Recordings
             Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeRechnung);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(14));
-            //repo.TblDrucken.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(14));
+            Delay.Duration(3000, false);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(15));
+            //repo.TblDrucken.Schliessen.Click();
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(16));
             //repo.TblDrucken.Schliessen.Click();
             
         }

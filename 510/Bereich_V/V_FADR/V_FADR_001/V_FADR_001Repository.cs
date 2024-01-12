@@ -883,6 +883,7 @@ namespace V_FADR_001
         public partial class Untere_TabelleFolder : RepoGenBaseFolder
         {
             RepoItemInfo _column0_in_zeile_mit_auftragsnummerInfo;
+            RepoItemInfo _column0_in_zeile_mit_tagesdatumInfo;
             RepoItemInfo _zeile_mit_auftragsnummerInfo;
             RepoItemInfo _colaufk_nr_in_zeile_mit_auftragsnummrInfo;
             RepoItemInfo _rechnungsnummerInfo;
@@ -894,6 +895,7 @@ namespace V_FADR_001
                     base("untere_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "0d8b66a3-f07f-46e1-ba83-693b49be8675", "")
             {
                 _column0_in_zeile_mit_auftragsnummerInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Auftragsnummer", "row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'Column 0']", "", 30000, null, "5685564b-cb2a-47d7-91d7-fd48537a4cc9");
+                _column0_in_zeile_mit_tagesdatumInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Tagesdatum", "row[@accessiblerole='Row' and @accessiblevalue~$Tagesdatum]/cell[@accessiblename~'Column 0']", "", 30000, null, "d00fe5db-e3b9-4cbc-aa5b-f9625cb40a76");
                 _zeile_mit_auftragsnummerInfo = new RepoItemInfo(this, "Zeile_mit_Auftragsnummer", "row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]", "", 30000, null, "41795dd1-b7b6-45a5-af97-9859cc5b8ccc");
                 _colaufk_nr_in_zeile_mit_auftragsnummrInfo = new RepoItemInfo(this, "colAufk_nr_in_Zeile_mit_Auftragsnummr", "row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']", "", 30000, null, "18dead42-6c77-4207-994f-cf8e3ae4db7d");
                 _rechnungsnummerInfo = new RepoItemInfo(this, "Rechnungsnummer", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "64118f8d-9a82-4ffb-bcf4-4b863078f3a3");
@@ -944,6 +946,30 @@ namespace V_FADR_001
                 get
                 {
                     return _column0_in_zeile_mit_auftragsnummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Tagesdatum item.
+            /// </summary>
+            [RepositoryItem("d00fe5db-e3b9-4cbc-aa5b-f9625cb40a76")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Tagesdatum
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_tagesdatumInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Tagesdatum item info.
+            /// </summary>
+            [RepositoryItemInfo("d00fe5db-e3b9-4cbc-aa5b-f9625cb40a76")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_TagesdatumInfo
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_tagesdatumInfo;
                 }
             }
 
@@ -1919,6 +1945,7 @@ namespace V_FADR_001
             RepoItemInfo _titlebar100rechnungInfo;
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _row7Info;
+            RepoItemInfo _row1Info;
 
             /// <summary>
             /// Creates a new TblDrucken  folder.
@@ -1929,6 +1956,7 @@ namespace V_FADR_001
                 _titlebar100rechnungInfo = new RepoItemInfo(this, "TitleBar100Rechnung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "993833bc-21b5-4960-8064-635373aefffe");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar/button[@accessiblename='Schließen']", "", 30000, null, "4d0be3e7-c0fc-464c-a8c9-04ac493e80c3");
                 _row7Info = new RepoItemInfo(this, "Row7", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']", "", 60000, null, "3292027d-914f-4490-b79c-ff5759dd73b1");
+                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 60000, null, "be21e5c7-d146-44ea-9223-ef1f78f7d3c7");
             }
 
             /// <summary>
@@ -2024,6 +2052,30 @@ namespace V_FADR_001
                 get
                 {
                     return _row7Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("be21e5c7-d146-44ea-9223-ef1f78f7d3c7")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("be21e5c7-d146-44ea-9223-ef1f78f7d3c7")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
         }

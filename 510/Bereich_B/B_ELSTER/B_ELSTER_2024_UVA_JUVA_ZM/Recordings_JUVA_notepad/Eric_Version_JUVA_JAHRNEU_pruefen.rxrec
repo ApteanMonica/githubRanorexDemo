@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="acb33087-9c22-4f14-bbd1-8838e7d949f6"
+id="f09dc4fc-221b-4d0d-8644-f02a4c3f53d9"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,34 +19,34 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum"
+	classname="Eric_Version_JUVA_JAHRNEU_pruefen"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad">
 	</codegen>
 	<variables>
 		<var
-		id="d28d4593-8a6b-4824-9d11-c8d719207c91"
-		name="VORVORJAHR">
+		id="8afc6446-544b-4792-8727-f7680297de83"
+		name="Eric_JUVA_JAHRNEU_39_2">
 		</var>
 	</variables>
 	<recorditems>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
-		searchpropertyid="5a922bae-502d-4ee0-96a3-5729ed9f0aa3">
+		optional="False"
+		searchpropertyid="7a03acc4-2847-484f-b648-aee94d5da5f1">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="VORVORJAHR">
+				variable="Eric_JUVA_JAHRNEU_39_2">
 				</binding>
 			</bindings>
 			<info
-			id="ee940f5c-0afe-4d75-86d1-50414468b7aa"
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title~'.XML - Editor']/text[@controlid='15']
+					/form[@title='eric.log - Editor']/text[@controlid='15']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -54,9 +54,6 @@ mode="Global">
 			<matchname>
 				Text
 			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
 		</validationitem>
 	</recorditems>
 	<repository
@@ -74,7 +71,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum.UserCode.cs
+		Eric_Version_JUVA_JAHRNEU_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
