@@ -117,8 +117,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_von'.", repo.TblIbufe.ToolBar.Periode_vonInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_vonInfo, "Text", Periode);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bisInfo, "Text", Periode);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_bis_530_510_accessiblerole'.", repo.TblIbufe.ToolBar.Periode_bis_530_510_accessibleroleInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bis_530_510_accessibleroleInfo, "Text", Periode);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(5));
             repo.TblIbufe.PbDataAccessLaden.Click();
