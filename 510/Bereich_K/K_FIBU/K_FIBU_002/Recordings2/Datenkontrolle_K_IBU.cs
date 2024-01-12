@@ -168,8 +168,8 @@ namespace K_FIBU_002.Recordings2
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(9));
-            repo.TblIbufe.ToolBar.Periode_bis.PressKeys(Periode_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'TblIbufe.ToolBar.Periode_bis_530_510'.", repo.TblIbufe.ToolBar.Periode_bis_530_510Info, new RecordItemIndex(9));
+            repo.TblIbufe.ToolBar.Periode_bis_530_510.PressKeys(Periode_bis);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -183,8 +183,8 @@ namespace K_FIBU_002.Recordings2
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_bis) on item 'TblIbufe.ToolBar.Jahr_bis'.", repo.TblIbufe.ToolBar.Jahr_bisInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Jahr_bisInfo, "Text", Jahr_bis);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis) on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bisInfo, "Text", Periode_bis);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis) on item 'TblIbufe.ToolBar.Periode_bis_530_510'.", repo.TblIbufe.ToolBar.Periode_bis_530_510Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bis_530_510Info, "Text", Periode_bis);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(15));
             repo.TblIbufe.PbDataAccessLaden.Click();

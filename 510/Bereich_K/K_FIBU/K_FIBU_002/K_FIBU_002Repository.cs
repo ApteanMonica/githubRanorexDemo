@@ -547,7 +547,9 @@ namespace K_FIBU_002
             RepoItemInfo _jahr_vonInfo;
             RepoItemInfo _periode_vonInfo;
             RepoItemInfo _jahr_bisInfo;
-            RepoItemInfo _periode_bisInfo;
+            RepoItemInfo _periode_bis_530_510Info;
+            RepoItemInfo _periode_bis_510_521Info;
+            RepoItemInfo _text_530Info;
 
             /// <summary>
             /// Creates a new ToolBar  folder.
@@ -558,7 +560,9 @@ namespace K_FIBU_002
                 _jahr_vonInfo = new RepoItemInfo(this, "Jahr_von", "text[@controlname='dfJahrV']/text[@accessiblename='Periode von']", "", 30000, null, "6606fba0-a2ed-4dce-8196-c2fb4171347b");
                 _periode_vonInfo = new RepoItemInfo(this, "Periode_von", "text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']", "", 30000, null, "b2e3ec41-da47-49d6-a043-8528df1cb6e7");
                 _jahr_bisInfo = new RepoItemInfo(this, "Jahr_bis", "text[@controlname='dfJahrB']/text[@accessiblerole='Text']", "", 30000, null, "c5e148e9-1eff-4801-8b62-0375e9b0732b");
-                _periode_bisInfo = new RepoItemInfo(this, "Periode_bis", "text[@controlname='dfPeriodeB']/text[@accessiblename='bis']", "", 30000, null, "9a937e97-2c05-4218-9302-261399f2d6f8");
+                _periode_bis_530_510Info = new RepoItemInfo(this, "Periode_bis_530_510", "text[@controlname='dfPeriodeB']/text[@accessiblerole='Text']", "", 30000, null, "9a937e97-2c05-4218-9302-261399f2d6f8");
+                _periode_bis_510_521Info = new RepoItemInfo(this, "Periode_bis_510_521", "text[@controlname='dfPeriodeB']/text[@accessiblename='bis']", "", 30000, null, "d61445b4-513a-4cb5-9007-027bcfd04d22");
+                _text_530Info = new RepoItemInfo(this, "Text_530", "text[@controlname='dfPeriodeB']/text[@accessiblerole='Text']", "", 30000, null, "0b17ccad-617c-4b4d-a1c6-121d490ad40a");
             }
 
             /// <summary>
@@ -658,26 +662,74 @@ namespace K_FIBU_002
             }
 
             /// <summary>
-            /// The Periode_bis item.
+            /// The Periode_bis_530_510 item.
             /// </summary>
             [RepositoryItem("9a937e97-2c05-4218-9302-261399f2d6f8")]
-            public virtual Ranorex.Text Periode_bis
+            public virtual Ranorex.Text Periode_bis_530_510
             {
                 get
                 {
-                    return _periode_bisInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _periode_bis_530_510Info.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Periode_bis item info.
+            /// The Periode_bis_530_510 item info.
             /// </summary>
             [RepositoryItemInfo("9a937e97-2c05-4218-9302-261399f2d6f8")]
-            public virtual RepoItemInfo Periode_bisInfo
+            public virtual RepoItemInfo Periode_bis_530_510Info
             {
                 get
                 {
-                    return _periode_bisInfo;
+                    return _periode_bis_530_510Info;
+                }
+            }
+
+            /// <summary>
+            /// The Periode_bis_510_521 item.
+            /// </summary>
+            [RepositoryItem("d61445b4-513a-4cb5-9007-027bcfd04d22")]
+            public virtual Ranorex.Text Periode_bis_510_521
+            {
+                get
+                {
+                    return _periode_bis_510_521Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Periode_bis_510_521 item info.
+            /// </summary>
+            [RepositoryItemInfo("d61445b4-513a-4cb5-9007-027bcfd04d22")]
+            public virtual RepoItemInfo Periode_bis_510_521Info
+            {
+                get
+                {
+                    return _periode_bis_510_521Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text_530 item.
+            /// </summary>
+            [RepositoryItem("0b17ccad-617c-4b4d-a1c6-121d490ad40a")]
+            public virtual Ranorex.Text Text_530
+            {
+                get
+                {
+                    return _text_530Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("0b17ccad-617c-4b4d-a1c6-121d490ad40a")]
+            public virtual RepoItemInfo Text_530Info
+            {
+                get
+                {
+                    return _text_530Info;
                 }
             }
         }
