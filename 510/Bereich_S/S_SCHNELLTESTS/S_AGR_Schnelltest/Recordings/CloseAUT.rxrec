@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="be97719e-0605-44d7-82c8-d07b77fac35d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_AGR_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d67856f7-6ca0-47c3-b3ab-66d740db170b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5c0f6f53-1f3f-4a2a-b956-9b668a49dc33"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblArtikelgruppen']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="9a3dfce6-2dcc-4725-a77e-51e6bfd70495"
+	name="S_AGR_SchnelltestRepository"
+	relativepath="..\S_AGR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_AGR_SchnelltestRepository"
+		namespace="S_AGR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="5277464c-e22e-4f65-9dd6-eb62008456a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
