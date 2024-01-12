@@ -24,31 +24,31 @@ namespace S_ADRDR.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Start_Lieferantenliste recording.
     /// </summary>
-    [TestModule("4fa71fc2-482d-4eed-8ec8-7915bf705049", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("c40bfaee-24e6-4980-b2de-f7efd22e2ef4", ModuleType.Recording, 1)]
+    public partial class Start_Lieferantenliste : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADRDR.S_ADRDRRepository repository.
         /// </summary>
         public static global::S_ADRDR.S_ADRDRRepository repo = global::S_ADRDR.S_ADRDRRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Start_Lieferantenliste instance = new Start_Lieferantenliste();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Start_Lieferantenliste()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "S_ADRDR";
+            Programm_Lieferantenliste = "S_ADRDR /KL=L";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Start_Lieferantenliste Instance
         {
             get { return instance; }
         }
@@ -60,23 +60,23 @@ namespace S_ADRDR.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("c90f11d0-05fc-49d8-891d-a404609d3c77")]
+        [TestVariable("9c95a488-1f58-4913-af7b-a4eb3d7220f6")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
         }
 
-        string _Programm;
+        string _Programm_Lieferantenliste;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm.
+        /// Gets or sets the value of variable Programm_Lieferantenliste.
         /// </summary>
-        [TestVariable("ce7f0c3e-8a84-448a-ab3a-d4be64afefc4")]
-        public string Programm
+        [TestVariable("5e0ab4f2-6582-4fac-b809-c1f8f2f57783")]
+        public string Programm_Lieferantenliste
         {
-            get { return _Programm; }
-            set { _Programm = value; }
+            get { return _Programm_Lieferantenliste; }
+            set { _Programm_Lieferantenliste = value; }
         }
 
 #endregion
@@ -105,14 +105,14 @@ namespace S_ADRDR.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_Lieferantenliste in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_Lieferantenliste, "", false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100Kundenliste'", repo.FrmMain.TitleBar100KundenlisteInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.FrmMain.TitleBar100KundenlisteInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kundenliste') on item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmMain.TitleBar100KundenlisteInfo, "Text", "Kundenliste");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferantenliste') on item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmMain.TitleBar100KundenlisteInfo, "Text", "Lieferantenliste");
             
         }
 

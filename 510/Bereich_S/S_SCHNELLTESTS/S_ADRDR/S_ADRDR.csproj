@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>78ec5e20-cea9-4db2-b88e-071183dba05a</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -96,6 +97,18 @@
       <id>870442de-6418-4b77-9446-8e9f029beb3e</id>
       <BoundTo>4a4a68ce-a7e0-435f-912f-d4e3f2270670</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Close_Lieferantenliste.cs">
+      <BoundTo>1b37e598-091b-4794-9c3e-e50f534f590e</BoundTo>
+      <DependentUpon>Close_Lieferantenliste.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cdc48bed-6a7e-4977-9713-85b42b4eb2d3</id>
+    </Compile>
+    <Compile Include="Recordings\Close_Lieferantenliste.UserCode.cs">
+      <BoundTo>1b37e598-091b-4794-9c3e-e50f534f590e</BoundTo>
+      <DependentUpon>Close_Lieferantenliste.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8a67ce96-f6ad-4874-9c80-ac52fbc07ca3</id>
+    </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -107,6 +120,18 @@
       <UserCode>true</UserCode>
       <id>999731f9-86e8-463a-a60c-ea5ccb100ad9</id>
       <BoundTo>a5318ed9-76cc-454c-bdcc-a1070736391b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Start_Lieferantenliste.cs">
+      <BoundTo>24412831-352d-4232-8811-aa439e4ad224</BoundTo>
+      <DependentUpon>Start_Lieferantenliste.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f4a79390-0de5-40df-a1b3-0dbe6815d396</id>
+    </Compile>
+    <Compile Include="Recordings\Start_Lieferantenliste.UserCode.cs">
+      <BoundTo>24412831-352d-4232-8811-aa439e4ad224</BoundTo>
+      <DependentUpon>Start_Lieferantenliste.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45f60eaa-2aa7-4233-b28a-42d1694127d3</id>
     </Compile>
     <Compile Include="S_ADRDRRepository.cs">
       <BoundTo>78ec5e20-cea9-4db2-b88e-071183dba05a</BoundTo>
@@ -124,10 +149,20 @@
       <id>4a4a68ce-a7e0-435f-912f-d4e3f2270670</id>
       <recordtableid>9c003047-2838-4b5a-8fae-f8da5a123cbf</recordtableid>
     </None>
+    <None Include="Recordings\Close_Lieferantenliste.rxrec">
+      <BoundTo>78ec5e20-cea9-4db2-b88e-071183dba05a</BoundTo>
+      <id>1b37e598-091b-4794-9c3e-e50f534f590e</id>
+      <recordtableid>1d9bfa05-bb6b-4c89-8154-a72ee5cc4a7a</recordtableid>
+    </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>78ec5e20-cea9-4db2-b88e-071183dba05a</BoundTo>
       <id>a5318ed9-76cc-454c-bdcc-a1070736391b</id>
       <recordtableid>4fa71fc2-482d-4eed-8ec8-7915bf705049</recordtableid>
+    </None>
+    <None Include="Recordings\Start_Lieferantenliste.rxrec">
+      <BoundTo>78ec5e20-cea9-4db2-b88e-071183dba05a</BoundTo>
+      <id>24412831-352d-4232-8811-aa439e4ad224</id>
+      <recordtableid>c40bfaee-24e6-4980-b2de-f7efd22e2ef4</recordtableid>
     </None>
     <None Include="S_ADRDRRepository.rximg">
       <BoundTo>78ec5e20-cea9-4db2-b88e-071183dba05a</BoundTo>

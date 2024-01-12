@@ -24,60 +24,34 @@ namespace S_ADRDR.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Close_Lieferantenliste recording.
     /// </summary>
-    [TestModule("4fa71fc2-482d-4eed-8ec8-7915bf705049", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("1d9bfa05-bb6b-4c89-8154-a72ee5cc4a7a", ModuleType.Recording, 1)]
+    public partial class Close_Lieferantenliste : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ADRDR.S_ADRDRRepository repository.
         /// </summary>
         public static global::S_ADRDR.S_ADRDRRepository repo = global::S_ADRDR.S_ADRDRRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Close_Lieferantenliste instance = new Close_Lieferantenliste();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Close_Lieferantenliste()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "S_ADRDR";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Close_Lieferantenliste Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("c90f11d0-05fc-49d8-891d-a404609d3c77")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("ce7f0c3e-8a84-448a-ab3a-d4be64afefc4")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,8 @@ namespace S_ADRDR.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100Kundenliste'", repo.FrmMain.TitleBar100KundenlisteInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain.TitleBar100KundenlisteInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kundenliste') on item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmMain.TitleBar100KundenlisteInfo, "Text", "Kundenliste");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmMain.TitleBar100Kundenliste, 1000);
             
         }
 

@@ -27,12 +27,42 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<setup
+			id="2bf7c74f-4735-4f01-9450-c2e2e6bd7dae"
+			name="setup">
+			</setup>
+			<testmodule
+			id="352d1668-2429-487e-b0c0-d6506d779acd"
+			name="Close_Lieferantenliste"
+			ref="1d9bfa05-bb6b-4c89-8154-a72ee5cc4a7a"
+			type="Recording">
+			</testmodule>
+			<setup
 			id="447d88cb-02b6-4fd7-bc84-5b1dfd5d4b9b"
 			name="setup">
 			</setup>
+			<testmodule
+			id="4a57ebf6-d27d-4d9e-a509-49e3a20d7d07"
+			name="Start_Lieferantenliste"
+			ref="c40bfaee-24e6-4980-b2de-f7efd22e2ef4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="6a3cf43f-0617-466d-a7c4-adb83307effb"
+					variableid="9c95a488-1f58-4913-af7b-a4eb3d7220f6"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_Lieferantenliste"
+					datasourceid="6a3cf43f-0617-466d-a7c4-adb83307effb"
+					variableid="5e0ab4f2-6582-4fac-b809-c1f8f2f57783"
+					variablename="Programm_Lieferantenliste">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="4f10cdfd-8cb3-42da-bdd5-b6e8a4c76f2c"
-			name="TestCase">
+			name="Auswertung_Kundenliste">
 			</testcase>
 			<testmodule
 			id="667873f3-bd2a-4d72-9a25-e4f835a90423"
@@ -50,13 +80,21 @@
 					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
-					name="Programm"
+					name="Programm_Kundenliste"
 					value="S_ADRDR">
+					</param>
+					<param
+					name="Programm_Lieferantenliste"
+					value="S_ADRDR /KL=L">
 					</param>
 				</parameters>
 			</testcase>
 			<teardown
 			id="7465a177-2b8d-4c2c-9e46-663d5e0023e7"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="979295d9-8792-442e-8e69-56903b547307"
 			name="teardown">
 			</teardown>
 			<testmodule
@@ -72,13 +110,17 @@
 					variablename="Startfile">
 					</var>
 					<var
-					dataname="Programm"
+					dataname="Programm_Kundenliste"
 					datasourceid="6a3cf43f-0617-466d-a7c4-adb83307effb"
 					variableid="ce7f0c3e-8a84-448a-ab3a-d4be64afefc4"
 					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e168a99e-b439-4353-a213-58413fdabc08"
+			name="Auswertung_Lieferantenliste">
+			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -89,7 +131,7 @@
 				name="S_ADRDR">
 					<testcase
 					id="4f10cdfd-8cb3-42da-bdd5-b6e8a4c76f2c"
-					name="TestCase">
+					name="Auswertung_Kundenliste">
 						<setup
 						id="447d88cb-02b6-4fd7-bc84-5b1dfd5d4b9b"
 						name="setup">
@@ -104,6 +146,26 @@
 							<testmodule
 							id="667873f3-bd2a-4d72-9a25-e4f835a90423"
 							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="e168a99e-b439-4353-a213-58413fdabc08"
+					name="Auswertung_Lieferantenliste">
+						<setup
+						id="2bf7c74f-4735-4f01-9450-c2e2e6bd7dae"
+						name="setup">
+							<testmodule
+							id="4a57ebf6-d27d-4d9e-a509-49e3a20d7d07"
+							name="Start_Lieferantenliste">
+							</testmodule>
+						</setup>
+						<teardown
+						id="979295d9-8792-442e-8e69-56903b547307"
+						name="teardown">
+							<testmodule
+							id="352d1668-2429-487e-b0c0-d6506d779acd"
+							name="Close_Lieferantenliste">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -122,6 +184,9 @@
 			</testcontainer>
 			<testcontainer
 			id="6a3cf43f-0617-466d-a7c4-adb83307effb">
+			</testcontainer>
+			<testcontainer
+			id="e168a99e-b439-4353-a213-58413fdabc08">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

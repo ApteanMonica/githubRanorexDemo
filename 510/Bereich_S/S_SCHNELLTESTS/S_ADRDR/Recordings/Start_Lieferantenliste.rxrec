@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="4fa71fc2-482d-4eed-8ec8-7915bf705049"
-mode="Desktop">
+id="c40bfaee-24e6-4980-b2de-f7efd22e2ef4"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,19 +19,19 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="StartAUT"
+	classname="Start_Lieferantenliste"
 	namespace="S_ADRDR.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="c90f11d0-05fc-49d8-891d-a404609d3c77"
+		id="9c95a488-1f58-4913-af7b-a4eb3d7220f6"
 		name="Startfile">
 			C:\Testdaten\Allgemein\Start.bat
 		</var>
 		<var
-		id="ce7f0c3e-8a84-448a-ab3a-d4be64afefc4"
-		name="Programm">
-			S_ADRDR
+		id="5e0ab4f2-6582-4fac-b809-c1f8f2f57783"
+		name="Programm_Lieferantenliste">
+			S_ADRDR /KL=L
 		</var>
 	</variables>
 	<recorditems>
@@ -48,7 +48,7 @@ mode="Desktop">
 				</binding>
 				<binding
 				target="Arguments"
-				variable="Programm">
+				variable="Programm_Lieferantenliste">
 				</binding>
 			</bindings>
 			<filename>
@@ -60,7 +60,7 @@ mode="Desktop">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="5c5ecc0a-7911-4812-b903-cdd9ec2584b0"
+		searchpropertyid="868a9cb3-66df-4d83-b58c-55cf6a5e12ff"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -70,30 +70,6 @@ mode="Desktop">
 			<info
 			id="50d3aa69-dfdd-45eb-9e3d-8c33e2eb7438"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="5"
-				prefcap="titlebar"
-				rect="528,112,560,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 				</path>
@@ -105,7 +81,7 @@ mode="Desktop">
 		action="AttributeContains"
 		enabled="True"
 		optional="False"
-		searchpropertyid="570a5281-0b89-410d-bf41-f1b718216835">
+		searchpropertyid="584627e1-7ca9-45ae-9e5e-ab74a9973422">
 			<comment>
 			</comment>
 			<bindings>
@@ -113,30 +89,6 @@ mode="Desktop">
 			<info
 			id="50d3aa69-dfdd-45eb-9e3d-8c33e2eb7438"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="5"
-				prefcap="titlebar"
-				rect="528,112,560,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 				</path>
@@ -147,7 +99,7 @@ mode="Desktop">
 				Text
 			</matchname>
 			<matchvalue>
-				Kundenliste
+				Lieferantenliste
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -166,7 +118,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartAUT.UserCode.cs
+		Start_Lieferantenliste.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
