@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 {
-    public partial class Details_Zeilen_Form_NEU_aufrufen
+    public partial class USt_Codes_kopieren_A20_nach_JAHRNEU
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

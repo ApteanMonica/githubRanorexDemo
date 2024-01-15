@@ -27,23 +27,23 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
     ///The USt_Codes_kopieren_A20_nach_NEU_VORJAHR recording.
     /// </summary>
     [TestModule("128647f0-5ee4-4bf3-9cc1-96e46b0f7138", ModuleType.Recording, 1)]
-    public partial class USt_Codes_kopieren_A20_nach_NEU_VORJAHR : ITestModule
+    public partial class USt_Codes_kopieren_A20_nach_VORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
         /// </summary>
         public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
 
-        static USt_Codes_kopieren_A20_nach_NEU_VORJAHR instance = new USt_Codes_kopieren_A20_nach_NEU_VORJAHR();
+        static USt_Codes_kopieren_A20_nach_VORJAHR instance = new USt_Codes_kopieren_A20_nach_VORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public USt_Codes_kopieren_A20_nach_NEU_VORJAHR()
+        public USt_Codes_kopieren_A20_nach_VORJAHR()
         {
             Firma_2 = "200";
-            Form_Name_NEU_VORJAHR = "UVA-Österreich 2022";
-            Form_Code_NEU_VORJAHR = "A22";
+            Form_Name_VORJAHR = "UVA-Österreich 2023";
+            Form_Code_VORJAHR = "A23";
             Form_Name_A20 = "UVA-Österreich 2020";
             Form_Code_A20 = "A20";
         }
@@ -51,7 +51,7 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static USt_Codes_kopieren_A20_nach_NEU_VORJAHR Instance
+        public static USt_Codes_kopieren_A20_nach_VORJAHR Instance
         {
             get { return instance; }
         }
@@ -70,16 +70,16 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
             set { _Firma_2 = value; }
         }
 
-        string _Form_Code_NEU_VORJAHR;
+        string _Form_Code_VORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Code_NEU_VORJAHR.
+        /// Gets or sets the value of variable Form_Code_VORJAHR.
         /// </summary>
         [TestVariable("404c8313-93e4-438b-8e23-dd1af2b194e5")]
-        public string Form_Code_NEU_VORJAHR
+        public string Form_Code_VORJAHR
         {
-            get { return _Form_Code_NEU_VORJAHR; }
-            set { _Form_Code_NEU_VORJAHR = value; }
+            get { return _Form_Code_VORJAHR; }
+            set { _Form_Code_VORJAHR = value; }
         }
 
         string _Form_Name_A20;
@@ -107,13 +107,13 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU_VORJAHR.
+        /// Gets or sets the value of variable Form_Name_VORJAHR.
         /// </summary>
         [TestVariable("a59eec1f-ea5a-4618-a17f-764c8dfa74f4")]
-        public string Form_Name_NEU_VORJAHR
+        public string Form_Name_VORJAHR
         {
-            get { return repo.Form_Name_NEU_VORJAHR; }
-            set { repo.Form_Name_NEU_VORJAHR = value; }
+            get { return repo.Form_Name_VORJAHR; }
+            set { repo.Form_Name_VORJAHR = value; }
         }
 
 #endregion
@@ -184,8 +184,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute ControlText to '$Form_Name_NEU_VORJAHR' on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(14));
-            repo.FrmUVAK.CmbUvak2.Element.SetAttributeValue("ControlText", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute ControlText to '$Form_Name_VORJAHR' on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(14));
+            repo.FrmUVAK.CmbUvak2.Element.SetAttributeValue("ControlText", Form_Name_VORJAHR);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(15));
             Delay.Duration(2000, false);
@@ -196,8 +196,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(17));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_NEU_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "Text", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "Text", Form_Name_VORJAHR);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.Text' at Center.", repo.FrmUVAK.TextInfo, new RecordItemIndex(19));
             repo.FrmUVAK.Text.Click();
@@ -211,8 +211,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_A20) on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.FrmUVAK.CmbUvak1Info, "ControlText", Form_Name_A20);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_NEU_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "ControlText", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "ControlText", Form_Name_VORJAHR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Code_A20) on item 'FrmUVAK.DfCode1'.", repo.FrmUVAK.DfCode1Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode1Info, "Text", Form_Code_A20);
@@ -247,8 +247,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
             repo.DlgMessageBox.Button0.Click();
             
             // Validierung am Ende wegen tw Zeitverzögerung beim Laden
-            Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$Form_Code_NEU_VORJAHR) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(34));
-            Validate.AttributeEqual(repo.FrmUVAK.DfCode2Info, "Text", Form_Code_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$Form_Code_VORJAHR) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(34));
+            Validate.AttributeEqual(repo.FrmUVAK.DfCode2Info, "Text", Form_Code_VORJAHR);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(35));
             Keyboard.PrepareFocus(repo.FrmUVAK.FormularKopieren);

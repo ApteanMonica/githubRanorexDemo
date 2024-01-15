@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
+namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 {
-    public partial class Reportdatei_U1_Check_NEU_VORJAHR
+    public partial class Details_Zeilen_Form_JAHRNEU_aufrufen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

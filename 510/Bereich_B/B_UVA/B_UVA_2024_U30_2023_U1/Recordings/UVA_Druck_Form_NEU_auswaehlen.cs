@@ -41,7 +41,7 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
         /// </summary>
         public UVA_Druck_Form_NEU_auswaehlen()
         {
-            Form_Name_NEU = "UVA-Österreich 2023";
+            Form_Name_JAHRNEU = "UVA-Österreich 2024";
         }
 
         /// <summary>
@@ -55,13 +55,13 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU.
+        /// Gets or sets the value of variable Form_Name_JAHRNEU.
         /// </summary>
-        [TestVariable("2e953574-19df-4af4-827d-92db7417e20c")]
-        public string Form_Name_NEU
+        [TestVariable("d4ad2fdc-144e-4ac5-8de9-da75a7787e40")]
+        public string Form_Name_JAHRNEU
         {
-            get { return repo.Form_Name_NEU; }
-            set { repo.Form_Name_NEU = value; }
+            get { return repo.Form_Name_JAHRNEU; }
+            set { repo.Form_Name_JAHRNEU = value; }
         }
 
 #endregion
@@ -93,15 +93,15 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Druck UVA-Werte') on item 'DlgUVADruck.TitleBar100DruckUVAWerte'.", repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo, new RecordItemIndex(0));
             Validate.AttributeContains(repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo, "Text", "Druck UVA-Werte");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'List1000.UVAOEsterreich_NEU'.", repo.List1000.UVAOEsterreich_NEUInfo, new RecordItemIndex(1));
-            //Keyboard.PrepareFocus(repo.List1000.UVAOEsterreich_NEU);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'List1000.UVAOEsterreich_JAHRNEU'.", repo.List1000.UVAOEsterreich_JAHRNEUInfo, new RecordItemIndex(1));
+            //Keyboard.PrepareFocus(repo.List1000.UVAOEsterreich_JAHRNEU);
             //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Down}{Down}{Down}' with focus on 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(2));
             //repo.DlgUVADruck.CmbUvaFBez.PressKeys("{Down}{Down}{Down}{Down}{Down}");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Form_Name_NEU' with focus on 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(3));
-            //repo.DlgUVADruck.CmbUvaFBez.PressKeys(Form_Name_NEU);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Form_Name_JAHRNEU' with focus on 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(3));
+            //repo.DlgUVADruck.CmbUvaFBez.PressKeys(Form_Name_JAHRNEU);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(4));
             //Keyboard.PrepareFocus(repo.DlgUVADruck.CmbUvaFBez);
@@ -110,14 +110,14 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.CmbUvaFBez' at Center.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(5));
             repo.DlgUVADruck.CmbUvaFBez.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVAOEsterreich_NEU' at Center.", repo.List1000.UVAOEsterreich_NEUInfo, new RecordItemIndex(6));
-            repo.List1000.UVAOEsterreich_NEU.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVAOEsterreich_JAHRNEU' at Center.", repo.List1000.UVAOEsterreich_JAHRNEUInfo, new RecordItemIndex(6));
+            repo.List1000.UVAOEsterreich_JAHRNEU.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AT') on item 'DlgUVADruck.Land'.", repo.DlgUVADruck.LandInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgUVADruck.LandInfo, "Text", "AT");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_NEU) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", Form_Name_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_JAHRNEU) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", Form_Name_JAHRNEU);
             
         }
 

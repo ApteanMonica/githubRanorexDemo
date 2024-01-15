@@ -54,13 +54,13 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU_VORJAHR.
+        /// Gets or sets the value of variable Form_Name_VORJAHR.
         /// </summary>
         [TestVariable("adc58a87-cdd8-4239-a32d-b6d2462bf08e")]
-        public string Form_Name_NEU_VORJAHR
+        public string Form_Name_VORJAHR
         {
-            get { return repo.Form_Name_NEU_VORJAHR; }
-            set { repo.Form_Name_NEU_VORJAHR = value; }
+            get { return repo.Form_Name_VORJAHR; }
+            set { repo.Form_Name_VORJAHR = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblUVAF.TitleBar200VerwaltenUVAFormulare'.", repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, new RecordItemIndex(0));
             Validate.Exists(repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHR'", repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHRInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHRInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHR'", repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PbCommonDrucken' at Center.", repo.TblUVAF.PbCommonDruckenInfo, new RecordItemIndex(2));
             repo.TblUVAF.PbCommonDrucken.Click();

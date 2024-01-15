@@ -20,48 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
+namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Zuordnungen_Form_NEU_KZ000_aufrufen recording.
+    ///The Reportdatei_U1_Check_VORJAHR recording.
     /// </summary>
-    [TestModule("c5b9ae90-e41a-4090-8b07-de6d3b33beb7", ModuleType.Recording, 1)]
-    public partial class Zuordnungen_Form_NEU_KZ000_aufrufen : ITestModule
+    [TestModule("ee9c13d8-168d-4ceb-911b-c45e73863416", ModuleType.Recording, 1)]
+    public partial class Reportdatei_U1_Check_VORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
         /// </summary>
         public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
 
-        static Zuordnungen_Form_NEU_KZ000_aufrufen instance = new Zuordnungen_Form_NEU_KZ000_aufrufen();
+        static Reportdatei_U1_Check_VORJAHR instance = new Reportdatei_U1_Check_VORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Zuordnungen_Form_NEU_KZ000_aufrufen()
+        public Reportdatei_U1_Check_VORJAHR()
         {
-            Form_Name_NEU = "";
+            U1_Report_VORJAHR = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Zuordnungen_Form_NEU_KZ000_aufrufen Instance
+        public static Reportdatei_U1_Check_VORJAHR Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _U1_Report_VORJAHR;
+
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU.
+        /// Gets or sets the value of variable U1_Report_VORJAHR.
         /// </summary>
-        [TestVariable("9b448cda-75c8-488b-b47a-7d79e56f3d23")]
-        public string Form_Name_NEU
+        [TestVariable("22a785c8-f9a3-4af3-8917-25bf98cdb5de")]
+        public string U1_Report_VORJAHR
         {
-            get { return repo.Form_Name_NEU; }
-            set { repo.Form_Name_NEU = value; }
+            get { return _U1_Report_VORJAHR; }
+            set { _U1_Report_VORJAHR = value; }
         }
 
 #endregion
@@ -90,20 +92,21 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_NEU) on item 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'.", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, "Text", Form_Name_NEU);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbErweitert' at Center.", repo.DlgDrucken.PbErweitertInfo, new RecordItemIndex(0));
+            repo.DlgDrucken.PbErweitert.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='000') on item 'TblUVAD.Row11.ColUvaDFormnrRow1'.", repo.TblUVAD.Row11.ColUvaDFormnrRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblUVAD.Row11.ColUvaDFormnrRow1Info, "Text", "000");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVerwalten' at Center.", repo.DlgDrucken.PbVerwaltenInfo, new RecordItemIndex(1));
+            repo.DlgDrucken.PbVerwalten.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAD.Row11.Col1_Row1' at Center.", repo.TblUVAD.Row11.Col1_Row1Info, new RecordItemIndex(2));
-            repo.TblUVAD.Row11.Col1_Row1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$U1_Report_VORJAHR) on item 'DlgDruckenVerwalten.Row1'.", repo.DlgDruckenVerwalten.Row1Info, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.DlgDruckenVerwalten.Row1Info, "Text", U1_Report_VORJAHR);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgUVAZ.TitleBar200ZuordnungUStCodes'", repo.DlgUVAZ.TitleBar200ZuordnungUStCodesInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.DlgUVAZ.TitleBar200ZuordnungUStCodesInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDruckenVerwalten'.", repo.DlgDruckenVerwalten.SelfInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.DlgDruckenVerwalten.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, 62, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgUVAZ.TitleBar200ZuordnungUStCodes'.", repo.DlgUVAZ.TitleBar200ZuordnungUStCodesInfo, new RecordItemIndex(4));
-            Validate.Exists(repo.DlgUVAZ.TitleBar200ZuordnungUStCodesInfo);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbErweitert' at Center.", repo.DlgDrucken.PbErweitertInfo, new RecordItemIndex(4));
+            repo.DlgDrucken.PbErweitert.Click();
             
         }
 

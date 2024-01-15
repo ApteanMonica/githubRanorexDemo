@@ -24,30 +24,30 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen recording.
+    ///The Zuordnungen_Form_VORJAHR_KZ000_aufrufen recording.
     /// </summary>
     [TestModule("392dd10b-50dc-45a4-9357-268d87246591", ModuleType.Recording, 1)]
-    public partial class Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen : ITestModule
+    public partial class Zuordnungen_Form_VORJAHR_KZ000_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
         /// </summary>
         public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
 
-        static Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen instance = new Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen();
+        static Zuordnungen_Form_VORJAHR_KZ000_aufrufen instance = new Zuordnungen_Form_VORJAHR_KZ000_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen()
+        public Zuordnungen_Form_VORJAHR_KZ000_aufrufen()
         {
-            Form_Name_NEU_VORJAHR = "";
+            Form_Name_VORJAHR = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen Instance
+        public static Zuordnungen_Form_VORJAHR_KZ000_aufrufen Instance
         {
             get { return instance; }
         }
@@ -55,13 +55,13 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU_VORJAHR.
+        /// Gets or sets the value of variable Form_Name_VORJAHR.
         /// </summary>
         [TestVariable("4a238541-0228-46e5-9e88-3d15aafa9d3b")]
-        public string Form_Name_NEU_VORJAHR
+        public string Form_Name_VORJAHR
         {
-            get { return repo.Form_Name_NEU_VORJAHR; }
-            set { repo.Form_Name_NEU_VORJAHR = value; }
+            get { return repo.Form_Name_VORJAHR; }
+            set { repo.Form_Name_VORJAHR = value; }
         }
 
 #endregion
@@ -90,8 +90,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_NEU_VORJAHR) on item 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'.", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, "Text", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_VORJAHR) on item 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'.", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, "Text", Form_Name_VORJAHR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='000') on item 'TblUVAD.Row11.ColUvaDFormnrRow1'.", repo.TblUVAD.Row11.ColUvaDFormnrRow1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblUVAD.Row11.ColUvaDFormnrRow1Info, "Text", "000");

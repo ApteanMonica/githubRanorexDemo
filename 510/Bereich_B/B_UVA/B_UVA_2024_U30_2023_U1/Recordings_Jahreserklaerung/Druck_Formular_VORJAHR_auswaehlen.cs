@@ -24,30 +24,30 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Druck_Formular_NEU_VORJAHR_auswaehlen recording.
+    ///The Druck_Formular_VORJAHR_auswaehlen recording.
     /// </summary>
     [TestModule("763d3f38-b843-48ad-b11f-59d63955b649", ModuleType.Recording, 1)]
-    public partial class Druck_Formular_NEU_VORJAHR_auswaehlen : ITestModule
+    public partial class Druck_Formular_VORJAHR_auswaehlen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
         /// </summary>
         public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
 
-        static Druck_Formular_NEU_VORJAHR_auswaehlen instance = new Druck_Formular_NEU_VORJAHR_auswaehlen();
+        static Druck_Formular_VORJAHR_auswaehlen instance = new Druck_Formular_VORJAHR_auswaehlen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Druck_Formular_NEU_VORJAHR_auswaehlen()
+        public Druck_Formular_VORJAHR_auswaehlen()
         {
-            Form_Name_NEU_VORJAHR = "";
+            Form_Name_VORJAHR = "UVA-Österreich 2023";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Druck_Formular_NEU_VORJAHR_auswaehlen Instance
+        public static Druck_Formular_VORJAHR_auswaehlen Instance
         {
             get { return instance; }
         }
@@ -55,13 +55,13 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU_VORJAHR.
+        /// Gets or sets the value of variable Form_Name_VORJAHR.
         /// </summary>
-        [TestVariable("9034ca30-200d-4128-9b9d-e4bee6101530")]
-        public string Form_Name_NEU_VORJAHR
+        [TestVariable("adc58a87-cdd8-4239-a32d-b6d2462bf08e")]
+        public string Form_Name_VORJAHR
         {
-            get { return repo.Form_Name_NEU_VORJAHR; }
-            set { repo.Form_Name_NEU_VORJAHR = value; }
+            get { return repo.Form_Name_VORJAHR; }
+            set { repo.Form_Name_VORJAHR = value; }
         }
 
 #endregion
@@ -96,12 +96,12 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Down}{Down}' with focus on 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(1));
             //repo.DlgUVADruck.CmbUvaFBez.PressKeys("{Down}{Down}{Down}{Down}");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'List1000.UVAOEsterreich_NEU_VORJAHR'.", repo.List1000.UVAOEsterreich_NEU_VORJAHRInfo, new RecordItemIndex(2));
-            //Keyboard.PrepareFocus(repo.List1000.UVAOEsterreich_NEU_VORJAHR);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'List1000.UVAOEsterreich_VORJAHR'.", repo.List1000.UVAOEsterreich_VORJAHRInfo, new RecordItemIndex(2));
+            //Keyboard.PrepareFocus(repo.List1000.UVAOEsterreich_VORJAHR);
             //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Form_Name_NEU_VORJAHR' with focus on 'DlgUVADruck.TpFormular.CmbUvaFBez'.", repo.DlgUVADruck.TpFormular.CmbUvaFBezInfo, new RecordItemIndex(3));
-            //repo.DlgUVADruck.TpFormular.CmbUvaFBez.PressKeys(Form_Name_NEU_VORJAHR);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Form_Name_VORJAHR' with focus on 'DlgUVADruck.TpFormular.CmbUvaFBez'.", repo.DlgUVADruck.TpFormular.CmbUvaFBezInfo, new RecordItemIndex(3));
+            //repo.DlgUVADruck.TpFormular.CmbUvaFBez.PressKeys(Form_Name_VORJAHR);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(4));
             //Keyboard.PrepareFocus(repo.DlgUVADruck.CmbUvaFBez);
@@ -110,14 +110,14 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.CmbUvaFBez' at Center.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(5));
             repo.DlgUVADruck.CmbUvaFBez.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVAOEsterreich_NEU_VORJAHR' at Center.", repo.List1000.UVAOEsterreich_NEU_VORJAHRInfo, new RecordItemIndex(6));
-            repo.List1000.UVAOEsterreich_NEU_VORJAHR.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVAOEsterreich_VORJAHR' at Center.", repo.List1000.UVAOEsterreich_VORJAHRInfo, new RecordItemIndex(6));
+            repo.List1000.UVAOEsterreich_VORJAHR.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AT') on item 'DlgUVADruck.Land'.", repo.DlgUVADruck.LandInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgUVADruck.LandInfo, "Text", "AT");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_NEU_VORJAHR) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_VORJAHR) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", Form_Name_VORJAHR);
             
         }
 

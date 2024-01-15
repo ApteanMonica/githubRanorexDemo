@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 {
-    public partial class Details_Zeilen_Form_NEU_VORJAHR_aufrufen
+    public partial class Details_Zeilen_Form_VORJAHR_aufrufen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

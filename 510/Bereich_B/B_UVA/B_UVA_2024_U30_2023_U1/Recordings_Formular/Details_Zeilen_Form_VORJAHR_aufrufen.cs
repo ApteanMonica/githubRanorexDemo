@@ -24,31 +24,31 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Details_Zeilen_Form_NEU_VORJAHR_aufrufen recording.
+    ///The Details_Zeilen_Form_VORJAHR_aufrufen recording.
     /// </summary>
     [TestModule("4b493907-42d3-4561-bc2d-6545b48bbca0", ModuleType.Recording, 1)]
-    public partial class Details_Zeilen_Form_NEU_VORJAHR_aufrufen : ITestModule
+    public partial class Details_Zeilen_Form_VORJAHR_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
         /// </summary>
         public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
 
-        static Details_Zeilen_Form_NEU_VORJAHR_aufrufen instance = new Details_Zeilen_Form_NEU_VORJAHR_aufrufen();
+        static Details_Zeilen_Form_VORJAHR_aufrufen instance = new Details_Zeilen_Form_VORJAHR_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Details_Zeilen_Form_NEU_VORJAHR_aufrufen()
+        public Details_Zeilen_Form_VORJAHR_aufrufen()
         {
             Firma_2 = "200";
-            Form_Name_NEU_VORJAHR = "";
+            Form_Name_VORJAHR = "UVA-Österreich 2023";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Details_Zeilen_Form_NEU_VORJAHR_aufrufen Instance
+        public static Details_Zeilen_Form_VORJAHR_aufrufen Instance
         {
             get { return instance; }
         }
@@ -68,13 +68,13 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Form_Name_NEU_VORJAHR.
+        /// Gets or sets the value of variable Form_Name_VORJAHR.
         /// </summary>
-        [TestVariable("0df72e15-4ab3-4f82-8cdd-30a13cc83c81")]
-        public string Form_Name_NEU_VORJAHR
+        [TestVariable("adc58a87-cdd8-4239-a32d-b6d2462bf08e")]
+        public string Form_Name_VORJAHR
         {
-            get { return repo.Form_Name_NEU_VORJAHR; }
-            set { repo.Form_Name_NEU_VORJAHR = value; }
+            get { return repo.Form_Name_VORJAHR; }
+            set { repo.Form_Name_VORJAHR = value; }
         }
 
 #endregion
@@ -106,25 +106,25 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Firma_2) on item 'TblUVAF.TitleBar200VerwaltenUVAFormulare'.", repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, new RecordItemIndex(0));
             Validate.AttributeContains(repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, "Text", Firma_2);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHR'", repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHRInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHRInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHR'", repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo.WaitForExists(120000);
             
             // TODO: variabel Zeile mit A21 selektieren
-            Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21 selektieren\r\nValidating AttributeEqual (Text=$Form_Name_NEU_VORJAHR) on item 'TblUVAF.FlexGrid.UVA_Form_Bez_in_Zeile_mit_Form_Name_NEU_VORJAHR'.", repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_Zeile_mit_Form_Name_NEU_VORJAHRInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_Zeile_mit_Form_Name_NEU_VORJAHRInfo, "Text", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21 selektieren\r\nValidating AttributeEqual (Text=$Form_Name_VORJAHR) on item 'TblUVAF.FlexGrid_variable_Zeilen.UVA_Form_Bez_in_Zeile_mit_Form_Name_VORJAHR'.", repo.TblUVAF.FlexGrid_variable_Zeilen.UVA_Form_Bez_in_Zeile_mit_Form_Name_VORJAHRInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblUVAF.FlexGrid_variable_Zeilen.UVA_Form_Bez_in_Zeile_mit_Form_Name_VORJAHRInfo, "Text", Form_Name_VORJAHR);
             
             // TODO: variabel Zeile mit A21_ selektieren
-            Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21_ selektieren\r\nValidating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHR'.", repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHRInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU_VORJAHRInfo, "AccessibleValue", "True");
+            Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21_ selektieren\r\nValidating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHR'.", repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo, "AccessibleValue", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAF.FlexGrid.UVA_Form_Bez_in_Zeile_mit_Form_Name_NEU_VORJAHR' at Center.", repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_Zeile_mit_Form_Name_NEU_VORJAHRInfo, new RecordItemIndex(4));
-            repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_Zeile_mit_Form_Name_NEU_VORJAHR.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAF.FlexGrid_variable_Zeilen.UVA_Form_Bez_in_Zeile_mit_Form_Name_VORJAHR' at Center.", repo.TblUVAF.FlexGrid_variable_Zeilen.UVA_Form_Bez_in_Zeile_mit_Form_Name_VORJAHRInfo, new RecordItemIndex(4));
+            repo.TblUVAF.FlexGrid_variable_Zeilen.UVA_Form_Bez_in_Zeile_mit_Form_Name_VORJAHR.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new ActionTimeout(120000), new RecordItemIndex(5));
             repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_NEU_VORJAHR) on item 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'.", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, "Text", Form_Name_NEU_VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_VORJAHR) on item 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'.", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, "Text", Form_Name_VORJAHR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Firma_2) on item 'TblUVAD.TitleBar200UVADetailsUVAOEsterre'.", repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, new RecordItemIndex(7));
             Validate.AttributeContains(repo.TblUVAD.TitleBar200UVADetailsUVAOEsterreInfo, "Text", Firma_2);

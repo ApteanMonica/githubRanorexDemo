@@ -29,10 +29,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Form_Name_NEU_VORJAHR"
+					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="adc58a87-cdd8-4239-a32d-b6d2462bf08e"
-					variablename="Form_Name_NEU_VORJAHR">
+					variablename="Form_Name_VORJAHR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -52,29 +52,29 @@
 			</testmodule>
 			<testmodule
 			id="21350184-ef80-41db-9d7b-7ccb9d025136"
-			name="Reportdatei_U1_Check_NEU_VORJAHR"
+			name="Reportdatei_U1_Check_VORJAHR"
 			ref="ee9c13d8-168d-4ceb-911b-c45e73863416"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="U1_Report_NEU_VORJAHR"
+					dataname="U1_Report_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="22a785c8-f9a3-4af3-8917-25bf98cdb5de"
-					variablename="U1_Report_NEU_VORJAHR">
+					variablename="U1_Report_VORJAHR">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="23fe26e8-1fe0-418f-8f02-7dc62368c0ca"
-			name="Zuordnungen_Form_NEU_KZ000_aufrufen"
+			name="Zuordnungen_Form_JAHRNEU_KZ000_aufrufen"
 			ref="c5b9ae90-e41a-4090-8b07-de6d3b33beb7"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Form_Name_NEU"
+					dataname="Form_Name_JAHRNEU"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="9b448cda-75c8-488b-b47a-7d79e56f3d23"
-					variablename="Form_Name_NEU">
+					variablename="Form_Name_JAHRNEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -116,32 +116,32 @@
 					value="">
 					</param>
 					<param
-					name="NEU"
+					name="JAHRNEU"
+					value="2024">
+					</param>
+					<param
+					name="Form_Code_JAHRNEU"
+					value="A24">
+					</param>
+					<param
+					name="Form_Name_JAHRNEU"
+					value="UVA-Österreich 2024">
+					</param>
+					<param
+					name="VORJAHR"
 					value="2023">
 					</param>
 					<param
-					name="Form_Code_NEU"
+					name="Form_Code_VORJAHR"
 					value="A23">
 					</param>
 					<param
-					name="Form_Name_NEU"
+					name="Form_Name_VORJAHR"
 					value="UVA-Österreich 2023">
 					</param>
 					<param
-					name="NEU_VORJAHR"
-					value="2022">
-					</param>
-					<param
-					name="Form_Code_NEU_VORJAHR"
-					value="A22">
-					</param>
-					<param
-					name="Form_Name_NEU_VORJAHR"
-					value="UVA-Österreich 2022">
-					</param>
-					<param
-					name="U1_Report_NEU_VORJAHR"
-					value="B_UVA2022J.LST">
+					name="U1_Report_VORJAHR"
+					value="B_UVA2023J.LST">
 					</param>
 					<param
 					name="*QUELL-FORMULAR: bleibt unverändert"
@@ -271,7 +271,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="3e0bc9f4-ccfe-4023-a14c-6cb51f2a339f"
-			name="U30_Formular_NEU_ausgeben_2017_2">
+			name="U30_Formular_JAHRNEU_ausgeben_2017_2">
 			</smartfoldernode>
 			<testmodule
 			id="49596eb9-c052-4db7-ac45-3bd286ac0a59"
@@ -380,44 +380,52 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Form_Name_NEU_VORJAHR"
+					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="adc58a87-cdd8-4239-a32d-b6d2462bf08e"
-					variablename="Form_Name_NEU_VORJAHR">
+					variablename="Form_Name_VORJAHR">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="60891436-c850-4c4e-8de1-889bff72b3b4"
-			name="Druck_Formular_NEU_VORJAHR_auswaehlen"
+			name="Druck_Formular_VORJAHR_auswaehlen"
 			ref="763d3f38-b843-48ad-b11f-59d63955b649"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Form_Name_NEU_VORJAHR"
+					dataname="Form_Name_VORJAHR"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="adc58a87-cdd8-4239-a32d-b6d2462bf08e"
+					variablename="Form_Name_VORJAHR">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="9034ca30-200d-4128-9b9d-e4bee6101530"
 					variablename="Form_Name_NEU_VORJAHR">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="6297e294-1def-40c4-89bb-52bea7de994e"
-			name="Details_Zeilen_Form_NEU_aufrufen"
+			name="Details_Zeilen_Form_JAHRNEU_aufrufen"
 			ref="670c2bd9-c658-43e8-b67f-1526978069eb"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Form_Name_JAHRNEU"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="d4ad2fdc-144e-4ac5-8de9-da75a7787e40"
+					variablename="Form_Name_JAHRNEU">
+					</var>
 					<var
 					dataname="Firma_2"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="1741e261-57e2-459d-9e0e-6383226babad"
 					variablename="Firma_2">
-					</var>
-					<var
-					dataname="Form_Name_NEU"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="d42b9636-f018-4add-a04c-db29572b0316"
-					variablename="Form_Name_NEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -548,7 +556,7 @@
 			</testmodule>
 			<testcase
 			id="814e8581-bf21-420b-a34e-6a461ff981f3"
-			name="Jahreserklärung_U1_Formular_NEU_VORJAHR_ausgeben">
+			name="Jahreserklärung_U1_Formular_VORJAHR_ausgeben">
 			</testcase>
 			<testmodule
 			id="84f5ee32-a667-4fb7-adf0-bd008f433f33"
@@ -614,27 +622,15 @@
 			</testmodule>
 			<testmodule
 			id="8f98ed6e-59c0-4a91-b4fd-5e4968759f1c"
-			name="USt_Codes_kopieren_A20_nach_NEU"
+			name="USt_Codes_kopieren_A20_nach_JAHRNEU"
 			ref="8379b5b4-9fae-4cf1-97c7-4163ea55d037"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Firma_2"
+					dataname="Form_Name_A20"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="5532ee7a-32cc-47ca-81be-6234c7428e27"
-					variablename="Firma_2">
-					</var>
-					<var
-					dataname="Form_Code_NEU"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="f9999c88-2395-43fa-b06d-2d69f5d86305"
-					variablename="Form_Code_NEU">
-					</var>
-					<var
-					dataname="Form_Name_NEU"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="baa38123-9620-4aff-9f6b-36c1ce10c966"
-					variablename="Form_Name_NEU">
+					variableid="60d85dca-ff95-4c02-89d8-102b9cb83cfd"
+					variablename="Form_Name_A20">
 					</var>
 					<var
 					dataname="Form_Code_A20"
@@ -643,10 +639,22 @@
 					variablename="Form_Code_A20">
 					</var>
 					<var
-					dataname="Form_Name_A20"
+					dataname="Form_Name_JAHRNEU"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="60d85dca-ff95-4c02-89d8-102b9cb83cfd"
-					variablename="Form_Name_A20">
+					variableid="baa38123-9620-4aff-9f6b-36c1ce10c966"
+					variablename="Form_Name_JAHRNEU">
+					</var>
+					<var
+					dataname="Form_Code_JAHRNEU"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="f9999c88-2395-43fa-b06d-2d69f5d86305"
+					variablename="Form_Code_JAHRNEU">
+					</var>
+					<var
+					dataname="Firma_2"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="5532ee7a-32cc-47ca-81be-6234c7428e27"
+					variablename="Firma_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -672,10 +680,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Form_Name_NEU"
+					dataname="Form_Name_JAHRNEU"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="2e953574-19df-4af4-827d-92db7417e20c"
-					variablename="Form_Name_NEU">
+					variableid="d4ad2fdc-144e-4ac5-8de9-da75a7787e40"
+					variablename="Form_Name_JAHRNEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -695,7 +703,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="9cd25630-f7c9-416c-b326-264ef7ae5206"
-			name="U30_Formular_NEU_ausgeben_2017_3">
+			name="U30_Formular_JAHRNEU_ausgeben_2017_3">
 			</smartfoldernode>
 			<testmodule
 			id="a2ab51fb-4f13-42df-872b-833b968fde02"
@@ -785,27 +793,15 @@
 			</testmodule>
 			<testmodule
 			id="b819b3e6-db86-4b1d-8587-f6e1f4c456fe"
-			name="USt_Codes_kopieren_A20_nach_NEU_VORJAHR"
+			name="USt_Codes_kopieren_A20_nach_VORJAHR"
 			ref="128647f0-5ee4-4bf3-9cc1-96e46b0f7138"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Firma_2"
+					dataname="Form_Name_A20"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="8244014c-79b6-4123-8200-c33009610f18"
-					variablename="Firma_2">
-					</var>
-					<var
-					dataname="Form_Code_NEU_VORJAHR"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="404c8313-93e4-438b-8e23-dd1af2b194e5"
-					variablename="Form_Code_NEU_VORJAHR">
-					</var>
-					<var
-					dataname="Form_Name_NEU_VORJAHR"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="a59eec1f-ea5a-4618-a17f-764c8dfa74f4"
-					variablename="Form_Name_NEU_VORJAHR">
+					variableid="e4ff7a70-4bd3-4211-9bda-e2fcb19434bc"
+					variablename="Form_Name_A20">
 					</var>
 					<var
 					dataname="Form_Code_A20"
@@ -814,10 +810,22 @@
 					variablename="Form_Code_A20">
 					</var>
 					<var
-					dataname="Form_Name_A20"
+					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="e4ff7a70-4bd3-4211-9bda-e2fcb19434bc"
-					variablename="Form_Name_A20">
+					variableid="a59eec1f-ea5a-4618-a17f-764c8dfa74f4"
+					variablename="Form_Name_VORJAHR">
+					</var>
+					<var
+					dataname="Form_Code_VORJAHR"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="404c8313-93e4-438b-8e23-dd1af2b194e5"
+					variablename="Form_Code_VORJAHR">
+					</var>
+					<var
+					dataname="Firma_2"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="8244014c-79b6-4123-8200-c33009610f18"
+					variablename="Firma_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -855,15 +863,15 @@
 			</testmodule>
 			<testmodule
 			id="bd2c0a11-268c-47f3-a641-effee97fbf0d"
-			name="Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen"
+			name="Zuordnungen_Form_VORJAHR_KZ000_aufrufen"
 			ref="392dd10b-50dc-45a4-9357-268d87246591"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Form_Name_NEU_VORJAHR"
+					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="4a238541-0228-46e5-9e88-3d15aafa9d3b"
-					variablename="Form_Name_NEU_VORJAHR">
+					variablename="Form_Name_VORJAHR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -873,7 +881,7 @@
 			</teardown>
 			<testcase
 			id="c45dff5c-321d-4223-b476-2c3461d8af44"
-			name="UVA_Codes_in_neues_Formular_und_Formular_Vorjahr_kopieren">
+			name="UVA_Codes_in_neues_Formular_und_Formular_VORJAHR_kopieren">
 			</testcase>
 			<testmodule
 			id="c45f7d11-04c6-4562-a0aa-0385c8098cba"
@@ -945,21 +953,21 @@
 			</testmodule>
 			<testmodule
 			id="e43f7f03-9bf1-4c71-a15e-3df642f7b029"
-			name="Details_Zeilen_Form_NEU_VORJAHR_aufrufen"
+			name="Details_Zeilen_Form_VORJAHR_aufrufen"
 			ref="4b493907-42d3-4561-bc2d-6545b48bbca0"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Form_Name_VORJAHR"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="adc58a87-cdd8-4239-a32d-b6d2462bf08e"
+					variablename="Form_Name_VORJAHR">
+					</var>
 					<var
 					dataname="Firma_2"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="fcea00b8-4329-4b14-b945-af710c9336aa"
 					variablename="Firma_2">
-					</var>
-					<var
-					dataname="Form_Name_NEU_VORJAHR"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="0df72e15-4ab3-4f82-8cdd-30a13cc83c81"
-					variablename="Form_Name_NEU_VORJAHR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1049,7 +1057,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="ff71e868-c817-47e9-bfb9-e6fcc377e07c"
-			name="U30_Formular_NEU_ausgeben_2017_1">
+			name="U30_Formular_JAHRNEU_ausgeben_2017_1">
 			</smartfoldernode>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -1069,22 +1077,22 @@
 					</setup>
 					<testcase
 					id="c45dff5c-321d-4223-b476-2c3461d8af44"
-					name="UVA_Codes_in_neues_Formular_und_Formular_Vorjahr_kopieren">
+					name="UVA_Codes_in_neues_Formular_und_Formular_VORJAHR_kopieren">
 						<testmodule
 						id="b819b3e6-db86-4b1d-8587-f6e1f4c456fe"
-						name="USt_Codes_kopieren_A20_nach_NEU_VORJAHR">
+						name="USt_Codes_kopieren_A20_nach_VORJAHR">
 						</testmodule>
 						<testmodule
 						id="8f98ed6e-59c0-4a91-b4fd-5e4968759f1c"
-						name="USt_Codes_kopieren_A20_nach_NEU">
+						name="USt_Codes_kopieren_A20_nach_JAHRNEU">
 						</testmodule>
 						<testmodule
 						id="6297e294-1def-40c4-89bb-52bea7de994e"
-						name="Details_Zeilen_Form_NEU_aufrufen">
+						name="Details_Zeilen_Form_JAHRNEU_aufrufen">
 						</testmodule>
 						<testmodule
 						id="23fe26e8-1fe0-418f-8f02-7dc62368c0ca"
-						name="Zuordnungen_Form_NEU_KZ000_aufrufen">
+						name="Zuordnungen_Form_JAHRNEU_KZ000_aufrufen">
 						</testmodule>
 						<testmodule
 						id="e2234fcd-3fa0-44c0-8c82-143304de62d0"
@@ -1100,11 +1108,11 @@
 						</testmodule>
 						<testmodule
 						id="e43f7f03-9bf1-4c71-a15e-3df642f7b029"
-						name="Details_Zeilen_Form_NEU_VORJAHR_aufrufen">
+						name="Details_Zeilen_Form_VORJAHR_aufrufen">
 						</testmodule>
 						<testmodule
 						id="bd2c0a11-268c-47f3-a641-effee97fbf0d"
-						name="Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen">
+						name="Zuordnungen_Form_VORJAHR_KZ000_aufrufen">
 						</testmodule>
 						<testmodule
 						id="29df8a02-a958-4c18-8dcc-bb66afacebda"
@@ -1132,7 +1140,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="ff71e868-c817-47e9-bfb9-e6fcc377e07c"
-						name="U30_Formular_NEU_ausgeben_2017_1">
+						name="U30_Formular_JAHRNEU_ausgeben_2017_1">
 							<testmodule
 							id="fd1dfaef-bd6c-44d0-926c-69815c8de6b3"
 							name="UVA_2017_1_U30_ausgeben">
@@ -1176,7 +1184,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="3e0bc9f4-ccfe-4023-a14c-6cb51f2a339f"
-						name="U30_Formular_NEU_ausgeben_2017_2">
+						name="U30_Formular_JAHRNEU_ausgeben_2017_2">
 							<testmodule
 							id="b6c1ea79-d66d-4a86-9d5b-8ddc51486e60"
 							name="UVA_2017_2_U30_ausgeben">
@@ -1220,7 +1228,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="9cd25630-f7c9-416c-b326-264ef7ae5206"
-						name="U30_Formular_NEU_ausgeben_2017_3">
+						name="U30_Formular_JAHRNEU_ausgeben_2017_3">
 							<testmodule
 							id="536f9ffa-a8ec-4ebb-b2a8-017bd9e873fb"
 							name="UVA_2017_3_U30_ausgeben">
@@ -1273,7 +1281,7 @@
 					</testcase>
 					<testcase
 					id="814e8581-bf21-420b-a34e-6a461ff981f3"
-					name="Jahreserklärung_U1_Formular_NEU_VORJAHR_ausgeben">
+					name="Jahreserklärung_U1_Formular_VORJAHR_ausgeben">
 						<setup
 						id="ac54a781-0038-4a5b-b3e5-768638d99a0d"
 						name="setup">
@@ -1288,7 +1296,7 @@
 						</testmodule>
 						<testmodule
 						id="60891436-c850-4c4e-8de1-889bff72b3b4"
-						name="Druck_Formular_NEU_VORJAHR_auswaehlen">
+						name="Druck_Formular_VORJAHR_auswaehlen">
 						</testmodule>
 						<testmodule
 						id="797e177c-b578-4c0c-8cbf-ecb9f941db61"
@@ -1300,7 +1308,7 @@
 						</testmodule>
 						<testmodule
 						id="21350184-ef80-41db-9d7b-7ccb9d025136"
-						name="Reportdatei_U1_Check_NEU_VORJAHR">
+						name="Reportdatei_U1_Check_VORJAHR">
 						</testmodule>
 						<testmodule
 						id="3bc1aa09-6a76-465d-adf9-4a5ac545431e"

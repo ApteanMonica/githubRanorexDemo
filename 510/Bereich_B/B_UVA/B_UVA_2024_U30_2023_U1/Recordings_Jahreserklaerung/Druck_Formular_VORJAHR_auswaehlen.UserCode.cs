@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
 {
-    public partial class Druck_Formular_NEU_VORJAHR_auswaehlen
+    public partial class Druck_Formular_VORJAHR_auswaehlen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
