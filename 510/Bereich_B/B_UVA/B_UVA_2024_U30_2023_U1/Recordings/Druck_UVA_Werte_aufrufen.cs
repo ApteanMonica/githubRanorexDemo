@@ -30,9 +30,9 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
     public partial class Druck_UVA_Werte_aufrufen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
+        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repository.
         /// </summary>
-        public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
+        public static global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository.Instance;
 
         static Druck_UVA_Werte_aufrufen instance = new Druck_UVA_Werte_aufrufen();
 
@@ -56,7 +56,7 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
         /// <summary>
         /// Gets or sets the value of variable Form_Name_VORJAHR.
         /// </summary>
-        [TestVariable("adc58a87-cdd8-4239-a32d-b6d2462bf08e")]
+        [TestVariable("32c85a1f-9bfe-4286-aee1-de432dec44a5")]
         public string Form_Name_VORJAHR
         {
             get { return repo.Form_Name_VORJAHR; }
@@ -92,8 +92,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblUVAF.TitleBar200VerwaltenUVAFormulare'.", repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, new RecordItemIndex(0));
             Validate.Exists(repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHR'", repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblUVAF.FlexGrid_variable_Zeilen.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHR'", repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_VORJAHRInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PbCommonDrucken' at Center.", repo.TblUVAF.PbCommonDruckenInfo, new RecordItemIndex(2));
             repo.TblUVAF.PbCommonDrucken.Click();

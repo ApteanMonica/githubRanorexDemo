@@ -30,9 +30,9 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular_Werte_2017_2
     public partial class UVA_2017_2_U30_ausgeben : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
+        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repository.
         /// </summary>
-        public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
+        public static global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository.Instance;
 
         static UVA_2017_2_U30_ausgeben instance = new UVA_2017_2_U30_ausgeben();
 
@@ -105,8 +105,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular_Werte_2017_2
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgUVADruck.TitleBar200DruckUVAWerte'.", repo.DlgUVADruck.TitleBar200DruckUVAWerteInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.DlgUVADruck.TitleBar200DruckUVAWerteInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgUVADruck.TitleBar100DruckUVAWerte'.", repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Jahr_2017' with focus on 'DlgUVADruck.TpFormular.FormulardruckFuerJahrMonatVon'.", repo.DlgUVADruck.TpFormular.FormulardruckFuerJahrMonatVonInfo, new RecordItemIndex(1));
             repo.DlgUVADruck.TpFormular.FormulardruckFuerJahrMonatVon.PressKeys(UVA_Jahr_2017);

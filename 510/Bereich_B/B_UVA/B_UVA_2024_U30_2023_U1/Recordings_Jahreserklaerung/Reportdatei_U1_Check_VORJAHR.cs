@@ -30,9 +30,9 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
     public partial class Reportdatei_U1_Check_VORJAHR : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
+        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repository.
         /// </summary>
-        public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
+        public static global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository.Instance;
 
         static Reportdatei_U1_Check_VORJAHR instance = new Reportdatei_U1_Check_VORJAHR();
 

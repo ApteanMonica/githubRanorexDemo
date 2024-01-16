@@ -30,9 +30,9 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular
     public partial class Zuordnungen_Form_JAHRNEU_KZ000_aufrufen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
+        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repository.
         /// </summary>
-        public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
+        public static global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository.Instance;
 
         static Zuordnungen_Form_JAHRNEU_KZ000_aufrufen instance = new Zuordnungen_Form_JAHRNEU_KZ000_aufrufen();
 

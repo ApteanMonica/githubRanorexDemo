@@ -30,9 +30,9 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular_Werte_2017_1
     public partial class UVA_2017_1_XML_ausgeben : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
+        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repository.
         /// </summary>
-        public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
+        public static global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository.Instance;
 
         static UVA_2017_1_XML_ausgeben instance = new UVA_2017_1_XML_ausgeben();
 
@@ -105,8 +105,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings_Formular_Werte_2017_1
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Druck UVA-Werte') on item 'DlgUVADruck.TitleBar200DruckUVAWerte'.", repo.DlgUVADruck.TitleBar200DruckUVAWerteInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.DlgUVADruck.TitleBar200DruckUVAWerteInfo, "Text", "Druck UVA-Werte");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Druck UVA-Werte') on item 'DlgUVADruck.TitleBar100DruckUVAWerte'.", repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo, "Text", "Druck UVA-Werte");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Jahr_2017) on item 'DlgUVADruck.TpFormular.FormulardruckFuerJahrMonatVon'.", repo.DlgUVADruck.TpFormular.FormulardruckFuerJahrMonatVonInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgUVADruck.TpFormular.FormulardruckFuerJahrMonatVonInfo, "Text", UVA_Jahr_2017);

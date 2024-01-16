@@ -31,7 +31,7 @@
 					<var
 					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="adc58a87-cdd8-4239-a32d-b6d2462bf08e"
+					variableid="32c85a1f-9bfe-4286-aee1-de432dec44a5"
 					variablename="Form_Name_VORJAHR">
 					</var>
 				</databinding>
@@ -85,7 +85,7 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="2ac094c4-e064-4363-ac5d-79915040f46b"
+			id="2d662b21-8aa9-4652-a14c-0b49670e6b46"
 			name="CloseAUT_Formulare_200"
 			ref="a0125991-218c-425f-ab35-05dbfe9346ef"
 			type="Recording">
@@ -237,6 +237,10 @@
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="3189cff2-f0c2-4f4e-90c7-9919ac528c46"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="318f158f-290e-48ff-9ef4-c860a8356164"
 			name="U1_2017_1_3_Tabelle_pruefen"
@@ -244,16 +248,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Tabelle_Werte_U1_2017_1_3_Teil_1"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="b1b0e783-fd21-4d93-8d82-67554d2501bb"
-					variablename="Tabelle_Werte_U1_2017_1_3_Teil_1">
-					</var>
-					<var
 					dataname="Tabelle_Werte_U1_2017_1_3_Teil_2"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="6f6299d2-7567-4f33-abe6-023cf2f4417c"
 					variablename="Tabelle_Werte_U1_2017_1_3_Teil_2">
+					</var>
+					<var
+					dataname="Tabelle_Werte_U1_2017_1_3_Teil_1"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="b1b0e783-fd21-4d93-8d82-67554d2501bb"
+					variablename="Tabelle_Werte_U1_2017_1_3_Teil_1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -279,10 +283,12 @@
 			ref="11ad277f-66ef-4c36-8967-0e3b2cbcd3c8"
 			type="Recording">
 			</testmodule>
-			<teardown
-			id="4991c89c-bc99-4328-95d5-5db1ab47a93f"
-			name="teardown">
-			</teardown>
+			<testmodule
+			id="4f714f1f-9f65-492a-a7ed-27f5187a31e9"
+			name="Druckvorschau_aufrufen_und_schliessen"
+			ref="016d7e44-f0cc-4fbb-b3a9-affc15865dab"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="4fcc8fb0-eb97-40e0-a80e-108303ffb0ad"
 			name="Druckdialog_schliessen"
@@ -295,6 +301,10 @@
 			ref="914b7c5f-6674-4c71-b9e5-3e31f43e499b"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="51745c33-1be7-42ff-a503-ecd9a1e8f4df"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="5213f517-f699-479d-aa17-4f9b76fb8560"
 			name="Druck_Tabelle_schliessen"
@@ -382,7 +392,7 @@
 					<var
 					dataname="Form_Name_VORJAHR"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="adc58a87-cdd8-4239-a32d-b6d2462bf08e"
+					variableid="32c85a1f-9bfe-4286-aee1-de432dec44a5"
 					variablename="Form_Name_VORJAHR">
 					</var>
 				</databinding>
@@ -400,14 +410,6 @@
 					variablename="Form_Name_VORJAHR">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="Form_Name_VORJAHR"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="9034ca30-200d-4128-9b9d-e4bee6101530"
-					variablename="Form_Name_NEU_VORJAHR">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="6297e294-1def-40c4-89bb-52bea7de994e"
@@ -436,12 +438,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="6547f8b1-ccf0-4ed6-b9b4-60eb70cfc3d4"
-			name="CloseAUT_Formulare_200"
-			ref="a0125991-218c-425f-ab35-05dbfe9346ef"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="6d39da3e-93ff-4d05-ae33-c4084a861836"
 			name="Details_Zeilen_schliessen"
 			ref="4fc85047-b631-446f-bb04-72b176f71244"
@@ -460,16 +456,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
+					dataname="XML_Werte_U1_2017_1_3"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="d2563dce-60bf-46da-b313-314861847797"
-					variablename="Programm_2">
-					</var>
-					<var
-					dataname="XML_Pfad_Datei"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="7ab999f7-2570-4ad1-b252-df37e9d7ed16"
-					variablename="XML_Pfad_Datei">
+					variableid="c8287573-43d5-4580-99ce-fa0c2ae7b3b1"
+					variablename="XML_Werte_U1_2017_1_3">
 					</var>
 					<var
 					dataname="XML_Werte_Kopf"
@@ -478,16 +468,22 @@
 					variablename="XML_Werte_Kopf">
 					</var>
 					<var
-					dataname="XML_Werte_U1_2017_1_3"
+					dataname="XML_Pfad_Datei"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="c8287573-43d5-4580-99ce-fa0c2ae7b3b1"
-					variablename="XML_Werte_U1_2017_1_3">
+					variableid="7ab999f7-2570-4ad1-b252-df37e9d7ed16"
+					variablename="XML_Pfad_Datei">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="d2563dce-60bf-46da-b313-314861847797"
+					variablename="Programm_2">
 					</var>
 				</databinding>
 			</testmodule>
 			<testcase
 			id="77d19ffe-6071-4ceb-8553-6fea858836e3"
-			name="UVA_Werte_2017_in_neues_Formular_U30_ausgeben">
+			name="UVA_Werte_2017_in_neues_Formular_U30_JAHRNEU_ausgeben">
 			</testcase>
 			<testmodule
 			id="797e177c-b578-4c0c-8cbf-ecb9f941db61"
@@ -496,10 +492,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="UVA_Jahr_2017"
+					dataname="UVA_Monat_3"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="9f2e9cad-ee79-481d-b37c-4509780bf7db"
-					variablename="UVA_Jahr_2017">
+					variableid="e26bdd2a-8978-4565-a607-b7bfe7152174"
+					variablename="UVA_Monat_3">
 					</var>
 					<var
 					dataname="UVA_Monat_1"
@@ -508,10 +504,10 @@
 					variablename="UVA_Monat_1">
 					</var>
 					<var
-					dataname="UVA_Monat_3"
+					dataname="UVA_Jahr_2017"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="e26bdd2a-8978-4565-a607-b7bfe7152174"
-					variablename="UVA_Monat_3">
+					variableid="9f2e9cad-ee79-481d-b37c-4509780bf7db"
+					variablename="UVA_Jahr_2017">
 					</var>
 				</databinding>
 			</testmodule>
@@ -540,7 +536,6 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			enabled="False"
 			id="7c676f8b-40ad-4536-8d76-5789e9a2ce2e"
 			name="UVA_2017_3_PDF"
 			ref="f7736194-763a-43d5-9c61-19039127f3c6"
@@ -565,7 +560,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="85c7bcf0-4ba1-4cc0-b11d-a36affd82659"
 			name="UVA_2017_1_PDF"
 			ref="aa00251b-d0bf-49e9-88f8-63a8674d2843"
@@ -580,7 +574,18 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
+			id="8616a91c-2752-49de-98ec-0fb38db60879"
+			name="CloseAUT_Formulare_200"
+			ref="a0125991-218c-425f-ab35-05dbfe9346ef"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8644ab4a-4779-4351-8360-ad75e22619d4"
+			name="CloseAUT_Formulare_200"
+			ref="a0125991-218c-425f-ab35-05dbfe9346ef"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8706b78c-fd14-4eb7-9752-d3563fd8c9f4"
 			name="UVA_2017_2_PDF"
 			ref="b54d1982-c809-4517-b48e-2b86643e4069"
@@ -659,7 +664,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="97398238-5319-4e94-8d75-0acd43175e33"
 			name="U1_2017_1_3_PDF_ausgeben"
 			ref="f1016253-7e00-4f45-8eda-ba23bd26dc1f"
@@ -739,6 +743,12 @@
 			id="a8d82173-7418-4756-8f8d-b9e7f1413c41"
 			name="Tabelle_ausgeben"
 			ref="914b7c5f-6674-4c71-b9e5-3e31f43e499b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ab9bcdc7-e8fb-434c-b648-5046b0f5c9e4"
+			name="Druckvorschau_aufrufen_und_schliessen"
+			ref="016d7e44-f0cc-4fbb-b3a9-affc15865dab"
 			type="Recording">
 			</testmodule>
 			<setup
@@ -881,12 +891,38 @@
 			</teardown>
 			<testcase
 			id="c45dff5c-321d-4223-b476-2c3461d8af44"
-			name="UVA_Codes_in_neues_Formular_und_Formular_VORJAHR_kopieren">
+			name="UVA_Codes_in_neues_Formular_JAHRNEU_und_Formular_VORJAHR_kopieren">
 			</testcase>
 			<testmodule
 			id="c45f7d11-04c6-4562-a0aa-0385c8098cba"
 			name="Zuordnungen_schliessen"
 			ref="2bd25e07-92c7-42a5-af02-1beba98e4fdf"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ca650dc1-dace-41c5-9365-388f1c348093"
+			name="StartAUT_Formulare_200"
+			ref="a895727f-1886-4135-9b67-8242a6bfe319"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="a11aa4e5-0ee7-4f9c-9cde-f8826edbcaad"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="0438bd2c-9d64-443a-acfe-dac59a2b0b31"
+					variablename="Programm">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="caa44023-b368-43e0-86d9-9f55ce5297c5"
+			name="Druckvorschau_aufrufen_und_schliessen"
+			ref="016d7e44-f0cc-4fbb-b3a9-affc15865dab"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -910,16 +946,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="a11aa4e5-0ee7-4f9c-9cde-f8826edbcaad"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
 					variableid="0438bd2c-9d64-443a-acfe-dac59a2b0b31"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
+					variableid="a11aa4e5-0ee7-4f9c-9cde-f8826edbcaad"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -945,6 +981,10 @@
 			ref="6544749e-0cc1-45ae-aa4f-f4b757d8efa1"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="deb7b41f-2f91-4fe2-ae19-6482a8cef3ce"
+			name="setup">
+			</setup>
 			<testmodule
 			id="e2234fcd-3fa0-44c0-8c82-143304de62d0"
 			name="Zuordnungen_Form_KZ000_pruefen"
@@ -1004,16 +1044,22 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="f3570fee-b3b6-4c12-b90d-f7aea36c3b2b"
+			name="Druckvorschau_aufrufen_und_schliessen"
+			ref="016d7e44-f0cc-4fbb-b3a9-affc15865dab"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="fa7d68a9-9658-4da7-b590-9070e712423e"
 			name="U1_2017_1_3_XML_ausgeben"
 			ref="ad772073-aff6-4492-8757-196badd43bce"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="UVA_Jahr_2017"
+					dataname="UVA_Monat_3"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="2920fe7b-8361-4b0e-b604-01fd80636a30"
-					variablename="UVA_Jahr_2017">
+					variableid="1a5f0e60-1fc4-4223-9db8-7b40b4bac548"
+					variablename="UVA_Monat_3">
 					</var>
 					<var
 					dataname="UVA_Monat_1"
@@ -1022,10 +1068,10 @@
 					variablename="UVA_Monat_1">
 					</var>
 					<var
-					dataname="UVA_Monat_3"
+					dataname="UVA_Jahr_2017"
 					datasourceid="3094f6d4-a717-4391-8232-145ee04105ea"
-					variableid="1a5f0e60-1fc4-4223-9db8-7b40b4bac548"
-					variablename="UVA_Monat_3">
+					variableid="2920fe7b-8361-4b0e-b604-01fd80636a30"
+					variablename="UVA_Jahr_2017">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1067,17 +1113,17 @@
 				<testcase
 				id="3094f6d4-a717-4391-8232-145ee04105ea"
 				name="B_UVA_2024_U30_2023_U1">
-					<setup
-					id="135a03b7-643d-4acb-9088-c53dc0328ef1"
-					name="setup">
-						<testmodule
-						id="aebcc0e1-4205-470a-898e-d8918baf582f"
-						name="StartAUT_Formulare_200">
-						</testmodule>
-					</setup>
 					<testcase
 					id="c45dff5c-321d-4223-b476-2c3461d8af44"
-					name="UVA_Codes_in_neues_Formular_und_Formular_VORJAHR_kopieren">
+					name="UVA_Codes_in_neues_Formular_JAHRNEU_und_Formular_VORJAHR_kopieren">
+						<setup
+						id="135a03b7-643d-4acb-9088-c53dc0328ef1"
+						name="setup">
+							<testmodule
+							id="aebcc0e1-4205-470a-898e-d8918baf582f"
+							name="StartAUT_Formulare_200">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="b819b3e6-db86-4b1d-8587-f6e1f4c456fe"
 						name="USt_Codes_kopieren_A20_nach_VORJAHR">
@@ -1126,10 +1172,26 @@
 						id="6d39da3e-93ff-4d05-ae33-c4084a861836"
 						name="Details_Zeilen_schliessen">
 						</testmodule>
+						<teardown
+						id="3189cff2-f0c2-4f4e-90c7-9919ac528c46"
+						name="teardown">
+							<testmodule
+							id="2d662b21-8aa9-4652-a14c-0b49670e6b46"
+							name="CloseAUT_Formulare_200">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="77d19ffe-6071-4ceb-8553-6fea858836e3"
-					name="UVA_Werte_2017_in_neues_Formular_U30_ausgeben">
+					name="UVA_Werte_2017_in_neues_Formular_U30_JAHRNEU_ausgeben">
+						<setup
+						id="deb7b41f-2f91-4fe2-ae19-6482a8cef3ce"
+						name="setup">
+							<testmodule
+							id="ca650dc1-dace-41c5-9365-388f1c348093"
+							name="StartAUT_Formulare_200">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="5eaa4167-dea7-4411-a8c9-f09cd5c47792"
 						name="Druck_UVA_Werte_aufrufen">
@@ -1156,6 +1218,10 @@
 							<testmodule
 							id="889ec1f6-66bc-4cc5-a76f-3dbb2e2648d0"
 							name="Druck_Tabelle_schliessen">
+							</testmodule>
+							<testmodule
+							id="caa44023-b368-43e0-86d9-9f55ce5297c5"
+							name="Druckvorschau_aufrufen_und_schliessen">
 							</testmodule>
 							<testmodule
 							id="85c7bcf0-4ba1-4cc0-b11d-a36affd82659"
@@ -1202,6 +1268,10 @@
 							name="Druck_Tabelle_schliessen">
 							</testmodule>
 							<testmodule
+							id="4f714f1f-9f65-492a-a7ed-27f5187a31e9"
+							name="Druckvorschau_aufrufen_und_schliessen">
+							</testmodule>
+							<testmodule
 							id="8706b78c-fd14-4eb7-9752-d3563fd8c9f4"
 							name="UVA_2017_2_PDF">
 							</testmodule>
@@ -1246,6 +1316,10 @@
 							name="Druck_Tabelle_schliessen">
 							</testmodule>
 							<testmodule
+							id="ab9bcdc7-e8fb-434c-b648-5046b0f5c9e4"
+							name="Druckvorschau_aufrufen_und_schliessen">
+							</testmodule>
+							<testmodule
 							id="7c676f8b-40ad-4536-8d76-5789e9a2ce2e"
 							name="UVA_2017_3_PDF">
 							</testmodule>
@@ -1271,10 +1345,10 @@
 							</teardown>
 						</smartfoldernode>
 						<teardown
-						id="4991c89c-bc99-4328-95d5-5db1ab47a93f"
+						id="51745c33-1be7-42ff-a503-ecd9a1e8f4df"
 						name="teardown">
 							<testmodule
-							id="2ac094c4-e064-4363-ac5d-79915040f46b"
+							id="8644ab4a-4779-4351-8360-ad75e22619d4"
 							name="CloseAUT_Formulare_200">
 							</testmodule>
 						</teardown>
@@ -1323,6 +1397,10 @@
 						name="Druck_Tabelle_schliessen">
 						</testmodule>
 						<testmodule
+						id="f3570fee-b3b6-4c12-b90d-f7aea36c3b2b"
+						name="Druckvorschau_aufrufen_und_schliessen">
+						</testmodule>
+						<testmodule
 						id="97398238-5319-4e94-8d75-0acd43175e33"
 						name="U1_2017_1_3_PDF_ausgeben">
 						</testmodule>
@@ -1346,7 +1424,7 @@
 							name="Close_Notepad">
 							</testmodule>
 							<testmodule
-							id="6547f8b1-ccf0-4ed6-b9b4-60eb70cfc3d4"
+							id="8616a91c-2752-49de-98ec-0fb38db60879"
 							name="CloseAUT_Formulare_200">
 							</testmodule>
 						</teardown>
