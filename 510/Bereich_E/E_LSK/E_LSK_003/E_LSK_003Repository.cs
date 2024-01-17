@@ -1896,8 +1896,8 @@ namespace E_LSK_003
             {
                 _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "?/?/table[@accessiblename='FlexGrid']", "", 30000, null, "4a0d6752-a2d1-45e5-89e0-d987f88060dd");
                 _colpreisrow1Info = new RepoItemInfo(this, "ColPreisRow1", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colPreis Row 1']", "", 30000, null, "50452ed6-e9c3-4f32-9440-4a04a2474b69");
-                _mengeInfo = new RepoItemInfo(this, "Menge", "?/?/text[@controltypename='']", "", 30000, null, "d30fdca4-3ac0-4f31-9968-d0347d62c018");
-                _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "6be80a5c-4762-4ff8-af23-6784dddb227d");
+                _mengeInfo = new RepoItemInfo(this, "Menge", "element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMenge Row 1']", "", 30000, null, "d30fdca4-3ac0-4f31-9968-d0347d62c018");
+                _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", "element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "6be80a5c-4762-4ff8-af23-6784dddb227d");
             }
 
             /// <summary>
@@ -1976,11 +1976,11 @@ namespace E_LSK_003
             /// The Menge item.
             /// </summary>
             [RepositoryItem("d30fdca4-3ac0-4f31-9968-d0347d62c018")]
-            public virtual Ranorex.Text Menge
+            public virtual Ranorex.Cell Menge
             {
                 get
                 {
-                    return _mengeInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _mengeInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
