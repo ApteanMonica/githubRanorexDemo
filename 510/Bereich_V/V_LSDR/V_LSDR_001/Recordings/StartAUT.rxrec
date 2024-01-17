@@ -62,8 +62,9 @@ mode="Desktop">
 		optional="False"
 		searchpropertyid="682a8859-db10-4bb7-8e56-5398b74a9ad4"
 		waitaction="Exists"
-		waittimeout="60000ms">
+		waittimeout="180000ms">
 			<comment>
+				BAR: wait for erhöht von 1 auf 3 Minuten
 			</comment>
 			<bindings>
 			</bindings>
@@ -73,6 +74,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='tblLsdr']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
@@ -90,6 +93,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='tblLsdr']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Text
