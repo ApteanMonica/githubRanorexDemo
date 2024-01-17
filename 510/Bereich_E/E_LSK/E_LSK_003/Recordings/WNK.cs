@@ -137,22 +137,27 @@ namespace E_LSK_003.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad1}' with focus on 'FrmWNK.TblWNK.Menge'.", repo.FrmWNK.TblWNK.MengeInfo, new RecordItemIndex(7));
-            repo.FrmWNK.TblWNK.Menge.PressKeys("{NumPad1}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad5}' with focus on 'FrmWNK.TblWNK.ColPreisRow1'.", repo.FrmWNK.TblWNK.ColPreisRow1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad5}' with focus on 'FrmWNK.TblWNK.ColPreisRow1'.", repo.FrmWNK.TblWNK.ColPreisRow1Info, new RecordItemIndex(8));
             repo.FrmWNK.TblWNK.ColPreisRow1.PressKeys("{NumPad5}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmWNK.TblWNK.Menge' at Center.", repo.FrmWNK.TblWNK.MengeInfo, new RecordItemIndex(9));
+            repo.FrmWNK.TblWNK.Menge.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad1}' with focus on 'FrmWNK.TblWNK.Menge'.", repo.FrmWNK.TblWNK.MengeInfo, new RecordItemIndex(10));
+            repo.FrmWNK.TblWNK.Menge.EnsureVisible();
+            Keyboard.Press("{NumPad1}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmWNK'.", repo.FrmWNK.SelfInfo, new RecordItemIndex(11));
+            Keyboard.PrepareFocus(repo.FrmWNK.Self);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmWNK.PbSpeichern' at Center.", repo.FrmWNK.PbSpeichernInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmWNK.PbSpeichern' at Center.", repo.FrmWNK.PbSpeichernInfo, new RecordItemIndex(12));
             //repo.FrmWNK.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmWNK.PbDataAccessSave' at Center.", repo.FrmWNK.PbDataAccessSaveInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmWNK.PbDataAccessSave' at Center.", repo.FrmWNK.PbDataAccessSaveInfo, new RecordItemIndex(13));
             repo.FrmWNK.PbDataAccessSave.Click();
             
         }

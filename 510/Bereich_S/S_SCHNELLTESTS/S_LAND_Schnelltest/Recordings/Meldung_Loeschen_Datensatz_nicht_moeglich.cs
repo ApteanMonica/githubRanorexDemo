@@ -92,11 +92,11 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(0));
             repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForExists(180000);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            //Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!"));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Land AT wird in abhängigen Datensätzen verwendet.\r\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            //Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Land AT wird in abhängigen Datensätzen verwendet.\r\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!"));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
-            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Land AT wird in abhängigen Datensätzen verwendet.\r\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
+            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Land AT wird in abhängigen Datensätzen verwendet.\r\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!"));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK_Meldung' at Center.", repo.DlgMessageBox.Button0_OK_MeldungInfo, new RecordItemIndex(3));
             repo.DlgMessageBox.Button0_OK_Meldung.Click();
