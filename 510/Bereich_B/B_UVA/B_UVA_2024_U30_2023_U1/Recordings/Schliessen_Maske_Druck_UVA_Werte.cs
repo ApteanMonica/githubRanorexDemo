@@ -24,29 +24,29 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Druckvorschau_aufrufen_und_schliessen recording.
+    ///The Schliessen_Maske_Druck_UVA_Werte recording.
     /// </summary>
-    [TestModule("016d7e44-f0cc-4fbb-b3a9-affc15865dab", ModuleType.Recording, 1)]
-    public partial class Druckvorschau_aufrufen_und_schliessen : ITestModule
+    [TestModule("240e69e6-b1fa-4a96-a459-7357d3d46e88", ModuleType.Recording, 1)]
+    public partial class Schliessen_Maske_Druck_UVA_Werte : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repository.
         /// </summary>
         public static global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_2024_U30_2023_U1Repository.Instance;
 
-        static Druckvorschau_aufrufen_und_schliessen instance = new Druckvorschau_aufrufen_und_schliessen();
+        static Schliessen_Maske_Druck_UVA_Werte instance = new Schliessen_Maske_Druck_UVA_Werte();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Druckvorschau_aufrufen_und_schliessen()
+        public Schliessen_Maske_Druck_UVA_Werte()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Druckvorschau_aufrufen_und_schliessen Instance
+        public static Schliessen_Maske_Druck_UVA_Werte Instance
         {
             get { return instance; }
         }
@@ -79,26 +79,9 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(0));
-            repo.DlgDrucken.PbVorschau.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.Vorschau.TitleBarInfo.WaitForExists(180000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (AutomationId>'TitleBar') on item 'Vorschau.TitleBar'.", repo.Vorschau.TitleBarInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.Vorschau.TitleBarInfo, "AutomationId", "TitleBar");
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(3));
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'Vorschau.TitleBar'.", repo.Vorschau.TitleBarInfo, new RecordItemIndex(5));
-            Keyboard.PrepareFocus(repo.Vorschau.TitleBar);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgUVADruck.TitleBar100DruckUVAWerte'.", repo.DlgUVADruck.TitleBar100DruckUVAWerteInfo, new RecordItemIndex(0));
+            Keyboard.PrepareFocus(repo.DlgUVADruck.TitleBar100DruckUVAWerte);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.PbExport'", repo.DlgDrucken.PbExportInfo, new ActionTimeout(120000), new RecordItemIndex(6));
-            repo.DlgDrucken.PbExportInfo.WaitForExists(120000);
             
         }
 
