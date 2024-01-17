@@ -82,8 +82,8 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(0));
             repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.ColKtgrCdRow1' at Center.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(1));
-            repo.FrmKto.ColKtgrCdRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmKto.ColKtgrCdRow1' at Center.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(1));
+            repo.FrmKto.ColKtgrCdRow1.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(2));
             repo.FrmKto.ColKtgrCdRow1.EnsureVisible();
@@ -114,7 +114,10 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbDataAccessSave' at Center.", repo.FrmKto.PbDataAccessSaveInfo, new RecordItemIndex(10));
             repo.FrmKto.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.ColKtbzKzRow1'.", repo.FrmKto.ColKtbzKzRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(11));
+            Keyboard.Press("{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.ColKtbzKzRow1'.", repo.FrmKto.ColKtbzKzRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmKto.ColKtbzKzRow1Info, "Text", "P");
             
         }
