@@ -104,15 +104,27 @@ namespace B_BUAB_006.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.ColText1Row2' at Center.", repo.TblB.ColText1Row2Info, new RecordItemIndex(3));
             repo.TblB.ColText1Row2.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'abc' with focus on 'TblB.ColText1Row2'.", repo.TblB.ColText1Row2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$text_aendern' with focus on 'TblB.ColText1Row2'.", repo.TblB.ColText1Row2Info, new RecordItemIndex(4));
             repo.TblB.ColText1Row2.EnsureVisible();
-            Keyboard.Press("abc");
+            Keyboard.Press(text_aendern);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblB'.", repo.TblB.SelfInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblB'.", repo.TblB.SelfInfo, new RecordItemIndex(8));
             repo.TblB.Self.EnsureVisible();
             Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$text_aendern) on item 'TblB.ColText1Row2'.", repo.TblB.ColText1Row2Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$text_aendern) on item 'TblB.ColText1Row2'.", repo.TblB.ColText1Row2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblB.ColText1Row2Info, "Text", text_aendern);
             
         }
