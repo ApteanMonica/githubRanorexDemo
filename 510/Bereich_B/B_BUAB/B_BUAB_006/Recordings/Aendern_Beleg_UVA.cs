@@ -151,31 +151,43 @@ namespace B_BUAB_006.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$buchungsMonat'.", new RecordItemIndex(9));
             Keyboard.Press(buchungsMonat);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(12));
             Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(14));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblB1.ColPeriRow1'.", repo.TblB1.ColPeriRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblB1.ColPeriRow1'.", repo.TblB1.ColPeriRow1Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblB1.ColPeriRow1Info, "Text", buchungsMonat);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Termin) on item 'TblB1.ColUvaRow1'.", repo.TblB1.ColUvaRow1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Termin) on item 'TblB1.ColUvaRow1'.", repo.TblB1.ColUvaRow1Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.TblB1.ColUvaRow1Info, "Text", UVA_Termin);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbCommonOPAnzeige' at Center.", repo.TblB.PbCommonOPAnzeigeInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbCommonOPAnzeige' at Center.", repo.TblB.PbCommonOPAnzeigeInfo, new RecordItemIndex(18));
             repo.TblB.PbCommonOPAnzeige.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new ActionTimeout(120000), new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new ActionTimeout(120000), new RecordItemIndex(19));
             repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblBuop.ColBusaPeriodeRow1'.", repo.TblBuop.ColBusaPeriodeRow1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblBuop.ColBusaPeriodeRow1'.", repo.TblBuop.ColBusaPeriodeRow1Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.TblBuop.ColBusaPeriodeRow1Info, "Text", buchungsMonat);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.Schliessen' at Center.", repo.TblBuop.SchliessenInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.Schliessen' at Center.", repo.TblBuop.SchliessenInfo, new RecordItemIndex(21));
             repo.TblBuop.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'.", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'.", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new RecordItemIndex(22));
             Validate.NotExists(repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo);
             
         }
