@@ -4055,6 +4055,26 @@ mode="Global">
 				ändern
 			</matchvalue>
 		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="bc756adf-9616-454c-a302-6453895fdb72"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed990098-9f16-4d0d-9c60-90094180d32e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmVorschlagÄndern']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colBeleg Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
