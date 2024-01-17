@@ -57,15 +57,6 @@ mode="Global">
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="43cbdbc8-d63c-458c-8181-2dc76a04e3f5"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfJahrbez']/text[@accessiblename='Jahr:']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
 		<explicitdelayitem
 		duration="1000ms"
@@ -77,10 +68,10 @@ mode="Global">
 			</bindings>
 		</explicitdelayitem>
 		<mouseitem
-		action="DoubleClick"
+		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -267,66 +258,15 @@ KAE2j0FG0egpaKAE2j0FG0egpaKAE2j0FG0egpaKAE2j0FG0egpaKAE2j0FG0egpaKAE2j0FG0eg
 paKAE2j0FG0egpaKAE2j0FG0egpaKAKsHV/99v5mrI6VWg6v/vt/6EasjpQB/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="{Back}"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="ca3853c9-ac52-4399-8406-4a64e3e667fa">
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="43cbdbc8-d63c-458c-8181-2dc76a04e3f5"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="849,501,56,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						2018
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Jahr:
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						2018
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Jahr:']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{Back}"
 		duration="20ms"
@@ -342,54 +282,6 @@ paKAE2j0FG0egpaKAE2j0FG0egpaKAKsHV/99v5mrI6VWg6v/vt/6EasjpQB/9k=
 				variable="Jahr">
 				</binding>
 			</bindings>
-			<info
-			id="43cbdbc8-d63c-458c-8181-2dc76a04e3f5"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="849,501,56,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						2018
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Jahr:
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						2018
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Jahr:']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keysequenceitem>
 		<explicitdelayitem
 		duration="1000ms"
@@ -424,11 +316,40 @@ paKAE2j0FG0egpaKAE2j0FG0egpaKAKsHV/99v5mrI6VWg6v/vt/6EasjpQB/9k=
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="dbe4cf9a-2b60-4d88-8598-1c8057673254">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr">
+				</binding>
+			</bindings>
+			<info
+			id="43cbdbc8-d63c-458c-8181-2dc76a04e3f5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfJahrbez']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
