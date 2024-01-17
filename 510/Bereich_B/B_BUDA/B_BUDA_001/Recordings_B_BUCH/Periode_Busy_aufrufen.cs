@@ -41,6 +41,8 @@ namespace B_BUDA_001.Recordings_B_BUCH
         /// </summary>
         public Periode_Busy_aufrufen()
         {
+            Jahr = "2021";
+            Monat = "11";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace B_BUDA_001.Recordings_B_BUCH
         }
 
 #region Variables
+
+        string _Jahr;
+
+        /// <summary>
+        /// Gets or sets the value of variable Jahr.
+        /// </summary>
+        [TestVariable("c9e31d8b-4533-49d2-b891-9430c644ed4e")]
+        public string Jahr
+        {
+            get { return _Jahr; }
+            set { _Jahr = value; }
+        }
+
+        string _Monat;
+
+        /// <summary>
+        /// Gets or sets the value of variable Monat.
+        /// </summary>
+        [TestVariable("ea73ece3-155f-4f46-8060-2c487ccb9f27")]
+        public string Monat
+        {
+            get { return _Monat; }
+            set { _Monat = value; }
+        }
 
 #endregion
 
@@ -86,44 +112,71 @@ namespace B_BUDA_001.Recordings_B_BUCH
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(1));
             repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(3));
             Keyboard.PrepareFocus(repo.DlgFirmaPeriode.DfJahrbezJ);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2021' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(3));
-            repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys("2021");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(6));
+            repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys(Jahr);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '11' with focus on 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(5));
-            repo.DlgFirmaPeriode.DfPeriodeJ.PressKeys("11");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat' with focus on 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(10));
+            repo.DlgFirmaPeriode.DfPeriodeJ.PressKeys(Monat);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", Jahr);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat) on item 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfPeriodeJInfo, "Text", Monat);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(16));
             repo.DlgFirmaPeriode.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(120000), new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(120000), new RecordItemIndex(17));
             repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(18));
             Validate.AttributeContains(repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, "Text", "Auswahlliste Buchungssymbole");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row1Column0' at Center.", repo.DlgListBox.Row1Column0Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row1Column0' at Center.", repo.DlgListBox.Row1Column0Info, new RecordItemIndex(19));
             repo.DlgListBox.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ER'.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ER'.", new RecordItemIndex(20));
             Keyboard.Press("ER");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(21));
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiBuch.Symbol'", repo.MdiBuch.SymbolInfo, new ActionTimeout(60000), new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiBuch.Symbol'", repo.MdiBuch.SymbolInfo, new ActionTimeout(60000), new RecordItemIndex(22));
             repo.MdiBuch.SymbolInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER') on item 'MdiBuch.Symbol'.", repo.MdiBuch.SymbolInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER') on item 'MdiBuch.Symbol'.", repo.MdiBuch.SymbolInfo, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.MdiBuch.SymbolInfo, "Text", "ER");
             
         }

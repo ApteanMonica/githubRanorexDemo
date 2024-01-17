@@ -99,16 +99,22 @@ namespace B_BUDA_002.Recordings_B_BUAB
             repo.tblB_Form100BuchungenAnzeigen.DfBelegnr.EnsureVisible();
             Keyboard.Press(BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'tblB_Form100BuchungenAnzeigen.PbDataAccessLoad' at Center.", repo.tblB_Form100BuchungenAnzeigen.PbDataAccessLoadInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'tblB_Form100BuchungenAnzeigen.PbDataAccessLoad' at Center.", repo.tblB_Form100BuchungenAnzeigen.PbDataAccessLoadInfo, new RecordItemIndex(5));
             repo.tblB_Form100BuchungenAnzeigen.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row1'", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row1Info, new ActionTimeout(120000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row1'", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row1Info, new ActionTimeout(120000), new RecordItemIndex(6));
             repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row1Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.DfBelegnr'.", repo.tblB_Form100BuchungenAnzeigen.DfBelegnrInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.DfBelegnr'.", repo.tblB_Form100BuchungenAnzeigen.DfBelegnrInfo, new RecordItemIndex(7));
             Validate.AttributeContains(repo.tblB_Form100BuchungenAnzeigen.DfBelegnrInfo, "Text", BUDA_Beleg_NR_1);
             
         }

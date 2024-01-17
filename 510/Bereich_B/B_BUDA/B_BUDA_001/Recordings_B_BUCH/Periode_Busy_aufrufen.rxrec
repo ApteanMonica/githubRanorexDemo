@@ -26,6 +26,16 @@ mode="Global">
 	namespace="B_BUDA_001.Recordings_B_BUCH">
 	</codegen>
 	<variables>
+		<var
+		id="c9e31d8b-4533-49d2-b891-9430c644ed4e"
+		name="Jahr">
+			2021
+		</var>
+		<var
+		id="ea73ece3-155f-4f46-8060-2c487ccb9f27"
+		name="Monat">
+			11
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -80,6 +90,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Delete"
@@ -104,6 +123,39 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cd50300d-4af6-4be1-8eb0-531efddcfb15">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e1e6ffdc-d4ce-4a62-b465-aaae87f6777d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<keysequenceitem
 		KeySequence="2021"
 		duration="20ms"
@@ -114,6 +166,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Jahr">
+				</binding>
 			</bindings>
 			<info
 			id="e1e6ffdc-d4ce-4a62-b465-aaae87f6777d"
@@ -2711,6 +2767,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -2726,6 +2791,15 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="11"
 		duration="20ms"
@@ -2736,6 +2810,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Monat">
+				</binding>
 			</bindings>
 			<info
 			id="4ac31bea-6716-4446-9011-6d2bab68c045"
@@ -5326,6 +5404,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -5341,6 +5428,73 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="740f77f4-c463-4639-bcf1-f01ec746ee43">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr">
+				</binding>
+			</bindings>
+			<info
+			id="e1e6ffdc-d4ce-4a62-b465-aaae87f6777d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="279ce985-5ead-4580-8d86-d3e2587afe15">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Monat">
+				</binding>
+			</bindings>
+			<info
+			id="4ac31bea-6716-4446-9011-6d2bab68c045"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"

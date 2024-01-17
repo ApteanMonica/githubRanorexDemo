@@ -85,106 +85,121 @@ namespace B_BUDA_002.Recordings_B_BUDA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row1Column0' at Center.", repo.DlgDetail.TblDetail.Row1Column0Info, new RecordItemIndex(1));
             repo.DlgDetail.TblDetail.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(2));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(3));
             repo.DlgDetail.PbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 3300') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 3300') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, "Text", "Bereichs-Aufteilung - Konto: 3300");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'9,04\t\t\t\t20\tBaustoffe') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'9,04\t\t\t\t20\tBaustoffe') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, "Text", "9,04\t\t\t\t20\tBaustoffe");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'599,99\t\t\t\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'599,99\t\t\t\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, "Text", "599,99\t\t\t\t30\tKST 30");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'990,96\t\t\t\t40\tKST 40') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row3'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row3Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'990,96\t\t\t\t40\tKST 40') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row3'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row3Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row3Info, "Text", "990,96\t\t\t\t40\tKST 40");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'600,01\t\t\t\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row4'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row4Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'600,01\t\t\t\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row4'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row4Info, new RecordItemIndex(9));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row4Info, "Text", "600,01\t\t\t\t50\tKST 50");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(10));
             Keyboard.PrepareFocus(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKonto);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TblDetail.Row2'", repo.DlgDetail.TblDetail.Row2Info, new ActionTimeout(120000), new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TblDetail.Row2'", repo.DlgDetail.TblDetail.Row2Info, new ActionTimeout(120000), new RecordItemIndex(11));
             repo.DlgDetail.TblDetail.Row2Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row2Column0' at Center.", repo.DlgDetail.TblDetail.Row2Column0Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row2Column0' at Center.", repo.DlgDetail.TblDetail.Row2Column0Info, new RecordItemIndex(12));
             repo.DlgDetail.TblDetail.Row2Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(14));
             repo.DlgDetail.PbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(15));
             repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 7778') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 7778') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(16));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, "Text", "Bereichs-Aufteilung - Konto: 7778");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'499,99\t\t0\t0\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'499,99\t\t0\t0\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(17));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, "Text", "499,99\t\t0\t0\t30\tKST 30");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'500,01\t\t0\t0\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'500,01\t\t0\t0\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(18));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, "Text", "500,01\t\t0\t0\t50\tKST 50");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(19));
             Keyboard.PrepareFocus(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKonto);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TblDetail.Row3'", repo.DlgDetail.TblDetail.Row3Info, new ActionTimeout(120000), new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TblDetail.Row3'", repo.DlgDetail.TblDetail.Row3Info, new ActionTimeout(120000), new RecordItemIndex(20));
             repo.DlgDetail.TblDetail.Row3Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row3Column0' at Center.", repo.DlgDetail.TblDetail.Row3Column0Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row3Column0' at Center.", repo.DlgDetail.TblDetail.Row3Column0Info, new RecordItemIndex(21));
             repo.DlgDetail.TblDetail.Row3Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(22));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(23));
             repo.DlgDetail.PbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(24));
             repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereichs-Aufteilung - Konto: 7777') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereichs-Aufteilung - Konto: 7777') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, "Text", "Bereichs-Aufteilung - Konto: 7777");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'990,96\t\t0\t0\t40\tKST 40') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'990,96\t\t0\t0\t40\tKST 40') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(26));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, "Text", "990,96\t\t0\t0\t40\tKST 40");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(27));
             Keyboard.PrepareFocus(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKonto);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TblDetail.Row4'", repo.DlgDetail.TblDetail.Row4Info, new ActionTimeout(120000), new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TblDetail.Row4'", repo.DlgDetail.TblDetail.Row4Info, new ActionTimeout(120000), new RecordItemIndex(28));
             repo.DlgDetail.TblDetail.Row4Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row4Column0' at Center.", repo.DlgDetail.TblDetail.Row4Column0Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row4Column0' at Center.", repo.DlgDetail.TblDetail.Row4Column0Info, new RecordItemIndex(29));
             repo.DlgDetail.TblDetail.Row4Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(30));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(31));
             repo.DlgDetail.PbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new ActionTimeout(120000), new RecordItemIndex(32));
             repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereichs-Aufteilung - Konto: 7778') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereichs-Aufteilung - Konto: 7778') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, "Text", "Bereichs-Aufteilung - Konto: 7778");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7,53\t\t0\t0\t20\tBaustoffe') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7,53\t\t0\t0\t20\tBaustoffe') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(34));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, "Text", "7,53\t\t0\t0\t20\tBaustoffe");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(35));
             Keyboard.PrepareFocus(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKonto);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TitleBar100BuchungenFuerDauerbuchu'", repo.DlgDetail.TitleBar100BuchungenFuerDauerbuchuInfo, new ActionTimeout(120000), new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDetail.TitleBar100BuchungenFuerDauerbuchu'", repo.DlgDetail.TitleBar100BuchungenFuerDauerbuchuInfo, new ActionTimeout(120000), new RecordItemIndex(36));
             repo.DlgDetail.TitleBar100BuchungenFuerDauerbuchuInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDetail.TitleBar100BuchungenFuerDauerbuchu'.", repo.DlgDetail.TitleBar100BuchungenFuerDauerbuchuInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDetail.TitleBar100BuchungenFuerDauerbuchu'.", repo.DlgDetail.TitleBar100BuchungenFuerDauerbuchuInfo, new RecordItemIndex(37));
             Keyboard.PrepareFocus(repo.DlgDetail.TitleBar100BuchungenFuerDauerbuchu);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(38));
+            Delay.Duration(300, false);
             
         }
 
