@@ -120,6 +120,29 @@ namespace B_BUCH_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'.", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, "Text", "Dialogbuchung");
             
+            // BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt\r\nWaiting 2m to exist. Associated repository item: 'DlgFirmaPeriode.DfJahrbezJ'", repo.DlgFirmaPeriode.DfJahrbezJInfo, new ActionTimeout(120000), new RecordItemIndex(5));
+            repo.DlgFirmaPeriode.DfJahrbezJInfo.WaitForExists(120000);
+            
+            // BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+            Report.Log(ReportLevel.Info, "Mouse", "BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt\r\nMouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(6));
+            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            
+            // BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt\r\nWaiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            // BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt\r\nKey 'Delete' Press.", new RecordItemIndex(8));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            // BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt\r\nWaiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", "");
+            
         }
 
 #region Image Feature Data

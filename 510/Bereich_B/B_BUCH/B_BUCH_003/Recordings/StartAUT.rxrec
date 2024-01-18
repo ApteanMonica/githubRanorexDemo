@@ -186,6 +186,114 @@ mode="Desktop">
 				Dialogbuchung
 			</matchvalue>
 		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="044261bd-3a73-4443-b2f1-54e4a987d403"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+				BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6cd3b5c5-522b-4492-8240-65aa286fd1c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8b8a6e79-ba39-40fc-b5b9-8a841fa81226"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6cd3b5c5-522b-4492-8240-65aa286fd1c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="944f2283-8587-4ecb-934e-6150a31799d6"
+		setModifiers="True">
+			<comment>
+				BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Schritte laut B_ERBU_001 aus Startaus eingefügt
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2b2a7b66-3cdd-412f-8996-ffdffe036863">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6cd3b5c5-522b-4492-8240-65aa286fd1c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="8d1d6f18-73fe-4581-8ff5-9949043f6a42"

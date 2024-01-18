@@ -105,29 +105,52 @@ namespace B_BUCH_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(0));
-            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(0));
+            //repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$jahr' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(1));
             repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys(jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
+            // BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$periode' with focus on 'DlgFirmaPeriode.Monat'.", repo.DlgFirmaPeriode.MonatInfo, new RecordItemIndex(3));
+            // BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$periode' with focus on 'DlgFirmaPeriode.Monat'.", repo.DlgFirmaPeriode.MonatInfo, new RecordItemIndex(5));
             repo.DlgFirmaPeriode.Monat.EnsureVisible();
             Keyboard.Press(periode);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
+            // BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(7));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(5));
+            // BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(8));
+            Delay.Duration(1000, false);
+            
+            // BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+            Report.Log(ReportLevel.Info, "Validation", "BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001\r\nValidating AttributeEqual (Text=$jahr) on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", jahr);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$periode) on item 'DlgFirmaPeriode.Monat'.", repo.DlgFirmaPeriode.MonatInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.MonatInfo, "Text", periode);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(11));
             repo.DlgFirmaPeriode.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row6Column0' at Center.", repo.DlgListBox.Row6Column0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row6Column0' at Center.", repo.DlgListBox.Row6Column0Info, new RecordItemIndex(12));
             repo.DlgListBox.Row6Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(13));
             repo.DlgListBox.PbOk.Click();
             
         }

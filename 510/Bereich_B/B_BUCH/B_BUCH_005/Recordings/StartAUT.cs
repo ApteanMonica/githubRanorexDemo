@@ -114,6 +114,29 @@ namespace B_BUCH_005.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
             
+            // BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT\r\nWaiting 2m to exist. Associated repository item: 'DlgFirmaPeriode.DfJahrbezJ'", repo.DlgFirmaPeriode.DfJahrbezJInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgFirmaPeriode.DfJahrbezJInfo.WaitForExists(120000);
+            
+            // BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT
+            Report.Log(ReportLevel.Info, "Mouse", "BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT\r\nMouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(4));
+            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            
+            // BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT\r\nWaiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            // BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT\r\nKey 'Delete' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            // BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte wie in B_ERBU_001 im StartAUT\r\nWaiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", "");
+            
         }
 
 #region Image Feature Data

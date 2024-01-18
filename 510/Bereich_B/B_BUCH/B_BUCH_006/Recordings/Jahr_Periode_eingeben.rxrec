@@ -39,7 +39,7 @@ mode="Desktop">
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -5260,6 +5260,16 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{Tab}"
 		duration="20ms"
@@ -5272,6 +5282,16 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{NumPad1}"
 		duration="20ms"
@@ -5337,6 +5357,16 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{Tab}"
 		duration="20ms"
@@ -5349,6 +5379,75 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2b4f8be6-4395-4495-8161-d11433c9679a">
+			<comment>
+				BAR: Anpassung Schritte wie aus StartAUT in B_ERBU_001
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="jahr">
+				</binding>
+			</bindings>
+			<info
+			id="0f78a355-0874-46b2-b30f-43e8e614c630"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d28338ee-8a4c-4f01-aa08-6725d8c228d4">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="periode">
+				</binding>
+			</bindings>
+			<info
+			id="8fb5d1d7-4de2-4410-8931-dc4a38f84c92"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -13359,7 +13458,7 @@ UAFFFFABRRRQAUUUUAFFFFAH/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Jahr_Periode_eingaben.UserCode.cs
+		Jahr_Periode_eingeben.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

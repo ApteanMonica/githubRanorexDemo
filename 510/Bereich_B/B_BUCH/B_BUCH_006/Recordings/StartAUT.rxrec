@@ -142,6 +142,115 @@ mode="Desktop">
 				Dialogbuchung
 			</matchvalue>
 		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="8ecf7d62-5720-4eaa-8983-8e56cc929204"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+				BAR: Anpassung wie im StartAUT aus B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0f78a355-0874-46b2-b30f-43e8e614c630"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="742f8cce-ac5b-40f5-bb96-dc2f4075d389"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				BAR: Anpassung wie im StartAUT aus B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0f78a355-0874-46b2-b30f-43e8e614c630"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Anpassung wie im StartAUT aus B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="afadc3f1-f501-403b-af11-59e5024a4e3b"
+		setModifiers="True">
+			<comment>
+				BAR: Anpassung wie im StartAUT aus B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: Anpassung wie im StartAUT aus B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e5f914e7-ca55-4e17-a88e-97391cc269e7">
+			<comment>
+				BAR: Anpassung wie im StartAUT aus B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0f78a355-0874-46b2-b30f-43e8e614c630"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="f271d72c-fd1b-40ca-8529-17a49fb6dba7"

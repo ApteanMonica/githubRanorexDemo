@@ -641,6 +641,7 @@ namespace B_BUCH_005
         {
             RepoItemInfo _row6column0Info;
             RepoItemInfo _pbokInfo;
+            RepoItemInfo _titlebar100auswahllistebuchungssymbInfo;
 
             /// <summary>
             /// Creates a new DlgListBox  folder.
@@ -650,6 +651,7 @@ namespace B_BUCH_005
             {
                 _row6column0Info = new RepoItemInfo(this, "Row6Column0", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='Row 6 Column 0']", ".//cell[@accessiblename='Row 6 Column 0']", 30000, null, "63745db0-3308-46f2-9eae-ebeab44e50de");
                 _pbokInfo = new RepoItemInfo(this, "PbOk", "?/?/button[@controlname='pbOk']", "?/button[@controlname='pbOk']", 30000, null, "d9a7eec7-02a3-4b10-ba5a-141ceb6b9451");
+                _titlebar100auswahllistebuchungssymbInfo = new RepoItemInfo(this, "TitleBar100AuswahllisteBuchungssymb", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f286a549-ac42-414e-aecf-8eaf129ba37d");
             }
 
             /// <summary>
@@ -721,6 +723,30 @@ namespace B_BUCH_005
                 get
                 {
                     return _pbokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuswahllisteBuchungssymb item.
+            /// </summary>
+            [RepositoryItem("f286a549-ac42-414e-aecf-8eaf129ba37d")]
+            public virtual Ranorex.TitleBar TitleBar100AuswahllisteBuchungssymb
+            {
+                get
+                {
+                    return _titlebar100auswahllistebuchungssymbInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuswahllisteBuchungssymb item info.
+            /// </summary>
+            [RepositoryItemInfo("f286a549-ac42-414e-aecf-8eaf129ba37d")]
+            public virtual RepoItemInfo TitleBar100AuswahllisteBuchungssymbInfo
+            {
+                get
+                {
+                    return _titlebar100auswahllistebuchungssymbInfo;
                 }
             }
         }

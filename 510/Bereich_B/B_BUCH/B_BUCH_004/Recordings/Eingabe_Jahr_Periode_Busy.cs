@@ -127,34 +127,58 @@ namespace B_BUCH_004.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(2));
             repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys(Jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            // BAR: Anpassung wie in B_ERBU_001 aus StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung wie in B_ERBU_001 aus StartAUT\r\nWaiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat' with focus on 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(4));
+            // BAR: Anpassung wie in B_ERBU_001 aus StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung wie in B_ERBU_001 aus StartAUT\r\nWaiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat' with focus on 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(6));
             repo.DlgFirmaPeriode.DfPeriodeJ.PressKeys(Monat);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            // BAR: Anpassung wie in B_ERBU_001 aus StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung wie in B_ERBU_001 aus StartAUT\r\nWaiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(6));
+            // BAR: Anpassung wie in B_ERBU_001 aus StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung wie in B_ERBU_001 aus StartAUT\r\nWaiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            // BAR: Anpassung wie in B_ERBU_001 aus StartAUT
+            Report.Log(ReportLevel.Info, "Validation", "BAR: Anpassung wie in B_ERBU_001 aus StartAUT\r\nValidating AttributeEqual (Text=$Jahr) on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", Jahr);
+            
+            // BAR: Anpassung wie in B_ERBU_001 aus StartAUT
+            Report.Log(ReportLevel.Info, "Validation", "BAR: Anpassung wie in B_ERBU_001 aus StartAUT\r\nValidating AttributeEqual (Text=$Monat) on item 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfPeriodeJInfo, "Text", Monat);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(12));
             repo.DlgFirmaPeriode.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(60000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(60000), new RecordItemIndex(13));
             repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(14));
             Validate.AttributeContains(repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, "Text", "Auswahlliste Buchungssymbole");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'SA\t\tSachbuchung\tU') on item 'DlgListBox.Row14'.", repo.DlgListBox.Row14Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'SA\t\tSachbuchung\tU') on item 'DlgListBox.Row14'.", repo.DlgListBox.Row14Info, new RecordItemIndex(15));
             Validate.AttributeContains(repo.DlgListBox.Row14Info, "Text", "SA\t\tSachbuchung\tU");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Busy) on item 'DlgListBox.Row14'.", repo.DlgListBox.Row14Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Busy) on item 'DlgListBox.Row14'.", repo.DlgListBox.Row14Info, new RecordItemIndex(16));
             Validate.AttributeContains(repo.DlgListBox.Row14Info, "Text", Busy);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row14Column0' at Center.", repo.DlgListBox.Row14Column0Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row14Column0' at Center.", repo.DlgListBox.Row14Column0Info, new RecordItemIndex(17));
             repo.DlgListBox.Row14Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(18));
             repo.DlgListBox.PbOk.Click();
             
         }

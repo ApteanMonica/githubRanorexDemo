@@ -114,11 +114,25 @@ namespace B_BUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            // BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Wait", "BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001\r\nWaiting 2m to exist. Associated repository item: 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'.", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, "Text", "Dialogbuchung");
+            // BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Mouse", "BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001\r\nMouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(4));
+            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            
+            // BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            // BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001\r\nKey 'Delete' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            // BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Validation", "BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001\r\nValidating AttributeEqual (Text='') on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", "");
             
         }
 

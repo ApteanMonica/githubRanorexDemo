@@ -127,34 +127,42 @@ namespace B_BUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(2));
             repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys(Jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            // BAR: eingefügt nach Vorbild StartAUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: eingefügt nach Vorbild StartAUT B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat' with focus on 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat' with focus on 'DlgFirmaPeriode.DfPeriodeJ'.", repo.DlgFirmaPeriode.DfPeriodeJInfo, new RecordItemIndex(5));
             repo.DlgFirmaPeriode.DfPeriodeJ.PressKeys(Monat);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            // BAR: eingefügt nach Vorbild StartAUT B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: eingefügt nach Vorbild StartAUT B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(8));
             repo.DlgFirmaPeriode.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(60000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(60000), new RecordItemIndex(9));
             repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(10));
             Validate.AttributeContains(repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, "Text", "Auswahlliste Buchungssymbole");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER\t\tEingangsrechnung\tR\t\tL') on item 'DlgListBox.Row6'.", repo.DlgListBox.Row6Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER\t\tEingangsrechnung\tR\t\tL') on item 'DlgListBox.Row6'.", repo.DlgListBox.Row6Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.DlgListBox.Row6Info, "Text", "ER\t\tEingangsrechnung\tR\t\tL");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Busy) on item 'DlgListBox.Row6'.", repo.DlgListBox.Row6Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Busy) on item 'DlgListBox.Row6'.", repo.DlgListBox.Row6Info, new RecordItemIndex(12));
             Validate.AttributeContains(repo.DlgListBox.Row6Info, "Text", Busy);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row6Column0' at Center.", repo.DlgListBox.Row6Column0Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row6Column0' at Center.", repo.DlgListBox.Row6Column0Info, new RecordItemIndex(13));
             repo.DlgListBox.Row6Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(14));
             repo.DlgListBox.PbOk.Click();
             
         }

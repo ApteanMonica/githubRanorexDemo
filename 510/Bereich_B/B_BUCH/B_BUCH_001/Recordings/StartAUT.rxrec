@@ -109,6 +109,7 @@ mode="Desktop">
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
+				BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
 			</comment>
 			<bindings>
 			</bindings>
@@ -122,20 +123,74 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="6018d7c2-39ac-4496-8560-d8b43212f2c6">
+		searchpropertyid="1ce9f0d5-24f2-450e-a0cf-abb0e1c86223"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
+				BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d5d898c9-55cb-4c84-9ec5-2164fc29a7b8"
+			id="01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="4b4e6c2f-ee0b-446e-9d7a-2910c5724d59"
+		setModifiers="True">
+			<comment>
+				BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7295745b-99a9-47ec-99e3-89f60925386d">
+			<comment>
+				BAR: teilweise eingefügte Schritte wie im Start_AUT B_ERBU_001
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -144,7 +199,6 @@ mode="Desktop">
 				Text
 			</matchname>
 			<matchvalue>
-				Dialogbuchung
 			</matchvalue>
 		</validationitem>
 	</recorditems>

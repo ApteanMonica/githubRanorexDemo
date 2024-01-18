@@ -2681,6 +2681,16 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: teiweise Übernahme Schritte aus B_ERBU_001 StartAUT
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -2758,6 +2768,16 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				BAR: teiweise Übernahme Schritte aus B_ERBU_001 StartAUT
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -2773,6 +2793,66 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3c3b3fe7-89da-4ce3-8c49-19b7e3cc4b28">
+			<comment>
+				BAR: teiweise Übernahme Schritte aus B_ERBU_001 StartAUT
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr">
+				</binding>
+			</bindings>
+			<info
+			id="6cd3b5c5-522b-4492-8240-65aa286fd1c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ec3c9202-b883-4769-812c-839683ce944e">
+			<comment>
+				BAR: teiweise Übernahme Schritte aus B_ERBU_001 StartAUT
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Monat">
+				</binding>
+			</bindings>
+			<info
+			id="e0442942-d6a5-4fc5-8cb3-97acdf86418c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"

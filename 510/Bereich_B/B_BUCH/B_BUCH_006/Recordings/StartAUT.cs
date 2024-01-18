@@ -114,6 +114,30 @@ namespace B_BUCH_006.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
             
+            // BAR: Anpassung wie im StartAUT aus B_ERBU_001
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Anpassung wie im StartAUT aus B_ERBU_001\r\nWaiting 2m to exist. Associated repository item: 'DlgFirmaPeriode.DfJahrbezJ'", repo.DlgFirmaPeriode.DfJahrbezJInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgFirmaPeriode.DfJahrbezJInfo.WaitForExists(120000);
+            
+            // BAR: Anpassung wie im StartAUT aus B_ERBU_001
+            Report.Log(ReportLevel.Info, "Mouse", "BAR: Anpassung wie im StartAUT aus B_ERBU_001\r\nMouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(4));
+            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            
+            // BAR: Anpassung wie im StartAUT aus B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung wie im StartAUT aus B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            // BAR: Anpassung wie im StartAUT aus B_ERBU_001
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Anpassung wie im StartAUT aus B_ERBU_001\r\nKey 'Delete' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            // BAR: Anpassung wie im StartAUT aus B_ERBU_001
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung wie im StartAUT aus B_ERBU_001\r\nWaiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            // BAR: Anpassung wie im StartAUT aus B_ERBU_001
+            Report.Log(ReportLevel.Info, "Validation", "BAR: Anpassung wie im StartAUT aus B_ERBU_001\r\nValidating AttributeEqual (Text='') on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", "");
+            
         }
 
 #region Image Feature Data

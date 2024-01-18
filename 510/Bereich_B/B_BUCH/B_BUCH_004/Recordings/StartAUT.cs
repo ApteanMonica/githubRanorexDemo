@@ -120,6 +120,25 @@ namespace B_BUCH_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'.", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, "Text", "Dialogbuchung");
             
+            // BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT
+            Report.Log(ReportLevel.Info, "Mouse", "BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT\r\nMouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(5));
+            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            
+            // BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT\r\nWaiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
+            // BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT\r\nKey 'Delete' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            // BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT
+            Report.Log(ReportLevel.Info, "Delay", "BAR: Anpassung Schritte nach Abbild von B_ERBU_001 StartAUT\r\nWaiting for 1s.", new RecordItemIndex(8));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgFirmaPeriode.DfJahrbezJInfo, "Text", "");
+            
         }
 
 #region Image Feature Data
