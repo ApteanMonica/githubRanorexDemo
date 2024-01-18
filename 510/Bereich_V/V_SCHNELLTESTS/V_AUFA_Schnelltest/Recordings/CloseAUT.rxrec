@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5cb9a59c-8892-4c45-a8e6-d185d0337228"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_AUFA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d67856f7-6ca0-47c3-b3ab-66d740db170b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d10b57c3-0b4b-46b4-83b5-aa0b04331310"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAuftragsarten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="3eb34c25-4b3d-44b5-aeb1-5d97bbc738ca"
+	name="V_AUFA_SchnelltestRepository"
+	relativepath="..\V_AUFA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="V_AUFA_SchnelltestRepository"
+		namespace="V_AUFA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="b4dd2855-ae34-470e-9c10-3bd4c0876f72"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
