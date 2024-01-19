@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("S_ADRDR")]
+[assembly: AssemblyTitle("S_ADRDR_Schnelltest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("S_ADRDR")]
+[assembly: AssemblyProduct("S_ADRDR_Schnelltest")]
 [assembly: AssemblyCopyright("Copyright 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

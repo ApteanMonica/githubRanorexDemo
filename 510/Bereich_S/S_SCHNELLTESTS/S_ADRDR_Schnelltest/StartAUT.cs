@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ADRDR.Recordings
+namespace S_ADRDR_Schnelltest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Close_Lieferantenliste recording.
+    ///The StartAUT recording.
     /// </summary>
-    [TestModule("1d9bfa05-bb6b-4c89-8154-a72ee5cc4a7a", ModuleType.Recording, 1)]
-    public partial class Close_Lieferantenliste : ITestModule
+    [TestModule("0c3f21e6-415c-4cf1-b7a2-43cefd47226f", ModuleType.Recording, 1)]
+    public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_ADRDR.S_ADRDRRepository repository.
+        /// Holds an instance of the S_ADRDR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_ADRDR.S_ADRDRRepository repo = global::S_ADRDR.S_ADRDRRepository.Instance;
+        public static S_ADRDR_SchnelltestRepository repo = S_ADRDR_SchnelltestRepository.Instance;
 
-        static Close_Lieferantenliste instance = new Close_Lieferantenliste();
+        static StartAUT instance = new StartAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Close_Lieferantenliste()
+        public StartAUT()
         {
+            StartAutProcessIDVar = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Close_Lieferantenliste Instance
+        public static StartAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _StartAutProcessIDVar;
+
+        /// <summary>
+        /// Gets or sets the value of variable StartAutProcessIDVar.
+        /// </summary>
+        [TestVariable("945a4b32-a4d8-4406-a3e3-1e1d4d9d2694")]
+        public string StartAutProcessIDVar
+        {
+            get { return _StartAutProcessIDVar; }
+            set { _StartAutProcessIDVar = value; }
+        }
 
 #endregion
 
@@ -79,9 +92,6 @@ namespace S_ADRDR.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmMain.TitleBar100Kundenliste, 1000);
-            
         }
 
 #region Image Feature Data

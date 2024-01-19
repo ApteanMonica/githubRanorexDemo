@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ADRDR.Recordings
+namespace S_AGR_Schnelltest.Recordings
 {
-    public partial class CloseAUT
+    public partial class Meldung_Loeschen_nicht_moeglich
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

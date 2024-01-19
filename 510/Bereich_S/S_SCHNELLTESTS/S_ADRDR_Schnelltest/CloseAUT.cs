@@ -20,63 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ADRDR.Recordings
+namespace S_ADRDR_Schnelltest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("4fa71fc2-482d-4eed-8ec8-7915bf705049", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("89f69e39-a795-48ed-9ddb-4d95af6479be", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_ADRDR.S_ADRDRRepository repository.
+        /// Holds an instance of the S_ADRDR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_ADRDR.S_ADRDRRepository repo = global::S_ADRDR.S_ADRDRRepository.Instance;
+        public static S_ADRDR_SchnelltestRepository repo = S_ADRDR_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public CloseAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "S_ADRDR";
+            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
+        string _CloseAutProcessIDVar;
 
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable CloseAutProcessIDVar.
         /// </summary>
-        [TestVariable("c90f11d0-05fc-49d8-891d-a404609d3c77")]
-        public string Startfile
+        [TestVariable("1dd690aa-34f3-4e47-8c36-c9aec70274d3")]
+        public string CloseAutProcessIDVar
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("ce7f0c3e-8a84-448a-ab3a-d4be64afefc4")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
+            get { return _CloseAutProcessIDVar; }
+            set { _CloseAutProcessIDVar = value; }
         }
 
 #endregion
@@ -105,15 +92,6 @@ namespace S_ADRDR.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100Kundenliste'", repo.FrmMain.TitleBar100KundenlisteInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain.TitleBar100KundenlisteInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kundenliste') on item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmMain.TitleBar100KundenlisteInfo, "Text", "Kundenliste");
-            
         }
 
 #region Image Feature Data

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ADRDR.Recordings
+namespace S_ADRDR_Schnelltest
 {
-    public partial class StartAUT
+    public partial class Recording1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

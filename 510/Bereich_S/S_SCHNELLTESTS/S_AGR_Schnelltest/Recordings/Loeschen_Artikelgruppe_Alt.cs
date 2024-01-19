@@ -20,63 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ADRDR.Recordings
+namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_Lieferantenliste recording.
+    ///The Loeschen_Artikelgruppe_Alt recording.
     /// </summary>
-    [TestModule("c40bfaee-24e6-4980-b2de-f7efd22e2ef4", ModuleType.Recording, 1)]
-    public partial class Start_Lieferantenliste : ITestModule
+    [TestModule("7dc1b3a5-db3f-49f6-94f1-25162cde604e", ModuleType.Recording, 1)]
+    public partial class Loeschen_Artikelgruppe_Alt : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_ADRDR.S_ADRDRRepository repository.
+        /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_ADRDR.S_ADRDRRepository repo = global::S_ADRDR.S_ADRDRRepository.Instance;
+        public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static Start_Lieferantenliste instance = new Start_Lieferantenliste();
+        static Loeschen_Artikelgruppe_Alt instance = new Loeschen_Artikelgruppe_Alt();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_Lieferantenliste()
+        public Loeschen_Artikelgruppe_Alt()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_Lieferantenliste = "S_ADRDR /KL=L";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_Lieferantenliste Instance
+        public static Loeschen_Artikelgruppe_Alt Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
-
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable ARTIKELGRUPPE_ALT.
         /// </summary>
-        [TestVariable("9c95a488-1f58-4913-af7b-a4eb3d7220f6")]
-        public string Startfile
+        [TestVariable("04d596e0-f25a-4df1-9d2f-5ae4d510d7df")]
+        public string ARTIKELGRUPPE_ALT
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_Lieferantenliste;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_Lieferantenliste.
-        /// </summary>
-        [TestVariable("5e0ab4f2-6582-4fac-b809-c1f8f2f57783")]
-        public string Programm_Lieferantenliste
-        {
-            get { return _Programm_Lieferantenliste; }
-            set { _Programm_Lieferantenliste = value; }
+            get { return repo.ARTIKELGRUPPE_ALT; }
+            set { repo.ARTIKELGRUPPE_ALT = value; }
         }
 
 #endregion
@@ -105,14 +89,14 @@ namespace S_ADRDR.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_Lieferantenliste in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_Lieferantenliste, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppen.FlexGrid.Row_mit_Artikelgruppe_Alt' at Center.", repo.TblArtikelgruppen.FlexGrid.Row_mit_Artikelgruppe_Alt.SelfInfo, new RecordItemIndex(0));
+            repo.TblArtikelgruppen.FlexGrid.Row_mit_Artikelgruppe_Alt.Self.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100Kundenliste'", repo.FrmMain.TitleBar100KundenlisteInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain.TitleBar100KundenlisteInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}'.", new RecordItemIndex(1));
+            Keyboard.Press("{Delete}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferantenliste') on item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmMain.TitleBar100KundenlisteInfo, "Text", "Lieferantenliste");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppen.RibbonBar.PbDataAccessSave' at Center.", repo.TblArtikelgruppen.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
+            repo.TblArtikelgruppen.RibbonBar.PbDataAccessSave.Click();
             
         }
 

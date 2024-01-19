@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: LBarisic
- * Date: 08.01.2024
- * Time: 11:08
+ * Date: 19.01.2024
+ * Time: 10:22
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -19,7 +19,7 @@ using Ranorex.Core;
 using Ranorex.Core.Reporting;
 using Ranorex.Core.Testing;
 
-namespace S_ADRDR
+namespace S_ADRDR_Schnelltest
 {
     class Program
     {
