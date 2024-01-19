@@ -41,7 +41,6 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         /// </summary>
         public Konto_4002_aufrufen()
         {
-            Quell_Firma = "200";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         }
 
 #region Variables
-
-        string _Quell_Firma;
-
-        /// <summary>
-        /// Gets or sets the value of variable Quell_Firma.
-        /// </summary>
-        [TestVariable("555a99eb-d890-4503-86ab-8569281dc626")]
-        public string Quell_Firma
-        {
-            get { return _Quell_Firma; }
-            set { _Quell_Firma = value; }
-        }
 
 #endregion
 

@@ -4130,7 +4130,33 @@ mode="Global">
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a48d1009-701c-4734-ad6f-97885b438f45">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="66a2d762-b4c7-44de-b962-2bd1e3668445"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Vorgang abgebrochen
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -4156,6 +4182,15 @@ mode="Global">
 Es fehlen folgende Skontogruppen: 4, 5
 			</matchvalue>
 		</validationitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

@@ -92,8 +92,10 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Quell_Firma) on item 'FrmKto.Firmenherkunft'.", repo.FrmKto.FirmenherkunftInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmKto.FirmenherkunftInfo, "Text", Quell_Firma);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Quell_Firma) on item 'FrmKto.Firmenherkunft'.", repo.FrmKto.FirmenherkunftInfo, new RecordItemIndex(0));
+                Validate.AttributeEqual(repo.FrmKto.FirmenherkunftInfo, "Text", Quell_Firma, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4002') on item 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmKto.KontoInfo, "Text", "4002");

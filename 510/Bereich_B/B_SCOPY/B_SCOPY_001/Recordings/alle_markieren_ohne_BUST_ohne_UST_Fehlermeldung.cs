@@ -101,19 +101,26 @@ namespace B_SCOPY_001.Recordings
             repo.DlgMessageBox.StammdatenKopierenInfo.WaitForExists(60000);
             
             // E00, E05, E10, E1N, E20, EX3, IGB, IGL, R10, R1N, R20, U00, U05, U10, U13, U20, V00, V05, V13, V20
-            Report.Log(ReportLevel.Info, "Validation", "E00, E05, E10, E1N, E20, EX3, IGB, IGL, R10, R1N, R20, U00, U05, U10, U13, U20, V00, V05, V13, V20\r\nValidating AttributeContains (Text>'Vorgang abgebrochen.\r\nEs fehlen folgende UST-Codes: DRE, ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Vorgang abgebrochen.\r\nEs fehlen folgende UST-Codes: DRE, ");
+            Report.Log(ReportLevel.Info, "Validation", "E00, E05, E10, E1N, E20, EX3, IGB, IGL, R10, R1N, R20, U00, U05, U10, U13, U20, V00, V05, V13, V20\r\nValidating AttributeContains (Text>'Vorgang abgebrochen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Vorgang abgebrochen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
-            repo.DlgMessageBox.Button0.Click();
+            // E00, E05, E10, E1N, E20, EX3, IGB, IGL, R10, R1N, R20, U00, U05, U10, U13, U20, V00, V05, V13, V20
+            Report.Log(ReportLevel.Info, "Validation", "E00, E05, E10, E1N, E20, EX3, IGB, IGL, R10, R1N, R20, U00, U05, U10, U13, U20, V00, V05, V13, V20\r\nValidating AttributeContains (Text>'Es fehlen folgende UST-Codes: DRE, ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es fehlen folgende UST-Codes: DRE, ");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(9));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es ist ein Fehler aufgetreten!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(11));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es ist ein Fehler aufgetreten!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es ist ein Fehler aufgetreten!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(13));
             repo.DlgMessageBox.Button0.Click();
             
         }

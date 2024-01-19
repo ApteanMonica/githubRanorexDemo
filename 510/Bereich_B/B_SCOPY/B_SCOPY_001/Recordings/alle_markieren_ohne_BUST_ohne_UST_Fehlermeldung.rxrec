@@ -4103,10 +4103,45 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Vorgang abgebrochen.
-Es fehlen folgende UST-Codes: DRE,&#32;
+				Vorgang abgebrochen
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a48d1009-701c-4734-ad6f-97885b438f45">
+			<comment>
+				E00, E05, E10, E1N, E20, EX3, IGB, IGL, R10, R1N, R20, U00, U05, U10, U13, U20, V00, V05, V13, V20
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="66a2d762-b4c7-44de-b962-2bd1e3668445"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Es fehlen folgende UST-Codes: DRE,&#32;
+			</matchvalue>
+		</validationitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

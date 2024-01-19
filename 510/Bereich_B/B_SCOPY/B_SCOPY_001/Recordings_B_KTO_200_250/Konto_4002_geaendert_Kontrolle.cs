@@ -41,7 +41,6 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         /// </summary>
         public Konto_4002_geaendert_Kontrolle()
         {
-            Quell_Firma = "200";
             Ziel_Firma = "250";
         }
 
@@ -54,18 +53,6 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         }
 
 #region Variables
-
-        string _Quell_Firma;
-
-        /// <summary>
-        /// Gets or sets the value of variable Quell_Firma.
-        /// </summary>
-        [TestVariable("ebfe5bc7-04fc-438f-be7b-0b6dfa13995d")]
-        public string Quell_Firma
-        {
-            get { return _Quell_Firma; }
-            set { _Quell_Firma = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Ziel_Firma.

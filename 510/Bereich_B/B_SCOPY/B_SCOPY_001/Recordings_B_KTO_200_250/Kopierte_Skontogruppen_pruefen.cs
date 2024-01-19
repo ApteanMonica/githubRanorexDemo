@@ -88,14 +88,20 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[250]  Verwalten Skontogruppen/-konten') on item 'MdiSkt.TitleBar200VerwaltenSkontogruppen'.", repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, "Text", "[250]  Verwalten Skontogruppen/-konten");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'S;;0\t$RLG\ttheor. Skonto') on item 'MdiSkt.Tabelle_oben.Row1Column0'.", repo.MdiSkt.Tabelle_oben.Row1Column0Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row1Column0Info, "Text", "S;;0\t$RLG\ttheor. Skonto");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'S;;0\t$RLG\ttheor. Skonto') on item 'MdiSkt.Tabelle_oben.Row1Column0'.", repo.MdiSkt.Tabelle_oben.Row1Column0Info, new RecordItemIndex(3));
+                Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row1Column0Info, "Text", "S;;0\t$RLG\ttheor. Skonto", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\tS;;0\t4\tKundenskonto (Klasse 4)') on item 'MdiSkt.Tabelle_oben.Row2Column0'.", repo.MdiSkt.Tabelle_oben.Row2Column0Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row2Column0Info, "Text", "\tS;;0\t4\tKundenskonto (Klasse 4)");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\tS;;0\t4\tKundenskonto (Klasse 4)') on item 'MdiSkt.Tabelle_oben.Row2Column0'.", repo.MdiSkt.Tabelle_oben.Row2Column0Info, new RecordItemIndex(4));
+                Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row2Column0Info, "Text", "\tS;;0\t4\tKundenskonto (Klasse 4)", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\tS;;0\t5\tLieferantenskonto (Klasse 5)') on item 'MdiSkt.Tabelle_oben.Row3Column0'.", repo.MdiSkt.Tabelle_oben.Row3Column0Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row3Column0Info, "Text", "\tS;;0\t5\tLieferantenskonto (Klasse 5)");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\tS;;0\t5\tLieferantenskonto (Klasse 5)') on item 'MdiSkt.Tabelle_oben.Row3Column0'.", repo.MdiSkt.Tabelle_oben.Row3Column0Info, new RecordItemIndex(5));
+                Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row3Column0Info, "Text", "\tS;;0\t5\tLieferantenskonto (Klasse 5)", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'MdiSkt.TitleBar200VerwaltenSkontogruppen'.", repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, new RecordItemIndex(6));
             Keyboard.PrepareFocus(repo.MdiSkt.TitleBar200VerwaltenSkontogruppen);

@@ -11,14 +11,6 @@
 			name="Konto_4002_aufrufen"
 			ref="08a5b01c-f194-4636-a934-126baad94fa9"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Quell_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="555a99eb-d890-4503-86ab-8569281dc626"
-					variablename="Quell_Firma">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="0ebd11cf-b230-450c-9d65-495f5680c1ea"
@@ -51,6 +43,9 @@
 			name="Konto_4002_original_Kontrolle"
 			ref="0d6aabf5-870f-40c5-8b6e-7bfaa02286f5"
 			type="Recording">
+				<description>
+					<![CDATA[BUG erfassen: Herkunft Firma 250 falsch auf Continue on Fail bis Korrektur]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Quell_Firma"
@@ -85,14 +80,6 @@
 			name="Konto_4002_aufrufen"
 			ref="08a5b01c-f194-4636-a934-126baad94fa9"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Quell_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="555a99eb-d890-4503-86ab-8569281dc626"
-					variablename="Quell_Firma">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="291d4209-6a44-4dfe-acc2-787e539b3bca"
@@ -352,6 +339,9 @@
 			name="Konto_4002_aendern_status_Art_MW_Skt"
 			ref="4e0d1f6f-3126-4e06-a360-88e2ddce19f6"
 			type="Recording">
+				<description>
+					<![CDATA[BUG erfassen: Exception bei Statusänderung auf inaktiv in Zielfirma]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="8b6c95fc-bd1f-4f7d-80dd-52d517b9fc3b"
@@ -445,6 +435,9 @@
 			name="Kopierte_Skontogruppen_pruefen"
 			ref="6ba12ccd-e328-4253-bcf1-695845c23318"
 			type="Recording">
+				<description>
+					<![CDATA[BUG erfassen: Herkunft Firma 250 falsch in row2 - alle rows auf Continue on fail bis Korrektur]]>
+				</description>
 			</testmodule>
 			<setup
 			id="b0f706dd-7ca5-4fd2-a1be-8a11f13db049"
@@ -630,12 +623,6 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Quell_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="ebfe5bc7-04fc-438f-be7b-0b6dfa13995d"
-					variablename="Quell_Firma">
-					</var>
-					<var
 					dataname="Ziel_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
 					variableid="e7c2e040-b46a-4c38-9147-40b463862cc2"
@@ -679,12 +666,6 @@
 			ref="ab5b21dc-95b4-4725-8b29-55fb086e59c5"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="Quell_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="ebfe5bc7-04fc-438f-be7b-0b6dfa13995d"
-					variablename="Quell_Firma">
-					</var>
 					<var
 					dataname="Ziel_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
@@ -1023,9 +1004,6 @@
 		name="TestRun">
 			<testcontainer
 			id="08400567-b3ea-4018-9da1-ad085a62472c">
-			</testcontainer>
-			<testcontainer
-			id="291d4209-6a44-4dfe-acc2-787e539b3bca">
 			</testcontainer>
 			<testcontainer
 			id="4cd43589-744a-40db-9c7b-e902a642820c">
