@@ -53,6 +53,17 @@ name="B_JAHR_SchnelltestRepository">
 				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']
 			</item>
 			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="a0c0d436-73d3-4dcc-aac8-83afd58e57f4"
+			name="PbCommonLaden"
+			refimgid="dbb9f007-2a48-45fe-8db4-d34f23488287"
+			refpath="/form[@controlname='tblMain']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Laden']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Laden']
+			</item>
+			<item
 			addcaps="button,accessible"
 			capname="button"
 			id="fe792f41-c4e6-41ad-8930-37b952f58bdd"
@@ -108,6 +119,16 @@ name="B_JAHR_SchnelltestRepository">
 				robustPath=""
 				searchtimeout="5000ms">
 					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="18601465-9521-4f8f-9ef1-e999067c6ddf"
+				name="Zeile_mit_Jahr_ALT"
+				refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -188,16 +209,6 @@ name="B_JAHR_SchnelltestRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_dtbis']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="row"
-				id="18601465-9521-4f8f-9ef1-e999067c6ddf"
-				name="Zeile_mit_Jahr_ALT"
-				refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -341,6 +352,17 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="6230f4a6-781b-4779-8613-cbe8ab358e50"
+			name="Button1"
+			refimgid="228cb544-cfd7-49ba-8ab2-2ee7cb554675"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
 			</item>
 			<basepath>
 				/form[@controlname='dlgMessageBox']

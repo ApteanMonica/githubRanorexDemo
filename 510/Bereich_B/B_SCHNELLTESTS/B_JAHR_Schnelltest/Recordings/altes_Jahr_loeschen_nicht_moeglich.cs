@@ -109,11 +109,11 @@ namespace B_JAHR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.PbStandard1' at Center.", repo.Main_530_tblMain_510_frmMain.PbStandard1Info, new RecordItemIndex(5));
             repo.Main_530_tblMain_510_frmMain.PbStandard1.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(5000), new RecordItemIndex(6));
-            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Das Löschen eines Geschäftsjahres ist nur für das letzte Geschäftsjahr möglich!\r\n\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Das Löschen eines Geschäftsjahres ist nur für das letzte Geschäftsjahr möglich!\r\n\r\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Das Löschen eines Geschäftsjahres ist nur für das letzte Geschäftsjahr möglich!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Das Löschen eines Geschäftsjahres ist nur für das letzte Geschäftsjahr möglich!");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Jahr_ALT) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Jahr_ALT);
@@ -121,11 +121,45 @@ namespace B_JAHR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ist nicht das letzte Geschäftsjahr, daher wird dieses Geschäftsjahr nicht gelöscht.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "ist nicht das letzte Geschäftsjahr, daher wird dieses Geschäftsjahr nicht gelöscht.");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at .363;.522.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
-            repo.DlgMessageBox.Button0.Click(".363;.522");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALT'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, new RecordItemIndex(11));
-            Validate.Exists(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(11));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'17\t2017\t\t\t\t\t01.01.2017\t31.12.2017') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALT'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, "Text", "17\t2017\t\t\t\t\t01.01.2017\t31.12.2017");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.PbCommonLaden' at Center.", repo.Main_530_tblMain_510_frmMain.PbCommonLadenInfo, new RecordItemIndex(13));
+            repo.Main_530_tblMain_510_frmMain.PbCommonLaden.Click();
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nSollen die Änderungen gespeichert werden?", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(14)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(15));
+                repo.DlgMessageBox.Button1.Click();
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Delay", "(Optional Action)\r\nWaiting for 2s.", new RecordItemIndex(16));
+                Delay.Duration(2000, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(16)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nSollen die Änderungen gespeichert werden?", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(18));
+                repo.DlgMessageBox.Button1.Click();
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'17\t2017\t\t\t\t\t01.01.2017\t31.12.2017') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALT'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, new RecordItemIndex(19));
+            Validate.AttributeContains(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, "Text", "17\t2017\t\t\t\t\t01.01.2017\t31.12.2017");
             
         }
 

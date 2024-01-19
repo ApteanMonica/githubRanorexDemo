@@ -135,6 +135,7 @@ namespace B_JAHR_Schnelltest
             RepoItemInfo _titlebar100verwaltengeschaeftsjahrInfo;
             RepoItemInfo _pbcommonneuesInfo;
             RepoItemInfo _pbstandard1Info;
+            RepoItemInfo _pbcommonladenInfo;
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _pbcommonjournalzeilenInfo;
             RepoItemInfo _tabelle_530Info;
@@ -150,6 +151,7 @@ namespace B_JAHR_Schnelltest
                 _titlebar100verwaltengeschaeftsjahrInfo = new RepoItemInfo(this, "TitleBar100VerwaltenGeschaeftsjahr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "74855842-374e-4eef-b9a1-8a565578d604");
                 _pbcommonneuesInfo = new RepoItemInfo(this, "PbCommonNeues", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neues']", "", 30000, null, "db648043-58f5-49d2-8d2c-eeac0f3106e4");
                 _pbstandard1Info = new RepoItemInfo(this, "PbStandard1", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']", "", 30000, null, "4eb5fcfe-2711-4261-af07-8c533763d16e");
+                _pbcommonladenInfo = new RepoItemInfo(this, "PbCommonLaden", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Laden']", "", 30000, null, "a0c0d436-73d3-4dcc-aac8-83afd58e57f4");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "fe792f41-c4e6-41ad-8930-37b952f58bdd");
                 _pbcommonjournalzeilenInfo = new RepoItemInfo(this, "PbCommonJournalzeilen", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']", "", 30000, null, "6e93e769-a862-4d17-80b7-a9ac5169b131");
                 _tabelle_530Info = new RepoItemInfo(this, "Tabelle_530", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "7ea00e1a-c3d3-4795-b19c-88d3fb5a81ec");
@@ -249,6 +251,30 @@ namespace B_JAHR_Schnelltest
                 get
                 {
                     return _pbstandard1Info;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonLaden item.
+            /// </summary>
+            [RepositoryItem("a0c0d436-73d3-4dcc-aac8-83afd58e57f4")]
+            public virtual Ranorex.Button PbCommonLaden
+            {
+                get
+                {
+                    return _pbcommonladenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonLaden item info.
+            /// </summary>
+            [RepositoryItemInfo("a0c0d436-73d3-4dcc-aac8-83afd58e57f4")]
+            public virtual RepoItemInfo PbCommonLadenInfo
+            {
+                get
+                {
+                    return _pbcommonladenInfo;
                 }
             }
 
@@ -365,6 +391,7 @@ namespace B_JAHR_Schnelltest
         public partial class Tabelle_510_530Folder : RepoGenBaseFolder
         {
             RepoItemInfo _zeile_mit_jahr_neuInfo;
+            RepoItemInfo _zeile_mit_jahr_altInfo;
             RepoItemInfo _column0_in_zeile_mit_jahr_neuInfo;
             RepoItemInfo _colgjhrbez_in_zeile_mit_jahr_neuInfo;
             RepoItemInfo _colgjhrperivon_in_zeile_mit_jahr_neuInfo;
@@ -373,7 +400,6 @@ namespace B_JAHR_Schnelltest
             RepoItemInfo _colgjhrperibiskore_in_zeile_mit_jahr_neuInfo;
             RepoItemInfo _colgjhrdtvon_in_zeile_mit_jahr_neuInfo;
             RepoItemInfo _colgjhrdtbis_in_zeile_mit_jahr_neuInfo;
-            RepoItemInfo _zeile_mit_jahr_altInfo;
             RepoItemInfo _column0_in_zeile_mit_jahr_altInfo;
 
             /// <summary>
@@ -383,6 +409,7 @@ namespace B_JAHR_Schnelltest
                     base("Tabelle_510_530", "container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "2e68ec69-f51b-401f-a55e-05fa07c8df8a", "")
             {
                 _zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]", "", 5000, null, "9f3d7e7c-54fb-4889-b604-9de4855bd3ac");
+                _zeile_mit_jahr_altInfo = new RepoItemInfo(this, "Zeile_mit_Jahr_ALT", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]", "", 30000, null, "18601465-9521-4f8f-9ef1-e999067c6ddf");
                 _column0_in_zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'Column 0']", "", 30000, null, "f97fe9e1-8c8d-4c25-a5e0-1b9d8bdfad64");
                 _colgjhrbez_in_zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "ColGjhrBez_in_Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_bez']", "", 30000, null, "40e5a5cb-0812-4e82-a817-be7097013c95");
                 _colgjhrperivon_in_zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "ColGjhrPerivon_in_Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_perivon']", "", 30000, null, "99ee8fc8-0960-4bc3-8b1d-4efc56df687e");
@@ -391,7 +418,6 @@ namespace B_JAHR_Schnelltest
                 _colgjhrperibiskore_in_zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_peribis_kore']", "", 30000, null, "7e89bbe0-6b0b-4aa7-b995-5a1ecfec2d38");
                 _colgjhrdtvon_in_zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "ColGjhrDtvon_in_Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_dtvon']", "", 30000, null, "b24fa285-7726-4d8e-81e0-ff2ebedeadbc");
                 _colgjhrdtbis_in_zeile_mit_jahr_neuInfo = new RepoItemInfo(this, "ColGjhrDtbis_in_Zeile_mit_Jahr_NEU", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_dtbis']", "", 30000, null, "600aac77-2d07-4bf5-97da-972e9afefb89");
-                _zeile_mit_jahr_altInfo = new RepoItemInfo(this, "Zeile_mit_Jahr_ALT", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]", "", 30000, null, "18601465-9521-4f8f-9ef1-e999067c6ddf");
                 _column0_in_zeile_mit_jahr_altInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Jahr_ALT", "row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]/cell[@accessiblename~'Column 0']", "", 30000, null, "e7cdea55-dc36-403d-a315-9253ca18fd2b");
             }
 
@@ -440,6 +466,30 @@ namespace B_JAHR_Schnelltest
                 get
                 {
                     return _zeile_mit_jahr_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Zeile_mit_Jahr_ALT item.
+            /// </summary>
+            [RepositoryItem("18601465-9521-4f8f-9ef1-e999067c6ddf")]
+            public virtual Ranorex.Row Zeile_mit_Jahr_ALT
+            {
+                get
+                {
+                    return _zeile_mit_jahr_altInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Zeile_mit_Jahr_ALT item info.
+            /// </summary>
+            [RepositoryItemInfo("18601465-9521-4f8f-9ef1-e999067c6ddf")]
+            public virtual RepoItemInfo Zeile_mit_Jahr_ALTInfo
+            {
+                get
+                {
+                    return _zeile_mit_jahr_altInfo;
                 }
             }
 
@@ -632,30 +682,6 @@ namespace B_JAHR_Schnelltest
                 get
                 {
                     return _colgjhrdtbis_in_zeile_mit_jahr_neuInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Zeile_mit_Jahr_ALT item.
-            /// </summary>
-            [RepositoryItem("18601465-9521-4f8f-9ef1-e999067c6ddf")]
-            public virtual Ranorex.Row Zeile_mit_Jahr_ALT
-            {
-                get
-                {
-                    return _zeile_mit_jahr_altInfo.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Zeile_mit_Jahr_ALT item info.
-            /// </summary>
-            [RepositoryItemInfo("18601465-9521-4f8f-9ef1-e999067c6ddf")]
-            public virtual RepoItemInfo Zeile_mit_Jahr_ALTInfo
-            {
-                get
-                {
-                    return _zeile_mit_jahr_altInfo;
                 }
             }
 
@@ -862,6 +888,7 @@ namespace B_JAHR_Schnelltest
         {
             RepoItemInfo _labelmeldungstextInfo;
             RepoItemInfo _button0Info;
+            RepoItemInfo _button1Info;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -871,6 +898,7 @@ namespace B_JAHR_Schnelltest
             {
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "e547daf5-809f-44b2-b9dd-1c19c3692b84");
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "f76d2794-6c83-4991-a26e-6725c530c99e");
+                _button1Info = new RepoItemInfo(this, "Button1", "button[@controlname='button1']", "", 30000, null, "6230f4a6-781b-4779-8613-cbe8ab358e50");
             }
 
             /// <summary>
@@ -942,6 +970,30 @@ namespace B_JAHR_Schnelltest
                 get
                 {
                     return _button0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Button1 item.
+            /// </summary>
+            [RepositoryItem("6230f4a6-781b-4779-8613-cbe8ab358e50")]
+            public virtual Ranorex.Button Button1
+            {
+                get
+                {
+                    return _button1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button1 item info.
+            /// </summary>
+            [RepositoryItemInfo("6230f4a6-781b-4779-8613-cbe8ab358e50")]
+            public virtual RepoItemInfo Button1Info
+            {
+                get
+                {
+                    return _button1Info;
                 }
             }
         }

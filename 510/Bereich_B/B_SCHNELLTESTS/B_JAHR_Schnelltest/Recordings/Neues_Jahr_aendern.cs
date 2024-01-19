@@ -90,55 +90,79 @@ namespace B_JAHR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrBez_in_Zeile_mit_Jahr_NEU' at Center.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrBez_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(0));
-            repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrBez_in_Zeile_mit_Jahr_NEU.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEU' at Center.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(0));
+            repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEU.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(2));
             Keyboard.Press("0");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1'.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1'.", new RecordItemIndex(6));
             Keyboard.Press("1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivon_in_Zeile_mit_Jahr_NEUInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribis_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribis_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribis_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribis_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribis_in_Zeile_mit_Jahr_NEUInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(12));
             Keyboard.Press("0");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1'.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1'.", new RecordItemIndex(16));
             Keyboard.Press("1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(17));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(19));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEUInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEUInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.PbStandard1' at Center.", repo.Main_530_tblMain_510_frmMain.PbStandard1Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.PbStandard1' at Center.", repo.Main_530_tblMain_510_frmMain.PbStandard1Info, new RecordItemIndex(22));
             repo.Main_530_tblMain_510_frmMain.PbStandard1.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEUInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEU'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEUInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEUInfo, "Text", "1");
             
         }
