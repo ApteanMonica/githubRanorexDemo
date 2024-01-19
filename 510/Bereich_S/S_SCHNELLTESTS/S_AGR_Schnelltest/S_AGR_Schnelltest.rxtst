@@ -51,6 +51,40 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="41bb96c8-d120-43c4-b173-6fae7fe9a62a"
+			name="Loeschen_Artikelgruppe_Neu"
+			ref="54013246-4db6-4dfe-b075-e14b3855aa35"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELGRUPPE_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="9fd7fb9e-e0fd-4fb5-b309-5cb6ddd510fe"
+					variablename="ARTIKELGRUPPE_NEU">
+					</var>
+					<var
+					dataname="ARTIKELGRUPPE_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="ARTIKELGRUPPE_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4f4e808d-70f4-4a75-9c44-2ebed917043f"
+			name="Meldung_Loeschen_nicht_moeglich"
+			ref="6852b099-8dea-4a13-9573-da76c6f7828e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELGRUPPE_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="ARTIKELGRUPPE_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8c85fd11-2e5f-4872-affe-f7683f127410"
 			name="Neuanlage_Artikelgruppe"
 			ref="14b3f350-fdab-4068-a04f-4a22885d5501"
@@ -70,6 +104,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a"
+			name="Verwalten_Artikelgruppenarten_Aufrufart=_AGRA">
+			</testcase>
 			<setup
 			id="cc9627e5-ba03-483b-8c0c-f732e6006f4e"
 			name="setup">
@@ -83,6 +121,20 @@
 			name="CloseAUT"
 			ref="be97719e-0605-44d7-82c8-d07b77fac35d"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="dddbcb49-b275-47f6-a9f4-eadcd779a98a"
+			name="Aendern_Artikelgruppe_Neu"
+			ref="d1085941-ccb6-4570-9327-bc084f546add"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELGRUPPE_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="9fd7fb9e-e0fd-4fb5-b309-5cb6ddd510fe"
+					variablename="ARTIKELGRUPPE_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="e0d09f38-ffb6-49a1-917e-e10e768abc13"
@@ -115,6 +167,20 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f67c26e9-5acd-4774-b774-7eec1f99d13c"
+			name="Loeschen_Artikelgruppe_Alt"
+			ref="7dc1b3a5-db3f-49f6-94f1-25162cde604e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELGRUPPE_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="ARTIKELGRUPPE_ALT">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -138,6 +204,22 @@
 						id="8c85fd11-2e5f-4872-affe-f7683f127410"
 						name="Neuanlage_Artikelgruppe">
 						</testmodule>
+						<testmodule
+						id="dddbcb49-b275-47f6-a9f4-eadcd779a98a"
+						name="Aendern_Artikelgruppe_Neu">
+						</testmodule>
+						<testmodule
+						id="41bb96c8-d120-43c4-b173-6fae7fe9a62a"
+						name="Loeschen_Artikelgruppe_Neu">
+						</testmodule>
+						<testmodule
+						id="f67c26e9-5acd-4774-b774-7eec1f99d13c"
+						name="Loeschen_Artikelgruppe_Alt">
+						</testmodule>
+						<testmodule
+						id="4f4e808d-70f4-4a75-9c44-2ebed917043f"
+						name="Meldung_Loeschen_nicht_moeglich">
+						</testmodule>
 						<teardown
 						id="d1db6b3f-e7ab-4ded-bea2-ad02f7cf056d"
 						name="teardown">
@@ -146,6 +228,10 @@
 							name="CloseAUT">
 							</testmodule>
 						</teardown>
+					</testcase>
+					<testcase
+					id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a"
+					name="Verwalten_Artikelgruppenarten_Aufrufart=_AGRA">
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -159,6 +245,9 @@
 		name="TestRun">
 			<testcontainer
 			id="08d4bcb2-9c39-4df7-8c7e-6744898f39e6">
+			</testcontainer>
+			<testcontainer
+			id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a">
 			</testcontainer>
 			<testcontainer
 			id="e0d09f38-ffb6-49a1-917e-e10e768abc13">

@@ -109,6 +109,18 @@ name="S_AGR_SchnelltestRepository">
 				</item>
 				<folder
 				capname="row"
+				id="c42891d8-aa60-4f60-a31c-92fa64546bad"
+				isrooted="True"
+				name="Row_mit_Artikelgruppe_Alt"
+				refimgid="e81da17d-04a5-40f7-8e04-186b34903007"
+				searchtimeout="30000ms"
+				usecache="False">
+					<basepath>
+						/form[@controlname='tblArtikelgruppen']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELGRUPPE_ALT]
+					</basepath>
+				</folder>
+				<folder
+				capname="row"
 				id="9f7307f5-63df-4a14-902d-b5f44c27c453"
 				isrooted="True"
 				name="Row_mit_Variable_Artikelgruppe_Neu"
@@ -135,6 +147,16 @@ name="S_AGR_SchnelltestRepository">
 					searchtimeout="30000ms">
 						/form[@controlname='tblArtikelgruppen']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELGRUPPE_NEU]/cell[@accessiblename~'colAgr_bez']
 					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="b8046794-2e3b-406f-8940-99df0ef1755a"
+					name="ColAgrFaktol"
+					refimgid="32cc78a9-8046-4c99-94ba-44b0b5829398"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblArtikelgruppen']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELGRUPPE_NEU]/cell[@accessiblename~'colAgr_faktol']
+					</item>
 					<basepath>
 						/form[@controlname='tblArtikelgruppen']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELGRUPPE_NEU]
 					</basepath>
@@ -160,6 +182,76 @@ FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
 FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="eaee11aa-5952-45df-b361-f394bb7164eb"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="be5d2e9b-2454-4b06-a678-55aea2ac9b34"
+			name="ArtikelgruppenVerwalten"
+			refimgid="82032615-3abb-4253-a26d-f482cd65fa06"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="7c09bc02-b6b3-4b84-a33c-79fba57e9cae"
+			name="LabelMeldungstext"
+			refimgid="8f4f4655-c2c6-4951-9888-70e0a2ea058e"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="a070fbd0-ea15-4ad9-a3f4-57a48bdd2684"
+			name="Button0"
+			refimgid="bbff331e-06ff-4b4e-9f08-f9c11b1cef08"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="e434f0bb-09bc-4a88-9a0e-b0c27a2c5032"
+			name="Button1"
+			refimgid="60ef7e2e-6a57-4d93-8afa-9513c969715c"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -168,6 +260,11 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 		id="9fd7fb9e-e0fd-4fb5-b309-5cb6ddd510fe"
 		name="ARTIKELGRUPPE_NEU">
 			XX
+		</var>
+		<var
+		id="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+		name="ARTIKELGRUPPE_ALT">
+			EK															&#9;
 		</var>
 	</variables>
 </repository>

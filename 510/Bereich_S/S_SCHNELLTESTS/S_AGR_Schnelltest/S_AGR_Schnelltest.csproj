@@ -84,6 +84,54 @@
     <Compile Include="Program.cs">
       <id>13385ebe-299f-4823-9002-ea481e7bd634</id>
     </Compile>
+    <Compile Include="Recordings\Aendern_Artikelgruppe_Neu.cs">
+      <BoundTo>10befa7f-658c-48a8-aaca-6b1dab267ea3</BoundTo>
+      <DependentUpon>Aendern_Artikelgruppe_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>986e804e-90fd-4f55-9621-a66f2ef8a9f3</id>
+    </Compile>
+    <Compile Include="Recordings\Aendern_Artikelgruppe_Neu.UserCode.cs">
+      <BoundTo>10befa7f-658c-48a8-aaca-6b1dab267ea3</BoundTo>
+      <DependentUpon>Aendern_Artikelgruppe_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b2316306-190a-47f1-a193-74677c10aca9</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Artikelgruppe_Alt.cs">
+      <BoundTo>61451c39-d8a5-4c1a-8853-f3140bcb8206</BoundTo>
+      <DependentUpon>Loeschen_Artikelgruppe_Alt.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8ccfc3e5-2d6b-45a6-88d4-0f598bffa013</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Artikelgruppe_Alt.UserCode.cs">
+      <BoundTo>61451c39-d8a5-4c1a-8853-f3140bcb8206</BoundTo>
+      <DependentUpon>Loeschen_Artikelgruppe_Alt.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de0534ed-9b3c-49dd-9504-d41e29a47c8d</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Artikelgruppe_Neu.cs">
+      <BoundTo>3c747e38-3175-4f4a-bf79-ff54d2a85914</BoundTo>
+      <DependentUpon>Loeschen_Artikelgruppe_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>be530ce9-722a-480c-97ca-b3b6ea3d4b35</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Artikelgruppe_Neu.UserCode.cs">
+      <BoundTo>3c747e38-3175-4f4a-bf79-ff54d2a85914</BoundTo>
+      <DependentUpon>Loeschen_Artikelgruppe_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0856ef6-c8c8-4039-a162-b9cdc948160c</id>
+    </Compile>
+    <Compile Include="Recordings\Meldung_Loeschen_nicht_moeglich.cs">
+      <BoundTo>c43fc57d-796b-4ce0-97f6-57e4d46a2b46</BoundTo>
+      <DependentUpon>Meldung_Loeschen_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>42419e45-3f95-4bc4-a189-d342defa9b08</id>
+    </Compile>
+    <Compile Include="Recordings\Meldung_Loeschen_nicht_moeglich.UserCode.cs">
+      <BoundTo>c43fc57d-796b-4ce0-97f6-57e4d46a2b46</BoundTo>
+      <DependentUpon>Meldung_Loeschen_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a641199d-5430-4329-a4a6-c29b822c1828</id>
+    </Compile>
     <Compile Include="Recordings\Neuanlage_Artikelgruppe.cs">
       <BoundTo>93b66df2-5f25-4505-b5c0-a06a083c9af5</BoundTo>
       <DependentUpon>Neuanlage_Artikelgruppe.rxrec</DependentUpon>
@@ -130,6 +178,26 @@
   <ItemGroup>
     <None Include="app.config">
       <id>f8c3eff5-7a97-4804-b891-a3c0cb24f16f</id>
+    </None>
+    <None Include="Recordings\Aendern_Artikelgruppe_Neu.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>10befa7f-658c-48a8-aaca-6b1dab267ea3</id>
+      <recordtableid>d1085941-ccb6-4570-9327-bc084f546add</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_Artikelgruppe_Alt.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>61451c39-d8a5-4c1a-8853-f3140bcb8206</id>
+      <recordtableid>7dc1b3a5-db3f-49f6-94f1-25162cde604e</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_Artikelgruppe_Neu.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>3c747e38-3175-4f4a-bf79-ff54d2a85914</id>
+      <recordtableid>54013246-4db6-4dfe-b075-e14b3855aa35</recordtableid>
+    </None>
+    <None Include="Recordings\Meldung_Loeschen_nicht_moeglich.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>c43fc57d-796b-4ce0-97f6-57e4d46a2b46</id>
+      <recordtableid>6852b099-8dea-4a13-9573-da76c6f7828e</recordtableid>
     </None>
     <None Include="Recordings\Neuanlage_Artikelgruppe.rxrec">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
