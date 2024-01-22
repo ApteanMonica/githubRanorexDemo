@@ -27,6 +27,7 @@ namespace S_ADRDR_Schnelltest
     public partial class S_ADRDR_SchnelltestRepository : RepoGenBaseFolder
     {
         static S_ADRDR_SchnelltestRepository instance = new S_ADRDR_SchnelltestRepository();
+        S_ADRDR_SchnelltestRepositoryFolders.FrmMainAppFolder _frmmain;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_ADRDR_SchnelltestRepository element repository.
@@ -43,6 +44,7 @@ namespace S_ADRDR_Schnelltest
         public S_ADRDR_SchnelltestRepository() 
             : base("S_ADRDR_SchnelltestRepository", "/", null, 0, false, "fb28ab9c-fbfd-4d82-a833-2344fe5bc61d", ".\\RepositoryImages\\S_ADRDR_SchnelltestRepositoryfb28ab9c.rximgres")
         {
+            _frmmain = new S_ADRDR_SchnelltestRepositoryFolders.FrmMainAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace S_ADRDR_Schnelltest
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The FrmMain folder.
+        /// </summary>
+        [RepositoryFolder("31b2d2b5-ac04-4e0c-8aed-90f4b59c23c7")]
+        public virtual S_ADRDR_SchnelltestRepositoryFolders.FrmMainAppFolder FrmMain
+        {
+            get { return _frmmain; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace S_ADRDR_Schnelltest
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class S_ADRDR_SchnelltestRepositoryFolders
     {
+        /// <summary>
+        /// The FrmMainAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("31b2d2b5-ac04-4e0c-8aed-90f4b59c23c7")]
+        public partial class FrmMainAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100kundenlisteInfo;
+
+            /// <summary>
+            /// Creates a new FrmMain  folder.
+            /// </summary>
+            public FrmMainAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmMain", "/form[@controlname='frmMain']", parentFolder, 30000, null, true, "31b2d2b5-ac04-4e0c-8aed-90f4b59c23c7", "")
+            {
+                _titlebar100kundenlisteInfo = new RepoItemInfo(this, "TitleBar100Kundenliste", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "a0dd458e-74fb-4d80-b6ce-2e236d6cb3b9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("31b2d2b5-ac04-4e0c-8aed-90f4b59c23c7")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("31b2d2b5-ac04-4e0c-8aed-90f4b59c23c7")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Kundenliste item.
+            /// </summary>
+            [RepositoryItem("a0dd458e-74fb-4d80-b6ce-2e236d6cb3b9")]
+            public virtual Ranorex.TitleBar TitleBar100Kundenliste
+            {
+                get
+                {
+                    return _titlebar100kundenlisteInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Kundenliste item info.
+            /// </summary>
+            [RepositoryItemInfo("a0dd458e-74fb-4d80-b6ce-2e236d6cb3b9")]
+            public virtual RepoItemInfo TitleBar100KundenlisteInfo
+            {
+                get
+                {
+                    return _titlebar100kundenlisteInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
