@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ADRDR_Schnelltest
+namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The CloseAUT_Gruppenart recording.
     /// </summary>
-    [TestModule("0c3f21e6-415c-4cf1-b7a2-43cefd47226f", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
+    public partial class CloseAUT_Gruppenart : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the S_ADRDR_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
-        public static S_ADRDR_SchnelltestRepository repo = S_ADRDR_SchnelltestRepository.Instance;
+        public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public CloseAUT_Gruppenart()
         {
-            StartAutProcessIDVar = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static CloseAUT_Gruppenart Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _StartAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
-        /// </summary>
-        [TestVariable("945a4b32-a4d8-4406-a3e3-1e1d4d9d2694")]
-        public string StartAutProcessIDVar
-        {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
-        }
 
 #endregion
 
@@ -92,6 +79,9 @@ namespace S_ADRDR_Schnelltest
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, new Duration(0));
+            
         }
 
 #region Image Feature Data

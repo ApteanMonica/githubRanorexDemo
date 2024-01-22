@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ADRDR_Schnelltest
+namespace S_AGR_Schnelltest.Recordings
 {
-    public partial class StartAUT
+    public partial class Loeschen_Gruppenart_Neu
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

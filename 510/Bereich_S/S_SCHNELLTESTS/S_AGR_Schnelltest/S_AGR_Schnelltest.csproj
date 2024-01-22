@@ -96,6 +96,30 @@
       <UserCode>true</UserCode>
       <id>b2316306-190a-47f1-a193-74677c10aca9</id>
     </Compile>
+    <Compile Include="Recordings\Aendern_Gruppenart_Neu.cs">
+      <BoundTo>5b128bd6-4bd9-4bda-94f5-f5c1f6a5285e</BoundTo>
+      <DependentUpon>Aendern_Gruppenart_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af99e88e-8bf4-440a-8854-82bbfaca8331</id>
+    </Compile>
+    <Compile Include="Recordings\Aendern_Gruppenart_Neu.UserCode.cs">
+      <BoundTo>5b128bd6-4bd9-4bda-94f5-f5c1f6a5285e</BoundTo>
+      <DependentUpon>Aendern_Gruppenart_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d8c0cfd9-1def-49e1-a15b-1b703e60aeec</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_Gruppenart.cs">
+      <BoundTo>59ac9f62-b71c-4eed-adf6-1c8ff9143b42</BoundTo>
+      <DependentUpon>CloseAUT_Gruppenart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a03ade7-1707-45c8-94db-a9aa1eecd5ae</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_Gruppenart.UserCode.cs">
+      <BoundTo>59ac9f62-b71c-4eed-adf6-1c8ff9143b42</BoundTo>
+      <DependentUpon>CloseAUT_Gruppenart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>30f197d6-b0be-4d1a-a3c2-f1d4dea1cf20</id>
+    </Compile>
     <Compile Include="Recordings\Loeschen_Artikelgruppe_Alt.cs">
       <BoundTo>61451c39-d8a5-4c1a-8853-f3140bcb8206</BoundTo>
       <DependentUpon>Loeschen_Artikelgruppe_Alt.rxrec</DependentUpon>
@@ -119,6 +143,18 @@
       <DependentUpon>Loeschen_Artikelgruppe_Neu.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c0856ef6-c8c8-4039-a162-b9cdc948160c</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Gruppenart_Alt.cs">
+      <BoundTo>7fb975db-8ecf-4cac-b0ad-89613e09a504</BoundTo>
+      <DependentUpon>Loeschen_Gruppenart_Alt.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f8fa39b-9cd5-44a9-9933-57f5f0eef046</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Gruppenart_Alt.UserCode.cs">
+      <BoundTo>7fb975db-8ecf-4cac-b0ad-89613e09a504</BoundTo>
+      <DependentUpon>Loeschen_Gruppenart_Alt.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>df8c38da-6811-4988-b58e-ebfaa74aee1a</id>
     </Compile>
     <Compile Include="Recordings\Meldung_Loeschen_nicht_moeglich.cs">
       <BoundTo>c43fc57d-796b-4ce0-97f6-57e4d46a2b46</BoundTo>
@@ -144,29 +180,65 @@
       <UserCode>true</UserCode>
       <id>31b6ec11-7b2b-45ec-9041-8aa98e17b31c</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseAUT_Artikelgruppen.cs">
+      <DependentUpon>CloseAUT_Artikelgruppen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0293d9ba-576d-4e73-bd42-03298763ee9d</id>
       <BoundTo>41731ab4-69e3-4993-a668-a48df4641555</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseAUT_Artikelgruppen.UserCode.cs">
+      <DependentUpon>CloseAUT_Artikelgruppen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9fc624d7-08f7-4b45-8ec6-f057f58f544d</id>
       <BoundTo>41731ab4-69e3-4993-a668-a48df4641555</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Neuanlage_Gruppenart.cs">
+      <BoundTo>c18fe55e-ede4-4534-bb4f-58ebf2501eb5</BoundTo>
+      <DependentUpon>Neuanlage_Gruppenart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c4d10c3-34d3-4100-935b-dbbb22b0a5c2</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_Gruppenart.UserCode.cs">
+      <BoundTo>c18fe55e-ede4-4534-bb4f-58ebf2501eb5</BoundTo>
+      <DependentUpon>Neuanlage_Gruppenart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1690af22-f10d-452b-9054-52ad7498d4bd</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Gruppenart_Neu.cs">
+      <BoundTo>6a82a427-54f9-49f2-b337-edbbf2687603</BoundTo>
+      <DependentUpon>Loeschen_Gruppenart_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>731356f9-d4af-4cc2-ab31-f71fd71dd757</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Gruppenart_Neu.UserCode.cs">
+      <BoundTo>6a82a427-54f9-49f2-b337-edbbf2687603</BoundTo>
+      <DependentUpon>Loeschen_Gruppenart_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f84b83ba-e660-4a76-bea3-fe9b0202782b</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Artikelgruppen.cs">
+      <DependentUpon>StartAUT_Artikelgruppen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>3fa37f00-1edf-4488-87a6-3adaf15d9799</id>
       <BoundTo>5bbc04be-f8ef-45be-b654-331ab27f15bc</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\StartAUT_Artikelgruppen.UserCode.cs">
+      <DependentUpon>StartAUT_Artikelgruppen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>47114080-f30c-48c9-aa92-bca373f75775</id>
       <BoundTo>5bbc04be-f8ef-45be-b654-331ab27f15bc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Gruppenart.cs">
+      <BoundTo>087643f8-c0f9-4b5d-9737-7821896c948c</BoundTo>
+      <DependentUpon>StartAUT_Gruppenart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>125f03e8-b7cf-4386-8fa4-8d4ad8fd4f7d</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Gruppenart.UserCode.cs">
+      <BoundTo>087643f8-c0f9-4b5d-9737-7821896c948c</BoundTo>
+      <DependentUpon>StartAUT_Gruppenart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ecf9a62-b8c3-465a-8b97-122fe3abb44a</id>
     </Compile>
     <Compile Include="S_AGR_SchnelltestRepository.cs">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
@@ -184,6 +256,16 @@
       <id>10befa7f-658c-48a8-aaca-6b1dab267ea3</id>
       <recordtableid>d1085941-ccb6-4570-9327-bc084f546add</recordtableid>
     </None>
+    <None Include="Recordings\Aendern_Gruppenart_Neu.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>5b128bd6-4bd9-4bda-94f5-f5c1f6a5285e</id>
+      <recordtableid>0c720be5-00c3-4a13-92d0-7adce1fa70ab</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_Gruppenart.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>59ac9f62-b71c-4eed-adf6-1c8ff9143b42</id>
+      <recordtableid>957039da-3f9d-4cef-8152-379b5ecc18fd</recordtableid>
+    </None>
     <None Include="Recordings\Loeschen_Artikelgruppe_Alt.rxrec">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
       <id>61451c39-d8a5-4c1a-8853-f3140bcb8206</id>
@@ -193,6 +275,11 @@
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
       <id>3c747e38-3175-4f4a-bf79-ff54d2a85914</id>
       <recordtableid>54013246-4db6-4dfe-b075-e14b3855aa35</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_Gruppenart_Alt.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>7fb975db-8ecf-4cac-b0ad-89613e09a504</id>
+      <recordtableid>cebe5999-e491-4096-b285-603139f13baf</recordtableid>
     </None>
     <None Include="Recordings\Meldung_Loeschen_nicht_moeglich.rxrec">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
@@ -204,15 +291,30 @@
       <id>93b66df2-5f25-4505-b5c0-a06a083c9af5</id>
       <recordtableid>14b3f350-fdab-4068-a04f-4a22885d5501</recordtableid>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
+    <None Include="Recordings\CloseAUT_Artikelgruppen.rxrec">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
       <id>41731ab4-69e3-4993-a668-a48df4641555</id>
       <recordtableid>be97719e-0605-44d7-82c8-d07b77fac35d</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT.rxrec">
+    <None Include="Recordings\Neuanlage_Gruppenart.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>c18fe55e-ede4-4534-bb4f-58ebf2501eb5</id>
+      <recordtableid>da9962df-ee55-472b-bb34-f172db4b1aa7</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_Gruppenart_Neu.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>6a82a427-54f9-49f2-b337-edbbf2687603</id>
+      <recordtableid>79f7e022-58d7-452a-bdf3-b13cb7ae1fb2</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_Artikelgruppen.rxrec">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
       <id>5bbc04be-f8ef-45be-b654-331ab27f15bc</id>
       <recordtableid>dfb34834-6634-4ece-9f53-f31c6192dcab</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_Gruppenart.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>087643f8-c0f9-4b5d-9737-7821896c948c</id>
+      <recordtableid>87d51aee-40ea-49f4-bda9-2107208fac34</recordtableid>
     </None>
     <None Include="S_AGR_SchnelltestRepository.rximg">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>

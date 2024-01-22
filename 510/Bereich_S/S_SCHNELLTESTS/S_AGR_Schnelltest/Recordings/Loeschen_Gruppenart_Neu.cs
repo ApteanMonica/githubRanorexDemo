@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ADRDR_Schnelltest
+namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Loeschen_Gruppenart_Neu recording.
     /// </summary>
-    [TestModule("89f69e39-a795-48ed-9ddb-4d95af6479be", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("79f7e022-58d7-452a-bdf3-b13cb7ae1fb2", ModuleType.Recording, 1)]
+    public partial class Loeschen_Gruppenart_Neu : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the S_ADRDR_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
-        public static S_ADRDR_SchnelltestRepository repo = S_ADRDR_SchnelltestRepository.Instance;
+        public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Loeschen_Gruppenart_Neu instance = new Loeschen_Gruppenart_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Loeschen_Gruppenart_Neu()
         {
-            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Loeschen_Gruppenart_Neu Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _CloseAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
-        /// </summary>
-        [TestVariable("1dd690aa-34f3-4e47-8c36-c9aec70274d3")]
-        public string CloseAutProcessIDVar
-        {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
-        }
 
 #endregion
 

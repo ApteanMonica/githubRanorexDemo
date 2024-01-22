@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="89f69e39-a795-48ed-9ddb-4d95af6479be"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ADRDR_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="1dd690aa-34f3-4e47-8c36-c9aec70274d3"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="142b3386-1901-4415-b980-b0598863be2a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a0dd458e-74fb-4d80-b6ce-2e236d6cb3b9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="0cae9e57-d23a-404b-afe9-811648e4830d"
+	name="S_ADRDR_SchnelltestRepository"
+	relativepath="..\S_ADRDR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ADRDR_SchnelltestRepository"
+		namespace="S_ADRDR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="fb28ab9c-fbfd-4d82-a833-2344fe5bc61d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_Artikelgruppen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

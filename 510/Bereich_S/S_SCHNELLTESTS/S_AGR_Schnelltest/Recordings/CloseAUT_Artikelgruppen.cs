@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ADRDR_Schnelltest
+namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The CloseAUT_Artikelgruppen recording.
     /// </summary>
-    [TestModule("5fd281f0-3fe2-4437-8c21-9e38a8d71e7d", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("be97719e-0605-44d7-82c8-d07b77fac35d", ModuleType.Recording, 1)]
+    public partial class CloseAUT_Artikelgruppen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the S_ADRDR_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
-        public static S_ADRDR_SchnelltestRepository repo = S_ADRDR_SchnelltestRepository.Instance;
+        public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static CloseAUT_Artikelgruppen instance = new CloseAUT_Artikelgruppen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public CloseAUT_Artikelgruppen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static CloseAUT_Artikelgruppen Instance
         {
             get { return instance; }
         }
@@ -73,12 +73,15 @@ namespace S_ADRDR_Schnelltest
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppen.TitleBar100Artikelgruppen'.", repo.TblArtikelgruppen.TitleBar100ArtikelgruppenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblArtikelgruppen.TitleBar100Artikelgruppen, 1000);
+            
         }
 
 #region Image Feature Data

@@ -24,29 +24,29 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Aendern_Gruppenart_Neu recording.
     /// </summary>
-    [TestModule("be97719e-0605-44d7-82c8-d07b77fac35d", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("0c720be5-00c3-4a13-92d0-7adce1fa70ab", ModuleType.Recording, 1)]
+    public partial class Aendern_Gruppenart_Neu : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Aendern_Gruppenart_Neu instance = new Aendern_Gruppenart_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Aendern_Gruppenart_Neu()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Aendern_Gruppenart_Neu Instance
         {
             get { return instance; }
         }
@@ -79,9 +79,6 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppen.TitleBar100Artikelgruppen'.", repo.TblArtikelgruppen.TitleBar100ArtikelgruppenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppen.TitleBar100Artikelgruppen, 1000);
-            
         }
 
 #region Image Feature Data

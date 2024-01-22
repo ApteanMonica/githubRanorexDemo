@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_AGR_Schnelltest.Recordings
+namespace S_ADRDR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The StartAUT recording.
     /// </summary>
-    [TestModule("dfb34834-6634-4ece-9f53-f31c6192dcab", ModuleType.Recording, 1)]
+    [TestModule("0c3f21e6-415c-4cf1-b7a2-43cefd47226f", ModuleType.Recording, 1)]
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_ADRDR_Schnelltest.S_ADRDR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
+        public static global::S_ADRDR_Schnelltest.S_ADRDR_SchnelltestRepository repo = global::S_ADRDR_Schnelltest.S_ADRDR_SchnelltestRepository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -42,7 +42,7 @@ namespace S_AGR_Schnelltest.Recordings
         public StartAUT()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_AGR = "S_ADR Aufrurf=AGR";
+            Programm_ADRDR = "S_ADRDR";
         }
 
         /// <summary>
@@ -60,23 +60,23 @@ namespace S_AGR_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("9aa19a1b-6ae4-438f-bc0c-ab62e15d3a27")]
+        [TestVariable("945a4b32-a4d8-4406-a3e3-1e1d4d9d2694")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
         }
 
-        string _Programm_AGR;
+        string _Programm_ADRDR;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_AGR.
+        /// Gets or sets the value of variable Programm_ADRDR.
         /// </summary>
-        [TestVariable("10ed3ea8-8bfb-4cd6-8ae4-ed37822ccc87")]
-        public string Programm_AGR
+        [TestVariable("74a88095-e164-46a8-86f3-1573da188950")]
+        public string Programm_ADRDR
         {
-            get { return _Programm_AGR; }
-            set { _Programm_AGR = value; }
+            get { return _Programm_ADRDR; }
+            set { _Programm_ADRDR = value; }
         }
 
 #endregion
@@ -105,14 +105,14 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_AGR in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_AGR, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_ADRDR in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_ADRDR, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppen.TitleBar100Artikelgruppen'", repo.TblArtikelgruppen.TitleBar100ArtikelgruppenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblArtikelgruppen.TitleBar100ArtikelgruppenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100Kundenliste'", repo.FrmMain.TitleBar100KundenlisteInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmMain.TitleBar100KundenlisteInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Artikelgruppen') on item 'TblArtikelgruppen.TitleBar100Artikelgruppen'.", repo.TblArtikelgruppen.TitleBar100ArtikelgruppenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblArtikelgruppen.TitleBar100ArtikelgruppenInfo, "Text", "Artikelgruppen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kundenliste') on item 'FrmMain.TitleBar100Kundenliste'.", repo.FrmMain.TitleBar100KundenlisteInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmMain.TitleBar100KundenlisteInfo, "Text", "Kundenliste");
             
         }
 

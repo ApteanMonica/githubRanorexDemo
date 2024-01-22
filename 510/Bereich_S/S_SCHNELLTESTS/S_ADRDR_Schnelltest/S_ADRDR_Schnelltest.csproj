@@ -81,44 +81,44 @@
     <Compile Include="AssemblyInfo.cs">
       <id>62103ca9-086b-4428-850e-889d3210f080</id>
     </Compile>
-    <Compile Include="CloseAUT.cs">
-      <BoundTo>99c6e34e-7576-4c52-b35a-efd06d8cabdb</BoundTo>
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0ac5ba3e-2880-4931-b987-bc4f82679d60</id>
-    </Compile>
-    <Compile Include="CloseAUT.UserCode.cs">
-      <BoundTo>99c6e34e-7576-4c52-b35a-efd06d8cabdb</BoundTo>
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>94c9c928-9dfb-4500-a1f8-675388ecc2e4</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>0156daf8-325f-4bdf-9b72-f633f31cddb4</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>10d7991f-43a3-40d1-a141-439b2726049f</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>468e5410-6099-4642-8153-3ea22734a6ae</id>
+      <id>0ac5ba3e-2880-4931-b987-bc4f82679d60</id>
+      <BoundTo>99c6e34e-7576-4c52-b35a-efd06d8cabdb</BoundTo>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>10d7991f-43a3-40d1-a141-439b2726049f</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>b9571dfa-c360-43c0-b9d6-b189619c6561</id>
+      <id>94c9c928-9dfb-4500-a1f8-675388ecc2e4</id>
+      <BoundTo>99c6e34e-7576-4c52-b35a-efd06d8cabdb</BoundTo>
     </Compile>
-    <Compile Include="StartAUT.cs">
-      <BoundTo>a3baa66f-faf9-4a73-bb47-4151350f13ec</BoundTo>
+    <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>b425b9a3-01b6-4c8c-b8c8-59d45e447f69</id>
-    </Compile>
-    <Compile Include="StartAUT.UserCode.cs">
       <BoundTo>a3baa66f-faf9-4a73-bb47-4151350f13ec</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9da67cd5-dcee-4acf-93e9-bca47cdd6f95</id>
+      <BoundTo>a3baa66f-faf9-4a73-bb47-4151350f13ec</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Lieferantenliste.cs">
+      <BoundTo>5dfbb8ea-1656-4ced-a075-59179abd6b0e</BoundTo>
+      <DependentUpon>StartAUT_Lieferantenliste.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9805162-5714-4f98-9775-d6a621a9054c</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Lieferantenliste.UserCode.cs">
+      <BoundTo>5dfbb8ea-1656-4ced-a075-59179abd6b0e</BoundTo>
+      <DependentUpon>StartAUT_Lieferantenliste.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b0d369a-f0ca-423a-893b-daf3583674b5</id>
     </Compile>
     <Compile Include="S_ADRDR_SchnelltestRepository.cs">
       <BoundTo>66b5d555-7cb8-4804-b97b-7d4ddb807432</BoundTo>
@@ -131,20 +131,20 @@
     <None Include="app.config">
       <id>b42ed537-2dbc-4d54-9763-6da4d827d6d8</id>
     </None>
-    <None Include="CloseAUT.rxrec">
+    <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>66b5d555-7cb8-4804-b97b-7d4ddb807432</BoundTo>
       <id>99c6e34e-7576-4c52-b35a-efd06d8cabdb</id>
       <recordtableid>89f69e39-a795-48ed-9ddb-4d95af6479be</recordtableid>
     </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>66b5d555-7cb8-4804-b97b-7d4ddb807432</BoundTo>
-      <id>10d7991f-43a3-40d1-a141-439b2726049f</id>
-      <recordtableid>5fd281f0-3fe2-4437-8c21-9e38a8d71e7d</recordtableid>
-    </None>
-    <None Include="StartAUT.rxrec">
+    <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>66b5d555-7cb8-4804-b97b-7d4ddb807432</BoundTo>
       <id>a3baa66f-faf9-4a73-bb47-4151350f13ec</id>
       <recordtableid>0c3f21e6-415c-4cf1-b7a2-43cefd47226f</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_Lieferantenliste.rxrec">
+      <BoundTo>66b5d555-7cb8-4804-b97b-7d4ddb807432</BoundTo>
+      <id>5dfbb8ea-1656-4ced-a075-59179abd6b0e</id>
+      <recordtableid>5d40eb20-4777-4908-be24-a816b6791cd1</recordtableid>
     </None>
     <None Include="S_ADRDR_SchnelltestRepository.rximg">
       <BoundTo>66b5d555-7cb8-4804-b97b-7d4ddb807432</BoundTo>
@@ -167,6 +167,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>ec1bf03b-b7a8-4e60-8e96-c1519afa7a5c</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>365959bc-cb04-4567-8cc3-a2cf0805462e</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

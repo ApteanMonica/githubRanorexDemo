@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="957039da-3f9d-4cef-8152-379b5ecc18fd"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_Gruppenart"
+	namespace="S_AGR_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ca7bea91-cb18-4934-8a25-6bbfe4758ec0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="358ef284-3290-470e-9a62-131eb7cefd37"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="10"
+				prefcap="titlebar"
+				rect="528,344,881,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Gruppenarten
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Gruppenarten
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblArtikelgruppenarten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="9a3dfce6-2dcc-4725-a77e-51e6bfd70495"
+	name="S_AGR_SchnelltestRepository"
+	relativepath="..\S_AGR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_AGR_SchnelltestRepository"
+		namespace="S_AGR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="5277464c-e22e-4f65-9dd6-eb62008456a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_Artikelgruppenarten.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

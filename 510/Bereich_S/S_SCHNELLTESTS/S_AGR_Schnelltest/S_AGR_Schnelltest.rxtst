@@ -31,8 +31,14 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			id="11eb68fb-ea62-47fc-adad-5d860e85bc91"
+			name="Aendern_Gruppenart_Neu"
+			ref="0c720be5-00c3-4a13-92d0-7adce1fa70ab"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="153b70e9-27fa-45e9-9bf7-9957282b4c19"
-			name="StartAUT"
+			name="StartAUT_Artikelgruppen"
 			ref="dfb34834-6634-4ece-9f53-f31c6192dcab"
 			type="Recording">
 				<databinding>
@@ -49,6 +55,22 @@
 					variablename="Startfile">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="2fed095b-186c-498d-ad21-58d6bbc68889"
+			name="Loeschen_Gruppenart_Alt"
+			ref="cebe5999-e491-4096-b285-603139f13baf"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="389a5471-193f-450a-9acc-f94d740104c0"
+			name="setup">
+			</setup>
+			<testmodule
+			id="402b7c6e-f32e-4909-a6ad-a92448987c88"
+			name="CloseAUT_Gruppenart"
+			ref="957039da-3f9d-4cef-8152-379b5ecc18fd"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="41bb96c8-d120-43c4-b173-6fae7fe9a62a"
@@ -85,6 +107,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="62ac126b-0223-4d14-8504-9ced64c508ac"
+			name="StartAUT_Gruppenart"
+			ref="87d51aee-40ea-49f4-bda9-2107208fac34"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_Artikelgruppenarten"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="aa35726d-1042-4315-a987-d2c86a9e5cac"
+					variablename="Programm_Artikelgruppenarten">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="fba09b35-5ea5-4588-bba7-73a871de7f0a"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8c85fd11-2e5f-4872-affe-f7683f127410"
 			name="Neuanlage_Artikelgruppe"
 			ref="14b3f350-fdab-4068-a04f-4a22885d5501"
@@ -104,10 +146,40 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="a8f7946a-9ba5-4135-a4d3-c753611f5f92"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a"
-			name="Verwalten_Artikelgruppenarten_Aufrufart=_AGRA">
+			name="Verwalten_Artikelgruppenarten_Aufrufart=AGRA">
 			</testcase>
+			<testmodule
+			id="ca8dee5c-a68d-44e8-a073-9e7f277985e9"
+			name="Loeschen_Gruppenart_Neu"
+			ref="79f7e022-58d7-452a-bdf3-b13cb7ae1fb2"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cb38816f-9502-4fd6-bce5-3da68403765a"
+			name="Neuanlage_Gruppenart"
+			ref="da9962df-ee55-472b-bb34-f172db4b1aa7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="22ec1b4d-b55c-4f82-b521-5393a3acd11c"
+					variablename="GRUPPENART_NEU">
+					</var>
+					<var
+					dataname="GRUPPENART_NEU_BEZEICHNUNG"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="893bf7c1-3237-40e6-9e20-ab5e42cbfff1"
+					variablename="GRUPPENART_NEU_BEZEICHNUNG">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="cc9627e5-ba03-483b-8c0c-f732e6006f4e"
 			name="setup">
@@ -118,7 +190,7 @@
 			</teardown>
 			<testmodule
 			id="d1ec8f67-d810-4278-8ccf-ca5c7ddf10e2"
-			name="CloseAUT"
+			name="CloseAUT_Artikelgruppen"
 			ref="be97719e-0605-44d7-82c8-d07b77fac35d"
 			type="Recording">
 			</testmodule>
@@ -165,6 +237,26 @@
 					name="ARTIKELBEZEICHNUNG_ALT"
 					value="Bedarfsanforderung Einkauf">
 					</param>
+					<param
+					name="Programm_Artikelgruppenarten"
+					value="S_AGR /Auruf=AGRA">
+					</param>
+					<param
+					name="GRUPPENART_NEU"
+					value="X">
+					</param>
+					<param
+					name="GRUPPENART_NEU_BEZEICHNUNG"
+					value="Testgruppenart BAR">
+					</param>
+					<param
+					name="GRUPPENART_ALT"
+					value="BA">
+					</param>
+					<param
+					name="GRUPPENART_ALT_BEZEICHNUNG"
+					value="Bedarfsanforderung">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -197,7 +289,7 @@
 						name="setup">
 							<testmodule
 							id="153b70e9-27fa-45e9-9bf7-9957282b4c19"
-							name="StartAUT">
+							name="StartAUT_Artikelgruppen">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -225,13 +317,45 @@
 						name="teardown">
 							<testmodule
 							id="d1ec8f67-d810-4278-8ccf-ca5c7ddf10e2"
-							name="CloseAUT">
+							name="CloseAUT_Artikelgruppen">
 							</testmodule>
 						</teardown>
 					</testcase>
 					<testcase
 					id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a"
-					name="Verwalten_Artikelgruppenarten_Aufrufart=_AGRA">
+					name="Verwalten_Artikelgruppenarten_Aufrufart=AGRA">
+						<setup
+						id="389a5471-193f-450a-9acc-f94d740104c0"
+						name="setup">
+							<testmodule
+							id="62ac126b-0223-4d14-8504-9ced64c508ac"
+							name="StartAUT_Gruppenart">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="cb38816f-9502-4fd6-bce5-3da68403765a"
+						name="Neuanlage_Gruppenart">
+						</testmodule>
+						<testmodule
+						id="11eb68fb-ea62-47fc-adad-5d860e85bc91"
+						name="Aendern_Gruppenart_Neu">
+						</testmodule>
+						<testmodule
+						id="ca8dee5c-a68d-44e8-a073-9e7f277985e9"
+						name="Loeschen_Gruppenart_Neu">
+						</testmodule>
+						<testmodule
+						id="2fed095b-186c-498d-ad21-58d6bbc68889"
+						name="Loeschen_Gruppenart_Alt">
+						</testmodule>
+						<teardown
+						id="a8f7946a-9ba5-4135-a4d3-c753611f5f92"
+						name="teardown">
+							<testmodule
+							id="402b7c6e-f32e-4909-a6ad-a92448987c88"
+							name="CloseAUT_Gruppenart">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace S_AGR_Schnelltest.Recordings
 {
-    public partial class CloseAUT
+    public partial class CloseAUT_Gruppenart
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
