@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f37d1352-0221-4058-8f9d-69185e3ecc7e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_AUFCHK_Schnelltest">
+	</codegen>
+	<variables>
+		<var
+		id="e8b2eafa-b2b0-466b-a8ae-519a5fab03f1"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="9c4379ad-0155-4c40-aa0c-e821f11e1f25">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="4f41d08d-b5d6-4c19-944a-9238e76c2498"
+	name="V_AUFCHK_SchnelltestRepository"
+	relativepath="V_AUFCHK_SchnelltestRepository.rxrep">
+		<codegen
+		classname="V_AUFCHK_SchnelltestRepository"
+		namespace="V_AUFCHK_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="a1c9bc25-8880-4c8e-a234-cf3767ecb6f4"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="101e9de4-96ec-415b-b120-142ef997a262"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="V_AUFCHK_Schnelltest">
+	</codegen>
+	<variables>
+		<var
+		id="4e08d64b-9151-4a27-bfef-4b1a69b9c6ab"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Windows\explorer.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="4f41d08d-b5d6-4c19-944a-9238e76c2498"
+	name="V_AUFCHK_SchnelltestRepository"
+	relativepath="V_AUFCHK_SchnelltestRepository.rxrep">
+		<codegen
+		classname="V_AUFCHK_SchnelltestRepository"
+		namespace="V_AUFCHK_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="a1c9bc25-8880-4c8e-a234-cf3767ecb6f4"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
