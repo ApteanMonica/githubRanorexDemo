@@ -30,27 +30,15 @@ mode="Global">
 		</var>
 		<var
 		id="aa0f31f4-bec7-4a59-964e-59820c789bb6"
-		name="Uhrzeit_Stunde_Minute">
+		name="Systemzeit">
 		</var>
 		<var
 		id="f7105869-9003-4723-8bff-6582f2e186b4"
-		name="Uhrzeit_plus_1Minute">
-		</var>
-		<var
-		id="13218d80-1cc5-49e9-a7c5-a1ad506f313a"
-		name="Uhrzeit_plus_3Minuten">
-		</var>
-		<var
-		id="972aa2b9-13c9-412d-b643-200363de7534"
-		name="Uhrzeit_plus_2Minuten">
+		name="Systemzeit_plus_1_Minute">
 		</var>
 		<var
 		id="eb9c0bab-2b8d-41ce-892d-9d40b35bd3b8"
-		name="Einlesen_Uhrzeit">
-		</var>
-		<var
-		id="e13a4f13-9282-478d-953c-122876268d19"
-		name="angepasste_Uhrzeit_einlesen">
+		name="Stempelzeit_Start_Pause">
 		</var>
 	</variables>
 	<recorditems>
@@ -118,6 +106,35 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Systemzeit">
+				</binding>
+			</bindings>
+			<arguments
+			id="fdf616c1-c7de-4bd6-81fc-d56d66a3865e">
+				<argument
+				argname="expectedFormat"
+				id="9a17d95a-7478-4ed1-bc52-fc50c4c59b9e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HH:mm
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4024,48 +4041,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<userrecorditem
-		classname="SystemLibrary"
+		<WaitForRecordItem
 		enabled="True"
-		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="False"
+		searchpropertyid="2a265f89-d44b-4a34-9b1c-ab33d9b46631"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="Uhrzeit_Stunde_Minute">
-				</binding>
-			</bindings>
-			<arguments
-			id="fdf616c1-c7de-4bd6-81fc-d56d66a3865e">
-				<argument
-				argname="expectedFormat"
-				id="9a17d95a-7478-4ed1-bc52-fc50c4c59b9e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						HH:mm
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="True"
-		searchpropertyid="7ddfe51f-8d3d-443c-b683-9b4c4fd0d405">
-			<comment>
-				continue on fail (Minutenüberschneidung bei Uhrzeit Überprüfung
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_Stunde_Minute">
-				</binding>
 			</bindings>
 			<info
 			id="079eeaad-ef96-48b0-8e31-5af03785f782"
@@ -4076,18 +4060,13 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<getvaluerecorditem
 		attrname="Text"
 		enabled="True"
 		optional="False"
 		searchpropertyid="ab110f06-baa0-4d45-a0d8-9be00c7ff51b"
-		varname="Einlesen_Uhrzeit">
+		varname="Stempelzeit_Start_Pause">
 			<comment>
 			</comment>
 			<bindings>
@@ -4114,15 +4093,15 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="angepasste_Uhrzeit_einlesen">
+				variable="Stempelzeit_Start_Pause">
 				</binding>
 			</bindings>
 			<arguments
-			id="70e63189-14ca-4ecf-89d8-8a382853e5ef">
+			id="18fc0a08-533b-43a3-ae04-12449d571c0e">
 				<argument
 				argname="date"
-				id="690e3145-586a-4f3e-b425-eee7c76a8c88"
-				variable="Einlesen_Uhrzeit">
+				id="9b1682d7-a171-49da-a87f-d556f3cf06d2"
+				variable="Stempelzeit_Start_Pause">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4131,7 +4110,7 @@ mode="Global">
 				</argument>
 				<argument
 				argname="expectedFormat"
-				id="0f07d993-94a2-4e02-ad88-bcf87be4b73c">
+				id="b41a778c-3fd1-4ba0-a6dc-5291deb38d9b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4153,7 +4132,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Uhrzeit_plus_1Minute">
+				variable="Systemzeit_plus_1_Minute">
 				</binding>
 			</bindings>
 			<arguments
@@ -4161,7 +4140,7 @@ mode="Global">
 				<argument
 				argname="date"
 				id="432bd666-2c1f-4494-b2da-385a817def1b"
-				variable="Uhrzeit_Stunde_Minute">
+				variable="Systemzeit">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4216,7 +4195,7 @@ mode="Global">
 				<argument
 				argname="variable"
 				id="f7648f33-f2d7-4729-a0a1-78e2e3b02680"
-				variable="angepasste_Uhrzeit_einlesen">
+				variable="Stempelzeit_Start_Pause">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4226,7 +4205,7 @@ mode="Global">
 				<argument
 				argname="var1"
 				id="86d89f78-eefd-4792-b129-e9ccdc3f1ca1"
-				variable="Uhrzeit_Stunde_Minute">
+				variable="Systemzeit">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4236,7 +4215,7 @@ mode="Global">
 				<argument
 				argname="var2"
 				id="9dffee0d-ee21-460f-ab09-20e6e833fa8f"
-				variable="Uhrzeit_plus_1Minute">
+				variable="Systemzeit_plus_1_Minute">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4245,6 +4224,54 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5e3c3ccd-f31b-436c-99d9-1066c5e95276">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Systemzeit">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="c74f9d59-6085-4362-b8c7-ee42203bb20b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Systemzeit_plus_1_Minute">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="2d72ad42-71c5-4d24-a744-bd49487b37df">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Stempelzeit_Start_Pause">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -4272,90 +4299,6 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="False"
-		searchpropertyid="7e6416bf-c4d7-47a4-a8a9-7d62152a2ff0">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_plus_1Minute">
-				</binding>
-			</bindings>
-			<info
-			id="68a1ebdd-7c65-439e-8a86-8c909ec8aac1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUhr_dtbeginn Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="False"
-		searchpropertyid="7e6416bf-c4d7-47a4-a8a9-7d62152a2ff0">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_plus_2Minuten">
-				</binding>
-			</bindings>
-			<info
-			id="68a1ebdd-7c65-439e-8a86-8c909ec8aac1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUhr_dtbeginn Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="False"
-		searchpropertyid="7e6416bf-c4d7-47a4-a8a9-7d62152a2ff0">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_plus_3Minuten">
-				</binding>
-			</bindings>
-			<info
-			id="68a1ebdd-7c65-439e-8a86-8c909ec8aac1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUhr_dtbeginn Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
 			</matchvalue>
 		</validationitem>
 	</recorditems>
