@@ -53,6 +53,16 @@ namespace S_AGR_Schnelltest.Recordings
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPENART_NEU.
+        /// </summary>
+        [TestVariable("fb8c8f36-075a-4b4a-bad4-7133110574ed")]
+        public string GRUPPENART_NEU
+        {
+            get { return repo.GRUPPENART_NEU; }
+            set { repo.GRUPPENART_NEU = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,25 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu' at Center.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.SelfInfo, new RecordItemIndex(0));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.Self.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.SelfInfo, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessSave' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
+            repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(3));
+            repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.SelfInfo, new RecordItemIndex(5));
+            Validate.NotExists(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.SelfInfo);
+            
         }
 
 #region Image Feature Data

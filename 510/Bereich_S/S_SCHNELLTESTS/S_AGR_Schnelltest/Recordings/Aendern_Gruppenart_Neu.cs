@@ -53,6 +53,16 @@ namespace S_AGR_Schnelltest.Recordings
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPENART_NEU.
+        /// </summary>
+        [TestVariable("fb8c8f36-075a-4b4a-bad4-7133110574ed")]
+        public string GRUPPENART_NEU
+        {
+            get { return repo.GRUPPENART_NEU; }
+            set { repo.GRUPPENART_NEU = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,31 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnung' at Center.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungInfo, new RecordItemIndex(0));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnung.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnung'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungInfo, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnung);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Tab}'.", new RecordItemIndex(2));
+            Keyboard.Press("1{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessSave' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(3));
+            repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(4));
+            repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(5));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnung'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungInfo, "Text", "1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourValue') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBez'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBezInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBezInfo, "Text", "yourValue");
+            
         }
 
 #region Image Feature Data
