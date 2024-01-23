@@ -113,17 +113,23 @@ namespace B_BUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '20' with focus on 'MdiBuch.FrmS.DfBubeBektnr1'.", repo.MdiBuch.FrmS.DfBubeBektnr1Info, new RecordItemIndex(6));
             repo.MdiBuch.FrmS.DfBubeBektnr1.PressKeys("20");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(9));
             Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(10));
             repo.DlgMessageBox.SelfInfo.WaitForExists(60000);
             
             // Leerzeichen in Meldung in 510 ab SP14
-            Report.Log(ReportLevel.Info, "Validation", "Leerzeichen in Meldung in 510 ab SP14\r\nValidating AttributeRegex (Text~'(Buchung  OK ?)|(Buchung OK ?)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Leerzeichen in Meldung in 510 ab SP14\r\nValidating AttributeRegex (Text~'(Buchung  OK ?)|(Buchung OK ?)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(11));
             Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(Buchung  OK ?)|(Buchung OK ?)"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(12));
             repo.DlgMessageBox.Button0.Click();
             
         }

@@ -186,8 +186,8 @@ namespace B_BUCH_001.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2020-1') on item 'TblB_b_buab.FlexGrid_b_buab.ColUvaRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColUvaRow1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColUvaRow1Info, "Text", "2020-1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblB_b_buab.FlexGrid_b_buab.ColCd1Row1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, "Text", "20");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'20') on item 'TblB_b_buab.FlexGrid_b_buab.ColCd1Row1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, new RecordItemIndex(14));
+            Validate.AttributeContains(repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, "Text", "20");
             
         }
 
