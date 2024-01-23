@@ -133,32 +133,29 @@ namespace B_JAHR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Main_530_tblMain_510_frmMain.PbCommonLaden' at Center.", repo.Main_530_tblMain_510_frmMain.PbCommonLadenInfo, new RecordItemIndex(13));
             repo.Main_530_tblMain_510_frmMain.PbCommonLaden.Click();
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
-                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nSollen die Änderungen gespeichert werden?", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(14)); }
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(14));
+            Delay.Duration(2000, false);
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(15));
-                repo.DlgMessageBox.Button1.Click();
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
+                //Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nSollen die Änderungen gespeichert werden?", null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
-            try {
-                Report.Log(ReportLevel.Info, "Delay", "(Optional Action)\r\nWaiting for 2s.", new RecordItemIndex(16));
-                Delay.Duration(2000, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(16)); }
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'n'.", new RecordItemIndex(16));
+            Keyboard.Press("n");
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(17));
+            Delay.Duration(2000, false);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
-                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nSollen die Änderungen gespeichert werden?", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(18));
-                repo.DlgMessageBox.Button1.Click();
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(18));
+                //Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nSollen die Änderungen gespeichert werden?", null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'17\t2017\t\t\t\t\t01.01.2017\t31.12.2017') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALT'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'n'.", new RecordItemIndex(19));
+            Keyboard.Press("n");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'17\t2017\t\t\t\t\t01.01.2017\t31.12.2017') on item 'Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALT'.", repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, new RecordItemIndex(20));
             Validate.AttributeContains(repo.Main_530_tblMain_510_frmMain.Tabelle_510_530.Zeile_mit_Jahr_ALTInfo, "Text", "17\t2017\t\t\t\t\t01.01.2017\t31.12.2017");
             
         }
