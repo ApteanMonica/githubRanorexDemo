@@ -297,6 +297,64 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6bf936af-0be5-4954-9c20-6467bc4f63a4">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchName"
+				variable="GRUPPENART_NEU">
+				</binding>
+			</bindings>
+			<info
+			id="0aeacf4d-f17d-4bf0-bf14-3d12bad7eb0c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblArtikelgruppenarten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$GRUPPENART_NEU]/cell[@accessiblename~'colAgra_cd']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a2b774e7-6d4f-46ee-b1aa-1ad69265de75">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchName"
+				variable="GRUPPENART_NEU_BEZEICHNUNG">
+				</binding>
+			</bindings>
+			<info
+			id="8d6e3b20-978e-49d8-8016-614abf0acba3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblArtikelgruppenarten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$GRUPPENART_NEU]/cell[@accessiblename~'colAgra_bez']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="9a3dfce6-2dcc-4725-a77e-51e6bfd70495"

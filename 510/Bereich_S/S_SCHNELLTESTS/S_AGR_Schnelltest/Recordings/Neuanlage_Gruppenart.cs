@@ -136,6 +136,12 @@ namespace S_AGR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(10));
             repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info.WaitForExists(120000);
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual ($GRUPPENART_NEU='yourValue') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraCd'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraCdInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraCdInfo, GRUPPENART_NEU, "yourValue");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual ($GRUPPENART_NEU_BEZEICHNUNG='yourValue') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraBez'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraBezInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraBezInfo, GRUPPENART_NEU_BEZEICHNUNG, "yourValue");
+            
         }
 
 #region Image Feature Data

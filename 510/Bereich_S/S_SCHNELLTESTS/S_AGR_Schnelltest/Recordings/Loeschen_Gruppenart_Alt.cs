@@ -41,6 +41,8 @@ namespace S_AGR_Schnelltest.Recordings
         /// </summary>
         public Loeschen_Gruppenart_Alt()
         {
+            GRUPPENART_ALT = "BA";
+            GRUPPENART_ALT_BEZEICHNUNG = "Bedarfsanforderung";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace S_AGR_Schnelltest.Recordings
         }
 
 #region Variables
+
+        string _GRUPPENART_ALT;
+
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPENART_ALT.
+        /// </summary>
+        [TestVariable("dd4df922-0407-44df-b707-7e78c8d05e6b")]
+        public string GRUPPENART_ALT
+        {
+            get { return _GRUPPENART_ALT; }
+            set { _GRUPPENART_ALT = value; }
+        }
+
+        string _GRUPPENART_ALT_BEZEICHNUNG;
+
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPENART_ALT_BEZEICHNUNG.
+        /// </summary>
+        [TestVariable("2cd36ad0-fb99-4cb7-981f-cd127b8b249b")]
+        public string GRUPPENART_ALT_BEZEICHNUNG
+        {
+            get { return _GRUPPENART_ALT_BEZEICHNUNG; }
+            set { _GRUPPENART_ALT_BEZEICHNUNG = value; }
+        }
 
 #endregion
 
@@ -79,6 +105,16 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0' at Center.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(0));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessSave' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
+            repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSave.Click();
+            
         }
 
 #region Image Feature Data

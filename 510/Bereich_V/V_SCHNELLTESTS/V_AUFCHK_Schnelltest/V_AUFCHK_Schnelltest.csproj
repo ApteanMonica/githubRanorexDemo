@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{D13DCCD8-8EBA-4689-B02B-DD2AFB39120A}</ProjectGuid>
+    <ProjectGuid>{A5E509AA-7291-4708-928D-C8A2CA0E7451}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Exe</OutputType>
-    <RootNamespace>V_AUFA_Schnelltest</RootNamespace>
-    <AssemblyName>V_AUFA_Schnelltest</AssemblyName>
+    <RootNamespace>V_AUFCHK_Schnelltest</RootNamespace>
+    <AssemblyName>V_AUFCHK_Schnelltest</AssemblyName>
     <NoWarn>1591</NoWarn>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <projectdefaultrepository>6bbc9cf7-536b-4c84-8459-10561e276cf0</projectdefaultrepository>
-    <StartAction>Project</StartAction>
+    <projectdefaultrepository>1ca36d5e-638a-47f6-a689-80612d822e93</projectdefaultrepository>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -80,116 +79,94 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
-      <id>49ca7671-61a4-433f-bf67-13a234e353be</id>
+      <id>b05898db-b7d6-4cd9-86f5-76c6c7f32a9e</id>
+    </Compile>
+    <Compile Include="CloseAUT.cs">
+      <BoundTo>cea07045-b409-4dc6-af53-4c027d5d73f4</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0fca1d17-e579-4710-a538-d63691b12c40</id>
+    </Compile>
+    <Compile Include="CloseAUT.UserCode.cs">
+      <BoundTo>cea07045-b409-4dc6-af53-4c027d5d73f4</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff433ec4-c52d-474b-a6ef-c0a1e62553ed</id>
     </Compile>
     <Compile Include="Program.cs">
-      <id>4155458e-66b0-41a9-aa18-7cd8249a00a9</id>
+      <id>c01ff006-bd64-46f8-8bee-702093be19f0</id>
     </Compile>
-    <Compile Include="Recordings\Anlage_loeschen.cs">
-      <BoundTo>3c6792c4-9502-488d-a084-4b804ffb76ce</BoundTo>
-      <DependentUpon>Anlage_loeschen.rxrec</DependentUpon>
+    <Compile Include="Recording1.cs">
+      <BoundTo>8a9212cc-72da-4f64-bc2a-a4891ae07d9e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>bc3f5fef-6e0f-4001-94d4-f80b801e1dc6</id>
+      <id>2e4e8819-40f3-481d-8071-25b6f92c5efa</id>
     </Compile>
-    <Compile Include="Recordings\Anlage_loeschen.UserCode.cs">
-      <BoundTo>3c6792c4-9502-488d-a084-4b804ffb76ce</BoundTo>
-      <DependentUpon>Anlage_loeschen.rxrec</DependentUpon>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>8a9212cc-72da-4f64-bc2a-a4891ae07d9e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>eb52995f-7262-46c3-9a32-8e14b50af034</id>
+      <id>314be253-b694-413b-97bb-098770ea7d49</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>043d55f2-e9d8-4e66-ad7b-3bbc5e475139</id>
-      <BoundTo>b3dca4cc-4d2e-4e25-a1fb-601aa76b8f41</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>65de64a7-8790-49ad-bb72-4ebec5f2106f</id>
-      <BoundTo>b3dca4cc-4d2e-4e25-a1fb-601aa76b8f41</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Anlage_kopieren.cs">
-      <DependentUpon>Anlage_kopieren.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>12dd9fef-653b-4a4b-a886-1b18f80529ed</id>
-      <BoundTo>3ca16b17-fb85-4973-806e-863aefd19061</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Anlage_kopieren.UserCode.cs">
-      <DependentUpon>Anlage_kopieren.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b0da6fc4-3297-4ff6-b3f0-7e6c220da9fa</id>
-      <BoundTo>3ca16b17-fb85-4973-806e-863aefd19061</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
+    <Compile Include="StartAUT.cs">
+      <BoundTo>450b65a8-bb9e-4000-900b-cc7868eb3090</BoundTo>
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>5d96fc1d-c8b4-4fd9-a8b0-1bf546b0dbd5</id>
-      <BoundTo>88e4e518-0fd2-4441-b5e1-a94c2733db6f</BoundTo>
+      <id>72385999-d0ab-4fcc-ba56-5785066b85ba</id>
     </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
+    <Compile Include="StartAUT.UserCode.cs">
+      <BoundTo>450b65a8-bb9e-4000-900b-cc7868eb3090</BoundTo>
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>9801707a-7135-492e-af9e-7c6fe1fa68df</id>
-      <BoundTo>88e4e518-0fd2-4441-b5e1-a94c2733db6f</BoundTo>
+      <id>371c94ea-a618-4e4f-adc4-25cf695b9398</id>
     </Compile>
-    <Compile Include="V_AUFA_SchnelltestRepository.cs">
-      <BoundTo>6bbc9cf7-536b-4c84-8459-10561e276cf0</BoundTo>
-      <DependentUpon>V_AUFA_SchnelltestRepository.rxrep</DependentUpon>
+    <Compile Include="V_AUFCHK_SchnelltestRepository.cs">
+      <BoundTo>1ca36d5e-638a-47f6-a689-80612d822e93</BoundTo>
+      <DependentUpon>V_AUFCHK_SchnelltestRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>a2d15ebc-101a-4fb4-bfc4-48b8ba87e0be</id>
+      <id>3b3c3a8d-a268-4ec7-b1ae-5718916e118e</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
-      <id>b48d5807-d19c-46a0-ad52-b7706fe0c57c</id>
+      <id>9fad99d2-5213-45a9-966e-3a7ff4f61640</id>
     </None>
-    <None Include="Recordings\Anlage_loeschen.rxrec">
-      <BoundTo>6bbc9cf7-536b-4c84-8459-10561e276cf0</BoundTo>
-      <id>3c6792c4-9502-488d-a084-4b804ffb76ce</id>
-      <recordtableid>46a30ba1-c990-40ea-8eb3-e664aacb9509</recordtableid>
+    <None Include="CloseAUT.rxrec">
+      <BoundTo>1ca36d5e-638a-47f6-a689-80612d822e93</BoundTo>
+      <id>cea07045-b409-4dc6-af53-4c027d5d73f4</id>
+      <recordtableid>f37d1352-0221-4058-8f9d-69185e3ecc7e</recordtableid>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
-      <BoundTo>6bbc9cf7-536b-4c84-8459-10561e276cf0</BoundTo>
-      <id>b3dca4cc-4d2e-4e25-a1fb-601aa76b8f41</id>
-      <recordtableid>5cb9a59c-8892-4c45-a8e6-d185d0337228</recordtableid>
+    <None Include="Recording1.rxrec">
+      <BoundTo>1ca36d5e-638a-47f6-a689-80612d822e93</BoundTo>
+      <id>8a9212cc-72da-4f64-bc2a-a4891ae07d9e</id>
+      <recordtableid>340cd798-5efb-4f71-94e7-c622e926cfd4</recordtableid>
     </None>
-    <None Include="Recordings\Anlage_kopieren.rxrec">
-      <BoundTo>6bbc9cf7-536b-4c84-8459-10561e276cf0</BoundTo>
-      <id>3ca16b17-fb85-4973-806e-863aefd19061</id>
-      <recordtableid>ba9565de-3386-4b11-9f67-01a1aad19576</recordtableid>
+    <None Include="StartAUT.rxrec">
+      <BoundTo>1ca36d5e-638a-47f6-a689-80612d822e93</BoundTo>
+      <id>450b65a8-bb9e-4000-900b-cc7868eb3090</id>
+      <recordtableid>101e9de4-96ec-415b-b120-142ef997a262</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT.rxrec">
-      <BoundTo>6bbc9cf7-536b-4c84-8459-10561e276cf0</BoundTo>
-      <id>88e4e518-0fd2-4441-b5e1-a94c2733db6f</id>
-      <recordtableid>5a76ca30-af4c-429f-981c-d50693f8ee92</recordtableid>
-    </None>
-    <None Include="V_AUFA_SchnelltestRepository.rximg">
-      <BoundTo>6bbc9cf7-536b-4c84-8459-10561e276cf0</BoundTo>
-      <DependentUpon>V_AUFA_SchnelltestRepository.rxrep</DependentUpon>
+    <None Include="V_AUFCHK_SchnelltestRepository.rximg">
+      <BoundTo>1ca36d5e-638a-47f6-a689-80612d822e93</BoundTo>
+      <DependentUpon>V_AUFCHK_SchnelltestRepository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
-      <id>1b2df8b5-d1ae-4930-aefe-5df9ff23f361</id>
+      <id>402e3736-2e65-4900-8a53-6c10482b9edc</id>
     </None>
-    <None Include="V_AUFA_SchnelltestRepository.rxrep">
-      <id>6bbc9cf7-536b-4c84-8459-10561e276cf0</id>
-      <repoid>3eb34c25-4b3d-44b5-aeb1-5d97bbc738ca</repoid>
-      <reporootid>b4dd2855-ae34-470e-9c10-3bd4c0876f72</reporootid>
+    <None Include="V_AUFCHK_SchnelltestRepository.rxrep">
+      <id>1ca36d5e-638a-47f6-a689-80612d822e93</id>
+      <repoid>4f41d08d-b5d6-4c19-944a-9238e76c2498</repoid>
+      <reporootid>a1c9bc25-8880-4c8e-a234-cf3767ecb6f4</reporootid>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="V_AUFA_Schnelltest.rxtmg">
+    <Content Include="V_AUFCHK_Schnelltest.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>c74a9dc3-b140-4904-906c-a94fb19bc479</id>
+      <id>80c3547e-e736-4b67-b260-3923d2040a14</id>
     </Content>
-    <Content Include="V_AUFA_Schnelltest.rxtst">
+    <Content Include="V_AUFCHK_Schnelltest.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>22b2c8b6-3090-4e03-a7d0-f40a27c5a7b1</id>
+      <id>58326d11-6936-40e1-998e-29056ed610b6</id>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Recordings">
-      <id>2e469a44-563f-40f1-bc8b-b08fcfdab447</id>
-    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
