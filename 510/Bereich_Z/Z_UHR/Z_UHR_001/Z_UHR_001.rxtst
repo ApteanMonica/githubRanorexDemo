@@ -35,27 +35,19 @@
 					value="UHR_001_A - Muster Hans">
 					</param>
 					<param
-					name="Uhrzeit_Stunde_Minute"
+					name="Systemzeit_Plus_1_Minute"
 					value="">
 					</param>
 					<param
-					name="Uhrzeit_plus_1Minute"
+					name="Stempelzeit_Kommen"
 					value="">
 					</param>
 					<param
-					name="Uhrzeit_plus_2Minuten"
+					name="Stempelzeit_Start_Pause"
 					value="">
 					</param>
 					<param
-					name="Uhrzeit_plus_3Minuten"
-					value="">
-					</param>
-					<param
-					name="Einlesen_Uhrzeit"
-					value="">
-					</param>
-					<param
-					name="angepasste_Uhrzeit_einlesen"
+					name="Stempelzeit_Ende_Pause"
 					value="">
 					</param>
 					<param
@@ -65,79 +57,16 @@
 				</parameters>
 			</testcase>
 			<testmodule
-			enabled="False"
-			id="3f14b1e6-af72-4d2e-b4b8-166895facce3"
-			name="Uhrzeit_Minuten_addieren"
-			ref="69c0605a-1878-4cd9-b245-7615eee23f7b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Uhrzeit_plus_3Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="87488cfc-1757-475e-bbcb-d322d1cda51a"
-					variablename="Uhrzeit_plus_3Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_2Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="38dd6c7d-dfd3-4c62-9b86-c0ec5bce4c20"
-					variablename="Uhrzeit_plus_2Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_1Minute"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="afa907d3-d866-468a-96fc-a7092d89e4be"
-					variablename="Uhrzeit_plus_1Minute">
-					</var>
-					<var
-					dataname="Uhrzeit_Stunde_Minute"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="a47e859a-4937-47e7-bcab-2b12a74e6572"
-					variablename="Uhrzeit_Stunde_Minute">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="755afaf4-54dc-4d69-b14b-524633f26b85"
 			name="Pause_Ende_stempeln"
 			ref="0dc24657-59b3-469e-8323-5026e430e10b"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="angepasste_Uhrzeit_einlesen"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="46904bc5-23bd-4ad4-8dfe-46f8410f6600"
-					variablename="angepasste_Uhrzeit_einlesen">
-					</var>
-					<var
-					dataname="Einlesen_Uhrzeit"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="d2a6e150-d906-4366-a735-58ba60883432"
-					variablename="Einlesen_Uhrzeit">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_3Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="bd1ad4b8-ba8f-4a62-98e7-8a6542d3bec2"
-					variablename="Uhrzeit_plus_3Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_2Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="8b4b5b38-a181-4128-8c7a-fe9e8b287e4f"
-					variablename="Uhrzeit_plus_2Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_1Minute"
+					dataname="Systemzeit_Plus_1_Minute"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="f6430d9f-bd1f-41ea-a087-542e2056f54d"
-					variablename="Uhrzeit_plus_1Minute">
-					</var>
-					<var
-					dataname="Uhrzeit_Stunde_Minute"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="2b5e20b9-f880-4e1a-8a77-4c1267fac3a7"
-					variablename="Uhrzeit_Stunde_Minute">
+					variablename="Systemzeit_plus_1_Minute">
 					</var>
 					<var
 					dataname="Mitarbeiter"
@@ -150,6 +79,12 @@
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="85ba92be-e8c9-4c3e-a680-0d97bb55e80e"
 					variablename="Personal_Nr">
+					</var>
+					<var
+					dataname="Stempelzeit_Ende_Pause"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="d2a6e150-d906-4366-a735-58ba60883432"
+					variablename="Stempelzeit_Ende_Pause">
 					</var>
 					<var
 					dataname="Systemzeit"
@@ -194,40 +129,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="angepasste_Uhrzeit_einlesen"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="086a1326-8431-4bbf-9188-853001bb69b0"
-					variablename="angepasste_Uhrzeit_einlesen">
-					</var>
-					<var
-					dataname="Einlesen_Uhrzeit"
+					dataname="Stempelzeit_Kommen"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="8e3901fe-6e67-4f4d-aa29-c0deb2871e93"
-					variablename="Einlesen_Uhrzeit">
+					variablename="Stempelzeit_Kommen">
 					</var>
 					<var
-					dataname="Uhrzeit_plus_3Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="b71537f4-a0fc-4bc6-a609-bd144c178866"
-					variablename="Uhrzeit_plus_3Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_2Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="ab728eaf-c4b7-4ef7-b91e-384da1ea5e6e"
-					variablename="Uhrzeit_plus_2Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_1Minute"
+					dataname="Systemzeit_Plus_1_Minute"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="0e967a89-ed2b-4302-9cff-65a1154fe371"
-					variablename="Uhrzeit_plus_1Minute">
-					</var>
-					<var
-					dataname="Uhrzeit_Stunde_Minute"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="177472d5-6430-4d97-8952-a886f5a2b0d7"
-					variablename="Uhrzeit_Stunde_Minute">
+					variablename="Systemzeit_Plus_1_Minute">
 					</var>
 					<var
 					dataname="Mitarbeiter"
@@ -246,6 +157,12 @@
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="5fdccce9-0409-41db-a0fe-7d9da4c4a9f2"
 					variablename="Personal_Nr">
+					</var>
+					<var
+					dataname="Systemzeit"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="4e61bcea-bc82-4b5a-ab89-0831eb7bb825"
+					variablename="Systemzeit">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -322,46 +239,28 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="angepasste_Uhrzeit_einlesen"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="e13a4f13-9282-478d-953c-122876268d19"
-					variablename="angepasste_Uhrzeit_einlesen">
-					</var>
-					<var
-					dataname="Einlesen_Uhrzeit"
+					dataname="Stempelzeit_Start_Pause"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="eb9c0bab-2b8d-41ce-892d-9d40b35bd3b8"
-					variablename="Einlesen_Uhrzeit">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_3Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="13218d80-1cc5-49e9-a7c5-a1ad506f313a"
-					variablename="Uhrzeit_plus_3Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_2Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="972aa2b9-13c9-412d-b643-200363de7534"
-					variablename="Uhrzeit_plus_2Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_1Minute"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="f7105869-9003-4723-8bff-6582f2e186b4"
-					variablename="Uhrzeit_plus_1Minute">
-					</var>
-					<var
-					dataname="Uhrzeit_Stunde_Minute"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="aa0f31f4-bec7-4a59-964e-59820c789bb6"
-					variablename="Uhrzeit_Stunde_Minute">
+					variablename="Stempelzeit_Start_Pause">
 					</var>
 					<var
 					dataname="Personal_Nr"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="0af84285-2514-4b3b-a3ab-f7314fa726f0"
 					variablename="Personal_Nr">
+					</var>
+					<var
+					dataname="Systemzeit_Plus_1_Minute"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="f7105869-9003-4723-8bff-6582f2e186b4"
+					variablename="Systemzeit_plus_1_Minute">
+					</var>
+					<var
+					dataname="Systemzeit"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="aa0f31f4-bec7-4a59-964e-59820c789bb6"
+					variablename="Systemzeit">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -392,10 +291,6 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="3f14b1e6-af72-4d2e-b4b8-166895facce3"
-						name="Uhrzeit_Minuten_addieren">
-						</testmodule>
 						<testmodule
 						id="83268b88-9537-4465-bfb2-d41841e812e5"
 						name="Kommen_einstempeln">

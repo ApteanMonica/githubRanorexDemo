@@ -40,27 +40,15 @@ mode="Global">
 		</var>
 		<var
 		id="0e967a89-ed2b-4302-9cff-65a1154fe371"
-		name="Uhrzeit_plus_1Minute">
-		</var>
-		<var
-		id="177472d5-6430-4d97-8952-a886f5a2b0d7"
-		name="Uhrzeit_Stunde_Minute">
-		</var>
-		<var
-		id="ab728eaf-c4b7-4ef7-b91e-384da1ea5e6e"
-		name="Uhrzeit_plus_2Minuten">
-		</var>
-		<var
-		id="b71537f4-a0fc-4bc6-a609-bd144c178866"
-		name="Uhrzeit_plus_3Minuten">
+		name="Systemzeit_Plus_1_Minute">
 		</var>
 		<var
 		id="8e3901fe-6e67-4f4d-aa29-c0deb2871e93"
-		name="Einlesen_Uhrzeit">
+		name="Stempelzeit_Kommen">
 		</var>
 		<var
-		id="086a1326-8431-4bbf-9188-853001bb69b0"
-		name="angepasste_Uhrzeit_einlesen">
+		id="4e61bcea-bc82-4b5a-ab89-0831eb7bb825"
+		name="Systemzeit">
 		</var>
 	</variables>
 	<recorditems>
@@ -149,6 +137,35 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Systemzeit">
+				</binding>
+			</bindings>
+			<arguments
+			id="5e32891c-bc77-4982-875e-4b6ac51b1282">
+				<argument
+				argname="expectedFormat"
+				id="9b05128c-0341-4674-a2b3-74648281c4cc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HH:mm
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4075,71 +4092,12 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<userrecorditem
-		classname="SystemLibrary"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="Uhrzeit_Stunde_Minute">
-				</binding>
-			</bindings>
-			<arguments
-			id="fdf616c1-c7de-4bd6-81fc-d56d66a3865e">
-				<argument
-				argname="expectedFormat"
-				id="9a17d95a-7478-4ed1-bc52-fc50c4c59b9e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						HH:mm
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="True"
-		searchpropertyid="a8d34eec-2ed7-48ec-9686-344d7b15931e">
-			<comment>
-				continue on fail (bei Einlesen der Zeit falls es zur Minutenüberschneidung kommt.
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_Stunde_Minute">
-				</binding>
-			</bindings>
-			<info
-			id="079eeaad-ef96-48b0-8e31-5af03785f782"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Personal_Nr]/cell[@accessiblename~'colUhr_dtbeginn ']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				$Uhrzeit_Stunde_Minute&#32;
-			</matchvalue>
-		</validationitem>
 		<getvaluerecorditem
 		attrname="Text"
 		enabled="True"
 		optional="False"
 		searchpropertyid="ab110f06-baa0-4d45-a0d8-9be00c7ff51b"
-		varname="Einlesen_Uhrzeit">
+		varname="Stempelzeit_Kommen">
 			<comment>
 			</comment>
 			<bindings>
@@ -4166,15 +4124,15 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="angepasste_Uhrzeit_einlesen">
+				variable="Stempelzeit_Kommen">
 				</binding>
 			</bindings>
 			<arguments
-			id="70e63189-14ca-4ecf-89d8-8a382853e5ef">
+			id="18fc0a08-533b-43a3-ae04-12449d571c0e">
 				<argument
 				argname="date"
-				id="690e3145-586a-4f3e-b425-eee7c76a8c88"
-				variable="Einlesen_Uhrzeit">
+				id="9b1682d7-a171-49da-a87f-d556f3cf06d2"
+				variable="Stempelzeit_Kommen">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4183,7 +4141,7 @@ mode="Global">
 				</argument>
 				<argument
 				argname="expectedFormat"
-				id="0f07d993-94a2-4e02-ad88-bcf87be4b73c">
+				id="b41a778c-3fd1-4ba0-a6dc-5291deb38d9b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4205,7 +4163,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Uhrzeit_plus_1Minute">
+				variable="Systemzeit_Plus_1_Minute">
 				</binding>
 			</bindings>
 			<arguments
@@ -4213,7 +4171,7 @@ mode="Global">
 				<argument
 				argname="date"
 				id="432bd666-2c1f-4494-b2da-385a817def1b"
-				variable="Uhrzeit_Stunde_Minute">
+				variable="Systemzeit">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4265,7 +4223,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="Message"
-				variable="angepasste_Uhrzeit_einlesen">
+				variable="Stempelzeit_Kommen">
 				</binding>
 			</bindings>
 		</loggingrecorditem>
@@ -4281,7 +4239,23 @@ mode="Global">
 			<bindings>
 				<binding
 				target="Message"
-				variable="Uhrzeit_Stunde_Minute">
+				variable="Systemzeit">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="9de78466-3254-4ab5-b0e9-a96486309a03">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Systemzeit_Plus_1_Minute">
 				</binding>
 			</bindings>
 		</loggingrecorditem>
@@ -4301,7 +4275,7 @@ mode="Global">
 				<argument
 				argname="variable"
 				id="f7648f33-f2d7-4729-a0a1-78e2e3b02680"
-				variable="angepasste_Uhrzeit_einlesen">
+				variable="Stempelzeit_Kommen">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4311,7 +4285,7 @@ mode="Global">
 				<argument
 				argname="var1"
 				id="86d89f78-eefd-4792-b129-e9ccdc3f1ca1"
-				variable="Uhrzeit_Stunde_Minute">
+				variable="Systemzeit">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -4321,7 +4295,7 @@ mode="Global">
 				<argument
 				argname="var2"
 				id="9dffee0d-ee21-460f-ab09-20e6e833fa8f"
-				variable="Uhrzeit_plus_1Minute">
+				variable="Systemzeit_Plus_1_Minute">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

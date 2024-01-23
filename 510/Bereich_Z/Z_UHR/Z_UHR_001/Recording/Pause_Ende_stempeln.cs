@@ -42,13 +42,9 @@ namespace Z_UHR_001.Recording
         public Pause_Ende_stempeln()
         {
             Personal_Nr = "UHR_001_A";
-            Uhrzeit_Stunde_Minute = "";
-            Uhrzeit_plus_1Minute = "";
-            Uhrzeit_plus_2Minuten = "";
-            Uhrzeit_plus_3Minuten = "";
+            Systemzeit_plus_1_Minute = "";
             Mitarbeiter = "UHR_001_A - Muster Hans";
-            Einlesen_Uhrzeit = "";
-            angepasste_Uhrzeit_einlesen = "";
+            Stempelzeit_Ende_Pause = "";
             Systemzeit = "";
         }
 
@@ -62,52 +58,16 @@ namespace Z_UHR_001.Recording
 
 #region Variables
 
-        string _Uhrzeit_Stunde_Minute;
+        string _Systemzeit_plus_1_Minute;
 
         /// <summary>
-        /// Gets or sets the value of variable Uhrzeit_Stunde_Minute.
-        /// </summary>
-        [TestVariable("2b5e20b9-f880-4e1a-8a77-4c1267fac3a7")]
-        public string Uhrzeit_Stunde_Minute
-        {
-            get { return _Uhrzeit_Stunde_Minute; }
-            set { _Uhrzeit_Stunde_Minute = value; }
-        }
-
-        string _Uhrzeit_plus_1Minute;
-
-        /// <summary>
-        /// Gets or sets the value of variable Uhrzeit_plus_1Minute.
+        /// Gets or sets the value of variable Systemzeit_plus_1_Minute.
         /// </summary>
         [TestVariable("f6430d9f-bd1f-41ea-a087-542e2056f54d")]
-        public string Uhrzeit_plus_1Minute
+        public string Systemzeit_plus_1_Minute
         {
-            get { return _Uhrzeit_plus_1Minute; }
-            set { _Uhrzeit_plus_1Minute = value; }
-        }
-
-        string _Uhrzeit_plus_2Minuten;
-
-        /// <summary>
-        /// Gets or sets the value of variable Uhrzeit_plus_2Minuten.
-        /// </summary>
-        [TestVariable("8b4b5b38-a181-4128-8c7a-fe9e8b287e4f")]
-        public string Uhrzeit_plus_2Minuten
-        {
-            get { return _Uhrzeit_plus_2Minuten; }
-            set { _Uhrzeit_plus_2Minuten = value; }
-        }
-
-        string _Uhrzeit_plus_3Minuten;
-
-        /// <summary>
-        /// Gets or sets the value of variable Uhrzeit_plus_3Minuten.
-        /// </summary>
-        [TestVariable("bd1ad4b8-ba8f-4a62-98e7-8a6542d3bec2")]
-        public string Uhrzeit_plus_3Minuten
-        {
-            get { return _Uhrzeit_plus_3Minuten; }
-            set { _Uhrzeit_plus_3Minuten = value; }
+            get { return _Systemzeit_plus_1_Minute; }
+            set { _Systemzeit_plus_1_Minute = value; }
         }
 
         string _Mitarbeiter;
@@ -122,28 +82,16 @@ namespace Z_UHR_001.Recording
             set { _Mitarbeiter = value; }
         }
 
-        string _Einlesen_Uhrzeit;
+        string _Stempelzeit_Ende_Pause;
 
         /// <summary>
-        /// Gets or sets the value of variable Einlesen_Uhrzeit.
+        /// Gets or sets the value of variable Stempelzeit_Ende_Pause.
         /// </summary>
         [TestVariable("d2a6e150-d906-4366-a735-58ba60883432")]
-        public string Einlesen_Uhrzeit
+        public string Stempelzeit_Ende_Pause
         {
-            get { return _Einlesen_Uhrzeit; }
-            set { _Einlesen_Uhrzeit = value; }
-        }
-
-        string _angepasste_Uhrzeit_einlesen;
-
-        /// <summary>
-        /// Gets or sets the value of variable angepasste_Uhrzeit_einlesen.
-        /// </summary>
-        [TestVariable("46904bc5-23bd-4ad4-8dfe-46f8410f6600")]
-        public string angepasste_Uhrzeit_einlesen
-        {
-            get { return _angepasste_Uhrzeit_einlesen; }
-            set { _angepasste_Uhrzeit_einlesen = value; }
+            get { return _Stempelzeit_Ende_Pause; }
+            set { _Stempelzeit_Ende_Pause = value; }
         }
 
         string _Systemzeit;
@@ -204,54 +152,38 @@ namespace Z_UHR_001.Recording
             Report.Log(ReportLevel.Info, "Validation", "Probleme bei Überprüfung mit Repository und Variable in 521\r\nValidating AttributeEqual (Text=$Mitarbeiter) on item 'FrmUhr.Mitarbeiter_510_521'.", repo.FrmUhr.Mitarbeiter_510_521Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmUhr.Mitarbeiter_510_521Info, "Text", Mitarbeiter);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbTimecontrolPause' at Center.", repo.FrmUhr.PbTimecontrolPauseInfo, new RecordItemIndex(3));
+            Systemzeit = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("HH:mm");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbTimecontrolPause' at Center.", repo.FrmUhr.PbTimecontrolPauseInfo, new RecordItemIndex(4));
             repo.FrmUhr.PbTimecontrolPause.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbRefreshRefresh' at Center.", repo.FrmUhr.PbRefreshRefreshInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbRefreshRefresh' at Center.", repo.FrmUhr.PbRefreshRefreshInfo, new RecordItemIndex(6));
             repo.FrmUhr.PbRefreshRefresh.Click();
             
-            // Einlesen Systemuhrzeit
-            Uhrzeit_Stunde_Minute = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("HH:mm");
-            
-            Systemzeit = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("");
-            
-            Report.Log(ReportLevel.Info, "User", Uhrzeit_Stunde_Minute, new RecordItemIndex(7));
-            
-            Report.Log(ReportLevel.Info, "User", Systemzeit, new RecordItemIndex(8));
-            
-            // continue on fail (falls es zur Minutenüberschreiung
-            try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\ncontinue on fail (falls es zur Minutenüberschreiung\r\nValidating AttributeContains (Text>$Uhrzeit_Stunde_Minute) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(9));
-                //Validate.AttributeContains(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, "Text", Uhrzeit_Stunde_Minute, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.Column0_mit_Variable_Personal_Nr'", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.Column0_mit_Variable_Personal_NrInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.Column0_mit_Variable_Personal_NrInfo.WaitForExists(120000);
             
             // Wert = Inhalt des Feldes nach dem  Einstempeln
-            Report.Log(ReportLevel.Info, "Get Value", "Wert = Inhalt des Feldes nach dem  Einstempeln\r\nGetting attribute 'Text' from item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr' and assigning its value to variable 'Einlesen_Uhrzeit'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(10));
-            Einlesen_Uhrzeit = repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Wert = Inhalt des Feldes nach dem  Einstempeln\r\nGetting attribute 'Text' from item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr' and assigning its value to variable 'Stempelzeit_Ende_Pause'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(8));
+            Stempelzeit_Ende_Pause = repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "User", Einlesen_Uhrzeit, new RecordItemIndex(11));
+            Stempelzeit_Ende_Pause = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateAsString(Stempelzeit_Ende_Pause, "HH:mm");
             
-            angepasste_Uhrzeit_einlesen = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateAsString(Einlesen_Uhrzeit, "HH:mm");
+            Systemzeit_plus_1_Minute = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateTimePlus(Systemzeit, "m", ValueConverter.ArgumentFromString<int>("counter", "1"), "HH:mm");
             
-            Report.Log(ReportLevel.Info, "User", angepasste_Uhrzeit_einlesen, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "User", Systemzeit, new RecordItemIndex(11));
             
-            Uhrzeit_plus_1Minute = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateTimePlus(angepasste_Uhrzeit_einlesen, "m", ValueConverter.ArgumentFromString<int>("counter", "1"), "HH:mm");
+            Report.Log(ReportLevel.Info, "User", Systemzeit_plus_1_Minute, new RecordItemIndex(12));
             
-            Report.Log(ReportLevel.Info, "User", Uhrzeit_plus_1Minute, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "User", Stempelzeit_Ende_Pause, new RecordItemIndex(13));
             
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Uhrzeit_Stunde_Minute, angepasste_Uhrzeit_einlesen, Uhrzeit_plus_1Minute);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Stempelzeit_Ende_Pause, Systemzeit, Systemzeit_plus_1_Minute);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personal_Nr) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personal_Nr) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, "Text", Personal_Nr);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_plus_1Minute) on item 'FrmUhr.Tabelle_links.ColPersNrRow11'.", repo.FrmUhr.Tabelle_links.ColPersNrRow11Info, new RecordItemIndex(18));
-            //Validate.AttributeContains(repo.FrmUhr.Tabelle_links.ColPersNrRow11Info, "Text", Uhrzeit_plus_1Minute);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_plus_2Minuten) on item 'FrmUhr.Tabelle_links.ColPersNrRow11'.", repo.FrmUhr.Tabelle_links.ColPersNrRow11Info, new RecordItemIndex(19));
-            //Validate.AttributeContains(repo.FrmUhr.Tabelle_links.ColPersNrRow11Info, "Text", Uhrzeit_plus_2Minuten);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_plus_3Minuten) on item 'FrmUhr.Tabelle_links.ColPersNrRow11'.", repo.FrmUhr.Tabelle_links.ColPersNrRow11Info, new RecordItemIndex(20));
-            //Validate.AttributeContains(repo.FrmUhr.Tabelle_links.ColPersNrRow11Info, "Text", Uhrzeit_plus_3Minuten);
             
         }
 
