@@ -2555,6 +2555,7 @@ namespace B_BUCH_001
             RepoItemInfo _colustbetragrow3Info;
             RepoItemInfo _colustcdrow3Info;
             RepoItemInfo _coluvarow3Info;
+            RepoItemInfo _colbusadtstoloerow2Info;
 
             /// <summary>
             /// Creates a new FlexGrid_b_buab  folder.
@@ -2601,6 +2602,7 @@ namespace B_BUCH_001
                 _colustbetragrow3Info = new RepoItemInfo(this, "ColUstbetragRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colUstbetrag Row 3']", "", 30000, null, "293a55df-4882-4ec9-a4e9-0aa631dc3d1f");
                 _colustcdrow3Info = new RepoItemInfo(this, "ColUstcdRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colUstcd Row 3']", "", 30000, null, "ccdf0e70-7c2d-4894-8f92-852ffeb428dc");
                 _coluvarow3Info = new RepoItemInfo(this, "ColUvaRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colUva Row 3']", "", 30000, null, "d8ddb5df-f9e5-4bef-bae5-198963798d81");
+                _colbusadtstoloerow2Info = new RepoItemInfo(this, "ColBusaDtstoloeRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colBusa_dtstoloe Row 2']", "", 30000, null, "9c8dde5b-b9e5-4b69-9eb2-4d807a7771ed");
             }
 
             /// <summary>
@@ -3560,6 +3562,30 @@ namespace B_BUCH_001
                 get
                 {
                     return _coluvarow3Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBusaDtstoloeRow2 item.
+            /// </summary>
+            [RepositoryItem("9c8dde5b-b9e5-4b69-9eb2-4d807a7771ed")]
+            public virtual Ranorex.Cell ColBusaDtstoloeRow2
+            {
+                get
+                {
+                    return _colbusadtstoloerow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBusaDtstoloeRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("9c8dde5b-b9e5-4b69-9eb2-4d807a7771ed")]
+            public virtual RepoItemInfo ColBusaDtstoloeRow2Info
+            {
+                get
+                {
+                    return _colbusadtstoloerow2Info;
                 }
             }
         }
