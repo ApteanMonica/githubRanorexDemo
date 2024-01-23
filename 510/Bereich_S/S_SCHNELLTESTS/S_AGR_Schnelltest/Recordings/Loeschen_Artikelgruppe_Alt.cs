@@ -54,13 +54,13 @@ namespace S_AGR_Schnelltest.Recordings
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable ARTIKELGRUPPE_ALT.
+        /// Gets or sets the value of variable GRUPPENART_ALT.
         /// </summary>
         [TestVariable("04d596e0-f25a-4df1-9d2f-5ae4d510d7df")]
-        public string ARTIKELGRUPPE_ALT
+        public string GRUPPENART_ALT
         {
-            get { return repo.ARTIKELGRUPPE_ALT; }
-            set { repo.ARTIKELGRUPPE_ALT = value; }
+            get { return repo.GRUPPENART_ALT; }
+            set { repo.GRUPPENART_ALT = value; }
         }
 
 #endregion

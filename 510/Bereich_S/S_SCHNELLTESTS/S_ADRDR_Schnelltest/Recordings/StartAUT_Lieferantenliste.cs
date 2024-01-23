@@ -41,8 +41,8 @@ namespace S_ADRDR_Schnelltest.Recordings
         /// </summary>
         public StartAUT_Lieferantenliste()
         {
-            Startfle = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_S_ADRDR_Lierferantenliste = "S_ADRDR /KL=L";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_S_ADRDR_Lierferanten = "S_ADRDR /KL=L";
         }
 
         /// <summary>
@@ -55,28 +55,28 @@ namespace S_ADRDR_Schnelltest.Recordings
 
 #region Variables
 
-        string _Startfle;
+        string _Startfile;
 
         /// <summary>
-        /// Gets or sets the value of variable Startfle.
+        /// Gets or sets the value of variable Startfile.
         /// </summary>
         [TestVariable("aa0d3933-b308-43ea-9594-2d27b5faf4df")]
-        public string Startfle
+        public string Startfile
         {
-            get { return _Startfle; }
-            set { _Startfle = value; }
+            get { return _Startfile; }
+            set { _Startfile = value; }
         }
 
-        string _Programm_S_ADRDR_Lierferantenliste;
+        string _Programm_S_ADRDR_Lierferanten;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_S_ADRDR_Lierferantenliste.
+        /// Gets or sets the value of variable Programm_S_ADRDR_Lierferanten.
         /// </summary>
         [TestVariable("931faa03-d04a-4cc0-8485-9707fbd2787f")]
-        public string Programm_S_ADRDR_Lierferantenliste
+        public string Programm_S_ADRDR_Lierferanten
         {
-            get { return _Programm_S_ADRDR_Lierferantenliste; }
-            set { _Programm_S_ADRDR_Lierferantenliste = value; }
+            get { return _Programm_S_ADRDR_Lierferanten; }
+            set { _Programm_S_ADRDR_Lierferanten = value; }
         }
 
 #endregion
@@ -105,8 +105,8 @@ namespace S_ADRDR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfle with arguments from variable $Programm_S_ADRDR_Lierferantenliste in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfle, Programm_S_ADRDR_Lierferantenliste, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_S_ADRDR_Lierferanten in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_S_ADRDR_Lierferanten, "", false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100Kundenliste'", repo.FrmMain.TitleBar100KundenlisteInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.FrmMain.TitleBar100KundenlisteInfo.WaitForExists(120000);

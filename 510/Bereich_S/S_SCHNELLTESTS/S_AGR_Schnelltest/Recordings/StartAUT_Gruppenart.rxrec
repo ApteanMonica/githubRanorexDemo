@@ -31,7 +31,7 @@ mode="Global">
 		<var
 		id="aa35726d-1042-4315-a987-d2c86a9e5cac"
 		name="Programm_Artikelgruppenarten">
-			S_AGR /Aufruf=AGRA
+			S_AGR Aufruf=AGRA
 		</var>
 	</variables>
 	<recorditems>
@@ -43,12 +43,12 @@ mode="Global">
 			</comment>
 			<bindings>
 				<binding
-				target="ReturnVariable"
-				variable="Startfile">
-				</binding>
-				<binding
 				target="Arguments"
 				variable="Programm_Artikelgruppenarten">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
 				</binding>
 			</bindings>
 			<filename>
@@ -118,7 +118,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartAUT_Artikelgruppenarten.UserCode.cs
+		StartAUT_Gruppenart.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

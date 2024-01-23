@@ -55,18 +55,6 @@ namespace S_AGR_Schnelltest.Recordings
 
 #region Variables
 
-        string _GRUPPENART_ALT;
-
-        /// <summary>
-        /// Gets or sets the value of variable GRUPPENART_ALT.
-        /// </summary>
-        [TestVariable("dd4df922-0407-44df-b707-7e78c8d05e6b")]
-        public string GRUPPENART_ALT
-        {
-            get { return _GRUPPENART_ALT; }
-            set { _GRUPPENART_ALT = value; }
-        }
-
         string _GRUPPENART_ALT_BEZEICHNUNG;
 
         /// <summary>
@@ -77,6 +65,16 @@ namespace S_AGR_Schnelltest.Recordings
         {
             get { return _GRUPPENART_ALT_BEZEICHNUNG; }
             set { _GRUPPENART_ALT_BEZEICHNUNG = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPENART_ALT.
+        /// </summary>
+        [TestVariable("dd4df922-0407-44df-b707-7e78c8d05e6b")]
+        public string GRUPPENART_ALT
+        {
+            get { return repo.GRUPPENART_ALT; }
+            set { repo.GRUPPENART_ALT = value; }
         }
 
 #endregion
@@ -105,12 +103,13 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0' at Center.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(0));
-            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0.Click();
+            // BAR:  ACHTUNG: Action Spot mit Recording da normaler Mausklick nicht funktioniert
+            Report.Log(ReportLevel.Info, "Mouse", "BAR:  ACHTUNG: Action Spot mit Recording da normaler Mausklick nicht funktioniert\r\nMouse Left Click item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0' at 11;9.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(0));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0.Click("11;9");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblArtikelgruppenarten'.", repo.TblArtikelgruppenarten.SelfInfo, new RecordItemIndex(1));
+            repo.TblArtikelgruppenarten.Self.EnsureVisible();
+            Keyboard.Press("{Delete}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessSave' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
             repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessSave.Click();

@@ -63,6 +63,16 @@ namespace S_AGR_Schnelltest.Recordings
             set { repo.GRUPPENART_NEU = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable GRUPPENART_ALT.
+        /// </summary>
+        [TestVariable("04d596e0-f25a-4df1-9d2f-5ae4d510d7df")]
+        public string GRUPPENART_ALT
+        {
+            get { return repo.GRUPPENART_ALT; }
+            set { repo.GRUPPENART_ALT = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -105,14 +115,14 @@ namespace S_AGR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(4));
             repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(5));
-            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row1Column0Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(5));
+            repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnung'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourValue') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBez'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBezInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBezInfo, "Text", "yourValue");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Mehrfachzuordnung nicht erlaubt') on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBez'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBezInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Neu.ColAgraKzzuordnungBezInfo, "Text", "Mehrfachzuordnung nicht erlaubt");
             
         }
 

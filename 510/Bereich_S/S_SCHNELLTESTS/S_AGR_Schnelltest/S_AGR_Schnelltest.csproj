@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -156,6 +157,18 @@
       <UserCode>true</UserCode>
       <id>df8c38da-6811-4988-b58e-ebfaa74aee1a</id>
     </Compile>
+    <Compile Include="Recordings\Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich.cs">
+      <BoundTo>9c30ff82-1816-4fe7-ae07-860a07adc762</BoundTo>
+      <DependentUpon>Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eadb68bd-b3fa-490e-8bfd-77a32f5ebbf3</id>
+    </Compile>
+    <Compile Include="Recordings\Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich.UserCode.cs">
+      <BoundTo>9c30ff82-1816-4fe7-ae07-860a07adc762</BoundTo>
+      <DependentUpon>Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ed8628e-df98-479c-a823-248413c9c7aa</id>
+    </Compile>
     <Compile Include="Recordings\Meldung_Loeschen_nicht_moeglich.cs">
       <BoundTo>c43fc57d-796b-4ce0-97f6-57e4d46a2b46</BoundTo>
       <DependentUpon>Meldung_Loeschen_nicht_moeglich.rxrec</DependentUpon>
@@ -280,6 +293,11 @@
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
       <id>7fb975db-8ecf-4cac-b0ad-89613e09a504</id>
       <recordtableid>cebe5999-e491-4096-b285-603139f13baf</recordtableid>
+    </None>
+    <None Include="Recordings\Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich.rxrec">
+      <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>
+      <id>9c30ff82-1816-4fe7-ae07-860a07adc762</id>
+      <recordtableid>f41c1848-af05-4f47-ad53-f3188d4008f6</recordtableid>
     </None>
     <None Include="Recordings\Meldung_Loeschen_nicht_moeglich.rxrec">
       <BoundTo>ca0bcc40-a05b-4c98-bd31-e9a0685cb893</BoundTo>

@@ -27,6 +27,10 @@
 					name="Programm_ADRDR"
 					value="S_ADRDR">
 					</param>
+					<param
+					name="Programm_S_ADRDR_Lierferanten"
+					value="S_ADRDR /KL=L">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
@@ -46,16 +50,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="5566930e-9ea1-4e80-82d4-c6f9657f8d26"
-					variableid="945a4b32-a4d8-4406-a3e3-1e1d4d9d2694"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_ADRDR"
 					datasourceid="5566930e-9ea1-4e80-82d4-c6f9657f8d26"
 					variableid="74a88095-e164-46a8-86f3-1573da188950"
 					variablename="Programm_ADRDR">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="5566930e-9ea1-4e80-82d4-c6f9657f8d26"
+					variableid="945a4b32-a4d8-4406-a3e3-1e1d4d9d2694"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -88,6 +92,20 @@
 			name="StartAUT_Lieferantenliste"
 			ref="5d40eb20-4777-4908-be24-a816b6791cd1"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="5566930e-9ea1-4e80-82d4-c6f9657f8d26"
+					variableid="aa0d3933-b308-43ea-9594-2d27b5faf4df"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_S_ADRDR_Lierferanten"
+					datasourceid="5566930e-9ea1-4e80-82d4-c6f9657f8d26"
+					variableid="931faa03-d04a-4cc0-8485-9707fbd2787f"
+					variablename="Programm_S_ADRDR_Lierferanten">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="c9b026af-3468-4933-b761-7cd77b584eca"

@@ -41,7 +41,6 @@ namespace S_ADRDR_Schnelltest.Recordings
         /// </summary>
         public CloseAUT()
         {
-            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace S_ADRDR_Schnelltest.Recordings
         }
 
 #region Variables
-
-        string _CloseAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
-        /// </summary>
-        [TestVariable("1dd690aa-34f3-4e47-8c36-c9aec70274d3")]
-        public string CloseAutProcessIDVar
-        {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
-        }
 
 #endregion
 

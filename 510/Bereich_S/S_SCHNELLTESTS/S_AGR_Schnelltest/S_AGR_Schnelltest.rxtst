@@ -42,6 +42,12 @@
 					variableid="fb8c8f36-075a-4b4a-bad4-7133110574ed"
 					variablename="GRUPPENART_NEU">
 					</var>
+					<var
+					dataname="GRUPPENART_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="GRUPPENART_ALT">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -65,10 +71,38 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="16ef813b-d14c-4202-89eb-9873931339ce"
+			name="Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich"
+			ref="f41c1848-af05-4f47-ad53-f3188d4008f6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="GRUPPENART_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2fed095b-186c-498d-ad21-58d6bbc68889"
 			name="Loeschen_Gruppenart_Alt"
 			ref="cebe5999-e491-4096-b285-603139f13baf"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_ALT_BEZEICHNUNG"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="2cd36ad0-fb99-4cb7-981f-cd127b8b249b"
+					variablename="GRUPPENART_ALT_BEZEICHNUNG">
+					</var>
+					<var
+					dataname="GRUPPENART_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="dd4df922-0407-44df-b707-7e78c8d05e6b"
+					variablename="GRUPPENART_ALT">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="389a5471-193f-450a-9acc-f94d740104c0"
@@ -96,7 +130,7 @@
 					dataname="ARTIKELGRUPPE_ALT"
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
-					variablename="ARTIKELGRUPPE_ALT">
+					variablename="GRUPPENART_ALT">
 					</var>
 				</databinding>
 			</testmodule>
@@ -110,7 +144,7 @@
 					dataname="ARTIKELGRUPPE_ALT"
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
-					variablename="ARTIKELGRUPPE_ALT">
+					variablename="GRUPPENART_ALT">
 					</var>
 				</databinding>
 			</testmodule>
@@ -167,6 +201,20 @@
 			name="Loeschen_Gruppenart_Neu"
 			ref="79f7e022-58d7-452a-bdf3-b13cb7ae1fb2"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="GRUPPENART_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="fb8c8f36-075a-4b4a-bad4-7133110574ed"
+					variablename="GRUPPENART_NEU">
+					</var>
+					<var
+					dataname="GRUPPENART_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="GRUPPENART_ALT">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="cb38816f-9502-4fd6-bce5-3da68403765a"
@@ -185,6 +233,12 @@
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="22ec1b4d-b55c-4f82-b521-5393a3acd11c"
 					variablename="GRUPPENART_NEU">
+					</var>
+					<var
+					dataname="GRUPPENART_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
+					variablename="GRUPPENART_ALT">
 					</var>
 				</databinding>
 			</testmodule>
@@ -247,7 +301,7 @@
 					</param>
 					<param
 					name="Programm_Artikelgruppenarten"
-					value="S_AGR /Auruf=AGRA">
+					value="S_AGR Aufruf=AGRA">
 					</param>
 					<param
 					name="GRUPPENART_NEU"
@@ -277,7 +331,7 @@
 					dataname="ARTIKELGRUPPE_ALT"
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
-					variablename="ARTIKELGRUPPE_ALT">
+					variablename="GRUPPENART_ALT">
 					</var>
 				</databinding>
 			</testmodule>
@@ -356,6 +410,10 @@
 						id="2fed095b-186c-498d-ad21-58d6bbc68889"
 						name="Loeschen_Gruppenart_Alt">
 						</testmodule>
+						<testmodule
+						id="16ef813b-d14c-4202-89eb-9873931339ce"
+						name="Meldung_Loeschen_Gruppenart_Alt_nicht_moeglich">
+						</testmodule>
 						<teardown
 						id="a8f7946a-9ba5-4135-a4d3-c753611f5f92"
 						name="teardown">
@@ -375,9 +433,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="08d4bcb2-9c39-4df7-8c7e-6744898f39e6">
-			</testcontainer>
 			<testcontainer
 			id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a">
 			</testcontainer>
