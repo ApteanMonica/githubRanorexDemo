@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="84c3fd60-9389-4c14-b248-4638db2085fe"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_CAA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d67856f7-6ca0-47c3-b3ab-66d740db170b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="af3aab88-48d6-4648-8269-cd43d6fbcee2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="389c9f11-43ca-46e1-a260-59f8272e3c72"
+	name="V_CAA_SchnelltestRepository"
+	relativepath="..\V_CAA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="V_CAA_SchnelltestRepository"
+		namespace="V_CAA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="6ebfde62-2109-4475-b072-1a2d4c1826c3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

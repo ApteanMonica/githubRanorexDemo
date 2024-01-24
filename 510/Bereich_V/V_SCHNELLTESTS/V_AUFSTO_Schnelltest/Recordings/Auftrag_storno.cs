@@ -24,22 +24,22 @@ namespace V_AUFSTO_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The anlagen recording.
+    ///The Auftrag_storno recording.
     /// </summary>
     [TestModule("c0bb6653-e0ea-48ff-8f49-d1ea7673f423", ModuleType.Recording, 1)]
-    public partial class Anlagen : ITestModule
+    public partial class Auftrag_storno : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository repository.
         /// </summary>
         public static global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository repo = global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository.Instance;
 
-        static Anlagen instance = new Anlagen();
+        static Auftrag_storno instance = new Auftrag_storno();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Anlagen()
+        public Auftrag_storno()
         {
             Kommissionsschein = "KO21/00011";
         }
@@ -47,7 +47,7 @@ namespace V_AUFSTO_Schnelltest.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Anlagen Instance
+        public static Auftrag_storno Instance
         {
             get { return instance; }
         }
@@ -104,16 +104,19 @@ namespace V_AUFSTO_Schnelltest.Recordings
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKLR.PbCommon2Stornieren' at Center.", repo.FrmKLR.PbCommon2StornierenInfo, new RecordItemIndex(3));
             //repo.FrmKLR.PbCommon2Stornieren.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuftrag.PbCommonLoad' at Center.", repo.TblAuftrag.PbCommonLoadInfo, new RecordItemIndex(4));
-            repo.TblAuftrag.PbCommonLoad.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKLR.PbMDIAuftragstorno' at Center.", repo.FrmKLR.PbMDIAuftragstornoInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKLR.PbMDIAuftragstorno' at Center.", repo.FrmKLR.PbMDIAuftragstornoInfo, new RecordItemIndex(4));
             repo.FrmKLR.PbMDIAuftragstorno.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuftrag.PbCommonLoad' at Center.", repo.TblAuftrag.PbCommonLoadInfo, new RecordItemIndex(5));
+            repo.TblAuftrag.PbCommonLoad.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuftrag.PbSpec1Alle' at Center.", repo.TblAuftrag.PbSpec1AlleInfo, new RecordItemIndex(6));
             repo.TblAuftrag.PbSpec1Alle.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuftrag.PbCommon2Stornieren' at Center.", repo.TblAuftrag.PbCommon2StornierenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuftrag.Spec1Group' at Center.", repo.TblAuftrag.Spec1GroupInfo, new RecordItemIndex(7));
+            repo.TblAuftrag.Spec1Group.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuftrag.PbCommon2Stornieren' at Center.", repo.TblAuftrag.PbCommon2StornierenInfo, new RecordItemIndex(8));
             repo.TblAuftrag.PbCommon2Stornieren.Click();
             
         }

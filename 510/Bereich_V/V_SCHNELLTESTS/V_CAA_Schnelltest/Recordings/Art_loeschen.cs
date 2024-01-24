@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace V_AUFSTO_Schnelltest.Recordings
+namespace V_CAA_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Art_loeschen recording.
     /// </summary>
-    [TestModule("2fb127e5-967e-4d76-9e43-812109fb8cc0", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("57077ba5-4b4e-4189-9243-3974190dd5d8", ModuleType.Recording, 1)]
+    public partial class Art_loeschen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository repository.
+        /// Holds an instance of the global::V_CAA_Schnelltest.V_CAA_SchnelltestRepository repository.
         /// </summary>
-        public static global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository repo = global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository.Instance;
+        public static global::V_CAA_Schnelltest.V_CAA_SchnelltestRepository repo = global::V_CAA_Schnelltest.V_CAA_SchnelltestRepository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Art_loeschen instance = new Art_loeschen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Art_loeschen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Art_loeschen Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,14 @@ namespace V_AUFSTO_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmKLR.TitleBar100StornoVonKoscheinRue'.", repo.FrmKLR.TitleBar100StornoVonKoscheinRueInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmKLR.TitleBar100StornoVonKoscheinRue, 1000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmMain.Row1Column0' at 15;5.", repo.FrmMain.Row1Column0Info, new RecordItemIndex(0));
+            repo.FrmMain.Row1Column0.DoubleClick("15;5");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbCommon2Loeschen' at Center.", repo.FrmMain.PbCommon2LoeschenInfo, new RecordItemIndex(1));
+            repo.FrmMain.PbCommon2Loeschen.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

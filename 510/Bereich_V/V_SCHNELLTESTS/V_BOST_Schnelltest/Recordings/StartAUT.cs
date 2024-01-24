@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace V_AUFSTO_Schnelltest.Recordings
+namespace V_BOST_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The StartAUT recording.
     /// </summary>
-    [TestModule("06a2d89b-1cf2-4384-96ff-1408cde92f21", ModuleType.Recording, 1)]
+    [TestModule("627efedc-7730-431c-9bfc-4287d9f96cfc", ModuleType.Recording, 1)]
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository repository.
+        /// Holds an instance of the global::V_BOST_Schnelltest.V_BOST_SchnelltestRepository repository.
         /// </summary>
-        public static global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository repo = global::V_AUFSTO_Schnelltest.V_AUFSTO_SchnelltestRepository.Instance;
+        public static global::V_BOST_Schnelltest.V_BOST_SchnelltestRepository repo = global::V_BOST_Schnelltest.V_BOST_SchnelltestRepository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -41,7 +41,7 @@ namespace V_AUFSTO_Schnelltest.Recordings
         /// </summary>
         public StartAUT()
         {
-            Programm = "V_AUFSTO /AUFRUFART=KLR";
+            Programm = "V_BOST";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
@@ -60,7 +60,7 @@ namespace V_AUFSTO_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Programm.
         /// </summary>
-        [TestVariable("281ee05f-dc33-432c-aefa-3b4c15e26a9f")]
+        [TestVariable("3f2a4f43-5ab8-4d66-91d6-24578c0c606c")]
         public string Programm
         {
             get { return _Programm; }
@@ -72,7 +72,7 @@ namespace V_AUFSTO_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("41a3a956-c3ef-428a-b809-fac9f11ecc2d")]
+        [TestVariable("df525287-639b-422f-a2fd-25644d0eb77b")]
         public string Startfile
         {
             get { return _Startfile; }
@@ -108,11 +108,11 @@ namespace V_AUFSTO_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKLR.TitleBar100StornoVonKoscheinRue'", repo.FrmKLR.TitleBar100StornoVonKoscheinRueInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmKLR.TitleBar100StornoVonKoscheinRueInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBodk.TitleBar100BonusDefinitionskopf'", repo.TblBodk.TitleBar100BonusDefinitionskopfInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblBodk.TitleBar100BonusDefinitionskopfInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Storno von Koschein - Rückmeldung, Lieferschein, Rechnung') on item 'FrmKLR.TitleBar100StornoVonKoscheinRue'.", repo.FrmKLR.TitleBar100StornoVonKoscheinRueInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmKLR.TitleBar100StornoVonKoscheinRueInfo, "Text", "Storno von Koschein - Rückmeldung, Lieferschein, Rechnung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bonus Definitionskopf') on item 'TblBodk.TitleBar100BonusDefinitionskopf'.", repo.TblBodk.TitleBar100BonusDefinitionskopfInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblBodk.TitleBar100BonusDefinitionskopfInfo, "Text", "Bonus Definitionskopf");
             
         }
 

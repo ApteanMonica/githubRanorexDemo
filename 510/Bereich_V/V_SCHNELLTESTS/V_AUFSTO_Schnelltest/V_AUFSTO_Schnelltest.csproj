@@ -85,41 +85,77 @@
     <Compile Include="Program.cs">
       <id>62dacf6b-55b0-4b00-a3b9-57b90b73d1b4</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Auftrag_storno2.cs">
+      <BoundTo>bc82ab6b-14e1-4fdc-8f90-9998ea03b674</BoundTo>
+      <DependentUpon>Auftrag_storno2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4d600ac-ddda-480c-b69f-81cfd3de3f6d</id>
+    </Compile>
+    <Compile Include="Recordings\Auftrag_storno2.UserCode.cs">
+      <BoundTo>bc82ab6b-14e1-4fdc-8f90-9998ea03b674</BoundTo>
+      <DependentUpon>Auftrag_storno2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b9ac4e3-f4fe-4c9c-a58e-54ce551892ae</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_Auftrag.cs">
+      <BoundTo>58279e08-03b6-4b63-9fa5-3031028f1201</BoundTo>
+      <DependentUpon>CloseAUT_Auftrag.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>afbd5475-c7e2-4537-9775-d5061a7e3ae8</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_Auftrag.UserCode.cs">
+      <BoundTo>58279e08-03b6-4b63-9fa5-3031028f1201</BoundTo>
+      <DependentUpon>CloseAUT_Auftrag.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0054208c-e535-4e53-8195-98f07944d418</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_klr.cs">
+      <DependentUpon>CloseAUT_klr.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ad742a7a-eb62-4223-910a-2dfda7d32994</id>
       <BoundTo>f7227e9e-0c13-4c91-80d6-6cf99e20a9e2</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseAUT_klr.UserCode.cs">
+      <DependentUpon>CloseAUT_klr.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4903fcf3-0c23-435a-be1e-d9ef1da9f951</id>
       <BoundTo>f7227e9e-0c13-4c91-80d6-6cf99e20a9e2</BoundTo>
     </Compile>
-    <Compile Include="Recordings\anlagen.cs">
-      <DependentUpon>anlagen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Auftrag_storno.cs">
+      <DependentUpon>Auftrag_storno.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>5f5c24c7-f2bc-46a0-b826-0f307e99533f</id>
       <BoundTo>b0b5d5a3-5b80-4adc-8a82-667746c2822c</BoundTo>
     </Compile>
-    <Compile Include="Recordings\anlagen.UserCode.cs">
-      <DependentUpon>anlagen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Auftrag_storno.UserCode.cs">
+      <DependentUpon>Auftrag_storno.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>940372c7-c9fb-47e4-ae1a-f9864e6b5561</id>
       <BoundTo>b0b5d5a3-5b80-4adc-8a82-667746c2822c</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\StartAUT_klr.cs">
+      <DependentUpon>StartAUT_klr.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>dfe343a1-3f4e-41ef-85f9-604d08675799</id>
       <BoundTo>f6bb2703-dcd8-4b10-96a7-aaea91506861</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\StartAUT_klr.UserCode.cs">
+      <DependentUpon>StartAUT_klr.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>78dfb742-8161-4c3e-bc02-d4e667c7fb86</id>
       <BoundTo>f6bb2703-dcd8-4b10-96a7-aaea91506861</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Auftrag.cs">
+      <BoundTo>46990c69-347b-4064-a5e6-c2d7b8747abe</BoundTo>
+      <DependentUpon>StartAUT_Auftrag.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>40e60508-da2d-477c-abf6-ee083319d8ef</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Auftrag.UserCode.cs">
+      <BoundTo>46990c69-347b-4064-a5e6-c2d7b8747abe</BoundTo>
+      <DependentUpon>StartAUT_Auftrag.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>407df0fa-e5d8-49e1-b597-8bbc81e3b9f4</id>
     </Compile>
     <Compile Include="V_AUFSTO_SchnelltestRepository.cs">
       <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
@@ -132,20 +168,35 @@
     <None Include="app.config">
       <id>63f07a91-e815-4d7f-86b6-8e7186ab5cf5</id>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
+    <None Include="Recordings\Auftrag_storno2.rxrec">
+      <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
+      <id>bc82ab6b-14e1-4fdc-8f90-9998ea03b674</id>
+      <recordtableid>7c6b0d82-7fbc-4e63-acc1-f6d463e12c7b</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_Auftrag.rxrec">
+      <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
+      <id>58279e08-03b6-4b63-9fa5-3031028f1201</id>
+      <recordtableid>91ec161a-6ac1-491e-b820-837b23290cd7</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_klr.rxrec">
       <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
       <id>f7227e9e-0c13-4c91-80d6-6cf99e20a9e2</id>
       <recordtableid>2fb127e5-967e-4d76-9e43-812109fb8cc0</recordtableid>
     </None>
-    <None Include="Recordings\anlagen.rxrec">
+    <None Include="Recordings\Auftrag_storno.rxrec">
       <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
       <id>b0b5d5a3-5b80-4adc-8a82-667746c2822c</id>
       <recordtableid>c0bb6653-e0ea-48ff-8f49-d1ea7673f423</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT.rxrec">
+    <None Include="Recordings\StartAUT_klr.rxrec">
       <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
       <id>f6bb2703-dcd8-4b10-96a7-aaea91506861</id>
       <recordtableid>06a2d89b-1cf2-4384-96ff-1408cde92f21</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_Auftrag.rxrec">
+      <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>
+      <id>46990c69-347b-4064-a5e6-c2d7b8747abe</id>
+      <recordtableid>176c8ecf-bfb9-46e6-9688-24687f0cd3b2</recordtableid>
     </None>
     <None Include="V_AUFSTO_SchnelltestRepository.rximg">
       <BoundTo>11d510d5-46e7-4b71-809e-a41084745eab</BoundTo>

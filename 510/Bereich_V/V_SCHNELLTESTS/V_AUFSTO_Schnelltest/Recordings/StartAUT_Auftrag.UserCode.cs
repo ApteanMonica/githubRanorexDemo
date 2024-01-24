@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace V_AUFSTO_Schnelltest.Recordings
 {
-    public partial class StartAUT
+    public partial class StartAUT_Auftrag
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
