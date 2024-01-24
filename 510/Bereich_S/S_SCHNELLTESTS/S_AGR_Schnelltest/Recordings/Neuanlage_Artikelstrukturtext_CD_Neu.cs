@@ -41,7 +41,7 @@ namespace S_AGR_Schnelltest.Recordings
         /// </summary>
         public Neuanlage_Artikelstrukturtext_CD_Neu()
         {
-            ARTIKELSTRUKTURTEXT_CD_NEU = "XX";
+            ARTIKELSTRUKTURTEXT_CD_NEU = "XY";
         }
 
         /// <summary>
@@ -54,16 +54,14 @@ namespace S_AGR_Schnelltest.Recordings
 
 #region Variables
 
-        string _ARTIKELSTRUKTURTEXT_CD_NEU;
-
         /// <summary>
         /// Gets or sets the value of variable ARTIKELSTRUKTURTEXT_CD_NEU.
         /// </summary>
         [TestVariable("7279fdef-fde7-4be9-b5f8-57dcd59b0cd5")]
         public string ARTIKELSTRUKTURTEXT_CD_NEU
         {
-            get { return _ARTIKELSTRUKTURTEXT_CD_NEU; }
-            set { _ARTIKELSTRUKTURTEXT_CD_NEU = value; }
+            get { return repo.ARTIKELSTRUKTURTEXT_CD_NEU; }
+            set { repo.ARTIKELSTRUKTURTEXT_CD_NEU = value; }
         }
 
 #endregion
@@ -92,6 +90,42 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAsTexte.RibbonBar.PbDataAccessNew' at Center.", repo.TblAsTexte.RibbonBar.PbDataAccessNewInfo, new RecordItemIndex(0));
+            repo.TblAsTexte.RibbonBar.PbDataAccessNew.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Tab}' with focus on 'TblAsTexte.ToolBar.DfAstxArt'.", repo.TblAsTexte.ToolBar.DfAstxArtInfo, new RecordItemIndex(1));
+            repo.TblAsTexte.ToolBar.DfAstxArt.PressKeys("1{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblAsTexte.FlexGrid' at Center.", repo.TblAsTexte.FlexGrid.SelfInfo, new RecordItemIndex(2));
+            repo.TblAsTexte.FlexGrid.Self.Click(System.Windows.Forms.MouseButtons.Right);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}'.", new RecordItemIndex(3));
+            Keyboard.Press("{Down}{Return}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ARTIKELSTRUKTURTEXT_CD_NEU'.", new RecordItemIndex(4));
+            Keyboard.Press(ARTIKELSTRUKTURTEXT_CD_NEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'G{Tab}'.", new RecordItemIndex(6));
+            Keyboard.Press("G{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAsTexte.RibbonBar.PbDataAccessSave' at Center.", repo.TblAsTexte.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(7));
+            repo.TblAsTexte.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAsTexte.RibbonBar.PbDataAccessLoad' at Center.", repo.TblAsTexte.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(8));
+            repo.TblAsTexte.RibbonBar.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext'", repo.TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            repo.TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.SelfInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ARTIKELSTRUKTURTEXT_CD_NEU) on item 'TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.ColAstxCd'.", repo.TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.ColAstxCdInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.ColAstxCdInfo, "Text", ARTIKELSTRUKTURTEXT_CD_NEU);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='G') on item 'TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.ColAs1Cd'.", repo.TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.ColAs1CdInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblAsTexte.FlexGrid.Row_mit_Variable_CD_Neu_Artikelstrukturtext.ColAs1CdInfo, "Text", "G");
+            
         }
 
 #region Image Feature Data

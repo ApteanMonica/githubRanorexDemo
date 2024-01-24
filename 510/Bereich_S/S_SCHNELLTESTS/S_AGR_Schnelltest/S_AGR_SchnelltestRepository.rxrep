@@ -747,6 +747,7 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 		id="e032d396-c7bc-435c-8fb2-1f84083d952e"
 		isrooted="True"
 		name="TblAsTexte"
+		refimgid="3b11b885-f933-4b05-b093-94eb23e6848b"
 		refpath="/form[@controlname='tblAsTexte']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -806,6 +807,105 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 					/form[@controlname='tblAsTexte']/container[@controlname='RibbonBar']
 				</basepath>
 			</folder>
+			<folder
+			capname="container"
+			id="5accd422-51ec-4841-8bf6-c04fa1643d2c"
+			isrooted="True"
+			name="ToolBar"
+			refimgid="95760307-c752-4c29-83ea-bb17a4e2f792"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="96754a41-8629-47ed-a5dc-07d51287fbd0"
+				name="DfAstxArt"
+				refimgid="80448f50-dc13-4e7e-ac5f-10196dd1c7aa"
+				refpath="/form[@controlname='tblAsTexte']/container[@controlname='ToolBar']/text[@controlname='dfAstx_art']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAsTexte']/container[@controlname='ToolBar']/text[@controlname='dfAstx_art']
+				</item>
+				<basepath>
+					/form[@controlname='tblAsTexte']/container[@controlname='ToolBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="6b4b5769-24c1-48ed-82ed-1f58ddeb6413"
+			isrooted="True"
+			name="FlexGrid"
+			refimgid="22d8bd47-73dd-41c8-8b6d-73479a77cb0d"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="347aca7d-a848-48a1-8177-7f237984f18a"
+				name="Row0Column0"
+				refimgid="5659dfbe-9942-4ebe-81a6-53e9c1bf82fd"
+				refpath="/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']
+				</item>
+				<folder
+				capname="row"
+				id="3becdb9b-67ce-4364-a879-24ace0179692"
+				isrooted="True"
+				name="Row_mit_Variable_CD_Neu_Artikelstrukturtext"
+				refimgid="fa67978e-a2d9-4340-8715-333a186af0cc"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="d9dd45cb-f22e-44f2-8d61-f2d07068e977"
+					name="ColAstxCd"
+					refimgid="d7f6eb2f-4b68-44bc-899b-8fe04f9dd641"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELSTRUKTURTEXT_CD_NEU]/cell[@accessiblename~'colAstx_cd']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="1f6babd9-02dd-4fc8-9454-d78345583f2d"
+					name="ColAs1Cd"
+					refimgid="1fc34660-25f3-4b55-b557-338081def0f1"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELSTRUKTURTEXT_CD_NEU]/cell[@accessiblename~'colAs1_cd']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="9c934a83-b90a-452f-b39e-c8ecf2dcb5f9"
+					name="ColAstxText"
+					refimgid="54049ce6-2999-42b7-af42-1347956fb29d"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELSTRUKTURTEXT_CD_NEU]/cell[@accessiblename~'colAstx_text']
+					</item>
+					<basepath>
+						/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELSTRUKTURTEXT_CD_NEU]
+					</basepath>
+				</folder>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="cab23ac1-4fa9-4a1a-979c-9a2a02853bea"
+				name="Row1Column0"
+				refimgid="b43025b6-2efc-49c6-9e70-afe6eb76d178"
+				refpath="/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+				</item>
+				<basepath>
+					/form[@controlname='tblAsTexte']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='tblAsTexte']
 			</basepath>
@@ -851,6 +951,11 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 		id="49bf77b1-8a23-4bef-86c2-847823453f60"
 		name="ARTIKELSTRUKTUR_CD_NEU">
 			X
+		</var>
+		<var
+		id="4b8e00a7-bc90-479e-8f7c-d516457174bb"
+		name="ARTIKELSTRUKTURTEXT_CD_NEU">
+			XY
 		</var>
 	</variables>
 </repository>

@@ -247,16 +247,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
-					variableid="83aca5b7-d3aa-435e-a848-c931ea6f741e"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_Artikelstrukturtexte"
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="700a72e0-c148-40da-a8c9-cf27abb27a7a"
 					variablename="Programm_Artikelstrukturtexte">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="83aca5b7-d3aa-435e-a848-c931ea6f741e"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -338,6 +338,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="92b24e23-80c1-41ad-86ff-2f975c13acec"
+			name="Loeschen_Artikelstrukturtext_Neu"
+			ref="f9eb010f-38d6-44e5-8adb-dd41ae4e2a18"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTURTEXT_CD_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="4b8e00a7-bc90-479e-8f7c-d516457174bb"
+					variablename="ARTIKELSTRUKTURTEXT_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="934cd855-227b-4f7b-951e-249ee8fb3056"
 			name="setup">
@@ -362,6 +376,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a270f1da-617b-4394-bc3f-3bf70145d29a"
+			name="Aendern_Artikelstrukturtexte_Neu"
+			ref="1662e04e-e334-4667-90be-7f9942e5bb55"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTURTEXT_CD_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="4b8e00a7-bc90-479e-8f7c-d516457174bb"
+					variablename="ARTIKELSTRUKTURTEXT_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="a8f7946a-9ba5-4135-a4d3-c753611f5f92"
 			name="teardown">
@@ -370,6 +398,12 @@
 			id="a94d8271-3547-44a3-9b1c-376b94e4e025"
 			name="CloseAUT_Artikelstruktur"
 			ref="428a93f7-98de-498b-b8dc-efe4c3e936ab"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ac2f728e-e0a7-4b90-850c-3b97c96aa17c"
+			name="CloseAUT_Artikelstrukturtext"
+			ref="dc1e2f28-5905-4a19-9edc-e1a4403660ae"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -539,7 +573,7 @@
 					</param>
 					<param
 					name="ARTIKELSTRUKTURTEXT_CD_NEU"
-					value="">
+					value="XY">
 					</param>
 				</parameters>
 			</testcase>
@@ -746,9 +780,21 @@
 						id="6c7589ec-8f82-494f-b36a-4cc699ef0b0a"
 						name="Neuanlage_Artikelstrukturtext_CD_Neu">
 						</testmodule>
+						<testmodule
+						id="a270f1da-617b-4394-bc3f-3bf70145d29a"
+						name="Aendern_Artikelstrukturtexte_Neu">
+						</testmodule>
+						<testmodule
+						id="92b24e23-80c1-41ad-86ff-2f975c13acec"
+						name="Loeschen_Artikelstrukturtext_Neu">
+						</testmodule>
 						<teardown
 						id="f2036b90-0eef-4b4c-aa71-33a1e8c6aa41"
 						name="teardown">
+							<testmodule
+							id="ac2f728e-e0a7-4b90-850c-3b97c96aa17c"
+							name="CloseAUT_Artikelstrukturtext">
+							</testmodule>
 						</teardown>
 					</testcase>
 				</testcase>
@@ -761,6 +807,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="08d4bcb2-9c39-4df7-8c7e-6744898f39e6">
+			</testcontainer>
 			<testcontainer
 			id="4adbd1fd-e368-433f-98f5-236f73388815">
 			</testcontainer>
