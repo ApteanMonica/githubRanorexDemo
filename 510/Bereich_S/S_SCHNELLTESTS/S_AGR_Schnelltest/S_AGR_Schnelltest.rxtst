@@ -51,6 +51,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="14854fb0-bf86-40ed-ab73-99186b5051fe"
+			name="Loeschen_Artikelstruktur_Neu"
+			ref="88cbd56e-85d5-4aec-bb75-185f7ede23eb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="a4bd2fbb-b6dc-489f-add3-c370c6a62aaf"
+					variablename="ARTIKELSTRUKTUR_CD_ALT">
+					</var>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="49bf77b1-8a23-4bef-86c2-847823453f60"
+					variablename="ARTIKELSTRUKTUR_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="153b70e9-27fa-45e9-9bf7-9957282b4c19"
 			name="StartAUT_Artikelgruppen"
 			ref="dfb34834-6634-4ece-9f53-f31c6192dcab"
@@ -81,6 +101,66 @@
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
 					variablename="GRUPPENART_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="176cc1ed-b797-4eae-8ea3-051bb65517b2"
+			name="Neuanlage_Artikelstruktur_CD_Neu"
+			ref="d79b1a3b-aca8-43a8-b57d-d779ffbe85c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTUR_BEZEICHNUNG_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="e952c507-9291-4f60-a783-41d5b6966b5b"
+					variablename="ARTIKELSTRUKTUR_BEZEICHNUNG_ALT">
+					</var>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="d2202e17-43f6-45cf-b373-f344f3ca4b9f"
+					variablename="ARTIKELSTRUKTUR_CD_ALT">
+					</var>
+					<var
+					dataname="ARTIKELSTRUKTUR_BEZEICHNUNG_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="99ffd62e-aecd-4c00-b227-a863e4a4ebeb"
+					variablename="ARTIKELSTRUKTUR_BEZEICHNUNG_NEU">
+					</var>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="4d98434e-54e0-4bde-96b7-df18aef93855"
+					variablename="ARTIKELSTRUKTUR_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="20f5fc99-fcbc-4245-a08d-b12e1b23949a"
+			name="Aendern_Artikelstruktur_Neu"
+			ref="ef924714-691d-415f-9098-0d3c2408f3fb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="49bf77b1-8a23-4bef-86c2-847823453f60"
+					variablename="ARTIKELSTRUKTUR_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="258f5305-4173-4d6f-ba2e-fdf1b441dd7f"
+			name="Meldung_Loeschen_Artikelstruktur_alt_nicht_moeglich"
+			ref="a06719f6-4fb3-4dea-913b-a3c4626507c1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="a4bd2fbb-b6dc-489f-add3-c370c6a62aaf"
+					variablename="ARTIKELSTRUKTUR_CD_ALT">
 					</var>
 				</databinding>
 			</testmodule>
@@ -134,6 +214,18 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="423480c1-89fc-4c89-bf7d-42f3ff314968"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="4951f742-ec5b-4e6a-b09f-bdb57c89ea6d"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="4adbd1fd-e368-433f-98f5-236f73388815"
+			name="Verwalten_Artikelstrukturtexte_Aufruf=ASTX">
+			</testcase>
 			<testmodule
 			id="4f4e808d-70f4-4a75-9c44-2ebed917043f"
 			name="Meldung_Loeschen_nicht_moeglich"
@@ -145,6 +237,26 @@
 					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
 					variableid="04d596e0-f25a-4df1-9d2f-5ae4d510d7df"
 					variablename="GRUPPENART_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="51c7b672-a2b7-41c9-8060-daafc0041998"
+			name="StartAUT_Artikelstrukturtexte"
+			ref="9fced722-f806-417f-a73d-5445eced6fe4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="83aca5b7-d3aa-435e-a848-c931ea6f741e"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_Artikelstrukturtexte"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="700a72e0-c148-40da-a8c9-cf27abb27a7a"
+					variablename="Programm_Artikelstrukturtexte">
 					</var>
 				</databinding>
 			</testmodule>
@@ -168,6 +280,44 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="6b6103f0-7b72-4d14-984d-d6009f37b589"
+			name="setup">
+			</setup>
+			<testmodule
+			id="6c7589ec-8f82-494f-b36a-4cc699ef0b0a"
+			name="Neuanlage_Artikelstrukturtext_CD_Neu"
+			ref="afe58129-8071-4645-9ac6-2dc94fa6090e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTURTEXT_CD_NEU"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="7279fdef-fde7-4be9-b5f8-57dcd59b0cd5"
+					variablename="ARTIKELSTRUKTURTEXT_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6edf4d55-fcd5-40c2-a069-b4c4a6eb2092"
+			name="StartAUT_Artikelgruppenzuordnung"
+			ref="727d9314-1e36-4d7b-8c35-fe268844236f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="a1574371-c861-464f-b949-627ad74af043"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_Artikelgruppenzuordnung"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="6175fc41-0349-4176-97f6-e4ee3795e955"
+					variablename="Programm_Artikelgruppenzuordnung">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="8c85fd11-2e5f-4872-affe-f7683f127410"
 			name="Neuanlage_Artikelgruppe"
@@ -188,14 +338,48 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="934cd855-227b-4f7b-951e-249ee8fb3056"
+			name="setup">
+			</setup>
+			<testmodule
+			id="98036634-1db2-45f7-9b84-f229437c97de"
+			name="StartAUT_Artikelstruktur"
+			ref="09d4bbb7-13ac-489f-a49a-f80ddb6bc475"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="5b614a3f-bd7f-483d-8f12-63571328c901"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_Artikelstruktur"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="9dc6e230-d0ee-4a2b-a00f-7808d18ffe24"
+					variablename="Programm_Artikelstruktur">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="a8f7946a-9ba5-4135-a4d3-c753611f5f92"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="a94d8271-3547-44a3-9b1c-376b94e4e025"
+			name="CloseAUT_Artikelstruktur"
+			ref="428a93f7-98de-498b-b8dc-efe4c3e936ab"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a"
-			name="Verwalten_Artikelgruppenarten_Aufrufart=AGRA">
+			name="Verwalten_Artikelgruppenarten_Aufruf=AGRA">
 			</testcase>
+			<setup
+			id="bdece181-9e48-44f1-a842-ff24c9ad422a"
+			name="setup">
+			</setup>
 			<testmodule
 			id="ca8dee5c-a68d-44e8-a073-9e7f277985e9"
 			name="Loeschen_Gruppenart_Neu"
@@ -254,6 +438,12 @@
 			id="d1ec8f67-d810-4278-8ccf-ca5c7ddf10e2"
 			name="CloseAUT_Artikelgruppen"
 			ref="be97719e-0605-44d7-82c8-d07b77fac35d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d841da37-baf0-4901-a3e2-67a18358d50e"
+			name="CloseAUT_Artikelgruppenzuordnung"
+			ref="e8888486-6dc6-4ea9-949f-d124a0da4cf7"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -319,7 +509,65 @@
 					name="GRUPPENART_ALT_BEZEICHNUNG"
 					value="Bedarfsanforderung">
 					</param>
+					<param
+					name="Programm_Artikelgruppenzuordnung"
+					value="S_AGR Aufruf=AGRZ">
+					</param>
+					<param
+					name="Programm_Artikelstruktur"
+					value="S_AGR Aufruf=AS">
+					</param>
+					<param
+					name="Programm_Artikelstrukturtexte"
+					value="S_AGR Aufruf=ASTX">
+					</param>
+					<param
+					name="ARTIKELSTRUKTUR_CD_NEU"
+					value="X">
+					</param>
+					<param
+					name="ARTIKELSTRUKTUR_BEZEICHNUNG_NEU"
+					value="BAR">
+					</param>
+					<param
+					name="ARTIKELSTRUKTUR_CD_ALT"
+					value="G">
+					</param>
+					<param
+					name="ARTIKELSTRUKTUR_BEZEICHNUNG_ALT"
+					value="Gerät">
+					</param>
+					<param
+					name="ARTIKELSTRUKTURTEXT_CD_NEU"
+					value="">
+					</param>
 				</parameters>
+			</testcase>
+			<testcase
+			id="e2590d72-3815-4435-8d62-7445d6343696"
+			name="Verwalten_Artikelstruktur_Aufruf=AS">
+			</testcase>
+			<testmodule
+			id="f0bb8345-362d-48d2-8f5f-6071f55045a5"
+			name="Loeschen_Artikelstruktur_Alt"
+			ref="089235b3-8a6d-4923-8fc2-2fa3ec4c221f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ARTIKELSTRUKTUR_CD_ALT"
+					datasourceid="e0d09f38-ffb6-49a1-917e-e10e768abc13"
+					variableid="a4bd2fbb-b6dc-489f-add3-c370c6a62aaf"
+					variablename="ARTIKELSTRUKTUR_CD_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="f2036b90-0eef-4b4c-aa71-33a1e8c6aa41"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="f55f09b3-6015-4692-9183-4ab8b894c688"
+			name="Verwalten_Artikelgruppenzuordnung_Aufruf=AGRZ">
 			</testcase>
 			<testmodule
 			id="f67c26e9-5acd-4774-b774-7eec1f99d13c"
@@ -385,7 +633,7 @@
 					</testcase>
 					<testcase
 					id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a"
-					name="Verwalten_Artikelgruppenarten_Aufrufart=AGRA">
+					name="Verwalten_Artikelgruppenarten_Aufruf=AGRA">
 						<setup
 						id="389a5471-193f-450a-9acc-f94d740104c0"
 						name="setup">
@@ -423,6 +671,86 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="f55f09b3-6015-4692-9183-4ab8b894c688"
+					name="Verwalten_Artikelgruppenzuordnung_Aufruf=AGRZ">
+						<setup
+						id="934cd855-227b-4f7b-951e-249ee8fb3056"
+						name="setup">
+							<testmodule
+							id="6edf4d55-fcd5-40c2-a069-b4c4a6eb2092"
+							name="StartAUT_Artikelgruppenzuordnung">
+							</testmodule>
+						</setup>
+						<teardown
+						id="4951f742-ec5b-4e6a-b09f-bdb57c89ea6d"
+						name="teardown">
+							<testmodule
+							id="d841da37-baf0-4901-a3e2-67a18358d50e"
+							name="CloseAUT_Artikelgruppenzuordnung">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="e2590d72-3815-4435-8d62-7445d6343696"
+					name="Verwalten_Artikelstruktur_Aufruf=AS">
+						<setup
+						id="bdece181-9e48-44f1-a842-ff24c9ad422a"
+						name="setup">
+							<testmodule
+							id="98036634-1db2-45f7-9b84-f229437c97de"
+							name="StartAUT_Artikelstruktur">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="176cc1ed-b797-4eae-8ea3-051bb65517b2"
+						name="Neuanlage_Artikelstruktur_CD_Neu">
+						</testmodule>
+						<testmodule
+						id="20f5fc99-fcbc-4245-a08d-b12e1b23949a"
+						name="Aendern_Artikelstruktur_Neu">
+						</testmodule>
+						<testmodule
+						id="14854fb0-bf86-40ed-ab73-99186b5051fe"
+						name="Loeschen_Artikelstruktur_Neu">
+						</testmodule>
+						<testmodule
+						id="f0bb8345-362d-48d2-8f5f-6071f55045a5"
+						name="Loeschen_Artikelstruktur_Alt">
+						</testmodule>
+						<testmodule
+						id="258f5305-4173-4d6f-ba2e-fdf1b441dd7f"
+						name="Meldung_Loeschen_Artikelstruktur_alt_nicht_moeglich">
+						</testmodule>
+						<teardown
+						id="423480c1-89fc-4c89-bf7d-42f3ff314968"
+						name="teardown">
+							<testmodule
+							id="a94d8271-3547-44a3-9b1c-376b94e4e025"
+							name="CloseAUT_Artikelstruktur">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="4adbd1fd-e368-433f-98f5-236f73388815"
+					name="Verwalten_Artikelstrukturtexte_Aufruf=ASTX">
+						<setup
+						id="6b6103f0-7b72-4d14-984d-d6009f37b589"
+						name="setup">
+							<testmodule
+							id="51c7b672-a2b7-41c9-8060-daafc0041998"
+							name="StartAUT_Artikelstrukturtexte">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="6c7589ec-8f82-494f-b36a-4cc699ef0b0a"
+						name="Neuanlage_Artikelstrukturtext_CD_Neu">
+						</testmodule>
+						<teardown
+						id="f2036b90-0eef-4b4c-aa71-33a1e8c6aa41"
+						name="teardown">
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -434,10 +762,19 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="4adbd1fd-e368-433f-98f5-236f73388815">
+			</testcontainer>
+			<testcontainer
 			id="b43b074f-cd7d-4e95-b6d0-86cb9ff3918a">
 			</testcontainer>
 			<testcontainer
 			id="e0d09f38-ffb6-49a1-917e-e10e768abc13">
+			</testcontainer>
+			<testcontainer
+			id="e2590d72-3815-4435-8d62-7445d6343696">
+			</testcontainer>
+			<testcontainer
+			id="f55f09b3-6015-4692-9183-4ab8b894c688">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

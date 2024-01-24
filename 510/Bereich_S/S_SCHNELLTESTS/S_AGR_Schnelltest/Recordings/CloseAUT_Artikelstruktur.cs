@@ -24,29 +24,29 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_Gruppenart recording.
+    ///The CloseAUT_Artikelstruktur recording.
     /// </summary>
-    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
-    public partial class CloseAUT_Gruppenart : ITestModule
+    [TestModule("428a93f7-98de-498b-b8dc-efe4c3e936ab", ModuleType.Recording, 1)]
+    public partial class CloseAUT_Artikelstruktur : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
+        static CloseAUT_Artikelstruktur instance = new CloseAUT_Artikelstruktur();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_Gruppenart()
+        public CloseAUT_Artikelstruktur()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_Gruppenart Instance
+        public static CloseAUT_Artikelstruktur Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAs.TitleBar100Artikelstrukturen'.", repo.FrmAs.TitleBar100ArtikelstrukturenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmAs.TitleBar100Artikelstrukturen, 1000);
             
         }
 

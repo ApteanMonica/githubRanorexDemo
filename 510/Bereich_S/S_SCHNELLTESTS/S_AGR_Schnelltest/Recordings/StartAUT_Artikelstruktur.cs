@@ -24,34 +24,60 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_Gruppenart recording.
+    ///The StartAUT_Artikelstruktur recording.
     /// </summary>
-    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
-    public partial class CloseAUT_Gruppenart : ITestModule
+    [TestModule("09d4bbb7-13ac-489f-a49a-f80ddb6bc475", ModuleType.Recording, 1)]
+    public partial class StartAUT_Artikelstruktur : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
+        static StartAUT_Artikelstruktur instance = new StartAUT_Artikelstruktur();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_Gruppenart()
+        public StartAUT_Artikelstruktur()
         {
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_Artikelstruktur = "S_AGR Aufruf=AS";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_Gruppenart Instance
+        public static StartAUT_Artikelstruktur Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("5b614a3f-bd7f-483d-8f12-63571328c901")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm_Artikelstruktur;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_Artikelstruktur.
+        /// </summary>
+        [TestVariable("9dc6e230-d0ee-4a2b-a00f-7808d18ffe24")]
+        public string Programm_Artikelstruktur
+        {
+            get { return _Programm_Artikelstruktur; }
+            set { _Programm_Artikelstruktur = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,14 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_Artikelstruktur in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_Artikelstruktur, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAs.TitleBar100Artikelstrukturen'", repo.FrmAs.TitleBar100ArtikelstrukturenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmAs.TitleBar100ArtikelstrukturenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Artikelstrukturen') on item 'FrmAs.TitleBar100Artikelstrukturen'.", repo.FrmAs.TitleBar100ArtikelstrukturenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmAs.TitleBar100ArtikelstrukturenInfo, "Text", "Artikelstrukturen");
             
         }
 

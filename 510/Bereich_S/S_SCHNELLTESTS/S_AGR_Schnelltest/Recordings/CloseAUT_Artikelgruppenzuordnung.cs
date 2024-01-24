@@ -24,29 +24,29 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_Gruppenart recording.
+    ///The CloseAUT_Artikelgruppenzuordnung recording.
     /// </summary>
-    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
-    public partial class CloseAUT_Gruppenart : ITestModule
+    [TestModule("e8888486-6dc6-4ea9-949f-d124a0da4cf7", ModuleType.Recording, 1)]
+    public partial class CloseAUT_Artikelgruppenzuordnung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
+        static CloseAUT_Artikelgruppenzuordnung instance = new CloseAUT_Artikelgruppenzuordnung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_Gruppenart()
+        public CloseAUT_Artikelgruppenzuordnung()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_Gruppenart Instance
+        public static CloseAUT_Artikelgruppenzuordnung Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenzuordnung.TitleBar100Artikelgruppenzuordnung'.", repo.TblArtikelgruppenzuordnung.TitleBar100ArtikelgruppenzuordnungInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblArtikelgruppenzuordnung.TitleBar100Artikelgruppenzuordnung, 1000);
             
         }
 

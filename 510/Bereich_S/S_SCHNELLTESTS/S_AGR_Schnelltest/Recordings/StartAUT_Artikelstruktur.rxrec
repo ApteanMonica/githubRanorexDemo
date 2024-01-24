@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="957039da-3f9d-4cef-8152-379b5ecc18fd"
+id="09d4bbb7-13ac-489f-a49a-f80ddb6bc475"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,24 +19,56 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CloseAUT_Gruppenart"
+	classname="StartAUT_Artikelstruktur"
 	namespace="S_AGR_Schnelltest.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="5b614a3f-bd7f-483d-8f12-63571328c901"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="9dc6e230-d0ee-4a2b-a00f-7808d18ffe24"
+		name="Programm_Artikelstruktur">
+			S_AGR Aufruf=AS
+		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<runapprecorditem
 		enabled="True"
-		graceperiod="1000ms"
-		method="CloseWindow"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm_Artikelstruktur">
+				</binding>
+			</bindings>
+			<filename>
+				yourapp
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
 		optional="False"
-		searchpropertyid="ca7bea91-cb18-4934-8a25-6bbfe4758ec0">
+		searchpropertyid="54e76257-9648-4bf4-acbc-9f614590fceb"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="358ef284-3290-470e-9a62-131eb7cefd37"
+			id="cecd8f82-05fd-4f51-bd09-5edf74ad8ba0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -44,9 +76,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="10"
+				index="4"
 				prefcap="titlebar"
-				rect="528,344,881,28"
+				rect="382,232,1173,28"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -54,7 +86,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[100]  Gruppenarten
+						[100]  Artikelstrukturen
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -74,16 +106,41 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Gruppenarten
+						[100]  Artikelstrukturen
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblArtikelgruppenarten']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmAs']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</closeapprecorditem>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c04eb65c-c2fd-4326-9828-8df47febf2ea">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cecd8f82-05fd-4f51-bd09-5edf74ad8ba0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAs']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Artikelstrukturen
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="9a3dfce6-2dcc-4725-a77e-51e6bfd70495"
@@ -100,7 +157,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseAUT_Gruppenart.UserCode.cs
+		StartAUT_Artikelstruktur.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

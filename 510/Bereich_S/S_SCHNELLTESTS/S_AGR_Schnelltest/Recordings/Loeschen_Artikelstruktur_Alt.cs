@@ -24,34 +24,44 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_Gruppenart recording.
+    ///The Loeschen_Artikelstruktur_Alt recording.
     /// </summary>
-    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
-    public partial class CloseAUT_Gruppenart : ITestModule
+    [TestModule("089235b3-8a6d-4923-8fc2-2fa3ec4c221f", ModuleType.Recording, 1)]
+    public partial class Loeschen_Artikelstruktur_Alt : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
+        static Loeschen_Artikelstruktur_Alt instance = new Loeschen_Artikelstruktur_Alt();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_Gruppenart()
+        public Loeschen_Artikelstruktur_Alt()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_Gruppenart Instance
+        public static Loeschen_Artikelstruktur_Alt Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable ARTIKELSTRUKTUR_CD_ALT.
+        /// </summary>
+        [TestVariable("a4bd2fbb-b6dc-489f-add3-c370c6a62aaf")]
+        public string ARTIKELSTRUKTUR_CD_ALT
+        {
+            get { return repo.ARTIKELSTRUKTUR_CD_ALT; }
+            set { repo.ARTIKELSTRUKTUR_CD_ALT = value; }
+        }
 
 #endregion
 
@@ -79,8 +89,11 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAs.FlexGrid_Tabelle_links.Row_mit_Variable_CD_Alt' at 9;7.", repo.FrmAs.FlexGrid_Tabelle_links.Row_mit_Variable_CD_Alt.SelfInfo, new RecordItemIndex(0));
+            repo.FrmAs.FlexGrid_Tabelle_links.Row_mit_Variable_CD_Alt.Self.Click("9;7");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}'.", new RecordItemIndex(1));
+            Keyboard.Press("{Delete}");
             
         }
 

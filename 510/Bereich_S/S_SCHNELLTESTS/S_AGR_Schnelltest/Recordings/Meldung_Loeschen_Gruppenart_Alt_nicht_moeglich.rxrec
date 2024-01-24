@@ -1051,9 +1051,7 @@ RQAzY3/PV/yH+FFPooA//9k=
 			</matchname>
 			<matchvalue>
 				Dieser Datensatz kann noch nicht gel&#246;scht werden,
-da noch abh&#228;ngige Daten existieren!
-Die DELETE-Anweisung steht in Konflikt mit der REFERENCE-Einschr&#228;nkung &quot;S_AGRZ_S_AGRA_1&quot;. Der Konflikt trat in der E521-Datenbank, Tabelle &quot;dbo.S_AGRZ&quot;, column 'AGRA_CD' auf.
-Die Anweisung wurde beendet.
+da noch abh&#228;ngige Daten existieren!&#10;
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -2196,6 +2194,26 @@ ABBRECHEN	speichern unterbrechen
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="0bac182d-f754-492e-bcc8-6ef9b2cf8893"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="358ef284-3290-470e-9a62-131eb7cefd37"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblArtikelgruppenarten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

@@ -24,34 +24,60 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_Gruppenart recording.
+    ///The StartAUT_Artikelgruppenzuordnung recording.
     /// </summary>
-    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
-    public partial class CloseAUT_Gruppenart : ITestModule
+    [TestModule("727d9314-1e36-4d7b-8c35-fe268844236f", ModuleType.Recording, 1)]
+    public partial class StartAUT_Artikelgruppenzuordnung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
+        static StartAUT_Artikelgruppenzuordnung instance = new StartAUT_Artikelgruppenzuordnung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_Gruppenart()
+        public StartAUT_Artikelgruppenzuordnung()
         {
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_Artikelgruppenzuordnung = "S_AGR Aufruf=AGRZ";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_Gruppenart Instance
+        public static StartAUT_Artikelgruppenzuordnung Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("a1574371-c861-464f-b949-627ad74af043")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm_Artikelgruppenzuordnung;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_Artikelgruppenzuordnung.
+        /// </summary>
+        [TestVariable("6175fc41-0349-4176-97f6-e4ee3795e955")]
+        public string Programm_Artikelgruppenzuordnung
+        {
+            get { return _Programm_Artikelgruppenzuordnung; }
+            set { _Programm_Artikelgruppenzuordnung = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,14 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_Artikelgruppenzuordnung in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_Artikelgruppenzuordnung, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenzuordnung.TitleBar100Artikelgruppenzuordnung'", repo.TblArtikelgruppenzuordnung.TitleBar100ArtikelgruppenzuordnungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblArtikelgruppenzuordnung.TitleBar100ArtikelgruppenzuordnungInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Artikelgruppenzuordnung') on item 'TblArtikelgruppenzuordnung.TitleBar100Artikelgruppenzuordnung'.", repo.TblArtikelgruppenzuordnung.TitleBar100ArtikelgruppenzuordnungInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblArtikelgruppenzuordnung.TitleBar100ArtikelgruppenzuordnungInfo, "Text", "Artikelgruppenzuordnung");
             
         }
 

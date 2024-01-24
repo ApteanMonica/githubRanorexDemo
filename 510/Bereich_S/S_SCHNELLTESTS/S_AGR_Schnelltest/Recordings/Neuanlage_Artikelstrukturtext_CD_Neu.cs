@@ -24,34 +24,47 @@ namespace S_AGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_Gruppenart recording.
+    ///The Neuanlage_Artikelstrukturtext_CD_Neu recording.
     /// </summary>
-    [TestModule("957039da-3f9d-4cef-8152-379b5ecc18fd", ModuleType.Recording, 1)]
-    public partial class CloseAUT_Gruppenart : ITestModule
+    [TestModule("afe58129-8071-4645-9ac6-2dc94fa6090e", ModuleType.Recording, 1)]
+    public partial class Neuanlage_Artikelstrukturtext_CD_Neu : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repository.
         /// </summary>
         public static global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository repo = global::S_AGR_Schnelltest.S_AGR_SchnelltestRepository.Instance;
 
-        static CloseAUT_Gruppenart instance = new CloseAUT_Gruppenart();
+        static Neuanlage_Artikelstrukturtext_CD_Neu instance = new Neuanlage_Artikelstrukturtext_CD_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_Gruppenart()
+        public Neuanlage_Artikelstrukturtext_CD_Neu()
         {
+            ARTIKELSTRUKTURTEXT_CD_NEU = "XX";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_Gruppenart Instance
+        public static Neuanlage_Artikelstrukturtext_CD_Neu Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _ARTIKELSTRUKTURTEXT_CD_NEU;
+
+        /// <summary>
+        /// Gets or sets the value of variable ARTIKELSTRUKTURTEXT_CD_NEU.
+        /// </summary>
+        [TestVariable("7279fdef-fde7-4be9-b5f8-57dcd59b0cd5")]
+        public string ARTIKELSTRUKTURTEXT_CD_NEU
+        {
+            get { return _ARTIKELSTRUKTURTEXT_CD_NEU; }
+            set { _ARTIKELSTRUKTURTEXT_CD_NEU = value; }
+        }
 
 #endregion
 
@@ -79,9 +92,6 @@ namespace S_AGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
-            
         }
 
 #region Image Feature Data
