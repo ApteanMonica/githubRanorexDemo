@@ -126,6 +126,15 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4234,6 +4243,21 @@ CHeP7r/98GjeP7r/APfBqaigCHeP7r/98GjeP7r/APfBqaigCHeP7r/98GjeP7r/APfBqaigCHeP
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="11feb51c-1513-4cf8-b0d4-316ca0ceae64"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<keysequenceitem
 		KeySequence=""
 		duration="20ms"
@@ -4283,6 +4307,21 @@ CHeP7r/98GjeP7r/APfBqaigCHeP7r/98GjeP7r/APfBqaigCHeP7r/98GjeP7r/APfBqaigCHeP
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="11feb51c-1513-4cf8-b0d4-316ca0ceae64"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -6219,6 +6258,98 @@ CHeP7r/98GjeP7r/APfBqaigCHeP7r/98GjeP7r/APfBqaigCHeP7r/98GjeP7r/APfBqaigCHeP
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a30dd886-9111-42e3-b276-8f0368ac7288">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Zahlart">
+				</binding>
+			</bindings>
+			<info
+			id="45bc0fa8-32f3-404d-9d66-b1a3e099094c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBankbeleg']/?/?/text[@controlname='dfZahlart']/text[@accessiblename='Zahlart']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d3cae3af-521c-4d1e-b5ac-04f56fcb2e0f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Bank">
+				</binding>
+			</bindings>
+			<info
+			id="4a276cdf-a77b-4968-9a38-0a511cd05ad8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBankbeleg']/?/?/text[@controlname='dfBank']/text[@accessiblename='Bank']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4315512f-10e0-4161-b74b-bc0f662337d0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c20b9f1-07f9-43a8-b6b9-554aad3e3663"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBankbeleg']/?/?/checkbox[@controlname='cbDruckKeiner']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Checked
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -10288,7 +10419,7 @@ FvLBy2OvAPFa9ABRRRQAUUUUAf/Z
 		optional="False"
 		searchpropertyid="6acaefe6-e7e2-453f-ba7d-982ac4a82ff4"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="300000ms">
 			<comment>
 			</comment>
 			<bindings>
