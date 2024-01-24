@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5a49a1ca-997a-457b-b9fb-6878d25e2da3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_CALL_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d67856f7-6ca0-47c3-b3ab-66d740db170b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99952c0d-ed3a-4d70-a505-c1e211914830"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmCallAuftrag']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ac1e136a-7958-407f-a520-2f1bbd0ab47f"
+	name="V_CALL_SchnelltestRepository"
+	relativepath="..\V_CALL_SchnelltestRepository.rxrep">
+		<codegen
+		classname="V_CALL_SchnelltestRepository"
+		namespace="V_CALL_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="2e31bf54-50b0-4dd6-b50b-4dcb6edc9793"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

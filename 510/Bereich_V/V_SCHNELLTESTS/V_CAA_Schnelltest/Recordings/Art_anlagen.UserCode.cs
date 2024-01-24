@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace V_AUFSTO_Schnelltest.Recordings
+namespace V_CAA_Schnelltest.Recordings
 {
-    public partial class Anlagen
+    public partial class Art_anlagen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

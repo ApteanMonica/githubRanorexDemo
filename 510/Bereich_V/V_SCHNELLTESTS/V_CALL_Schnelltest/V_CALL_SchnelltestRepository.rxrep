@@ -1,0 +1,173 @@
+﻿<repository
+id="ac1e136a-7958-407f-a520-2f1bbd0ab47f"
+name="V_CALL_SchnelltestRepository">
+	<codegen
+	classname="V_CALL_SchnelltestRepository"
+	namespace="V_CALL_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="2e31bf54-50b0-4dd6-b50b-4dcb6edc9793"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="bd1421a0-6bc7-42f1-ac03-bc5692bf1cbb"
+		isrooted="True"
+		name="FrmCallAuftrag"
+		refpath="/form[@controlname='frmCallAuftrag']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="99952c0d-ed3a-4d70-a505-c1e211914830"
+			name="TitleBar100CallAuftrag"
+			refimgid="5cec64f9-325d-46ce-97f5-f78b3e0834ac"
+			refpath="/form[@controlname='frmCallAuftrag']/titlebar[@accessiblerole='TitleBar']"
+			robustPath="/form[@controlname='frmCallAuftrag']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@controlname='frmCallAuftrag']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="4529a7a6-1539-415c-8c21-f8f8433cdf69"
+			name="PbNew"
+			refimgid="aa1f33f8-7f01-49ae-aa4f-9922899e79e2"
+			refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']"
+			robustPath="/form[@controlname='frmCallAuftrag']//button[@controlname='pbNew']"
+			searchtimeout="30000ms">
+				/form[@controlname='frmCallAuftrag']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="d2979397-dfc7-44cd-ae0d-cb6a51d6c7d8"
+			isrooted="True"
+			name="TpKopf"
+			refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="f7fd5c76-8318-4624-917b-8e7b8c4d783d"
+				name="DfAdrNr"
+				refimgid="bf41d24d-41d3-4084-a961-8e295556f030"
+				refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/text[@controlname='dfAdr_nr']"
+				robustPath="/form[@controlname='frmCallAuftrag']//text[@controlname='dfAdr_nr']"
+				searchtimeout="30000ms">
+					/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']/text[@controlname='dfAdr_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="3f0bbb01-2d39-487c-ac9c-1692e737a490"
+				name="DfAdrNrWare"
+				refimgid="7e81a560-49c7-478f-998f-53b907459958"
+				refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/text[@controlname='dfAdr_nr_ware']"
+				robustPath="/form[@controlname='frmCallAuftrag']//text[@controlname='dfAdr_nr_ware']"
+				searchtimeout="30000ms">
+					/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']/text[@controlname='dfAdr_nr_ware']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="f6eae65e-b03d-465f-b034-60dacd7c1ce7"
+				name="DfCaaCd"
+				refimgid="0202cd6e-59b7-4674-91bc-f54f1fc1bffc"
+				refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/text[@controlname='dfCaa_cd']"
+				robustPath="/form[@controlname='frmCallAuftrag']//text[@controlname='dfCaa_cd']"
+				searchtimeout="30000ms">
+					/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']/text[@controlname='dfCaa_cd']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="9c547078-5721-41dc-8c7d-f0e8e6dae639"
+				name="DfLagNr"
+				refimgid="17958128-789f-44d4-8e88-8b736509ca4b"
+				refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/text[@controlname='dfLag_nr']"
+				robustPath="/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']"
+				searchtimeout="30000ms">
+					/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']/text[@controlname='dfLag_nr']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="610f4e4c-0db2-497d-8828-5786e2f3fa58"
+				name="MlCakTextfehler"
+				refimgid="46dfadd6-8789-46b6-aed0-d73dbda51cd1"
+				refpath="/form[@controlname='frmCallAuftrag']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/container[@controlname='mlCak_textfehler']"
+				robustPath="/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']"
+				searchtimeout="30000ms">
+					/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']/container[@controlname='mlCak_textfehler']
+				</item>
+				<basepath>
+					/form[@controlname='frmCallAuftrag']//tabpage[@controlname='tpKopf']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='frmCallAuftrag']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="e77ac386-0475-4e2c-967b-ea72269c3f62"
+		isrooted="True"
+		name="DlgKldv"
+		refpath="/form[@controlname='dlgKldv']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="7b8cac1a-5283-4f7d-8f76-854bfb0a2f22"
+			name="Row1Column0"
+			refimgid="7b5bbdfa-621b-47a6-b3ad-f19dfc4c8e3c"
+			refpath="/form[@controlname='dlgKldv']/container[@controlname='tblKldv']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+			robustPath="/form[@controlname='dlgKldv']//cell[@accessiblename='Row 1 Column 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='dlgKldv']/container[@controlname='tblKldv']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgKldv']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

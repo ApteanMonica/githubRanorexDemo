@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="06a2d89b-1cf2-4384-96ff-1408cde92f21"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT_klr"
+	namespace="V_AUFSTO_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="281ee05f-dc33-432c-aefa-3b4c15e26a9f"
+		name="Programm_Klr">
+			V_AUFSTO /AUFRUFART=KLR
+		</var>
+		<var
+		id="41a3a956-c3ef-428a-b809-fac9f11ecc2d"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm_Klr">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Google\Chrome\Application\chrome.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="4530d23d-19e1-4a3a-8a04-d1b11e454ec0"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="54becf67-e715-49dc-bbc2-030b06fa395e"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="713,320,511,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Storno von Koschein - Rückmeldung, Lieferschein, Rechnung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Storno von Koschein - Rückmeldung, Lieferschein, Rechnung
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKLR']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b4569054-40ba-4b73-a8be-45b8d4a238df">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="54becf67-e715-49dc-bbc2-030b06fa395e"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="713,320,511,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Storno von Koschein - Rückmeldung, Lieferschein, Rechnung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Storno von Koschein - Rückmeldung, Lieferschein, Rechnung
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKLR']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Storno von Koschein - Rückmeldung, Lieferschein, Rechnung
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="99268d3a-8bc7-4865-9f69-feba2a21dd87"
+	name="V_AUFSTO_SchnelltestRepository"
+	relativepath="..\V_AUFSTO_SchnelltestRepository.rxrep">
+		<codegen
+		classname="V_AUFSTO_SchnelltestRepository"
+		namespace="V_AUFSTO_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="de87bfab-bcdc-4ba5-8605-c53a92b51d0b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT_klr.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

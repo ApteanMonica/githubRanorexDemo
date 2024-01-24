@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace V_AUFSTO_Schnelltest.Recordings
+namespace V_BOST_Schnelltest.Recordings
 {
-    public partial class CloseAUT
+    public partial class Recording1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
