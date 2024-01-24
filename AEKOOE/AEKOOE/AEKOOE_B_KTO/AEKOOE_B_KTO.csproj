@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{D169BFF1-74F9-4730-8957-477AAB33B02C}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AEKOOE_B_KTO</RootNamespace>
+    <AssemblyName>AEKOOE_B_KTO</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>78e3f1e3-fb55-4263-9592-ee240e03fbcd</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AEKOOE_B_KTORepository.cs">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <DependentUpon>AEKOOE_B_KTORepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>b9081572-088a-497e-bf21-41ab2daf68aa</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>8662b356-36e6-469c-8c6e-54941b8a37c8</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>11cff7a0-1d8d-4417-b9d3-17dc7f6bb296</id>
+    </Compile>
+    <Compile Include="Recordings\Close_B_KTO.cs">
+      <DependentUpon>Close_B_KTO.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>82016eca-d757-42cc-8bd1-0a8ead6f33ad</id>
+      <BoundTo>4d7d7f13-ab4a-4b1b-a888-b7db5cbb99ca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Close_B_KTO.UserCode.cs">
+      <DependentUpon>Close_B_KTO.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e30f775d-09e7-46b4-8527-f3c34b5839fe</id>
+      <BoundTo>4d7d7f13-ab4a-4b1b-a888-b7db5cbb99ca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Start_B_KTO_Workplace_offen.cs">
+      <DependentUpon>Start_B_KTO_Workplace_offen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cafb4eb2-8fe5-4c69-bd7e-9fb83229cb05</id>
+      <BoundTo>a1d88acb-abe5-4a81-b173-dc2b75f24545</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Start_B_KTO_Workplace_offen.UserCode.cs">
+      <DependentUpon>Start_B_KTO_Workplace_offen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>29af5228-0ec7-43ba-8151-08bc849a55c1</id>
+      <BoundTo>a1d88acb-abe5-4a81-b173-dc2b75f24545</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Workplace_Ausfuehren_B_KTO.cs">
+      <BoundTo>d78cab6b-88dd-452f-afb3-697e6cbef494</BoundTo>
+      <DependentUpon>Workplace_Ausfuehren_B_KTO.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b67e485b-11bb-4120-ad8c-cea0b4657e97</id>
+    </Compile>
+    <Compile Include="Recordings\Workplace_Ausfuehren_B_KTO.UserCode.cs">
+      <BoundTo>d78cab6b-88dd-452f-afb3-697e6cbef494</BoundTo>
+      <DependentUpon>Workplace_Ausfuehren_B_KTO.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>70532988-675e-4078-bbdb-2dc1562564e4</id>
+    </Compile>
+    <Compile Include="Recordings\Start_B_KTO.cs">
+      <DependentUpon>Start_B_KTO.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f8f3ec5f-4ff9-4798-81ca-f2c827f287a7</id>
+      <BoundTo>3b7b0620-7d0f-4453-80bb-6d3470cf303e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Start_B_KTO.UserCode.cs">
+      <DependentUpon>Start_B_KTO.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d5b8304-fff9-4c07-9aa1-820efa1d8dea</id>
+      <BoundTo>3b7b0620-7d0f-4453-80bb-6d3470cf303e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Start_B_KTO_WFK.cs">
+      <DependentUpon>Start_B_KTO_WFK.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6af8e7dc-b06f-4771-8fd3-0f74470d1163</id>
+      <BoundTo>81fd6c82-1bfd-47e9-bbb6-eecb3d91d645</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Start_B_KTO_WFK.UserCode.cs">
+      <DependentUpon>Start_B_KTO_WFK.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64d03aa4-4c05-4d77-82bb-b7f6a2b1661c</id>
+      <BoundTo>81fd6c82-1bfd-47e9-bbb6-eecb3d91d645</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AEKOOE_B_KTORepository.rximg">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <DependentUpon>AEKOOE_B_KTORepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f1e2b063-7182-4d6b-9052-8a33c584aafa</id>
+    </None>
+    <None Include="AEKOOE_B_KTORepository.rxrep">
+      <id>78e3f1e3-fb55-4263-9592-ee240e03fbcd</id>
+      <repoid>eafbd2c3-a37b-4fb1-828f-363363f1d8c4</repoid>
+      <reporootid>97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f</reporootid>
+    </None>
+    <None Include="app.config">
+      <id>6df85759-be0d-4f9b-a76a-1c86ffc980ad</id>
+    </None>
+    <None Include="Recordings\Close_B_KTO.rxrec">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <id>4d7d7f13-ab4a-4b1b-a888-b7db5cbb99ca</id>
+      <recordtableid>9cc52d75-47a2-4c30-91d2-05e5d5ef0a77</recordtableid>
+    </None>
+    <None Include="Recordings\Start_B_KTO_Workplace_offen.rxrec">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <id>a1d88acb-abe5-4a81-b173-dc2b75f24545</id>
+      <recordtableid>24027741-1a47-4e7b-9181-a0e0a56d981f</recordtableid>
+    </None>
+    <None Include="Recordings\Workplace_Ausfuehren_B_KTO.rxrec">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <id>d78cab6b-88dd-452f-afb3-697e6cbef494</id>
+      <recordtableid>c9b5f3e0-437a-4b32-a79b-b36ca5ad71bf</recordtableid>
+    </None>
+    <None Include="Recordings\Start_B_KTO.rxrec">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <id>3b7b0620-7d0f-4453-80bb-6d3470cf303e</id>
+      <recordtableid>d2ce2bc6-1a88-4b33-bbff-030e7c28dfb3</recordtableid>
+    </None>
+    <None Include="Recordings\Start_B_KTO_WFK.rxrec">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <id>81fd6c82-1bfd-47e9-bbb6-eecb3d91d645</id>
+      <recordtableid>3be7e846-6fe1-4fc5-9831-cad763f49834</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AEKOOE_B_KTO.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>76117bcc-fd33-4576-bd84-29303ba7064e</id>
+    </Content>
+    <Content Include="AEKOOE_B_KTO.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e17db2a7-523e-4fac-ab62-176ca90d4d0f</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>fee0ef85-d0fc-4f24-b041-b58fec0df4bd</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
