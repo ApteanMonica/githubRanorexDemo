@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="089235b3-8a6d-4923-8fc2-2fa3ec4c221f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Loeschen_Artikelstruktur_Alt"
+	namespace="S_AGR_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="9;7"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="adb95d3b-1860-45a6-a3c0-fcd2a67d825d"
+		sx="181"
+		sy="329"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="716a48b0-36e3-43c2-ad74-7a0a1c0a728b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAs']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblStruktur1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ARTIKELSTRUKTUR_CD_ALT]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{Delete}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="8563c41e-716b-48d2-9b38-1aa34284eb39">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="9a3dfce6-2dcc-4725-a77e-51e6bfd70495"
+	name="S_AGR_SchnelltestRepository"
+	relativepath="..\S_AGR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_AGR_SchnelltestRepository"
+		namespace="S_AGR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="5277464c-e22e-4f65-9dd6-eb62008456a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Loeschen_Artikelstruktur_Alt.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

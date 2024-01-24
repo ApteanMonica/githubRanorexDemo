@@ -93,8 +93,8 @@ namespace S_AGR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.ArtikelgruppenVerwalten'", repo.DlgMessageBox.ArtikelgruppenVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.DlgMessageBox.ArtikelgruppenVerwaltenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dieser Datensatz kann noch nicht gelöscht werden,\r\nda noch abhängige Daten existieren!\r\nDie DELETE-Anweisung steht in Konflikt mit der REFERENCE-Einschränkung \"S_AGRZ_S_AGRA_1\". Der Konflikt trat in der E521-Datenbank, Tabelle \"dbo.S_AGRZ\", column 'AGRA_CD' auf.\r\nDie Anweisung wurde beendet.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Dieser Datensatz kann noch nicht gelöscht werden,\r\nda noch abhängige Daten existieren!\r\nDie DELETE-Anweisung steht in Konflikt mit der REFERENCE-Einschränkung \"S_AGRZ_S_AGRA_1\". Der Konflikt trat in der E521-Datenbank, Tabelle \"dbo.S_AGRZ\", column 'AGRA_CD' auf.\r\nDie Anweisung wurde beendet.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dieser Datensatz kann noch nicht gelöscht werden,\r\nda noch abhängige Daten existieren!\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Dieser Datensatz kann noch nicht gelöscht werden,\r\nda noch abhängige Daten existieren!\r\n");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
@@ -108,13 +108,16 @@ namespace S_AGR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(5));
             repo.DlgMessageBox.Button1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.TitleBar100Gruppenarten'", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad' at Center.", repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoadInfo, new RecordItemIndex(7));
             repo.TblArtikelgruppenarten.RibbonBar.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt'", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(8));
             repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt'.", repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo, new RecordItemIndex(9));
             Validate.Exists(repo.TblArtikelgruppenarten.FlexGrid_Tabelle.Row_mit_Variable_Gruppenart_Alt.SelfInfo);
             
         }

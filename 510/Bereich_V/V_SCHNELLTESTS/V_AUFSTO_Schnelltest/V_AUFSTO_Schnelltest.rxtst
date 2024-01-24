@@ -6,35 +6,43 @@
 			id="06a77ac8-f27a-43af-aa3b-4577251e55cb"
 			name="teardown">
 			</teardown>
+			<teardown
+			id="13aad971-781d-4309-88cd-6b03888eb9e4"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="524e3916-a2ac-4b29-bcdc-bb506a45c3df"
-			name="CloseAUT"
+			name="CloseAUT_klr"
 			ref="2fb127e5-967e-4d76-9e43-812109fb8cc0"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="6a825096-89b7-4ce8-ad1a-487baa595829"
-			name="StartAUT"
+			name="StartAUT_klr"
 			ref="06a2d89b-1cf2-4384-96ff-1408cde92f21"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Programm_Klr"
+					datasourceid="a6bc0661-89ba-4dab-a2b4-abdbd41092c0"
+					variableid="281ee05f-dc33-432c-aefa-3b4c15e26a9f"
+					variablename="Programm_Klr">
+					</var>
 					<var
 					dataname="Startfile"
 					datasourceid="a6bc0661-89ba-4dab-a2b4-abdbd41092c0"
 					variableid="41a3a956-c3ef-428a-b809-fac9f11ecc2d"
 					variablename="Startfile">
 					</var>
-					<var
-					dataname="Programm"
-					datasourceid="a6bc0661-89ba-4dab-a2b4-abdbd41092c0"
-					variableid="281ee05f-dc33-432c-aefa-3b4c15e26a9f"
-					variablename="Programm">
-					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="7277d865-7d4f-4337-9e0f-5d8ee62a1893"
+			name="setup">
+			</setup>
 			<testmodule
 			id="891f8eeb-5427-4a51-b6fa-f046772e3a5d"
-			name="Anlagen"
+			name="Auftrag_storno"
 			ref="c0bb6653-e0ea-48ff-8f49-d1ea7673f423"
 			type="Recording">
 				<databinding>
@@ -46,13 +54,33 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="8ae36ea2-d345-43aa-95e3-f249a8f683b5"
+			name="StartAUT_Auftrag"
+			ref="176c8ecf-bfb9-46e6-9688-24687f0cd3b2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_Auftrag"
+					datasourceid="a6bc0661-89ba-4dab-a2b4-abdbd41092c0"
+					variableid="5f2e859b-7405-4c03-8dfb-a26b575f8098"
+					variablename="Programm_Auftrag">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a6bc0661-89ba-4dab-a2b4-abdbd41092c0"
+					variableid="7f40503a-79b6-4c48-90fa-15eaea0663fb"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="a6bc0661-89ba-4dab-a2b4-abdbd41092c0"
 			name="V_AUFSTO_Schnelltest"
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="Programm"
+					name="Programm_Klr"
 					value="V_AUFSTO /AUFRUFART=KLR">
 					</param>
 					<param
@@ -61,10 +89,20 @@
 					</param>
 					<param
 					name="Kommissionsschein"
-					value="KO/00011">
+					value="KO21/00011">
+					</param>
+					<param
+					name="Programm_Auftrag"
+					value="V_AUFSTO /AUFRUFART=AUFTRAG">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="bb919ef8-004d-4828-966e-836870eafc9f"
+			name="CloseAUT_Auftrag"
+			ref="91ec161a-6ac1-491e-b820-837b23290cd7"
+			type="Recording">
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -89,13 +127,17 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testcase
+			id="e3e38931-627c-4185-8b43-cf8cb9616f4b"
+			name="V_AUFSTO_AUFRUFART=AUFTRAG">
+			</testcase>
 			<setup
 			id="ee7eb3f6-3ae9-4cbd-a4cf-17ef5fd5eac1"
 			name="setup">
 			</setup>
 			<testcase
 			id="fcade754-eab9-4742-b5a4-0351ce8f25fa"
-			name="TestCase">
+			name="V_AUFSTO_AUFRUFART=KLR">
 			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -107,25 +149,45 @@
 				name="V_AUFSTO_Schnelltest">
 					<testcase
 					id="fcade754-eab9-4742-b5a4-0351ce8f25fa"
-					name="TestCase">
+					name="V_AUFSTO_AUFRUFART=KLR">
 						<setup
 						id="ee7eb3f6-3ae9-4cbd-a4cf-17ef5fd5eac1"
 						name="setup">
 							<testmodule
 							id="6a825096-89b7-4ce8-ad1a-487baa595829"
-							name="StartAUT">
+							name="StartAUT_klr">
 							</testmodule>
 						</setup>
 						<testmodule
 						id="891f8eeb-5427-4a51-b6fa-f046772e3a5d"
-						name="Anlagen">
+						name="Auftrag_storno">
 						</testmodule>
 						<teardown
 						id="06a77ac8-f27a-43af-aa3b-4577251e55cb"
 						name="teardown">
 							<testmodule
 							id="524e3916-a2ac-4b29-bcdc-bb506a45c3df"
-							name="CloseAUT">
+							name="CloseAUT_klr">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="e3e38931-627c-4185-8b43-cf8cb9616f4b"
+					name="V_AUFSTO_AUFRUFART=AUFTRAG">
+						<setup
+						id="7277d865-7d4f-4337-9e0f-5d8ee62a1893"
+						name="setup">
+							<testmodule
+							id="8ae36ea2-d345-43aa-95e3-f249a8f683b5"
+							name="StartAUT_Auftrag">
+							</testmodule>
+						</setup>
+						<teardown
+						id="13aad971-781d-4309-88cd-6b03888eb9e4"
+						name="teardown">
+							<testmodule
+							id="bb919ef8-004d-4828-966e-836870eafc9f"
+							name="CloseAUT_Auftrag">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -141,6 +203,9 @@
 		name="TestRun">
 			<testcontainer
 			id="a6bc0661-89ba-4dab-a2b4-abdbd41092c0">
+			</testcontainer>
+			<testcontainer
+			id="e3e38931-627c-4185-8b43-cf8cb9616f4b">
 			</testcontainer>
 			<testcontainer
 			id="fcade754-eab9-4742-b5a4-0351ce8f25fa">

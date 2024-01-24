@@ -80,7 +80,7 @@ namespace S_AGR_Schnelltest.Recordings
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblArtikelgruppenarten.TitleBar100Gruppenarten'.", repo.TblArtikelgruppenarten.TitleBar100GruppenartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, new Duration(0));
+            Host.Current.CloseApplication(repo.TblArtikelgruppenarten.TitleBar100Gruppenarten, 1000);
             
         }
 

@@ -525,6 +525,8 @@ namespace V_AUFSTO_Schnelltest
             RepoItemInfo _pbspec1alleInfo;
             RepoItemInfo _pbcommonloadInfo;
             RepoItemInfo _pbcommon2stornierenInfo;
+            RepoItemInfo _spec1groupInfo;
+            RepoItemInfo _titlebar100auftragsrueckstaendestorInfo;
 
             /// <summary>
             /// Creates a new TblAuftrag  folder.
@@ -535,6 +537,8 @@ namespace V_AUFSTO_Schnelltest
                 _pbspec1alleInfo = new RepoItemInfo(this, "PbSpec1Alle", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec1_Alle']", ".//button[@controlname='pbSpec1_Alle']", 30000, null, "93ca27d2-623f-418b-a6eb-1860a175b917");
                 _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Load']", ".//button[@controlname='pbCommon_Load']", 30000, null, "2a256881-837d-4292-8c0d-f1f41f199f0b");
                 _pbcommon2stornierenInfo = new RepoItemInfo(this, "PbCommon2Stornieren", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon2_Stornieren']", ".//button[@controlname='pbCommon2_Stornieren']", 30000, null, "6f228c05-a236-433f-8f20-4a26a543b53d");
+                _spec1groupInfo = new RepoItemInfo(this, "Spec1Group", "?/?/container[@controlname='Spec1Group']", "?/?/container[@controlname='Spec1Group']", 30000, null, "91c43132-516a-479f-a339-bf61e9cc0412");
+                _titlebar100auftragsrueckstaendestorInfo = new RepoItemInfo(this, "TitleBar100AuftragsrueckstaendeStor", "titlebar[@accessiblerole='TitleBar']", "titlebar[@accessiblerole='TitleBar']", 30000, null, "96fb6a68-fdfa-41f6-81d1-bf19c64149c8");
             }
 
             /// <summary>
@@ -630,6 +634,54 @@ namespace V_AUFSTO_Schnelltest
                 get
                 {
                     return _pbcommon2stornierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Spec1Group item.
+            /// </summary>
+            [RepositoryItem("91c43132-516a-479f-a339-bf61e9cc0412")]
+            public virtual Ranorex.Container Spec1Group
+            {
+                get
+                {
+                    return _spec1groupInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Spec1Group item info.
+            /// </summary>
+            [RepositoryItemInfo("91c43132-516a-479f-a339-bf61e9cc0412")]
+            public virtual RepoItemInfo Spec1GroupInfo
+            {
+                get
+                {
+                    return _spec1groupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuftragsrueckstaendeStor item.
+            /// </summary>
+            [RepositoryItem("96fb6a68-fdfa-41f6-81d1-bf19c64149c8")]
+            public virtual Ranorex.TitleBar TitleBar100AuftragsrueckstaendeStor
+            {
+                get
+                {
+                    return _titlebar100auftragsrueckstaendestorInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuftragsrueckstaendeStor item info.
+            /// </summary>
+            [RepositoryItemInfo("96fb6a68-fdfa-41f6-81d1-bf19c64149c8")]
+            public virtual RepoItemInfo TitleBar100AuftragsrueckstaendeStorInfo
+            {
+                get
+                {
+                    return _titlebar100auftragsrueckstaendestorInfo;
                 }
             }
         }
