@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9cc52d75-47a2-4c30-91d2-05e5d5ef0a77"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_KTO"
+	namespace="AEKOOE_B_KTO.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="fab54420-f8d1-4e1e-909f-4d16ceb77b8e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="eafbd2c3-a37b-4fb1-828f-363363f1d8c4"
+	name="AEKOOE_B_KTORepository"
+	relativepath="..\AEKOOE_B_KTORepository.rxrep">
+		<codegen
+		classname="AEKOOE_B_KTORepository"
+		namespace="AEKOOE_B_KTO">
+		</codegen>
+		<rootfolder
+		id="97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_KTO.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
