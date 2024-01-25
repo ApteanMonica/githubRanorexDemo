@@ -1,0 +1,276 @@
+﻿<repository
+id="d285181c-d4d4-4751-82f2-9d481cb4618c"
+name="S_AKTA_SchnelltestRepository">
+	<codegen
+	classname="S_AKTA_SchnelltestRepository"
+	namespace="S_AKTA_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="33a215cf-1d73-4a80-a01c-e85bc6c8b24d"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="7fdd6f72-7793-43d3-bb65-6b4c1314c23e"
+		isrooted="True"
+		name="FormAktArten"
+		refpath="/form[@controlname='FormAktArten']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="6547cced-9d56-4e97-9b38-13ab75a3b78b"
+			name="TitleBar100VerwaltenAktivitaetsarte"
+			refimgid="ea271981-d9cb-4355-a2a4-2e3c99456b22"
+			refpath="/form[@controlname='FormAktArten']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="e4942f9f-74f3-46ab-b553-07f7eb778371"
+			name="PbDataAccessSave"
+			refimgid="4c6a1207-4c96-495b-949c-092632ecbe57"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="584b79b0-c92a-4a2a-8a3a-295611381cbb"
+			name="PbNew"
+			refimgid="fb11495f-08d3-4475-8472-bdc3a03a8518"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
+			</item>
+			<folder
+			capname="container"
+			id="4b17eb27-40db-43bb-8084-47aff6219352"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="cad79948-7a7b-4275-9c72-05d3841eb629"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="fa3d96cf-55fd-474a-ae93-7fc0be16f77d"
+				name="PbToolBarItemsLoeschen"
+				refimgid="bde7a98a-470e-4cbc-83b3-89cb033c3aea"
+				refpath="/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Löschen']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Löschen']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="40ec2f62-9cad-42ce-b8c2-d004a944464a"
+				name="PbNavigationBack"
+				refimgid="bc31dad6-05d8-4e28-b5e0-f44ea19df847"
+				refpath="/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']
+				</item>
+				<basepath>
+					/form[@controlname='FormAktArten']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="41d37533-6dba-4257-9ae5-8a7af3bebfbd"
+			name="DfAktArt"
+			refimgid="0cd67f87-32d6-4631-a608-24589495ce58"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/text[@controlname='dfAkt_art']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/text[@controlname='dfAkt_art']
+			</item>
+			<item
+			addcaps="tabpagelist,control,nativewindow"
+			capname="tabpagelist"
+			id="33d226cf-a106-492f-b7ad-dc8b97306bc3"
+			name="PicTabs"
+			refimgid="04cc757d-4d6a-4fb2-aa08-5d0ed411c55d"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="49a9672e-5fb8-4a46-8e75-1ba3f76fa955"
+			name="DfAktaBesch"
+			refimgid="33b74db1-c2cb-418e-aa12-111f0cfaa2dd"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/text[@controlname='dfAkta_besch']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/text[@controlname='dfAkta_besch']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="1bfc4aa4-ce4f-4e92-bb8b-64a321e2ecb8"
+			name="Text1"
+			refimgid="1cd1c22a-cfec-43ff-a6db-b15c4fd3a9ab"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/container[@controlname='grpbxAkta_kz']/text[@controlname='dfAkta_kz01']/text[@accessiblename='1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/container[@controlname='grpbxAkta_kz']/text[@controlname='dfAkta_kz01']/text[@accessiblename='1']
+			</item>
+			<folder
+			capname="table"
+			id="5fe67407-5d9e-4f97-b4c7-b50232ab330b"
+			isrooted="True"
+			name="FlexGrid"
+			refimgid="bc289842-ae00-4dbe-99ff-c56294a3df99"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="row"
+				id="a88afe65-8fe1-4992-94e6-436adc41380b"
+				isrooted="True"
+				name="Row_mit_Variable_Aktivitaetstyp_Neu"
+				refimgid="eb3b51e7-f032-42d0-9416-9f35a21e063c"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="39807dad-3664-484f-a1eb-7147a5b66af3"
+					name="CellTmpAKTARTRow5"
+					refimgid="ce30b2cd-95fc-4180-b561-a05c4f3602ed"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Aktivitaet_Typ_Neu]/cell[@accessiblename~'__tmp__AKT_ART']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="fa4d557b-f629-4f14-80dc-08d1d8634ff2"
+					name="CellTmpAKTABESCHRow5"
+					refimgid="4a378909-a640-413d-a102-9ae0e1266fb7"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Aktivitaet_Typ_Neu]/cell[@accessiblename~'__tmp__AKTA_BESCH']
+					</item>
+					<basepath>
+						/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Aktivitaet_Typ_Neu]
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="046763a5-d646-4836-b0ea-4df081933699"
+			name="PbPerformSimpleSearch"
+			refimgid="18a51643-1544-4ba9-91c2-d4c311ff86b7"
+			refpath="/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormAktArten']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']
+			</item>
+			<basepath>
+				/form[@controlname='FormAktArten']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="7e21cbdc-628b-4382-9850-0b45eb4b9fef"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="fffe6c3c-3752-433d-b55b-bb204e0673c9"
+			name="Aktivitaetsarten"
+			refimgid="01633099-d73f-4e50-ac15-3cd6f8afb0b8"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="e4e6fa0d-f40f-470d-95b7-addd9c81f993"
+			name="LabelMeldungstext"
+			refimgid="5746f3cf-1771-4b94-843a-43e4ead4aa23"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="d425fc95-82eb-4031-93b6-67f5a903726c"
+			name="Button0"
+			refimgid="744fa9c6-0de4-4881-825d-8561f19a9165"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="9ef6fbfd-bfcc-4ae8-a715-0ccfffb90776"
+		name="Aktivitaet_Typ_Neu">
+			XX
+		</var>
+	</variables>
+</repository>

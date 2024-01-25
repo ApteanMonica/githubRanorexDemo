@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6e503811-38f0-449e-bbff-03d92d13c610"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="S_BELA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="ad04ab3e-94c0-482a-9688-fbf7f80a3d93"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Google\Chrome\Application\chrome.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="e5ad475f-d5d6-411a-b798-75bda450bcde"
+	name="S_BELA_SchnelltestRepository"
+	relativepath="..\S_BELA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_BELA_SchnelltestRepository"
+		namespace="S_BELA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="8d212d5e-46ed-485c-83cc-40b1c66bada8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

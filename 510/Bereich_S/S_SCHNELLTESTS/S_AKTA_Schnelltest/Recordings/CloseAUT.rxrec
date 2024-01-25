@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2a2905b0-5a07-4972-b451-0ee152fd8a11"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_AKTA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="2c3f5311-3924-4f7a-bb11-3a0b4df854e4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6547cced-9d56-4e97-9b38-13ab75a3b78b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='FormAktArten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d285181c-d4d4-4751-82f2-9d481cb4618c"
+	name="S_AKTA_SchnelltestRepository"
+	relativepath="..\S_AKTA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_AKTA_SchnelltestRepository"
+		namespace="S_AKTA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="33a215cf-1d73-4a80-a01c-e85bc6c8b24d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

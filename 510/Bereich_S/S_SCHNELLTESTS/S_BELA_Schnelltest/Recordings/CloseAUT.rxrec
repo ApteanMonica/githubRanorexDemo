@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9c6a1998-3c2a-454c-8826-32ed38909c7f"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_BELA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="790753c6-ae62-4695-b13e-bf19a8e0fd55"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="f33341ad-a3a5-44f4-81d5-b8880828a9cd">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="e5ad475f-d5d6-411a-b798-75bda450bcde"
+	name="S_BELA_SchnelltestRepository"
+	relativepath="..\S_BELA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_BELA_SchnelltestRepository"
+		namespace="S_BELA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="8d212d5e-46ed-485c-83cc-40b1c66bada8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
