@@ -1,18 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="S_BELA_SchnelltestRepository"
-id="e5ad475f-d5d6-411a-b798-75bda450bcde">
-  <codegen
-  classname="S_BELA_SchnelltestRepository"
-  namespace="S_BELA_Schnelltest"/>
-  <rootfolder
-  name="Root"
-  id="8d212d5e-46ed-485c-83cc-40b1c66bada8"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-      <basepath/>
-  </rootfolder>
-  <variables/>
+﻿<repository
+id="e5ad475f-d5d6-411a-b798-75bda450bcde"
+name="S_BELA_SchnelltestRepository">
+	<codegen
+	classname="S_BELA_SchnelltestRepository"
+	namespace="S_BELA_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="8d212d5e-46ed-485c-83cc-40b1c66bada8"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="cf63bd00-cd82-4eac-a421-9a6fe4d356e0"
+		isrooted="True"
+		name="FrmBelegarten"
+		refpath="/form[@controlname='frmBelegarten']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="98a83052-6bf6-49f9-8db8-aa104183998f"
+			name="TitleBar100VerwaltenBelegarten"
+			refimgid="112bead6-5568-4420-81a1-659567999e45"
+			refpath="/form[@controlname='frmBelegarten']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmBelegarten']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@controlname='frmBelegarten']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

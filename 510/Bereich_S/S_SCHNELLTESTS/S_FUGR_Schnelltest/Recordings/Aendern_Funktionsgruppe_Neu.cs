@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_BELA_Schnelltest.Recordings
+namespace S_FUGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Aendern_Funktionsgruppe_Neu recording.
     /// </summary>
-    [TestModule("9c6a1998-3c2a-454c-8826-32ed38909c7f", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("c7ea64c4-47d7-47cc-9fe1-d3cec0bd9985", ModuleType.Recording, 1)]
+    public partial class Aendern_Funktionsgruppe_Neu : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository repo = global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository.Instance;
+        public static global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repo = global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Aendern_Funktionsgruppe_Neu instance = new Aendern_Funktionsgruppe_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Aendern_Funktionsgruppe_Neu()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Aendern_Funktionsgruppe_Neu Instance
         {
             get { return instance; }
         }
@@ -73,16 +73,12 @@ namespace S_BELA_Schnelltest.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBelegarten.TitleBar100VerwaltenBelegarten'.", repo.FrmBelegarten.TitleBar100VerwaltenBelegartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBelegarten.TitleBar100VerwaltenBelegarten, new Duration(0));
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

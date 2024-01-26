@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fa1ff8c8-c9c0-4758-afe8-bee818a0ed85"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_FUGA"
+	namespace="S_FUGR_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="5918d1e1-ade5-4cee-8e27-86f994d96622">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc478c2d-fec4-4949-b7a2-64cb5e381a56"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblS_fuga']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c87ab45c-8d0a-4f1b-abe4-80ec3ffb4899"
+	name="S_FUGR_SchnelltestRepository"
+	relativepath="..\S_FUGR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_FUGR_SchnelltestRepository"
+		namespace="S_FUGR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="dd87b368-f5cd-4434-8db1-65673e18e87b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_FUGA.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

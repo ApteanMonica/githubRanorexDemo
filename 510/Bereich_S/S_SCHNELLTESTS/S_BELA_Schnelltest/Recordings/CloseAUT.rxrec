@@ -23,27 +23,51 @@ mode="Desktop">
 	namespace="S_BELA_Schnelltest.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="790753c6-ae62-4695-b13e-bf19a8e0fd55"
-		name="CloseAutProcessIDVar">
-			-1
-		</var>
 	</variables>
 	<recorditems>
 		<closeapprecorditem
 		enabled="True"
-		graceperiod="500ms"
-		method="CloseWindowByProcessID"
+		graceperiod="0ms"
+		method="CloseWindow"
 		optional="False"
-		searchpropertyid="f33341ad-a3a5-44f4-81d5-b8880828a9cd">
+		searchpropertyid="445ae4a5-3851-4670-977e-943d764c5f33">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ProcessID"
-				variable="CloseAutProcessIDVar">
-				</binding>
 			</bindings>
+			<info
+			id="98a83052-6bf6-49f9-8db8-aa104183998f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="7"
+				prefcap="titlebar"
+				rect="491,140,729,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmBelegarten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</closeapprecorditem>
 	</recorditems>
 	<repository

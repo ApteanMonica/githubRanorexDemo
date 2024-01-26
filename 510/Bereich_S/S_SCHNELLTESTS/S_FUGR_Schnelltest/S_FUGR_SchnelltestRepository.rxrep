@@ -1,0 +1,262 @@
+﻿<repository
+id="c87ab45c-8d0a-4f1b-abe4-80ec3ffb4899"
+name="S_FUGR_SchnelltestRepository">
+	<codegen
+	classname="S_FUGR_SchnelltestRepository"
+	namespace="S_FUGR_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="dd87b368-f5cd-4434-8db1-65673e18e87b"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="ff23a73f-7b63-491f-b69f-f5437d3a6979"
+		isrooted="True"
+		name="TblSFuga"
+		refimgid="eb99f7d5-fcd0-413e-b779-0797d122f991"
+		refpath="/form[@controlname='tblS_fuga']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="cc478c2d-fec4-4949-b7a2-64cb5e381a56"
+			name="TitleBar100Funktionsarten"
+			refimgid="9ad40dc8-32ca-48b9-9f26-803de36ddf28"
+			refpath="/form[@controlname='tblS_fuga']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblS_fuga']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<folder
+			capname="container"
+			id="2b9af64e-e7c9-4dca-aadf-5e8c18d97e4f"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="1f0bdf04-cf65-4c38-9d43-d5bed3807c44"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="308927d1-d7dd-4150-967c-6faaaa0eb126"
+				name="PbDataAccessNew"
+				refimgid="1f6d83e7-b14c-416d-9966-71a3d3ea3c9a"
+				refpath="/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="3e11fe39-2c9d-4477-ad77-d566a71affeb"
+				name="PbDataAccessSave"
+				refimgid="fb319e00-f4b2-4791-a17c-9050419c3280"
+				refpath="/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="758a702c-8750-4856-817c-c29df64dc15d"
+				name="PbDataAccessLoad"
+				refimgid="4e6ccb96-ee82-4b77-b839-e06889ed0374"
+				refpath="/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+				</item>
+				<basepath>
+					/form[@controlname='tblS_fuga']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="19f5fe20-c266-4ce3-b3b4-beb4b70de007"
+			isrooted="True"
+			name="FlexGrid"
+			refimgid="10872d92-df11-4822-ac60-6133d4be960f"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="row"
+				id="c8dff413-e04b-4874-96f0-692cccaef231"
+				isrooted="True"
+				name="Row_mit_Variable_Funktionsart_Neu"
+				refimgid="50bdf3bf-9178-4dbe-ad9b-d2ea06953617"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="2dca6255-aa7e-4c96-a7f5-ad22170883bd"
+					name="ColFugaCd"
+					refimgid="d212563f-48eb-48b8-8804-fdbce2d0b6fa"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblS_fuga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$FUNKTIONSART_NEU]/cell[@accessiblename~'colFuga_cd ']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="95b4e2a8-5e13-4b4f-a61e-4c60c22bf955"
+					name="ColFugaBez"
+					refimgid="d539f8fd-c2a9-4744-92a2-513a46f92e93"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblS_fuga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$FUNKTIONSART_NEU]/cell[@accessiblename~'colFuga_bez']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="dc94ad90-7811-455b-8aa0-56b929f6c7a8"
+					name="Row1Column0"
+					refimgid="16ae96f8-8a7c-4838-b898-a0182ba9342d"
+					refpath="/form[@controlname='tblS_fuga']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblS_fuga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$FUNKTIONSART_NEU]/cell[@accessiblename='Row 1 Column 0']
+					</item>
+					<basepath>
+						/form[@controlname='tblS_fuga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$FUNKTIONSART_NEU]
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@controlname='tblS_fuga']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='tblS_fuga']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="d938ed6d-bc36-409d-ac44-af97c51a6b68"
+		isrooted="True"
+		name="TblSFugr"
+		refpath="/form[@controlname='tblS_fugr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="ef4adb72-0d97-43ac-b1d3-32e4d4de646a"
+			name="TitleBar100Funktionsgruppen"
+			refimgid="5f360e7a-abb2-4833-9710-31422edf658a"
+			refpath="/form[@controlname='tblS_fugr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblS_fugr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<folder
+			capname="container"
+			id="5c7901c4-fdcb-4d60-ae34-7a72802ee7bc"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="3fe7cad5-437c-4353-b996-5f07a89179a0"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="a93815b5-9c68-447b-9ea2-aabd5f2dc882"
+				name="PbDataAccessNew"
+				refimgid="578ea5c1-672b-44d6-8549-a6232fc32488"
+				refpath="/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="ec3fc30e-e74b-40ac-accc-b8fd5d96f44d"
+				name="PbDataAccessSave"
+				refimgid="977803a4-5465-4c38-9464-838b35063df5"
+				refpath="/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="db130ad5-7823-42f9-98df-df293fa9bb66"
+				name="PbDataAccessLoad"
+				refimgid="b9929c04-6df9-4a4f-b962-a0a0bd572d5c"
+				refpath="/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+				</item>
+				<basepath>
+					/form[@controlname='tblS_fugr']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="eeb86e29-954e-4ef7-99d4-f96dfa5b8df1"
+			isrooted="True"
+			name="FlexGrid"
+			refimgid="d3b2ab93-76f0-4274-858f-01ceef6175c5"
+			searchtimeout="30000ms"
+			usecache="False">
+				<basepath>
+					/form[@controlname='tblS_fugr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='tblS_fugr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="be89e03a-a45c-4e4e-9777-290da3fb2825"
+		name="BEZEICHNUNG_FUNKTIONSART_NEU">
+			Testart_BAR
+		</var>
+		<var
+		id="6e5941ab-c3fa-4649-9608-cd38c203afa3"
+		name="FUNKTIONSART_NEU">
+			XX
+		</var>
+	</variables>
+</repository>

@@ -27,6 +27,7 @@ namespace S_BELA_Schnelltest
     public partial class S_BELA_SchnelltestRepository : RepoGenBaseFolder
     {
         static S_BELA_SchnelltestRepository instance = new S_BELA_SchnelltestRepository();
+        S_BELA_SchnelltestRepositoryFolders.FrmBelegartenAppFolder _frmbelegarten;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_BELA_SchnelltestRepository element repository.
@@ -43,6 +44,7 @@ namespace S_BELA_Schnelltest
         public S_BELA_SchnelltestRepository() 
             : base("S_BELA_SchnelltestRepository", "/", null, 0, false, "8d212d5e-46ed-485c-83cc-40b1c66bada8", ".\\RepositoryImages\\S_BELA_SchnelltestRepository8d212d5e.rximgres")
         {
+            _frmbelegarten = new S_BELA_SchnelltestRepositoryFolders.FrmBelegartenAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace S_BELA_Schnelltest
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The FrmBelegarten folder.
+        /// </summary>
+        [RepositoryFolder("cf63bd00-cd82-4eac-a421-9a6fe4d356e0")]
+        public virtual S_BELA_SchnelltestRepositoryFolders.FrmBelegartenAppFolder FrmBelegarten
+        {
+            get { return _frmbelegarten; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace S_BELA_Schnelltest
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class S_BELA_SchnelltestRepositoryFolders
     {
+        /// <summary>
+        /// The FrmBelegartenAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cf63bd00-cd82-4eac-a421-9a6fe4d356e0")]
+        public partial class FrmBelegartenAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100verwaltenbelegartenInfo;
+
+            /// <summary>
+            /// Creates a new FrmBelegarten  folder.
+            /// </summary>
+            public FrmBelegartenAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmBelegarten", "/form[@controlname='frmBelegarten']", parentFolder, 30000, null, true, "cf63bd00-cd82-4eac-a421-9a6fe4d356e0", "")
+            {
+                _titlebar100verwaltenbelegartenInfo = new RepoItemInfo(this, "TitleBar100VerwaltenBelegarten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "98a83052-6bf6-49f9-8db8-aa104183998f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cf63bd00-cd82-4eac-a421-9a6fe4d356e0")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cf63bd00-cd82-4eac-a421-9a6fe4d356e0")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenBelegarten item.
+            /// </summary>
+            [RepositoryItem("98a83052-6bf6-49f9-8db8-aa104183998f")]
+            public virtual Ranorex.TitleBar TitleBar100VerwaltenBelegarten
+            {
+                get
+                {
+                    return _titlebar100verwaltenbelegartenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenBelegarten item info.
+            /// </summary>
+            [RepositoryItemInfo("98a83052-6bf6-49f9-8db8-aa104183998f")]
+            public virtual RepoItemInfo TitleBar100VerwaltenBelegartenInfo
+            {
+                get
+                {
+                    return _titlebar100verwaltenbelegartenInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
