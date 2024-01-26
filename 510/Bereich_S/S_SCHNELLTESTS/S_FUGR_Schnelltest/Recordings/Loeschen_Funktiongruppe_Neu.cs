@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_BELA_Schnelltest.Recordings
+namespace S_FUGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Loeschen_Funktiongruppe_Neu recording.
     /// </summary>
-    [TestModule("9c6a1998-3c2a-454c-8826-32ed38909c7f", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("f8657a93-9d90-4cc8-b1de-b75a488ea229", ModuleType.Recording, 1)]
+    public partial class Loeschen_Funktiongruppe_Neu : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository repo = global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository.Instance;
+        public static global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repo = global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Loeschen_Funktiongruppe_Neu instance = new Loeschen_Funktiongruppe_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Loeschen_Funktiongruppe_Neu()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Loeschen_Funktiongruppe_Neu Instance
         {
             get { return instance; }
         }
@@ -79,10 +79,6 @@ namespace S_BELA_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBelegarten.TitleBar100VerwaltenBelegarten'.", repo.FrmBelegarten.TitleBar100VerwaltenBelegartenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBelegarten.TitleBar100VerwaltenBelegarten, new Duration(0));
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

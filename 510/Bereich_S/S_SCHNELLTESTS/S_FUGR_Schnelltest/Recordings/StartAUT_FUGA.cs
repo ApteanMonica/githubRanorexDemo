@@ -20,35 +20,35 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_BELA_Schnelltest.Recordings
+namespace S_FUGR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The StartAUT_FUGA recording.
     /// </summary>
-    [TestModule("6e503811-38f0-449e-bbff-03d92d13c610", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("a20f33b9-7192-4412-a735-e8409f57d7f5", ModuleType.Recording, 1)]
+    public partial class StartAUT_FUGA : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository repo = global::S_BELA_Schnelltest.S_BELA_SchnelltestRepository.Instance;
+        public static global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repo = global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static StartAUT_FUGA instance = new StartAUT_FUGA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public StartAUT_FUGA()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_S_BELA = "S_BELA";
+            Programm_FUGA = "S_FUGR AUFRUFART=FUGA";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static StartAUT_FUGA Instance
         {
             get { return instance; }
         }
@@ -60,23 +60,23 @@ namespace S_BELA_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("ad04ab3e-94c0-482a-9688-fbf7f80a3d93")]
+        [TestVariable("23ef3472-9c6b-4f56-be92-f18519296e5e")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
         }
 
-        string _Programm_S_BELA;
+        string _Programm_FUGA;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_S_BELA.
+        /// Gets or sets the value of variable Programm_FUGA.
         /// </summary>
-        [TestVariable("afee8a91-d4d8-4f38-b5c9-63177a6ffd15")]
-        public string Programm_S_BELA
+        [TestVariable("b6fe86e9-026f-4625-8096-14c5735a80f8")]
+        public string Programm_FUGA
         {
-            get { return _Programm_S_BELA; }
-            set { _Programm_S_BELA = value; }
+            get { return _Programm_FUGA; }
+            set { _Programm_FUGA = value; }
         }
 
 #endregion
@@ -105,14 +105,14 @@ namespace S_BELA_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_S_BELA in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_S_BELA, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_FUGA in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_FUGA, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBelegarten.TitleBar100VerwaltenBelegarten'", repo.FrmBelegarten.TitleBar100VerwaltenBelegartenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmBelegarten.TitleBar100VerwaltenBelegartenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblSFuga.TitleBar100Funktionsarten'", repo.TblSFuga.TitleBar100FunktionsartenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblSFuga.TitleBar100FunktionsartenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Belegarten') on item 'FrmBelegarten.TitleBar100VerwaltenBelegarten'.", repo.FrmBelegarten.TitleBar100VerwaltenBelegartenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmBelegarten.TitleBar100VerwaltenBelegartenInfo, "Text", "Verwalten Belegarten");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Funktionsarten') on item 'TblSFuga.TitleBar100Funktionsarten'.", repo.TblSFuga.TitleBar100FunktionsartenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblSFuga.TitleBar100FunktionsartenInfo, "Text", "Funktionsarten");
             
         }
 

@@ -7,14 +7,6 @@
 			name="CloseAUT"
 			ref="9c6a1998-3c2a-454c-8826-32ed38909c7f"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Testfile"
-					datasourceid="f654f693-38a4-49d7-b344-c55552ee441a"
-					variableid="790753c6-ae62-4695-b13e-bf19a8e0fd55"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="92dee5ac-162c-4d2d-81a9-d604a524521f"
@@ -59,10 +51,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Testfile"
+					dataname="Startfile"
 					datasourceid="f654f693-38a4-49d7-b344-c55552ee441a"
 					variableid="ad04ab3e-94c0-482a-9688-fbf7f80a3d93"
-					variablename="StartAutProcessIDVar">
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_S_BELA"
+					datasourceid="f654f693-38a4-49d7-b344-c55552ee441a"
+					variableid="afee8a91-d4d8-4f38-b5c9-63177a6ffd15"
+					variablename="Programm_S_BELA">
 					</var>
 				</databinding>
 			</testmodule>
@@ -72,7 +70,7 @@
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="Testfile"
+					name="Startfile"
 					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
