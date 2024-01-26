@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3dcc9654-b668-4cf8-8431-bd9887115f4e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_S_ADR_K"
+	namespace="AEKOOE_S_ADR_Kunden.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="fab54420-f8d1-4e1e-909f-4d16ceb77b8e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b023272e-eb4f-4c2e-89fa-c398f5175fe0"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="7"
+				prefcap="titlebar"
+				rect="956,250,1302,35"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[WFK]  Kundenstamm
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[WFK]  Kundenstamm
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ac6c30be-3eb3-46ff-bfdf-efe36af95ecd"
+	name="AEKOOE_S_ADR_KundenRepository"
+	relativepath="..\AEKOOE_S_ADR_KundenRepository.rxrep">
+		<codegen
+		classname="AEKOOE_S_ADR_KundenRepository"
+		namespace="AEKOOE_S_ADR_Kunden">
+		</codegen>
+		<rootfolder
+		id="1c6e8f05-2ac8-4bec-802b-d635a49945b0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_S_ADR_K.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

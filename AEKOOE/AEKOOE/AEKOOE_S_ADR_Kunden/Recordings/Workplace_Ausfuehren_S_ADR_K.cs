@@ -20,35 +20,35 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace AEKOOE_B_KTO.Recordings
+namespace AEKOOE_S_ADR_Kunden.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Workplace_Ausfuehren_B_KTO recording.
+    ///The Workplace_Ausfuehren_S_ADR_K recording.
     /// </summary>
-    [TestModule("c9b5f3e0-437a-4b32-a79b-b36ca5ad71bf", ModuleType.Recording, 1)]
-    public partial class Workplace_Ausfuehren_B_KTO : ITestModule
+    [TestModule("5e6d8c5d-867a-4365-8964-2b0b2b662295", ModuleType.Recording, 1)]
+    public partial class Workplace_Ausfuehren_S_ADR_K : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::AEKOOE_B_KTO.AEKOOE_B_KTORepository repository.
+        /// Holds an instance of the global::AEKOOE_S_ADR_Kunden.AEKOOE_S_ADR_KundenRepository repository.
         /// </summary>
-        public static global::AEKOOE_B_KTO.AEKOOE_B_KTORepository repo = global::AEKOOE_B_KTO.AEKOOE_B_KTORepository.Instance;
+        public static global::AEKOOE_S_ADR_Kunden.AEKOOE_S_ADR_KundenRepository repo = global::AEKOOE_S_ADR_Kunden.AEKOOE_S_ADR_KundenRepository.Instance;
 
-        static Workplace_Ausfuehren_B_KTO instance = new Workplace_Ausfuehren_B_KTO();
+        static Workplace_Ausfuehren_S_ADR_K instance = new Workplace_Ausfuehren_S_ADR_K();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Workplace_Ausfuehren_B_KTO()
+        public Workplace_Ausfuehren_S_ADR_K()
         {
             Mandant = "WFK";
-            Programm = "B_KTO";
+            Programm_KL_K = "S_ADR /KL=K";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Workplace_Ausfuehren_B_KTO Instance
+        public static Workplace_Ausfuehren_S_ADR_K Instance
         {
             get { return instance; }
         }
@@ -60,23 +60,23 @@ namespace AEKOOE_B_KTO.Recordings
         /// <summary>
         /// Gets or sets the value of variable Mandant.
         /// </summary>
-        [TestVariable("f461b4ea-132e-4692-9f6b-55486a3fbb6f")]
+        [TestVariable("622087c0-64aa-4b39-9f30-5be66b1dd574")]
         public string Mandant
         {
             get { return _Mandant; }
             set { _Mandant = value; }
         }
 
-        string _Programm;
+        string _Programm_KL_K;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm.
+        /// Gets or sets the value of variable Programm_KL_K.
         /// </summary>
-        [TestVariable("ab7c7c60-9946-4914-b1f4-4b72ef9712ca")]
-        public string Programm
+        [TestVariable("cf77014b-d9e8-4ecc-8c2f-9af4bd22a3b6")]
+        public string Programm_KL_K
         {
-            get { return _Programm; }
-            set { _Programm = value; }
+            get { return _Programm_KL_K; }
+            set { _Programm_KL_K = value; }
         }
 
 #endregion
@@ -132,8 +132,8 @@ namespace AEKOOE_B_KTO.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@'.", new RecordItemIndex(8));
             Keyboard.Press("@");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Programm'.", new RecordItemIndex(9));
-            Keyboard.Press(Programm);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Programm_KL_K'.", new RecordItemIndex(9));
+            Keyboard.Press(Programm_KL_K);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}'.", new RecordItemIndex(10));
             Keyboard.Press("{LControlKey down}");
@@ -144,14 +144,14 @@ namespace AEKOOE_B_KTO.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}'.", new RecordItemIndex(12));
             Keyboard.Press("{LControlKey up}");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKto.TitleBarWFKSachkontenVerwalten'", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(13));
-            repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAdr.TitleBarWFKKundenstamm'", repo.FrmAdr.TitleBarWFKKundenstammInfo, new ActionTimeout(120000), new RecordItemIndex(13));
+            repo.FrmAdr.TitleBarWFKKundenstammInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Sachkonten verwalten') on item 'FrmKto.TitleBarWFKSachkontenVerwalten'.", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new RecordItemIndex(14));
-            Validate.AttributeContains(repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, "Text", "Sachkonten verwalten");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kundenstamm') on item 'FrmAdr.TitleBarWFKKundenstamm'.", repo.FrmAdr.TitleBarWFKKundenstammInfo, new RecordItemIndex(14));
+            Validate.AttributeContains(repo.FrmAdr.TitleBarWFKKundenstammInfo, "Text", "Kundenstamm");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FrmKto.TitleBarWFKSachkontenVerwalten'.", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new RecordItemIndex(15));
-            Validate.AttributeContains(repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, "Text", Mandant);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FrmAdr.TitleBarWFKKundenstamm'.", repo.FrmAdr.TitleBarWFKKundenstammInfo, new RecordItemIndex(15));
+            Validate.AttributeContains(repo.FrmAdr.TitleBarWFKKundenstammInfo, "Text", Mandant);
             
         }
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="c9b5f3e0-437a-4b32-a79b-b36ca5ad71bf"
+id="5e6d8c5d-867a-4365-8964-2b0b2b662295"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,19 +19,19 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Workplace_Ausfuehren_B_KTO"
-	namespace="AEKOOE_B_KTO.Recordings">
+	classname="Workplace_Ausfuehren_S_ADR_K"
+	namespace="AEKOOE_S_ADR_Kunden.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="f461b4ea-132e-4692-9f6b-55486a3fbb6f"
+		id="622087c0-64aa-4b39-9f30-5be66b1dd574"
 		name="Mandant">
 			WFK
 		</var>
 		<var
-		id="ab7c7c60-9946-4914-b1f4-4b72ef9712ca"
-		name="Programm">
-			B_KTO
+		id="cf77014b-d9e8-4ecc-8c2f-9af4bd22a3b6"
+		name="Programm_KL_K">
+			S_ADR /KL=K
 		</var>
 	</variables>
 	<recorditems>
@@ -504,7 +504,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Programm">
+				variable="Programm_KL_K">
 				</binding>
 			</bindings>
 		</keysequenceitem>
@@ -4456,7 +4456,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354"
+			id="b023272e-eb4f-4c2e-89fa-c398f5175fe0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -4466,7 +4466,7 @@ mode="Global">
 				hasfocus="False"
 				index="7"
 				prefcap="titlebar"
-				rect="391,159,1160,35"
+				rect="956,250,1302,35"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -4474,7 +4474,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[WFK]  Sachkonten verwalten
+						[WFK]  Kundenstamm
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -4494,11 +4494,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[WFK]  Sachkonten verwalten
+						[WFK]  Kundenstamm
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4514,7 +4514,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354"
+			id="b023272e-eb4f-4c2e-89fa-c398f5175fe0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -4524,7 +4524,7 @@ mode="Global">
 				hasfocus="False"
 				index="7"
 				prefcap="titlebar"
-				rect="391,159,1160,35"
+				rect="956,250,1302,35"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -4532,7 +4532,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[WFK]  Sachkonten verwalten
+						[WFK]  Kundenstamm
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -4552,11 +4552,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[WFK]  Sachkonten verwalten
+						[WFK]  Kundenstamm
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4565,7 +4565,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Sachkonten verwalten
+				Kundenstamm
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -4582,7 +4582,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354"
+			id="b023272e-eb4f-4c2e-89fa-c398f5175fe0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -4592,7 +4592,7 @@ mode="Global">
 				hasfocus="False"
 				index="7"
 				prefcap="titlebar"
-				rect="391,159,1160,35"
+				rect="956,250,1302,35"
 				role="titlebar"
 				snapElem=""
 				valid="True"
@@ -4600,7 +4600,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						[WFK]  Sachkonten verwalten
+						[WFK]  Kundenstamm
 					</attribute>
 					<attribute
 					name="accessibledescription"
@@ -4620,11 +4620,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[WFK]  Sachkonten verwalten
+						[WFK]  Kundenstamm
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4638,21 +4638,21 @@ mode="Global">
 		</validationitem>
 	</recorditems>
 	<repository
-	id="eafbd2c3-a37b-4fb1-828f-363363f1d8c4"
-	name="AEKOOE_B_KTORepository"
-	relativepath="..\AEKOOE_B_KTORepository.rxrep">
+	id="ac6c30be-3eb3-46ff-bfdf-efe36af95ecd"
+	name="AEKOOE_S_ADR_KundenRepository"
+	relativepath="..\AEKOOE_S_ADR_KundenRepository.rxrep">
 		<codegen
-		classname="AEKOOE_B_KTORepository"
-		namespace="AEKOOE_B_KTO">
+		classname="AEKOOE_S_ADR_KundenRepository"
+		namespace="AEKOOE_S_ADR_Kunden">
 		</codegen>
 		<rootfolder
-		id="97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f"
+		id="1c6e8f05-2ac8-4bec-802b-d635a49945b0"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Workplace_Ausfuehren_B_KTO.UserCode.cs
+		Workplace_Ausfuehren_S_ADR_K.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

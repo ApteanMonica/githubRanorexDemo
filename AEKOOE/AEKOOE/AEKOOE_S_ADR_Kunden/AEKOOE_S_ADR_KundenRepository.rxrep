@@ -1,51 +1,49 @@
 ﻿<repository
-id="eafbd2c3-a37b-4fb1-828f-363363f1d8c4"
-name="AEKOOE_B_KTORepository">
+id="ac6c30be-3eb3-46ff-bfdf-efe36af95ecd"
+name="AEKOOE_S_ADR_KundenRepository">
 	<codegen
-	classname="AEKOOE_B_KTORepository"
-	namespace="AEKOOE_B_KTO">
+	classname="AEKOOE_S_ADR_KundenRepository"
+	namespace="AEKOOE_S_ADR_Kunden">
 	</codegen>
 	<rootfolder
 	capname="unknown"
-	id="97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f"
+	id="1c6e8f05-2ac8-4bec-802b-d635a49945b0"
 	isrooted="True"
 	name="Root"
 	searchtimeout="0ms"
 	usecache="True">
 		<appfolder
-		addcaps="form,control,nativewindow"
 		capname="form"
-		id="fbe68293-5c4e-443c-95a8-a6f907e9c7aa"
+		id="2f43c487-ed47-4fe8-874a-42f5fe657075"
 		isrooted="True"
-		name="FrmKto"
-		refpath="/form[@controlname='frmKto']"
+		name="FrmAdr"
+		refpath="/form[@controlname='frmAdr']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
 			addcaps="titlebar,accessible"
 			capname="titlebar"
-			id="b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354"
-			name="TitleBarWFKSachkontenVerwalten"
-			refimgid="55bfbf66-ab11-45c6-a140-6c55774836f9"
-			refpath="/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']"
+			id="b023272e-eb4f-4c2e-89fa-c398f5175fe0"
+			name="TitleBarWFKKundenstamm"
+			refimgid="cece17b0-5808-42b9-92d7-cd5f5dddf055"
+			refpath="/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
+				/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<basepath>
-				/form[@controlname='frmKto']
+				/form[@controlname='frmAdr']
 			</basepath>
 			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGZSURBVDhPnZPNSgJRFMfnDRQKJNvlYBAyH42O
-zr0FzcYnMBp6gRpaCVK0EXKhtNNNtI0ewAcom31lSi2zTe/QYqLmdM8ZR4nGwv5wOP/7cX73cIaR
-UEHAXgE4zBtBwE+pmDEG/wlFZSAhCReZDANVY1Aqhd4wGBSLoTfNeACeSxBwuuC/ibaER0DUYskS
-Xux9voePxAM+OLw8c9B1cVn4bpdDNhv6/T0Oi6nQr8izAMEG3A8k2sDcH079bV+iju4eJLj2Fr4V
-Y4wBm6BpHLZsi4pyOQ5Hx+vkDYPDxeUqQYsxcwgB4yEOnyS4uknRi4NHCc7O18AshN49KEyKdF0H
-y7J+Av4K0zTFYKdSFCUe0G63oVwuQ7VaBdd1YTQagW3bkEgkqNAwDMrbO048IJLneZQrlQplTdPo
-3HF2aa2q6mxAp9OhgkiO49AZFqF6vR6tZwKazSZdbrVa0Gg0aC+dTlNG/TpEFAJwSCjf9ynXaoeU
-I9XrJ/EAWZZpUOjxkyWTSeomn8+L/yIzCbxDAPwlFSVsZ95YXmLwBV0POY+Axi4PAAAAAElFTkSu
-QmCC
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAZlJREFUOE+dk81KAlEUx+cNFAok2+VgEDIfjY7OvQXNxicwGnqBGloJ
+UrQRcqG00020jR7AByibfWVKLbNN79BiouZ0zxlHicbC/nA4//txfvdwhpFQQcBeATjMG0HAT6mY
+MQb/CUVlICEJF5kMA1VjUCqF3jAYFIuhN814AJ5LEHC64L+JtoRHQNRiyRJe7H2+h4/EAz44vDxz
+0HVxWfhul0M2G/r9PQ6LqdCvyLMAwQbcDyTawNwfTv1tX6KO7h4kuPYWvhVjjAGboGkctmyLinI5
+DkfH6+QNg8PF5SpBizFzCAHjIQ6fJLi6SdGLg0cJzs7XwCyE3j0oTIp0XQfLsn4C/grTNMVgp1IU
+JR7QbrehXC5DtVoF13VhNBqBbduQSCSo0DAMyts7Tjwgkud5lCuVCmVN0+jccXZprarqbECn06GC
+SI7j0BkWoXq9Hq1nAprNJl1utVrQaDRoL51OU0b9OkQUAnBIKN/3Kddqh5Qj1esn8QBZlmlQ6PGT
+JZNJ6iafz4v/IjMJvEMA/CUVJWxn3lheYvAFXQ85j4DGLg8AAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
