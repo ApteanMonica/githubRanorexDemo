@@ -20,48 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_FUGR_Schnelltest.Recordings
+namespace S_GA_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_Funktionsart_Neu recording.
+    ///The Aendern_Geraet_Neu recording.
     /// </summary>
-    [TestModule("02a881cb-df7b-4237-b49d-9e0e33c7547b", ModuleType.Recording, 1)]
-    public partial class Loeschen_Funktionsart_Neu : ITestModule
+    [TestModule("1ecda067-21db-49f1-b6b8-efaf45fe13c9", ModuleType.Recording, 1)]
+    public partial class Aendern_Geraet_Neu : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_GA_Schnelltest.S_GA_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repo = global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository.Instance;
+        public static global::S_GA_Schnelltest.S_GA_SchnelltestRepository repo = global::S_GA_Schnelltest.S_GA_SchnelltestRepository.Instance;
 
-        static Loeschen_Funktionsart_Neu instance = new Loeschen_Funktionsart_Neu();
+        static Aendern_Geraet_Neu instance = new Aendern_Geraet_Neu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_Funktionsart_Neu()
+        public Aendern_Geraet_Neu()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_Funktionsart_Neu Instance
+        public static Aendern_Geraet_Neu Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable FUNKTIONSART_NEU.
-        /// </summary>
-        [TestVariable("6e5941ab-c3fa-4649-9608-cd38c203afa3")]
-        public string FUNKTIONSART_NEU
-        {
-            get { return repo.FUNKTIONSART_NEU; }
-            set { repo.FUNKTIONSART_NEU = value; }
-        }
 
 #endregion
 
@@ -89,17 +79,21 @@ namespace S_FUGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu' at 14;6.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo, new RecordItemIndex(0));
-            repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.Self.Click("14;6");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FormGeraet.ClientArea.DfGaBez' at Center.", repo.FormGeraet.ClientArea.DfGaBezInfo, new RecordItemIndex(0));
+            repo.FormGeraet.ClientArea.DfGaBez.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}'.", new RecordItemIndex(1));
-            Keyboard.Press("{Delete}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FormGeraet.ClientArea.DfGaBez'.", repo.FormGeraet.ClientArea.DfGaBezInfo, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.FormGeraet.ClientArea.DfGaBez);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.RibbonBar.PbDataAccessSave' at Center.", repo.TblSFuga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
-            repo.TblSFuga.RibbonBar.PbDataAccessSave.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Bezeichnung geändert' with focus on 'FormGeraet.ClientArea.DfGaBez'.", repo.FormGeraet.ClientArea.DfGaBezInfo, new RecordItemIndex(2));
+            repo.FormGeraet.ClientArea.DfGaBez.PressKeys("Bezeichnung geändert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu'.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo, new RecordItemIndex(3));
-            Validate.NotExists(repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormGeraet.RibbonBar.PbCommonSave' at Center.", repo.FormGeraet.RibbonBar.PbCommonSaveInfo, new RecordItemIndex(3));
+            repo.FormGeraet.RibbonBar.PbCommonSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bezeichnung geändert') on item 'FormGeraet.ClientArea.DfGaBez'.", repo.FormGeraet.ClientArea.DfGaBezInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FormGeraet.ClientArea.DfGaBezInfo, "Text", "Bezeichnung geändert");
             
         }
 

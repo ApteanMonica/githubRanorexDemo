@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9a2dbc9c-5790-46f6-989b-4818aeb9f7dc"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_GA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="b7a9c10c-3d55-4c2c-b399-690b4d6a4064">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1198f97c-1879-4cf2-8301-d955d9013067"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='FormGeraet']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="48d4428a-8e8d-4e97-8b98-4e7ac814b62f"
+	name="S_GA_SchnelltestRepository"
+	relativepath="..\S_GA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_GA_SchnelltestRepository"
+		namespace="S_GA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="7c475f5e-5bb5-4e76-95f6-a33ccf83be26"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -20,47 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_FUGR_Schnelltest.Recordings
+namespace S_GA_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_Funktionsart_Neu recording.
+    ///The StartAUT recording.
     /// </summary>
-    [TestModule("02a881cb-df7b-4237-b49d-9e0e33c7547b", ModuleType.Recording, 1)]
-    public partial class Loeschen_Funktionsart_Neu : ITestModule
+    [TestModule("e3396cd2-8163-444f-b21c-f86e11075526", ModuleType.Recording, 1)]
+    public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_GA_Schnelltest.S_GA_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository repo = global::S_FUGR_Schnelltest.S_FUGR_SchnelltestRepository.Instance;
+        public static global::S_GA_Schnelltest.S_GA_SchnelltestRepository repo = global::S_GA_Schnelltest.S_GA_SchnelltestRepository.Instance;
 
-        static Loeschen_Funktionsart_Neu instance = new Loeschen_Funktionsart_Neu();
+        static StartAUT instance = new StartAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_Funktionsart_Neu()
+        public StartAUT()
         {
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "S_GA";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_Funktionsart_Neu Instance
+        public static StartAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _Startfile;
+
         /// <summary>
-        /// Gets or sets the value of variable FUNKTIONSART_NEU.
+        /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("6e5941ab-c3fa-4649-9608-cd38c203afa3")]
-        public string FUNKTIONSART_NEU
+        [TestVariable("d08526fe-a115-4971-a687-29ac4a2a86e8")]
+        public string Startfile
         {
-            get { return repo.FUNKTIONSART_NEU; }
-            set { repo.FUNKTIONSART_NEU = value; }
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm.
+        /// </summary>
+        [TestVariable("95517c2b-f1d7-4c5b-812e-b363f8650154")]
+        public string Programm
+        {
+            get { return _Programm; }
+            set { _Programm = value; }
         }
 
 #endregion
@@ -89,17 +105,14 @@ namespace S_FUGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu' at 14;6.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo, new RecordItemIndex(0));
-            repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.Self.Click("14;6");
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}'.", new RecordItemIndex(1));
-            Keyboard.Press("{Delete}");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FormGeraet.TitleBar100Geraeteverwaltung'", repo.FormGeraet.TitleBar100GeraeteverwaltungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FormGeraet.TitleBar100GeraeteverwaltungInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.RibbonBar.PbDataAccessSave' at Center.", repo.TblSFuga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
-            repo.TblSFuga.RibbonBar.PbDataAccessSave.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu'.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo, new RecordItemIndex(3));
-            Validate.NotExists(repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Geräteverwaltung') on item 'FormGeraet.TitleBar100Geraeteverwaltung'.", repo.FormGeraet.TitleBar100GeraeteverwaltungInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FormGeraet.TitleBar100GeraeteverwaltungInfo, "Text", "Geräteverwaltung");
             
         }
 

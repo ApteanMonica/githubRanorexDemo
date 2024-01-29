@@ -1,0 +1,289 @@
+﻿<repository
+id="48d4428a-8e8d-4e97-8b98-4e7ac814b62f"
+name="S_GA_SchnelltestRepository">
+	<codegen
+	classname="S_GA_SchnelltestRepository"
+	namespace="S_GA_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="7c475f5e-5bb5-4e76-95f6-a33ccf83be26"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="898b687f-415a-4747-ae74-67f939a8742a"
+		isrooted="True"
+		name="FormGeraet"
+		refpath="/form[@controlname='FormGeraet']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="1198f97c-1879-4cf2-8301-d955d9013067"
+			name="TitleBar100Geraeteverwaltung"
+			refimgid="d24779da-e905-4fdc-9811-058238d0b771"
+			refpath="/form[@controlname='FormGeraet']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormGeraet']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="a7899a8f-1ebc-4c2c-a965-17f6fef3b244"
+			name="PbNew"
+			refimgid="b3c35e08-c61a-4c6f-814e-2b9d112f5ee9"
+			refpath="/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
+			</item>
+			<folder
+			capname="container"
+			id="78691a78-a9ff-41e8-acb3-02fc8a65aa17"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="7de3d3ff-f9af-47f8-a8bd-4a1ca2333834"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="bdbb67db-6d8e-4fa8-9f6f-f673db870a28"
+				name="PbNavigationBack"
+				refimgid="12e26f2c-79ce-41b6-baa1-4586fefd5375"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="5cdf42d3-3f21-439e-904b-2a3333dab94f"
+				name="PbCommonSave"
+				refimgid="e987e506-9972-4627-aeba-afa5ab0a89fe"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="02670a57-edc7-4008-8043-27fdd5081665"
+				name="PbCommon2Loeschen"
+				refimgid="2cd58c4b-70ae-4e70-9733-7cd3413d9a15"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']/container[@controlname='Common2Group']/button[@controlname='pbCommon2_Loeschen']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']/container[@controlname='Common2Group']/button[@controlname='pbCommon2_Loeschen']
+				</item>
+				<basepath>
+					/form[@controlname='FormGeraet']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="c15cc47e-4e65-43a5-9c06-d80be72e3ae4"
+			isrooted="True"
+			name="ClientArea"
+			refimgid="78764847-9c42-48a2-8102-b495a1b5295c"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="67f28c42-1084-4e43-8a25-c7fb866d2c83"
+				name="DfGaNr"
+				refimgid="d021c766-d4ff-49d5-8f5c-98577fae03aa"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGa_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGa_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="d11e8c8e-7311-485f-b976-38506e6683fa"
+				name="DfGaBez"
+				refimgid="011eb58f-00f8-436e-8d29-e35304b17acc"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGa_bez']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGa_bez']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="1ed41d58-a567-4da0-8332-8433c78a1107"
+				name="DfGaaCd"
+				refimgid="d6a7965b-ec9c-428d-a964-0e816f9dfdd0"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGaa_cd']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGaa_cd']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="3757709d-fa94-4a7e-9995-928bc1d66bd5"
+				name="DfGaStatus"
+				refimgid="1597d2b9-4d19-4d80-8f2c-35460bee1fdc"
+				refpath="/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGa_status']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/text[@controlname='dfGa_status']
+				</item>
+				<basepath>
+					/form[@controlname='FormGeraet']/container[@controlname='ClientArea']
+				</basepath>
+			</folder>
+			<folder
+			capname="tabpagelist"
+			id="0e6f1518-160c-40a3-9a41-356ef78d8681"
+			isrooted="True"
+			name="PicTabs_Register_Merkmale"
+			refimgid="4e430d2b-f504-4bb1-a092-6ff42b390026"
+			searchtimeout="30000ms"
+			usecache="False">
+				<basepath>
+					/form[@controlname='FormGeraet']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']
+				</basepath>
+			</folder>
+			<folder
+			capname="row"
+			id="4caca393-66b2-4335-969a-378a84c02644"
+			isrooted="True"
+			name="Row_mit_Variable_Geraete_Nr_Neu"
+			refimgid="36cebcce-fb5f-4f40-914f-82ceec7b0d31"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="49399659-ac7d-43dd-8c27-e3d2790c573d"
+				name="CellTmpGASTATUS"
+				refimgid="a7bb980e-25cf-4392-8ee5-3af395f35030"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$GERAETE_NR_NEU]/cell[@accessiblename~'__tmp__GA_STATUS']
+				</item>
+				<basepath>
+					/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$GERAETE_NR_NEU]
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="943db7db-4117-47de-b3f0-6897d6ffad59"
+			name="PbPerformSimpleSearch"
+			refimgid="ee664a4c-2b35-48ed-98cb-dfcf6fe4ac1c"
+			refpath="/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="c1c9910b-16eb-4644-aff4-0d80d7b42308"
+			name="Row1Column0"
+			refimgid="9dab19ec-7685-4370-b197-a5fef0576bbc"
+			refpath="/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormGeraet']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+			</item>
+			<basepath>
+				/form[@controlname='FormGeraet']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="ca02f8d3-304e-476c-b65f-717caac998d0"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="09207c33-8a11-4a6e-a69e-ff832f8614c4"
+			name="Geraeteverwaltung"
+			refimgid="a0d5fd43-511b-4d70-b7de-02e090a8fe91"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="89ba1664-7b74-4927-9359-18437d3c6da9"
+			name="LabelMeldungstext"
+			refimgid="f3eedb26-842f-45ca-8659-c5ac22058e34"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="437aa84c-1950-4baa-af62-147fd691b60a"
+			name="Button0"
+			refimgid="3de5ccd6-91e3-4399-a613-fc47afdab08d"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="c9aba4b4-3254-4bfe-9477-839dbe31be20"
+		name="GERAETE_NR_NEU">
+			G_NEU_001
+		</var>
+	</variables>
+</repository>

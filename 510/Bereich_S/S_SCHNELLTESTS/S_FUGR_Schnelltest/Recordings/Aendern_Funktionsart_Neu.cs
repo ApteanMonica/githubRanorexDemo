@@ -98,8 +98,8 @@ namespace S_FUGR_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testart_Bar_aendern' with focus on 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.ColFugaBez'.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.ColFugaBezInfo, new RecordItemIndex(3));
-            repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.ColFugaBez.PressKeys("Testart_Bar_aendern");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testart_BAR_aendern' with focus on 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.ColFugaBez'.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.ColFugaBezInfo, new RecordItemIndex(3));
+            repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.ColFugaBez.PressKeys("Testart_BAR_aendern");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.RibbonBar.PbDataAccessSave' at Center.", repo.TblSFuga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(4));
             repo.TblSFuga.RibbonBar.PbDataAccessSave.Click();
