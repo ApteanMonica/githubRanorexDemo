@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="81ae077e-f4fa-4793-b610-d4b269968e92"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_GAA_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ce02fa3b-e1a5-432d-9598-83f62d0efbdb">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b74393f3-3936-4264-9147-9f8cbdecaf12"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmS_GAA']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="5295349f-ba4a-489c-a004-ecd02b75818b"
+	name="S_GAA_SchnelltestRepository"
+	relativepath="..\S_GAA_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_GAA_SchnelltestRepository"
+		namespace="S_GAA_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="959ee708-74dd-4f49-9d1c-9ae6786c7b41"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
