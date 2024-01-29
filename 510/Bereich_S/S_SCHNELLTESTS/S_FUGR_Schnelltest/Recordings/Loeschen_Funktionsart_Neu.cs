@@ -89,15 +89,17 @@ namespace S_FUGR_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.Row1Column0' at 14;6.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.Row1Column0Info, new RecordItemIndex(0));
-            repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.Row1Column0.Click("14;6");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu' at 14;6.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo, new RecordItemIndex(0));
+            repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.Self.Click("14;6");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblSFuga'.", repo.TblSFuga.SelfInfo, new RecordItemIndex(1));
-            repo.TblSFuga.Self.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}'.", new RecordItemIndex(1));
             Keyboard.Press("{Delete}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSFuga.RibbonBar.PbDataAccessSave' at Center.", repo.TblSFuga.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(2));
             repo.TblSFuga.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu'.", repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo, new RecordItemIndex(3));
+            Validate.NotExists(repo.TblSFuga.FlexGrid.Row_mit_Variable_Funktionsart_Neu.SelfInfo);
             
         }
 
