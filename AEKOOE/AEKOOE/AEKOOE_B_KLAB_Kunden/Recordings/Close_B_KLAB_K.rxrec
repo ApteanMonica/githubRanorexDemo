@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ec3239c5-60bf-470d-b91c-cc7139730cbd"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_KLAB_K"
+	namespace="AEKOOE_B_KLAB_Kunden.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="fab54420-f8d1-4e1e-909f-4d16ceb77b8e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0c763f66-3792-47a0-a552-097870522dce"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKlAb']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ce68ccf2-c6d8-45e8-bbcf-89f9de85c685"
+	name="AEKOOE_B_KLAB_KundenRepository"
+	relativepath="..\AEKOOE_B_KLAB_KundenRepository.rxrep">
+		<codegen
+		classname="AEKOOE_B_KLAB_KundenRepository"
+		namespace="AEKOOE_B_KLAB_Kunden">
+		</codegen>
+		<rootfolder
+		id="a9306528-cba6-4340-a1ac-2e8b555b0079"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_KLAB_K.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

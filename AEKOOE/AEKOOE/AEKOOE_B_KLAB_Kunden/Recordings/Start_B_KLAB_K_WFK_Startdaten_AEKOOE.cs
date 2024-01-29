@@ -20,28 +20,28 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace AEKOOE_S_ADR_Kunden.Recordings
+namespace AEKOOE_B_KLAB_Kunden.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The Start_B_KTO_WFK recording.
     /// </summary>
-    [TestModule("f88d716c-f419-44d4-98ac-478e1d365168", ModuleType.Recording, 1)]
-    public partial class Start_S_ADR_K_WFK_Startdaten_AEKOOE : ITestModule
+    [TestModule("182d038d-69a6-4e6d-94b7-2d962e4d6a0c", ModuleType.Recording, 1)]
+    public partial class Start_B_KLAB_K_WFK_Startdaten_AEKOOE : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::AEKOOE_S_ADR_Kunden.AEKOOE_S_ADR_KundenRepository repository.
+        /// Holds an instance of the global::AEKOOE_B_KLAB_Kunden.AEKOOE_B_KLAB_KundenRepository repository.
         /// </summary>
-        public static global::AEKOOE_S_ADR_Kunden.AEKOOE_S_ADR_KundenRepository repo = global::AEKOOE_S_ADR_Kunden.AEKOOE_S_ADR_KundenRepository.Instance;
+        public static global::AEKOOE_B_KLAB_Kunden.AEKOOE_B_KLAB_KundenRepository repo = global::AEKOOE_B_KLAB_Kunden.AEKOOE_B_KLAB_KundenRepository.Instance;
 
-        static Start_S_ADR_K_WFK_Startdaten_AEKOOE instance = new Start_S_ADR_K_WFK_Startdaten_AEKOOE();
+        static Start_B_KLAB_K_WFK_Startdaten_AEKOOE instance = new Start_B_KLAB_K_WFK_Startdaten_AEKOOE();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_S_ADR_K_WFK_Startdaten_AEKOOE()
+        public Start_B_KLAB_K_WFK_Startdaten_AEKOOE()
         {
-            Programm_RANO_Aufrufparameter = "S_ADAR KL L x x WFK";
+            Programm_RANO_Aufrufparameter = "B_KLAB KL L x x WFK";
             Startfile_AEKOOE = "C:\\Testdaten\\Allgemein\\Start_AEKOOE.bat";
             Mandant = "WFK";
         }
@@ -49,7 +49,7 @@ namespace AEKOOE_S_ADR_Kunden.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_S_ADR_K_WFK_Startdaten_AEKOOE Instance
+        public static Start_B_KLAB_K_WFK_Startdaten_AEKOOE Instance
         {
             get { return instance; }
         }
@@ -61,7 +61,7 @@ namespace AEKOOE_S_ADR_Kunden.Recordings
         /// <summary>
         /// Gets or sets the value of variable Programm_RANO_Aufrufparameter.
         /// </summary>
-        [TestVariable("c3182c12-3596-4a88-ba46-44639989cbc6")]
+        [TestVariable("ee2f8f4e-fb31-422e-83ad-b3966e1ade37")]
         public string Programm_RANO_Aufrufparameter
         {
             get { return _Programm_RANO_Aufrufparameter; }
@@ -73,7 +73,7 @@ namespace AEKOOE_S_ADR_Kunden.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile_AEKOOE.
         /// </summary>
-        [TestVariable("971556f7-dc46-45a6-953a-04bb391a0f16")]
+        [TestVariable("89780c5a-0d46-4c73-a9ff-9af33fb2f189")]
         public string Startfile_AEKOOE
         {
             get { return _Startfile_AEKOOE; }
@@ -85,7 +85,7 @@ namespace AEKOOE_S_ADR_Kunden.Recordings
         /// <summary>
         /// Gets or sets the value of variable Mandant.
         /// </summary>
-        [TestVariable("2874ab8c-30da-4917-a3f2-bcd2caebf676")]
+        [TestVariable("e8efc3f0-3011-481a-9efe-bcbe050d02e5")]
         public string Mandant
         {
             get { return _Mandant; }
@@ -121,14 +121,14 @@ namespace AEKOOE_S_ADR_Kunden.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile_AEKOOE with arguments from variable $Programm_RANO_Aufrufparameter in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile_AEKOOE, Programm_RANO_Aufrufparameter, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAdr.TitleBarWFKKundenstamm'", repo.FrmAdr.TitleBarWFKKundenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmAdr.TitleBarWFKKundenstammInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKlAb.TitleBarWFKKundenKonto'", repo.FrmKlAb.TitleBarWFKKundenKontoInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmKlAb.TitleBarWFKKundenKontoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kundenstamm') on item 'FrmAdr.TitleBarWFKKundenstamm'.", repo.FrmAdr.TitleBarWFKKundenstammInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmAdr.TitleBarWFKKundenstammInfo, "Text", "Kundenstamm");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kunden-Konto') on item 'FrmKlAb.TitleBarWFKKundenKonto'.", repo.FrmKlAb.TitleBarWFKKundenKontoInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmKlAb.TitleBarWFKKundenKontoInfo, "Text", "Kunden-Konto");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FrmAdr.TitleBarWFKKundenstamm'.", repo.FrmAdr.TitleBarWFKKundenstammInfo, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.FrmAdr.TitleBarWFKKundenstammInfo, "Text", Mandant);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FrmKlAb.TitleBarWFKKundenKonto'.", repo.FrmKlAb.TitleBarWFKKundenKontoInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.FrmKlAb.TitleBarWFKKundenKontoInfo, "Text", Mandant);
             
         }
 
