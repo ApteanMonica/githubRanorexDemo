@@ -103,18 +103,6 @@
       <id>e30f775d-09e7-46b4-8527-f3c34b5839fe</id>
       <BoundTo>4d7d7f13-ab4a-4b1b-a888-b7db5cbb99ca</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Start_B_KTO_Workplace_offen.cs">
-      <DependentUpon>Start_B_KTO_Workplace_offen.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>cafb4eb2-8fe5-4c69-bd7e-9fb83229cb05</id>
-      <BoundTo>a1d88acb-abe5-4a81-b173-dc2b75f24545</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Start_B_KTO_Workplace_offen.UserCode.cs">
-      <DependentUpon>Start_B_KTO_Workplace_offen.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>29af5228-0ec7-43ba-8151-08bc849a55c1</id>
-      <BoundTo>a1d88acb-abe5-4a81-b173-dc2b75f24545</BoundTo>
-    </Compile>
     <Compile Include="Recordings\Workplace_Ausfuehren_B_KTO.cs">
       <BoundTo>d78cab6b-88dd-452f-afb3-697e6cbef494</BoundTo>
       <DependentUpon>Workplace_Ausfuehren_B_KTO.rxrec</DependentUpon>
@@ -127,29 +115,41 @@
       <UserCode>true</UserCode>
       <id>70532988-675e-4078-bbdb-2dc1562564e4</id>
     </Compile>
-    <Compile Include="Recordings\Start_B_KTO.cs">
-      <DependentUpon>Start_B_KTO.rxrec</DependentUpon>
+    <Compile Include="Recordings\Start_B_KTO_ohne_Startdaten.cs">
+      <DependentUpon>Start_B_KTO_ohne_Startdaten.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f8f3ec5f-4ff9-4798-81ca-f2c827f287a7</id>
       <BoundTo>3b7b0620-7d0f-4453-80bb-6d3470cf303e</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Start_B_KTO.UserCode.cs">
-      <DependentUpon>Start_B_KTO.rxrec</DependentUpon>
+    <Compile Include="Recordings\Start_B_KTO_ohne_Startdaten.UserCode.cs">
+      <DependentUpon>Start_B_KTO_ohne_Startdaten.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0d5b8304-fff9-4c07-9aa1-820efa1d8dea</id>
       <BoundTo>3b7b0620-7d0f-4453-80bb-6d3470cf303e</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Start_B_KTO_WFK.cs">
-      <DependentUpon>Start_B_KTO_WFK.rxrec</DependentUpon>
+    <Compile Include="Recordings\Start_B_KTO_WFK_Startdaten_AEKOOE.cs">
+      <DependentUpon>Start_B_KTO_WFK_Startdaten_AEKOOE.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6af8e7dc-b06f-4771-8fd3-0f74470d1163</id>
       <BoundTo>81fd6c82-1bfd-47e9-bbb6-eecb3d91d645</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Start_B_KTO_WFK.UserCode.cs">
-      <DependentUpon>Start_B_KTO_WFK.rxrec</DependentUpon>
+    <Compile Include="Recordings\Start_B_KTO_WFK_Startdaten_AEKOOE.UserCode.cs">
+      <DependentUpon>Start_B_KTO_WFK_Startdaten_AEKOOE.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>64d03aa4-4c05-4d77-82bb-b7f6a2b1661c</id>
       <BoundTo>81fd6c82-1bfd-47e9-bbb6-eecb3d91d645</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Workplace_Ausfuehren_B_KTO_Aufrufparameter.cs">
+      <DependentUpon>Workplace_Ausfuehren_B_KTO_Aufrufparameter.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a5b79d4-efb3-4abd-8786-f60d5e223859</id>
+      <BoundTo>05204c0a-6a0d-40ec-9dec-840f27432366</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Workplace_Ausfuehren_B_KTO_Aufrufparameter.UserCode.cs">
+      <DependentUpon>Workplace_Ausfuehren_B_KTO_Aufrufparameter.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6415667d-4c11-43b5-83f4-ef2e7e3f1aee</id>
+      <BoundTo>05204c0a-6a0d-40ec-9dec-840f27432366</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -172,25 +172,25 @@
       <id>4d7d7f13-ab4a-4b1b-a888-b7db5cbb99ca</id>
       <recordtableid>9cc52d75-47a2-4c30-91d2-05e5d5ef0a77</recordtableid>
     </None>
-    <None Include="Recordings\Start_B_KTO_Workplace_offen.rxrec">
-      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
-      <id>a1d88acb-abe5-4a81-b173-dc2b75f24545</id>
-      <recordtableid>24027741-1a47-4e7b-9181-a0e0a56d981f</recordtableid>
-    </None>
     <None Include="Recordings\Workplace_Ausfuehren_B_KTO.rxrec">
       <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
       <id>d78cab6b-88dd-452f-afb3-697e6cbef494</id>
       <recordtableid>c9b5f3e0-437a-4b32-a79b-b36ca5ad71bf</recordtableid>
     </None>
-    <None Include="Recordings\Start_B_KTO.rxrec">
+    <None Include="Recordings\Start_B_KTO_ohne_Startdaten.rxrec">
       <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
       <id>3b7b0620-7d0f-4453-80bb-6d3470cf303e</id>
       <recordtableid>d2ce2bc6-1a88-4b33-bbff-030e7c28dfb3</recordtableid>
     </None>
-    <None Include="Recordings\Start_B_KTO_WFK.rxrec">
+    <None Include="Recordings\Start_B_KTO_WFK_Startdaten_AEKOOE.rxrec">
       <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
       <id>81fd6c82-1bfd-47e9-bbb6-eecb3d91d645</id>
       <recordtableid>3be7e846-6fe1-4fc5-9831-cad763f49834</recordtableid>
+    </None>
+    <None Include="Recordings\Workplace_Ausfuehren_B_KTO_Aufrufparameter.rxrec">
+      <BoundTo>78e3f1e3-fb55-4263-9592-ee240e03fbcd</BoundTo>
+      <id>05204c0a-6a0d-40ec-9dec-840f27432366</id>
+      <recordtableid>d8d19c2b-2c60-4cf9-abc6-8bc5b5cd3927</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

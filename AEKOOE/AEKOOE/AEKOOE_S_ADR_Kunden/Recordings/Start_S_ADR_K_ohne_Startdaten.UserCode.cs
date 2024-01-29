@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace AEKOOE_B_KTO.Recordings
+namespace AEKOOE_S_ADR_Kunden.Recordings
 {
-    public partial class Start_B_KTO_WFK
+    public partial class Start_S_ADR_K_ohne_Startdaten
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

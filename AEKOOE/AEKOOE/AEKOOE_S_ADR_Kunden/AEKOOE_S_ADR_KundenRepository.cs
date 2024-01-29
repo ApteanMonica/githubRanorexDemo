@@ -16,27 +16,27 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace AEKOOE_B_KTO
+namespace AEKOOE_S_ADR_Kunden
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    /// The class representing the AEKOOE_B_KTORepository element repository.
+    /// The class representing the AEKOOE_S_ADR_KundenRepository element repository.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
-    [RepositoryFolder("97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f")]
-    public partial class AEKOOE_B_KTORepository : RepoGenBaseFolder
+    [RepositoryFolder("1c6e8f05-2ac8-4bec-802b-d635a49945b0")]
+    public partial class AEKOOE_S_ADR_KundenRepository : RepoGenBaseFolder
     {
-        static AEKOOE_B_KTORepository instance = new AEKOOE_B_KTORepository();
-        AEKOOE_B_KTORepositoryFolders.FrmKtoAppFolder _frmkto;
-        AEKOOE_B_KTORepositoryFolders.DlgLoginAppFolder _dlglogin;
-        AEKOOE_B_KTORepositoryFolders.FormWorkplaceAppFolder _formworkplace;
-        AEKOOE_B_KTORepositoryFolders.DlgAusfuehrenAppFolder _dlgausfuehren;
+        static AEKOOE_S_ADR_KundenRepository instance = new AEKOOE_S_ADR_KundenRepository();
+        AEKOOE_S_ADR_KundenRepositoryFolders.FrmAdrAppFolder _frmadr;
+        AEKOOE_S_ADR_KundenRepositoryFolders.DlgLoginAppFolder _dlglogin;
+        AEKOOE_S_ADR_KundenRepositoryFolders.FormWorkplaceAppFolder _formworkplace;
+        AEKOOE_S_ADR_KundenRepositoryFolders.DlgAusfuehrenAppFolder _dlgausfuehren;
 
         /// <summary>
-        /// Gets the singleton class instance representing the AEKOOE_B_KTORepository element repository.
+        /// Gets the singleton class instance representing the AEKOOE_S_ADR_KundenRepository element repository.
         /// </summary>
-        [RepositoryFolder("97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f")]
-        public static AEKOOE_B_KTORepository Instance
+        [RepositoryFolder("1c6e8f05-2ac8-4bec-802b-d635a49945b0")]
+        public static AEKOOE_S_ADR_KundenRepository Instance
         {
             get { return instance; }
         }
@@ -44,13 +44,13 @@ namespace AEKOOE_B_KTO
         /// <summary>
         /// Repository class constructor.
         /// </summary>
-        public AEKOOE_B_KTORepository() 
-            : base("AEKOOE_B_KTORepository", "/", null, 0, false, "97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f", ".\\RepositoryImages\\AEKOOE_B_KTORepository97edc0a8.rximgres")
+        public AEKOOE_S_ADR_KundenRepository() 
+            : base("AEKOOE_S_ADR_KundenRepository", "/", null, 0, false, "1c6e8f05-2ac8-4bec-802b-d635a49945b0", ".\\RepositoryImages\\AEKOOE_S_ADR_KundenRepository1c6e8f05.rximgres")
         {
-            _frmkto = new AEKOOE_B_KTORepositoryFolders.FrmKtoAppFolder(this);
-            _dlglogin = new AEKOOE_B_KTORepositoryFolders.DlgLoginAppFolder(this);
-            _formworkplace = new AEKOOE_B_KTORepositoryFolders.FormWorkplaceAppFolder(this);
-            _dlgausfuehren = new AEKOOE_B_KTORepositoryFolders.DlgAusfuehrenAppFolder(this);
+            _frmadr = new AEKOOE_S_ADR_KundenRepositoryFolders.FrmAdrAppFolder(this);
+            _dlglogin = new AEKOOE_S_ADR_KundenRepositoryFolders.DlgLoginAppFolder(this);
+            _formworkplace = new AEKOOE_S_ADR_KundenRepositoryFolders.FormWorkplaceAppFolder(this);
+            _dlgausfuehren = new AEKOOE_S_ADR_KundenRepositoryFolders.DlgAusfuehrenAppFolder(this);
         }
 
 #region Variables
@@ -60,7 +60,7 @@ namespace AEKOOE_B_KTO
         /// <summary>
         /// The Self item info.
         /// </summary>
-        [RepositoryItemInfo("97edc0a8-7af7-4ff0-9994-0d4fefcdaa1f")]
+        [RepositoryItemInfo("1c6e8f05-2ac8-4bec-802b-d635a49945b0")]
         public virtual RepoItemInfo SelfInfo
         {
             get
@@ -70,19 +70,19 @@ namespace AEKOOE_B_KTO
         }
 
         /// <summary>
-        /// The FrmKto folder.
+        /// The FrmAdr folder.
         /// </summary>
-        [RepositoryFolder("fbe68293-5c4e-443c-95a8-a6f907e9c7aa")]
-        public virtual AEKOOE_B_KTORepositoryFolders.FrmKtoAppFolder FrmKto
+        [RepositoryFolder("2f43c487-ed47-4fe8-874a-42f5fe657075")]
+        public virtual AEKOOE_S_ADR_KundenRepositoryFolders.FrmAdrAppFolder FrmAdr
         {
-            get { return _frmkto; }
+            get { return _frmadr; }
         }
 
         /// <summary>
         /// The DlgLogin folder.
         /// </summary>
         [RepositoryFolder("613f9dce-a462-4464-abdc-e4220cc43818")]
-        public virtual AEKOOE_B_KTORepositoryFolders.DlgLoginAppFolder DlgLogin
+        public virtual AEKOOE_S_ADR_KundenRepositoryFolders.DlgLoginAppFolder DlgLogin
         {
             get { return _dlglogin; }
         }
@@ -91,7 +91,7 @@ namespace AEKOOE_B_KTO
         /// The FormWorkplace folder.
         /// </summary>
         [RepositoryFolder("6b3fe7bc-676c-4b81-a2c3-8277391afb9a")]
-        public virtual AEKOOE_B_KTORepositoryFolders.FormWorkplaceAppFolder FormWorkplace
+        public virtual AEKOOE_S_ADR_KundenRepositoryFolders.FormWorkplaceAppFolder FormWorkplace
         {
             get { return _formworkplace; }
         }
@@ -100,7 +100,7 @@ namespace AEKOOE_B_KTO
         /// The DlgAusfuehren folder.
         /// </summary>
         [RepositoryFolder("88a384a1-e8b4-40fb-a957-91b69f81477a")]
-        public virtual AEKOOE_B_KTORepositoryFolders.DlgAusfuehrenAppFolder DlgAusfuehren
+        public virtual AEKOOE_S_ADR_KundenRepositoryFolders.DlgAusfuehrenAppFolder DlgAusfuehren
         {
             get { return _dlgausfuehren; }
         }
@@ -110,29 +110,29 @@ namespace AEKOOE_B_KTO
     /// Inner folder classes.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
-    public partial class AEKOOE_B_KTORepositoryFolders
+    public partial class AEKOOE_S_ADR_KundenRepositoryFolders
     {
         /// <summary>
-        /// The FrmKtoAppFolder folder.
+        /// The FrmAdrAppFolder folder.
         /// </summary>
-        [RepositoryFolder("fbe68293-5c4e-443c-95a8-a6f907e9c7aa")]
-        public partial class FrmKtoAppFolder : RepoGenBaseFolder
+        [RepositoryFolder("2f43c487-ed47-4fe8-874a-42f5fe657075")]
+        public partial class FrmAdrAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _titlebarwfksachkontenverwaltenInfo;
+            RepoItemInfo _titlebarwfkkundenstammInfo;
 
             /// <summary>
-            /// Creates a new FrmKto  folder.
+            /// Creates a new FrmAdr  folder.
             /// </summary>
-            public FrmKtoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "fbe68293-5c4e-443c-95a8-a6f907e9c7aa", "")
+            public FrmAdrAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmAdr", "/form[@controlname='frmAdr']", parentFolder, 30000, null, true, "2f43c487-ed47-4fe8-874a-42f5fe657075", "")
             {
-                _titlebarwfksachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBarWFKSachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354");
+                _titlebarwfkkundenstammInfo = new RepoItemInfo(this, "TitleBarWFKKundenstamm", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b023272e-eb4f-4c2e-89fa-c398f5175fe0");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("fbe68293-5c4e-443c-95a8-a6f907e9c7aa")]
+            [RepositoryItem("2f43c487-ed47-4fe8-874a-42f5fe657075")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -144,7 +144,7 @@ namespace AEKOOE_B_KTO
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("fbe68293-5c4e-443c-95a8-a6f907e9c7aa")]
+            [RepositoryItemInfo("2f43c487-ed47-4fe8-874a-42f5fe657075")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -154,26 +154,26 @@ namespace AEKOOE_B_KTO
             }
 
             /// <summary>
-            /// The TitleBarWFKSachkontenVerwalten item.
+            /// The TitleBarWFKKundenstamm item.
             /// </summary>
-            [RepositoryItem("b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354")]
-            public virtual Ranorex.TitleBar TitleBarWFKSachkontenVerwalten
+            [RepositoryItem("b023272e-eb4f-4c2e-89fa-c398f5175fe0")]
+            public virtual Ranorex.TitleBar TitleBarWFKKundenstamm
             {
                 get
                 {
-                    return _titlebarwfksachkontenverwaltenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _titlebarwfkkundenstammInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The TitleBarWFKSachkontenVerwalten item info.
+            /// The TitleBarWFKKundenstamm item info.
             /// </summary>
-            [RepositoryItemInfo("b6d39da3-d1ca-4673-9f1c-c5c3fd1d6354")]
-            public virtual RepoItemInfo TitleBarWFKSachkontenVerwaltenInfo
+            [RepositoryItemInfo("b023272e-eb4f-4c2e-89fa-c398f5175fe0")]
+            public virtual RepoItemInfo TitleBarWFKKundenstammInfo
             {
                 get
                 {
-                    return _titlebarwfksachkontenverwaltenInfo;
+                    return _titlebarwfkkundenstammInfo;
                 }
             }
         }
@@ -184,7 +184,7 @@ namespace AEKOOE_B_KTO
         [RepositoryFolder("613f9dce-a462-4464-abdc-e4220cc43818")]
         public partial class DlgLoginAppFolder : RepoGenBaseFolder
         {
-            AEKOOE_B_KTORepositoryFolders.Frame1Folder _frame1;
+            AEKOOE_S_ADR_KundenRepositoryFolders.Frame1Folder _frame1;
 
             /// <summary>
             /// Creates a new DlgLogin  folder.
@@ -192,7 +192,7 @@ namespace AEKOOE_B_KTO
             public DlgLoginAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgLogin", "/form[@controlname='dlgLogin']", parentFolder, 30000, null, true, "613f9dce-a462-4464-abdc-e4220cc43818", "")
             {
-                _frame1 = new AEKOOE_B_KTORepositoryFolders.Frame1Folder(this);
+                _frame1 = new AEKOOE_S_ADR_KundenRepositoryFolders.Frame1Folder(this);
             }
 
             /// <summary>
@@ -223,7 +223,7 @@ namespace AEKOOE_B_KTO
             /// The Frame1 folder.
             /// </summary>
             [RepositoryFolder("1ccd0416-bddd-4197-9af7-56a6aedbdce0")]
-            public virtual AEKOOE_B_KTORepositoryFolders.Frame1Folder Frame1
+            public virtual AEKOOE_S_ADR_KundenRepositoryFolders.Frame1Folder Frame1
             {
                 get { return _frame1; }
             }

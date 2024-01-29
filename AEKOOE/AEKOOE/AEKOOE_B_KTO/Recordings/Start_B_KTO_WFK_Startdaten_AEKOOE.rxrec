@@ -3,6 +3,9 @@
 embeddedrepository="False"
 id="3be7e846-6fe1-4fc5-9831-cad763f49834"
 mode="Desktop">
+	<description>
+		The Start_B_KTO_WFK recording.
+	</description>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,18 +22,13 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Start_B_KTO_WFK"
+	classname="Start_B_KTO_WFK_Startdaten_AEKOOE"
 	namespace="AEKOOE_B_KTO.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="4b26eaee-0fe1-46d5-a8d7-008407e237c1"
-		name="Startfile">
-			C:\Testdaten\Allgemein\Start.bat
-		</var>
-		<var
 		id="2c8d7017-2367-4d26-92dd-6748c39f2b16"
-		name="Programm_B_KTO_WFK">
+		name="Programm_RANO_Aufrufparameter">
 			B_KTO x x x WFK
 		</var>
 		<var
@@ -39,19 +37,19 @@ mode="Desktop">
 			C:\Testdaten\Allgemein\Start_AEKOOE.bat
 		</var>
 		<var
-		id="bed1fa62-97c3-4142-8d2d-077fced8bf09"
-		name="Programm_B_KTO">
-			B_KTO
-		</var>
-		<var
 		id="7e7bc552-4303-4cee-944f-4b829993d320"
 		name="Mandant">
 			WFK
 		</var>
+		<var
+		id="84f3f3e3-d421-4062-95e1-14011082ce16"
+		name="Programm">
+			B_KTO
+		</var>
 	</variables>
 	<recorditems>
 		<runapprecorditem
-		enabled="False"
+		enabled="True"
 		maximized="False"
 		optional="False">
 			<comment>
@@ -59,11 +57,11 @@ mode="Desktop">
 			<bindings>
 				<binding
 				target="FileName"
-				variable="Startfile">
+				variable="Startfile_AEKOOE">
 				</binding>
 				<binding
 				target="Arguments"
-				variable="Programm_B_KTO">
+				variable="Programm_RANO_Aufrufparameter">
 				</binding>
 			</bindings>
 			<filename>
@@ -86,7 +84,7 @@ mode="Desktop">
 				</binding>
 				<binding
 				target="Arguments"
-				variable="Programm_B_KTO_WFK">
+				variable="Programm">
 				</binding>
 			</bindings>
 			<filename>
@@ -97,7 +95,7 @@ mode="Desktop">
 			</args>
 		</runapprecorditem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="7e52db81-d15a-4a0b-8d0c-1608994e4d82"
 		waitaction="Exists"
@@ -157,7 +155,7 @@ mode="Desktop">
 		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="6018d7c2-39ac-4496-8560-d8b43212f2c6">
 			<comment>
@@ -221,7 +219,7 @@ mode="Desktop">
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="6018d7c2-39ac-4496-8560-d8b43212f2c6">
 			<comment>
@@ -303,7 +301,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Start_B_KTO_WFK.UserCode.cs
+		Start_B_KTO_WFK_Startdaten_AEKOOE.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

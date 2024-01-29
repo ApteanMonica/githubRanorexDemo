@@ -24,60 +24,61 @@ namespace AEKOOE_B_KTO.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_B_KTO_Workplace_offen recording.
+    ///The Start_B_KTO_WFK recording.
     /// </summary>
-    [TestModule("24027741-1a47-4e7b-9181-a0e0a56d981f", ModuleType.Recording, 1)]
-    public partial class Start_B_KTO_Workplace_offen : ITestModule
+    [TestModule("3be7e846-6fe1-4fc5-9831-cad763f49834", ModuleType.Recording, 1)]
+    public partial class Start_B_KTO_WFK_Startdaten_AEKOOE : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_B_KTO.AEKOOE_B_KTORepository repository.
         /// </summary>
         public static global::AEKOOE_B_KTO.AEKOOE_B_KTORepository repo = global::AEKOOE_B_KTO.AEKOOE_B_KTORepository.Instance;
 
-        static Start_B_KTO_Workplace_offen instance = new Start_B_KTO_Workplace_offen();
+        static Start_B_KTO_WFK_Startdaten_AEKOOE instance = new Start_B_KTO_WFK_Startdaten_AEKOOE();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_B_KTO_Workplace_offen()
+        public Start_B_KTO_WFK_Startdaten_AEKOOE()
         {
-            Programmpfad = "C:\\Program Files\\rs2\\rs2\\521_SP13\\bin";
-            Programm_B_KTO = "B_KTO";
+            Programm_RANO_Aufrufparameter = "B_KTO x x x WFK";
+            Startfile_AEKOOE = "C:\\Testdaten\\Allgemein\\Start_AEKOOE.bat";
             Mandant = "WFK";
+            Programm = "B_KTO";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_B_KTO_Workplace_offen Instance
+        public static Start_B_KTO_WFK_Startdaten_AEKOOE Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Programmpfad;
+        string _Programm_RANO_Aufrufparameter;
 
         /// <summary>
-        /// Gets or sets the value of variable Programmpfad.
+        /// Gets or sets the value of variable Programm_RANO_Aufrufparameter.
         /// </summary>
-        [TestVariable("9bce212e-f73e-498b-a0e2-cf2b865bfe09")]
-        public string Programmpfad
+        [TestVariable("2c8d7017-2367-4d26-92dd-6748c39f2b16")]
+        public string Programm_RANO_Aufrufparameter
         {
-            get { return _Programmpfad; }
-            set { _Programmpfad = value; }
+            get { return _Programm_RANO_Aufrufparameter; }
+            set { _Programm_RANO_Aufrufparameter = value; }
         }
 
-        string _Programm_B_KTO;
+        string _Startfile_AEKOOE;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_B_KTO.
+        /// Gets or sets the value of variable Startfile_AEKOOE.
         /// </summary>
-        [TestVariable("fbae60e4-d10e-40e8-82d0-13613f7f3259")]
-        public string Programm_B_KTO
+        [TestVariable("a8b708dc-0593-45b9-b45f-d87d2ccd3118")]
+        public string Startfile_AEKOOE
         {
-            get { return _Programm_B_KTO; }
-            set { _Programm_B_KTO = value; }
+            get { return _Startfile_AEKOOE; }
+            set { _Startfile_AEKOOE = value; }
         }
 
         string _Mandant;
@@ -85,11 +86,23 @@ namespace AEKOOE_B_KTO.Recordings
         /// <summary>
         /// Gets or sets the value of variable Mandant.
         /// </summary>
-        [TestVariable("2aa37e01-ca23-43e9-951f-b09fc4f577cc")]
+        [TestVariable("7e7bc552-4303-4cee-944f-4b829993d320")]
         public string Mandant
         {
             get { return _Mandant; }
             set { _Mandant = value; }
+        }
+
+        string _Programm;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm.
+        /// </summary>
+        [TestVariable("84f3f3e3-d421-4062-95e1-14011082ce16")]
+        public string Programm
+        {
+            get { return _Programm; }
+            set { _Programm = value; }
         }
 
 #endregion
@@ -118,28 +131,19 @@ namespace AEKOOE_B_KTO.Recordings
 
             Init();
 
-            // davor: Aufruf Workplace manuell mit Mandant WFK, damit Licenceservice aktiviert ist
-            Report.Log(ReportLevel.Info, "Section", "davor: Aufruf Workplace manuell mit Mandant WFK, damit Licenceservice aktiviert ist", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile_AEKOOE with arguments from variable $Programm_RANO_Aufrufparameter in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile_AEKOOE, Programm_RANO_Aufrufparameter, "", false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormWorkplace.TitleBar_Workplace'.", repo.FormWorkplace.TitleBar_WorkplaceInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.FormWorkplace.TitleBar_WorkplaceInfo);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile_AEKOOE with arguments from variable $Programm in normal mode.", new RecordItemIndex(1));
+            Host.Local.RunApplication(Startfile_AEKOOE, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FormWorkplace.TitleBar_Workplace'.", repo.FormWorkplace.TitleBar_WorkplaceInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FormWorkplace.TitleBar_WorkplaceInfo, "Text", Mandant);
-            
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Programm_B_KTO in normal mode.", new RecordItemIndex(3));
-            Host.Local.RunApplication(Programm_B_KTO, "", Programmpfad, false);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgLogin'", repo.DlgLogin.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(4));
-            //repo.DlgLogin.SelfInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKto.TitleBarWFKSachkontenVerwalten'", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKto.TitleBarWFKSachkontenVerwalten'", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(2));
             repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Sachkonten verwalten') on item 'FrmKto.TitleBarWFKSachkontenVerwalten'.", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Sachkonten verwalten') on item 'FrmKto.TitleBarWFKSachkontenVerwalten'.", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, "Text", "Sachkonten verwalten");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FrmKto.TitleBarWFKSachkontenVerwalten'.", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Mandant) on item 'FrmKto.TitleBarWFKSachkontenVerwalten'.", repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.FrmKto.TitleBarWFKSachkontenVerwaltenInfo, "Text", Mandant);
             
         }

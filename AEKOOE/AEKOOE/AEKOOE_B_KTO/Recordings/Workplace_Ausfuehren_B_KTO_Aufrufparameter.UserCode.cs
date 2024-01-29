@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace AEKOOE_B_KTO.Recordings
 {
-    public partial class Start_B_KTO_Workplace_offen
+    public partial class Workplace_Ausfuehren_B_KTO_Aufrufparameter
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

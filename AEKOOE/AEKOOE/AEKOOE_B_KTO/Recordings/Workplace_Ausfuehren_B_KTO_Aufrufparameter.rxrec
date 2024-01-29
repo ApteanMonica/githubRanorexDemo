@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="c9b5f3e0-437a-4b32-a79b-b36ca5ad71bf"
+id="d8d19c2b-2c60-4cf9-abc6-8bc5b5cd3927"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,19 +19,18 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Workplace_Ausfuehren_B_KTO"
+	classname="Workplace_Ausfuehren_B_KTO_Aufrufparameter"
 	namespace="AEKOOE_B_KTO.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="f461b4ea-132e-4692-9f6b-55486a3fbb6f"
+		id="ee738502-b7d6-423e-8d43-b5f7c828ccda"
 		name="Mandant">
 			WFK
 		</var>
 		<var
-		id="ab7c7c60-9946-4914-b1f4-4b72ef9712ca"
-		name="Programm">
-			B_KTO
+		id="00731b1f-bff7-4bb3-8687-a363349a7e27"
+		name="Programm_RS_Aufrufparameter">
 		</var>
 	</variables>
 	<recorditems>
@@ -39,7 +38,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				davor: Aufruf Workplace manuell mit Mandant WFK User RS_RANOREX Kw=rano mit aktivem Licenceservice; Programmaufruf mit Ausführen:
+				davor: Aufruf Workplace manuell mit Mandant WFK User RS_RANOREX Kw=rano mit aktivem Licenceservice; Programmaufruf mit Ausführen und Aufrufparameter
 			</comment>
 			<bindings>
 			</bindings>
@@ -106,74 +105,6 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				yourValue
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="False"
-		searchpropertyid="81bdc423-f3cf-4e2d-91e8-0844efbfcb9a">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Mandant">
-				</binding>
-			</bindings>
-			<info
-			id="c1f4df91-b366-4133-b777-6e0186dabd93"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="3"
-				prefcap="titlebar"
-				rect="20,-6,1900,35"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -320,178 +251,6 @@ mode="Global">
 				Ausführen
 			</matchvalue>
 		</validationitem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="de168ce8-be2d-4ea2-ae28-2f2c2662b673"
-		sx="930"
-		sy="574"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e7303dd4-5ab5-44f9-acea-cf7e950f8425"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="False"
-				index="2"
-				prefcap="text"
-				rect="766,565,328,18"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						@b_kto
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1001
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						2425990
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						14004
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						MENU
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						LeftToRightReading
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						@b_kto
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@controlname='dlgAusführen']/combobox[@controlname='cmbProgramm']/text[@controlid='1001']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence="@"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="b08a072c-97d3-42da-8429-d7f7a16c29e2">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="@"
 		duration="20ms"
@@ -504,7 +263,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Programm">
+				variable="Programm_RS_Aufrufparameter">
 				</binding>
 			</bindings>
 		</keysequenceitem>
@@ -4652,7 +4411,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Workplace_Ausfuehren_B_KTO.UserCode.cs
+		Workplace_Ausfuehren_B_KTO_Aufrufparameter.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
