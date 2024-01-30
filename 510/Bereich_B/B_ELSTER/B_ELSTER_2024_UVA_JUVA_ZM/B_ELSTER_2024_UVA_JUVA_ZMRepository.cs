@@ -4363,16 +4363,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         [RepositoryFolder("c2886709-97e8-470b-a755-64a78d06e115")]
         public partial class DlgElsterUNAppFolder : RepoGenBaseFolder
         {
+            B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.GroupBox2Folder _groupbox2;
             RepoItemInfo _titlebar300anlageunInfo;
             RepoItemInfo _pagedownInfo;
             RepoItemInfo _pbweiterInfo;
             RepoItemInfo _text_ibanInfo;
+            RepoItemInfo _dfbicInfo;
             RepoItemInfo _text_geldinstitutInfo;
+            RepoItemInfo _dfktonrInfo;
             RepoItemInfo _cbltnameInfo;
             RepoItemInfo _cbvstInfo;
             RepoItemInfo _text_betrag_ust_anrechenbarInfo;
             RepoItemInfo _text_sicherheitsleistungenInfo;
             RepoItemInfo _dfsummeInfo;
+            RepoItemInfo _dfkontoinhaberInfo;
+            RepoItemInfo _cbunterschriebenInfo;
+            RepoItemInfo _dfbefoerderungslfgInfo;
 
             /// <summary>
             /// Creates a new DlgElsterUN  folder.
@@ -4380,16 +4386,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             public DlgElsterUNAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgElsterUN", "/form[@controlname='dlgElsterUN']", parentFolder, 30000, null, true, "c2886709-97e8-470b-a755-64a78d06e115", "")
             {
+                _groupbox2 = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.GroupBox2Folder(this);
                 _titlebar300anlageunInfo = new RepoItemInfo(this, "TitleBar300AnlageUN", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "115f79fb-2a55-4bbb-b8ec-71b8856dbced");
                 _pagedownInfo = new RepoItemInfo(this, "PageDown", "scrollbar[@style='Vertical']/button[@text='PageDown']", "", 30000, null, "93a7cadf-0bab-44f7-a1a3-194a9e3bcfc1");
                 _pbweiterInfo = new RepoItemInfo(this, "PbWeiter", "button[@controlname='pbWeiter']", "", 30000, null, "da5f4afe-a495-493b-965d-4a6831ff24b2");
                 _text_ibanInfo = new RepoItemInfo(this, "Text_IBAN", "container[@controlname='gbBankverbindung']/text[@controlname='dfIBAN']/text[@accessiblerole='Text']", "", 30000, null, "fc6341f5-9f21-4703-815c-77e772ac9390");
+                _dfbicInfo = new RepoItemInfo(this, "DfBIC", "container[@controlname='gbBankverbindung']/text[@controlname='dfBIC']", "", 30000, null, "0e01f446-a50b-49b0-a83a-ddca5713e283");
                 _text_geldinstitutInfo = new RepoItemInfo(this, "Text_Geldinstitut", "container[@controlname='gbBankverbindung']/text[@controlname='dfGeldinstitut']/text[@accessiblerole='Text']", "", 30000, null, "9cfae13a-3062-4a04-b4ac-71674cbd0101");
+                _dfktonrInfo = new RepoItemInfo(this, "DfKtoNr", "container[@controlname='gbBankverbindung']/text[@controlname='dfKtoNr']", "", 30000, null, "ea8166ab-034c-4bc4-8482-3f23e4c9563c");
                 _cbltnameInfo = new RepoItemInfo(this, "CbLtName", "container[@controlname='gbBankverbindung']/checkbox[@controlname='cbLtName']", "", 30000, null, "79b29c20-59fc-4110-8f02-8242195f3a97");
                 _cbvstInfo = new RepoItemInfo(this, "CbVst", "checkbox[@controlname='cbVst']", "", 30000, null, "3d082eb3-27d9-4c2d-871b-46487b97e298");
                 _text_betrag_ust_anrechenbarInfo = new RepoItemInfo(this, "Text_Betrag_Ust_anrechenbar", "text[@controlname='dfBeförderungseinzelbesteuerung']/text[@accessiblerole='Text']", "", 30000, null, "d1ea814c-80da-4d5f-9653-ba6c6767fe5b");
                 _text_sicherheitsleistungenInfo = new RepoItemInfo(this, "Text_Sicherheitsleistungen", "text[@controlname='dfSicherheitsleistungen']/text[@accessiblerole='Text']", "", 30000, null, "79e3d4bf-9f0f-4f98-8c9b-5ee1d082b6c0");
                 _dfsummeInfo = new RepoItemInfo(this, "DfSumme", "text[@controlname='dfSumme']", "", 30000, null, "588fbd6f-05ff-441a-9b80-39a0fd69d6b1");
+                _dfkontoinhaberInfo = new RepoItemInfo(this, "DfKontoinhaber", "container[@controlname='gbBankverbindung']/text[@controlname='dfKontoinhaber']", "", 30000, null, "fb6b8563-fe2e-4b58-946b-e2fa2d069ad0");
+                _cbunterschriebenInfo = new RepoItemInfo(this, "CbUnterschrieben", "checkbox[@controlname='cbUnterschrieben']", "", 30000, null, "cf058a0f-02df-4938-bd66-4ef449dff1cb");
+                _dfbefoerderungslfgInfo = new RepoItemInfo(this, "DfBefoerderungslfg", "text[@controlname='dfBeförderungslfg']", "", 30000, null, "0a97a2ab-25f3-4464-a706-b29412452d9f");
             }
 
             /// <summary>
@@ -4513,6 +4525,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The DfBIC item.
+            /// </summary>
+            [RepositoryItem("0e01f446-a50b-49b0-a83a-ddca5713e283")]
+            public virtual Ranorex.Text DfBIC
+            {
+                get
+                {
+                    return _dfbicInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfBIC item info.
+            /// </summary>
+            [RepositoryItemInfo("0e01f446-a50b-49b0-a83a-ddca5713e283")]
+            public virtual RepoItemInfo DfBICInfo
+            {
+                get
+                {
+                    return _dfbicInfo;
+                }
+            }
+
+            /// <summary>
             /// The Text_Geldinstitut item.
             /// </summary>
             [RepositoryItem("9cfae13a-3062-4a04-b4ac-71674cbd0101")]
@@ -4533,6 +4569,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _text_geldinstitutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfKtoNr item.
+            /// </summary>
+            [RepositoryItem("ea8166ab-034c-4bc4-8482-3f23e4c9563c")]
+            public virtual Ranorex.Text DfKtoNr
+            {
+                get
+                {
+                    return _dfktonrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfKtoNr item info.
+            /// </summary>
+            [RepositoryItemInfo("ea8166ab-034c-4bc4-8482-3f23e4c9563c")]
+            public virtual RepoItemInfo DfKtoNrInfo
+            {
+                get
+                {
+                    return _dfktonrInfo;
                 }
             }
 
@@ -4653,6 +4713,387 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _dfsummeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfKontoinhaber item.
+            /// </summary>
+            [RepositoryItem("fb6b8563-fe2e-4b58-946b-e2fa2d069ad0")]
+            public virtual Ranorex.Text DfKontoinhaber
+            {
+                get
+                {
+                    return _dfkontoinhaberInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfKontoinhaber item info.
+            /// </summary>
+            [RepositoryItemInfo("fb6b8563-fe2e-4b58-946b-e2fa2d069ad0")]
+            public virtual RepoItemInfo DfKontoinhaberInfo
+            {
+                get
+                {
+                    return _dfkontoinhaberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbUnterschrieben item.
+            /// </summary>
+            [RepositoryItem("cf058a0f-02df-4938-bd66-4ef449dff1cb")]
+            public virtual Ranorex.CheckBox CbUnterschrieben
+            {
+                get
+                {
+                    return _cbunterschriebenInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbUnterschrieben item info.
+            /// </summary>
+            [RepositoryItemInfo("cf058a0f-02df-4938-bd66-4ef449dff1cb")]
+            public virtual RepoItemInfo CbUnterschriebenInfo
+            {
+                get
+                {
+                    return _cbunterschriebenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfBefoerderungslfg item.
+            /// </summary>
+            [RepositoryItem("0a97a2ab-25f3-4464-a706-b29412452d9f")]
+            public virtual Ranorex.Text DfBefoerderungslfg
+            {
+                get
+                {
+                    return _dfbefoerderungslfgInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfBefoerderungslfg item info.
+            /// </summary>
+            [RepositoryItemInfo("0a97a2ab-25f3-4464-a706-b29412452d9f")]
+            public virtual RepoItemInfo DfBefoerderungslfgInfo
+            {
+                get
+                {
+                    return _dfbefoerderungslfgInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupBox2 folder.
+            /// </summary>
+            [RepositoryFolder("5317aa0f-53db-493b-869a-b3cfacfdbf0c")]
+            public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.GroupBox2Folder GroupBox2
+            {
+                get { return _groupbox2; }
+            }
+        }
+
+        /// <summary>
+        /// The GroupBox2Folder folder.
+        /// </summary>
+        [RepositoryFolder("5317aa0f-53db-493b-869a-b3cfacfdbf0c")]
+        public partial class GroupBox2Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cbbevollmaechtigterInfo;
+            RepoItemInfo _cbempfangsbevollmaechtigterInfo;
+            RepoItemInfo _dfnameInfo;
+            RepoItemInfo _dfstrasseInfo;
+            RepoItemInfo _dfhausnummerInfo;
+            RepoItemInfo _dfhausnummerzusatzInfo;
+            RepoItemInfo _dfadressergaenzungInfo;
+            RepoItemInfo _dfortInfo;
+            RepoItemInfo _dfemailInfo;
+            RepoItemInfo _dftelefonInfo;
+
+            /// <summary>
+            /// Creates a new GroupBox2  folder.
+            /// </summary>
+            public GroupBox2Folder(RepoGenBaseFolder parentFolder) :
+                    base("GroupBox2", "container[@controlname='groupBox2']", parentFolder, 30000, null, false, "5317aa0f-53db-493b-869a-b3cfacfdbf0c", "")
+            {
+                _cbbevollmaechtigterInfo = new RepoItemInfo(this, "CbBevollmaechtigter", "checkbox[@controlname='cbBevollmächtigter']", "", 30000, null, "3704adcc-fced-4ac7-928c-3440ab6e956f");
+                _cbempfangsbevollmaechtigterInfo = new RepoItemInfo(this, "CbEmpfangsbevollmaechtigter", "checkbox[@controlname='cbEmpfangsbevollmächtigter']", "", 30000, null, "2ea60330-eb74-4ea3-9e2d-a400d0420ca5");
+                _dfnameInfo = new RepoItemInfo(this, "DfName", "text[@controlname='dfName']", "", 30000, null, "a743a159-609b-4975-a55d-68d86f174d29");
+                _dfstrasseInfo = new RepoItemInfo(this, "DfStrasse", "text[@controlname='dfStraße']", "", 30000, null, "1dd93a43-d9c8-4d32-b69f-1c78f0b74b7c");
+                _dfhausnummerInfo = new RepoItemInfo(this, "DfHausnummer", "text[@controlname='dfHausnummer']", "", 30000, null, "1994833c-f73d-4759-af56-31bd8523a626");
+                _dfhausnummerzusatzInfo = new RepoItemInfo(this, "DfHausnummerzusatz", "text[@controlname='dfHausnummerzusatz']", "", 30000, null, "3eb515c2-2cca-4631-bc42-e4bb23fb3317");
+                _dfadressergaenzungInfo = new RepoItemInfo(this, "DfAdressergaenzung", "text[@controlname='dfAdressergänzung']", "", 30000, null, "73491afb-42f0-41aa-a6ee-a4420e7db5e6");
+                _dfortInfo = new RepoItemInfo(this, "DfOrt", "text[@controlname='dfOrt']", "", 30000, null, "5b7e3d68-e851-4bf7-a1ef-927cd7eca6b0");
+                _dfemailInfo = new RepoItemInfo(this, "DfEmail", "text[@controlname='dfEmail']", "", 30000, null, "fbb400de-69d3-4a41-a334-4d3ab656a4a1");
+                _dftelefonInfo = new RepoItemInfo(this, "DfTelefon", "text[@controlname='dfTelefon']", "", 30000, null, "9ab5c5b4-df1e-4c42-b505-cb5ef7c90df8");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5317aa0f-53db-493b-869a-b3cfacfdbf0c")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5317aa0f-53db-493b-869a-b3cfacfdbf0c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbBevollmaechtigter item.
+            /// </summary>
+            [RepositoryItem("3704adcc-fced-4ac7-928c-3440ab6e956f")]
+            public virtual Ranorex.CheckBox CbBevollmaechtigter
+            {
+                get
+                {
+                    return _cbbevollmaechtigterInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBevollmaechtigter item info.
+            /// </summary>
+            [RepositoryItemInfo("3704adcc-fced-4ac7-928c-3440ab6e956f")]
+            public virtual RepoItemInfo CbBevollmaechtigterInfo
+            {
+                get
+                {
+                    return _cbbevollmaechtigterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbEmpfangsbevollmaechtigter item.
+            /// </summary>
+            [RepositoryItem("2ea60330-eb74-4ea3-9e2d-a400d0420ca5")]
+            public virtual Ranorex.CheckBox CbEmpfangsbevollmaechtigter
+            {
+                get
+                {
+                    return _cbempfangsbevollmaechtigterInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbEmpfangsbevollmaechtigter item info.
+            /// </summary>
+            [RepositoryItemInfo("2ea60330-eb74-4ea3-9e2d-a400d0420ca5")]
+            public virtual RepoItemInfo CbEmpfangsbevollmaechtigterInfo
+            {
+                get
+                {
+                    return _cbempfangsbevollmaechtigterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfName item.
+            /// </summary>
+            [RepositoryItem("a743a159-609b-4975-a55d-68d86f174d29")]
+            public virtual Ranorex.Text DfName
+            {
+                get
+                {
+                    return _dfnameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfName item info.
+            /// </summary>
+            [RepositoryItemInfo("a743a159-609b-4975-a55d-68d86f174d29")]
+            public virtual RepoItemInfo DfNameInfo
+            {
+                get
+                {
+                    return _dfnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfStrasse item.
+            /// </summary>
+            [RepositoryItem("1dd93a43-d9c8-4d32-b69f-1c78f0b74b7c")]
+            public virtual Ranorex.Text DfStrasse
+            {
+                get
+                {
+                    return _dfstrasseInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfStrasse item info.
+            /// </summary>
+            [RepositoryItemInfo("1dd93a43-d9c8-4d32-b69f-1c78f0b74b7c")]
+            public virtual RepoItemInfo DfStrasseInfo
+            {
+                get
+                {
+                    return _dfstrasseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfHausnummer item.
+            /// </summary>
+            [RepositoryItem("1994833c-f73d-4759-af56-31bd8523a626")]
+            public virtual Ranorex.Text DfHausnummer
+            {
+                get
+                {
+                    return _dfhausnummerInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfHausnummer item info.
+            /// </summary>
+            [RepositoryItemInfo("1994833c-f73d-4759-af56-31bd8523a626")]
+            public virtual RepoItemInfo DfHausnummerInfo
+            {
+                get
+                {
+                    return _dfhausnummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfHausnummerzusatz item.
+            /// </summary>
+            [RepositoryItem("3eb515c2-2cca-4631-bc42-e4bb23fb3317")]
+            public virtual Ranorex.Text DfHausnummerzusatz
+            {
+                get
+                {
+                    return _dfhausnummerzusatzInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfHausnummerzusatz item info.
+            /// </summary>
+            [RepositoryItemInfo("3eb515c2-2cca-4631-bc42-e4bb23fb3317")]
+            public virtual RepoItemInfo DfHausnummerzusatzInfo
+            {
+                get
+                {
+                    return _dfhausnummerzusatzInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAdressergaenzung item.
+            /// </summary>
+            [RepositoryItem("73491afb-42f0-41aa-a6ee-a4420e7db5e6")]
+            public virtual Ranorex.Text DfAdressergaenzung
+            {
+                get
+                {
+                    return _dfadressergaenzungInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAdressergaenzung item info.
+            /// </summary>
+            [RepositoryItemInfo("73491afb-42f0-41aa-a6ee-a4420e7db5e6")]
+            public virtual RepoItemInfo DfAdressergaenzungInfo
+            {
+                get
+                {
+                    return _dfadressergaenzungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfOrt item.
+            /// </summary>
+            [RepositoryItem("5b7e3d68-e851-4bf7-a1ef-927cd7eca6b0")]
+            public virtual Ranorex.Text DfOrt
+            {
+                get
+                {
+                    return _dfortInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfOrt item info.
+            /// </summary>
+            [RepositoryItemInfo("5b7e3d68-e851-4bf7-a1ef-927cd7eca6b0")]
+            public virtual RepoItemInfo DfOrtInfo
+            {
+                get
+                {
+                    return _dfortInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfEmail item.
+            /// </summary>
+            [RepositoryItem("fbb400de-69d3-4a41-a334-4d3ab656a4a1")]
+            public virtual Ranorex.Text DfEmail
+            {
+                get
+                {
+                    return _dfemailInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("fbb400de-69d3-4a41-a334-4d3ab656a4a1")]
+            public virtual RepoItemInfo DfEmailInfo
+            {
+                get
+                {
+                    return _dfemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfTelefon item.
+            /// </summary>
+            [RepositoryItem("9ab5c5b4-df1e-4c42-b505-cb5ef7c90df8")]
+            public virtual Ranorex.Text DfTelefon
+            {
+                get
+                {
+                    return _dftelefonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfTelefon item info.
+            /// </summary>
+            [RepositoryItemInfo("9ab5c5b4-df1e-4c42-b505-cb5ef7c90df8")]
+            public virtual RepoItemInfo DfTelefonInfo
+            {
+                get
+                {
+                    return _dftelefonInfo;
                 }
             }
         }

@@ -26,7 +26,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     /// <summary>
     ///The Sichern_Eric_log_JUVA_JAHRNEU_ausl_U recording.
     /// </summary>
-    [TestModule("cb27f7cb-4084-4753-868c-7452a63f11c7", ModuleType.Recording, 1)]
+    [TestModule("73141e64-18fb-45e4-83fa-6b3f0df111f8", ModuleType.Recording, 1)]
     public partial class Sichern_Eric_log_JUVA_JAHRNEU_ausl_U : ITestModule
     {
         /// <summary>
@@ -59,7 +59,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// <summary>
         /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
         /// </summary>
-        [TestVariable("c6c2621c-3605-44aa-a8a5-70201d3df4fe")]
+        [TestVariable("16dd2385-ca5c-4dc7-bb8e-277ce34cc5ee")]
         public string Eric_log_Inhalt_aktuell
         {
             get { return _Eric_log_Inhalt_aktuell; }
