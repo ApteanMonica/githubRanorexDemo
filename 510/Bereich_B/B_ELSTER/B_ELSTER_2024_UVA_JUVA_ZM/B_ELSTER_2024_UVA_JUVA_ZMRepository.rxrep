@@ -640,7 +640,7 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		capname="form"
 		id="7d97c7d2-3ba8-4b99-a405-15576e71e535"
 		isrooted="True"
-		name="Frage"
+		name="Frage_Fehler_Plausipruefung"
 		refpath="/form[@title='Frage']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -653,6 +653,17 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title='Frage']/text[@accessiblename~'Fehler-Nr.:']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="1a0ddd0b-cfb6-4681-a13a-876f7d57d89f"
+			name="Frage"
+			refimgid="ab2f9362-7d49-4e16-ae3e-19233538ee16"
+			refpath="/form[@title='Frage']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Frage']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<basepath>
 				/form[@title='Frage']
@@ -2782,6 +2793,17 @@ ABLx5Mn/D4ciN9jGeszCAAAAAElFTkSuQmCC
 				</image>
 				/form[@title~'TEST.PDF']/element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c28e719c-1f74-4ba6-881a-38a0b0576725"
+			name="Schliessen"
+			refimgid="9106238f-162f-4657-90af-89dfe386f72f"
+			refpath="/form[@title='ElstervorJAHRESUVA_TEST.PDF - Adobe Acrobat Reader (64-bit)']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'TEST.PDF']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+			</item>
 			<basepath>
 				/form[@title~'TEST.PDF']
 			</basepath>
@@ -3014,6 +3036,17 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Vertical']/button[@text='PageDown']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="2f566bde-9cb4-4c57-9682-2794ac0da5f2"
+			name="PbDataAccessLoad"
+			refimgid="33f20569-e559-42b6-bdf7-ecc0b146d2c5"
+			refpath="/form[@controlname='tblUVAF']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblUVAF']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -4749,17 +4782,14 @@ SUVORK5CYII=
 		<var
 		id="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
 		name="UVA_VORVORJAHR_Form_Name">
-			UVA-Deutschland 2022 Elster
 		</var>
 		<var
 		id="3751c4e7-3923-4ce1-a791-05ede3e7ff24"
 		name="UVA_JAHRNEU_Form_Name">
-			UVA-Deutschland 2024 Elster
 		</var>
 		<var
 		id="9790a775-0b6b-4803-bdcb-f6beb517b923"
 		name="UVA_VORJAHR_Form_Name">
-			UVA-Deutschland 2023 Elster
 		</var>
 	</variables>
 </repository>

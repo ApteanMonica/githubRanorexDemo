@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
 {
-    public partial class Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR
+    public partial class Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

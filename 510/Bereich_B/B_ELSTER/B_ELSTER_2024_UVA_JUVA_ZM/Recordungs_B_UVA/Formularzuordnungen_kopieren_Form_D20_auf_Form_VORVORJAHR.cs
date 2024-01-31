@@ -24,22 +24,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR recording.
+    ///The Formularzuordnungen_kopieren_Form_D20_auf_Form_VORVORJAHR recording.
     /// </summary>
     [TestModule("63d81bcb-4195-4664-be43-65a6afa961a5", ModuleType.Recording, 1)]
-    public partial class Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR : ITestModule
+    public partial class Formularzuordnungen_kopieren_Form_D20_auf_Form_VORVORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR instance = new Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR();
+        static Formularzuordnungen_kopieren_Form_D20_auf_Form_VORVORJAHR instance = new Formularzuordnungen_kopieren_Form_D20_auf_Form_VORVORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR()
+        public Formularzuordnungen_kopieren_Form_D20_auf_Form_VORVORJAHR()
         {
             Firma = "300";
             UVA_D20_Form_Name = "";
@@ -49,7 +49,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR Instance
+        public static Formularzuordnungen_kopieren_Form_D20_auf_Form_VORVORJAHR Instance
         {
             get { return instance; }
         }

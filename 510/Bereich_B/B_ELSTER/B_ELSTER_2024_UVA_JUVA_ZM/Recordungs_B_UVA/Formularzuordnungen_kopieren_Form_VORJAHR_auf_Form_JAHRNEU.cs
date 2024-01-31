@@ -24,56 +24,44 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR recording.
+    ///The Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU recording.
     /// </summary>
-    [TestModule("79d7ac38-b71c-48bf-b026-78806d7bd358", ModuleType.Recording, 1)]
-    public partial class Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR : ITestModule
+    [TestModule("0b7e4a93-d4a3-4205-b523-9e30f48dd938", ModuleType.Recording, 1)]
+    public partial class Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR instance = new Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR();
+        static Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU instance = new Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR()
+        public Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU()
         {
-            UVA_D20_Form_Name = "";
-            UVA_VORJAHR_Form_Name = "";
             Firma = "300";
+            UVA_VORJAHR_Form_Name = "";
+            UVA_JAHRNEU_Form_Name = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR Instance
+        public static Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _UVA_D20_Form_Name;
-
-        /// <summary>
-        /// Gets or sets the value of variable UVA_D20_Form_Name.
-        /// </summary>
-        [TestVariable("3c5c1e2a-a7f1-49f6-b8e1-68dcb101f098")]
-        public string UVA_D20_Form_Name
-        {
-            get { return _UVA_D20_Form_Name; }
-            set { _UVA_D20_Form_Name = value; }
-        }
-
         string _Firma;
 
         /// <summary>
         /// Gets or sets the value of variable Firma.
         /// </summary>
-        [TestVariable("13e9df82-b179-436d-83a2-95f5b72b6ac0")]
+        [TestVariable("3589704c-4c2f-41e1-9a22-5162988d5f9b")]
         public string Firma
         {
             get { return _Firma; }
@@ -83,11 +71,21 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         /// <summary>
         /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
         /// </summary>
-        [TestVariable("f5c5f815-dc1f-46f8-9ecf-09f5ab8a5244")]
+        [TestVariable("b49e4c5a-6cd4-4d5c-b91e-b8cb62bb9cd5")]
         public string UVA_VORJAHR_Form_Name
         {
             get { return repo.UVA_VORJAHR_Form_Name; }
             set { repo.UVA_VORJAHR_Form_Name = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
+        /// </summary>
+        [TestVariable("a7bfebff-b30b-4d6b-b9e3-f2010919b966")]
+        public string UVA_JAHRNEU_Form_Name
+        {
+            get { return repo.UVA_JAHRNEU_Form_Name; }
+            set { repo.UVA_JAHRNEU_Form_Name = value; }
         }
 
 #endregion
@@ -125,52 +123,49 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.CmbUvak1' at Center.", repo.FrmUVAK.ClientArea1.CmbUvak1Info, new RecordItemIndex(2));
             repo.FrmUVAK.ClientArea1.CmbUvak1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVADeutschland2020Elster' at Center.", repo.List1000.UVADeutschland2020ElsterInfo, new RecordItemIndex(3));
-            repo.List1000.UVADeutschland2020Elster.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.CmbUvak2' at Center.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(4));
-            repo.FrmUVAK.ClientArea1.CmbUvak2.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.Formular_Elster_VORJAHR'.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.Formular_Elster_VORJAHR'.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(3));
             Validate.Exists(repo.List1000.Formular_Elster_VORJAHRInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORJAHR' at Center.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORJAHR' at Center.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(4));
             repo.List1000.Formular_Elster_VORJAHR.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_D20_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak1'.", repo.FrmUVAK.ClientArea1.CmbUvak1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak1Info, "Text", UVA_D20_Form_Name);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.CmbUvak2' at Center.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(5));
+            repo.FrmUVAK.ClientArea1.CmbUvak2.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORJAHR_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak2'.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak2Info, "Text", UVA_VORJAHR_Form_Name);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.Formular_Elster_JAHRNEU'.", repo.List1000.Formular_Elster_JAHRNEUInfo, new RecordItemIndex(6));
+            Validate.Exists(repo.List1000.Formular_Elster_JAHRNEUInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmUVAK.ClientArea1.CbNurZuordnung'.", repo.FrmUVAK.ClientArea1.CbNurZuordnungInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_JAHRNEU' at Center.", repo.List1000.Formular_Elster_JAHRNEUInfo, new RecordItemIndex(7));
+            repo.List1000.Formular_Elster_JAHRNEU.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORJAHR_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak1'.", repo.FrmUVAK.ClientArea1.CmbUvak1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak1Info, "Text", UVA_VORJAHR_Form_Name);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_JAHRNEU_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak2'.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak2Info, "Text", UVA_JAHRNEU_Form_Name);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmUVAK.ClientArea1.CbNurZuordnung'.", repo.FrmUVAK.ClientArea1.CbNurZuordnungInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CbNurZuordnungInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Firma) on item 'FrmUVAK.ClientArea1.DfZuordnungZielfirma'.", repo.FrmUVAK.ClientArea1.DfZuordnungZielfirmaInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Firma) on item 'FrmUVAK.ClientArea1.DfZuordnungZielfirma'.", repo.FrmUVAK.ClientArea1.DfZuordnungZielfirmaInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.DfZuordnungZielfirmaInfo, "Text", Firma);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.PbUVAKKopieren' at Center.", repo.FrmUVAK.ClientArea1.PbUVAKKopierenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.PbUVAKKopieren' at Center.", repo.FrmUVAK.ClientArea1.PbUVAKKopierenInfo, new RecordItemIndex(12));
             repo.FrmUVAK.ClientArea1.PbUVAKKopieren.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Hinweis.LabelMeldungstext'", repo.Hinweis.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(12));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Hinweis.LabelMeldungstext'", repo.Hinweis.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(13));
             //repo.Hinweis.LabelMeldungstextInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
-            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'J'.", new RecordItemIndex(14));
             Keyboard.Press("J");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'Hinweis.LabelMeldungstext'.", repo.Hinweis.LabelMeldungstextInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'Hinweis.LabelMeldungstext'.", repo.Hinweis.LabelMeldungstextInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.Hinweis.LabelMeldungstextInfo, "Text", "Kopiervorgang beendet");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Hinweis.Button' at Center.", repo.Hinweis.ButtonInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Hinweis.Button' at Center.", repo.Hinweis.ButtonInfo, new RecordItemIndex(16));
             repo.Hinweis.Button.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(17));
             Keyboard.PrepareFocus(repo.FrmUVAK.FormularKopieren);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

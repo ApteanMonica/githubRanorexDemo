@@ -33,6 +33,26 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
+		searchpropertyid="f4f2e500-93ae-4ddb-bd5e-25306b8249c9"
+		waitaction="Exists"
+		waittimeout="300000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e15b9210-a3b7-413d-8e72-dcba1314b627"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltext~'ELSTER-Schnittstelle']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
 		searchpropertyid="8bfe8d41-aacc-4869-bff2-e4594aff7bba"
 		waitaction="Exists"
 		waittimeout="420000ms">
@@ -457,26 +477,6 @@ Nur Testübermittlung möglich!
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="f4f2e500-93ae-4ddb-bd5e-25306b8249c9"
-		waitaction="NotExists"
-		waittimeout="300000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="683d2b13-8de3-40a4-aecd-4a0f66bbcce4"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title='Hinweis']/text[@controlid='65535' and @text~'Nur Testübermittlung möglich!']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"

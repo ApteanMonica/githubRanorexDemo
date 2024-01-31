@@ -125,15 +125,6 @@ mode="Global">
 				False
 			</matchvalue>
 		</validationitem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -160,23 +151,13 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<WaitForRecordItem
-		enabled="False"
+		enabled="True"
 		optional="False"
-		searchpropertyid="b46cf063-5ae8-4014-aab3-1048f77d6b00"
+		searchpropertyid="b9d3956e-50f3-44a7-9616-f5f0674bc9a8"
 		waitaction="NotExists"
-		waittimeout="120000ms">
+		waittimeout="60000ms">
 			<comment>
-				weil noch keine erfolgreich-Meldung (XP332) Prüfung ob keine eric-Fehlermeldung kommt
 			</comment>
 			<bindings>
 			</bindings>
@@ -190,28 +171,12 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<keyitem
-		action="Press"
-		data="Return"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="eae8e129-03e1-4576-adbe-592acd60d48a"
-		setModifiers="True">
-			<comment>
-				falls Fehler-Fenster aufgeht mit Enter (=Ja) bestätigen, dass Eric log im Editor geöffnet wird
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
 		searchpropertyid="4020a222-0c2d-4059-ba01-94f4a02bb39a"
 		waitaction="Exists"
-		waittimeout="180000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>

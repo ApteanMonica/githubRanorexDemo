@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 {
-    public partial class Formularzuordnungen_kopieren_D20_auf_Form_JAHRNEU
+    public partial class Elster_Druckvorschau_aufrufen_schliessen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -91,35 +91,24 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'FrmMain.ClientArea.PbSenden'.", repo.FrmMain.ClientArea.PbSendenInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmMain.ClientArea.PbSendenInfo, "Enabled", "False");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.ClientArea.PbPlausi' at Center.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.ClientArea.PbPlausi' at Center.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(4));
             repo.FrmMain.ClientArea.PbPlausi.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(6));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'Frage_Fehler_Plausipruefung.Fehlermeldung_Plausipruefung'", repo.Frage_Fehler_Plausipruefung.Fehlermeldung_PlausipruefungInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.Frage_Fehler_Plausipruefung.Fehlermeldung_PlausipruefungInfo.WaitForNotExists(60000);
             
-            // weil noch keine erfolgreich-Meldung (XP332) Prüfung ob keine eric-Fehlermeldung kommt
-            //Report.Log(ReportLevel.Info, "Wait", "weil noch keine erfolgreich-Meldung (XP332) Prüfung ob keine eric-Fehlermeldung kommt\r\nWaiting 2m to not exist. Associated repository item: 'Frage.Fehlermeldung_Plausipruefung'", repo.Frage.Fehlermeldung_PlausipruefungInfo, new ActionTimeout(120000), new RecordItemIndex(7));
-            //repo.Frage.Fehlermeldung_PlausipruefungInfo.WaitForNotExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.ClientArea.Button_Druckvorschau_aktiv'", repo.FrmMain.ClientArea.Button_Druckvorschau_aktivInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.FrmMain.ClientArea.Button_Druckvorschau_aktivInfo.WaitForExists(120000);
             
-            // falls Fehler-Fenster aufgeht mit Enter (=Ja) bestätigen, dass Eric log im Editor geöffnet wird
-            //Report.Log(ReportLevel.Info, "Keyboard", "falls Fehler-Fenster aufgeht mit Enter (=Ja) bestätigen, dass Eric log im Editor geöffnet wird\r\nKey 'Enter' Press.", new RecordItemIndex(8));
-            //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmMain.ClientArea.Button_Druckvorschau_aktiv'", repo.FrmMain.ClientArea.Button_Druckvorschau_aktivInfo, new ActionTimeout(180000), new RecordItemIndex(9));
-            repo.FrmMain.ClientArea.Button_Druckvorschau_aktivInfo.WaitForExists(180000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbPlausi'.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbPlausi'.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmMain.ClientArea.PbPlausiInfo, "Enabled", "True");
             
             // wenn erfolgreich, muss der Button aktiv sein
-            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbDrucken'.", repo.FrmMain.ClientArea.PbDruckenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbDrucken'.", repo.FrmMain.ClientArea.PbDruckenInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmMain.ClientArea.PbDruckenInfo, "Enabled", "True");
             
             // wenn erfolgreich, muss der Button aktiv sein
-            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbSenden'.", repo.FrmMain.ClientArea.PbSendenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbSenden'.", repo.FrmMain.ClientArea.PbSendenInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmMain.ClientArea.PbSendenInfo, "Enabled", "True");
             
         }

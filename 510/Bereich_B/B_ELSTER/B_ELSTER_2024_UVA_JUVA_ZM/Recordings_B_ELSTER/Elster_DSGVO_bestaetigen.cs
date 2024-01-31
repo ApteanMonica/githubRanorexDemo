@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'DlgElsterDSGVO.TitleBar300ElsterInformation'", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new ActionTimeout(300000), new RecordItemIndex(0));
-            repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo.WaitForExists(300000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 6m to exist. Associated repository item: 'DlgElsterDSGVO.TitleBar300ElsterInformation'", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new ActionTimeout(360000), new RecordItemIndex(0));
+            repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo.WaitForExists(360000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Elster Information') on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, "Text", "Elster Information");

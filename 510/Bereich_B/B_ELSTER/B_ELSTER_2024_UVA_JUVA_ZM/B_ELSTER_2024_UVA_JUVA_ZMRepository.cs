@@ -32,7 +32,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.HinweisAppFolder _hinweis;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrmMain_B_ELSTERAppFolder _frmmain_b_elster;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.List1000AppFolder _list1000;
-        B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrageAppFolder _frage;
+        B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Frage_Fehler_PlausipruefungAppFolder _frage_fehler_plausipruefung;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.ElstervorUVATESTPDFAdobeAcrobatReAppFolder _elstervoruvatestpdfadobeacrobatre;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder _acrobat;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.XMLEditor_UVA_ZMAppFolder _xmleditor_uva_zm;
@@ -82,7 +82,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             _hinweis = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.HinweisAppFolder(this);
             _frmmain_b_elster = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrmMain_B_ELSTERAppFolder(this);
             _list1000 = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.List1000AppFolder(this);
-            _frage = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrageAppFolder(this);
+            _frage_fehler_plausipruefung = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Frage_Fehler_PlausipruefungAppFolder(this);
             _elstervoruvatestpdfadobeacrobatre = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.ElstervorUVATESTPDFAdobeAcrobatReAppFolder(this);
             _acrobat = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder(this);
             _xmleditor_uva_zm = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.XMLEditor_UVA_ZMAppFolder(this);
@@ -115,7 +115,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
 
 #region Variables
 
-        string _UVA_VORVORJAHR_Form_Name = "UVA-Deutschland 2022 Elster";
+        string _UVA_VORVORJAHR_Form_Name = "";
 
         /// <summary>
         /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Name.
@@ -127,7 +127,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             set { _UVA_VORVORJAHR_Form_Name = value; }
         }
 
-        string _UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2024 Elster";
+        string _UVA_JAHRNEU_Form_Name = "";
 
         /// <summary>
         /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
@@ -139,7 +139,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             set { _UVA_JAHRNEU_Form_Name = value; }
         }
 
-        string _UVA_VORJAHR_Form_Name = "UVA-Deutschland 2023 Elster";
+        string _UVA_VORJAHR_Form_Name = "";
 
         /// <summary>
         /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
@@ -211,12 +211,12 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         }
 
         /// <summary>
-        /// The Frage folder.
+        /// The Frage_Fehler_Plausipruefung folder.
         /// </summary>
         [RepositoryFolder("7d97c7d2-3ba8-4b99-a405-15576e71e535")]
-        public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrageAppFolder Frage
+        public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Frage_Fehler_PlausipruefungAppFolder Frage_Fehler_Plausipruefung
         {
-            get { return _frage; }
+            get { return _frage_fehler_plausipruefung; }
         }
 
         /// <summary>
@@ -1951,20 +1951,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         }
 
         /// <summary>
-        /// The FrageAppFolder folder.
+        /// The Frage_Fehler_PlausipruefungAppFolder folder.
         /// </summary>
         [RepositoryFolder("7d97c7d2-3ba8-4b99-a405-15576e71e535")]
-        public partial class FrageAppFolder : RepoGenBaseFolder
+        public partial class Frage_Fehler_PlausipruefungAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _fehlermeldung_plausipruefungInfo;
+            RepoItemInfo _frageInfo;
 
             /// <summary>
-            /// Creates a new Frage  folder.
+            /// Creates a new Frage_Fehler_Plausipruefung  folder.
             /// </summary>
-            public FrageAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Frage", "/form[@title='Frage']", parentFolder, 30000, null, true, "7d97c7d2-3ba8-4b99-a405-15576e71e535", "")
+            public Frage_Fehler_PlausipruefungAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Frage_Fehler_Plausipruefung", "/form[@title='Frage']", parentFolder, 30000, null, true, "7d97c7d2-3ba8-4b99-a405-15576e71e535", "")
             {
                 _fehlermeldung_plausipruefungInfo = new RepoItemInfo(this, "Fehlermeldung_Plausipruefung", "text[@accessiblename~'Fehler-Nr.:']", "", 30000, null, "384605bd-f5f6-494b-a450-5ff62ff5f267");
+                _frageInfo = new RepoItemInfo(this, "Frage", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1a0ddd0b-cfb6-4681-a13a-876f7d57d89f");
             }
 
             /// <summary>
@@ -2014,6 +2016,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                     return _fehlermeldung_plausipruefungInfo;
                 }
             }
+
+            /// <summary>
+            /// The Frage item.
+            /// </summary>
+            [RepositoryItem("1a0ddd0b-cfb6-4681-a13a-876f7d57d89f")]
+            public virtual Ranorex.TitleBar Frage
+            {
+                get
+                {
+                    return _frageInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Frage item info.
+            /// </summary>
+            [RepositoryItemInfo("1a0ddd0b-cfb6-4681-a13a-876f7d57d89f")]
+            public virtual RepoItemInfo FrageInfo
+            {
+                get
+                {
+                    return _frageInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -2026,6 +2052,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _anzeigeInfo;
             RepoItemInfo _pagedownInfo;
             AVLAVViewInfoClass _avlavviewInfo;
+            RepoItemInfo _schliessenInfo;
 
             /// <summary>
             /// Creates a new ElstervorUVATESTPDFAdobeAcrobatRe  folder.
@@ -2037,6 +2064,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _anzeigeInfo = new RepoItemInfo(this, "Anzeige", "?/?/menuitem[@accessiblename='Anzeige']", "", 30000, null, "2632bfe3-86e3-47ea-b5b0-8ed734dc22ea");
                 _pagedownInfo = new RepoItemInfo(this, "PageDown", "?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']", "", 30000, null, "39e90ad0-72d1-4a94-a1b7-330256ffbed1");
                 _avlavviewInfo = new AVLAVViewInfoClass(this);
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "c28e719c-1f74-4ba6-881a-38a0b0576725");
             }
 
             /// <summary>
@@ -2191,6 +2219,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _avlavviewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("c28e719c-1f74-4ba6-881a-38a0b0576725")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("c28e719c-1f74-4ba6-881a-38a0b0576725")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
                 }
             }
         }
@@ -2482,6 +2534,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_NameFolder _tabelle_mit_variable_uva_vorvorjahr_form_name;
             RepoItemInfo _titlebar100verwaltenuvaformulareInfo;
             RepoItemInfo _pagedownInfo;
+            RepoItemInfo _pbdataaccessloadInfo;
             RepoItemInfo _pbcommonkopierenInfo;
             RepoItemInfo _pbcommondruckenInfo;
 
@@ -2496,6 +2549,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _tabelle_mit_variable_uva_vorvorjahr_form_name = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_NameFolder(this);
                 _titlebar100verwaltenuvaformulareInfo = new RepoItemInfo(this, "TitleBar100VerwaltenUVAFormulare", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d757038e-0460-45d8-b6e4-c9c042358cd2");
                 _pagedownInfo = new RepoItemInfo(this, "PageDown", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Vertical']/button[@text='PageDown']", "", 30000, null, "be823d5f-7eda-4661-bb26-6067b306ac13");
+                _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "2f566bde-9cb4-4c57-9682-2794ac0da5f2");
                 _pbcommonkopierenInfo = new RepoItemInfo(this, "PbCommonKopieren", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Kopieren']", "", 30000, null, "1d754173-7a37-4a3a-af20-41721b3fcd1e");
                 _pbcommondruckenInfo = new RepoItemInfo(this, "PbCommonDrucken", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Drucken']", "", 30000, null, "64df09ff-fceb-4706-81fc-c954f7020a19");
             }
@@ -2569,6 +2623,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _pagedownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item.
+            /// </summary>
+            [RepositoryItem("2f566bde-9cb4-4c57-9682-2794ac0da5f2")]
+            public virtual Ranorex.Button PbDataAccessLoad
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item info.
+            /// </summary>
+            [RepositoryItemInfo("2f566bde-9cb4-4c57-9682-2794ac0da5f2")]
+            public virtual RepoItemInfo PbDataAccessLoadInfo
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo;
                 }
             }
 

@@ -107,9 +107,15 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             Keyboard.PrepareFocus(repo.DlgUVAZ.TitleBar300ZuordnungUStCodes);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblUVAD.TitleBar300UVADetailsUVADeutschl'.", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblUVAD.TitleBar300UVADetailsUVADeutschl'.", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new RecordItemIndex(10));
             Keyboard.PrepareFocus(repo.TblUVAD.TitleBar300UVADetailsUVADeutschl);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
+            Delay.Duration(1000, false);
             
         }
 

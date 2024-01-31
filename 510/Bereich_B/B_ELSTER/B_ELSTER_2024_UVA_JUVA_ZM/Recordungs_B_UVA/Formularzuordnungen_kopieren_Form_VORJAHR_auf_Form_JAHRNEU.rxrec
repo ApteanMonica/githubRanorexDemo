@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="79d7ac38-b71c-48bf-b026-78806d7bd358"
+id="0b7e4a93-d4a3-4205-b523-9e30f48dd938"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,22 +19,22 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR"
+	classname="Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA">
 	</codegen>
 	<variables>
 		<var
-		id="3c5c1e2a-a7f1-49f6-b8e1-68dcb101f098"
-		name="UVA_D20_Form_Name">
+		id="3589704c-4c2f-41e1-9a22-5162988d5f9b"
+		name="Firma">
+			300
 		</var>
 		<var
-		id="f5c5f815-dc1f-46f8-9ecf-09f5ab8a5244"
+		id="b49e4c5a-6cd4-4d5c-b91e-b8cb62bb9cd5"
 		name="UVA_VORJAHR_Form_Name">
 		</var>
 		<var
-		id="13e9df82-b179-436d-83a2-95f5b72b6ac0"
-		name="Firma">
-			300
+		id="a7bfebff-b30b-4d6b-b9e3-f2010919b966"
+		name="UVA_JAHRNEU_Form_Name">
 		</var>
 	</variables>
 	<recorditems>
@@ -6739,6 +6739,31 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a123272d-5fa9-4bb7-91f3-edc8fdc91156">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
+			sourcename="RepositoryEditor">
+				<path>
+					/list[@controlid='1000']/listitem[@text=$UVA_VORJAHR_Form_Name]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -6756,10 +6781,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="eaa61b5d-83a7-4b98-80c9-59bd16c12a00"
+			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
 			sourcename="RepositoryEditor">
 				<path>
-					/list[@controlid='1000']/listitem[@text~'UVA-Deutschland 2020']
+					/list[@controlid='1000']/listitem[@text=$UVA_VORJAHR_Form_Name]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -9503,16 +9528,16 @@ mode="Global">
 		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="1701577f-6c19-42a8-bff8-51deecd0b74c">
+		searchpropertyid="a123272d-5fa9-4bb7-91f3-edc8fdc91156">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
+			id="2af648bd-a59f-49a8-a494-d4198b993867"
 			sourcename="RepositoryEditor">
 				<path>
-					/list[@controlid='1000']/listitem[@text~'$UVA_VORJAHR_Form_Name']
+					/list[@controlid='1000']/listitem[@text='$UVA_JAHRNEU_Form_Name']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -9541,10 +9566,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
+			id="2af648bd-a59f-49a8-a494-d4198b993867"
 			sourcename="RepositoryEditor">
 				<path>
-					/list[@controlid='1000']/listitem[@text~'$UVA_VORJAHR_Form_Name']
+					/list[@controlid='1000']/listitem[@text='$UVA_JAHRNEU_Form_Name']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -9560,7 +9585,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="UVA_D20_Form_Name">
+				variable="UVA_VORJAHR_Form_Name">
 				</binding>
 			</bindings>
 			<info
@@ -12259,7 +12284,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="UVA_VORJAHR_Form_Name">
+				variable="UVA_JAHRNEU_Form_Name">
 				</binding>
 			</bindings>
 			<info
@@ -24205,36 +24230,18 @@ N/hR9rh9X/74b/CgD//Z
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="J"
 		duration="20ms"
 		enabled="True"
 		optional="False"
 		presstime="20ms"
-		searchpropertyid="10344c2f-6d24-4c0d-824e-4a3f0f50b4ad">
+		searchpropertyid="efce03e4-eb0f-4157-bd03-d0ff713b4090">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</keysequenceitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -26136,7 +26143,7 @@ qWigCPyxQIxUlFACAYpaKKACiiigD//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR.UserCode.cs
+		Formularzuordnungen_kopieren_Form_VORJAHR_auf_Form_JAHRNEU.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
