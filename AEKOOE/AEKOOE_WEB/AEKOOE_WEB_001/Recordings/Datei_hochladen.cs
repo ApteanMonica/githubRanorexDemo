@@ -41,7 +41,6 @@ namespace AEKOOE_001.Recordings
         /// </summary>
         public Datei_hochladen()
         {
-            ausgewaehlte_Testdatei = "Testdatei Antrag Krankgengeld.txt";
             Pfad_Testdatei = "C:\\Ranorex\\AEKOOE\\AEKOOE_WEB\\AEKOOE_WEB_001\\Mappe1.pdf";
         }
 
@@ -54,18 +53,6 @@ namespace AEKOOE_001.Recordings
         }
 
 #region Variables
-
-        string _ausgewaehlte_Testdatei;
-
-        /// <summary>
-        /// Gets or sets the value of variable ausgewaehlte_Testdatei.
-        /// </summary>
-        [TestVariable("87b9d4d6-80e0-4201-96f0-3f9130ca8ac0")]
-        public string ausgewaehlte_Testdatei
-        {
-            get { return _ausgewaehlte_Testdatei; }
-            set { _ausgewaehlte_Testdatei = value; }
-        }
 
         string _Pfad_Testdatei;
 

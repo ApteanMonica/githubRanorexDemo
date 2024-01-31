@@ -31,6 +31,7 @@ namespace AEKOOE_001
         AEKOOE_WEB_001RepositoryFolders.OEffnenAppFolder _oeffnen;
         AEKOOE_WEB_001RepositoryFolders.StartseiteGoogleChromeAppFolder _startseitegooglechrome;
         AEKOOE_WEB_001RepositoryFolders.FormHash32770AppFolder _formhash32770;
+        AEKOOE_WEB_001RepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the AEKOOE_WEB_001Repository element repository.
@@ -51,6 +52,7 @@ namespace AEKOOE_001
             _oeffnen = new AEKOOE_WEB_001RepositoryFolders.OEffnenAppFolder(this);
             _startseitegooglechrome = new AEKOOE_WEB_001RepositoryFolders.StartseiteGoogleChromeAppFolder(this);
             _formhash32770 = new AEKOOE_WEB_001RepositoryFolders.FormHash32770AppFolder(this);
+            _explorer = new AEKOOE_WEB_001RepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -175,6 +177,15 @@ namespace AEKOOE_001
         public virtual AEKOOE_WEB_001RepositoryFolders.FormHash32770AppFolder FormHash32770
         {
             get { return _formhash32770; }
+        }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("cb8a170e-0e38-4d46-992e-4af0d2740dec")]
+        public virtual AEKOOE_WEB_001RepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
         }
     }
 
@@ -2024,6 +2035,72 @@ namespace AEKOOE_001
                 get
                 {
                     return _systemdatemodifiedInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cb8a170e-0e38-4d46-992e-4af0d2740dec")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _ranorexstudio1aktivesfensterInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "cb8a170e-0e38-4d46-992e-4af0d2740dec", "")
+            {
+                _ranorexstudio1aktivesfensterInfo = new RepoItemInfo(this, "RanorexStudio1AktivesFenster", "container[@controlid='40965']/container[@caption='Ausgeführte Anwendungen']/?/?/toolbar[@accessiblename='Ausgeführte Anwendungen']/button[31]", "", 30000, null, "c38af78d-c561-45af-93cd-5db75e6cf5e3");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cb8a170e-0e38-4d46-992e-4af0d2740dec")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cb8a170e-0e38-4d46-992e-4af0d2740dec")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RanorexStudio1AktivesFenster item.
+            /// </summary>
+            [RepositoryItem("c38af78d-c561-45af-93cd-5db75e6cf5e3")]
+            public virtual Ranorex.Button RanorexStudio1AktivesFenster
+            {
+                get
+                {
+                    return _ranorexstudio1aktivesfensterInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RanorexStudio1AktivesFenster item info.
+            /// </summary>
+            [RepositoryItemInfo("c38af78d-c561-45af-93cd-5db75e6cf5e3")]
+            public virtual RepoItemInfo RanorexStudio1AktivesFensterInfo
+            {
+                get
+                {
+                    return _ranorexstudio1aktivesfensterInfo;
                 }
             }
         }
