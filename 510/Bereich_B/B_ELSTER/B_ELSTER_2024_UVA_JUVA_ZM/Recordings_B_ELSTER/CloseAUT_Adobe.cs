@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric.Recordings_ZM
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT_ZM recording.
+    ///The CloseAUT_Adobe recording.
     /// </summary>
-    [TestModule("373340a2-c9d7-47b3-9edb-f75d9e05712b", ModuleType.Recording, 1)]
-    public partial class CloseAUT_ZM : ITestModule
+    [TestModule("07b96f87-e270-4eb8-b669-ff57180fa06d", ModuleType.Recording, 1)]
+    public partial class CloseAUT_Adobe : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static CloseAUT_ZM instance = new CloseAUT_ZM();
+        static CloseAUT_Adobe instance = new CloseAUT_Adobe();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT_ZM()
+        public CloseAUT_Adobe()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT_ZM Instance
+        public static CloseAUT_Adobe Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric.Recordings_ZM
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldung'.", repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldung, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Adobe.Titelbar_Adobe'.", repo.Adobe.Titelbar_AdobeInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.Adobe.Titelbar_Adobe, 1000);
             
         }
 

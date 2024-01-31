@@ -33,7 +33,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrmMain_B_ELSTERAppFolder _frmmain_b_elster;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.List1000AppFolder _list1000;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Frage_Fehler_PlausipruefungAppFolder _frage_fehler_plausipruefung;
-        B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.ElstervorUVATESTPDFAdobeAcrobatReAppFolder _elstervoruvatestpdfadobeacrobatre;
+        B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Adobe_mit_Titel_TestAppFolder _adobe_mit_titel_test;
+        B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AdobeAppFolder _adobe;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder _acrobat;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.XMLEditor_UVA_ZMAppFolder _xmleditor_uva_zm;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.EricLogEditorAppFolder _ericlogeditor;
@@ -83,7 +84,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             _frmmain_b_elster = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.FrmMain_B_ELSTERAppFolder(this);
             _list1000 = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.List1000AppFolder(this);
             _frage_fehler_plausipruefung = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Frage_Fehler_PlausipruefungAppFolder(this);
-            _elstervoruvatestpdfadobeacrobatre = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.ElstervorUVATESTPDFAdobeAcrobatReAppFolder(this);
+            _adobe_mit_titel_test = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Adobe_mit_Titel_TestAppFolder(this);
+            _adobe = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AdobeAppFolder(this);
             _acrobat = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder(this);
             _xmleditor_uva_zm = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.XMLEditor_UVA_ZMAppFolder(this);
             _ericlogeditor = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.EricLogEditorAppFolder(this);
@@ -220,12 +222,21 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         }
 
         /// <summary>
-        /// The ElstervorUVATESTPDFAdobeAcrobatRe folder.
+        /// The Adobe_mit_Titel_Test folder.
         /// </summary>
         [RepositoryFolder("9ab7a1f5-6ec8-4f0f-8dc8-1636c7ae2bc0")]
-        public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.ElstervorUVATESTPDFAdobeAcrobatReAppFolder ElstervorUVATESTPDFAdobeAcrobatRe
+        public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Adobe_mit_Titel_TestAppFolder Adobe_mit_Titel_Test
         {
-            get { return _elstervoruvatestpdfadobeacrobatre; }
+            get { return _adobe_mit_titel_test; }
+        }
+
+        /// <summary>
+        /// The Adobe folder.
+        /// </summary>
+        [RepositoryFolder("1f926027-1981-434e-bcb3-aac65e5c0876")]
+        public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AdobeAppFolder Adobe
+        {
+            get { return _adobe; }
         }
 
         /// <summary>
@@ -2043,28 +2054,32 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         }
 
         /// <summary>
-        /// The ElstervorUVATESTPDFAdobeAcrobatReAppFolder folder.
+        /// The Adobe_mit_Titel_TestAppFolder folder.
         /// </summary>
         [RepositoryFolder("9ab7a1f5-6ec8-4f0f-8dc8-1636c7ae2bc0")]
-        public partial class ElstervorUVATESTPDFAdobeAcrobatReAppFolder : RepoGenBaseFolder
+        public partial class Adobe_mit_Titel_TestAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _elstervoruvatestpdfadobeacrobatreInfo;
+            RepoItemInfo _schliessenInfo;
             RepoItemInfo _anzeigeInfo;
             RepoItemInfo _pagedownInfo;
+            RepoItemInfo _avlavview1Info;
             AVLAVViewInfoClass _avlavviewInfo;
-            RepoItemInfo _schliessenInfo;
+            RepoItemInfo _avlavview2Info;
 
             /// <summary>
-            /// Creates a new ElstervorUVATESTPDFAdobeAcrobatRe  folder.
+            /// Creates a new Adobe_mit_Titel_Test  folder.
             /// </summary>
-            public ElstervorUVATESTPDFAdobeAcrobatReAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ElstervorUVATESTPDFAdobeAcrobatRe", "/form[@title~'TEST.PDF']", parentFolder, 30000, null, true, "9ab7a1f5-6ec8-4f0f-8dc8-1636c7ae2bc0", "")
+            public Adobe_mit_Titel_TestAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Adobe_mit_Titel_Test", "/form[@title~'TEST.PDF']", parentFolder, 30000, null, true, "9ab7a1f5-6ec8-4f0f-8dc8-1636c7ae2bc0", "")
             {
                 _elstervoruvatestpdfadobeacrobatreInfo = new RepoItemInfo(this, "ElstervorUVATESTPDFAdobeAcrobatRe", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8018ae93-4875-4798-a144-628c547664ad");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "c28e719c-1f74-4ba6-881a-38a0b0576725");
                 _anzeigeInfo = new RepoItemInfo(this, "Anzeige", "?/?/menuitem[@accessiblename='Anzeige']", "", 30000, null, "2632bfe3-86e3-47ea-b5b0-8ed734dc22ea");
                 _pagedownInfo = new RepoItemInfo(this, "PageDown", "?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']", "", 30000, null, "39e90ad0-72d1-4a94-a1b7-330256ffbed1");
+                _avlavview1Info = new RepoItemInfo(this, "AVLAVView1", "element[@instance='0']/element[@instance='0']", "", 30000, null, "5fa208a0-113c-404c-a8b7-e1cc9a042baa");
                 _avlavviewInfo = new AVLAVViewInfoClass(this);
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "c28e719c-1f74-4ba6-881a-38a0b0576725");
+                _avlavview2Info = new RepoItemInfo(this, "AVLAVView2", "element[@instance='1']/element[@instance='0']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']", "", 30000, null, "3a69fb84-b763-4b79-acc0-b4a63659890e");
             }
 
             /// <summary>
@@ -2151,6 +2166,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("c28e719c-1f74-4ba6-881a-38a0b0576725")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("c28e719c-1f74-4ba6-881a-38a0b0576725")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
             /// The Anzeige item.
             /// </summary>
             [RepositoryItem("2632bfe3-86e3-47ea-b5b0-8ed734dc22ea")]
@@ -2199,6 +2238,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The AVLAVView1 item.
+            /// </summary>
+            [RepositoryItem("5fa208a0-113c-404c-a8b7-e1cc9a042baa")]
+            public virtual Ranorex.Unknown AVLAVView1
+            {
+                get
+                {
+                    return _avlavview1Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5fa208a0-113c-404c-a8b7-e1cc9a042baa")]
+            public virtual RepoItemInfo AVLAVView1Info
+            {
+                get
+                {
+                    return _avlavview1Info;
+                }
+            }
+
+            /// <summary>
             /// The AVLAVView item.
             /// </summary>
             [RepositoryItem("3fb2db90-0f85-41cf-8246-4405cebdf243")]
@@ -2223,9 +2286,146 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The AVLAVView2 item.
+            /// </summary>
+            [RepositoryItem("3a69fb84-b763-4b79-acc0-b4a63659890e")]
+            public virtual Ranorex.Unknown AVLAVView2
+            {
+                get
+                {
+                    return _avlavview2Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView2 item info.
+            /// </summary>
+            [RepositoryItemInfo("3a69fb84-b763-4b79-acc0-b4a63659890e")]
+            public virtual RepoItemInfo AVLAVView2Info
+            {
+                get
+                {
+                    return _avlavview2Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AdobeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1f926027-1981-434e-bcb3-aac65e5c0876")]
+        public partial class AdobeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titelbar_adobeInfo;
+            RepoItemInfo _schliessenInfo;
+            RepoItemInfo _anzeigeInfo;
+            RepoItemInfo _pagedownInfo;
+            RepoItemInfo _avlavview1Info;
+            AVLAVViewInfoClass _avlavviewInfo;
+            RepoItemInfo _avlavview2Info;
+
+            /// <summary>
+            /// Creates a new Adobe  folder.
+            /// </summary>
+            public AdobeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Adobe", "/form", parentFolder, 30000, null, true, "1f926027-1981-434e-bcb3-aac65e5c0876", "")
+            {
+                _titelbar_adobeInfo = new RepoItemInfo(this, "Titelbar_Adobe", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "56b66e71-3414-44c4-84b4-f771d00da74a");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "93dfa5cf-18b1-4456-86f8-74d5f7d2a753");
+                _anzeigeInfo = new RepoItemInfo(this, "Anzeige", "?/?/menuitem[@accessiblename='Anzeige']", "", 30000, null, "7f46adc2-6fc1-46a1-8021-8ae428167bc6");
+                _pagedownInfo = new RepoItemInfo(this, "PageDown", "?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']", "", 30000, null, "9216f706-9244-4787-a984-d4a3dcf416bf");
+                _avlavview1Info = new RepoItemInfo(this, "AVLAVView1", "element[@instance='0']/element[@instance='0']", "", 30000, null, "8ffdbd5e-ad16-4d3f-b698-0855dd367377");
+                _avlavviewInfo = new AVLAVViewInfoClass(this);
+                _avlavview2Info = new RepoItemInfo(this, "AVLAVView2", "element[@instance='1']/element[@instance='0']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']", "", 30000, null, "e51a1233-f856-43ba-9579-40e2c24d521a");
+            }
+
+            /// <summary>
+            /// The AVLAVViewInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("86175fa1-712d-4b76-8da7-f06188fe3503")]
+            public class AVLAVViewInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// AVLAVViewInfoClass class constructor.
+                /// </summary>
+                public AVLAVViewInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "AVLAVView", "element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']", 30000, null, "86175fa1-712d-4b76-8da7-f06188fe3503")
+                { }
+
+                /// <summary>
+                /// Gets the ERiC_Print_39_2_4_ZMDO_39_2_4 item image.
+                /// </summary>
+                /// <returns>The ERiC_Print_39_2_4_ZMDO_39_2_4 image.</returns>
+                [RepositoryImage("354e456d-4ca8-4afc-9ac7-94e5188a00f3")]
+                public CompressedImage GetERiC_Print_39_2_4_ZMDO_39_2_4()
+                {
+                    return GetImage("354e456d-4ca8-4afc-9ac7-94e5188a00f3");
+                }
+
+                /// <summary>
+                /// Gets the ERiC_Print_39_2_4_ZMDO_39_2_4 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("354e456d-4ca8-4afc-9ac7-94e5188a00f3")]
+                public CompressedImage GetERiC_Print_39_2_4_ZMDO_39_2_4(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("354e456d-4ca8-4afc-9ac7-94e5188a00f3", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1f926027-1981-434e-bcb3-aac65e5c0876")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1f926027-1981-434e-bcb3-aac65e5c0876")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Titelbar_Adobe item.
+            /// </summary>
+            [RepositoryItem("56b66e71-3414-44c4-84b4-f771d00da74a")]
+            public virtual Ranorex.TitleBar Titelbar_Adobe
+            {
+                get
+                {
+                    return _titelbar_adobeInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Titelbar_Adobe item info.
+            /// </summary>
+            [RepositoryItemInfo("56b66e71-3414-44c4-84b4-f771d00da74a")]
+            public virtual RepoItemInfo Titelbar_AdobeInfo
+            {
+                get
+                {
+                    return _titelbar_adobeInfo;
+                }
+            }
+
+            /// <summary>
             /// The Schliessen item.
             /// </summary>
-            [RepositoryItem("c28e719c-1f74-4ba6-881a-38a0b0576725")]
+            [RepositoryItem("93dfa5cf-18b1-4456-86f8-74d5f7d2a753")]
             public virtual Ranorex.Button Schliessen
             {
                 get
@@ -2237,12 +2437,132 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             /// <summary>
             /// The Schliessen item info.
             /// </summary>
-            [RepositoryItemInfo("c28e719c-1f74-4ba6-881a-38a0b0576725")]
+            [RepositoryItemInfo("93dfa5cf-18b1-4456-86f8-74d5f7d2a753")]
             public virtual RepoItemInfo SchliessenInfo
             {
                 get
                 {
                     return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Anzeige item.
+            /// </summary>
+            [RepositoryItem("7f46adc2-6fc1-46a1-8021-8ae428167bc6")]
+            public virtual Ranorex.MenuItem Anzeige
+            {
+                get
+                {
+                    return _anzeigeInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Anzeige item info.
+            /// </summary>
+            [RepositoryItemInfo("7f46adc2-6fc1-46a1-8021-8ae428167bc6")]
+            public virtual RepoItemInfo AnzeigeInfo
+            {
+                get
+                {
+                    return _anzeigeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PageDown item.
+            /// </summary>
+            [RepositoryItem("9216f706-9244-4787-a984-d4a3dcf416bf")]
+            public virtual Ranorex.Button PageDown
+            {
+                get
+                {
+                    return _pagedownInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PageDown item info.
+            /// </summary>
+            [RepositoryItemInfo("9216f706-9244-4787-a984-d4a3dcf416bf")]
+            public virtual RepoItemInfo PageDownInfo
+            {
+                get
+                {
+                    return _pagedownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView1 item.
+            /// </summary>
+            [RepositoryItem("8ffdbd5e-ad16-4d3f-b698-0855dd367377")]
+            public virtual Ranorex.Unknown AVLAVView1
+            {
+                get
+                {
+                    return _avlavview1Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView1 item info.
+            /// </summary>
+            [RepositoryItemInfo("8ffdbd5e-ad16-4d3f-b698-0855dd367377")]
+            public virtual RepoItemInfo AVLAVView1Info
+            {
+                get
+                {
+                    return _avlavview1Info;
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView item.
+            /// </summary>
+            [RepositoryItem("86175fa1-712d-4b76-8da7-f06188fe3503")]
+            public virtual Ranorex.Unknown AVLAVView
+            {
+                get
+                {
+                    return _avlavviewInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView item info.
+            /// </summary>
+            [RepositoryItemInfo("86175fa1-712d-4b76-8da7-f06188fe3503")]
+            public virtual AVLAVViewInfoClass AVLAVViewInfo
+            {
+                get
+                {
+                    return _avlavviewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView2 item.
+            /// </summary>
+            [RepositoryItem("e51a1233-f856-43ba-9579-40e2c24d521a")]
+            public virtual Ranorex.Unknown AVLAVView2
+            {
+                get
+                {
+                    return _avlavview2Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AVLAVView2 item info.
+            /// </summary>
+            [RepositoryItemInfo("e51a1233-f856-43ba-9579-40e2c24d521a")]
+            public virtual RepoItemInfo AVLAVView2Info
+            {
+                get
+                {
+                    return _avlavview2Info;
                 }
             }
         }

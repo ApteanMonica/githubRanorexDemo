@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric.Recordings_ZM
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 {
-    public partial class Elster_Druckvorschau_aufrufen
+    public partial class CloseAUT_Adobe
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

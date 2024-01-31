@@ -158,6 +158,18 @@
       <id>44943346-6239-431f-b823-d7a255dd2b5d</id>
       <BoundTo>640e3b76-0ab4-4757-ac9f-3bdafe5d3e1e</BoundTo>
     </Compile>
+    <Compile Include="Recordings_B_ELSTER\CloseAUT_Adobe.cs">
+      <DependentUpon>CloseAUT_Adobe.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92739bb8-620c-4d8b-b21a-5e823fba8bb2</id>
+      <BoundTo>373963e7-19a4-4492-a286-32b8f9e3d2fe</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ELSTER\CloseAUT_Adobe.UserCode.cs">
+      <DependentUpon>CloseAUT_Adobe.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9cbc562c-21a9-41b3-b3b1-47c1895f28c3</id>
+      <BoundTo>373963e7-19a4-4492-a286-32b8f9e3d2fe</BoundTo>
+    </Compile>
     <Compile Include="Recordings_B_ELSTER\CloseAUT_B_ELSTER.cs">
       <DependentUpon>CloseAUT_B_ELSTER.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -170,14 +182,14 @@
       <id>d91df851-16fd-4452-836f-a5a0a3ec0871</id>
       <BoundTo>926bc5dd-cbba-49ad-97a6-7b9a48ee6cfc</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_ELSTER\Elster_Druckvorschau_aufrufen_schliessen.cs">
-      <DependentUpon>Elster_Druckvorschau_aufrufen_schliessen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_ELSTER\Elster_Druckvorschau_aufrufen.cs">
+      <DependentUpon>Elster_Druckvorschau_aufrufen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a86ae0c9-5007-4c91-9068-184f6d684668</id>
       <BoundTo>169189d1-ecd1-4aca-8faa-a62d802a7e1e</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_ELSTER\Elster_Druckvorschau_aufrufen_schliessen.UserCode.cs">
-      <DependentUpon>Elster_Druckvorschau_aufrufen_schliessen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_ELSTER\Elster_Druckvorschau_aufrufen.UserCode.cs">
+      <DependentUpon>Elster_Druckvorschau_aufrufen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>bcb433c0-9809-48c8-89f3-733c6f82b3fb</id>
       <BoundTo>169189d1-ecd1-4aca-8faa-a62d802a7e1e</BoundTo>
@@ -278,14 +290,14 @@
       <id>9c107aaf-fc99-44d2-afad-a74d7dcde1c3</id>
       <BoundTo>78dcf336-fcaa-4cf2-a391-86d29bce62ca</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_ELSTER\JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button.cs">
-      <DependentUpon>JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_ELSTER\JUVA_Elster_XML_Anlage_UN_Weiter_Button.cs">
+      <DependentUpon>JUVA_Elster_XML_Anlage_UN_Weiter_Button.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>caf5c7a2-56b8-4674-85cd-fe0dc6a17511</id>
       <BoundTo>80780ea2-bf71-4db1-8663-489e516af765</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_ELSTER\JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button.UserCode.cs">
-      <DependentUpon>JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_ELSTER\JUVA_Elster_XML_Anlage_UN_Weiter_Button.UserCode.cs">
+      <DependentUpon>JUVA_Elster_XML_Anlage_UN_Weiter_Button.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d5a8fe9c-f4b8-4612-b7da-b551ee4090aa</id>
       <BoundTo>80780ea2-bf71-4db1-8663-489e516af765</BoundTo>
@@ -1522,12 +1534,17 @@
       <recordtableid>8737f694-0e9d-46c6-b724-bcdf5bf9bb33</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
+    <None Include="Recordings_B_ELSTER\CloseAUT_Adobe.rxrec">
+      <id>373963e7-19a4-4492-a286-32b8f9e3d2fe</id>
+      <recordtableid>07b96f87-e270-4eb8-b669-ff57180fa06d</recordtableid>
+      <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
+    </None>
     <None Include="Recordings_B_ELSTER\CloseAUT_B_ELSTER.rxrec">
       <id>926bc5dd-cbba-49ad-97a6-7b9a48ee6cfc</id>
       <recordtableid>33a05665-a526-47e3-8d65-e63868eef75f</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_B_ELSTER\Elster_Druckvorschau_aufrufen_schliessen.rxrec">
+    <None Include="Recordings_B_ELSTER\Elster_Druckvorschau_aufrufen.rxrec">
       <id>169189d1-ecd1-4aca-8faa-a62d802a7e1e</id>
       <recordtableid>842a2ac5-ac6d-4351-8ace-9380257612db</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
@@ -1572,7 +1589,7 @@
       <recordtableid>7ee0ce0e-3b52-4bc4-921b-4dbd02466d29</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>
     </None>
-    <None Include="Recordings_B_ELSTER\JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button.rxrec">
+    <None Include="Recordings_B_ELSTER\JUVA_Elster_XML_Anlage_UN_Weiter_Button.rxrec">
       <id>80780ea2-bf71-4db1-8663-489e516af765</id>
       <recordtableid>a7bf68b7-a23a-426d-bde8-b8ac3ca955b2</recordtableid>
       <BoundTo>623d084a-a2bd-47d4-a9f2-b032dcfdf3e5</BoundTo>

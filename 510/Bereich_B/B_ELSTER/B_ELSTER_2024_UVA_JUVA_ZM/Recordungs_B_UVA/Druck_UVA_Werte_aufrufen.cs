@@ -98,8 +98,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PbCommonDrucken' at Center.", repo.TblUVAF.PbCommonDruckenInfo, new RecordItemIndex(1));
             repo.TblUVAF.PbCommonDrucken.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUVADruck.TitleBar300DruckUVAWerte'", repo.DlgUVADruck.TitleBar300DruckUVAWerteInfo, new ActionTimeout(60000), new RecordItemIndex(2));
-            repo.DlgUVADruck.TitleBar300DruckUVAWerteInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgUVADruck.TitleBar300DruckUVAWerte'", repo.DlgUVADruck.TitleBar300DruckUVAWerteInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.DlgUVADruck.TitleBar300DruckUVAWerteInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[300]  Druck UVA-Werte') on item 'DlgUVADruck.TitleBar300DruckUVAWerte'.", repo.DlgUVADruck.TitleBar300DruckUVAWerteInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.DlgUVADruck.TitleBar300DruckUVAWerteInfo, "Text", "[300]  Druck UVA-Werte");

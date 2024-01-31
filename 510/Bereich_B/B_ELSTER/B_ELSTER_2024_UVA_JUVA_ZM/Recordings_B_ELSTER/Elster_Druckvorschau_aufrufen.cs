@@ -27,26 +27,26 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
     ///The Elster_Druckvorschau recording.
     /// </summary>
     [TestModule("842a2ac5-ac6d-4351-8ace-9380257612db", ModuleType.Recording, 1)]
-    public partial class Elster_Druckvorschau_aufrufen_schliessen : ITestModule
+    public partial class Elster_Druckvorschau_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Elster_Druckvorschau_aufrufen_schliessen instance = new Elster_Druckvorschau_aufrufen_schliessen();
+        static Elster_Druckvorschau_aufrufen instance = new Elster_Druckvorschau_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Elster_Druckvorschau_aufrufen_schliessen()
+        public Elster_Druckvorschau_aufrufen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Elster_Druckvorschau_aufrufen_schliessen Instance
+        public static Elster_Druckvorschau_aufrufen Instance
         {
             get { return instance; }
         }
@@ -90,30 +90,40 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 3m to exist. Associated repository item: 'ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatRe'", repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatReInfo, new ActionTimeout(180000), new RecordItemIndex(2));
-                repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatReInfo.WaitForExists(180000);
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 2m to exist. Associated repository item: 'Adobe.Titelbar_Adobe'", repo.Adobe.Titelbar_AdobeInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+                repo.Adobe.Titelbar_AdobeInfo.WaitForExists(120000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'TEST') on item 'ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatRe'.", repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatReInfo, new RecordItemIndex(3));
-                Validate.AttributeContains(repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatReInfo, "Text", "TEST", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Adobe.Titelbar_Adobe'.", repo.Adobe.Titelbar_AdobeInfo, new RecordItemIndex(3));
+                Validate.Exists(repo.Adobe.Titelbar_AdobeInfo, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                //Report.Log(ReportLevel.Info, "Keyboard", "(Optional Action)\r\nKey 'Alt+F4' Press with focus on 'ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatRe'.", repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatReInfo, new RecordItemIndex(4));
-                //Keyboard.PrepareFocus(repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatRe);
-                //Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+                //Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 3m to exist. Associated repository item: 'Adobe.AVLAVView1'", repo.Adobe.AVLAVView1Info, new ActionTimeout(180000), new RecordItemIndex(4));
+                //repo.Adobe.AVLAVView1Info.WaitForExists(180000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Delay", "(Optional Action)\r\nWaiting for 2s.", new RecordItemIndex(5));
-                Delay.Duration(2000, false);
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Adobe.AVLAVView1'.", repo.Adobe.AVLAVView1Info, new RecordItemIndex(5));
+                //Validate.Exists(repo.Adobe.AVLAVView1Info, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatRe' at Center.", repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatReInfo, new RecordItemIndex(6));
-                repo.ElstervorUVATESTPDFAdobeAcrobatRe.ElstervorUVATESTPDFAdobeAcrobatRe.Click();
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'TEST') on item 'Adobe_mit_Titel_Test.ElstervorUVATESTPDFAdobeAcrobatRe'.", repo.Adobe_mit_Titel_Test.ElstervorUVATESTPDFAdobeAcrobatReInfo, new RecordItemIndex(6));
+                //Validate.AttributeContains(repo.Adobe_mit_Titel_Test.ElstervorUVATESTPDFAdobeAcrobatReInfo, "Text", "TEST", null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            try {
+                //Report.Log(ReportLevel.Info, "Keyboard", "(Optional Action)\r\nKey 'Alt+F4' Press with focus on 'Adobe_mit_Titel_Test.ElstervorUVATESTPDFAdobeAcrobatRe'.", repo.Adobe_mit_Titel_Test.ElstervorUVATESTPDFAdobeAcrobatReInfo, new RecordItemIndex(7));
+                //Keyboard.PrepareFocus(repo.Adobe_mit_Titel_Test.ElstervorUVATESTPDFAdobeAcrobatRe);
+                //Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Delay", "(Optional Action)\r\nWaiting for 2s.", new RecordItemIndex(8));
+                Delay.Duration(2000, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
         }
 

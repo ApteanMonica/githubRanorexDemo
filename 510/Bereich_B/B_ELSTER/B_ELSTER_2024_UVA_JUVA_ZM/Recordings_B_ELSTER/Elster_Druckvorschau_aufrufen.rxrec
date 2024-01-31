@@ -22,7 +22,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Elster_Druckvorschau_aufrufen_schliessen"
+	classname="Elster_Druckvorschau_aufrufen"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER">
 	</codegen>
 	<variables>
@@ -82,6 +82,51 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="True"
+		searchpropertyid="5eb3083d-c364-497c-98f4-40e1d1616b95"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="56b66e71-3414-44c4-84b4-f771d00da74a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="True"
+		searchpropertyid="962f7366-3625-4fe2-bbfa-b55edfafe005">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="56b66e71-3414-44c4-84b4-f771d00da74a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<WaitForRecordItem
+		enabled="False"
+		optional="True"
 		searchpropertyid="57bdc2e2-9e31-45ac-94c0-7bbc120766b5"
 		waitaction="Exists"
 		waittimeout="180000ms">
@@ -90,18 +135,43 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="8018ae93-4875-4798-a144-628c547664ad"
+			id="8ffdbd5e-ad16-4d3f-b698-0855dd367377"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title~'TEST.PDF']/titlebar[@accessiblerole='TitleBar']
+					/form/element[@instance='0']/element[@instance='0']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
+		action="Exists"
+		enabled="False"
+		optional="True"
+		searchpropertyid="50b00933-f30f-4682-b878-15c5ba95f491">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ffdbd5e-ad16-4d3f-b698-0855dd367377"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/element[@instance='0']/element[@instance='0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
 		action="AttributeContains"
-		enabled="True"
+		enabled="False"
 		optional="True"
 		searchpropertyid="1ff879f0-d2d1-496b-ad23-0f6974b774f7">
 			<comment>
@@ -157,32 +227,6 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="True"
-		searchpropertyid="22418e30-c517-48fb-88c4-0eadd2307b3a"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="8018ae93-4875-4798-a144-628c547664ad"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'TEST.PDF']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
@@ -199,7 +243,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Elster_Druckvorschau_aufrufen_schliessen.UserCode.cs
+		Elster_Druckvorschau_aufrufen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

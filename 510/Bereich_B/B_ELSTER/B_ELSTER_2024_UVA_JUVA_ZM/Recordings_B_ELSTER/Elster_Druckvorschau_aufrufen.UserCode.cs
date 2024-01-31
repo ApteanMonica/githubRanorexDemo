@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric.Recordings_ZM
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 {
-    public partial class Eric_Version_ERiC_Print_xxx_ZMDO_xxx_Bild_in_Druckvorschau_pruefen
+    public partial class Elster_Druckvorschau_aufrufen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

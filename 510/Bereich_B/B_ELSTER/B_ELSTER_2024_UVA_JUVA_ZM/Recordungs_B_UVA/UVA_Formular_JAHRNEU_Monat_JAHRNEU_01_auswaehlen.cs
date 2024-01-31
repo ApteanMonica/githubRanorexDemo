@@ -41,9 +41,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         /// </summary>
         public UVA_Formular_JAHRNEU_Monat_JAHRNEU_01_auswaehlen()
         {
-            JAHRNEU = "2023";
+            JAHRNEU = "";
             Monat_1 = "1";
-            UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2023 Elster";
+            UVA_JAHRNEU_Form_Name = "";
         }
 
         /// <summary>

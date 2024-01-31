@@ -26,7 +26,6 @@ mode="Global">
 		<var
 		id="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
 		name="UVA_VORVORJAHR_Form_Name">
-			UVA-Deutschland 2022 Elster
 		</var>
 	</variables>
 	<recorditems>
@@ -3006,6 +3005,26 @@ RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
 FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="173b3817-0221-4862-80f9-e5d2d75080cb"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5a643d01-9a45-496a-8c4b-430924ed8259"
+			sourcename="RepositoryEditor">
+				<path>
+					/list[@controlid='1000']/listitem[@text=$UVA_VORVORJAHR_Form_Name]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

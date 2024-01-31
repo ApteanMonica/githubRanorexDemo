@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         /// </summary>
         public JUVA_Register_Jahreserklaerung_Eingaben_VORVORJAHR()
         {
-            VORVORJAHR = "2022";
+            VORVORJAHR = "";
         }
 
         /// <summary>

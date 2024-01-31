@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
         /// </summary>
         public Formular_VORVORJAHR_auswaehlen()
         {
-            UVA_VORVORJAHR_Form_Name = "UVA-Deutschland 2022 Elster";
+            UVA_VORVORJAHR_Form_Name = "";
         }
 
         /// <summary>
@@ -93,13 +93,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordungs_B_UVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.CmbUvaFBez' at Center.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(0));
             repo.DlgUVADruck.CmbUvaFBez.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORVORJAHR' at Center.", repo.List1000.Formular_Elster_VORVORJAHRInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'List1000.Formular_Elster_VORVORJAHR'", repo.List1000.Formular_Elster_VORVORJAHRInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.List1000.Formular_Elster_VORVORJAHRInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORVORJAHR' at Center.", repo.List1000.Formular_Elster_VORVORJAHRInfo, new RecordItemIndex(2));
             repo.List1000.Formular_Elster_VORVORJAHR.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORVORJAHR_Form_Name) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORVORJAHR_Form_Name) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", UVA_VORVORJAHR_Form_Name);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'DlgUVADruck.PbElster'.", repo.DlgUVADruck.PbElsterInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'DlgUVADruck.PbElster'.", repo.DlgUVADruck.PbElsterInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgUVADruck.PbElsterInfo, "Enabled", "True");
             
         }
