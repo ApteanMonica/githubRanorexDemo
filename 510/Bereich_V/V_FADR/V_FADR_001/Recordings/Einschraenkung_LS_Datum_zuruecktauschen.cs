@@ -107,7 +107,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(5));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(6));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(6));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -115,7 +115,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(9));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(9));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -123,7 +123,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(11));
             Delay.Duration(7000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(12));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(12));
             
             // LS-Datum in row1 einfügem
             Report.Log(ReportLevel.Info, "Section", "LS-Datum in row1 einfügem", new RecordItemIndex(13));
@@ -135,7 +135,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(15));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(16));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(16));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(17));
             Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -143,7 +143,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(18));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(19));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(19));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(20));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -151,7 +151,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(21));
             Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(22));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(22));
             
             // Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum
             Report.Log(ReportLevel.Info, "Section", "Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum", new RecordItemIndex(23));
