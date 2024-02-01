@@ -104,19 +104,25 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3' with focus on 'DlgElster.DieSteuerWurdeNachVereinbartenEntg'.", repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, new RecordItemIndex(3));
             repo.DlgElster.DieSteuerWurdeNachVereinbartenEntg.PressKeys("3");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElster.CbAuslandAnsaessig' at Center.", repo.DlgElster.CbAuslandAnsaessigInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElster.CbAuslandAnsaessig' at Center.", repo.DlgElster.CbAuslandAnsaessigInfo, new RecordItemIndex(7));
             repo.DlgElster.CbAuslandAnsaessig.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'DlgElster.DieSteuerWurdeNachVereinbartenEntg'.", repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'DlgElster.DieSteuerWurdeNachVereinbartenEntg'.", repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElster.CbAuslandAnsaessig'.", repo.DlgElster.CbAuslandAnsaessigInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElster.CbAuslandAnsaessig'.", repo.DlgElster.CbAuslandAnsaessigInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.DlgElster.CbAuslandAnsaessigInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElster.PbJa' at Center.", repo.DlgElster.PbJaInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElster.PbJa' at Center.", repo.DlgElster.PbJaInfo, new RecordItemIndex(10));
             repo.DlgElster.PbJa.Click();
             
         }

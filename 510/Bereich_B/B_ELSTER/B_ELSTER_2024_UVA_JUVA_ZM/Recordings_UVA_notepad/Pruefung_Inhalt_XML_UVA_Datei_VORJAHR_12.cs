@@ -184,43 +184,43 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_Teil_1, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_1) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_Teil_1, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_2) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_Teil_2, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_2) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_Teil_2, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_3) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_Teil_3, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_3) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_Teil_3, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_VERSION_VORJAHR) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(3));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_VERSION_VORJAHR, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_VERSION_VORJAHR) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(3));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_VERSION_VORJAHR, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_4) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_Teil_4, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_4) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(4));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_Teil_4, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(5));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", VORJAHR, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(5));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", VORJAHR, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Monat_12) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(6));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_Monat_12, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Monat_12) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(6));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_Monat_12, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_5) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(7));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_Teil_5, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_Teil_5) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(7));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_UVA_Teil_5, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
         }

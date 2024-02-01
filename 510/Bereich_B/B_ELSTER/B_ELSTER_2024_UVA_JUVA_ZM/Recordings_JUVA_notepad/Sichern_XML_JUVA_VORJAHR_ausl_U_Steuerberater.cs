@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'XMLEditor_UVA_ZM11.Text15' and assigning its value to variable 'XML_Inhalt_aktuell'.", repo.XMLEditor_UVA_ZM11.Text15Info, new RecordItemIndex(0));
-            XML_Inhalt_aktuell = repo.XMLEditor_UVA_ZM11.Text15.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM' and assigning its value to variable 'XML_Inhalt_aktuell'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(0));
+            XML_Inhalt_aktuell = repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(XML_Inhalt_aktuell, "c:\\temp\\xml_UST2A_JUVA_2023_ausl_U_Steuerberater", "xml");
             

@@ -79,8 +79,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'EricLogEditor.EricLogEditor'.", repo.EricLogEditor.EricLogEditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.EricLogEditor.EricLogEditor, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Editor_EricLog.EricLogEditor'.", repo.Editor_EricLog.EricLogEditorInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.Editor_EricLog.EricLogEditor, 1000);
             
         }
 

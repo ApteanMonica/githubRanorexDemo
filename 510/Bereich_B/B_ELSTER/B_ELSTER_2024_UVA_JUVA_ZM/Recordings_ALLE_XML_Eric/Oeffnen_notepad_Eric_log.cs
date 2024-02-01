@@ -108,8 +108,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Eric_log_Pfad_Datei with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Eric_log_Pfad_Datei, Programm_2, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'EricLogEditor'", repo.EricLogEditor.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.EricLogEditor.SelfInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Editor_EricLog'", repo.Editor_EricLog.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.Editor_EricLog.SelfInfo.WaitForExists(120000);
             
         }
 

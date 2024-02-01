@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'Editor_EricLog.Text15_Editor_ericlog' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.Editor_EricLog.Text15_Editor_ericlogInfo, new RecordItemIndex(0));
+            Eric_log_Inhalt_aktuell = repo.Editor_EricLog.Text15_Editor_ericlog.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_JUVA_2023_ausl_U_Steuerberater", "log");
             

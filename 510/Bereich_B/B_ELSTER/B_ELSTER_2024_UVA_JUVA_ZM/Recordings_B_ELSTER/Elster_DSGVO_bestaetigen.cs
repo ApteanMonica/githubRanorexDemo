@@ -101,8 +101,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Firma) on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, "Text", Firma);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgElsterDSGVO.LblMessage_Preview_Generation_Failed'", repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgElsterDSGVO.LblMessage_Preview_Generation_Failed'", repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo, new ActionTimeout(180000), new RecordItemIndex(3));
+            repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgElsterDSGVO.CbDSGVO_unchecked'", repo.DlgElsterDSGVO.CbDSGVO_uncheckedInfo, new ActionTimeout(60000), new RecordItemIndex(4));
             repo.DlgElsterDSGVO.CbDSGVO_uncheckedInfo.WaitForExists(60000);

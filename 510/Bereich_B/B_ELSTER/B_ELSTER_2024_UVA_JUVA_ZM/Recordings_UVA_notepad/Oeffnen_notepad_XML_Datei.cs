@@ -121,11 +121,11 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $XML_UVA_Pfad_Datei with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(XML_UVA_Pfad_Datei, Programm_2, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'XMLEditor_UVA_ZM.XMLEditor'", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.XMLEditor_UVA_ZM.XMLEditorInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Editor_XML_UVA_ZM.XMLEditor_UVA_ZM'", repo.Editor_XML_UVA_ZM.XMLEditor_UVA_ZMInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.Editor_XML_UVA_ZM.XMLEditor_UVA_ZMInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_UVA_Datei) on item 'XMLEditor_UVA_ZM.XMLEditor'.", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.XMLEditor_UVA_ZM.XMLEditorInfo, "Text", XML_UVA_Datei);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_UVA_Datei) on item 'Editor_XML_UVA_ZM.XMLEditor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.XMLEditor_UVA_ZMInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.Editor_XML_UVA_ZM.XMLEditor_UVA_ZMInfo, "Text", XML_UVA_Datei);
             
         }
 

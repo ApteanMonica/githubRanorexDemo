@@ -25,11 +25,38 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<validationitem
-		action="Exists"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2ea015a3-d476-4eb5-a440-fdf0050020c9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="661c45b4-4f5d-495f-9f43-cc972f395692"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltext~'ELSTER-Schnittstelle']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="02cc6ef7-8140-4ea9-a2bd-7b416e42ddd9">
+		searchpropertyid="4616e967-8967-4059-81e7-8847a7b2eebe"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -38,18 +65,12 @@ mode="Global">
 			id="db43636c-fc23-4a60-a28e-4ad1c9f71bf1"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/button[@controlname='pbPlausi']
+					/form[@controltext~'ELSTER-Schnittstelle']/container[@controlname='ClientArea']/button[@controlname='pbPlausi']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -182,10 +203,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="a085b197-995b-4a43-b4ff-cec61bd60983"
+			id="97e8d7f1-e7a5-4354-bf04-79c33b3f48dc"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controltext~'ELSTER-Schnittstelle']/container[@controlname='ClientArea']/button[@controlname='pbDrucken' and @enabled='True' and @controltext='Druck&amp;vorschau']
+					/form[@controltext~'ELSTER-Schnittstelle']/container[@controlname='ClientArea']/button[@controlname='pbDrucken' and @enabled='True']
 				</path>
 				<robustPath>
 				</robustPath>

@@ -79,37 +79,40 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmMain.ClientArea.PbPlausi'.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.FrmMain.ClientArea.PbPlausiInfo);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA' at Center.", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo, new RecordItemIndex(0));
+            repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbPlausi'.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmMain.ClientArea.PbPlausiInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain_B_ELSTER.ClientArea1.PbPlausi'", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'FrmMain.ClientArea.PbDrucken'.", repo.FrmMain.ClientArea.PbDruckenInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmMain.ClientArea.PbDruckenInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea1.PbPlausi'.", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, "Enabled", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'FrmMain.ClientArea.PbSenden'.", repo.FrmMain.ClientArea.PbSendenInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmMain.ClientArea.PbSendenInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'FrmMain_B_ELSTER.ClientArea1.PbDrucken'.", repo.FrmMain_B_ELSTER.ClientArea1.PbDruckenInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbDruckenInfo, "Enabled", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.ClientArea.PbPlausi' at Center.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(4));
-            repo.FrmMain.ClientArea.PbPlausi.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'FrmMain_B_ELSTER.ClientArea1.PbSenden'.", repo.FrmMain_B_ELSTER.ClientArea1.PbSendenInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbSendenInfo, "Enabled", "False");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'Frage_Fehler_Plausipruefung.Fehlermeldung_Plausipruefung'", repo.Frage_Fehler_Plausipruefung.Fehlermeldung_PlausipruefungInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_B_ELSTER.ClientArea1.PbPlausi' at Center.", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new RecordItemIndex(5));
+            repo.FrmMain_B_ELSTER.ClientArea1.PbPlausi.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'Frage_Fehler_Plausipruefung.Fehlermeldung_Plausipruefung'", repo.Frage_Fehler_Plausipruefung.Fehlermeldung_PlausipruefungInfo, new ActionTimeout(60000), new RecordItemIndex(6));
             repo.Frage_Fehler_Plausipruefung.Fehlermeldung_PlausipruefungInfo.WaitForNotExists(60000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.ClientArea.Button_Druckvorschau_aktiv'", repo.FrmMain.ClientArea.Button_Druckvorschau_aktivInfo, new ActionTimeout(120000), new RecordItemIndex(6));
-            repo.FrmMain.ClientArea.Button_Druckvorschau_aktivInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain_B_ELSTER.ClientArea1.PbDrucken_enabled'", repo.FrmMain_B_ELSTER.ClientArea1.PbDrucken_enabledInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.FrmMain_B_ELSTER.ClientArea1.PbDrucken_enabledInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbPlausi'.", repo.FrmMain.ClientArea.PbPlausiInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmMain.ClientArea.PbPlausiInfo, "Enabled", "True");
-            
-            // wenn erfolgreich, muss der Button aktiv sein
-            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbDrucken'.", repo.FrmMain.ClientArea.PbDruckenInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmMain.ClientArea.PbDruckenInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea1.PbPlausi'.", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, "Enabled", "True");
             
             // wenn erfolgreich, muss der Button aktiv sein
-            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain.ClientArea.PbSenden'.", repo.FrmMain.ClientArea.PbSendenInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmMain.ClientArea.PbSendenInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea1.PbDrucken'.", repo.FrmMain_B_ELSTER.ClientArea1.PbDruckenInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbDruckenInfo, "Enabled", "True");
+            
+            // wenn erfolgreich, muss der Button aktiv sein
+            Report.Log(ReportLevel.Info, "Validation", "wenn erfolgreich, muss der Button aktiv sein\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea1.PbSenden'.", repo.FrmMain_B_ELSTER.ClientArea1.PbSendenInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbSendenInfo, "Enabled", "True");
             
         }
 

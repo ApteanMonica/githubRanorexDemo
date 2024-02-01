@@ -80,13 +80,13 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea.PbDrucken'.", repo.FrmMain_B_ELSTER.ClientArea.PbDruckenInfo, new RecordItemIndex(0));
-                Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea.PbDruckenInfo, "Enabled", "True", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea1.PbDrucken1'.", repo.FrmMain_B_ELSTER.ClientArea1.PbDrucken1Info, new RecordItemIndex(0));
+                Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbDrucken1Info, "Enabled", "True", null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FrmMain_B_ELSTER.ClientArea.PbDrucken' at Center.", repo.FrmMain_B_ELSTER.ClientArea.PbDruckenInfo, new RecordItemIndex(1));
-                repo.FrmMain_B_ELSTER.ClientArea.PbDrucken.Click();
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FrmMain_B_ELSTER.ClientArea1.PbDrucken1' at Center.", repo.FrmMain_B_ELSTER.ClientArea1.PbDrucken1Info, new RecordItemIndex(1));
+                repo.FrmMain_B_ELSTER.ClientArea1.PbDrucken1.Click();
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {

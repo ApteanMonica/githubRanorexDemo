@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgElster.TitleBar300ElsterXML'", repo.DlgElster.TitleBar300ElsterXMLInfo, new ActionTimeout(180000), new RecordItemIndex(0));
-            repo.DlgElster.TitleBar300ElsterXMLInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'DlgElster.TitleBar300ElsterXML'", repo.DlgElster.TitleBar300ElsterXMLInfo, new ActionTimeout(300000), new RecordItemIndex(0));
+            repo.DlgElster.TitleBar300ElsterXMLInfo.WaitForExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'JahresUVA') on item 'DlgElster.TitleBar300ElsterXML'.", repo.DlgElster.TitleBar300ElsterXMLInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.DlgElster.TitleBar300ElsterXMLInfo, "Text", "JahresUVA");
@@ -104,13 +104,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'DlgElster.DieSteuerWurdeNachVereinbartenEntg'.", repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, new RecordItemIndex(3));
             repo.DlgElster.DieSteuerWurdeNachVereinbartenEntg.PressKeys("1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgElster.DieSteuerWurdeNachVereinbartenEntg'.", repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgElster.DieSteuerWurdeNachVereinbartenEntg'.", repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgElster.DieSteuerWurdeNachVereinbartenEntgInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElster.PbJa' at Center.", repo.DlgElster.PbJaInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElster.PbJa' at Center.", repo.DlgElster.PbJaInfo, new RecordItemIndex(7));
             repo.DlgElster.PbJa.Click();
             
         }

@@ -184,43 +184,43 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Umsaetze) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_Umsaetze, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Umsaetze) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_Umsaetze, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Umsaetze_LuF) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_Umsaetze_LuF, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Umsaetze_LuF) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_Umsaetze_LuF, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Umsaetze_stfrei) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_Umsaetze_stfrei, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Umsaetze_stfrei) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_Umsaetze_stfrei, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_IG) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(3));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_IG, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_IG) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(3));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_IG, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_13a_drei) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_13a_drei, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_13a_drei) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(4));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_13a_drei, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_13b_Erg) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(5));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_13b_Erg, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_13b_Erg) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(5));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_13b_Erg, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_abz_Vst) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(6));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_abz_Vst, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_abz_Vst) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(6));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_abz_Vst, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Ber_Vst_15a) on item 'XMLEditor_UVA_ZM7.Text15'.", repo.XMLEditor_UVA_ZM7.Text15Info, new RecordItemIndex(7));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM7.Text15Info, "Text", XML_JUVA_2022_Ber_Vst_15a, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2022_Ber_Vst_15a) on item 'Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, new RecordItemIndex(7));
+                Validate.AttributeContains(repo.Editor_XML_UVA_ZM.Text15_XML_Editor_UVA_ZMInfo, "Text", XML_JUVA_2022_Ber_Vst_15a, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
         }

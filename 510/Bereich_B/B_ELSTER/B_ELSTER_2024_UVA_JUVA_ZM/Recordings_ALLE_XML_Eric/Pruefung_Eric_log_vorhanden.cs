@@ -93,8 +93,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Tagesdatum_yyyy_MM_dd) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Tagesdatum_yyyy_MM_dd, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Tagesdatum_yyyy_MM_dd) on item 'Editor_EricLog.Text15_Editor_ericlog'.", repo.Editor_EricLog.Text15_Editor_ericlogInfo, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.Editor_EricLog.Text15_Editor_ericlogInfo, "Text", Tagesdatum_yyyy_MM_dd, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }

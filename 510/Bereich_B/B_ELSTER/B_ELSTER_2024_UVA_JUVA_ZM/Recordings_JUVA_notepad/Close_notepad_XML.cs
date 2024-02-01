@@ -79,8 +79,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'XMLEditor_UVA_ZM10.XMLEditor'.", repo.XMLEditor_UVA_ZM10.XMLEditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.XMLEditor_UVA_ZM10.XMLEditor, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Editor_XML_UVA_ZM.XMLEditor_UVA_ZM'.", repo.Editor_XML_UVA_ZM.XMLEditor_UVA_ZMInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.Editor_XML_UVA_ZM.XMLEditor_UVA_ZM, 1000);
             
         }
 
