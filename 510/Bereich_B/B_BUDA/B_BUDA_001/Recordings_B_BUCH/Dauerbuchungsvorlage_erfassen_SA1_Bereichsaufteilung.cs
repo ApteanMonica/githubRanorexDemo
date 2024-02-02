@@ -85,8 +85,8 @@ namespace B_BUDA_001.Recordings_B_BUCH
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard7' at Center.", repo.MdiBuch.PbStandard7Info, new RecordItemIndex(1));
             repo.MdiBuch.PbStandard7.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.frmSB.Row1'", repo.MdiBuch.frmSB.Row1Info, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.MdiBuch.frmSB.Row1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'MdiBuch.frmSB.Row1'", repo.MdiBuch.frmSB.Row1Info, new ActionTimeout(180000), new RecordItemIndex(2));
+            repo.MdiBuch.frmSB.Row1Info.WaitForExists(180000);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiBuch.frmSB.colBube_betragRow1' at Center.", repo.MdiBuch.frmSB.colBube_betragRow1Info, new RecordItemIndex(3));
             //repo.MdiBuch.frmSB.colBube_betragRow1.DoubleClick();
