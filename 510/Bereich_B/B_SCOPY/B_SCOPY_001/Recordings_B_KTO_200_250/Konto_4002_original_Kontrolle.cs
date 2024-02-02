@@ -42,6 +42,8 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         public Konto_4002_original_Kontrolle()
         {
             Quell_Firma = "200";
+            Firmenherkunft_Sachkonto = "";
+            Ziel_Firma = "250";
         }
 
         /// <summary>
@@ -64,6 +66,28 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         {
             get { return _Quell_Firma; }
             set { _Quell_Firma = value; }
+        }
+
+        string _Firmenherkunft_Sachkonto;
+
+        /// <summary>
+        /// Gets or sets the value of variable Firmenherkunft_Sachkonto.
+        /// </summary>
+        [TestVariable("50398ca3-da29-4958-a7d7-72a7e5b56880")]
+        public string Firmenherkunft_Sachkonto
+        {
+            get { return _Firmenherkunft_Sachkonto; }
+            set { _Firmenherkunft_Sachkonto = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Ziel_Firma.
+        /// </summary>
+        [TestVariable("d5bb13bc-576d-4859-bd88-4c4f67d0657d")]
+        public string Ziel_Firma
+        {
+            get { return repo.Ziel_Firma; }
+            set { repo.Ziel_Firma = value; }
         }
 
 #endregion
@@ -93,32 +117,37 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Quell_Firma) on item 'FrmKto.Firmenherkunft'.", repo.FrmKto.FirmenherkunftInfo, new RecordItemIndex(0));
-                Validate.AttributeEqual(repo.FrmKto.FirmenherkunftInfo, "Text", Quell_Firma, null, false);
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Quell_Firma) on item 'FrmKto.Firmenherkunft'.", repo.FrmKto.FirmenherkunftInfo, new RecordItemIndex(0));
+                //Validate.AttributeEqual(repo.FrmKto.FirmenherkunftInfo, "Text", Quell_Firma, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4002') on item 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'FrmKto.Firmenherkunft' and assigning its value to variable 'Firmenherkunft_Sachkonto'.", repo.FrmKto.FirmenherkunftInfo, new RecordItemIndex(1));
+            Firmenherkunft_Sachkonto = repo.FrmKto.Firmenherkunft.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Firmenherkunft_Sachkonto, Quell_Firma, Ziel_Firma);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4002') on item 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmKto.KontoInfo, "Text", "4002");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Umsatzerlöse Ausland') on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Umsatzerlöse Ausland') on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmKto.BezeichnungInfo, "Text", "Umsatzerlöse Ausland");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='aktiv') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='aktiv') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmKto.Text1001_StatusInfo, "Text", "aktiv");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.RbErtrag'.", repo.FrmKto.RbErtragInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.RbErtrag'.", repo.FrmKto.RbErtragInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmKto.RbErtragInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M') on item 'FrmKto.Register_Allgemein.UstPflicht'.", repo.FrmKto.Register_Allgemein.UstPflichtInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M') on item 'FrmKto.Register_Allgemein.UstPflicht'.", repo.FrmKto.Register_Allgemein.UstPflichtInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmKto.Register_Allgemein.UstPflichtInfo, "Text", "M");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'FrmKto.Register_Allgemein.Skontogruppe'.", repo.FrmKto.Register_Allgemein.SkontogruppeInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'FrmKto.Register_Allgemein.Skontogruppe'.", repo.FrmKto.Register_Allgemein.SkontogruppeInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmKto.Register_Allgemein.SkontogruppeInfo, "Text", "4");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kundenskonto (Klasse 4)') on item 'FrmKto.Register_Allgemein.DfSkgrBez'.", repo.FrmKto.Register_Allgemein.DfSkgrBezInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kundenskonto (Klasse 4)') on item 'FrmKto.Register_Allgemein.DfSkgrBez'.", repo.FrmKto.Register_Allgemein.DfSkgrBezInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmKto.Register_Allgemein.DfSkgrBezInfo, "Text", "Kundenskonto (Klasse 4)");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.Register_Allgemein.CbKtoSkonto'.", repo.FrmKto.Register_Allgemein.CbKtoSkontoInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.Register_Allgemein.CbKtoSkonto'.", repo.FrmKto.Register_Allgemein.CbKtoSkontoInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmKto.Register_Allgemein.CbKtoSkontoInfo, "Checked", "True");
             
         }

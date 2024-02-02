@@ -41,6 +41,9 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         /// </summary>
         public Kopierte_Skontogruppen_pruefen()
         {
+            Firmenherkunft_Skontogruppe = "";
+            Quell_Firma = "200";
+            Ziel_Firma = "250";
         }
 
         /// <summary>
@@ -52,6 +55,40 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
         }
 
 #region Variables
+
+        string _Firmenherkunft_Skontogruppe;
+
+        /// <summary>
+        /// Gets or sets the value of variable Firmenherkunft_Skontogruppe.
+        /// </summary>
+        [TestVariable("38350002-cb2d-495d-8d3c-d903b791a935")]
+        public string Firmenherkunft_Skontogruppe
+        {
+            get { return _Firmenherkunft_Skontogruppe; }
+            set { _Firmenherkunft_Skontogruppe = value; }
+        }
+
+        string _Quell_Firma;
+
+        /// <summary>
+        /// Gets or sets the value of variable Quell_Firma.
+        /// </summary>
+        [TestVariable("94b0a4ae-27de-4338-9069-9c7f3c5cfc53")]
+        public string Quell_Firma
+        {
+            get { return _Quell_Firma; }
+            set { _Quell_Firma = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Ziel_Firma.
+        /// </summary>
+        [TestVariable("b906362c-ecd0-41c4-8f67-6cdb25fa2366")]
+        public string Ziel_Firma
+        {
+            get { return repo.Ziel_Firma; }
+            set { repo.Ziel_Firma = value; }
+        }
 
 #endregion
 
@@ -88,22 +125,40 @@ namespace B_SCOPY_001.Recordings_B_KTO_200_250
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[250]  Verwalten Skontogruppen/-konten') on item 'MdiSkt.TitleBar200VerwaltenSkontogruppen'.", repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, "Text", "[250]  Verwalten Skontogruppen/-konten");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'S;;0\t$RLG\ttheor. Skonto') on item 'MdiSkt.Tabelle_oben.Row1Column0'.", repo.MdiSkt.Tabelle_oben.Row1Column0Info, new RecordItemIndex(3));
-                Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row1Column0Info, "Text", "S;;0\t$RLG\ttheor. Skonto", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='$RLG') on item 'MdiSkt.Tabelle_oben.ColSkgrCdRow1'.", repo.MdiSkt.Tabelle_oben.ColSkgrCdRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.MdiSkt.Tabelle_oben.ColSkgrCdRow1Info, "Text", "$RLG");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\tS;;0\t4\tKundenskonto (Klasse 4)') on item 'MdiSkt.Tabelle_oben.Row2Column0'.", repo.MdiSkt.Tabelle_oben.Row2Column0Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row2Column0Info, "Text", "\tS;;0\t4\tKundenskonto (Klasse 4)", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='theor. Skonto') on item 'MdiSkt.Tabelle_oben.ColSkgrBezRow1'.", repo.MdiSkt.Tabelle_oben.ColSkgrBezRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.MdiSkt.Tabelle_oben.ColSkgrBezRow1Info, "Text", "theor. Skonto");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'\tS;;0\t5\tLieferantenskonto (Klasse 5)') on item 'MdiSkt.Tabelle_oben.Row3Column0'.", repo.MdiSkt.Tabelle_oben.Row3Column0Info, new RecordItemIndex(5));
-                Validate.AttributeContains(repo.MdiSkt.Tabelle_oben.Row3Column0Info, "Text", "\tS;;0\t5\tLieferantenskonto (Klasse 5)", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow1' and assigning its value to variable 'Firmenherkunft_Skontogruppe'.", repo.MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow1Info, new RecordItemIndex(5));
+            Firmenherkunft_Skontogruppe = repo.MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'MdiSkt.TitleBar200VerwaltenSkontogruppen'.", repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, new RecordItemIndex(6));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Firmenherkunft_Skontogruppe, Quell_Firma, Ziel_Firma);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'MdiSkt.Tabelle_oben.ColSkgrCdRow2'.", repo.MdiSkt.Tabelle_oben.ColSkgrCdRow2Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.MdiSkt.Tabelle_oben.ColSkgrCdRow2Info, "Text", "4");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kundenskonto (Klasse 4)') on item 'MdiSkt.Tabelle_oben.ColSkgrBezRow2'.", repo.MdiSkt.Tabelle_oben.ColSkgrBezRow2Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.MdiSkt.Tabelle_oben.ColSkgrBezRow2Info, "Text", "Kundenskonto (Klasse 4)");
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow2' and assigning its value to variable 'Firmenherkunft_Skontogruppe'.", repo.MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow2Info, new RecordItemIndex(9));
+            Firmenherkunft_Skontogruppe = repo.MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow2.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Firmenherkunft_Skontogruppe, Quell_Firma, Ziel_Firma);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'MdiSkt.Tabelle_oben.ColSkgrCdRow3'.", repo.MdiSkt.Tabelle_oben.ColSkgrCdRow3Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.MdiSkt.Tabelle_oben.ColSkgrCdRow3Info, "Text", "5");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Lieferantenskonto (Klasse 5)') on item 'MdiSkt.Tabelle_oben.ColSkgrBezRow3'.", repo.MdiSkt.Tabelle_oben.ColSkgrBezRow3Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.MdiSkt.Tabelle_oben.ColSkgrBezRow3Info, "Text", "Lieferantenskonto (Klasse 5)");
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow3' and assigning its value to variable 'Firmenherkunft_Skontogruppe'.", repo.MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow3Info, new RecordItemIndex(13));
+            Firmenherkunft_Skontogruppe = repo.MdiSkt.Tabelle_oben.ColSkgrFirmNrOriginRow3.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Firmenherkunft_Skontogruppe, Quell_Firma, Ziel_Firma);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'MdiSkt.TitleBar200VerwaltenSkontogruppen'.", repo.MdiSkt.TitleBar200VerwaltenSkontogruppenInfo, new RecordItemIndex(15));
             Keyboard.PrepareFocus(repo.MdiSkt.TitleBar200VerwaltenSkontogruppen);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

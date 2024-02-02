@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>8ec9c963-8f8d-4e60-9d5d-c47836b9449c</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>ae1777ec-ddd5-4c7a-8f52-1517f8a66085</id>
     </Compile>
@@ -463,90 +467,6 @@
       <id>bb4275c6-dd0f-4a75-abad-5e96411d6550</id>
       <BoundTo>77cb227b-d895-4cee-8b25-ff5ff66d2298</BoundTo>
     </Compile>
-    <Compile Include="Recordings_SQL\CloseDBTalk.cs">
-      <DependentUpon>CloseDBTalk.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0c9eb18d-1665-4a3c-890b-5ea8549e6593</id>
-      <BoundTo>e7e88f65-5581-4832-96cd-915788cf1aa2</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\CloseDBTalk.UserCode.cs">
-      <DependentUpon>CloseDBTalk.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>6cc57554-a046-4f0c-b75c-e9eea8a98053</id>
-      <BoundTo>e7e88f65-5581-4832-96cd-915788cf1aa2</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\Connect_herstellen.cs">
-      <BoundTo>5bd5f99b-673a-42ba-badc-9ad65a41a73f</BoundTo>
-      <DependentUpon>Connect_herstellen.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5efbfc57-36cb-45fc-9e6c-a2adeecaa03d</id>
-    </Compile>
-    <Compile Include="Recordings_SQL\Connect_herstellen.UserCode.cs">
-      <BoundTo>5bd5f99b-673a-42ba-badc-9ad65a41a73f</BoundTo>
-      <DependentUpon>Connect_herstellen.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e3defae1-b4b5-4f1d-bbaf-5234ad118d34</id>
-    </Compile>
-    <Compile Include="Recordings_SQL\Disconnect_all.cs">
-      <BoundTo>2793c132-7706-46d5-aaac-04d26c125d93</BoundTo>
-      <DependentUpon>Disconnect_all.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>17252cb2-a077-4b18-9dd7-834cf8773a68</id>
-    </Compile>
-    <Compile Include="Recordings_SQL\Disconnect_all.UserCode.cs">
-      <BoundTo>2793c132-7706-46d5-aaac-04d26c125d93</BoundTo>
-      <DependentUpon>Disconnect_all.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e095f83d-e6fd-4dea-a738-95d574d72381</id>
-    </Compile>
-    <Compile Include="Recordings_SQL\Select_B_BUSY_0rows.cs">
-      <DependentUpon>Select_B_BUSY_0rows.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7055a533-34ac-4154-a94a-bddf22f7317c</id>
-      <BoundTo>fc6383ab-c570-462d-82b1-7d7c51240049</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\Select_B_BUSY_0rows.UserCode.cs">
-      <DependentUpon>Select_B_BUSY_0rows.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ac57ae2b-af1c-4356-9109-c3c5ba310c31</id>
-      <BoundTo>fc6383ab-c570-462d-82b1-7d7c51240049</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\Select_B_KTO_39rows.cs">
-      <DependentUpon>Select_B_KTO_39rows.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>bbae44c2-d1f1-469b-acd6-70cbcd814985</id>
-      <BoundTo>977feccc-fb27-4ceb-911d-f852fd809e5e</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\Select_B_KTO_39rows.UserCode.cs">
-      <DependentUpon>Select_B_KTO_39rows.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>bca9cdab-4dce-4f97-9e92-c1bbb029ba4f</id>
-      <BoundTo>977feccc-fb27-4ceb-911d-f852fd809e5e</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\Select_B_SKGR_3rows.cs">
-      <BoundTo>8cb4e7b7-f61e-48fc-8cf0-15dbc0c3c9d7</BoundTo>
-      <DependentUpon>Select_B_SKGR_3rows.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>41b83a23-b796-4372-b850-999dac11445a</id>
-    </Compile>
-    <Compile Include="Recordings_SQL\Select_B_SKGR_3Rows.UserCode.cs">
-      <BoundTo>8cb4e7b7-f61e-48fc-8cf0-15dbc0c3c9d7</BoundTo>
-      <DependentUpon>Select_B_SKGR_3rows.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4e797916-20b3-4523-a591-a6db34ee6a4f</id>
-    </Compile>
-    <Compile Include="Recordings_SQL\StartDBTalk.cs">
-      <DependentUpon>StartDBTalk.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>14965e63-9e17-4772-a6cf-d20441964685</id>
-      <BoundTo>fa9145d9-d9c2-4fac-b503-f992f90db8d1</BoundTo>
-    </Compile>
-    <Compile Include="Recordings_SQL\StartDBTalk.UserCode.cs">
-      <DependentUpon>StartDBTalk.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4f15f3a6-e9ef-4932-afdc-28b8a6adf661</id>
-      <BoundTo>fa9145d9-d9c2-4fac-b503-f992f90db8d1</BoundTo>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -718,41 +638,6 @@
       <id>77cb227b-d895-4cee-8b25-ff5ff66d2298</id>
       <recordtableid>44f4645e-bfcc-497b-acb0-211655376e78</recordtableid>
     </None>
-    <None Include="Recordings_SQL\CloseDBTalk.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>e7e88f65-5581-4832-96cd-915788cf1aa2</id>
-      <recordtableid>ee76a0d0-bae0-4fe2-b783-5bd58bfdc019</recordtableid>
-    </None>
-    <None Include="Recordings_SQL\Connect_herstellen.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>5bd5f99b-673a-42ba-badc-9ad65a41a73f</id>
-      <recordtableid>2205df5a-90ef-4846-8ded-cab658087bb6</recordtableid>
-    </None>
-    <None Include="Recordings_SQL\Disconnect_all.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>2793c132-7706-46d5-aaac-04d26c125d93</id>
-      <recordtableid>1606e184-29ae-405c-952f-a2bc94015dfc</recordtableid>
-    </None>
-    <None Include="Recordings_SQL\Select_B_BUSY_0rows.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>fc6383ab-c570-462d-82b1-7d7c51240049</id>
-      <recordtableid>f35544cc-ec27-432f-b5de-313ab4d09d98</recordtableid>
-    </None>
-    <None Include="Recordings_SQL\Select_B_KTO_39rows.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>977feccc-fb27-4ceb-911d-f852fd809e5e</id>
-      <recordtableid>37958858-7742-447c-82c4-d34d7f62605f</recordtableid>
-    </None>
-    <None Include="Recordings_SQL\Select_B_SKGR_3rows.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>8cb4e7b7-f61e-48fc-8cf0-15dbc0c3c9d7</id>
-      <recordtableid>42d00c7a-d79d-462b-a230-c2b856c15f86</recordtableid>
-    </None>
-    <None Include="Recordings_SQL\StartDBTalk.rxrec">
-      <BoundTo>4bc7f98f-e572-41c6-b297-f9d557e47dcf</BoundTo>
-      <id>fa9145d9-d9c2-4fac-b503-f992f90db8d1</id>
-      <recordtableid>9ee1b4eb-27fd-4e46-83e7-effe71ba1260</recordtableid>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="B_SCOPY_001.rxtmg">
@@ -770,9 +655,6 @@
     </Folder>
     <Folder Include="Recordings_B_KTO_200_250">
       <id>c52d6f8c-fa77-4f18-8d2e-2dd6b6611457</id>
-    </Folder>
-    <Folder Include="Recordings_SQL">
-      <id>5271fd1f-8363-469a-8f1e-82760fd0ce02</id>
     </Folder>
     <Folder Include="Recordings">
       <id>45b53db1-3b29-4eff-9ca5-935ef7aadf1e</id>

@@ -44,14 +44,26 @@
 			ref="0d6aabf5-870f-40c5-8b6e-7bfaa02286f5"
 			type="Recording">
 				<description>
-					<![CDATA[BUG erfassen: Herkunft Firma 250 falsch auf Continue on Fail bis Korrektur]]>
+					<![CDATA[ab 530 Firmenherkunft=Zielfirma BUG 68159 wird nicht korrigiert]]>
 				</description>
 				<databinding>
+					<var
+					dataname="Firmenherkunft_Sachkonto"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="50398ca3-da29-4958-a7d7-72a7e5b56880"
+					variablename="Firmenherkunft_Sachkonto">
+					</var>
 					<var
 					dataname="Quell_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
 					variableid="44338e82-7410-409c-99e0-f8a5cd1d41d4"
 					variablename="Quell_Firma">
+					</var>
+					<var
+					dataname="Ziel_Firma"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="d5bb13bc-576d-4859-bd88-4c4f67d0657d"
+					variablename="Ziel_Firma">
 					</var>
 				</databinding>
 			</testmodule>
@@ -81,46 +93,11 @@
 			ref="08a5b01c-f194-4636-a934-126baad94fa9"
 			type="Recording">
 			</testmodule>
-			<testcase
-			id="291d4209-6a44-4dfe-acc2-787e539b3bca"
-			name="Kontrolle_SQL_funktioniert_nicht_disabled">
-				<description>
-					<![CDATA[disabled; connect funktioniert nicht auf den Test-DBs (Passwort fehlt)]]>
-				</description>
-			</testcase>
-			<testmodule
-			enabled="False"
-			id="29f1775b-ca76-41bc-88b8-afa3aec59bb3"
-			name="CloseDBTalk"
-			ref="ee76a0d0-bae0-4fe2-b783-5bd58bfdc019"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="31817cce-3f3f-4be7-a17e-00c2a7e39912"
 			name="Erweiterte_Suche_aktivieren_B_KTO"
 			ref="b3096942-ffce-4065-99f5-484ba60f8ea8"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="3d88d24e-2692-4abc-86d9-ea71dc05beb6"
-			name="Select_B_SKGR_3rows"
-			ref="42d00c7a-d79d-462b-a230-c2b856c15f86"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ziel_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="02cdd745-3baa-4ecf-9f75-0401e705d8c1"
-					variablename="Ziel_Firma">
-					</var>
-					<var
-					dataname="Ziel_DB"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="2dc1094d-1099-4f45-9199-77dc388a75a6"
-					variablename="Ziel_DB">
-					</var>
-				</databinding>
 			</testmodule>
 			<teardown
 			id="401c7b46-ad80-4c0c-ace0-41cd13314609"
@@ -192,27 +169,6 @@
 			ref="78018d83-d72b-4615-9faf-e7b6507fbd65"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="54a58b58-d1bb-4f2c-857c-6894d89252a9"
-			name="Select_B_BUSY_0rows"
-			ref="f35544cc-ec27-432f-b5de-313ab4d09d98"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ziel_DB"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="8ddfaeef-a598-442d-9935-48cf5a353354"
-					variablename="Ziel_DB">
-					</var>
-					<var
-					dataname="Ziel_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="8404bfb5-e140-4b7c-a288-e28d0e53ca07"
-					variablename="Ziel_Firma">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="58633c00-2e62-4dbd-a55b-9885a3d0a8ae"
 			name="teardown">
@@ -229,10 +185,6 @@
 			ref="8ff638ef-ba7e-4498-8835-dc49422c0a6a"
 			type="Recording">
 			</testmodule>
-			<setup
-			id="710ee654-c629-49a2-a367-f81c599039f6"
-			name="setup">
-			</setup>
 			<testmodule
 			id="71a15653-3fef-49f6-ad15-2cb201ddbbbf"
 			name="Firmenwechsel_250_Meldung_Buchungssteuerung"
@@ -287,34 +239,6 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			enabled="False"
-			id="7a13c103-8622-4e89-9464-90e1b0998fc7"
-			name="Disconnect_all"
-			ref="1606e184-29ae-405c-952f-a2bc94015dfc"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="7a5f7ee6-78d2-4490-85c7-5a0d59f64cd9"
-			name="StartDBTalk"
-			ref="9ee1b4eb-27fd-4e46-83e7-effe71ba1260"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="2925682a-7c64-4df5-ba5e-7bd48566fb93"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm_SQL"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="37493a0b-d386-4b2a-bdd9-26eae1b821f8"
-					variablename="Programm_SQL">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="7c5ba3ba-7597-48ff-808f-81d0febc1b8e"
 			name="DB_Name_Quelle_einlesen"
 			ref="68420398-e9b1-4861-a289-42351585545e"
@@ -339,36 +263,12 @@
 			name="Konto_4002_aendern_status_Art_MW_Skt"
 			ref="4e0d1f6f-3126-4e06-a360-88e2ddce19f6"
 			type="Recording">
-				<description>
-					<![CDATA[BUG erfassen: Exception bei Statusänderung auf inaktiv in Zielfirma]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="8b6c95fc-bd1f-4f7d-80dd-52d517b9fc3b"
 			name="Zurueck_zur_Suche"
 			ref="d20d464e-dc5d-4605-b038-0294ab9a7a6a"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="8e83f34e-c006-44b6-ad7f-f926830dd2ae"
-			name="Select_B_KTO_39rows"
-			ref="37958858-7742-447c-82c4-d34d7f62605f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ziel_DB"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="89903d6c-f44a-4914-8f17-ce886cb59fb6"
-					variablename="Ziel_DB">
-					</var>
-					<var
-					dataname="Ziel_Firma"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="362b0e89-73a7-4694-9578-ba7e62b13012"
-					variablename="Ziel_Firma">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="957b28a3-f718-4537-a89a-8e4092cc034d"
@@ -438,6 +338,26 @@
 				<description>
 					<![CDATA[BUG erfassen: Herkunft Firma 250 falsch in row2 - alle rows auf Continue on fail bis Korrektur]]>
 				</description>
+				<databinding>
+					<var
+					dataname="Quell_Firma"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="94b0a4ae-27de-4338-9069-9c7f3c5cfc53"
+					variablename="Quell_Firma">
+					</var>
+					<var
+					dataname="Ziel_Firma"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="b906362c-ecd0-41c4-8f67-6cdb25fa2366"
+					variablename="Ziel_Firma">
+					</var>
+					<var
+					dataname="Firmenherkunft_Skontogruppe"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="38350002-cb2d-495d-8d3c-d903b791a935"
+					variablename="Firmenherkunft_Skontogruppe">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="b0f706dd-7ca5-4fd2-a1be-8a11f13db049"
@@ -450,16 +370,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm2_200"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="78e0813e-8206-443b-8915-1b1d75d2c447"
-					variablename="Programm2_200">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
 					variableid="575b804a-2e9e-4501-a24f-984976ef3d53"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm2_200"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="78e0813e-8206-443b-8915-1b1d75d2c447"
+					variablename="Programm2_200">
 					</var>
 				</databinding>
 			</testmodule>
@@ -554,10 +474,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="d7c794c1-c5c6-45f2-97bd-d1eb7f18e8ac"
-			name="teardown">
-			</teardown>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -587,21 +503,6 @@
 			name="Kopierte_Sachkonten_pruefen"
 			ref="24af8e54-b9b2-48e3-bfae-87dc51ea77bf"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="db86d232-fc42-4337-ac02-c779bd930fc7"
-			name="Connect_herstellen"
-			ref="2205df5a-90ef-4846-8ded-cab658087bb6"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Ziel_DB"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="46f4acaf-fa6c-453e-ae5c-479466f14fad"
-					variablename="Ziel_DB">
-					</var>
-				</databinding>
 			</testmodule>
 			<setup
 			id="e352ea9d-41ea-456d-8f82-75b88f62fe27"
@@ -711,6 +612,10 @@
 					value="rs2dbtalk">
 					</param>
 					<param
+					name="Firmenherkunft_Sachkonto"
+					value="">
+					</param>
+					<param
 					name="Quell_DB"
 					value="">
 					</param>
@@ -725,6 +630,10 @@
 					<param
 					name="Ziel_Firma"
 					value="250">
+					</param>
+					<param
+					name="Firmenherkunft_Skontogruppe"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -781,46 +690,6 @@
 							<testmodule
 							id="c26d23b8-c4d6-44fa-9f66-aa4a22072798"
 							name="CloseAUT">
-							</testmodule>
-						</teardown>
-					</testcase>
-					<testcase
-					id="291d4209-6a44-4dfe-acc2-787e539b3bca"
-					name="Kontrolle_SQL_funktioniert_nicht_disabled">
-						<setup
-						id="710ee654-c629-49a2-a367-f81c599039f6"
-						name="setup">
-							<testmodule
-							id="7a5f7ee6-78d2-4490-85c7-5a0d59f64cd9"
-							name="StartDBTalk">
-							</testmodule>
-						</setup>
-						<testmodule
-						id="db86d232-fc42-4337-ac02-c779bd930fc7"
-						name="Connect_herstellen">
-						</testmodule>
-						<testmodule
-						id="3d88d24e-2692-4abc-86d9-ea71dc05beb6"
-						name="Select_B_SKGR_3rows">
-						</testmodule>
-						<testmodule
-						id="8e83f34e-c006-44b6-ad7f-f926830dd2ae"
-						name="Select_B_KTO_39rows">
-						</testmodule>
-						<testmodule
-						id="54a58b58-d1bb-4f2c-857c-6894d89252a9"
-						name="Select_B_BUSY_0rows">
-						</testmodule>
-						<teardown
-						id="d7c794c1-c5c6-45f2-97bd-d1eb7f18e8ac"
-						name="teardown">
-							<testmodule
-							id="7a13c103-8622-4e89-9464-90e1b0998fc7"
-							name="Disconnect_all">
-							</testmodule>
-							<testmodule
-							id="29f1775b-ca76-41bc-88b8-afa3aec59bb3"
-							name="CloseDBTalk">
 							</testmodule>
 						</teardown>
 					</testcase>

@@ -26,6 +26,20 @@ mode="Global">
 	namespace="B_SCOPY_001.Recordings_B_KTO_200_250">
 	</codegen>
 	<variables>
+		<var
+		id="38350002-cb2d-495d-8d3c-d903b791a935"
+		name="Firmenherkunft_Skontogruppe">
+		</var>
+		<var
+		id="94b0a4ae-27de-4338-9069-9c7f3c5cfc53"
+		name="Quell_Firma">
+			200
+		</var>
+		<var
+		id="b906362c-ecd0-41c4-8f67-6cdb25fa2366"
+		name="Ziel_Firma">
+			250
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -4058,19 +4072,73 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeContains"
+		action="AttributeEqual"
 		enabled="True"
-		optional="True"
-		searchpropertyid="157e8303-fc88-4467-9c4b-5231196fd2ca">
+		optional="False"
+		searchpropertyid="c71a4b3d-17f6-433e-bf1c-e962ad75e22c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="7a518abb-4993-43d6-ac6c-6ce0eb83a807"
+			id="281cd75a-4880-4929-9e81-8670559fe3a9"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="2"
+				prefcap="cell"
+				rect="1061,406,63,22"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						$RLG
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSkgr_cd Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						$RLG
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colSkgr_cd Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4079,23 +4147,77 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				S;;0	$RLG	theor. Skonto
+				$RLG
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeContains"
+		action="AttributeEqual"
 		enabled="True"
-		optional="True"
-		searchpropertyid="99993ed7-21a4-4c5e-ba0c-a3a06dc9889a">
+		optional="False"
+		searchpropertyid="b547aea7-b677-4b35-815b-f3779a58d02e">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="13c2e9b2-5e73-470e-8e6c-0f25d34f4355"
+			id="4e224d16-fca8-4eca-b780-c9d63fd190ca"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="cell"
+				rect="1124,406,300,22"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						theor. Skonto
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSkgr_bez Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						theor. Skonto
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colSkgr_bez Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4104,23 +4226,221 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				&#9;S;;0	4	Kundenskonto (Klasse 4)
+				theor. Skonto
+			</matchvalue>
+		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="44a0dd90-8a16-460a-9de8-7401812f9c1f"
+		varname="Firmenherkunft_Skontogruppe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="47fd8712-0266-42d1-82a3-15fe76d7eaf1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename&gt;'colSkgr_firm_nr_origin Row']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateVar1Var2"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9785d6fc-9133-473e-8387-6862c45c3bb0">
+				<argument
+				argname="variable"
+				id="32129a24-1275-4b1a-9253-a0be68514f90"
+				variable="Firmenherkunft_Skontogruppe">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var1"
+				id="97e0f6b1-39a3-451a-8e15-0889fbb8fafa"
+				variable="Quell_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="c811be72-c1cd-4a88-af2b-99913bbc7772"
+				variable="Ziel_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b8f7bf58-436a-4283-9a36-edf47c5e1367">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3b11e551-3b2a-4f61-af15-8040638a757a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="2"
+				prefcap="cell"
+				rect="1061,428,63,22"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						4
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSkgr_cd Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						4
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colSkgr_cd Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				4
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeContains"
+		action="AttributeEqual"
 		enabled="True"
-		optional="True"
-		searchpropertyid="0494d049-e65b-4211-9c62-7e44545c29a5">
+		optional="False"
+		searchpropertyid="c20f092c-6af3-4b8b-99e8-63c082fe215a">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="27747543-43e6-422b-bba9-bd6500d9d854"
+			id="102d4608-f052-4842-8b63-85adcf162ff2"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="cell"
+				rect="1124,428,300,22"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Kundenskonto (Klasse 4)
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSkgr_bez Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						Kundenskonto (Klasse 4)
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colSkgr_bez Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4129,9 +4449,297 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				&#9;S;;0	5	Lieferantenskonto (Klasse 5)
+				Kundenskonto (Klasse 4)
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="44a0dd90-8a16-460a-9de8-7401812f9c1f"
+		varname="Firmenherkunft_Skontogruppe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7313aa3e-9e97-4c2a-93e7-6682e7b0a6b6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename&gt;'colSkgr_firm_nr_origin Row']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateVar1Var2"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9785d6fc-9133-473e-8387-6862c45c3bb0">
+				<argument
+				argname="variable"
+				id="32129a24-1275-4b1a-9253-a0be68514f90"
+				variable="Firmenherkunft_Skontogruppe">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var1"
+				id="97e0f6b1-39a3-451a-8e15-0889fbb8fafa"
+				variable="Quell_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="c811be72-c1cd-4a88-af2b-99913bbc7772"
+				variable="Ziel_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0e0d2b74-628c-4d27-a872-da550c9286e4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4fca7711-2d16-42cc-8df1-9f0a6fe73cb4"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="2"
+				prefcap="cell"
+				rect="1061,450,63,22"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						5
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSkgr_cd Row 3
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						5
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colSkgr_cd Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				5
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e4ec0ebd-7298-4fbe-b448-2ebd0a34fb31">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b2ebae07-4226-4971-916f-04366746a29f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="cell"
+				rect="1124,450,300,22"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Lieferantenskonto (Klasse 5)
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSkgr_bez Row 3
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						Lieferantenskonto (Klasse 5)
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colSkgr_bez Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Lieferantenskonto (Klasse 5)
+			</matchvalue>
+		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="44a0dd90-8a16-460a-9de8-7401812f9c1f"
+		varname="Firmenherkunft_Skontogruppe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0da0cab5-ae99-416c-bcc0-4f51cd2089d2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiSkt']/container[@controlname='ClientArea']//container[@controlname='tblSkgr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename&gt;'colSkgr_firm_nr_origin Row']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateVar1Var2"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9785d6fc-9133-473e-8387-6862c45c3bb0">
+				<argument
+				argname="variable"
+				id="32129a24-1275-4b1a-9253-a0be68514f90"
+				variable="Firmenherkunft_Skontogruppe">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var1"
+				id="97e0f6b1-39a3-451a-8e15-0889fbb8fafa"
+				variable="Quell_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="c811be72-c1cd-4a88-af2b-99913bbc7772"
+				variable="Ziel_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<keyitem
 		action="Press"
 		data="F4, Alt"

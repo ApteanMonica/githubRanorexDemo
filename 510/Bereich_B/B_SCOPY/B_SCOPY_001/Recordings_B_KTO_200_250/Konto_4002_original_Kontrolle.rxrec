@@ -28,11 +28,20 @@ mode="Global">
 		name="Quell_Firma">
 			200
 		</var>
+		<var
+		id="50398ca3-da29-4958-a7d7-72a7e5b56880"
+		name="Firmenherkunft_Sachkonto">
+		</var>
+		<var
+		id="d5bb13bc-576d-4859-bd88-4c4f67d0657d"
+		name="Ziel_Firma">
+			250
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="True"
 		searchpropertyid="b81def82-35f4-4d14-ad3d-4cf9957b51b8">
 			<comment>
@@ -98,6 +107,71 @@ mode="Global">
 				200
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="04a6610f-d1eb-45a1-9c70-4fd833e4c0a7"
+		varname="Firmenherkunft_Sachkonto">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0446efe3-e9c6-439b-b85c-c5c6af11ef6d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfFirm_nr_origin']/text[@accessiblename='Firmenherkunft']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateVar1Var2"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7a8d6fc6-03e8-42db-a11f-7d6595e2aa1c">
+				<argument
+				argname="variable"
+				id="2db8d360-1d87-4263-9bff-e1abdca389ca"
+				variable="Firmenherkunft_Sachkonto">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var1"
+				id="b0f75022-1a10-4757-a456-47881ba877a8"
+				variable="Quell_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="ba06abcb-e3ff-4200-a6c2-1557414e178f"
+				variable="Ziel_Firma">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
