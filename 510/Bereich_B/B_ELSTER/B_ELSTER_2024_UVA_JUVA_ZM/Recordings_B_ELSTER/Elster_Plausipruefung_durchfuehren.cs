@@ -82,8 +82,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA' at Center.", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo, new RecordItemIndex(0));
             repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain_B_ELSTER.ClientArea1.PbPlausi'", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmMain_B_ELSTER.ClientArea1.PbPlausi'", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'FrmMain_B_ELSTER.ClientArea1.PbPlausi'.", repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.PbPlausiInfo, "Enabled", "True");

@@ -85,8 +85,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ELSTER-Schnittstelle') on item 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA1'.", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA1Info, new RecordItemIndex(1));
             Validate.AttributeContains(repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA1Info, "Text", "ELSTER-Schnittstelle");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to not exist. Associated repository item: 'Hinweis.Text65535_Meldung_Testuebermittlung'", repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo, new ActionTimeout(180000), new RecordItemIndex(2));
-            repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo.WaitForNotExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis.Text65535_Meldung_Testuebermittlung'", repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo, new ActionTimeout(300000), new RecordItemIndex(2));
+            repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo.WaitForNotExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain_B_ELSTER.ClientArea1.CbTest'.", repo.FrmMain_B_ELSTER.ClientArea1.CbTestInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea1.CbTestInfo, "Checked", "True");
