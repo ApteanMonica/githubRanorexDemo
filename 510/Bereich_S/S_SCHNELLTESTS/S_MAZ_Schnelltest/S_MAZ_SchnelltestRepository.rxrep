@@ -1,0 +1,271 @@
+﻿<repository
+id="752c4ff3-a823-40fb-a39b-e1bb80054451"
+name="S_MAZ_SchnelltestRepository">
+	<codegen
+	classname="S_MAZ_SchnelltestRepository"
+	namespace="S_MAZ_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="f8b57c15-27b8-4986-a2aa-b7353ac77cb1"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="54b30a96-ee05-475d-904e-ab81ed7f243a"
+		isrooted="True"
+		name="TblMaza"
+		refimgid="9878e7a1-932a-49be-9b1a-308009247bc0"
+		refpath="/form[@controlname='tblMaza']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="2d24944a-df25-426c-a6a2-a351967e3385"
+			name="TitleBar100MaterialZuschlagsarten"
+			refimgid="683cc357-b894-4a3a-9fe6-eaf59516532b"
+			refpath="/form[@controlname='tblMaza']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblMaza']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<folder
+			capname="container"
+			id="b591b424-1b1b-4b9a-b4ac-3de106f5908d"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="6f981e2e-2c06-4403-afb0-58d759e4e3a7"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="3df29db8-9681-4257-98e5-8fcf1b3f7c6e"
+				name="PbDataAccessNew"
+				refimgid="fb8a118a-73bb-43cd-863d-f6c0cd514a93"
+				refpath="/form[@controlname='tblMaza']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblMaza']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="9ed53a62-11e4-425d-8c33-ca7ca2aadfef"
+				name="PbDataAccessSave"
+				refimgid="3fe504ff-2008-4599-8454-259e3a8494b6"
+				refpath="/form[@controlname='tblMaza']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblMaza']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="f3692e91-1e68-4400-b366-420c0bdfb2b3"
+				name="PbDataAccessLoad"
+				refimgid="e6dde123-272a-4bc9-b1e7-71b6a25066e6"
+				refpath="/form[@controlname='tblMaza']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblMaza']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+				</item>
+				<basepath>
+					/form[@controlname='tblMaza']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="5a27b032-8627-44bf-9813-fab4a72d206e"
+			isrooted="True"
+			name="FlexGrid"
+			refimgid="f3fc45ff-1a42-4d21-a469-6a38b2fcae94"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="row"
+				id="a4cd2140-ff00-42a8-a93d-782f623c56f2"
+				isrooted="True"
+				name="Row_mit_Variable_Zuschlagsart_Neu"
+				refimgid="a872127a-7ec0-4dfb-bf35-cfe95987ed53"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="d17d6c9e-c1e6-4bdc-9ff1-47d91f374070"
+					name="ColMazaCd"
+					refimgid="813152bb-e811-4766-8a68-4f447ce034f5"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Material_Zuschlagsart_Neu]/cell[@accessiblename~'colMaza_cd ']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="7dcd6ed9-45a2-48a1-9fbb-357a95fca79b"
+					name="ColMazaBez"
+					refimgid="7a4fd2a3-23a6-4409-a6df-6d80f0f298bb"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Material_Zuschlagsart_Neu]/cell[@accessiblename~'colMaza_bez']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="fcc85e33-b1da-4875-87d7-03ba195a47d7"
+					name="ColMazaAnteh"
+					refimgid="78298b2d-41e6-40ed-8b24-9f9ae3fb457d"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Material_Zuschlagsart_Neu]/cell[@accessiblename~'colMaza_anteh']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="3e6bfb0f-0be4-4967-a36d-24d9f8e9ffd1"
+					name="ColArtNrVerr"
+					refimgid="5c01cce4-6a14-4c24-b224-b53a4e3543a4"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Material_Zuschlagsart_Neu]/cell[@accessiblename~'colArt_nr_verr']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="6d9fe6c0-7a20-4358-81c7-20110a53e0de"
+					name="ColArtBez2"
+					refimgid="6e38972c-c7c8-4413-aeb7-32e17c3c6884"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Material_Zuschlagsart_Neu]/cell[@accessiblename~'colArt_bez2']
+					</item>
+					<basepath>
+						/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Material_Zuschlagsart_Neu]
+					</basepath>
+				</folder>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b2e3d39a-6d91-46f0-b72c-4e87bbc8d921"
+				name="Row1Column0"
+				refimgid="4e7024cd-0e88-48e5-b2d0-20e0ee224fba"
+				refpath="/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+				</item>
+				<basepath>
+					/form[@controlname='tblMaza']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='tblMaza']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,control,nativewindow"
+		capname="contextmenu"
+		id="21a443a0-a9ff-4f93-b51d-78418645690d"
+		isrooted="True"
+		name="SMAZ"
+		refpath="/contextmenu[@processname='S_MAZ']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="772e1da2-6e7f-4ec0-84ee-218e17465a94"
+			name="ZeileEinfuegen"
+			refimgid="59481be8-f3ef-4221-8757-0818072dde06"
+			refpath="/contextmenu[@processname='S_MAZ']/menuitem[@name='Zeile einfügen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='S_MAZ']/menuitem[@name='Zeile einfügen']
+			</item>
+			<basepath>
+				/contextmenu[@processname='S_MAZ']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="35cb0373-8850-4e4a-8c46-4e1e890b6083"
+		name="Material_Zuschlagsart_Neu">
+			X
+		</var>
+	</variables>
+</repository>

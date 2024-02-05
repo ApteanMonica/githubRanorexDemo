@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="29eaaaf4-a0ce-4a6c-8732-a713a5ea0c15"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_MAZ_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9a317a5c-9a91-47c0-9c03-b2e39384cc5e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2d24944a-df25-426c-a6a2-a351967e3385"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMaza']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="752c4ff3-a823-40fb-a39b-e1bb80054451"
+	name="S_MAZ_SchnelltestRepository"
+	relativepath="..\S_MAZ_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_MAZ_SchnelltestRepository"
+		namespace="S_MAZ_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="f8b57c15-27b8-4986-a2aa-b7353ac77cb1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a9554d1b-b570-41f3-8a96-9e132acb132e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_MEH_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="be060ff6-1ccb-4a98-8600-8bd79feabd59">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="330d8911-6182-48ed-9840-4526e46e71da"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMeh']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="6e8bcb95-4adb-4623-92fe-2038a378c502"
+	name="S_MEH_SchnelltestRepository"
+	relativepath="..\S_MEH_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_MEH_SchnelltestRepository"
+		namespace="S_MEH_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="25a2ac80-2911-4586-9921-609076cb31ac"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

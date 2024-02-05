@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9365e3ca-f76c-408e-96bd-cfd83f3c631b"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_GFG.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="f3367fd1-fd3d-4274-be6a-06105bb5eef9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="050789ed-938d-467a-8ce9-09df0f81590b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblGefahrengutstoffe']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d50f6ebf-aee3-425f-80a8-14be9d9fa8e5"
+	name="S_GFGRepository"
+	relativepath="..\S_GFGRepository.rxrep">
+		<codegen
+		classname="S_GFGRepository"
+		namespace="S_GFG">
+		</codegen>
+		<rootfolder
+		id="e5bc9556-be62-4010-9237-0f9878cb2516"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
