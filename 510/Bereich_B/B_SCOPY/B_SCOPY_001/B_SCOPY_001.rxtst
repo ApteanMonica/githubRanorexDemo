@@ -44,14 +44,14 @@
 			ref="0d6aabf5-870f-40c5-8b6e-7bfaa02286f5"
 			type="Recording">
 				<description>
-					<![CDATA[ab 530 Firmenherkunft=Zielfirma BUG 68159 wird nicht korrigiert]]>
+					<![CDATA[ab 530 Firmenherkunft=Zielfirma statt Quellfirma (BUG 68159 wird nicht korrigiert)]]>
 				</description>
 				<databinding>
 					<var
-					dataname="Firmenherkunft_Sachkonto"
+					dataname="Ziel_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="50398ca3-da29-4958-a7d7-72a7e5b56880"
-					variablename="Firmenherkunft_Sachkonto">
+					variableid="d5bb13bc-576d-4859-bd88-4c4f67d0657d"
+					variablename="Ziel_Firma">
 					</var>
 					<var
 					dataname="Quell_Firma"
@@ -60,10 +60,10 @@
 					variablename="Quell_Firma">
 					</var>
 					<var
-					dataname="Ziel_Firma"
+					dataname="Firmenherkunft_Sachkonto"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="d5bb13bc-576d-4859-bd88-4c4f67d0657d"
-					variablename="Ziel_Firma">
+					variableid="50398ca3-da29-4958-a7d7-72a7e5b56880"
+					variablename="Firmenherkunft_Sachkonto">
 					</var>
 				</databinding>
 			</testmodule>
@@ -336,14 +336,14 @@
 			ref="6ba12ccd-e328-4253-bcf1-695845c23318"
 			type="Recording">
 				<description>
-					<![CDATA[ab 530 Firmenherkunft=Zielfirma BUG 68159 wird nicht korrigiert]]>
+					<![CDATA[Prüfung Firmenherkunft disabled: ab 530 Firmenherkunft=Zielfirma BUG 68159 wird nicht korrigiert, 510+511: keine Firmenherkuft]]>
 				</description>
 				<databinding>
 					<var
-					dataname="Quell_Firma"
+					dataname="Firmenherkunft_Skontogruppe"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="94b0a4ae-27de-4338-9069-9c7f3c5cfc53"
-					variablename="Quell_Firma">
+					variableid="38350002-cb2d-495d-8d3c-d903b791a935"
+					variablename="Firmenherkunft_Skontogruppe">
 					</var>
 					<var
 					dataname="Ziel_Firma"
@@ -352,10 +352,10 @@
 					variablename="Ziel_Firma">
 					</var>
 					<var
-					dataname="Firmenherkunft_Skontogruppe"
+					dataname="Quell_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="38350002-cb2d-495d-8d3c-d903b791a935"
-					variablename="Firmenherkunft_Skontogruppe">
+					variableid="94b0a4ae-27de-4338-9069-9c7f3c5cfc53"
+					variablename="Quell_Firma">
 					</var>
 				</databinding>
 			</testmodule>
@@ -370,16 +370,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="575b804a-2e9e-4501-a24f-984976ef3d53"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm2_200"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
 					variableid="78e0813e-8206-443b-8915-1b1d75d2c447"
 					variablename="Programm2_200">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="575b804a-2e9e-4501-a24f-984976ef3d53"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -522,7 +522,22 @@
 			name="Konto_4002_geaendert_Kontrolle"
 			ref="ab5b21dc-95b4-4725-8b29-55fb086e59c5"
 			type="Recording">
+				<description>
+					<![CDATA[ab 530 Firmenherkunft=Zielfirma statt Quellfirma (BUG 68159 wird nicht korrigiert)]]>
+				</description>
 				<databinding>
+					<var
+					dataname="Firmenherkunft_Sachkonto"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="ec21dc3f-4af6-485f-b801-b30c7b17067e"
+					variablename="Firmenherkunft_Sachkonto">
+					</var>
+					<var
+					dataname="Quell_Firma"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="e3aaabf7-23bd-4f12-b5f3-069c8abf16ff"
+					variablename="Quell_Firma">
+					</var>
 					<var
 					dataname="Ziel_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
@@ -544,16 +559,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
-					variableid="575b804a-2e9e-4501-a24f-984976ef3d53"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm2_200"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
 					variableid="78e0813e-8206-443b-8915-1b1d75d2c447"
 					variablename="Programm2_200">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="575b804a-2e9e-4501-a24f-984976ef3d53"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -567,6 +582,18 @@
 			ref="ab5b21dc-95b4-4725-8b29-55fb086e59c5"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Firmenherkunft_Sachkonto"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="ec21dc3f-4af6-485f-b801-b30c7b17067e"
+					variablename="Firmenherkunft_Sachkonto">
+					</var>
+					<var
+					dataname="Quell_Firma"
+					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
+					variableid="e3aaabf7-23bd-4f12-b5f3-069c8abf16ff"
+					variablename="Quell_Firma">
+					</var>
 					<var
 					dataname="Ziel_Firma"
 					datasourceid="f88c3e9b-5480-482e-a1a4-cbd892cfa6bb"
