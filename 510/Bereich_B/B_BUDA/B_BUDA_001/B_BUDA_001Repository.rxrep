@@ -84,17 +84,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="e639bbc1-1076-4a53-ae36-bb67e3a2197b"
-			name="TitleBar100Dialogbuchung"
-			refimgid="7160aae8-b93e-4724-bca4-ac7f6ed7a4dc"
-			refpath="/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="d2784800-341d-4090-92c0-cb32dc788453"
@@ -103,16 +92,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='mdiBuch']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbStandard2']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="ea7fefa7-1aee-44d9-a258-c26c77f4ee90"
-			name="PbStandard7"
-			refimgid="96536d28-6b57-416c-b8f7-4ca44b9eabe8"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='mdiBuch']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup3']/button[@controlname='pbStandard7']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -342,6 +321,110 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 					/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']
 				</basepath>
 			</folder>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="e639bbc1-1076-4a53-ae36-bb67e3a2197b"
+			name="TitleBar100Dialogbuchung"
+			refimgid="7160aae8-b93e-4724-bca4-ac7f6ed7a4dc"
+			refpath="/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="ea7fefa7-1aee-44d9-a258-c26c77f4ee90"
+			name="PbStandard7"
+			refimgid="96536d28-6b57-416c-b8f7-4ca44b9eabe8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup3']/button[@controlname='pbStandard7']
+			</item>
+			<item
+			addcaps="row,accessible"
+			capname="row"
+			id="8a609bc0-9b9f-4b3a-b82f-555a83313357"
+			name="Row1"
+			refimgid="4b562b7b-0870-42f4-a7bd-7e3ee87249f9"
+			refpath="/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="cell"
+			id="01bfcfed-87ae-4bef-94c5-5ffc5996195c"
+			name="colBube_betragRow1"
+			refimgid="818e5802-a102-4bd6-a589-3baca2210f6f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_betrag Row 1']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="96471152-5674-44f9-8342-f2760553c243"
+			name="ColBubeBektnr1Row1"
+			refimgid="e0197cbe-36af-4b5b-a70f-614de4ddba38"
+			refpath="/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_bektnr1 Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_bektnr1 Row 1']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="ac858ff3-e2b7-4799-9b61-455c074c1a77"
+			name="ColBezRow1"
+			refimgid="fb0939d4-5e53-419a-9cec-9652c67e0ed9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBez Row 1']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="cell"
+			id="2fe0df77-4e61-413e-bcd3-76368b842fb4"
+			name="colBube_betragRow2"
+			refimgid="818e5802-a102-4bd6-a589-3baca2210f6f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBube_betrag Row 2']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="729a8e46-ee8c-4ff5-8edb-465c12f97dd5"
+			name="ColBubeBektnr1Row2"
+			refimgid="e0197cbe-36af-4b5b-a70f-614de4ddba38"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBube_bektnr1 Row 2']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="cc00e87b-9161-4119-afe0-4e7ced871fc8"
+			name="ColBezRow2"
+			refimgid="d2f80ad1-95ff-4017-8ed2-3c6ab190e5db"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBez Row 2']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="f01212b6-a2a9-441b-b9bc-99523d65b576"
+			name="FlexGrid_Bereichsaufteilung"
+			refimgid="437aa5e1-674a-43eb-b62a-9844c14079ca"
+			refpath="/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+			</item>
 			<folder
 			capname="table"
 			id="edcaec12-f481-4dca-a78b-54fb613e1fec"
@@ -350,76 +433,15 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				addcaps="row,accessible"
-				capname="row"
-				id="8a609bc0-9b9f-4b3a-b82f-555a83313357"
-				name="Row1"
-				refimgid="4b562b7b-0870-42f4-a7bd-7e3ee87249f9"
-				refpath="/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="cell"
-				id="01bfcfed-87ae-4bef-94c5-5ffc5996195c"
-				name="colBube_betragRow1"
-				refimgid="818e5802-a102-4bd6-a589-3baca2210f6f"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_betrag Row 1']
-				</item>
-				<item
 				addcaps="cell,accessible"
 				capname="cell"
-				id="96471152-5674-44f9-8342-f2760553c243"
-				name="ColBubeBektnr1Row1"
-				refimgid="e0197cbe-36af-4b5b-a70f-614de4ddba38"
-				refpath="/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_bektnr1 Row 1']"
+				id="f03e60a2-e824-42b6-8481-377d5294e02c"
+				name="ColBubeProzentRow1"
+				refimgid="f5a305db-f667-4270-afd9-e0ea6e06e55e"
+				refpath="/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_prozent Row 1']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_bektnr1 Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="ac858ff3-e2b7-4799-9b61-455c074c1a77"
-				name="ColBezRow1"
-				refimgid="fb0939d4-5e53-419a-9cec-9652c67e0ed9"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBez Row 1']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="cell"
-				id="2fe0df77-4e61-413e-bcd3-76368b842fb4"
-				name="colBube_betragRow2"
-				refimgid="818e5802-a102-4bd6-a589-3baca2210f6f"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBube_betrag Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="729a8e46-ee8c-4ff5-8edb-465c12f97dd5"
-				name="ColBubeBektnr1Row2"
-				refimgid="e0197cbe-36af-4b5b-a70f-614de4ddba38"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBube_bektnr1 Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="cc00e87b-9161-4119-afe0-4e7ced871fc8"
-				name="ColBezRow2"
-				refimgid="d2f80ad1-95ff-4017-8ed2-3c6ab190e5db"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBez Row 2']
+					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_prozent Row 1']
 				</item>
 				<basepath>
 					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
