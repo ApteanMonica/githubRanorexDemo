@@ -4,55 +4,8 @@
 		<flatlistofchildren>
 			<testcase
 			id="0dba22a2-f2c9-4e32-b16d-a2d0daf23c6d"
-			name="TestCase">
+			name="neues_Sachkonto_anlegen">
 			</testcase>
-			<testmodule
-			enabled="False"
-			id="11af91b3-f418-41b6-ad52-09cfa423f993"
-			name="Start_B_KTO_WFK_Startdaten_AEKOOE"
-			ref="3be7e846-6fe1-4fc5-9831-cad763f49834"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programm"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="84f3f3e3-d421-4062-95e1-14011082ce16"
-					variablename="Programm">
-					</var>
-					<var
-					dataname="Startfile_AEKOOE"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="a8b708dc-0593-45b9-b45f-d87d2ccd3118"
-					variablename="Startfile_AEKOOE">
-					</var>
-					<var
-					dataname="Mandant"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="7e7bc552-4303-4cee-944f-4b829993d320"
-					variablename="Mandant">
-					</var>
-					<var
-					dataname="Programm_RANO_Aufrufparameter"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="2c8d7017-2367-4d26-92dd-6748c39f2b16"
-					variablename="Programm_RANO_Aufrufparameter">
-					</var>
-				</databinding>
-				<missingdatabinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="be6a4f20-f85e-40f6-8029-59ca9a8784b2"
-					variablename="StartAutProcessIDVar">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="4b26eaee-0fe1-46d5-a8d7-008407e237c1"
-					variablename="Startfile">
-					</var>
-				</missingdatabinding>
-			</testmodule>
 			<testmodule
 			id="14959304-47d3-4390-8241-67d20387b387"
 			name="Workplace_Ausfuehren_B_KTO"
@@ -72,6 +25,27 @@
 					dataname="Mandant"
 					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
 					variableid="f461b4ea-132e-4692-9f6b-55486a3fbb6f"
+					variablename="Mandant">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="22ccc784-8bc1-4746-a77b-56cecb1f0f11"
+			name="Workplace_Ausfuehren_B_KTO_Aufrufparameter"
+			ref="d8d19c2b-2c60-4cf9-abc6-8bc5b5cd3927"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_RS_Aufrufparameter"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="00731b1f-bff7-4bb3-8687-a363349a7e27"
+					variablename="Programm_RS_Aufrufparameter">
+					</var>
+					<var
+					dataname="Mandant"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="ee738502-b7d6-423e-8d43-b5f7c828ccda"
 					variablename="Mandant">
 					</var>
 				</databinding>
@@ -159,22 +133,59 @@
 			</testcase>
 			<testmodule
 			enabled="False"
-			id="9ea413f6-9aeb-465a-9a8d-558390ff47b4"
+			id="977e28df-756c-4542-9d9b-5e103d5d1a53"
+			name="Start_B_KTO_WFK_Startdaten_AEKOOE"
+			ref="3be7e846-6fe1-4fc5-9831-cad763f49834"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile_AEKOOE"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="a8b708dc-0593-45b9-b45f-d87d2ccd3118"
+					variablename="Startfile_AEKOOE">
+					</var>
+					<var
+					dataname="Programm_RANO_Aufrufparameter"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="2c8d7017-2367-4d26-92dd-6748c39f2b16"
+					variablename="Programm_RANO_Aufrufparameter">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="84f3f3e3-d421-4062-95e1-14011082ce16"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Mandant"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="7e7bc552-4303-4cee-944f-4b829993d320"
+					variablename="Mandant">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="a7d236e4-68f2-4dd3-898b-ae0ed2c8abac"
+			name="setup">
+			</setup>
+			<testmodule
+			enabled="False"
+			id="bd149ec0-ef4c-43f1-982c-4b457ac93c41"
 			name="Start_B_KTO_ohne_Startdaten"
 			ref="d2ce2bc6-1a88-4b33-bbff-030e7c28dfb3"
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Programm"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="e9b0241e-d67f-4b30-91cd-72abf4c60034"
+					variablename="Programm">
+					</var>
+					<var
 					dataname="Programmpfad"
 					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
 					variableid="c2613d52-f76c-48db-947d-e5452b2cd778"
 					variablename="Programmpfad">
-					</var>
-					<var
-					dataname="Benutzer"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="1a937c78-6692-4b71-b349-944ff2e1a145"
-					variablename="Benutzer">
 					</var>
 					<var
 					dataname="Mandant"
@@ -183,48 +194,16 @@
 					variablename="Mandant">
 					</var>
 					<var
+					dataname="Benutzer"
+					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
+					variableid="1a937c78-6692-4b71-b349-944ff2e1a145"
+					variablename="Benutzer">
+					</var>
+					<var
 					dataname="Kennwort"
 					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
 					variableid="d5b0ad04-8a62-436b-8a2c-116ae15bd582"
 					variablename="Kennwort">
-					</var>
-					<var
-					dataname="Programm"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="e9b0241e-d67f-4b30-91cd-72abf4c60034"
-					variablename="Programm">
-					</var>
-				</databinding>
-				<missingdatabinding>
-					<var
-					dataname="Startfile"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="c6315b96-97f4-4e51-b5e3-3dcc87745571"
-					variablename="Startfile">
-					</var>
-				</missingdatabinding>
-			</testmodule>
-			<setup
-			id="a7d236e4-68f2-4dd3-898b-ae0ed2c8abac"
-			name="setup">
-			</setup>
-			<testmodule
-			id="dfefa73d-705f-4709-b837-1001a48fa976"
-			name="Workplace_Ausfuehren_B_KTO_Aufrufparameter"
-			ref="d8d19c2b-2c60-4cf9-abc6-8bc5b5cd3927"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programm_RS_Aufrufparameter"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="00731b1f-bff7-4bb3-8687-a363349a7e27"
-					variablename="Programm_RS_Aufrufparameter">
-					</var>
-					<var
-					dataname="Mandant"
-					datasourceid="858580ce-8685-4671-b73a-53f2fbd3869c"
-					variableid="ee738502-b7d6-423e-8d43-b5f7c828ccda"
-					variablename="Mandant">
 					</var>
 				</databinding>
 			</testmodule>
@@ -238,25 +217,25 @@
 				name="AEKOOE_B_KTO">
 					<testcase
 					id="0dba22a2-f2c9-4e32-b16d-a2d0daf23c6d"
-					name="TestCase">
+					name="neues_Sachkonto_anlegen">
 						<setup
 						id="a7d236e4-68f2-4dd3-898b-ae0ed2c8abac"
 						name="setup">
 							<testmodule
-							id="11af91b3-f418-41b6-ad52-09cfa423f993"
-							name="Start_B_KTO_WFK_Startdaten_AEKOOE">
+							id="14959304-47d3-4390-8241-67d20387b387"
+							name="Workplace_Ausfuehren_B_KTO">
 							</testmodule>
 							<testmodule
-							id="9ea413f6-9aeb-465a-9a8d-558390ff47b4"
+							id="bd149ec0-ef4c-43f1-982c-4b457ac93c41"
 							name="Start_B_KTO_ohne_Startdaten">
 							</testmodule>
 							<testmodule
-							id="dfefa73d-705f-4709-b837-1001a48fa976"
-							name="Workplace_Ausfuehren_B_KTO_Aufrufparameter">
+							id="977e28df-756c-4542-9d9b-5e103d5d1a53"
+							name="Start_B_KTO_WFK_Startdaten_AEKOOE">
 							</testmodule>
 							<testmodule
-							id="14959304-47d3-4390-8241-67d20387b387"
-							name="Workplace_Ausfuehren_B_KTO">
+							id="22ccc784-8bc1-4746-a77b-56cecb1f0f11"
+							name="Workplace_Ausfuehren_B_KTO_Aufrufparameter">
 							</testmodule>
 						</setup>
 						<teardown

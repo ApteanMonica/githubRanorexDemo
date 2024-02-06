@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="650049b8-291f-45b1-b8d1-eb5f926bc175"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_C_CRM"
+	namespace="AEKOOE_C_CRM_Beitragsmodifikation.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="fab54420-f8d1-4e1e-909f-4d16ceb77b8e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b293e9c1-0cd3-488c-ae68-85d44ced928c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiCRM']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="3f349d1b-d3f3-45e0-a5ce-17d585f5be66"
+	name="AEKOOE_C_CRM_BeitragsmodifikationRepository"
+	relativepath="..\AEKOOE_C_CRM_BeitragsmodifikationRepository.rxrep">
+		<codegen
+		classname="AEKOOE_C_CRM_BeitragsmodifikationRepository"
+		namespace="AEKOOE_C_CRM_Beitragsmodifikation">
+		</codegen>
+		<rootfolder
+		id="a512a7ea-e05d-4f27-a722-77bae13336a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_C_CRM.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
