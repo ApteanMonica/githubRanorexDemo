@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace AEKOOE_C_CRM_Beitragsmodifikation
+namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
-    public partial class DEB_NR_auswaehlen
+    public partial class Beitragsmodifikationen_ohne_geloeschte_aufrufen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

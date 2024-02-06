@@ -24,29 +24,29 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The aktive_Beitragsmodifikationen_aufrufen recording.
+    ///The Beitragsmodifikationen_ohne_geloeschte_aufrufen recording.
     /// </summary>
     [TestModule("419dd2e0-dd75-4c0b-a705-9f2dc64db2a7", ModuleType.Recording, 1)]
-    public partial class Aktive_Beitragsmodifikationen_aufrufen : ITestModule
+    public partial class Beitragsmodifikationen_ohne_geloeschte_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
         /// </summary>
         public static global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repo = global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
 
-        static Aktive_Beitragsmodifikationen_aufrufen instance = new Aktive_Beitragsmodifikationen_aufrufen();
+        static Beitragsmodifikationen_ohne_geloeschte_aufrufen instance = new Beitragsmodifikationen_ohne_geloeschte_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Aktive_Beitragsmodifikationen_aufrufen()
+        public Beitragsmodifikationen_ohne_geloeschte_aufrufen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Aktive_Beitragsmodifikationen_aufrufen Instance
+        public static Beitragsmodifikationen_ohne_geloeschte_aufrufen Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Form_Beitragsmodifikation.PbFilterActive' at Center.", repo.MdiCRM.Form_Beitragsmodifikation.PbFilterActiveInfo, new RecordItemIndex(0));
-            repo.MdiCRM.Form_Beitragsmodifikation.PbFilterActive.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Form_Beitragsmodifikation.PbFilterActiveInActiveFuture' at Center.", repo.MdiCRM.Form_Beitragsmodifikation.PbFilterActiveInActiveFutureInfo, new RecordItemIndex(0));
+            repo.MdiCRM.Form_Beitragsmodifikation.PbFilterActiveInActiveFuture.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);

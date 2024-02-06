@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace AEKOOE_C_CRM_Beitragsmodifikation
+namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation
     public partial class DEB_NR_auswaehlen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
+        /// Holds an instance of the global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
         /// </summary>
-        public static AEKOOE_C_CRM_BeitragsmodifikationRepository repo = AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
+        public static global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repo = global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
 
         static DEB_NR_auswaehlen instance = new DEB_NR_auswaehlen();
 

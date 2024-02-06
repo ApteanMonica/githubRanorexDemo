@@ -24,29 +24,29 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The pruefen_keine_aktiven_Beitragsmodifikationen recording.
+    ///The Beitragsmodifikation_pruefen_keine_Zeile_vorhanden recording.
     /// </summary>
-    [TestModule("49afb2ce-feb8-4f74-8948-65865326dad1", ModuleType.Recording, 1)]
-    public partial class pruefen_keine_aktiven_Beitragsmodifikationen : ITestModule
+    [TestModule("7d37fd1c-a62e-453c-9e20-d6a1d4d23bf5", ModuleType.Recording, 1)]
+    public partial class Beitragsmodifikation_pruefen_keine_Zeile_vorhanden : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
         /// </summary>
         public static global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repo = global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
 
-        static pruefen_keine_aktiven_Beitragsmodifikationen instance = new pruefen_keine_aktiven_Beitragsmodifikationen();
+        static Beitragsmodifikation_pruefen_keine_Zeile_vorhanden instance = new Beitragsmodifikation_pruefen_keine_Zeile_vorhanden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public pruefen_keine_aktiven_Beitragsmodifikationen()
+        public Beitragsmodifikation_pruefen_keine_Zeile_vorhanden()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static pruefen_keine_aktiven_Beitragsmodifikationen Instance
+        public static Beitragsmodifikation_pruefen_keine_Zeile_vorhanden Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'MdiCRM.Form_Beitragsmodifikation.Row1'", repo.MdiCRM.Form_Beitragsmodifikation.Row1Info, new ActionTimeout(60000), new RecordItemIndex(0));
-            repo.MdiCRM.Form_Beitragsmodifikation.Row1Info.WaitForNotExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'MdiCRM.Form_Beitragsmodifikation.Tabelle_Beitragsmodifikation.Row1'", repo.MdiCRM.Form_Beitragsmodifikation.Tabelle_Beitragsmodifikation.Row1Info, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.MdiCRM.Form_Beitragsmodifikation.Tabelle_Beitragsmodifikation.Row1Info.WaitForNotExists(60000);
             
         }
 

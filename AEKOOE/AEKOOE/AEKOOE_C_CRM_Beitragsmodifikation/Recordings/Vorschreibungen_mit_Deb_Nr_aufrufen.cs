@@ -24,30 +24,30 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Vorschreibungen_DEB_NR_aufrufen recording.
+    ///The Vorschreibungen_mit_Deb_Nr_aufrufen recording.
     /// </summary>
     [TestModule("37997705-713d-4158-a4ca-a29be22cb228", ModuleType.Recording, 1)]
-    public partial class Vorschreibungen_DEB_NR_aufrufen : ITestModule
+    public partial class Vorschreibungen_mit_Deb_Nr_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
         /// </summary>
         public static global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repo = global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
 
-        static Vorschreibungen_DEB_NR_aufrufen instance = new Vorschreibungen_DEB_NR_aufrufen();
+        static Vorschreibungen_mit_Deb_Nr_aufrufen instance = new Vorschreibungen_mit_Deb_Nr_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Vorschreibungen_DEB_NR_aufrufen()
+        public Vorschreibungen_mit_Deb_Nr_aufrufen()
         {
-            DEB_NR = "";
+            DEB_NR = "20014362";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Vorschreibungen_DEB_NR_aufrufen Instance
+        public static Vorschreibungen_mit_Deb_Nr_aufrufen Instance
         {
             get { return instance; }
         }
@@ -92,32 +92,17 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Menue_links.Button1Vorschreibungen' at Center.", repo.MdiCRM.Menue_links.Button1VorschreibungenInfo, new RecordItemIndex(0));
-            repo.MdiCRM.Menue_links.Button1Vorschreibungen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Menue_links.Button_Vorschreibungen' at Center.", repo.MdiCRM.Menue_links.Button_VorschreibungenInfo, new RecordItemIndex(0));
+            repo.MdiCRM.Menue_links.Button_Vorschreibungen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.TitleLabel_Vorschreibung'", repo.MdiCRM.TitleLabel_VorschreibungInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.MdiCRM.TitleLabel_VorschreibungInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optional'", repo.MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optionalInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optionalInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Vorschreibung') on item 'MdiCRM.TitleLabel_Vorschreibung'.", repo.MdiCRM.TitleLabel_VorschreibungInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MdiCRM.TitleLabel_VorschreibungInfo, "Text", "Vorschreibung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Vorschreibung') on item 'MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optional'.", repo.MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optionalInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optionalInfo, "Text", "Vorschreibung");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DEB_NR) on item 'MdiCRM.Form_Arzt.DebNr'.", repo.MdiCRM.Form_Arzt.DebNrInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.MdiCRM.Form_Arzt.DebNrInfo, "Text", DEB_NR);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RS2Web' at 484;107.", repo.RS2Web.SelfInfo, new RecordItemIndex(4));
-            repo.RS2Web.Self.Click("484;107");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'RS2Web' at 423;108.", repo.RS2Web.SelfInfo, new RecordItemIndex(5));
-            repo.RS2Web.Self.MoveTo("423;108");
-            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'RS2Web' at 542;110.", repo.RS2Web.SelfInfo, new RecordItemIndex(6));
-            repo.RS2Web.Self.MoveTo("542;110");
-            Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'RS2Web' at 454;171.", repo.RS2Web.SelfInfo, new RecordItemIndex(7));
-            repo.RS2Web.Self.MoveTo("454;171");
-            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             
         }
 

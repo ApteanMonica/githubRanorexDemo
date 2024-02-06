@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
-    public partial class Vorschreibungen_DEB_NR_aufrufen
+    public partial class Tagesdatum_ermitteln
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

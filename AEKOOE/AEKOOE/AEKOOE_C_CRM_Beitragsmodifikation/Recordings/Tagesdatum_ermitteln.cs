@@ -24,34 +24,47 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Beitrag_Beitragsmodifikation_aufrufen recording.
+    ///The Tagesdatum_ermitteln recording.
     /// </summary>
-    [TestModule("1e5ae5b8-2e6b-48eb-9451-35d57c0d510c", ModuleType.Recording, 1)]
-    public partial class Beitrag_Beitragsmodifikation_aufrufen : ITestModule
+    [TestModule("90954d30-4b5b-4602-b6dd-db3e636cce92", ModuleType.Recording, 1)]
+    public partial class Tagesdatum_ermitteln : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
         /// </summary>
         public static global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repo = global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
 
-        static Beitrag_Beitragsmodifikation_aufrufen instance = new Beitrag_Beitragsmodifikation_aufrufen();
+        static Tagesdatum_ermitteln instance = new Tagesdatum_ermitteln();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Beitrag_Beitragsmodifikation_aufrufen()
+        public Tagesdatum_ermitteln()
         {
+            Tagesdatum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Beitrag_Beitragsmodifikation_aufrufen Instance
+        public static Tagesdatum_ermitteln Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Tagesdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("0e89ca62-e5df-4acf-8be1-1108054f9793")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
 
 #endregion
 
@@ -79,20 +92,7 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.ButtonPb3_Beitrag' at Center.", repo.MdiCRM.ButtonPb3_BeitragInfo, new RecordItemIndex(0));
-            repo.MdiCRM.ButtonPb3_Beitrag.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.Menue_links.Button_Beitragsmodifikation'", repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Menue_links.Button_Beitragsmodifikation' at Center.", repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo, new RecordItemIndex(2));
-            repo.MdiCRM.Menue_links.Button_Beitragsmodifikation.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.TitleLabel_Beitragsmodifikation'", repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(3));
-            repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beitragsmodifikationen') on item 'MdiCRM.TitleLabel_Beitragsmodifikation'.", repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, "Text", "Beitragsmodifikationen");
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
         }
 

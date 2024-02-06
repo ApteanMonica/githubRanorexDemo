@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="49afb2ce-feb8-4f74-8948-65865326dad1"
+id="90954d30-4b5b-4602-b6dd-db3e636cce92"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,32 +19,45 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="pruefen_keine_aktiven_Beitragsmodifikationen"
+	classname="Tagesdatum_ermitteln"
 	namespace="AEKOOE_C_CRM_Beitragsmodifikation.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="0e89ca62-e5df-4acf-8be1-1108054f9793"
+		name="Tagesdatum">
+		</var>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
+		<userrecorditem
+		classname="SystemLibrary"
 		enabled="True"
-		optional="False"
-		searchpropertyid="0ccc4ae6-7193-4633-9a5e-88761cd0450f"
-		waitaction="NotExists"
-		waittimeout="60000ms">
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
 			</bindings>
-			<info
-			id="aec95656-da4f-440b-9c46-3cfb2176bd34"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiCRM']/container[@controlname='ClientArea']/container[@controlname='splitMain']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='splitContainer_0']/container[@controlname='splitterPanel_BfwFormBeitragsmodifikation']/container[@controlname='clientPanel']/form[@controlname='BfwFormBeitragsmodifikation']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
+			<arguments
+			id="65f1a139-da37-4203-9c39-1ba9406f6e26">
+				<argument
+				argname="expectedFormat"
+				id="df72a6e6-8d44-48db-93e0-0d0183b42c2c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="3f349d1b-d3f3-45e0-a5ce-17d585f5be66"
@@ -61,7 +74,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		pruefen_keine_aktiven_Beitragsmodifikationen.UserCode.cs
+		Tagesdatum_ermitteln.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -24,29 +24,29 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Beitrag_Beitragsmodifikation_aufrufen recording.
+    ///The neue_Beitragsmodifikation_anlegen_speichern_Meldung recording.
     /// </summary>
-    [TestModule("1e5ae5b8-2e6b-48eb-9451-35d57c0d510c", ModuleType.Recording, 1)]
-    public partial class Beitrag_Beitragsmodifikation_aufrufen : ITestModule
+    [TestModule("133f305d-8b90-4739-b81f-f24640fd07ad", ModuleType.Recording, 1)]
+    public partial class neue_Beitragsmodifikation_anlegen_speichern_Meldung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repository.
         /// </summary>
         public static global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository repo = global::AEKOOE_C_CRM_Beitragsmodifikation.AEKOOE_C_CRM_BeitragsmodifikationRepository.Instance;
 
-        static Beitrag_Beitragsmodifikation_aufrufen instance = new Beitrag_Beitragsmodifikation_aufrufen();
+        static neue_Beitragsmodifikation_anlegen_speichern_Meldung instance = new neue_Beitragsmodifikation_anlegen_speichern_Meldung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Beitrag_Beitragsmodifikation_aufrufen()
+        public neue_Beitragsmodifikation_anlegen_speichern_Meldung()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Beitrag_Beitragsmodifikation_aufrufen Instance
+        public static neue_Beitragsmodifikation_anlegen_speichern_Meldung Instance
         {
             get { return instance; }
         }
@@ -79,20 +79,26 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.ButtonPb3_Beitrag' at Center.", repo.MdiCRM.ButtonPb3_BeitragInfo, new RecordItemIndex(0));
-            repo.MdiCRM.ButtonPb3_Beitrag.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgWizard_Beitragsmodifikation_anlegen.PbOk' at Center.", repo.DlgWizard_Beitragsmodifikation_anlegen.PbOkInfo, new RecordItemIndex(0));
+            repo.DlgWizard_Beitragsmodifikation_anlegen.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.Menue_links.Button_Beitragsmodifikation'", repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Menue_links.Button_Beitragsmodifikation' at Center.", repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo, new RecordItemIndex(2));
-            repo.MdiCRM.Menue_links.Button_Beitragsmodifikation.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurde 1 Beitragsmodifikation neu eingefügt.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurde 1 Beitragsmodifikation neu eingefügt.");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.TitleLabel_Beitragsmodifikation'", repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(3));
-            repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(3));
+            repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beitragsmodifikationen') on item 'MdiCRM.TitleLabel_Beitragsmodifikation'.", repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, "Text", "Beitragsmodifikationen");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to not exist. Associated repository item: 'DlgWizard_Beitragsmodifikation_anlegen.TitleBarWFKBeitragsmodifikationAnlegen'", repo.DlgWizard_Beitragsmodifikation_anlegen.TitleBarWFKBeitragsmodifikationAnlegenInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.DlgWizard_Beitragsmodifikation_anlegen.TitleBarWFKBeitragsmodifikationAnlegenInfo.WaitForNotExists(60000);
+            
+            // Speichern-Button in Adressmaske (alternativ F12)
+            Report.Log(ReportLevel.Info, "Section", "Speichern-Button in Adressmaske (alternativ F12)", new RecordItemIndex(5));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Form_Arzt.PbSpeichern' at Center.", repo.MdiCRM.Form_Arzt.PbSpeichernInfo, new RecordItemIndex(6));
+            repo.MdiCRM.Form_Arzt.PbSpeichern.Click();
             
         }
 

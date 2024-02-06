@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 {
-    public partial class Aktive_Beitragsmodifikationen_aufrufen
+    public partial class neue_Beitragsmodifikation_anlegen_speichern_Meldung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

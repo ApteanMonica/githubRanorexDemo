@@ -79,8 +79,14 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=34,Y=31,Width=1098,Height=350}) on item 'ShellDocObjectView.ShellDocObjectView'.", repo.ShellDocObjectView.ShellDocObjectViewInfo, new RecordItemIndex(0));
-            Validate.ContainsImage(repo.ShellDocObjectView.ShellDocObjectViewInfo, ShellDocObjectView_Screenshot1, ShellDocObjectView_Screenshot1_Options);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Maximieren' at Center.", repo.MdiCRM.MaximierenInfo, new RecordItemIndex(0));
+            repo.MdiCRM.Maximieren.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot_Vorschreibungsuebersicht_2021' with region {X=208,Y=282,Width=1668,Height=349}) on item 'MdiCRM.SplitMain_CRM_alle_Frames'.", repo.MdiCRM.SplitMain_CRM_alle_FramesInfo, new RecordItemIndex(2));
+            Validate.ContainsImage(repo.MdiCRM.SplitMain_CRM_alle_FramesInfo, SplitMain_CRM_alle_Frames_Screenshot_Vorschreibungsuebersicht_2021, SplitMain_CRM_alle_Frames_Screenshot_Vorschreibungsuebersicht_2021_Options);
             
         }
 
@@ -88,13 +94,13 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
-        CompressedImage ShellDocObjectView_Screenshot1
-        { get { return repo.ShellDocObjectView.ShellDocObjectViewInfo.GetScreenshot1(new Rectangle(34, 31, 1098, 350)); } }
+        CompressedImage SplitMain_CRM_alle_Frames_Screenshot_Vorschreibungsuebersicht_2021
+        { get { return repo.MdiCRM.SplitMain_CRM_alle_FramesInfo.GetScreenshot_Vorschreibungsuebersicht_2021(new Rectangle(208, 282, 1668, 349)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
-        Imaging.FindOptions ShellDocObjectView_Screenshot1_Options
+        Imaging.FindOptions SplitMain_CRM_alle_Frames_Screenshot_Vorschreibungsuebersicht_2021_Options
         { get { return Imaging.FindOptions.Default; } }
 
 #endregion

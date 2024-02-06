@@ -92,8 +92,8 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.TitleLabel_Vorschreibung' at Center.", repo.MdiCRM.TitleLabel_VorschreibungInfo, new RecordItemIndex(0));
-            repo.MdiCRM.TitleLabel_Vorschreibung.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optional' at Center.", repo.MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optionalInfo, new RecordItemIndex(0));
+            repo.MdiCRM.TitleLabel_mit_Text_Vorschreibung_any_optional.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
@@ -113,8 +113,17 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr'.", new RecordItemIndex(6));
             Keyboard.Press(Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (WindowText=$Jahr) on item 'ShellDocObjectView.ShellDocObjectView'.", repo.ShellDocObjectView.ShellDocObjectViewInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.ShellDocObjectView.ShellDocObjectViewInfo, "WindowText", Jahr);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 
