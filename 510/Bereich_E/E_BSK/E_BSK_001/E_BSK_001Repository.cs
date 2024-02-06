@@ -432,6 +432,7 @@ namespace E_BSK_001
             RepoItemInfo _mengeInfo;
             RepoItemInfo _preisInfo;
             RepoItemInfo _textInfo;
+            RepoItemInfo _dfartnrInfo;
 
             /// <summary>
             /// Creates a new TpPos  folder.
@@ -439,10 +440,11 @@ namespace E_BSK_001
             public TpPosFolder(RepoGenBaseFolder parentFolder) :
                     base("TpPos", ".//tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmBsp']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']", parentFolder, 30000, null, false, "3976306f-a960-4581-88a6-e348595c63e2", "")
             {
-                _artikelInfo = new RepoItemInfo(this, "Artikel", "?/?/text[@controlname='dfArt_nr']/text[@accessiblename='Artikel']", "", 30000, null, "920c2fb4-5276-4c76-b7a2-388db5baf1b4");
+                _artikelInfo = new RepoItemInfo(this, "Artikel", ".//text[@accessiblename='Artikel']", "", 30000, null, "920c2fb4-5276-4c76-b7a2-388db5baf1b4");
                 _mengeInfo = new RepoItemInfo(this, "Menge", "?/?/text[@controlname='dfBsp_menge_beh']/text[@accessiblename='Menge:']", "", 30000, null, "7d727a12-d5f3-4fc7-9427-0fd362e71273");
                 _preisInfo = new RepoItemInfo(this, "Preis", "?/?/text[@controlname='dfBsp_preis']/text[@accessiblerole='Text']", "", 30000, null, "6998eff7-86cd-4807-af97-0f7ae8d116e4");
                 _textInfo = new RepoItemInfo(this, "Text", "?/?/text[@controlname='dfBsp_peh']/text[@accessiblerole='Text']", "", 30000, null, "6de2d69c-5dc9-4287-84c3-bcae12b8e93b");
+                _dfartnrInfo = new RepoItemInfo(this, "DfArtNr", "?/?/text[@controlname='dfArt_nr']", "", 30000, null, "62bf164e-8f96-4802-9bf5-cd0dccf8cff3");
             }
 
             /// <summary>
@@ -562,6 +564,30 @@ namespace E_BSK_001
                 get
                 {
                     return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfArtNr item.
+            /// </summary>
+            [RepositoryItem("62bf164e-8f96-4802-9bf5-cd0dccf8cff3")]
+            public virtual Ranorex.Text DfArtNr
+            {
+                get
+                {
+                    return _dfartnrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfArtNr item info.
+            /// </summary>
+            [RepositoryItemInfo("62bf164e-8f96-4802-9bf5-cd0dccf8cff3")]
+            public virtual RepoItemInfo DfArtNrInfo
+            {
+                get
+                {
+                    return _dfartnrInfo;
                 }
             }
         }
