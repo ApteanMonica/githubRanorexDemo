@@ -100,6 +100,15 @@ namespace V_CALL_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Fehler' with focus on 'FrmCallAuftrag.TpKopf.MlCakTextfehler'.", repo.FrmCallAuftrag.TpKopf.MlCakTextfehlerInfo, new RecordItemIndex(6));
             repo.FrmCallAuftrag.TpKopf.MlCakTextfehler.PressKeys("Fehler");
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmCallAuftrag.TpKopf.Allgemein2' at Center.", repo.FrmCallAuftrag.TpKopf.Allgemein2Info, new RecordItemIndex(7));
+            repo.FrmCallAuftrag.TpKopf.Allgemein2.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'FrmCallAuftrag.TpKopf.Zahlungsart'.", repo.FrmCallAuftrag.TpKopf.ZahlungsartInfo, new RecordItemIndex(8));
+            repo.FrmCallAuftrag.TpKopf.Zahlungsart.PressKeys("B");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmCallAuftrag.PbCommonSave' at Center.", repo.FrmCallAuftrag.PbCommonSaveInfo, new RecordItemIndex(9));
+            repo.FrmCallAuftrag.PbCommonSave.Click();
+            
         }
 
 #region Image Feature Data

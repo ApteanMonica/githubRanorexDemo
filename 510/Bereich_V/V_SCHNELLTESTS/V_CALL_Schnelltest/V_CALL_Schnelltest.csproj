@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>0b36224e-1212-4c49-81de-a96a755a8a97</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -84,6 +85,18 @@
     <Compile Include="Program.cs">
       <id>b2dbb2f5-cb94-4133-af62-335eae6f186e</id>
     </Compile>
+    <Compile Include="Recordings\Auftrag_kopieren.cs">
+      <BoundTo>1df8f6ba-4a94-47c7-9e42-8950f690d523</BoundTo>
+      <DependentUpon>Auftrag_kopieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86d07873-a4ec-4434-b226-12ff95d2915a</id>
+    </Compile>
+    <Compile Include="Recordings\Auftrag_kopieren.UserCode.cs">
+      <BoundTo>1df8f6ba-4a94-47c7-9e42-8950f690d523</BoundTo>
+      <DependentUpon>Auftrag_kopieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1dd9889a-3b7a-48b7-b066-f48f6213e20c</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -130,6 +143,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>1f5e88e6-7d46-4414-9c70-0406ae9a1650</id>
+    </None>
+    <None Include="Recordings\Auftrag_kopieren.rxrec">
+      <BoundTo>0b36224e-1212-4c49-81de-a96a755a8a97</BoundTo>
+      <id>1df8f6ba-4a94-47c7-9e42-8950f690d523</id>
+      <recordtableid>2f53be3f-5dbf-4d75-a745-972a806765ed</recordtableid>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>0b36224e-1212-4c49-81de-a96a755a8a97</BoundTo>
