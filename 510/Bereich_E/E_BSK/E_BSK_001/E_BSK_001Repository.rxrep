@@ -113,10 +113,9 @@ name="E_BSK_001Repository">
 				id="920c2fb4-5276-4c76-b7a2-388db5baf1b4"
 				name="Artikel"
 				refimgid="07b2b1f1-8fea-4179-9b8e-79f16be0659c"
-				refpath="/form[@controlname='mdiBestellung']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tabPagePos']/container/form/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/container[@controlname='frame1']/text[@controlname='dfArt_nr']/text[@accessiblename='Artikel']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmBsp']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/?/?/text[@controlname='dfArt_nr']/text[@accessiblename='Artikel']
+					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmBsp']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']//text[@accessiblename='Artikel']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -150,6 +149,17 @@ name="E_BSK_001Repository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmBsp']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/?/?/text[@controlname='dfBsp_peh']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="62bf164e-8f96-4802-9bf5-cd0dccf8cff3"
+				name="DfArtNr"
+				refimgid="b16cd083-1d84-43f7-b68d-910364375e60"
+				refpath="/form[@controlname='mdiBestellung']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabBsk']/tabpage[@controlname='tabPagePos']/container[@controlname='SubForm_frmBsp']/form[@controlname='frmBsp']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/container[@controlname='frame1']/text[@controlname='dfArt_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmBsp']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/?/?/text[@controlname='dfArt_nr']
 				</item>
 				<basepath>
 					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmBsp']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']

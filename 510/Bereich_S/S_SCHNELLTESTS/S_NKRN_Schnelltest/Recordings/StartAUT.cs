@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace V_CALL_Schnelltest.Recordings
+namespace S_NKRN_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The StartAUT recording.
     /// </summary>
-    [TestModule("da5a70f6-aff3-4cfc-bfc0-6d870a821f05", ModuleType.Recording, 1)]
+    [TestModule("9f39942d-0b90-4413-a98b-ec396824b7b6", ModuleType.Recording, 1)]
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::V_CALL_Schnelltest.V_CALL_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_NKRN_Schnelltest.S_NKRN_SchnelltestRepository repository.
         /// </summary>
-        public static global::V_CALL_Schnelltest.V_CALL_SchnelltestRepository repo = global::V_CALL_Schnelltest.V_CALL_SchnelltestRepository.Instance;
+        public static global::S_NKRN_Schnelltest.S_NKRN_SchnelltestRepository repo = global::S_NKRN_Schnelltest.S_NKRN_SchnelltestRepository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -41,8 +41,8 @@ namespace V_CALL_Schnelltest.Recordings
         /// </summary>
         public StartAUT()
         {
-            Programm = "V_CALL";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_NKR = "S_NKRN AUFRUFART=NKR";
         }
 
         /// <summary>
@@ -55,28 +55,28 @@ namespace V_CALL_Schnelltest.Recordings
 
 #region Variables
 
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("500ee0d3-6a11-449b-8976-208d4786c3aa")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
-
         string _Startfile;
 
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("5c7410fd-e8ec-41b2-ab6a-18ab5f4a677f")]
+        [TestVariable("58ffe0ac-b86b-4f24-a7d7-86644ac12588")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
+        }
+
+        string _Programm_NKR;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_NKR.
+        /// </summary>
+        [TestVariable("08b67f0a-a76b-407f-8016-9f8b626fd020")]
+        public string Programm_NKR
+        {
+            get { return _Programm_NKR; }
+            set { _Programm_NKR = value; }
         }
 
 #endregion
@@ -105,14 +105,14 @@ namespace V_CALL_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_NKR in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_NKR, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmCallAuftrag.TitleBar100CallAuftrag'", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmCallAuftrag.TitleBar100CallAuftragInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmNkr.TitleBar100Nummernkreisverwaltung'", repo.FrmNkr.TitleBar100NummernkreisverwaltungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmNkr.TitleBar100NummernkreisverwaltungInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Call-Auftrag') on item 'FrmCallAuftrag.TitleBar100CallAuftrag'.", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, "Text", "Call-Auftrag");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Nummernkreisverwaltung') on item 'FrmNkr.TitleBar100Nummernkreisverwaltung'.", repo.FrmNkr.TitleBar100NummernkreisverwaltungInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmNkr.TitleBar100NummernkreisverwaltungInfo, "Text", "Nummernkreisverwaltung");
             
         }
 

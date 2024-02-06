@@ -24,60 +24,34 @@ namespace V_CALL_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Auftrag_kopieren recording.
     /// </summary>
-    [TestModule("da5a70f6-aff3-4cfc-bfc0-6d870a821f05", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("2f53be3f-5dbf-4d75-a745-972a806765ed", ModuleType.Recording, 1)]
+    public partial class Auftrag_kopieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_CALL_Schnelltest.V_CALL_SchnelltestRepository repository.
         /// </summary>
         public static global::V_CALL_Schnelltest.V_CALL_SchnelltestRepository repo = global::V_CALL_Schnelltest.V_CALL_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Auftrag_kopieren instance = new Auftrag_kopieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Auftrag_kopieren()
         {
-            Programm = "V_CALL";
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Auftrag_kopieren Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("500ee0d3-6a11-449b-8976-208d4786c3aa")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("5c7410fd-e8ec-41b2-ab6a-18ab5f4a677f")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,20 @@ namespace V_CALL_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmCallAuftrag.PbCommon2Kopieren' at Center.", repo.FrmCallAuftrag.PbCommon2KopierenInfo, new RecordItemIndex(0));
+            repo.FrmCallAuftrag.PbCommon2Kopieren.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmCallAuftrag.TitleBar100CallAuftrag'", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmCallAuftrag.TitleBar100CallAuftragInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Call kopieren') on item 'DlgCakCopy.TitleBar100CallKopieren'.", repo.DlgCakCopy.TitleBar100CallKopierenInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgCakCopy.TitleBar100CallKopierenInfo, "Text", "Call kopieren");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Call-Auftrag') on item 'FrmCallAuftrag.TitleBar100CallAuftrag'.", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, "Text", "Call-Auftrag");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgCakCopy.PbOk' at Center.", repo.DlgCakCopy.PbOkInfo, new RecordItemIndex(2));
+            repo.DlgCakCopy.PbOk.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Call kopieren:\r\nWollen Sie die Zahlungsbedingung, Rechnungsart, Beschaffungskz. und SLA-Code vom ursprünglichen Call\r\nübernehmen, so drücken Sie JA.\r\nWenn Sie NEIN drücken, kommen diese Werte von der Callart.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Call kopieren:\r\nWollen Sie die Zahlungsbedingung, Rechnungsart, Beschaffungskz. und SLA-Code vom ursprünglichen Call\r\nübernehmen, so drücken Sie JA.\r\nWenn Sie NEIN drücken, kommen diese Werte von der Callart.");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(4));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 
