@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{5AE1C60A-5041-4F32-86CC-57551AB69546}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AEKOOE_C_CRM_Beitragsmodifikation</RootNamespace>
+    <AssemblyName>AEKOOE_C_CRM_Beitragsmodifikation</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AEKOOE_C_CRM_BeitragsmodifikationRepository.cs">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <DependentUpon>AEKOOE_C_CRM_BeitragsmodifikationRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>63cb09c1-88b6-455b-85d3-6565379b0050</id>
+    </Compile>
+    <Compile Include="AEKOOE_C_CRM_StammdatenRepository.cs">
+      <DependentUpon>AEKOOE_C_CRM_StammdatenRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>d16f964c-53af-4348-99fa-347aa92a3651</id>
+      <BoundTo>a210a78a-dd12-4683-92c9-b81b976687c5</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>56aa7315-f85e-4919-9955-98927a61cc71</id>
+    </Compile>
+    <Compile Include="DEB_NR_auswaehlen.cs">
+      <BoundTo>58a86914-5ce1-428e-a8f9-14f43269ea2c</BoundTo>
+      <DependentUpon>DEB_NR_auswaehlen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0aa59384-b9c8-4d57-8e7a-337961aff158</id>
+    </Compile>
+    <Compile Include="DEB_NR_auswaehlen.UserCode.cs">
+      <BoundTo>58a86914-5ce1-428e-a8f9-14f43269ea2c</BoundTo>
+      <DependentUpon>DEB_NR_auswaehlen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2b40765a-aaef-4648-a8e9-ab9e2f81ced4</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>b3110652-9fc5-4800-b45f-08eb54443525</id>
+    </Compile>
+    <Compile Include="Recordings\aktive_Beitragsmodifikationen_aufrufen.cs">
+      <BoundTo>8d6020c9-bab3-4fed-a1a7-057b43345351</BoundTo>
+      <DependentUpon>aktive_Beitragsmodifikationen_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3882eade-3839-4008-8960-b14717ea4123</id>
+    </Compile>
+    <Compile Include="Recordings\aktive_Beitragsmodifikationen_aufrufen.UserCode.cs">
+      <BoundTo>8d6020c9-bab3-4fed-a1a7-057b43345351</BoundTo>
+      <DependentUpon>aktive_Beitragsmodifikationen_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6d1665df-1d1a-40bb-b341-ab49f6031b29</id>
+    </Compile>
+    <Compile Include="Recordings\Beitrag_Beitragsmodifikation_aufrufen.cs">
+      <DependentUpon>Beitrag_Beitragsmodifikation_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e026a82f-b0bb-46db-aea6-3e9ba035e98d</id>
+      <BoundTo>dc91ac52-1b6a-489d-9058-6074e1ff32a3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Beitrag_Beitragsmodifikation_aufrufen.UserCode.cs">
+      <DependentUpon>Beitrag_Beitragsmodifikation_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>346375b6-8ef0-4e91-a5a2-caba2732bd87</id>
+      <BoundTo>dc91ac52-1b6a-489d-9058-6074e1ff32a3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Beitrag_Vorschreibungen_aufrufen.cs">
+      <BoundTo>becb16ec-4a3f-4fa1-827f-ee758a5a2794</BoundTo>
+      <DependentUpon>Beitrag_Vorschreibungen_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eabe5468-db47-4459-aa12-1188682e860c</id>
+    </Compile>
+    <Compile Include="Recordings\Beitrag_Vorschreibungen_aufrufen.UserCode.cs">
+      <BoundTo>becb16ec-4a3f-4fa1-827f-ee758a5a2794</BoundTo>
+      <DependentUpon>Beitrag_Vorschreibungen_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd4ea039-35a3-4e55-b9de-e4c017e1f5af</id>
+    </Compile>
+    <Compile Include="Recordings\Close_C_CRM.cs">
+      <DependentUpon>Close_C_CRM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0ae5d90-a9e1-4846-995d-0413a3a94337</id>
+      <BoundTo>50e60e62-bb50-40aa-9b83-a0b7897cf6e4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Close_C_CRM.UserCode.cs">
+      <DependentUpon>Close_C_CRM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86375078-74ff-4532-83ee-733ea5579cae</id>
+      <BoundTo>50e60e62-bb50-40aa-9b83-a0b7897cf6e4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\pruefen_keine_aktiven_Beitragsmodifikationen.cs">
+      <BoundTo>b4b0e532-9d4e-4c55-9433-dcaeccee20b2</BoundTo>
+      <DependentUpon>pruefen_keine_aktiven_Beitragsmodifikationen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f235434e-309e-4a34-841a-1c2b61a59a3a</id>
+    </Compile>
+    <Compile Include="Recordings\pruefen_keine_aktiven_Beitragsmodifikationen.UserCode.cs">
+      <BoundTo>b4b0e532-9d4e-4c55-9433-dcaeccee20b2</BoundTo>
+      <DependentUpon>pruefen_keine_aktiven_Beitragsmodifikationen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>751a4ae7-0d00-44d1-8c2b-b3280b7859c1</id>
+    </Compile>
+    <Compile Include="Recordings\pruefen_Vorschreibungen_ohne_Beitragsmodifikation.cs">
+      <BoundTo>dae679e9-2858-4dfb-a10e-9a6406634e15</BoundTo>
+      <DependentUpon>pruefen_Vorschreibungen_ohne_Beitragsmodifikation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4281b80e-42f3-41ab-b5fa-2122de19a8d8</id>
+    </Compile>
+    <Compile Include="Recordings\pruefen_Vorschreibungen_ohne_Beitragsmodifikation.UserCode.cs">
+      <BoundTo>dae679e9-2858-4dfb-a10e-9a6406634e15</BoundTo>
+      <DependentUpon>pruefen_Vorschreibungen_ohne_Beitragsmodifikation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4097c618-5490-4f25-9ddd-4777bcac3e78</id>
+    </Compile>
+    <Compile Include="Recordings\Vorschreibungen_DEB_NR_aufrufen.cs">
+      <BoundTo>a435733a-d070-4b3a-9cbf-168c3f605a05</BoundTo>
+      <DependentUpon>Vorschreibungen_DEB_NR_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f45ee6a3-6171-4422-92c3-88055aa9445b</id>
+    </Compile>
+    <Compile Include="Recordings\Vorschreibungen_DEB_NR_aufrufen.UserCode.cs">
+      <BoundTo>a435733a-d070-4b3a-9cbf-168c3f605a05</BoundTo>
+      <DependentUpon>Vorschreibungen_DEB_NR_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad7e3727-cd59-4483-ac31-e2cd65729b0d</id>
+    </Compile>
+    <Compile Include="Recordings\Vorschreibungen_Jahr_aufrufen.cs">
+      <BoundTo>ae4ea072-b2ea-41dd-8937-7953a58d42c2</BoundTo>
+      <DependentUpon>Vorschreibungen_Jahr_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>562b8c78-ae3b-4ff2-a2ca-03ba56483d66</id>
+    </Compile>
+    <Compile Include="Recordings\Vorschreibungen_Jahr_aufrufen.UserCode.cs">
+      <BoundTo>ae4ea072-b2ea-41dd-8937-7953a58d42c2</BoundTo>
+      <DependentUpon>Vorschreibungen_Jahr_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3778958c-7942-49de-8f2a-cf4cc6f94ddf</id>
+    </Compile>
+    <Compile Include="Recordings\Workplace_Ausfuehren_C_CRM.cs">
+      <DependentUpon>Workplace_Ausfuehren_C_CRM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9903af17-0ccd-484d-a428-0e953adbfb98</id>
+      <BoundTo>755367e3-b44c-4ae3-bcf4-2365632e3ea5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Workplace_Ausfuehren_C_CRM.UserCode.cs">
+      <DependentUpon>Workplace_Ausfuehren_C_CRM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d5b8964c-f6e5-4e3b-93ad-c178e97b1b9d</id>
+      <BoundTo>755367e3-b44c-4ae3-bcf4-2365632e3ea5</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AEKOOE_C_CRM_BeitragsmodifikationRepository.rximg">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <DependentUpon>AEKOOE_C_CRM_BeitragsmodifikationRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d822e241-cc65-4c03-b9b7-c67845ab3e4d</id>
+    </None>
+    <None Include="AEKOOE_C_CRM_BeitragsmodifikationRepository.rxrep">
+      <id>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</id>
+      <repoid>3f349d1b-d3f3-45e0-a5ce-17d585f5be66</repoid>
+      <reporootid>a512a7ea-e05d-4f27-a722-77bae13336a6</reporootid>
+    </None>
+    <None Include="AEKOOE_C_CRM_StammdatenRepository.rximg">
+      <DependentUpon>AEKOOE_C_CRM_StammdatenRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d092f8a0-49bd-4df5-9309-c50e308d4f89</id>
+      <BoundTo>a210a78a-dd12-4683-92c9-b81b976687c5</BoundTo>
+    </None>
+    <None Include="AEKOOE_C_CRM_StammdatenRepository.rxrep">
+      <id>a210a78a-dd12-4683-92c9-b81b976687c5</id>
+      <repoid>28bb656e-c1d6-40ae-9ee6-03c99e1d7268</repoid>
+      <reporootid>80518df2-71a7-4517-b1dc-c86d1d51d022</reporootid>
+    </None>
+    <None Include="app.config">
+      <id>9f602508-322e-4676-8ceb-857c5df6091c</id>
+    </None>
+    <None Include="DEB_NR_auswaehlen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>58a86914-5ce1-428e-a8f9-14f43269ea2c</id>
+      <recordtableid>e9e43580-5603-444b-ab74-75e9816a4350</recordtableid>
+    </None>
+    <None Include="Recordings\aktive_Beitragsmodifikationen_aufrufen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>8d6020c9-bab3-4fed-a1a7-057b43345351</id>
+      <recordtableid>419dd2e0-dd75-4c0b-a705-9f2dc64db2a7</recordtableid>
+    </None>
+    <None Include="Recordings\Beitrag_Beitragsmodifikation_aufrufen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>dc91ac52-1b6a-489d-9058-6074e1ff32a3</id>
+      <recordtableid>1e5ae5b8-2e6b-48eb-9451-35d57c0d510c</recordtableid>
+    </None>
+    <None Include="Recordings\Beitrag_Vorschreibungen_aufrufen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>becb16ec-4a3f-4fa1-827f-ee758a5a2794</id>
+      <recordtableid>beb633bd-8262-4a0c-9161-da06b767e45d</recordtableid>
+    </None>
+    <None Include="Recordings\Close_C_CRM.rxrec">
+      <id>50e60e62-bb50-40aa-9b83-a0b7897cf6e4</id>
+      <recordtableid>650049b8-291f-45b1-b8d1-eb5f926bc175</recordtableid>
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+    </None>
+    <None Include="Recordings\pruefen_keine_aktiven_Beitragsmodifikationen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>b4b0e532-9d4e-4c55-9433-dcaeccee20b2</id>
+      <recordtableid>49afb2ce-feb8-4f74-8948-65865326dad1</recordtableid>
+    </None>
+    <None Include="Recordings\pruefen_Vorschreibungen_ohne_Beitragsmodifikation.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>dae679e9-2858-4dfb-a10e-9a6406634e15</id>
+      <recordtableid>f191841c-d888-412a-a8ef-315f7b4cddb5</recordtableid>
+    </None>
+    <None Include="Recordings\Vorschreibungen_DEB_NR_aufrufen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>a435733a-d070-4b3a-9cbf-168c3f605a05</id>
+      <recordtableid>37997705-713d-4158-a4ca-a29be22cb228</recordtableid>
+    </None>
+    <None Include="Recordings\Vorschreibungen_Jahr_aufrufen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>ae4ea072-b2ea-41dd-8937-7953a58d42c2</id>
+      <recordtableid>be21059d-b3c1-46d2-9e1e-9ddb2213bc92</recordtableid>
+    </None>
+    <None Include="Recordings\Workplace_Ausfuehren_C_CRM.rxrec">
+      <id>755367e3-b44c-4ae3-bcf4-2365632e3ea5</id>
+      <recordtableid>9bee4fef-8ad4-4e11-925b-7edadceb09c2</recordtableid>
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AEKOOE_C_CRM_Beitragsmodifikation.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4ad05ba2-2e69-4819-9fb0-aeeb7c4c5e27</id>
+    </Content>
+    <Content Include="AEKOOE_C_CRM_Beitragsmodifikation.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>28170b55-3349-40a8-a7c7-2bb22be5dac3</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>77ebe47f-de3a-464a-aa65-1a0d18bbd566</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

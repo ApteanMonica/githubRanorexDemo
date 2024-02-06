@@ -153,7 +153,10 @@ namespace E_BSK_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbDataAccessSave' at Center.", repo.PbDataAccessSaveInfo, new RecordItemIndex(15));
             repo.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Artikel6) on item 'FrmBsvs.FlexGrid1.ColArtNrRow6'.", repo.FrmBsvs.FlexGrid1.ColArtNrRow6Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.PbDataAccessLoad' at Center.", repo.FrmBsvs.PbDataAccessLoadInfo, new RecordItemIndex(16));
+            repo.FrmBsvs.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Artikel6) on item 'FrmBsvs.FlexGrid1.ColArtNrRow6'.", repo.FrmBsvs.FlexGrid1.ColArtNrRow6Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid1.ColArtNrRow6Info, "AccessibleValue", Artikel6);
             
         }

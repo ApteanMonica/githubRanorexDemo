@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="da38a438-1406-4cfa-afee-73d3636cc22b"
+id="9bee4fef-8ad4-4e11-925b-7edadceb09c2"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,26 +19,152 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung"
-	namespace="B_BUDA_001.Recordings_B_BUCH">
+	classname="Workplace_Ausfuehren_C_CRM"
+	namespace="AEKOOE_C_CRM_Beitragsmodifikation.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="bbdf822d-583c-45a2-aa50-b339f582bbc4"
+		name="Mandant">
+			WFK
+		</var>
+		<var
+		id="7fc33e6e-8195-403a-bfe4-63d9a04da419"
+		name="Programm">
+			C_CRM
+		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				davor: Aufruf Workplace manuell mit Mandant WFK User RS_RANOREX Kw=rano mit aktivem Licenceservice; Programmaufruf mit Ausführen:
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
-		action="AttributeContains"
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="898888a9-9331-4326-8ac6-b8923771a189">
+		searchpropertyid="81bdc423-f3cf-4e2d-91e8-0844efbfcb9a">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e639bbc1-1076-4a53-ae36-bb67e3a2197b"
+			id="c1f4df91-b366-4133-b777-6e0186dabd93"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="20,-6,1900,35"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="False"
+		optional="False"
+		searchpropertyid="81bdc423-f3cf-4e2d-91e8-0844efbfcb9a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Mandant">
+				</binding>
+			</bindings>
+			<info
+			id="c1f4df91-b366-4133-b777-6e0186dabd93"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="20,-6,1900,35"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -47,7 +173,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Dauerbuchung erfassen
+				[WFK] - Wohlfahrtskasse    -    rs2 Version 5.2.1 SP13 Hotfix-42     —     Home
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -58,7 +184,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="f565362e-c6e5-4396-b96e-c6437310bac9"
+		searchpropertyid="3f86643a-6d16-4625-a1ec-a502c6a8bd8f"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -67,27 +193,42 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="ea7fefa7-1aee-44d9-a258-c26c77f4ee90"
+			id="c1f4df91-b366-4133-b777-6e0186dabd93"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='mdiBuch']/?/?/container[@controlname='cRibbonGroup3']/button[@controlname='pbStandard7']
+					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
+		<keyitem
+		action="Press"
+		data="R, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="03a1d0ab-5051-4ce3-b797-f81bebdec3ff"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="af07a5b5-b8d5-4fe4-934f-7aeb4a074d90"
+		searchpropertyid="9649c826-359c-4968-8895-927fbd630912"
 		waitaction="Exists"
-		waittimeout="180000ms">
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="f01212b6-a2a9-441b-b9bc-99523d65b576"
+			id="8c727dc1-6f07-4fae-a205-0155b8e33c92"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -95,48 +236,47 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="1"
-				prefcap="table"
-				rect="373,717,1536,179"
-				role="table"
+				index="6"
+				prefcap="titlebar"
+				rect="749,476,442,35"
+				role="titlebar"
 				snapElem=""
-				valid="True"
-				visible="True">
+				valid="False"
+				visible="False">
 					<attribute
-					name="accessiblename"
+					name="accessibledescription"
 					type="System.String">
-						FlexGrid
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
 					</attribute>
 					<attribute
 					name="accessiblerole"
 					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Table
+						TitleBar
 					</attribute>
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
+						Invisible
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controlname='dlgAusführen']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<WaitForRecordItem
+		<validationitem
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
-		searchpropertyid="03980ec6-7dca-4666-a9dd-c4747a210e20"
-		waitaction="Exists"
-		waittimeout="120000ms">
+		searchpropertyid="55fde3b3-dc77-4aa4-b88b-c3acd378d174">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="8a609bc0-9b9f-4b3a-b82f-555a83313357"
+			id="8c727dc1-6f07-4fae-a205-0155b8e33c92"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -144,46 +284,42 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="1"
-				prefcap="row"
-				rect="-1171,455,655,19"
-				role="row"
+				index="6"
+				prefcap="titlebar"
+				rect="749,476,442,35"
+				role="titlebar"
 				snapElem=""
-				valid="True"
-				visible="True">
+				valid="False"
+				visible="False">
 					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="accessiblename"
+					name="accessibledescription"
 					type="System.String">
-						Row 1
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
 					</attribute>
 					<attribute
 					name="accessiblerole"
 					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Row
+						TitleBar
 					</attribute>
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Default
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						&#9;1.000,00	0,00		0	0																&#9;
+						Invisible
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+					/form[@controlname='dlgAusführen']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Ausführen
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="DoubleClick"
 		button="Left"
@@ -192,497 +328,198 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="c5f9dc19-ea9a-4781-b9f9-a13b218c6495"
-		sx="0"
-		sy="0"
+		searchpropertyid="de168ce8-be2d-4ea2-ae28-2f2c2662b673"
+		sx="930"
+		sy="574"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="01bfcfed-87ae-4bef-94c5-5ffc5996195c"
+			id="e7303dd4-5ab5-44f9-acea-cf7e950f8425"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="2"
+				prefcap="text"
+				rect="766,565,328,18"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						@b_kto
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						1001
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						2425990
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						14004
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						MENU
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						@b_kto
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
 				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_betrag Row 1']
+					/form[@controlname='dlgAusführen']/combobox[@controlname='cmbProgramm']/text[@controlid='1001']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
-		<keyitem
-		action="Press"
-		data="Delete"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="9003229e-ed94-4d92-a4b4-a92bc38fc453"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
 		<keysequenceitem
-		KeySequence="499,99"
+		KeySequence="@"
 		duration="20ms"
 		enabled="True"
 		optional="False"
 		presstime="20ms"
-		searchpropertyid="216a6798-ba90-42d6-94f8-6c086a1015b3">
+		searchpropertyid="b08a072c-97d3-42da-8429-d7f7a16c29e2">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="01bfcfed-87ae-4bef-94c5-5ffc5996195c"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_betrag Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="f33126ff-e1df-4217-b2fd-7df0864d90f2"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="29e99279-226a-4201-bc3e-a41e0431bf78">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="01bfcfed-87ae-4bef-94c5-5ffc5996195c"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_betrag Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				499,99
-			</matchvalue>
-		</validationitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
 		<keysequenceitem
-		KeySequence="30"
+		KeySequence="@"
 		duration="20ms"
 		enabled="True"
 		optional="False"
 		presstime="20ms"
-		searchpropertyid="844be940-e23a-4866-99c6-aedc89cfe52b">
+		searchpropertyid="b08a072c-97d3-42da-8429-d7f7a16c29e2">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Programm">
+				</binding>
 			</bindings>
-			<info
-			id="96471152-5674-44f9-8342-f2760553c243"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="7"
-				prefcap="cell"
-				rect="-817,514,72,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colBube_bektnr1 Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBube_bektnr1 Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="99960a5e-1b1f-4caa-b5c8-32b046491f81">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac858ff3-e2b7-4799-9b61-455c074c1a77"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="14"
-				prefcap="cell"
-				rect="540,455,149,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						KST 30
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colBez Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						KST 30
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='mdiBuch']/?/?/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/?/?/container[@controlname='tblSB']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBez Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				KST 30
-			</matchvalue>
-		</validationitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="99960a5e-1b1f-4caa-b5c8-32b046491f81">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2fe0df77-4e61-413e-bcd3-76368b842fb4"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBube_betrag Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				500,01
-			</matchvalue>
-		</validationitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
 		<keysequenceitem
-		KeySequence="50"
+		KeySequence="{LControlKey down}"
 		duration="20ms"
 		enabled="True"
 		optional="False"
 		presstime="20ms"
-		searchpropertyid="c49b63f6-c283-4e09-8f46-86b441a334d0">
+		searchpropertyid="e53ff6ca-6620-4058-a217-a88f0ec6222d">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="729a8e46-ee8c-4ff5-8edb-465c12f97dd5"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiBuch']/container[@controltypename='SalFormClientArea']/container/form[@controlname='frmBuchSB']/container[@controlname='ClientArea']/container[@controlname='tblSB']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBube_bektnr1 Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d59d1cae-b166-4686-b6f8-dcdce65b7930"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="99960a5e-1b1f-4caa-b5c8-32b046491f81">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="cc00e87b-9161-4119-afe0-4e7ced871fc8"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="14"
-				prefcap="cell"
-				rect="540,474,149,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						KST 50
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colBez Row 2
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						KST 50
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='mdiBuch']/?/?/container[@controlname='SubForm_frmBuchSB']/form[@controlname='frmBuchSB']/?/?/container[@controlname='tblSB']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBez Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				KST 50
-			</matchvalue>
-		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -691,30 +528,45 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="2166be6d-e732-47c9-a990-4cf8607756d1"
-		sx="0"
-		sy="0"
+		searchpropertyid="bb9011cd-66ff-4f06-97ec-f8ea96376874"
+		sx="1105"
+		sy="627"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d2784800-341d-4090-92c0-cb32dc788453"
+			id="20abff77-71f9-4d72-a3cc-b060a9280a6a"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="control, nativewindow"
 				dontcache="False"
-				enabled="False"
+				enabled="True"
 				flavor="winforms"
 				hasfocus="False"
-				index="1"
+				index="4"
 				prefcap="button"
-				rect="0,0,0,0"
+				rect="1052,611,106,32"
 				role="button"
 				snapElem=""
-				valid="False"
-				visible="False">
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						Starten
+					</attribute>
+					<attribute
+					name="controlname"
+					type="System.String">
+						pbOk
+					</attribute>
+					<attribute
+					name="controltext"
+					type="System.String">
+						Starten
+					</attribute>
 					<attribute
 					name="controltype"
 					type="System.String">
@@ -731,14 +583,29 @@ mode="Global">
 						False
 					</attribute>
 					<attribute
+					name="class"
+					type="System.String">
+						WindowsForms10.BUTTON.app.0.1fdf3f4_r6_ad1
+					</attribute>
+					<attribute
 					name="handle"
 					type="System.IntPtr">
-						0
+						7343302
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						1
 					</attribute>
 					<attribute
 					name="processid"
 					type="System.Int32">
-						0
+						14004
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						MENU
 					</attribute>
 					<attribute
 					name="windowextendedstyle"
@@ -748,7 +615,12 @@ mode="Global">
 					<attribute
 					name="windowstyle"
 					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Overlapped
+						Tiled, MaximizeBox, ClipChildren, ClipSiblings, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						Starten
 					</attribute>
 					<dynamicattribute
 					description="No description available."
@@ -1086,7 +958,7 @@ mode="Global">
 					name="Enabled"
 					readonly="False"
 					type="System.Boolean">
-						False
+						True
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1559,7 +1431,7 @@ mode="Global">
 					name="Visible"
 					readonly="False"
 					type="System.Boolean">
-						False
+						True
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1672,15 +1544,6 @@ mode="Global">
 						displayName="psBtgd_funktion"
 						type="System.Object">
 						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfLesenWebSupportTemplate">
 						<returns
 						description="No description available."
 						displayName="returns"
@@ -4145,8 +4008,8 @@ mode="Global">
 					displayName="SetContextMenu">
 						<argument
 						description="No description available."
-						displayName="menuType"
-						type="System.Type">
+						displayName="sMenuName"
+						type="System.Object">
 						</argument>
 						<argument
 						description="No description available."
@@ -4492,8 +4355,8 @@ mode="Global">
 					displayName="TrackPopupMenu">
 						<argument
 						description="No description available."
-						displayName="menuType"
-						type="System.Type">
+						displayName="sMenuName"
+						type="System.Object">
 						</argument>
 						<argument
 						description="No description available."
@@ -4564,55 +4427,115 @@ mode="Global">
 					</dynamicaction>
 				</element>
 				<path>
-					/form[@controlname='mdiBuch']/?/?/container[@controlname='cRibbonGroup1']/button[@controlname='pbStandard2']
+					/form[@controlname='dlgAusführen']/button[@controlname='pbOk']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<keysequenceitem
+		KeySequence="{LControlKey up}"
+		duration="20ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="2166be6d-e732-47c9-a990-4cf8607756d1"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		searchpropertyid="e53ff6ca-6620-4058-a217-a88f0ec6222d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7e52db81-d15a-4a0b-8d0c-1608994e4d82"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d2784800-341d-4090-92c0-cb32dc788453"
+			id="b293e9c1-0cd3-488c-ae68-85d44ced928c"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='mdiBuch']/?/?/container[@controlname='cRibbonGroup1']/button[@controlname='pbStandard2']
+					/form[@controlname='mdiCRM']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6018d7c2-39ac-4496-8560-d8b43212f2c6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b293e9c1-0cd3-488c-ae68-85d44ced928c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiCRM']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				CRM
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6018d7c2-39ac-4496-8560-d8b43212f2c6">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Mandant">
+				</binding>
+			</bindings>
+			<info
+			id="b293e9c1-0cd3-488c-ae68-85d44ced928c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiCRM']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Sachkonten verwalten
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
-	id="ba558feb-54c1-4da0-932e-f061f7333e89"
-	name="B_BUDA_001Repository"
-	relativepath="..\B_BUDA_001Repository.rxrep">
+	id="3f349d1b-d3f3-45e0-a5ce-17d585f5be66"
+	name="AEKOOE_C_CRM_BeitragsmodifikationRepository"
+	relativepath="..\AEKOOE_C_CRM_BeitragsmodifikationRepository.rxrep">
 		<codegen
-		classname="B_BUDA_001Repository"
-		namespace="B_BUDA_001">
+		classname="AEKOOE_C_CRM_BeitragsmodifikationRepository"
+		namespace="AEKOOE_C_CRM_Beitragsmodifikation">
 		</codegen>
 		<rootfolder
-		id="9f5b4304-f0b5-4b10-a0a4-c4fb64cf0803"
+		id="a512a7ea-e05d-4f27-a722-77bae13336a6"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung.UserCode.cs
+		Workplace_Ausfuehren_C_CRM.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
