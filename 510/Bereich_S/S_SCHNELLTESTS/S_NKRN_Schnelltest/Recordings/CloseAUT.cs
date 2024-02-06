@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_MEH_Schnelltest.Recordings
+namespace S_NKRN_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The CloseAUT recording.
     /// </summary>
-    [TestModule("a9554d1b-b570-41f3-8a96-9e132acb132e", ModuleType.Recording, 1)]
+    [TestModule("b2836d30-c2c8-4a57-b0f0-71022001b486", ModuleType.Recording, 1)]
     public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_MEH_Schnelltest.S_MEH_SchnelltestRepository repository.
+        /// Holds an instance of the global::S_NKRN_Schnelltest.S_NKRN_SchnelltestRepository repository.
         /// </summary>
-        public static global::S_MEH_Schnelltest.S_MEH_SchnelltestRepository repo = global::S_MEH_Schnelltest.S_MEH_SchnelltestRepository.Instance;
+        public static global::S_NKRN_Schnelltest.S_NKRN_SchnelltestRepository repo = global::S_NKRN_Schnelltest.S_NKRN_SchnelltestRepository.Instance;
 
         static CloseAUT instance = new CloseAUT();
 
@@ -79,8 +79,8 @@ namespace S_MEH_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblMeh.TitleBar100VerwaltungMengeneinhei'.", repo.TblMeh.TitleBar100VerwaltungMengeneinheiInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblMeh.TitleBar100VerwaltungMengeneinhei, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmNkr.TitleBar100Nummernkreisverwaltung'.", repo.FrmNkr.TitleBar100NummernkreisverwaltungInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmNkr.TitleBar100Nummernkreisverwaltung, 1000);
             
         }
 

@@ -1,0 +1,275 @@
+﻿<repository
+id="39327c39-fa47-49b4-9df0-2ee577df3085"
+name="S_NKRN_SchnelltestRepository">
+	<codegen
+	classname="S_NKRN_SchnelltestRepository"
+	namespace="S_NKRN_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="ebfb1ac5-e945-4e84-99d0-92686210e850"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="1eaae3bf-de15-49bf-a061-e2ff82d92952"
+		isrooted="True"
+		name="FrmNkr"
+		refimgid="4d4a8ff5-bf74-4f78-843e-b3a46270e939"
+		refpath="/form[@controlname='frmNkr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="460fde34-6856-40f6-8e02-c359774cdf56"
+			name="TitleBar100Nummernkreisverwaltung"
+			refimgid="46656518-5b17-489a-99c2-ee2302a0e030"
+			refpath="/form[@controlname='frmNkr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmNkr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="39e34e4d-f37f-4dc2-9af4-cb0c4b933f4b"
+			name="PbNew"
+			refimgid="1b01d2f1-5509-4a12-8b5f-fc11986304e7"
+			refpath="/form[@controlname='frmNkr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmNkr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
+			</item>
+			<folder
+			capname="table"
+			id="8e540173-0c7a-4f4d-b5fd-92577abe5809"
+			isrooted="True"
+			name="FlexGrid"
+			refimgid="ec0f7cf5-def8-4f63-9270-909ae37c729a"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="row"
+				id="c8ad4f0c-b755-43a3-9e72-df753b724c38"
+				isrooted="True"
+				name="Row_mit_Variable_Nummernkreis_Neu"
+				refimgid="56a0be39-930b-4ae0-a2e4-59da1fe3c594"
+				searchtimeout="30000ms"
+				usecache="False">
+					<basepath>
+						/form[@controlname='frmNkr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Nummernkreis_CD_Neu]
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@controlname='frmNkr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="bf5e5da0-a37a-4e77-80f8-c9ea9a7f4791"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="dbdf3daf-db86-4955-9ac6-e3ab113a848f"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="1505425e-6ca0-4077-851e-d04101adf41d"
+				name="PbDataAccessSave"
+				refimgid="98e872f0-6892-41ff-9a94-eb994850c3db"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="9e49d849-db5a-4699-9734-cd0bd06350c4"
+				name="PbNavigationBack"
+				refimgid="8436d118-a1b8-4bc8-8a52-a57a465d36fe"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="7ccc9024-4b69-4f07-bd05-1f74cb2fe633"
+				name="PbCommonLoeschen"
+				refimgid="a39150fc-dbae-4dbe-84c0-b19f5878d2c7"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Löschen']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Löschen']
+				</item>
+				<basepath>
+					/form[@controlname='frmNkr']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="d5918c34-8416-4c59-849e-034e67c34b94"
+			isrooted="True"
+			name="SplitterPanel"
+			refimgid="b42d92d9-76da-49c8-8a94-3d46a1ff7e7e"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="c6a43ec9-fe03-4d4e-9e21-2d657453b3af"
+				name="DfFirmNr"
+				refimgid="af9f072a-f61c-4e34-9239-795cddd25f57"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfFirm_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfFirm_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="fa26bc6b-1b0d-4aa7-9d78-da7517d56bb0"
+				name="DfNkrNr"
+				refimgid="2e890b6f-7579-4f06-b1c6-deaca107d3ff"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="c131c2ed-5291-4c87-8b6d-d79a303f1d28"
+				name="DfNkrBez"
+				refimgid="d26b98ab-e15b-471b-93fa-dad90d8a809b"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_bez']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_bez']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="771d7889-799f-4c11-9253-9701b91b8a92"
+				name="DfNkrVon"
+				refimgid="50001548-41e7-4093-b9d8-8ef9b2960ff8"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_von']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_von']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="29df0e74-bb37-43b6-a1a6-92d941fbc03b"
+				name="DfNkrBis"
+				refimgid="439d0422-413b-4b66-bdf3-2be8dc2aa814"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_bis']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_bis']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="65b2bc2d-5d4a-4abe-8a83-7c1923158be0"
+				name="DfNkrPraefix"
+				refimgid="a2338192-74d0-47fc-be8f-8e7a94266f31"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_praefix']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_praefix']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="4241b0ef-1f5b-44ed-b771-e43b190fa429"
+				name="DfNkrPs"
+				refimgid="ae618d14-987e-4021-ada7-891fa3aa68cf"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_ps']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_ps']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="228f6b49-f9f1-4f6d-a51d-67f50eb46ba4"
+				name="DfNkrStufe"
+				refimgid="59aaffd4-ec06-41ab-be05-d69276ee5a89"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_stufe']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_stufe']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="ff2ba397-5334-492f-a87f-bf0c03728b45"
+				name="DfNkrSuffix"
+				refimgid="aa99c494-c0ff-46bd-a9ea-8f8c9aae2535"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_suffix']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_suffix']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="12a28084-2cdc-4c06-bfea-ff9f3735dd22"
+				name="DfNkrNrDup"
+				refimgid="0b10fb96-363c-495e-bff3-6d69bdf5c043"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_nr_dup']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='dfNkr_nr_dup']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="aecea6ab-be7d-455d-ad01-ff2183bf77dc"
+				name="DfNkrKzfolgebeleg"
+				refimgid="511a3aa5-906e-455d-8c7b-c90876871cb4"
+				refpath="/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='groupBox1']/text[@controlname='dfNkr_kzfolgebeleg']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='groupBox1']/text[@controlname='dfNkr_kzfolgebeleg']
+				</item>
+				<basepath>
+					/form[@controlname='frmNkr']/container[@controlname='ClientArea']/container[@controlname='rsSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='frmNkr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="d569a27c-f08f-4fef-98a1-a9eb4f965d2d"
+		name="Nummernkreis_CD_Neu">
+		</var>
+	</variables>
+</repository>

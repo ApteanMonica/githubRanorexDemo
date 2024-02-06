@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{C925F1A7-FCAF-4B5B-9A9A-96F95C49FFF7}</ProjectGuid>
+    <ProjectGuid>{86388AC7-F0E7-453E-86F7-1398A8931916}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Exe</OutputType>
-    <RootNamespace>S_MEH_Schnelltest</RootNamespace>
-    <AssemblyName>S_MEH_Schnelltest</AssemblyName>
+    <RootNamespace>S_NKRN_Schnelltest</RootNamespace>
+    <AssemblyName>S_NKRN_Schnelltest</AssemblyName>
     <NoWarn>1591</NoWarn>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <projectdefaultrepository>81f9ed9d-40d4-4a45-98b6-a12678290127</projectdefaultrepository>
-    <StartAction>Project</StartAction>
+    <projectdefaultrepository>fc86960e-8fea-4ec3-9647-87f2ea7e188f</projectdefaultrepository>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -80,132 +79,98 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
-      <id>ab8dff3f-b483-4b0a-9b43-ef2a6d1954af</id>
+      <id>b2653ebc-6815-47ed-b2ba-9e9654bbb32e</id>
     </Compile>
     <Compile Include="Program.cs">
-      <id>271a2eea-e5fc-40b9-a7e7-bc0765153832</id>
-    </Compile>
-    <Compile Include="Recordings\Bearbeiten_Mengeneinheit_CD_Neu.cs">
-      <BoundTo>fe0be54d-01f1-4391-bba4-4e2f58393179</BoundTo>
-      <DependentUpon>Bearbeiten_Mengeneinheit_CD_Neu.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>509445c8-6a2a-4ae7-a8a5-26c11dc01fcc</id>
-    </Compile>
-    <Compile Include="Recordings\Bearbeiten_Mengeneinheit_CD_Neu.UserCode.cs">
-      <BoundTo>fe0be54d-01f1-4391-bba4-4e2f58393179</BoundTo>
-      <DependentUpon>Bearbeiten_Mengeneinheit_CD_Neu.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>9c2614a0-0a06-4ce9-8514-9b4dce612b79</id>
+      <id>7022e928-4c50-4902-871a-a08b7d2c47f0</id>
     </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>62fa68ee-26c6-4e1b-8770-640e99d46184</id>
-      <BoundTo>a0a6bfd5-66cc-494a-aff9-e312262f9b66</BoundTo>
+      <id>312413da-c066-447e-bf81-0dd1b3e0cf33</id>
+      <BoundTo>bd70ce2b-d66e-462b-8ffc-ee5b6e267eca</BoundTo>
     </Compile>
     <Compile Include="Recordings\CloseAUT.UserCode.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>c4c2e688-03fa-4801-8542-03381fb00b46</id>
-      <BoundTo>a0a6bfd5-66cc-494a-aff9-e312262f9b66</BoundTo>
+      <id>955ca34d-70ce-43d5-82ea-4140542134da</id>
+      <BoundTo>bd70ce2b-d66e-462b-8ffc-ee5b6e267eca</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Loeschen_Mengeneinheit_CD_Neu.cs">
-      <BoundTo>bbd22ec6-5f5e-45d8-9473-3d605d8d5f6f</BoundTo>
-      <DependentUpon>Loeschen_Mengeneinheit_CD_Neu.rxrec</DependentUpon>
+    <Compile Include="Recordings\Neuanlage_Nummernkreis.cs">
+      <BoundTo>df55cabd-f18f-42a6-8253-2a504e286cd1</BoundTo>
+      <DependentUpon>Neuanlage_Nummernkreis.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>007632cc-1390-49ba-a191-c3a093c66ca2</id>
+      <id>db5753cb-6880-456e-b932-471a096b0187</id>
     </Compile>
-    <Compile Include="Recordings\Loeschen_Mengeneinheit_CD_Neu.UserCode.cs">
-      <BoundTo>bbd22ec6-5f5e-45d8-9473-3d605d8d5f6f</BoundTo>
-      <DependentUpon>Loeschen_Mengeneinheit_CD_Neu.rxrec</DependentUpon>
+    <Compile Include="Recordings\Neuanlage_Nummernkreis.UserCode.cs">
+      <BoundTo>df55cabd-f18f-42a6-8253-2a504e286cd1</BoundTo>
+      <DependentUpon>Neuanlage_Nummernkreis.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>2f703a44-c6e5-4a6f-8706-4374ebada79c</id>
-    </Compile>
-    <Compile Include="Recordings\Neuanlage_Mengeneinheit.cs">
-      <BoundTo>93608d5f-9523-4fce-8299-852dea981a01</BoundTo>
-      <DependentUpon>Neuanlage_Mengeneinheit.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>820b0467-92eb-4a2e-82e6-c4b6b12cd289</id>
-    </Compile>
-    <Compile Include="Recordings\Neuanlage_Mengeneinheit.UserCode.cs">
-      <BoundTo>93608d5f-9523-4fce-8299-852dea981a01</BoundTo>
-      <DependentUpon>Neuanlage_Mengeneinheit.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b7b4d2e9-684f-4bfe-a41e-417ccdb6b791</id>
+      <id>eaf79213-7607-4777-847d-4f5394a5e6db</id>
     </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>e0817792-a9bc-4d82-80df-82ab2484499e</id>
-      <BoundTo>e4197270-056e-4760-9e8f-60a91fc2f51e</BoundTo>
+      <id>f3cbac82-77cf-4a43-abb9-2f721381091a</id>
+      <BoundTo>d9798c16-e8d1-45a0-a708-e39b2cc5507a</BoundTo>
     </Compile>
     <Compile Include="Recordings\StartAUT.UserCode.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>e01ae4c2-1e37-4061-91cc-1983dba8a251</id>
-      <BoundTo>e4197270-056e-4760-9e8f-60a91fc2f51e</BoundTo>
+      <id>320723e3-faa9-4ac9-abe1-847c22833532</id>
+      <BoundTo>d9798c16-e8d1-45a0-a708-e39b2cc5507a</BoundTo>
     </Compile>
-    <Compile Include="S_MEH_SchnelltestRepository.cs">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <DependentUpon>S_MEH_SchnelltestRepository.rxrep</DependentUpon>
+    <Compile Include="S_NKRN_SchnelltestRepository.cs">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <DependentUpon>S_NKRN_SchnelltestRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>f1d8d24e-35d2-46e1-9849-6f6baa562982</id>
+      <id>c2bef683-78f1-43c7-bb96-a66d0be6da82</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
-      <id>7241fa3d-d537-4c2e-9140-cca55551f2a3</id>
-    </None>
-    <None Include="Recordings\Bearbeiten_Mengeneinheit_CD_Neu.rxrec">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <id>fe0be54d-01f1-4391-bba4-4e2f58393179</id>
-      <recordtableid>56abe584-6b69-45dd-94c7-d951478cfb2e</recordtableid>
+      <id>34110d62-de61-4cd6-874f-2c7df4222f11</id>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <id>a0a6bfd5-66cc-494a-aff9-e312262f9b66</id>
-      <recordtableid>a9554d1b-b570-41f3-8a96-9e132acb132e</recordtableid>
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>bd70ce2b-d66e-462b-8ffc-ee5b6e267eca</id>
+      <recordtableid>b2836d30-c2c8-4a57-b0f0-71022001b486</recordtableid>
     </None>
-    <None Include="Recordings\Loeschen_Mengeneinheit_CD_Neu.rxrec">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <id>bbd22ec6-5f5e-45d8-9473-3d605d8d5f6f</id>
-      <recordtableid>54006ed6-0ad6-44b6-bf1a-15eec80247ba</recordtableid>
-    </None>
-    <None Include="Recordings\Neuanlage_Mengeneinheit.rxrec">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <id>93608d5f-9523-4fce-8299-852dea981a01</id>
-      <recordtableid>7ca564d2-d447-45cf-8d13-191f0265f99f</recordtableid>
+    <None Include="Recordings\Neuanlage_Nummernkreis.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>df55cabd-f18f-42a6-8253-2a504e286cd1</id>
+      <recordtableid>2d69665c-5c60-4027-8b0f-0365b6052a3d</recordtableid>
     </None>
     <None Include="Recordings\StartAUT.rxrec">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <id>e4197270-056e-4760-9e8f-60a91fc2f51e</id>
-      <recordtableid>87850d3a-8be9-4ba2-8b2f-e1193fe20389</recordtableid>
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>d9798c16-e8d1-45a0-a708-e39b2cc5507a</id>
+      <recordtableid>9f39942d-0b90-4413-a98b-ec396824b7b6</recordtableid>
     </None>
-    <None Include="S_MEH_SchnelltestRepository.rximg">
-      <BoundTo>81f9ed9d-40d4-4a45-98b6-a12678290127</BoundTo>
-      <DependentUpon>S_MEH_SchnelltestRepository.rxrep</DependentUpon>
+    <None Include="S_NKRN_SchnelltestRepository.rximg">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <DependentUpon>S_NKRN_SchnelltestRepository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
-      <id>034141a2-5020-4f1b-8bfd-fada7bfbaada</id>
+      <id>b355ee04-cdef-4010-9d8e-d9401add5b52</id>
     </None>
-    <None Include="S_MEH_SchnelltestRepository.rxrep">
-      <id>81f9ed9d-40d4-4a45-98b6-a12678290127</id>
-      <repoid>6e8bcb95-4adb-4623-92fe-2038a378c502</repoid>
-      <reporootid>25a2ac80-2911-4586-9921-609076cb31ac</reporootid>
+    <None Include="S_NKRN_SchnelltestRepository.rxrep">
+      <id>fc86960e-8fea-4ec3-9647-87f2ea7e188f</id>
+      <repoid>39327c39-fa47-49b4-9df0-2ee577df3085</repoid>
+      <reporootid>ebfb1ac5-e945-4e84-99d0-92686210e850</reporootid>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="S_MEH_Schnelltest.rxtmg">
+    <Content Include="S_NKRN_Schnelltest.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>f226b2cc-93c5-4a5f-ada8-2b27e0fe5f3c</id>
+      <id>af8f347b-136c-43a3-8eb1-fbe3a72d61b0</id>
     </Content>
-    <Content Include="S_MEH_Schnelltest.rxtst">
+    <Content Include="S_NKRN_Schnelltest.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>540417cc-63d1-45d0-beac-5212f5793580</id>
+      <id>26c4598a-666a-45f3-aa15-44a021b9e28e</id>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Recordings">
-      <id>3f2b3bb5-300a-488b-946c-286ddc4fb597</id>
+      <id>9669d9f7-9260-4afa-b058-a907d32ed65b</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
