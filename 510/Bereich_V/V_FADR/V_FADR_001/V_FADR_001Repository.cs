@@ -36,6 +36,7 @@ namespace V_FADR_001
         V_FADR_001RepositoryFolders.TblDruckenAppFolder _tbldrucken;
         V_FADR_001RepositoryFolders.DlgRechAenderungAppFolder _dlgrechaenderung;
         V_FADR_001RepositoryFolders.VFADR1AppFolder _vfadr1;
+        V_FADR_001RepositoryFolders.TblDrucken1AppFolder _tbldrucken1;
 
         /// <summary>
         /// Gets the singleton class instance representing the V_FADR_001Repository element repository.
@@ -61,6 +62,7 @@ namespace V_FADR_001
             _tbldrucken = new V_FADR_001RepositoryFolders.TblDruckenAppFolder(this);
             _dlgrechaenderung = new V_FADR_001RepositoryFolders.DlgRechAenderungAppFolder(this);
             _vfadr1 = new V_FADR_001RepositoryFolders.VFADR1AppFolder(this);
+            _tbldrucken1 = new V_FADR_001RepositoryFolders.TblDrucken1AppFolder(this);
         }
 
 #region Variables
@@ -182,6 +184,15 @@ namespace V_FADR_001
         public virtual V_FADR_001RepositoryFolders.VFADR1AppFolder VFADR1
         {
             get { return _vfadr1; }
+        }
+
+        /// <summary>
+        /// The TblDrucken1 folder.
+        /// </summary>
+        [RepositoryFolder("cf05abcf-2005-4589-bf2f-3bbed49d8743")]
+        public virtual V_FADR_001RepositoryFolders.TblDrucken1AppFolder TblDrucken1
+        {
+            get { return _tbldrucken1; }
         }
     }
 
@@ -2286,6 +2297,72 @@ namespace V_FADR_001
                 get
                 {
                     return _dropdownInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblDrucken1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cf05abcf-2005-4589-bf2f-3bbed49d8743")]
+        public partial class TblDrucken1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100rechnungInfo;
+
+            /// <summary>
+            /// Creates a new TblDrucken1  folder.
+            /// </summary>
+            public TblDrucken1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblDrucken1", "/form[@controltypename='tblDrucken']", parentFolder, 30000, null, true, "cf05abcf-2005-4589-bf2f-3bbed49d8743", "")
+            {
+                _titlebar100rechnungInfo = new RepoItemInfo(this, "TitleBar100Rechnung", "titlebar", "", 30000, null, "9b5c8bf2-aab3-4a86-a6f3-ec3744a9f4ff");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cf05abcf-2005-4589-bf2f-3bbed49d8743")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cf05abcf-2005-4589-bf2f-3bbed49d8743")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Rechnung item.
+            /// </summary>
+            [RepositoryItem("9b5c8bf2-aab3-4a86-a6f3-ec3744a9f4ff")]
+            public virtual Ranorex.TitleBar TitleBar100Rechnung
+            {
+                get
+                {
+                    return _titlebar100rechnungInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Rechnung item info.
+            /// </summary>
+            [RepositoryItemInfo("9b5c8bf2-aab3-4a86-a6f3-ec3744a9f4ff")]
+            public virtual RepoItemInfo TitleBar100RechnungInfo
+            {
+                get
+                {
+                    return _titlebar100rechnungInfo;
                 }
             }
         }
