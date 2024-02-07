@@ -910,6 +910,7 @@ namespace E_FIBU_001
             RepoItemInfo _buttonspeichernInfo;
             RepoItemInfo _dateinameInfo;
             RepoItemInfo _pfadInfo;
+            RepoItemInfo _druckausgabespeichernunterInfo;
 
             /// <summary>
             /// Creates a new DruckausgabeSpeichernUnter  folder.
@@ -921,6 +922,7 @@ namespace E_FIBU_001
                 _buttonspeichernInfo = new RepoItemInfo(this, "ButtonSpeichern", "button[@text='&Speichern']", "", 30000, null, "793c2f51-ffff-4154-b32d-5e9743471318");
                 _dateinameInfo = new RepoItemInfo(this, "Dateiname", "element[@class='DUIViewWndClassName']//combobox[@class='ComboBox']/text[@controlid='1001']", "", 30000, null, "4c766e2f-a1a0-4616-a25d-ccd5155d4349");
                 _pfadInfo = new RepoItemInfo(this, "Pfad", "element[@class='WorkerW']//combobox[@controlid='41477']/text[@controlid='41477']", "", 30000, null, "149f9b3d-84dd-4f66-906b-4a02d19dc6fc");
+                _druckausgabespeichernunterInfo = new RepoItemInfo(this, "DruckausgabeSpeichernUnter", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "fbac513e-97ef-4e1b-8b96-3b4735c8b7f8");
             }
 
             /// <summary>
@@ -1040,6 +1042,30 @@ namespace E_FIBU_001
                 get
                 {
                     return _pfadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DruckausgabeSpeichernUnter item.
+            /// </summary>
+            [RepositoryItem("fbac513e-97ef-4e1b-8b96-3b4735c8b7f8")]
+            public virtual Ranorex.TitleBar DruckausgabeSpeichernUnter
+            {
+                get
+                {
+                    return _druckausgabespeichernunterInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DruckausgabeSpeichernUnter item info.
+            /// </summary>
+            [RepositoryItemInfo("fbac513e-97ef-4e1b-8b96-3b4735c8b7f8")]
+            public virtual RepoItemInfo DruckausgabeSpeichernUnterInfo
+            {
+                get
+                {
+                    return _druckausgabespeichernunterInfo;
                 }
             }
         }

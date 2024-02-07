@@ -155,8 +155,8 @@ namespace E_LSK_006.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'MdiLSR.DfDifferenz'.", repo.MdiLSR.DfDifferenzInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.MdiLSR.DfDifferenzInfo, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.PbRichtig' at Center.", repo.MdiLSR.PbRichtigInfo, new RecordItemIndex(8));
-            repo.MdiLSR.PbRichtig.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.PbRichtig1' at Center.", repo.MdiLSR.PbRichtig1Info, new RecordItemIndex(8));
+            repo.MdiLSR.PbRichtig1.Click();
             
             // BAR: wait for erhöht auf 2 Minuten von 5s
             Report.Log(ReportLevel.Info, "Wait", "BAR: wait for erhöht auf 2 Minuten von 5s\r\nWaiting 2m to exist. Associated repository item: 'DlgMessageBox.LieferscheinRechnung'", repo.DlgMessageBox.LieferscheinRechnungInfo, new ActionTimeout(120000), new RecordItemIndex(9));

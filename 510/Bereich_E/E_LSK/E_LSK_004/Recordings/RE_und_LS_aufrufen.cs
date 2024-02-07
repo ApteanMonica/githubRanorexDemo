@@ -145,12 +145,12 @@ namespace E_LSK_004.Recordings
             Validate.AttributeEqual(repo.MdiLSR.FrmKopf.ColLskStatusRow1Info, "Text", "F");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.FrmKopf.Row1Column0' at Center.", repo.MdiLSR.FrmKopf.Row1Column0Info, new RecordItemIndex(10));
-            repo.MdiLSR.FrmKopf.Row1Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.frmKopf_Rech.Row1Column0' at Center.", repo.MdiLSR.frmKopf_Rech.Row1Column0Info, new RecordItemIndex(10));
+            repo.MdiLSR.frmKopf_Rech.Row1Column0.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'MdiLSR.FrmKopf.Row1Column0' at Center.", repo.MdiLSR.FrmKopf.Row1Column0Info, new RecordItemIndex(11));
-            repo.MdiLSR.FrmKopf.Row1Column0.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'MdiLSR.frmKopf_Rech.Row1Column0' at Center.", repo.MdiLSR.frmKopf_Rech.Row1Column0Info, new RecordItemIndex(11));
+            repo.MdiLSR.frmKopf_Rech.Row1Column0.Click(System.Windows.Forms.MouseButtons.Right);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ELSK.Lieferscheinpositionen' at UpperCenter.", repo.ELSK.LieferscheinpositionenInfo, new RecordItemIndex(12));

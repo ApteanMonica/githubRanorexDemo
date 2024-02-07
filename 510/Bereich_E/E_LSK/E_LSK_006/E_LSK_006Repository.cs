@@ -120,10 +120,10 @@ namespace E_LSK_006
             RepoItemInfo _lieferant1Info;
             RepoItemInfo _pbladenlskInfo;
             RepoItemInfo _dfdifferenzInfo;
-            RepoItemInfo _pbrichtigInfo;
             RepoItemInfo _pbperformsimplesearchInfo;
             RepoItemInfo _celltmpcols2row10Info;
             RepoItemInfo _row10column0Info;
+            RepoItemInfo _pbrichtig1Info;
 
             /// <summary>
             /// Creates a new MdiLSR  folder.
@@ -144,10 +144,10 @@ namespace E_LSK_006
                 _lieferant1Info = new RepoItemInfo(this, "Lieferant1", "container[@controlname='ClientArea']/?/?/form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']//text[@accessiblename='Lieferant']", "", 30000, null, "af05876f-fcb9-4592-b19c-048b452a8519");
                 _pbladenlskInfo = new RepoItemInfo(this, "PbLadenLsk", ".//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/button[@controlname='pbLaden_lsk']", "", 30000, null, "b1a0ca69-8463-4715-8c15-a13843bb77fe");
                 _dfdifferenzInfo = new RepoItemInfo(this, "DfDifferenz", ".//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfDifferenz']", "", 30000, null, "b2f97d37-e438-4ade-84d5-2e3939ee4749");
-                _pbrichtigInfo = new RepoItemInfo(this, "PbRichtig", ".//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/button[@controlname='pbRichtig']", "", 30000, null, "454c3b21-41cf-4333-b1a8-a18c59ac968b");
                 _pbperformsimplesearchInfo = new RepoItemInfo(this, "PbPerformSimpleSearch", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "e6a4ce84-56af-48ae-b2a4-6763b9c52165");
                 _celltmpcols2row10Info = new RepoItemInfo(this, "CellTmpColS2Row10", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='__tmp__colS2 Row 10']", "", 30000, null, "7bc26a5a-ccdb-4696-80da-e094e8b8e966");
                 _row10column0Info = new RepoItemInfo(this, "Row10Column0", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='Row 10 Column 0']", "", 30000, null, "fbbc62bc-ba12-457d-b349-84199dfb21bf");
+                _pbrichtig1Info = new RepoItemInfo(this, "PbRichtig1", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmKopf']/form[@controlname='frmKopf']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame5']/button[@controlname='pbRichtig']", "", 30000, null, "0a027273-bc7c-4571-b8fe-d756446a92a4");
             }
 
             /// <summary>
@@ -439,30 +439,6 @@ namespace E_LSK_006
             }
 
             /// <summary>
-            /// The PbRichtig item.
-            /// </summary>
-            [RepositoryItem("454c3b21-41cf-4333-b1a8-a18c59ac968b")]
-            public virtual Ranorex.Button PbRichtig
-            {
-                get
-                {
-                    return _pbrichtigInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbRichtig item info.
-            /// </summary>
-            [RepositoryItemInfo("454c3b21-41cf-4333-b1a8-a18c59ac968b")]
-            public virtual RepoItemInfo PbRichtigInfo
-            {
-                get
-                {
-                    return _pbrichtigInfo;
-                }
-            }
-
-            /// <summary>
             /// The PbPerformSimpleSearch item.
             /// </summary>
             [RepositoryItem("e6a4ce84-56af-48ae-b2a4-6763b9c52165")]
@@ -531,6 +507,30 @@ namespace E_LSK_006
                 get
                 {
                     return _row10column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The PbRichtig1 item.
+            /// </summary>
+            [RepositoryItem("0a027273-bc7c-4571-b8fe-d756446a92a4")]
+            public virtual Ranorex.Button PbRichtig1
+            {
+                get
+                {
+                    return _pbrichtig1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbRichtig1 item info.
+            /// </summary>
+            [RepositoryItemInfo("0a027273-bc7c-4571-b8fe-d756446a92a4")]
+            public virtual RepoItemInfo PbRichtig1Info
+            {
+                get
+                {
+                    return _pbrichtig1Info;
                 }
             }
 

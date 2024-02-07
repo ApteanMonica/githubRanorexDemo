@@ -144,7 +144,10 @@ namespace L_KMSE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'l_kmse_001' with focus on 'DruckausgabeSpeichernUnter.Text1001'.", repo.DruckausgabeSpeichernUnter.Text1001Info, new RecordItemIndex(7));
             repo.DruckausgabeSpeichernUnter.Text1001.PressKeys("l_kmse_001");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ButtonSpeichern' at Center.", repo.DruckausgabeSpeichernUnter.ButtonSpeichernInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnter'", repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo, new ActionTimeout(120000), new RecordItemIndex(8));
+            repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo.WaitForNotExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ButtonSpeichern' at Center.", repo.DruckausgabeSpeichernUnter.ButtonSpeichernInfo, new RecordItemIndex(9));
             repo.DruckausgabeSpeichernUnter.ButtonSpeichern.Click();
             
         }

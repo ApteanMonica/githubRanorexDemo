@@ -73,15 +73,14 @@ namespace E_LSK_004.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'MdiLSR.TitleBar100LieferscheineLagerzuga'.", repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, new RecordItemIndex(0));
             Host.Current.CloseApplication(repo.MdiLSR.TitleBar100LieferscheineLagerzuga, 1000);
-            Delay.Milliseconds(0);
             
         }
 
