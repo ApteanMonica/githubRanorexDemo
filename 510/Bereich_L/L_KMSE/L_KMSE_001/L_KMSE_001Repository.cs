@@ -967,6 +967,7 @@ namespace L_KMSE_001
             RepoItemInfo _text1001Info;
             RepoItemInfo _buttonspeichernInfo;
             RepoItemInfo _toolbar1001Info;
+            RepoItemInfo _druckausgabespeichernunterInfo;
 
             /// <summary>
             /// Creates a new DruckausgabeSpeichernUnter  folder.
@@ -977,6 +978,7 @@ namespace L_KMSE_001
                 _text1001Info = new RepoItemInfo(this, "Text1001", "element[@class='DUIViewWndClassName']//combobox[@class='ComboBox']/text[@controlid='1001']", "", 30000, null, "70e28a35-5387-4cc4-bae3-114db310b5a7");
                 _buttonspeichernInfo = new RepoItemInfo(this, "ButtonSpeichern", "button[@text='&Speichern']", "", 30000, null, "13c17068-a8a5-4df1-8f23-5ad3efac98cb");
                 _toolbar1001Info = new RepoItemInfo(this, "ToolBar1001", "element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']", "", 30000, null, "d0d3a925-d763-4601-a2d0-05c032858706");
+                _druckausgabespeichernunterInfo = new RepoItemInfo(this, "DruckausgabeSpeichernUnter", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "62e4497f-f2fc-4c31-90f8-422486dd2a21");
             }
 
             /// <summary>
@@ -1072,6 +1074,30 @@ namespace L_KMSE_001
                 get
                 {
                     return _toolbar1001Info;
+                }
+            }
+
+            /// <summary>
+            /// The DruckausgabeSpeichernUnter item.
+            /// </summary>
+            [RepositoryItem("62e4497f-f2fc-4c31-90f8-422486dd2a21")]
+            public virtual Ranorex.TitleBar DruckausgabeSpeichernUnter
+            {
+                get
+                {
+                    return _druckausgabespeichernunterInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DruckausgabeSpeichernUnter item info.
+            /// </summary>
+            [RepositoryItemInfo("62e4497f-f2fc-4c31-90f8-422486dd2a21")]
+            public virtual RepoItemInfo DruckausgabeSpeichernUnterInfo
+            {
+                get
+                {
+                    return _druckausgabespeichernunterInfo;
                 }
             }
         }
