@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="80448779-12a5-46e9-9701-89cf0573d28b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Eric_Version_ericapi_pruefen"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ALLE_XML_Eric">
+	</codegen>
+	<variables>
+		<var
+		id="b16166da-74f4-493f-b0bc-546f0fe814e4"
+		name="Eric_ericapi_Version">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cdc891bc-331f-47a9-b63c-cab5dda5ff17">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Eric_ericapi_Version">
+				</binding>
+			</bindings>
+			<info
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='eric.log - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
+	name="B_ELSTER_2024_UVA_JUVA_ZMRepository"
+	relativepath="..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
+		<codegen
+		classname="B_ELSTER_2024_UVA_JUVA_ZMRepository"
+		namespace="B_ELSTER_2024_UVA_JUVA_ZM">
+		</codegen>
+		<rootfolder
+		id="6796600a-bf80-4687-9882-251ca4f9081a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Eric_Version_ericapi_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
