@@ -132,13 +132,16 @@ namespace E_FIBU_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'DruckausgabeSpeichernUnter.Dateiname'.", repo.DruckausgabeSpeichernUnter.DateinameInfo, new RecordItemIndex(12));
             repo.DruckausgabeSpeichernUnter.Dateiname.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ButtonSpeichern' at Center.", repo.DruckausgabeSpeichernUnter.ButtonSpeichernInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnter'", repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo, new ActionTimeout(120000), new RecordItemIndex(13));
+            repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ButtonSpeichern' at Center.", repo.DruckausgabeSpeichernUnter.ButtonSpeichernInfo, new RecordItemIndex(14));
             repo.DruckausgabeSpeichernUnter.ButtonSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (WindowText~'Es wurden 1 von 1 Rechnungen übergeleitet') on item 'Textmessage'.", repo.Textmessage.SelfInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (WindowText~'Es wurden 1 von 1 Rechnungen übergeleitet') on item 'Textmessage'.", repo.Textmessage.SelfInfo, new RecordItemIndex(15));
             Validate.AttributeRegex(repo.Textmessage.SelfInfo, "WindowText", new Regex("Es wurden 1 von 1 Rechnungen übergeleitet"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
             repo.DlgMessageBox.Button0.Click();
             
         }
