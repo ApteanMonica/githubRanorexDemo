@@ -117,8 +117,8 @@ namespace E_LSK_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferscheinsumme) on item 'MdiLSR.FrmKopf.ColLskSummeRow1'.", repo.MdiLSR.FrmKopf.ColLskSummeRow1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.MdiLSR.FrmKopf.ColLskSummeRow1Info, "Text", Lieferscheinsumme);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.FrmKopf.PbRichtig' at Center.", repo.MdiLSR.FrmKopf.PbRichtigInfo, new RecordItemIndex(4));
-            repo.MdiLSR.FrmKopf.PbRichtig.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.PbRichtig' at Center.", repo.MdiLSR.PbRichtigInfo, new RecordItemIndex(4));
+            repo.MdiLSR.PbRichtig.Click();
             
             // wait for erhöht von 5s auf 2 Minuten
             Report.Log(ReportLevel.Info, "Wait", "wait for erhöht von 5s auf 2 Minuten\r\nWaiting 2m to exist. Associated repository item: 'DlgMessageBox.LieferscheinRechnung'", repo.DlgMessageBox.LieferscheinRechnungInfo, new ActionTimeout(120000), new RecordItemIndex(5));
@@ -145,8 +145,8 @@ namespace E_LSK_004.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg_Nr' with focus on 'MdiLSR.FrmKopf.IntBelegnr'.", repo.MdiLSR.FrmKopf.IntBelegnrInfo, new RecordItemIndex(12));
             repo.MdiLSR.FrmKopf.IntBelegnr.PressKeys(Beleg_Nr);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.FrmKopf.PbRichtig' at Center.", repo.MdiLSR.FrmKopf.PbRichtigInfo, new RecordItemIndex(13));
-            repo.MdiLSR.FrmKopf.PbRichtig.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.PbRichtig' at Center.", repo.MdiLSR.PbRichtigInfo, new RecordItemIndex(13));
+            repo.MdiLSR.PbRichtig.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Standardzahlungsbedingung') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Standardzahlungsbedingung");
