@@ -45,6 +45,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Adobe_mit_Titel_TestAppFolder _adobe_mit_titel_test;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AdobeAppFolder _adobe;
         B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder _acrobat;
+        B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_ELSTER_2024_UVA_JUVA_ZMRepository element repository.
@@ -79,6 +80,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             _adobe_mit_titel_test = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Adobe_mit_Titel_TestAppFolder(this);
             _adobe = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AdobeAppFolder(this);
             _acrobat = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder(this);
+            _dlgmessagebox = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.DlgMessageBoxAppFolder(this);
         }
 
 #region Variables
@@ -293,6 +295,15 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.AcrobatAppFolder Acrobat
         {
             get { return _acrobat; }
+        }
+
+        /// <summary>
+        /// The DlgMessageBox folder.
+        /// </summary>
+        [RepositoryFolder("21574776-a8ec-41c5-9806-e482c67e4328")]
+        public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
+        {
+            get { return _dlgmessagebox; }
         }
     }
 
@@ -4833,7 +4844,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             /// Creates a new Adobe  folder.
             /// </summary>
             public AdobeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Adobe", "/form", parentFolder, 30000, null, true, "1f926027-1981-434e-bcb3-aac65e5c0876", "")
+                    base("Adobe", "/form[@title~'TEST.PDF']", parentFolder, 30000, null, true, "1f926027-1981-434e-bcb3-aac65e5c0876", "")
             {
                 _titelbar_adobeInfo = new RepoItemInfo(this, "Titelbar_Adobe", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "56b66e71-3414-44c4-84b4-f771d00da74a");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "93dfa5cf-18b1-4456-86f8-74d5f7d2a753");
@@ -5160,6 +5171,124 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _fensterhoeheInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgMessageBoxAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("21574776-a8ec-41c5-9806-e482c67e4328")]
+        public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _umsatzsteuervoranmeldungInfo;
+            RepoItemInfo _labelmeldungstextInfo;
+            RepoItemInfo _button0Info;
+
+            /// <summary>
+            /// Creates a new DlgMessageBox  folder.
+            /// </summary>
+            public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "21574776-a8ec-41c5-9806-e482c67e4328", "")
+            {
+                _umsatzsteuervoranmeldungInfo = new RepoItemInfo(this, "UmsatzsteuerVoranmeldung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d37248a5-3aeb-4c75-9235-e31c6a547fbf");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "c828822b-1c55-4140-8c94-270563733049");
+                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "1af28bb6-9e64-42df-b883-75f9e7875cd4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("21574776-a8ec-41c5-9806-e482c67e4328")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("21574776-a8ec-41c5-9806-e482c67e4328")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UmsatzsteuerVoranmeldung item.
+            /// </summary>
+            [RepositoryItem("d37248a5-3aeb-4c75-9235-e31c6a547fbf")]
+            public virtual Ranorex.TitleBar UmsatzsteuerVoranmeldung
+            {
+                get
+                {
+                    return _umsatzsteuervoranmeldungInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UmsatzsteuerVoranmeldung item info.
+            /// </summary>
+            [RepositoryItemInfo("d37248a5-3aeb-4c75-9235-e31c6a547fbf")]
+            public virtual RepoItemInfo UmsatzsteuerVoranmeldungInfo
+            {
+                get
+                {
+                    return _umsatzsteuervoranmeldungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("c828822b-1c55-4140-8c94-270563733049")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("c828822b-1c55-4140-8c94-270563733049")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item.
+            /// </summary>
+            [RepositoryItem("1af28bb6-9e64-42df-b883-75f9e7875cd4")]
+            public virtual Ranorex.Button Button0
+            {
+                get
+                {
+                    return _button0Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item info.
+            /// </summary>
+            [RepositoryItemInfo("1af28bb6-9e64-42df-b883-75f9e7875cd4")]
+            public virtual RepoItemInfo Button0Info
+            {
+                get
+                {
+                    return _button0Info;
                 }
             }
         }
