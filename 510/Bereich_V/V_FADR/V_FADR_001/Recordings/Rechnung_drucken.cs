@@ -124,26 +124,32 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "201900005\t13");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100Rechnung'.", repo.TblDrucken.TitleBar100RechnungInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeRechnung'", repo.DlgDrucken.TitleBar100DruckeRechnungInfo, new ActionTimeout(120000), new RecordItemIndex(12));
+            repo.DlgDrucken.TitleBar100DruckeRechnungInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100Rechnung'.", repo.TblDrucken.TitleBar100RechnungInfo, new RecordItemIndex(13));
             Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100Rechnung);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(14));
             Delay.Duration(2000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(14));
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(15));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeRechnung'.", repo.DlgDrucken.TitleBar100DruckeRechnungInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeRechnung'", repo.DlgDrucken.TitleBar100DruckeRechnungInfo, new ActionTimeout(120000), new RecordItemIndex(16));
+            repo.DlgDrucken.TitleBar100DruckeRechnungInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeRechnung'.", repo.DlgDrucken.TitleBar100DruckeRechnungInfo, new RecordItemIndex(17));
             Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeRechnung);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(18));
             Delay.Duration(3000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(17));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(19));
             //repo.TblDrucken.Schliessen.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(18));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(20));
             //repo.TblDrucken.Schliessen.Click();
             
         }
