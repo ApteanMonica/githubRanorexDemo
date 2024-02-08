@@ -1303,7 +1303,7 @@ namespace B_UVA_003
             /// Creates a new UVAXMLEditor  folder.
             /// </summary>
             public UVAXMLEditorAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("UVAXMLEditor", "/form[@title='UVA.XML - Editor']", parentFolder, 30000, null, true, "8c8d510e-552b-404a-ab2a-b3bcb4302ff5", "")
+                    base("UVAXMLEditor", "/form[@title~'Editor']", parentFolder, 30000, null, true, "8c8d510e-552b-404a-ab2a-b3bcb4302ff5", "")
             {
                 _uvaxmleditorInfo = new RepoItemInfo(this, "UVAXMLEditor", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1f859a76-4f5f-4f01-9b0f-0b4d2b3e8f07");
                 _text15Info = new RepoItemInfo(this, "Text15", "text[@controlid='15']", "", 30000, null, "d338ab50-7c38-452a-8ccb-a5e457234e38");

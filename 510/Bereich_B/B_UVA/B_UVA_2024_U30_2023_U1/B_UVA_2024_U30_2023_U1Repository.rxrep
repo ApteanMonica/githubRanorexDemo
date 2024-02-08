@@ -654,7 +654,6 @@ QmCC
 		id="320cba23-2f0d-49d9-a0f9-6862ea449c92"
 		isrooted="True"
 		name="UVAXMLEditor"
-		refpath="/form[@title='UVA.XML - Editor']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -663,10 +662,9 @@ QmCC
 			id="5e93970b-741a-4058-9ffc-346e191baba7"
 			name="UVAXMLEditor"
 			refimgid="a85cc715-57da-4088-9bae-8a57a0f8d874"
-			refpath="/form[@title='UVA.XML - Editor']/titlebar[@accessiblerole='TitleBar']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@title='UVA.XML - Editor']/titlebar[@accessiblerole='TitleBar']
+				/form[@title~'Editor']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
 			addcaps="text,nativewindow"
@@ -674,13 +672,12 @@ QmCC
 			id="9f57d004-af67-435c-bc4c-4825a071428c"
 			name="Text15"
 			refimgid="ba244dbe-a4cc-41e6-9c6b-91770655827b"
-			refpath="/form[@title='UVA.XML - Editor']/text[@controlid='15']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@title='UVA.XML - Editor']/text[@controlid='15']
+				/form[@title~'Editor']/text[@controlid='15']
 			</item>
 			<basepath>
-				/form[@title='UVA.XML - Editor']
+				/form[@title~'Editor']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
