@@ -7,7 +7,7 @@ mode="Desktop">
 		1
 	</repeatcount>
 	<turbomode>
-		False
+		True
 	</turbomode>
 	<genreport>
 		True
@@ -23,27 +23,27 @@ mode="Desktop">
 	namespace="S_PERS_Schnelltest.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="2b65ef3e-5efb-4d40-8f6b-684255705218"
-		name="CloseAutProcessIDVar">
-			-1
-		</var>
 	</variables>
 	<recorditems>
 		<closeapprecorditem
 		enabled="True"
-		graceperiod="500ms"
-		method="CloseWindowByProcessID"
+		graceperiod="1000ms"
+		method="CloseWindow"
 		optional="False"
-		searchpropertyid="0ee375be-d882-40ed-9a8f-1015853a70be">
+		searchpropertyid="4abb159f-66ce-4cdd-88cd-d84fd8112d3b">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ProcessID"
-				variable="CloseAutProcessIDVar">
-				</binding>
 			</bindings>
+			<info
+			id="2c37b3f1-9d05-40f2-bc17-216dcead3e27"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmPers']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</closeapprecorditem>
 	</recorditems>
 	<repository
@@ -61,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseAUT.UserCode.cs
+		CloseAUT_PERS.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

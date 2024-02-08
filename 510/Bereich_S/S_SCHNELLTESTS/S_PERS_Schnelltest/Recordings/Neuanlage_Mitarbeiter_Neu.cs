@@ -92,6 +92,36 @@ namespace S_PERS_Schnelltest.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmPers.PbNew' at Center.", repo.FrmPers.PbNewInfo, new RecordItemIndex(0));
+            repo.FrmPers.PbNew.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmPers.TitleBar100Mitarbeiterstamm'", repo.FrmPers.TitleBar100MitarbeiterstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmPers.TitleBar100MitarbeiterstammInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PERSONAL_NR_NEU' with focus on 'FrmPers.ToolBar.DfPersNr'.", repo.FrmPers.ToolBar.DfPersNrInfo, new RecordItemIndex(2));
+            repo.FrmPers.ToolBar.DfPersNr.PressKeys(PERSONAL_NR_NEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QS_Test_Bar' with focus on 'FrmPers.TabStammRegister.GbGrundDaten.DfPersKbez'.", repo.FrmPers.TabStammRegister.GbGrundDaten.DfPersKbezInfo, new RecordItemIndex(4));
+            repo.FrmPers.TabStammRegister.GbGrundDaten.DfPersKbez.PressKeys("QS_Test_Bar");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1{Tab}' with focus on 'FrmPers.TabStammRegister.GbGrundDaten.TextTyp'.", repo.FrmPers.TabStammRegister.GbGrundDaten.TextTypInfo, new RecordItemIndex(6));
+            repo.FrmPers.TabStammRegister.GbGrundDaten.TextTyp.PressKeys("1{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmPers.TabStammRegister.GbGrundDaten.Status'.", repo.FrmPers.TabStammRegister.GbGrundDaten.StatusInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmPers.TabStammRegister.GbGrundDaten.StatusInfo, "Text", "0");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Schnelltest' with focus on 'FrmPers.TabStammRegister.GbGrundDaten.DfVorname'.", repo.FrmPers.TabStammRegister.GbGrundDaten.DfVornameInfo, new RecordItemIndex(8));
+            repo.FrmPers.TabStammRegister.GbGrundDaten.DfVorname.PressKeys("Schnelltest");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BAR {Tab}' with focus on 'FrmPers.TabStammRegister.GbGrundDaten.DfNachname'.", repo.FrmPers.TabStammRegister.GbGrundDaten.DfNachnameInfo, new RecordItemIndex(9));
+            repo.FrmPers.TabStammRegister.GbGrundDaten.DfNachname.PressKeys("BAR {Tab}");
+            
         }
 
 #region Image Feature Data

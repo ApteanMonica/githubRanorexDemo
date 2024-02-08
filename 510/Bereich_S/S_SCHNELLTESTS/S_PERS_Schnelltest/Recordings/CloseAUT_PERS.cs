@@ -41,7 +41,6 @@ namespace S_PERS_Schnelltest.Recordings
         /// </summary>
         public CloseAUT_PERS()
         {
-            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace S_PERS_Schnelltest.Recordings
         }
 
 #region Variables
-
-        string _CloseAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
-        /// </summary>
-        [TestVariable("2b65ef3e-5efb-4d40-8f6b-684255705218")]
-        public string CloseAutProcessIDVar
-        {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
-        }
 
 #endregion
 
@@ -86,15 +73,14 @@ namespace S_PERS_Schnelltest.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
-            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmPers.TitleBar100Mitarbeiterstamm'.", repo.FrmPers.TitleBar100MitarbeiterstammInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmPers.TitleBar100Mitarbeiterstamm, 1000);
             
         }
 

@@ -473,6 +473,7 @@ namespace S_PERS_Schnelltest
         {
             RepoItemInfo _dfperskbezInfo;
             RepoItemInfo _texttypInfo;
+            RepoItemInfo _dfanrdcdInfo;
             RepoItemInfo _statusInfo;
             RepoItemInfo _dfvornameInfo;
             RepoItemInfo _dfnachnameInfo;
@@ -485,6 +486,7 @@ namespace S_PERS_Schnelltest
             {
                 _dfperskbezInfo = new RepoItemInfo(this, "DfPersKbez", "text[@controlname='dfPers_kbez']", "", 30000, null, "8f488d63-5a8e-4ac3-a0ba-73aa21ffb1f8");
                 _texttypInfo = new RepoItemInfo(this, "TextTyp", "text[@controlname='dfPers_typ']/text[@accessiblename='Typ']", "", 30000, null, "a723de3f-e4b4-4c38-9a59-341233d9d6a8");
+                _dfanrdcdInfo = new RepoItemInfo(this, "DfAnrdCd", "text[@controlname='dfAnrd_cd']", "", 30000, null, "61081d78-57cd-4eb4-99f5-95e798b5d77a");
                 _statusInfo = new RepoItemInfo(this, "Status", "text[@controlname='dfPers_status']/text[@accessiblename='Status']", "", 30000, null, "09ac818c-4e53-4a9c-98e3-50e91569b6e7");
                 _dfvornameInfo = new RepoItemInfo(this, "DfVorname", "text[@controlname='dfVorname']", "", 30000, null, "9142afd5-14a3-450c-8eac-351bd7abffe8");
                 _dfnachnameInfo = new RepoItemInfo(this, "DfNachname", "text[@controlname='dfNachname']", "", 30000, null, "7fe0f7bc-437c-4d02-b5df-12410e4a5323");
@@ -559,6 +561,30 @@ namespace S_PERS_Schnelltest
                 get
                 {
                     return _texttypInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAnrdCd item.
+            /// </summary>
+            [RepositoryItem("61081d78-57cd-4eb4-99f5-95e798b5d77a")]
+            public virtual Ranorex.Text DfAnrdCd
+            {
+                get
+                {
+                    return _dfanrdcdInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAnrdCd item info.
+            /// </summary>
+            [RepositoryItemInfo("61081d78-57cd-4eb4-99f5-95e798b5d77a")]
+            public virtual RepoItemInfo DfAnrdCdInfo
+            {
+                get
+                {
+                    return _dfanrdcdInfo;
                 }
             }
 
