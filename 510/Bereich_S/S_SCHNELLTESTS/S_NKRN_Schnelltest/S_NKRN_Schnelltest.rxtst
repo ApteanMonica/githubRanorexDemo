@@ -2,12 +2,60 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="1ee86804-655a-427f-8832-24cfaf4eeb38"
+			name="Belegnummern_annulieren_Aufrufart=NKRVA">
+			</testcase>
+			<testmodule
+			id="1fbf9f30-4785-4662-82f2-928581c2f51e"
+			name="Aendern_Nummernkreis_CD_Neu"
+			ref="88271993-2c5e-4622-9fcd-3adcf2d26665"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Nummernkreis_CD_Neu"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="d569a27c-f08f-4fef-98a1-a9eb4f965d2d"
+					variablename="Nummernkreis_CD_Neu">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="240e27a3-ab9b-4c33-8af5-e300b4ac27ae"
+			name="Aufstellung_Serien_Aufrufart=NKRAU">
+			</testcase>
+			<testmodule
+			id="28389b8e-1712-48af-a918-3445196fd32d"
+			name="CloseAUT_NKRV"
+			ref="a4f698c2-f682-422c-b4bd-8a177d556ce3"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="3022ecc0-1b0c-4e56-b44f-364d320b6b95"
+			name="teardown">
+			</teardown>
 			<teardown
 			id="3221eb90-532e-4fc8-b655-e6c0a79afc43"
 			name="teardown">
 			</teardown>
 			<setup
+			id="387cf4b8-8cfa-4a2b-8c90-b0c3c8ee32f4"
+			name="setup">
+			</setup>
+			<testcase
+			id="3c677404-8054-4461-b78a-f385f17f2cc1"
+			name="Verwaltung_Serien_Aufrufart=NKRS">
+			</testcase>
+			<setup
 			id="65a0f85a-7cd5-460c-a0a6-209bfb077c19"
+			name="setup">
+			</setup>
+			<teardown
+			id="6ddf003b-84af-4824-a3fe-040708b7e5f1"
+			name="teardown">
+			</teardown>
+			<setup
+			id="87c2f55b-815e-4403-b02d-e9e644246199"
 			name="setup">
 			</setup>
 			<testmodule
@@ -34,6 +82,10 @@
 			id="8c415182-93b7-42f1-bde2-26e795e926c5"
 			name="Nummernkreisverwaltung_Aufrufart=NKR">
 			</testcase>
+			<teardown
+			id="8ea0dd65-0dcd-4a2c-a982-333124b1a91d"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="941370cb-6a9a-4236-ae58-64cbd996391b"
 			name="StartAUT"
@@ -54,6 +106,70 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="9b318413-250d-4ad8-a998-a352ceed9dce"
+			name="StartAUT_NKRS"
+			ref="68956905-83e2-4745-a51e-b81043fe3077"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="03c039c3-326a-4156-be90-c94096376264"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_NKRS"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="6d3a676a-a32d-4a12-883c-6f18a1d51794"
+					variablename="Programm_NKRS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a22c9516-1644-453a-8fc9-4493a508e33c"
+			name="StartAUT_NKRVA"
+			ref="7cbcb358-4db1-4e8e-8576-a93b4f2173ed"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="e9e6947d-0afb-4374-acd9-23f5c396d250"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_NKRVA"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="78270210-f533-4b07-b2bf-dd273e4e5fb2"
+					variablename="Programm_NKRVA">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="aca0bd70-ffe4-44ae-ad58-07011bc93ce7"
+			name="StartAUT_NKRAU"
+			ref="3dc17f93-d193-4db3-b9db-4a6a9cdc9ad5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="b97dd110-1e61-4d7c-bfe5-7c3bcdaa8bea"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_NKRAU"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="2d0dd8eb-03a5-4ad5-a8f9-f9b58d20f5a6"
+					variablename="Programm_NKRAU">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="b462cddb-f2f8-43a7-a79b-ac9568ef69c7"
+			name="setup">
+			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -105,7 +221,7 @@
 					</param>
 					<param
 					name="Programm_NKRAU"
-					value="S_NKRAU AUFRUFART=NKRAU">
+					value="S_NKRN AUFRUFART=NKRAU">
 					</param>
 					<param
 					name="Nummernkreis_CD_Neu"
@@ -118,11 +234,75 @@
 				</parameters>
 			</testcase>
 			<testmodule
+			id="c500f0d1-e34a-4555-96e7-c158e5b199e1"
+			name="Loeschen_Nummernkreis_DC_Neu"
+			ref="37817af6-ee5d-4690-a3ee-8d9f6b5889b1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Nummernkreis_CD_Neu"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="d569a27c-f08f-4fef-98a1-a9eb4f965d2d"
+					variablename="Nummernkreis_CD_Neu">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="ce263dbb-3fdb-4421-b811-2434a3dd04e4"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="cef33390-51e5-4209-984f-d6211d1f06ba"
+			name="StartAUT_NKRV"
+			ref="d229e992-f909-49d1-9a5e-3d389f510503"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="7376c1f6-920f-4941-9961-b9b8aa9b0560"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_NKRV"
+					datasourceid="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6"
+					variableid="f815a52d-dd65-44db-a558-d4794dfa52ec"
+					variablename="Programm_NKRV">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d07e1adf-b7fe-4137-ab91-f337494dc7c1"
 			name="CloseAUT"
 			ref="b2836d30-c2c8-4a57-b0f0-71022001b486"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="e307d190-1de6-44a6-8420-07d64ed1bcb0"
+			name="CloseAUT_NKRVA"
+			ref="85b07161-93ec-45da-8ede-c979e4472b01"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="efc81c3f-51c6-4f5a-a8b3-6d5d974bcb25"
+			name="CloseAUT_NKRS"
+			ref="e70d9732-a006-4048-a0d1-8e622b66c910"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="f02e57b2-1564-470e-b395-df056f22de9e"
+			name="setup">
+			</setup>
+			<testmodule
+			id="f73cd699-cf68-4c14-85c0-9d8281cbb220"
+			name="CloseAUT_NKRAU"
+			ref="c69673d7-c406-44ed-9927-be31662df93e"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="fb791c14-9bff-4e3c-a4e6-53c76110526b"
+			name="Verwalten_Nummernkreis_Verwendung_Aufrufart=NKRV">
+			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -146,12 +326,100 @@
 						id="8b6c8cd3-4f80-40e5-9ef2-5d25187e9fde"
 						name="Neuanlage_Nummernkreis">
 						</testmodule>
+						<testmodule
+						id="1fbf9f30-4785-4662-82f2-928581c2f51e"
+						name="Aendern_Nummernkreis_CD_Neu">
+						</testmodule>
+						<testmodule
+						id="c500f0d1-e34a-4555-96e7-c158e5b199e1"
+						name="Loeschen_Nummernkreis_DC_Neu">
+						</testmodule>
 						<teardown
 						id="3221eb90-532e-4fc8-b655-e6c0a79afc43"
 						name="teardown">
 							<testmodule
 							id="d07e1adf-b7fe-4137-ab91-f337494dc7c1"
 							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="3c677404-8054-4461-b78a-f385f17f2cc1"
+					name="Verwaltung_Serien_Aufrufart=NKRS">
+						<setup
+						id="f02e57b2-1564-470e-b395-df056f22de9e"
+						name="setup">
+							<testmodule
+							id="9b318413-250d-4ad8-a998-a352ceed9dce"
+							name="StartAUT_NKRS">
+							</testmodule>
+						</setup>
+						<teardown
+						id="3022ecc0-1b0c-4e56-b44f-364d320b6b95"
+						name="teardown">
+							<testmodule
+							id="efc81c3f-51c6-4f5a-a8b3-6d5d974bcb25"
+							name="CloseAUT_NKRS">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="fb791c14-9bff-4e3c-a4e6-53c76110526b"
+					name="Verwalten_Nummernkreis_Verwendung_Aufrufart=NKRV">
+						<setup
+						id="87c2f55b-815e-4403-b02d-e9e644246199"
+						name="setup">
+							<testmodule
+							id="cef33390-51e5-4209-984f-d6211d1f06ba"
+							name="StartAUT_NKRV">
+							</testmodule>
+						</setup>
+						<teardown
+						id="8ea0dd65-0dcd-4a2c-a982-333124b1a91d"
+						name="teardown">
+							<testmodule
+							id="28389b8e-1712-48af-a918-3445196fd32d"
+							name="CloseAUT_NKRV">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="1ee86804-655a-427f-8832-24cfaf4eeb38"
+					name="Belegnummern_annulieren_Aufrufart=NKRVA">
+						<setup
+						id="b462cddb-f2f8-43a7-a79b-ac9568ef69c7"
+						name="setup">
+							<testmodule
+							id="a22c9516-1644-453a-8fc9-4493a508e33c"
+							name="StartAUT_NKRVA">
+							</testmodule>
+						</setup>
+						<teardown
+						id="ce263dbb-3fdb-4421-b811-2434a3dd04e4"
+						name="teardown">
+							<testmodule
+							id="e307d190-1de6-44a6-8420-07d64ed1bcb0"
+							name="CloseAUT_NKRVA">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="240e27a3-ab9b-4c33-8af5-e300b4ac27ae"
+					name="Aufstellung_Serien_Aufrufart=NKRAU">
+						<setup
+						id="387cf4b8-8cfa-4a2b-8c90-b0c3c8ee32f4"
+						name="setup">
+							<testmodule
+							id="aca0bd70-ffe4-44ae-ad58-07011bc93ce7"
+							name="StartAUT_NKRAU">
+							</testmodule>
+						</setup>
+						<teardown
+						id="6ddf003b-84af-4824-a3fe-040708b7e5f1"
+						name="teardown">
+							<testmodule
+							id="f73cd699-cf68-4c14-85c0-9d8281cbb220"
+							name="CloseAUT_NKRAU">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -166,10 +434,22 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="1ee86804-655a-427f-8832-24cfaf4eeb38">
+			</testcontainer>
+			<testcontainer
+			id="240e27a3-ab9b-4c33-8af5-e300b4ac27ae">
+			</testcontainer>
+			<testcontainer
+			id="3c677404-8054-4461-b78a-f385f17f2cc1">
+			</testcontainer>
+			<testcontainer
 			id="8c415182-93b7-42f1-bde2-26e795e926c5">
 			</testcontainer>
 			<testcontainer
 			id="c28fe38f-1bf7-46b9-9f5e-b2a34441b4f6">
+			</testcontainer>
+			<testcontainer
+			id="fb791c14-9bff-4e3c-a4e6-53c76110526b">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

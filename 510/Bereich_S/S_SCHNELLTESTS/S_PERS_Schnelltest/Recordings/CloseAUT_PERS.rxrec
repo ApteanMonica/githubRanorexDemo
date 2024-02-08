@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="64329767-f49c-4799-b020-d1ba354fd863"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_PERS"
+	namespace="S_PERS_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="2b65ef3e-5efb-4d40-8f6b-684255705218"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="0ee375be-d882-40ed-9a8f-1015853a70be">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a15bfc9e-80ba-4507-801a-2d657a511f88"
+	name="S_PERS_SchnelltestRepository"
+	relativepath="..\S_PERS_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_PERS_SchnelltestRepository"
+		namespace="S_PERS_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="9d2b8782-1d91-4fb1-8ac1-4ba5b31c8795"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

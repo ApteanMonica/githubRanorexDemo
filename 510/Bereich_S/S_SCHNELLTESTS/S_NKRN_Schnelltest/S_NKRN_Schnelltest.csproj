@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>fc86960e-8fea-4ec3-9647-87f2ea7e188f</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -84,6 +85,18 @@
     <Compile Include="Program.cs">
       <id>7022e928-4c50-4902-871a-a08b7d2c47f0</id>
     </Compile>
+    <Compile Include="Recordings\Aendern_Nummernkreis_CD_Neu.cs">
+      <BoundTo>585de54b-8a4c-411b-997f-fe2f99ce1bf6</BoundTo>
+      <DependentUpon>Aendern_Nummernkreis_CD_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee742f46-0b6a-4a82-84bd-a4882de61887</id>
+    </Compile>
+    <Compile Include="Recordings\Aendern_Nummernkreis_CD_Neu.UserCode.cs">
+      <BoundTo>585de54b-8a4c-411b-997f-fe2f99ce1bf6</BoundTo>
+      <DependentUpon>Aendern_Nummernkreis_CD_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4de4d171-3b34-441d-8b65-d4d4249e3b38</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -95,6 +108,66 @@
       <UserCode>true</UserCode>
       <id>955ca34d-70ce-43d5-82ea-4140542134da</id>
       <BoundTo>bd70ce2b-d66e-462b-8ffc-ee5b6e267eca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRAU.cs">
+      <BoundTo>7bda0847-c48f-4b41-9732-b32d70cca065</BoundTo>
+      <DependentUpon>CloseAUT_NKRAU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d64f228-0de7-43e2-b14a-0be088b28551</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRAU.UserCode.cs">
+      <BoundTo>7bda0847-c48f-4b41-9732-b32d70cca065</BoundTo>
+      <DependentUpon>CloseAUT_NKRAU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>84193be1-e38d-4a4e-bb5c-2401e3b7cf8c</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRS.cs">
+      <BoundTo>0346a1b2-4174-460f-bff4-a2ada6bcbf85</BoundTo>
+      <DependentUpon>CloseAUT_NKRS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a650f68-4a42-441d-a76e-740e66ff6ca6</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRS.UserCode.cs">
+      <BoundTo>0346a1b2-4174-460f-bff4-a2ada6bcbf85</BoundTo>
+      <DependentUpon>CloseAUT_NKRS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3d23d9b6-c6b7-4e84-b93c-afbcdacef7fd</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRV.cs">
+      <BoundTo>a1d55d8f-0aa1-4df5-b119-d1fea5c3da45</BoundTo>
+      <DependentUpon>CloseAUT_NKRV.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2027efad-7a49-4379-8f34-f8364da9d664</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRV.UserCode.cs">
+      <BoundTo>a1d55d8f-0aa1-4df5-b119-d1fea5c3da45</BoundTo>
+      <DependentUpon>CloseAUT_NKRV.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9c73e5ee-7430-469b-82dc-c4a0d093fe9a</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRVA.cs">
+      <BoundTo>e4c98f1d-c15e-490a-aeec-c99c8566662b</BoundTo>
+      <DependentUpon>CloseAUT_NKRVA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>093db25f-0958-4d60-8812-38f6bb71858c</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_NKRVA.UserCode.cs">
+      <BoundTo>e4c98f1d-c15e-490a-aeec-c99c8566662b</BoundTo>
+      <DependentUpon>CloseAUT_NKRVA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33b58bc7-a390-418f-ae88-5e20b0cce0b2</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Nummernkreis_DC_Neu.cs">
+      <BoundTo>33d26a8e-480e-4df3-8bbd-3d9e0bf10b46</BoundTo>
+      <DependentUpon>Loeschen_Nummernkreis_DC_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>83aa219b-e156-4f7e-b0bd-554a361df1a8</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Nummernkreis_DC_Neu.UserCode.cs">
+      <BoundTo>33d26a8e-480e-4df3-8bbd-3d9e0bf10b46</BoundTo>
+      <DependentUpon>Loeschen_Nummernkreis_DC_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>283cc729-c51b-4c9c-b78f-ac7c3c5123ab</id>
     </Compile>
     <Compile Include="Recordings\Neuanlage_Nummernkreis.cs">
       <BoundTo>df55cabd-f18f-42a6-8253-2a504e286cd1</BoundTo>
@@ -120,6 +193,54 @@
       <id>320723e3-faa9-4ac9-abe1-847c22833532</id>
       <BoundTo>d9798c16-e8d1-45a0-a708-e39b2cc5507a</BoundTo>
     </Compile>
+    <Compile Include="Recordings\StartAUT_NKRAU.cs">
+      <BoundTo>b46ddb8e-428e-44f4-b44f-79414a052809</BoundTo>
+      <DependentUpon>StartAUT_NKRAU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>932a9646-52d7-4594-8074-28c68a69316b</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRAU.UserCode.cs">
+      <BoundTo>b46ddb8e-428e-44f4-b44f-79414a052809</BoundTo>
+      <DependentUpon>StartAUT_NKRAU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>59c8b02d-529f-4dbc-8968-6499bc727362</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRS.cs">
+      <BoundTo>e70d88b6-7555-49cd-b2bf-83569e56bd9b</BoundTo>
+      <DependentUpon>StartAUT_NKRS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d48ca44-17a1-416b-9bae-8214644d957f</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRS.UserCode.cs">
+      <BoundTo>e70d88b6-7555-49cd-b2bf-83569e56bd9b</BoundTo>
+      <DependentUpon>StartAUT_NKRS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a69570f-fd32-40ab-bf55-fb72db5e11d3</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRV.cs">
+      <BoundTo>bde5916f-4c97-4079-85e9-81ae0e69e628</BoundTo>
+      <DependentUpon>StartAUT_NKRV.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3723d0c-0dbb-410d-81a6-79ed121e72ad</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRV.UserCode.cs">
+      <BoundTo>bde5916f-4c97-4079-85e9-81ae0e69e628</BoundTo>
+      <DependentUpon>StartAUT_NKRV.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e4464eb0-42a5-4047-9c27-d87f13f3e6b3</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRVA.cs">
+      <BoundTo>f966c72b-0174-4297-b18c-865122926edb</BoundTo>
+      <DependentUpon>StartAUT_NKRVA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b09148c1-41f8-493e-9d77-f46d070141ac</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_NKRVA.UserCode.cs">
+      <BoundTo>f966c72b-0174-4297-b18c-865122926edb</BoundTo>
+      <DependentUpon>StartAUT_NKRVA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0a04485f-e62b-4465-a62d-83d5297e0ff5</id>
+    </Compile>
     <Compile Include="S_NKRN_SchnelltestRepository.cs">
       <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
       <DependentUpon>S_NKRN_SchnelltestRepository.rxrep</DependentUpon>
@@ -131,10 +252,40 @@
     <None Include="app.config">
       <id>34110d62-de61-4cd6-874f-2c7df4222f11</id>
     </None>
+    <None Include="Recordings\Aendern_Nummernkreis_CD_Neu.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>585de54b-8a4c-411b-997f-fe2f99ce1bf6</id>
+      <recordtableid>88271993-2c5e-4622-9fcd-3adcf2d26665</recordtableid>
+    </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
       <id>bd70ce2b-d66e-462b-8ffc-ee5b6e267eca</id>
       <recordtableid>b2836d30-c2c8-4a57-b0f0-71022001b486</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_NKRAU.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>7bda0847-c48f-4b41-9732-b32d70cca065</id>
+      <recordtableid>c69673d7-c406-44ed-9927-be31662df93e</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_NKRS.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>0346a1b2-4174-460f-bff4-a2ada6bcbf85</id>
+      <recordtableid>e70d9732-a006-4048-a0d1-8e622b66c910</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_NKRV.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>a1d55d8f-0aa1-4df5-b119-d1fea5c3da45</id>
+      <recordtableid>a4f698c2-f682-422c-b4bd-8a177d556ce3</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_NKRVA.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>e4c98f1d-c15e-490a-aeec-c99c8566662b</id>
+      <recordtableid>85b07161-93ec-45da-8ede-c979e4472b01</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_Nummernkreis_DC_Neu.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>33d26a8e-480e-4df3-8bbd-3d9e0bf10b46</id>
+      <recordtableid>37817af6-ee5d-4690-a3ee-8d9f6b5889b1</recordtableid>
     </None>
     <None Include="Recordings\Neuanlage_Nummernkreis.rxrec">
       <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
@@ -145,6 +296,26 @@
       <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
       <id>d9798c16-e8d1-45a0-a708-e39b2cc5507a</id>
       <recordtableid>9f39942d-0b90-4413-a98b-ec396824b7b6</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_NKRAU.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>b46ddb8e-428e-44f4-b44f-79414a052809</id>
+      <recordtableid>3dc17f93-d193-4db3-b9db-4a6a9cdc9ad5</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_NKRS.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>e70d88b6-7555-49cd-b2bf-83569e56bd9b</id>
+      <recordtableid>68956905-83e2-4745-a51e-b81043fe3077</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_NKRV.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>bde5916f-4c97-4079-85e9-81ae0e69e628</id>
+      <recordtableid>d229e992-f909-49d1-9a5e-3d389f510503</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_NKRVA.rxrec">
+      <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>
+      <id>f966c72b-0174-4297-b18c-865122926edb</id>
+      <recordtableid>7cbcb358-4db1-4e8e-8576-a93b4f2173ed</recordtableid>
     </None>
     <None Include="S_NKRN_SchnelltestRepository.rximg">
       <BoundTo>fc86960e-8fea-4ec3-9647-87f2ea7e188f</BoundTo>

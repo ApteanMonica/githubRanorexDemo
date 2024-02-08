@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b3957c60-9aa7-4176-b175-286e5e5d2d01"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Neuanlage_Mitarbeiter_Neu"
+	namespace="S_PERS_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="4faf16bc-a36c-4eb0-a62e-3655b6ed8a0d"
+		name="PERSONAL_NR_NEU">
+			XX_NEU_MA_QS
+		</var>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="a15bfc9e-80ba-4507-801a-2d657a511f88"
+	name="S_PERS_SchnelltestRepository"
+	relativepath="..\S_PERS_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_PERS_SchnelltestRepository"
+		namespace="S_PERS_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="9d2b8782-1d91-4fb1-8ac1-4ba5b31c8795"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Neuanlage_Mitarbeiter_Neu.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
