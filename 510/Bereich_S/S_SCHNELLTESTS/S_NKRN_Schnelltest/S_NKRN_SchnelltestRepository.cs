@@ -28,6 +28,11 @@ namespace S_NKRN_Schnelltest
     {
         static S_NKRN_SchnelltestRepository instance = new S_NKRN_SchnelltestRepository();
         S_NKRN_SchnelltestRepositoryFolders.FrmNkrAppFolder _frmnkr;
+        S_NKRN_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
+        S_NKRN_SchnelltestRepositoryFolders.TblNkrsAppFolder _tblnkrs;
+        S_NKRN_SchnelltestRepositoryFolders.TblNkrvAppFolder _tblnkrv;
+        S_NKRN_SchnelltestRepositoryFolders.FrmNkrvaAppFolder _frmnkrva;
+        S_NKRN_SchnelltestRepositoryFolders.FrmAufstellungAppFolder _frmaufstellung;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_NKRN_SchnelltestRepository element repository.
@@ -45,11 +50,16 @@ namespace S_NKRN_Schnelltest
             : base("S_NKRN_SchnelltestRepository", "/", null, 0, false, "ebfb1ac5-e945-4e84-99d0-92686210e850", ".\\RepositoryImages\\S_NKRN_SchnelltestRepositoryebfb1ac5.rximgres")
         {
             _frmnkr = new S_NKRN_SchnelltestRepositoryFolders.FrmNkrAppFolder(this);
+            _dlgmessagebox = new S_NKRN_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder(this);
+            _tblnkrs = new S_NKRN_SchnelltestRepositoryFolders.TblNkrsAppFolder(this);
+            _tblnkrv = new S_NKRN_SchnelltestRepositoryFolders.TblNkrvAppFolder(this);
+            _frmnkrva = new S_NKRN_SchnelltestRepositoryFolders.FrmNkrvaAppFolder(this);
+            _frmaufstellung = new S_NKRN_SchnelltestRepositoryFolders.FrmAufstellungAppFolder(this);
         }
 
 #region Variables
 
-        string _Nummernkreis_CD_Neu = "";
+        string _Nummernkreis_CD_Neu = "XX_BAR";
 
         /// <summary>
         /// Gets or sets the value of variable Nummernkreis_CD_Neu.
@@ -83,6 +93,51 @@ namespace S_NKRN_Schnelltest
         {
             get { return _frmnkr; }
         }
+
+        /// <summary>
+        /// The DlgMessageBox folder.
+        /// </summary>
+        [RepositoryFolder("b52d10d7-4043-46de-9449-e20da1378361")]
+        public virtual S_NKRN_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
+        {
+            get { return _dlgmessagebox; }
+        }
+
+        /// <summary>
+        /// The TblNkrs folder.
+        /// </summary>
+        [RepositoryFolder("e4f36e42-8808-42e2-a3f5-7b01fbc8d218")]
+        public virtual S_NKRN_SchnelltestRepositoryFolders.TblNkrsAppFolder TblNkrs
+        {
+            get { return _tblnkrs; }
+        }
+
+        /// <summary>
+        /// The TblNkrv folder.
+        /// </summary>
+        [RepositoryFolder("197a4871-e1af-485c-a031-864a47bce669")]
+        public virtual S_NKRN_SchnelltestRepositoryFolders.TblNkrvAppFolder TblNkrv
+        {
+            get { return _tblnkrv; }
+        }
+
+        /// <summary>
+        /// The FrmNkrva folder.
+        /// </summary>
+        [RepositoryFolder("e44d17a5-2253-4d6d-9542-7d78285e6f21")]
+        public virtual S_NKRN_SchnelltestRepositoryFolders.FrmNkrvaAppFolder FrmNkrva
+        {
+            get { return _frmnkrva; }
+        }
+
+        /// <summary>
+        /// The FrmAufstellung folder.
+        /// </summary>
+        [RepositoryFolder("402e311d-809d-49f6-9e86-c0113d054e04")]
+        public virtual S_NKRN_SchnelltestRepositoryFolders.FrmAufstellungAppFolder FrmAufstellung
+        {
+            get { return _frmaufstellung; }
+        }
     }
 
     /// <summary>
@@ -102,6 +157,8 @@ namespace S_NKRN_Schnelltest
             S_NKRN_SchnelltestRepositoryFolders.SplitterPanelFolder _splitterpanel;
             RepoItemInfo _titlebar100nummernkreisverwaltungInfo;
             RepoItemInfo _pbnewInfo;
+            RepoItemInfo _maximierenInfo;
+            RepoItemInfo _pbperformsimplesearchInfo;
 
             /// <summary>
             /// Creates a new FrmNkr  folder.
@@ -114,6 +171,8 @@ namespace S_NKRN_Schnelltest
                 _splitterpanel = new S_NKRN_SchnelltestRepositoryFolders.SplitterPanelFolder(this);
                 _titlebar100nummernkreisverwaltungInfo = new RepoItemInfo(this, "TitleBar100Nummernkreisverwaltung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "460fde34-6856-40f6-8e02-c359774cdf56");
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "39e34e4d-f37f-4dc2-9af4-cb0c4b933f4b");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "3e151e85-86ab-460c-9afc-5ebd7e4bcf57");
+                _pbperformsimplesearchInfo = new RepoItemInfo(this, "PbPerformSimpleSearch", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "9c198563-1899-4c93-9b4b-7ff8c4b453df");
             }
 
             /// <summary>
@@ -189,6 +248,54 @@ namespace S_NKRN_Schnelltest
             }
 
             /// <summary>
+            /// The Maximieren item.
+            /// </summary>
+            [RepositoryItem("3e151e85-86ab-460c-9afc-5ebd7e4bcf57")]
+            public virtual Ranorex.Button Maximieren
+            {
+                get
+                {
+                    return _maximierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item info.
+            /// </summary>
+            [RepositoryItemInfo("3e151e85-86ab-460c-9afc-5ebd7e4bcf57")]
+            public virtual RepoItemInfo MaximierenInfo
+            {
+                get
+                {
+                    return _maximierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbPerformSimpleSearch item.
+            /// </summary>
+            [RepositoryItem("9c198563-1899-4c93-9b4b-7ff8c4b453df")]
+            public virtual Ranorex.Button PbPerformSimpleSearch
+            {
+                get
+                {
+                    return _pbperformsimplesearchInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbPerformSimpleSearch item info.
+            /// </summary>
+            [RepositoryItemInfo("9c198563-1899-4c93-9b4b-7ff8c4b453df")]
+            public virtual RepoItemInfo PbPerformSimpleSearchInfo
+            {
+                get
+                {
+                    return _pbperformsimplesearchInfo;
+                }
+            }
+
+            /// <summary>
             /// The FlexGrid folder.
             /// </summary>
             [RepositoryFolder("8e540173-0c7a-4f4d-b5fd-92577abe5809")]
@@ -223,6 +330,9 @@ namespace S_NKRN_Schnelltest
         public partial class FlexGridFolder : RepoGenBaseFolder
         {
             S_NKRN_SchnelltestRepositoryFolders.Row_mit_Variable_Nummernkreis_NeuFolder _row_mit_variable_nummernkreis_neu;
+            RepoItemInfo _celltmpfirmnrrow72Info;
+            RepoItemInfo _celltmpnkrnrrow72Info;
+            RepoItemInfo _celltmpnkrbezrow72Info;
 
             /// <summary>
             /// Creates a new FlexGrid  folder.
@@ -231,6 +341,9 @@ namespace S_NKRN_Schnelltest
                     base("FlexGrid", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "8e540173-0c7a-4f4d-b5fd-92577abe5809", "")
             {
                 _row_mit_variable_nummernkreis_neu = new S_NKRN_SchnelltestRepositoryFolders.Row_mit_Variable_Nummernkreis_NeuFolder(this);
+                _celltmpfirmnrrow72Info = new RepoItemInfo(this, "CellTmpFIRMNRRow72", "row[@accessiblename='Row 72']/cell[@accessiblename='__tmp__FIRM_NR Row 72']", "", 30000, null, "a7ade744-2cf6-47c1-a000-686b6767b2e0");
+                _celltmpnkrnrrow72Info = new RepoItemInfo(this, "CellTmpNKRNRRow72", "row[@accessiblename='Row 72']/cell[@accessiblename='__tmp__NKR_NR Row 72']", "", 30000, null, "5097f817-bf1e-4c52-8575-8f7945791541");
+                _celltmpnkrbezrow72Info = new RepoItemInfo(this, "CellTmpNKRBEZRow72", "row[@accessiblename='Row 72']/cell[@accessiblename='__tmp__NKR_BEZ Row 72']", "", 30000, null, "4ef1404a-e432-4d8e-86bf-ece207b49168");
             }
 
             /// <summary>
@@ -254,6 +367,78 @@ namespace S_NKRN_Schnelltest
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpFIRMNRRow72 item.
+            /// </summary>
+            [RepositoryItem("a7ade744-2cf6-47c1-a000-686b6767b2e0")]
+            public virtual Ranorex.Cell CellTmpFIRMNRRow72
+            {
+                get
+                {
+                    return _celltmpfirmnrrow72Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpFIRMNRRow72 item info.
+            /// </summary>
+            [RepositoryItemInfo("a7ade744-2cf6-47c1-a000-686b6767b2e0")]
+            public virtual RepoItemInfo CellTmpFIRMNRRow72Info
+            {
+                get
+                {
+                    return _celltmpfirmnrrow72Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpNKRNRRow72 item.
+            /// </summary>
+            [RepositoryItem("5097f817-bf1e-4c52-8575-8f7945791541")]
+            public virtual Ranorex.Cell CellTmpNKRNRRow72
+            {
+                get
+                {
+                    return _celltmpnkrnrrow72Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpNKRNRRow72 item info.
+            /// </summary>
+            [RepositoryItemInfo("5097f817-bf1e-4c52-8575-8f7945791541")]
+            public virtual RepoItemInfo CellTmpNKRNRRow72Info
+            {
+                get
+                {
+                    return _celltmpnkrnrrow72Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpNKRBEZRow72 item.
+            /// </summary>
+            [RepositoryItem("4ef1404a-e432-4d8e-86bf-ece207b49168")]
+            public virtual Ranorex.Cell CellTmpNKRBEZRow72
+            {
+                get
+                {
+                    return _celltmpnkrbezrow72Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpNKRBEZRow72 item info.
+            /// </summary>
+            [RepositoryItemInfo("4ef1404a-e432-4d8e-86bf-ece207b49168")]
+            public virtual RepoItemInfo CellTmpNKRBEZRow72Info
+            {
+                get
+                {
+                    return _celltmpnkrbezrow72Info;
                 }
             }
 
@@ -747,6 +932,620 @@ namespace S_NKRN_Schnelltest
                 get
                 {
                     return _dfnkrkzfolgebelegInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgMessageBoxAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b52d10d7-4043-46de-9449-e20da1378361")]
+        public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _nummernkreisverwaltungInfo;
+            RepoItemInfo _labelmeldungstextInfo;
+            RepoItemInfo _button0Info;
+
+            /// <summary>
+            /// Creates a new DlgMessageBox  folder.
+            /// </summary>
+            public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "b52d10d7-4043-46de-9449-e20da1378361", "")
+            {
+                _nummernkreisverwaltungInfo = new RepoItemInfo(this, "Nummernkreisverwaltung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1cd5bcaa-60b6-4a4b-b3f9-74a4667686e0");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "e09fd9a4-7fd6-4339-aa81-87458418f026");
+                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "c1c5b1f5-afbb-4e5b-b0c8-14b2c7ce9f59");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b52d10d7-4043-46de-9449-e20da1378361")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b52d10d7-4043-46de-9449-e20da1378361")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Nummernkreisverwaltung item.
+            /// </summary>
+            [RepositoryItem("1cd5bcaa-60b6-4a4b-b3f9-74a4667686e0")]
+            public virtual Ranorex.TitleBar Nummernkreisverwaltung
+            {
+                get
+                {
+                    return _nummernkreisverwaltungInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Nummernkreisverwaltung item info.
+            /// </summary>
+            [RepositoryItemInfo("1cd5bcaa-60b6-4a4b-b3f9-74a4667686e0")]
+            public virtual RepoItemInfo NummernkreisverwaltungInfo
+            {
+                get
+                {
+                    return _nummernkreisverwaltungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("e09fd9a4-7fd6-4339-aa81-87458418f026")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("e09fd9a4-7fd6-4339-aa81-87458418f026")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item.
+            /// </summary>
+            [RepositoryItem("c1c5b1f5-afbb-4e5b-b0c8-14b2c7ce9f59")]
+            public virtual Ranorex.Button Button0
+            {
+                get
+                {
+                    return _button0Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item info.
+            /// </summary>
+            [RepositoryItemInfo("c1c5b1f5-afbb-4e5b-b0c8-14b2c7ce9f59")]
+            public virtual RepoItemInfo Button0Info
+            {
+                get
+                {
+                    return _button0Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblNkrsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e4f36e42-8808-42e2-a3f5-7b01fbc8d218")]
+        public partial class TblNkrsAppFolder : RepoGenBaseFolder
+        {
+            S_NKRN_SchnelltestRepositoryFolders.RibbonBarFolder1 _ribbonbar;
+            RepoItemInfo _titlebar100serienInfo;
+
+            /// <summary>
+            /// Creates a new TblNkrs  folder.
+            /// </summary>
+            public TblNkrsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblNkrs", "/form[@controlname='tblNkrs']", parentFolder, 30000, null, true, "e4f36e42-8808-42e2-a3f5-7b01fbc8d218", "")
+            {
+                _ribbonbar = new S_NKRN_SchnelltestRepositoryFolders.RibbonBarFolder1(this);
+                _titlebar100serienInfo = new RepoItemInfo(this, "TitleBar100Serien", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "c169af45-d46a-4c8b-8d4c-e361872b4d6c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e4f36e42-8808-42e2-a3f5-7b01fbc8d218")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e4f36e42-8808-42e2-a3f5-7b01fbc8d218")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Serien item.
+            /// </summary>
+            [RepositoryItem("c169af45-d46a-4c8b-8d4c-e361872b4d6c")]
+            public virtual Ranorex.TitleBar TitleBar100Serien
+            {
+                get
+                {
+                    return _titlebar100serienInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Serien item info.
+            /// </summary>
+            [RepositoryItemInfo("c169af45-d46a-4c8b-8d4c-e361872b4d6c")]
+            public virtual RepoItemInfo TitleBar100SerienInfo
+            {
+                get
+                {
+                    return _titlebar100serienInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RibbonBar folder.
+            /// </summary>
+            [RepositoryFolder("9985ab52-c085-4bfb-b580-6150fef24083")]
+            public virtual S_NKRN_SchnelltestRepositoryFolders.RibbonBarFolder1 RibbonBar
+            {
+                get { return _ribbonbar; }
+            }
+        }
+
+        /// <summary>
+        /// The RibbonBarFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("9985ab52-c085-4bfb-b580-6150fef24083")]
+        public partial class RibbonBarFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _pbdataaccessnewInfo;
+            RepoItemInfo _pbdataaccesssaveInfo;
+            RepoItemInfo _pbdataaccessloadInfo;
+
+            /// <summary>
+            /// Creates a new RibbonBar  folder.
+            /// </summary>
+            public RibbonBarFolder1(RepoGenBaseFolder parentFolder) :
+                    base("RibbonBar", "container[@controlname='RibbonBar']", parentFolder, 30000, null, false, "9985ab52-c085-4bfb-b580-6150fef24083", "")
+            {
+                _pbdataaccessnewInfo = new RepoItemInfo(this, "PbDataAccessNew", "container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']", "", 30000, null, "e119b30e-3d7e-4777-b697-359cdb22feab");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "b0ee3a97-125e-43d8-a74a-3848f04e8bff");
+                _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "de9bb7af-9f62-4fdf-94fc-f9d2b487c2d0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9985ab52-c085-4bfb-b580-6150fef24083")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9985ab52-c085-4bfb-b580-6150fef24083")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNew item.
+            /// </summary>
+            [RepositoryItem("e119b30e-3d7e-4777-b697-359cdb22feab")]
+            public virtual Ranorex.Button PbDataAccessNew
+            {
+                get
+                {
+                    return _pbdataaccessnewInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNew item info.
+            /// </summary>
+            [RepositoryItemInfo("e119b30e-3d7e-4777-b697-359cdb22feab")]
+            public virtual RepoItemInfo PbDataAccessNewInfo
+            {
+                get
+                {
+                    return _pbdataaccessnewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item.
+            /// </summary>
+            [RepositoryItem("b0ee3a97-125e-43d8-a74a-3848f04e8bff")]
+            public virtual Ranorex.Button PbDataAccessSave
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item info.
+            /// </summary>
+            [RepositoryItemInfo("b0ee3a97-125e-43d8-a74a-3848f04e8bff")]
+            public virtual RepoItemInfo PbDataAccessSaveInfo
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item.
+            /// </summary>
+            [RepositoryItem("de9bb7af-9f62-4fdf-94fc-f9d2b487c2d0")]
+            public virtual Ranorex.Button PbDataAccessLoad
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item info.
+            /// </summary>
+            [RepositoryItemInfo("de9bb7af-9f62-4fdf-94fc-f9d2b487c2d0")]
+            public virtual RepoItemInfo PbDataAccessLoadInfo
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblNkrvAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("197a4871-e1af-485c-a031-864a47bce669")]
+        public partial class TblNkrvAppFolder : RepoGenBaseFolder
+        {
+            S_NKRN_SchnelltestRepositoryFolders.RibbonBarFolder2 _ribbonbar;
+            RepoItemInfo _titlebar100nummernkreisverwendungInfo;
+
+            /// <summary>
+            /// Creates a new TblNkrv  folder.
+            /// </summary>
+            public TblNkrvAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblNkrv", "/form[@controlname='tblNkrv']", parentFolder, 30000, null, true, "197a4871-e1af-485c-a031-864a47bce669", "")
+            {
+                _ribbonbar = new S_NKRN_SchnelltestRepositoryFolders.RibbonBarFolder2(this);
+                _titlebar100nummernkreisverwendungInfo = new RepoItemInfo(this, "TitleBar100NummernkreisVerwendung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "ce8d85fa-9781-4c44-99d7-a209d248b976");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("197a4871-e1af-485c-a031-864a47bce669")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("197a4871-e1af-485c-a031-864a47bce669")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100NummernkreisVerwendung item.
+            /// </summary>
+            [RepositoryItem("ce8d85fa-9781-4c44-99d7-a209d248b976")]
+            public virtual Ranorex.TitleBar TitleBar100NummernkreisVerwendung
+            {
+                get
+                {
+                    return _titlebar100nummernkreisverwendungInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100NummernkreisVerwendung item info.
+            /// </summary>
+            [RepositoryItemInfo("ce8d85fa-9781-4c44-99d7-a209d248b976")]
+            public virtual RepoItemInfo TitleBar100NummernkreisVerwendungInfo
+            {
+                get
+                {
+                    return _titlebar100nummernkreisverwendungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RibbonBar folder.
+            /// </summary>
+            [RepositoryFolder("15c33570-6988-4a21-8cb0-58d51fda32e8")]
+            public virtual S_NKRN_SchnelltestRepositoryFolders.RibbonBarFolder2 RibbonBar
+            {
+                get { return _ribbonbar; }
+            }
+        }
+
+        /// <summary>
+        /// The RibbonBarFolder2 folder.
+        /// </summary>
+        [RepositoryFolder("15c33570-6988-4a21-8cb0-58d51fda32e8")]
+        public partial class RibbonBarFolder2 : RepoGenBaseFolder
+        {
+            RepoItemInfo _pbdataaccessnewInfo;
+            RepoItemInfo _pbdataaccessloadInfo;
+
+            /// <summary>
+            /// Creates a new RibbonBar  folder.
+            /// </summary>
+            public RibbonBarFolder2(RepoGenBaseFolder parentFolder) :
+                    base("RibbonBar", "container[@controlname='RibbonBar']", parentFolder, 30000, null, false, "15c33570-6988-4a21-8cb0-58d51fda32e8", "")
+            {
+                _pbdataaccessnewInfo = new RepoItemInfo(this, "PbDataAccessNew", "container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']", "", 30000, null, "42f283c9-ee42-46bb-9b60-dfcf838490b0");
+                _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "e4bcd2d7-19b6-4b44-bb3d-875d32f50afb");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("15c33570-6988-4a21-8cb0-58d51fda32e8")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("15c33570-6988-4a21-8cb0-58d51fda32e8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNew item.
+            /// </summary>
+            [RepositoryItem("42f283c9-ee42-46bb-9b60-dfcf838490b0")]
+            public virtual Ranorex.Button PbDataAccessNew
+            {
+                get
+                {
+                    return _pbdataaccessnewInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNew item info.
+            /// </summary>
+            [RepositoryItemInfo("42f283c9-ee42-46bb-9b60-dfcf838490b0")]
+            public virtual RepoItemInfo PbDataAccessNewInfo
+            {
+                get
+                {
+                    return _pbdataaccessnewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item.
+            /// </summary>
+            [RepositoryItem("e4bcd2d7-19b6-4b44-bb3d-875d32f50afb")]
+            public virtual Ranorex.Button PbDataAccessLoad
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item info.
+            /// </summary>
+            [RepositoryItemInfo("e4bcd2d7-19b6-4b44-bb3d-875d32f50afb")]
+            public virtual RepoItemInfo PbDataAccessLoadInfo
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmNkrvaAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e44d17a5-2253-4d6d-9542-7d78285e6f21")]
+        public partial class FrmNkrvaAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100belegnummernannullierenInfo;
+
+            /// <summary>
+            /// Creates a new FrmNkrva  folder.
+            /// </summary>
+            public FrmNkrvaAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmNkrva", "/form[@controlname='frmNkrva']", parentFolder, 30000, null, true, "e44d17a5-2253-4d6d-9542-7d78285e6f21", "")
+            {
+                _titlebar100belegnummernannullierenInfo = new RepoItemInfo(this, "TitleBar100BelegnummernAnnullieren", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "30d6fdc8-6e65-4491-b464-aab4f4fb2aa0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e44d17a5-2253-4d6d-9542-7d78285e6f21")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e44d17a5-2253-4d6d-9542-7d78285e6f21")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BelegnummernAnnullieren item.
+            /// </summary>
+            [RepositoryItem("30d6fdc8-6e65-4491-b464-aab4f4fb2aa0")]
+            public virtual Ranorex.TitleBar TitleBar100BelegnummernAnnullieren
+            {
+                get
+                {
+                    return _titlebar100belegnummernannullierenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BelegnummernAnnullieren item info.
+            /// </summary>
+            [RepositoryItemInfo("30d6fdc8-6e65-4491-b464-aab4f4fb2aa0")]
+            public virtual RepoItemInfo TitleBar100BelegnummernAnnullierenInfo
+            {
+                get
+                {
+                    return _titlebar100belegnummernannullierenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmAufstellungAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("402e311d-809d-49f6-9e86-c0113d054e04")]
+        public partial class FrmAufstellungAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100aufstellungderserienInfo;
+
+            /// <summary>
+            /// Creates a new FrmAufstellung  folder.
+            /// </summary>
+            public FrmAufstellungAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmAufstellung", "/form[@controlname='frmAufstellung']", parentFolder, 30000, null, true, "402e311d-809d-49f6-9e86-c0113d054e04", "")
+            {
+                _titlebar100aufstellungderserienInfo = new RepoItemInfo(this, "TitleBar100AufstellungDerSerien", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "6d2499db-7d03-43bd-a42e-669b94e7eb85");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("402e311d-809d-49f6-9e86-c0113d054e04")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("402e311d-809d-49f6-9e86-c0113d054e04")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AufstellungDerSerien item.
+            /// </summary>
+            [RepositoryItem("6d2499db-7d03-43bd-a42e-669b94e7eb85")]
+            public virtual Ranorex.TitleBar TitleBar100AufstellungDerSerien
+            {
+                get
+                {
+                    return _titlebar100aufstellungderserienInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AufstellungDerSerien item info.
+            /// </summary>
+            [RepositoryItemInfo("6d2499db-7d03-43bd-a42e-669b94e7eb85")]
+            public virtual RepoItemInfo TitleBar100AufstellungDerSerienInfo
+            {
+                get
+                {
+                    return _titlebar100aufstellungderserienInfo;
                 }
             }
         }

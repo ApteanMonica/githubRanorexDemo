@@ -1,0 +1,237 @@
+﻿<repository
+id="a15bfc9e-80ba-4507-801a-2d657a511f88"
+name="S_PERS_SchnelltestRepository">
+	<codegen
+	classname="S_PERS_SchnelltestRepository"
+	namespace="S_PERS_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="9d2b8782-1d91-4fb1-8ac1-4ba5b31c8795"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="0ab088e0-245e-4c13-83e1-f797da034c5c"
+		isrooted="True"
+		name="FrmPers"
+		refpath="/form[@controlname='frmPers']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="2c37b3f1-9d05-40f2-bc17-216dcead3e27"
+			name="TitleBar100Mitarbeiterstamm"
+			refimgid="73688811-0ea3-45a4-a81c-a46878d785e6"
+			refpath="/form[@controlname='frmPers']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmPers']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1cfbd8b8-ab51-42bc-96b9-965a39945ecb"
+			name="PbNew"
+			refimgid="50476cec-2798-4bf3-826d-6cb6259b7934"
+			refpath="/form[@controlname='frmPers']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmPers']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
+			</item>
+			<folder
+			capname="container"
+			id="e8025352-8bcf-41a0-9a49-c482c7f39ad5"
+			isrooted="True"
+			name="RibbonBar"
+			refimgid="595340cc-3a2c-4713-b24e-de4e83a2bf90"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="2966bb2a-10f5-45b8-9bb9-b272e10e3caa"
+				name="PbDataAccessReload"
+				refimgid="442da768-5c6f-4848-867f-456016f71cf2"
+				refpath="/form[@controlname='frmPers']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Reload']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmPers']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Reload']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="a2933beb-28da-492c-ab6d-d5c53b6daa33"
+				name="PbDataAccessSave"
+				refimgid="abba5c94-7393-4d7a-acd7-78859e974c59"
+				refpath="/form[@controlname='frmPers']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmPers']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="4978e648-6e06-4f8d-a7e4-fa95968d7432"
+				name="PbNavigationBack"
+				refimgid="a6783ff7-a096-4c44-a5de-c1f908c66683"
+				refpath="/form[@controlname='frmPers']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmPers']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']
+				</item>
+				<basepath>
+					/form[@controlname='frmPers']/container[@controlname='RibbonBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="1c000a9f-16be-4c07-8ec3-88e42e6d3749"
+			isrooted="True"
+			name="ToolBar"
+			refimgid="582b82c0-128e-4d40-bc2d-bf75605b294e"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="a2de2ff0-0070-41f0-9c34-72c5301523b5"
+				name="DfPersNr"
+				refimgid="c04e940f-c31f-48ee-92fa-f2300e9244ae"
+				refpath="/form[@controlname='frmPers']/container[@controlname='ToolBar']/text[@controlname='dfPers_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmPers']/container[@controlname='ToolBar']/text[@controlname='dfPers_nr']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="e52c9db3-5ee8-40d9-92de-a6ef073811fd"
+				name="PbAlle"
+				refimgid="b66027f5-cf3f-43a2-91fa-8a0134320698"
+				refpath="/form[@controlname='frmPers']/container[@controlname='ToolBar']/container[@controlname='cGueltigkeitsManager']/container[@controlname='gbGueltigkeit']/button[@controlname='pbAlle']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmPers']/container[@controlname='ToolBar']/container[@controlname='cGueltigkeitsManager']/container[@controlname='gbGueltigkeit']/button[@controlname='pbAlle']
+				</item>
+				<basepath>
+					/form[@controlname='frmPers']/container[@controlname='ToolBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="tabpagelist"
+			id="588c5c34-3bf3-4c5a-8f1a-4e0c2478769f"
+			isrooted="True"
+			name="TabStammRegister"
+			refimgid="e18a1f7d-2e5f-4a1e-8f58-b00dc5ab231f"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="container"
+				id="f0194659-0b73-4732-a80f-79009f337f93"
+				isrooted="True"
+				name="GbGrundDaten"
+				refimgid="efbdf173-6e93-437a-9f3f-ee9b4e02f291"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="text,control,nativewindow"
+					capname="text"
+					id="8f488d63-5a8e-4ac3-a0ba-73aa21ffb1f8"
+					name="DfPersKbez"
+					refimgid="54ddf237-5da3-441f-a470-0499e51eb062"
+					refpath="/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfPers_kbez']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfPers_kbez']
+					</item>
+					<item
+					addcaps="text,accessible"
+					capname="text"
+					id="a723de3f-e4b4-4c38-9a59-341233d9d6a8"
+					name="TextTyp"
+					refimgid="456de0a9-a890-4c59-98b7-70be2dedd25c"
+					refpath="/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfPers_typ']/text[@accessiblename='Typ']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfPers_typ']/text[@accessiblename='Typ']
+					</item>
+					<item
+					addcaps="text,control,nativewindow"
+					capname="text"
+					id="61081d78-57cd-4eb4-99f5-95e798b5d77a"
+					name="DfAnrdCd"
+					refimgid="ec9b9fb2-e269-45e8-adc1-8d523b9e2f58"
+					refpath="/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfAnrd_cd']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfAnrd_cd']
+					</item>
+					<item
+					addcaps="text,accessible"
+					capname="text"
+					id="09ac818c-4e53-4a9c-98e3-50e91569b6e7"
+					name="Status"
+					refimgid="ce8f3574-97d8-4525-99f1-1de009420684"
+					refpath="/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfPers_status']/text[@accessiblename='Status']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfPers_status']/text[@accessiblename='Status']
+					</item>
+					<item
+					addcaps="text,control,nativewindow"
+					capname="text"
+					id="9142afd5-14a3-450c-8eac-351bd7abffe8"
+					name="DfVorname"
+					refimgid="e2f43f91-0b75-4ff1-bfcd-eb117eca188d"
+					refpath="/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfVorname']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfVorname']
+					</item>
+					<item
+					addcaps="text,control,nativewindow"
+					capname="text"
+					id="7fe0f7bc-437c-4d02-b5df-12410e4a5323"
+					name="DfNachname"
+					refimgid="f3bcf039-6beb-415a-a933-0d7c87b50675"
+					refpath="/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfNachname']"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']/text[@controlname='dfNachname']
+					</item>
+					<basepath>
+						/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']/tabpage[@controlname='tpMitarbeiter']/container[@controlname='scKldvDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='scWeitereDaten']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='gbGrundDaten']
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@controlname='frmPers']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabStammRegister']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='frmPers']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

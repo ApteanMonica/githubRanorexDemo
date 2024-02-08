@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e70d9732-a006-4048-a0d1-8e622b66c910"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_NKRS"
+	namespace="S_NKRN_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="3d44ee7a-2336-482e-964a-7b88139ffa90">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c169af45-d46a-4c8b-8d4c-e361872b4d6c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblNkrs']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="39327c39-fa47-49b4-9df0-2ee577df3085"
+	name="S_NKRN_SchnelltestRepository"
+	relativepath="..\S_NKRN_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_NKRN_SchnelltestRepository"
+		namespace="S_NKRN_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="ebfb1ac5-e945-4e84-99d0-92686210e850"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_NKRS.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

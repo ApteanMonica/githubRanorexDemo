@@ -130,6 +130,18 @@ namespace S_NKRN_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N{Tab}' with focus on 'FrmNkr.SplitterPanel.DfNkrStufe'.", repo.FrmNkr.SplitterPanel.DfNkrStufeInfo, new RecordItemIndex(8));
             repo.FrmNkr.SplitterPanel.DfNkrStufe.PressKeys("N{Tab}");
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmNkr.RibbonBar.PbDataAccessSave' at Center.", repo.FrmNkr.RibbonBar.PbDataAccessSaveInfo, new RecordItemIndex(9));
+            repo.FrmNkr.RibbonBar.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'FrmNkr.SplitterPanel.DfFirmNr'.", repo.FrmNkr.SplitterPanel.DfFirmNrInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmNkr.SplitterPanel.DfFirmNrInfo, "Text", "100");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Nummernkreis_CD_Neu) on item 'FrmNkr.SplitterPanel.DfNkrNr'.", repo.FrmNkr.SplitterPanel.DfNkrNrInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmNkr.SplitterPanel.DfNkrNrInfo, "Text", Nummernkreis_CD_Neu);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Nummernkreis_CD_Bezeichnung) on item 'FrmNkr.SplitterPanel.DfNkrBez'.", repo.FrmNkr.SplitterPanel.DfNkrBezInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmNkr.SplitterPanel.DfNkrBezInfo, "Text", Nummernkreis_CD_Bezeichnung);
+            
         }
 
 #region Image Feature Data
