@@ -44,7 +44,6 @@ namespace Z_PROJ_001.Recordings_z_proj
             PROJ_NR_1_K = "";
             PROJ_BEZ_1_K = "";
             bis_Datum = "";
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -79,18 +78,6 @@ namespace Z_PROJ_001.Recordings_z_proj
         {
             get { return _bis_Datum; }
             set { _bis_Datum = value; }
-        }
-
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("32d54f3f-d076-48eb-a0b7-386977956712")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
         }
 
         /// <summary>
