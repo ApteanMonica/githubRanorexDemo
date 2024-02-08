@@ -14281,11 +14281,12 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeRegex"
 		enabled="True"
 		optional="False"
 		searchpropertyid="07e24f34-5f7e-45c9-b080-f13022d13e92">
 			<comment>
+				BAR: Validierung angepasst mit IF Operator das beide Formate mit und ohne Komma akzeptiert werden.
 			</comment>
 			<bindings>
 			</bindings>
@@ -14356,7 +14357,7 @@ ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				Text
 			</matchname>
 			<matchvalue>
-				20
+				[20,00]|[20]
 			</matchvalue>
 		</validationitem>
 		<validationitem

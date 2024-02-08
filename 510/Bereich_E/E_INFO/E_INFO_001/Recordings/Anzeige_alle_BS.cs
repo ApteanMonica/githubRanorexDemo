@@ -300,8 +300,9 @@ namespace E_INFO_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Status_L) on item 'MdiEInfo.ChildTableWindow.ColBspStatusRow5'.", repo.MdiEInfo.ChildTableWindow.ColBspStatusRow5Info, new RecordItemIndex(30));
             Validate.AttributeEqual(repo.MdiEInfo.ChildTableWindow.ColBspStatusRow5Info, "Text", Status_L);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'MdiEInfo.ChildTableWindow.ColBspMengeRow5'.", repo.MdiEInfo.ChildTableWindow.ColBspMengeRow5Info, new RecordItemIndex(31));
-            Validate.AttributeEqual(repo.MdiEInfo.ChildTableWindow.ColBspMengeRow5Info, "Text", "20");
+            // BAR: Validierung angepasst mit IF Operator das beide Formate mit und ohne Komma akzeptiert werden.
+            Report.Log(ReportLevel.Info, "Validation", "BAR: Validierung angepasst mit IF Operator das beide Formate mit und ohne Komma akzeptiert werden.\r\nValidating AttributeRegex (Text~'[20,00]|[20]') on item 'MdiEInfo.ChildTableWindow.ColBspMengeRow5'.", repo.MdiEInfo.ChildTableWindow.ColBspMengeRow5Info, new RecordItemIndex(31));
+            Validate.AttributeRegex(repo.MdiEInfo.ChildTableWindow.ColBspMengeRow5Info, "Text", new Regex("[20,00]|[20]"));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual (Text!='20') on item 'MdiEInfo.ChildTableWindow.ColBspGeliefertRow5'.", repo.MdiEInfo.ChildTableWindow.ColBspGeliefertRow5Info, new RecordItemIndex(32));
             Validate.AttributeNotEqual(repo.MdiEInfo.ChildTableWindow.ColBspGeliefertRow5Info, "Text", "20");
