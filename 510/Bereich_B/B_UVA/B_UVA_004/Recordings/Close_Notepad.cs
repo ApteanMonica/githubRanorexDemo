@@ -80,12 +80,8 @@ namespace B_UVA_004.Recordings
             Init();
 
             // Hat Fehler gebracht, dh Schließen mit Alt+F4
-            //Report.Log(ReportLevel.Info, "Application", "Hat Fehler gebracht, dh Schließen mit Alt+F4\r\nClosing application containing item 'UVAXMLEditor'.", repo.UVAXMLEditor.SelfInfo, new RecordItemIndex(0));
-            //Host.Current.CloseApplication(repo.UVAXMLEditor.Self, 1);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'UVAXMLEditor.UVAXMLEditor'.", repo.UVAXMLEditor.UVAXMLEditorInfo, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.UVAXMLEditor.UVAXMLEditor);
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Application", "Hat Fehler gebracht, dh Schließen mit Alt+F4\r\nClosing application containing item 'UVAXMLEditor'.", repo.UVAXMLEditor.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.UVAXMLEditor.Self, 1);
             
         }
 
