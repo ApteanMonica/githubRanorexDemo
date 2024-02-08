@@ -41,8 +41,8 @@ namespace L_KMSE_001.Recordings
         /// </summary>
         public Wiederholdruck()
         {
-            Lager = "";
-            Auftrag = "";
+            Lager = "100";
+            Auftrag = "201900002";
         }
 
         /// <summary>

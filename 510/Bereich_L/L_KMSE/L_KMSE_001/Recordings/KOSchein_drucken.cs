@@ -150,6 +150,9 @@ namespace L_KMSE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ButtonSpeichern' at Center.", repo.DruckausgabeSpeichernUnter.ButtonSpeichernInfo, new RecordItemIndex(9));
             repo.DruckausgabeSpeichernUnter.ButtonSpeichern.Click();
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnter'", repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo, new ActionTimeout(120000), new RecordItemIndex(10));
+            repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo.WaitForNotExists(120000);
+            
         }
 
 #region Image Feature Data
