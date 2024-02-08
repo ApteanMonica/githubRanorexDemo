@@ -111,8 +111,8 @@ namespace V_CALL_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmCallAuftrag.TitleBar100CallAuftrag'", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.FrmCallAuftrag.TitleBar100CallAuftragInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Call-Arten') on item 'FrmCallAuftrag.TitleBar100CallAuftrag'.", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, "Text", "Call-Arten");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Call-Auftrag') on item 'FrmCallAuftrag.TitleBar100CallAuftrag'.", repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmCallAuftrag.TitleBar100CallAuftragInfo, "Text", "Call-Auftrag");
             
         }
 

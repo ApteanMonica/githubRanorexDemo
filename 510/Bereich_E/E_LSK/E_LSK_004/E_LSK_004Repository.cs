@@ -135,7 +135,9 @@ namespace E_LSK_004
         {
             E_LSK_004RepositoryFolders.FrmKopfFolder _frmkopf;
             E_LSK_004RepositoryFolders.FrmSearchPageFolder _frmsearchpage;
+            E_LSK_004RepositoryFolders.FrmKopf_RechFolder _frmkopf_rech;
             RepoItemInfo _titlebar100lieferscheinelagerzugaInfo;
+            RepoItemInfo _pbrichtigInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
 
             /// <summary>
@@ -146,7 +148,9 @@ namespace E_LSK_004
             {
                 _frmkopf = new E_LSK_004RepositoryFolders.FrmKopfFolder(this);
                 _frmsearchpage = new E_LSK_004RepositoryFolders.FrmSearchPageFolder(this);
+                _frmkopf_rech = new E_LSK_004RepositoryFolders.FrmKopf_RechFolder(this);
                 _titlebar100lieferscheinelagerzugaInfo = new RepoItemInfo(this, "TitleBar100LieferscheineLagerzuga", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d13fcb2b-0341-4d03-b3cd-b2985fea2929");
+                _pbrichtigInfo = new RepoItemInfo(this, "PbRichtig", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmKopf']/form[@controlname='frmKopf']/container[@controltypename='SalFormClientArea']/tabpagelist/tabpage[@controlname='tpRech']/container[@controlname='frame5']/button[@controlname='pbRichtig']", "", 30000, null, "344ea26f-dd35-4ec1-8708-52029e150044");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "49908162-c650-40b3-8846-c1d04b3d5384");
             }
 
@@ -199,6 +203,30 @@ namespace E_LSK_004
             }
 
             /// <summary>
+            /// The PbRichtig item.
+            /// </summary>
+            [RepositoryItem("344ea26f-dd35-4ec1-8708-52029e150044")]
+            public virtual Ranorex.Button PbRichtig
+            {
+                get
+                {
+                    return _pbrichtigInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbRichtig item info.
+            /// </summary>
+            [RepositoryItemInfo("344ea26f-dd35-4ec1-8708-52029e150044")]
+            public virtual RepoItemInfo PbRichtigInfo
+            {
+                get
+                {
+                    return _pbrichtigInfo;
+                }
+            }
+
+            /// <summary>
             /// The PbDataAccessSave item.
             /// </summary>
             [RepositoryItem("49908162-c650-40b3-8846-c1d04b3d5384")]
@@ -239,6 +267,15 @@ namespace E_LSK_004
             {
                 get { return _frmsearchpage; }
             }
+
+            /// <summary>
+            /// The frmKopf_Rech folder.
+            /// </summary>
+            [RepositoryFolder("66d47d4c-536e-4829-bf0d-a3f44b2bd146")]
+            public virtual E_LSK_004RepositoryFolders.FrmKopf_RechFolder frmKopf_Rech
+            {
+                get { return _frmkopf_rech; }
+            }
         }
 
         /// <summary>
@@ -247,28 +284,24 @@ namespace E_LSK_004
         [RepositoryFolder("5ece3dbc-82d3-42ed-8da4-06dc953246a5")]
         public partial class FrmKopfFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _row2column0Info;
             RepoItemInfo _rechnungInfo;
             RepoItemInfo _lieferantInfo;
             RepoItemInfo _dfrechstatusInfo;
             RepoItemInfo _lieferscheineInfo;
             RepoItemInfo _collskstatusrow1Info;
-            RepoItemInfo _row1column0Info;
             RepoItemInfo _dfdifferenzInfo;
             RepoItemInfo _rechnung1Info;
             RepoItemInfo _colartnrrow2Info;
             RepoItemInfo _pbvorwaertsInfo;
             RepoItemInfo _artikelInfo;
             RepoItemInfo _preisInfo;
-            RepoItemInfo _row3column0Info;
             RepoItemInfo _dfwertbetragInfo;
             RepoItemInfo _mengeInfo;
             RepoItemInfo _rechnungskontrolleInfo;
-            RepoItemInfo _collsksummerow1Info;
-            RepoItemInfo _pbrichtigInfo;
             RepoItemInfo _rechnungsdatumInfo;
             RepoItemInfo _intbelegnrInfo;
             RepoItemInfo _rabatt1Info;
+            RepoItemInfo _collsksummerow1Info;
 
             /// <summary>
             /// Creates a new FrmKopf  folder.
@@ -276,28 +309,24 @@ namespace E_LSK_004
             public FrmKopfFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmKopf", ".//form[@controlname='frmKopf']", parentFolder, 30000, null, false, "5ece3dbc-82d3-42ed-8da4-06dc953246a5", "")
             {
-                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/container[@controlname='tblLsk']/element[@controlname='mainGrid']//cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "b22015f3-5321-4b7d-bacd-8a2c7837d817");
                 _rechnungInfo = new RepoItemInfo(this, "Rechnung", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfRech_summe']/text[@accessiblename='Rechnung']", "", 30000, null, "ad02fbbf-9865-49e9-9106-c88c74961f3e");
                 _lieferantInfo = new RepoItemInfo(this, "Lieferant", "?/?/text[@controlname='dfAdr_nr_lsk']/text[@accessiblename='Lieferant']", "", 30000, null, "b5c8f0b6-ba7a-419b-92ee-0bc9780cadc9");
                 _dfrechstatusInfo = new RepoItemInfo(this, "DfRechStatus", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfRech_status']", "", 30000, null, "d0784220-cae0-465a-b169-b4991ec68c5c");
                 _lieferscheineInfo = new RepoItemInfo(this, "Lieferscheine", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfLsk_summe']/text[@accessiblename='Lieferscheine']", "", 30000, null, "e5cadc27-4942-4bcb-bc20-d4cd88f99d28");
                 _collskstatusrow1Info = new RepoItemInfo(this, "ColLskStatusRow1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/container[@controlname='tblLsk']/element[@controlname='mainGrid']//cell[@accessiblename='colLsk_status Row 1']", "", 30000, null, "c68ecc4b-6b51-4aeb-b939-66654b033e1c");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/container[@controlname='tblLsk']/element[@controlname='mainGrid']//cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "a7b933a1-2c68-4a1c-8536-71e8e719e942");
                 _dfdifferenzInfo = new RepoItemInfo(this, "DfDifferenz", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfDifferenz']", "", 30000, null, "38877122-7de5-4398-a172-cb132f4e23ea");
                 _rechnung1Info = new RepoItemInfo(this, "Rechnung1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']//text[@accessiblename='Rechnung']", "", 30000, null, "dae741ff-6767-42d6-9b69-afb2e29ec321");
                 _colartnrrow2Info = new RepoItemInfo(this, "ColArtNrRow2", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/container[@controlname='tblLsp']/element[@controlname='mainGrid']//cell[@accessiblename='colArt_nr Row 2']", "", 30000, null, "45f479e9-4d4e-4e47-8d7e-0a953891a01b");
                 _pbvorwaertsInfo = new RepoItemInfo(this, "PbVorwaerts", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/button[@controlname='pbVorwärts']", "", 30000, null, "eeaf02f0-c27f-4795-b6fb-6e1fa396ff98");
                 _artikelInfo = new RepoItemInfo(this, "Artikel", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/?/?/text[@controlname='dfArt_nr']/text[@accessiblename='Artikel']", "", 30000, null, "980fdd1b-17fa-4202-897a-b899a1384eb1");
                 _preisInfo = new RepoItemInfo(this, "Preis", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']//text[@accessiblename='Preis']", "", 30000, null, "d53a7431-a757-4e0f-9ab9-3488b9ef0340");
-                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/container[@controlname='tblLsp']/element[@controlname='mainGrid']//cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "94e46138-6021-47e6-b470-621e57113fa6");
                 _dfwertbetragInfo = new RepoItemInfo(this, "DfWertBetrag", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/text[@controlname='dfWert_betrag']", "", 30000, null, "afe508ad-b3b2-4346-8f2c-ae4b9047c4ab");
                 _mengeInfo = new RepoItemInfo(this, "Menge", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']//text[@accessiblename='Menge']", "", 30000, null, "59947b06-6fc8-4e79-9dea-372d8e14af96");
                 _rechnungskontrolleInfo = new RepoItemInfo(this, "Rechnungskontrolle", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Rechnungs&kontrolle']", "", 30000, null, "cc9cec6f-4798-4328-9540-6eada7e26fd4");
-                _collsksummerow1Info = new RepoItemInfo(this, "ColLskSummeRow1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/container[@controlname='tblLsk']/element[@controlname='mainGrid']//cell[@accessiblename='colLsk_summe Row 1']", "", 30000, null, "f1914066-958c-4213-9058-ac37178fe34a");
-                _pbrichtigInfo = new RepoItemInfo(this, "PbRichtig", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/button[@controlname='pbRichtig']", "", 30000, null, "344ea26f-dd35-4ec1-8708-52029e150044");
-                _rechnungsdatumInfo = new RepoItemInfo(this, "Rechnungsdatum", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']//text[@accessiblename='Rechnungsdatum']", "", 30000, null, "679b8375-5395-4fe2-b660-ba4893dcfe96");
+                _rechnungsdatumInfo = new RepoItemInfo(this, "Rechnungsdatum", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame1']/text[@controlname='dfRech_datum']/text[@accessiblename='Rechnungsdatum']", "", 30000, null, "679b8375-5395-4fe2-b660-ba4893dcfe96");
                 _intbelegnrInfo = new RepoItemInfo(this, "IntBelegnr", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']//text[@accessiblename='int. Belegnr.']", "", 30000, null, "53fafced-3f19-45f1-b8f7-71f75f3b21df");
                 _rabatt1Info = new RepoItemInfo(this, "Rabatt1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/?/?/text[@controlname='dfLsp_rabatt1']", "", 30000, null, "92ce9c23-5791-45cc-bb92-902545520456");
+                _collsksummerow1Info = new RepoItemInfo(this, "ColLskSummeRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_summe Row 1']", "", 30000, null, "c18c517b-fd10-45a0-851b-a14d5d154336");
             }
 
             /// <summary>
@@ -321,30 +350,6 @@ namespace E_LSK_004
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row2Column0 item.
-            /// </summary>
-            [RepositoryItem("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
-            public virtual Ranorex.Cell Row2Column0
-            {
-                get
-                {
-                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row2Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
-            public virtual RepoItemInfo Row2Column0Info
-            {
-                get
-                {
-                    return _row2column0Info;
                 }
             }
 
@@ -465,30 +470,6 @@ namespace E_LSK_004
                 get
                 {
                     return _collskstatusrow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("a7b933a1-2c68-4a1c-8536-71e8e719e942")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("a7b933a1-2c68-4a1c-8536-71e8e719e942")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
                 }
             }
 
@@ -637,30 +618,6 @@ namespace E_LSK_004
             }
 
             /// <summary>
-            /// The Row3Column0 item.
-            /// </summary>
-            [RepositoryItem("94e46138-6021-47e6-b470-621e57113fa6")]
-            public virtual Ranorex.Cell Row3Column0
-            {
-                get
-                {
-                    return _row3column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row3Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("94e46138-6021-47e6-b470-621e57113fa6")]
-            public virtual RepoItemInfo Row3Column0Info
-            {
-                get
-                {
-                    return _row3column0Info;
-                }
-            }
-
-            /// <summary>
             /// The DfWertBetrag item.
             /// </summary>
             [RepositoryItem("afe508ad-b3b2-4346-8f2c-ae4b9047c4ab")]
@@ -733,54 +690,6 @@ namespace E_LSK_004
             }
 
             /// <summary>
-            /// The ColLskSummeRow1 item.
-            /// </summary>
-            [RepositoryItem("f1914066-958c-4213-9058-ac37178fe34a")]
-            public virtual Ranorex.Cell ColLskSummeRow1
-            {
-                get
-                {
-                    return _collsksummerow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColLskSummeRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("f1914066-958c-4213-9058-ac37178fe34a")]
-            public virtual RepoItemInfo ColLskSummeRow1Info
-            {
-                get
-                {
-                    return _collsksummerow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The PbRichtig item.
-            /// </summary>
-            [RepositoryItem("344ea26f-dd35-4ec1-8708-52029e150044")]
-            public virtual Ranorex.Button PbRichtig
-            {
-                get
-                {
-                    return _pbrichtigInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbRichtig item info.
-            /// </summary>
-            [RepositoryItemInfo("344ea26f-dd35-4ec1-8708-52029e150044")]
-            public virtual RepoItemInfo PbRichtigInfo
-            {
-                get
-                {
-                    return _pbrichtigInfo;
-                }
-            }
-
-            /// <summary>
             /// The Rechnungsdatum item.
             /// </summary>
             [RepositoryItem("679b8375-5395-4fe2-b660-ba4893dcfe96")]
@@ -849,6 +758,30 @@ namespace E_LSK_004
                 get
                 {
                     return _rabatt1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskSummeRow1 item.
+            /// </summary>
+            [RepositoryItem("c18c517b-fd10-45a0-851b-a14d5d154336")]
+            public virtual Ranorex.Cell ColLskSummeRow1
+            {
+                get
+                {
+                    return _collsksummerow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskSummeRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("c18c517b-fd10-45a0-851b-a14d5d154336")]
+            public virtual RepoItemInfo ColLskSummeRow1Info
+            {
+                get
+                {
+                    return _collsksummerow1Info;
                 }
             }
         }
@@ -967,6 +900,124 @@ namespace E_LSK_004
                 get
                 {
                     return _textInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmKopf_RechFolder folder.
+        /// </summary>
+        [RepositoryFolder("66d47d4c-536e-4829-bf0d-a3f44b2bd146")]
+        public partial class FrmKopf_RechFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _row2column0Info;
+            RepoItemInfo _row3column0Info;
+            RepoItemInfo _row1column0Info;
+
+            /// <summary>
+            /// Creates a new frmKopf_Rech  folder.
+            /// </summary>
+            public FrmKopf_RechFolder(RepoGenBaseFolder parentFolder) :
+                    base("frmKopf_Rech", ".//form[@controlname='frmKopf']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmKopf']/form[@controlname='frmKopf']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']", parentFolder, 30000, null, false, "66d47d4c-536e-4829-bf0d-a3f44b2bd146", "")
+            {
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "b22015f3-5321-4b7d-bacd-8a2c7837d817");
+                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "94e46138-6021-47e6-b470-621e57113fa6");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "a7b933a1-2c68-4a1c-8536-71e8e719e942");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("66d47d4c-536e-4829-bf0d-a3f44b2bd146")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("66d47d4c-536e-4829-bf0d-a3f44b2bd146")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item.
+            /// </summary>
+            [RepositoryItem("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
+            public virtual Ranorex.Cell Row2Column0
+            {
+                get
+                {
+                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
+            public virtual RepoItemInfo Row2Column0Info
+            {
+                get
+                {
+                    return _row2column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row3Column0 item.
+            /// </summary>
+            [RepositoryItem("94e46138-6021-47e6-b470-621e57113fa6")]
+            public virtual Ranorex.Cell Row3Column0
+            {
+                get
+                {
+                    return _row3column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row3Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("94e46138-6021-47e6-b470-621e57113fa6")]
+            public virtual RepoItemInfo Row3Column0Info
+            {
+                get
+                {
+                    return _row3column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("a7b933a1-2c68-4a1c-8536-71e8e719e942")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("a7b933a1-2c68-4a1c-8536-71e8e719e942")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
         }

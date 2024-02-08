@@ -33,14 +33,76 @@
 			name="setup">
 			</setup>
 			<testmodule
-			id="2b6c074e-36d1-489a-8f92-8ba228471579"
-			name="pruefen_keine_aktiven_Beitragsmodifikationen"
-			ref="49afb2ce-feb8-4f74-8948-65865326dad1"
+			id="13d21827-05cd-42fb-84d1-b1a5b757bdf8"
+			name="neue_Beitragsmodifikation_anlegen_Eingaben_pruefen"
+			ref="f9d4b616-d381-43fe-82c0-c8c5e461a5ec"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Beitrag_Sparte"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="fd090af8-59ca-48eb-afe5-8fd0a4d1f044"
+					variablename="Beitrag_Sparte">
+					</var>
+					<var
+					dataname="Modifikation_Code"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="9831087d-579c-45af-951b-8d926ab220e6"
+					variablename="Modifikation_Code">
+					</var>
+					<var
+					dataname="Modifikation_Bezeichnung"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="8d154d49-263d-4f6a-a2cc-0d700adfc288"
+					variablename="Modifikation_Bezeichnung">
+					</var>
+					<var
+					dataname="Datum_von"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="8db67631-4e80-48ba-b768-13cc86899b9e"
+					variablename="Datum_von">
+					</var>
+					<var
+					dataname="Datum_bis"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="d1704472-6f11-49a6-ba1a-66ddc84d5968"
+					variablename="Datum_bis">
+					</var>
+					<var
+					dataname="Beitrag_Bezeichnung"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="8f45a224-2128-4295-920a-051c3366581a"
+					variablename="Beitrag_Bezeichnung">
+					</var>
+					<var
+					dataname="Modifikationsgrund_Code"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="32851dcb-e7c9-4aae-af3d-72d1cc1147a7"
+					variablename="Modifikationsgrund_Code">
+					</var>
+					<var
+					dataname="Modifikationsgrund_Bezeichnung"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="da754abf-4c93-413c-bde6-51954e65f285"
+					variablename="Modifikationsgrund_Bezeichnung">
+					</var>
+					<var
+					dataname="Zusatztext"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="05eba10f-e20a-4935-a658-154c8f8c20ac"
+					variablename="Zusatztext">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1b21f356-d8d4-49a6-a776-d2e96ba70bad"
+			name="Beitragsmodifikationen_ohne_geloeschte_aufrufen"
+			ref="419dd2e0-dd75-4c0b-a705-9f2dc64db2a7"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="2df0840b-b3c1-4e14-aabb-1e92966d6251"
-			name="Aktive_Beitragsmodifikationen_aufrufen"
+			name="Beitragsmodifikationen_ohne_geloeschte_aufrufen"
 			ref="419dd2e0-dd75-4c0b-a705-9f2dc64db2a7"
 			type="Recording">
 			</testmodule>
@@ -54,14 +116,36 @@
 			ref="f191841c-d888-412a-a8ef-315f7b4cddb5"
 			type="Recording">
 				<description>
-					<![CDATA[Repository-Element rs2WEB shelldoc Masken/Feldprüfung und Screenshot funktioniert nicht]]>
+					<![CDATA[Repository-Element rs2WEB shelldoc Masken/Feldprüfung funktioniert nicht, Workaround Screenshot-Prüfung]]>
 				</description>
 			</testmodule>
 			<testmodule
-			id="4e2535a8-30bc-41d4-a197-879ef594121e"
-			name="Close_C_CRM"
-			ref="650049b8-291f-45b1-b8d1-eb5f926bc175"
+			id="479d0708-4bdb-4fdc-9b0a-995a7de4c813"
+			name="Tagesdatum_ermitteln"
+			ref="90954d30-4b5b-4602-b6dd-db3e636cce92"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="0e89ca62-e5df-4acf-8be1-1108054f9793"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4a9cc2f6-6e21-44d9-af96-df9804ff6e55"
+			name="DEB_NR_auswaehlen"
+			ref="e9e43580-5603-444b-ab74-75e9816a4350"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DEB_NR"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="041bdd0e-9a63-40fc-b16b-4251f5a6a490"
+					variablename="DEB_NR">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="524b4520-2e46-4d7f-b4e1-cd9b783499f4"
@@ -69,11 +153,11 @@
 			ref="be21059d-b3c1-46d2-9e1e-9ddb2213bc92"
 			type="Recording">
 				<description>
-					<![CDATA[Repository-Element rs2WEB shelldoc Jahresauswahl funktioniert nicht]]>
+					<![CDATA[Repository-Element rs2WEB shelldoc Jahresauswahl funktioniert nicht. Workaround mit Klick Titelleiste + Tab]]>
 				</description>
 				<databinding>
 					<var
-					dataname="Jahr"
+					dataname="Modifikation_Bezeichnung"
 					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
 					variableid="9e5ab993-d3ff-497e-af02-05346de3347b"
 					variablename="Jahr">
@@ -106,7 +190,7 @@
 			</testsuite>
 			<testmodule
 			id="79878421-942f-4b0b-a23f-df111b70c8bd"
-			name="Vorschreibungen_DEB_NR_aufrufen"
+			name="Vorschreibungen_mit_Deb_Nr_aufrufen"
 			ref="37997705-713d-4158-a4ca-a29be22cb228"
 			type="Recording">
 				<databinding>
@@ -124,31 +208,95 @@
 			reportlevel="Info;20">
 				<parameters>
 					<param
+					name="Programm"
+					value="C_CRM">
+					</param>
+					<param
 					name="Programm_A_BVOR"
 					value="A_BVOR">
+					</param>
+					<param
+					name="Tagesdatum"
+					value="">
 					</param>
 					<param
 					name="Mandant"
 					value="WFK">
 					</param>
 					<param
-					name="Programm"
-					value="C_CRM">
-					</param>
-					<param
 					name="DEB_NR"
 					value="20014362">
 					</param>
 					<param
-					name="Jahr"
-					value="2021">
+					name="Beitrag_Sparte"
+					value="303">
+					</param>
+					<param
+					name="Modifikation_Code"
+					value="BEFR">
+					</param>
+					<param
+					name="Modifikation_Typ"
+					value="BEFREIT">
+					</param>
+					<param
+					name="Modifikation_Bezeichnung"
+					value="Befreiung">
+					</param>
+					<param
+					name="Datum_von_unformatiert"
+					value="15082021">
+					</param>
+					<param
+					name="Datum_bis_unformatiert"
+					value="15102021">
+					</param>
+					<param
+					name="Datum_von"
+					value="15.08.2021">
+					</param>
+					<param
+					name="Datum_bis"
+					value="15.10.2021">
+					</param>
+					<param
+					name="Beitrag_Bezeichnung"
+					value="OÖÄK: Allgemeine Kammerumlage gem. § 7A 3c)">
+					</param>
+					<param
+					name="Modifikationsgrund_Code"
+					value="1">
+					</param>
+					<param
+					name="Modifikationsgrund_Bezeichnung"
+					value="Ermäßigung der WFF-Beiträge wegen Mutterschutz/Karenz">
+					</param>
+					<param
+					name="Zusatztext"
+					value="Zusatztext Test">
+					</param>
+					<param
+					name="NewParameter"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
-			<teardown
-			id="9d266643-6158-464b-a74b-3e84fb74a1db"
-			name="teardown">
-			</teardown>
+			<testmodule
+			id="afb50b8d-aaa5-4734-b22d-9c47cf0ab339"
+			name="Beitrag_Beitragsmodifikation_aufrufen"
+			ref="1e5ae5b8-2e6b-48eb-9451-35d57c0d510c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b9fb819e-4ebe-4b4a-ba7e-0519c78bec5c"
+			name="Beitragsmodifikation_pruefen_keine_Zeile_vorhanden"
+			ref="7d37fd1c-a62e-453c-9e20-d6a1d4d23bf5"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="bd3ac324-1268-481d-aa61-e94b352e24c6"
+			name="Beitragsmodifikation_durchführen">
+			</testcase>
 			<testmodule
 			id="c44ac214-302a-42da-9528-4bf3de35ee01"
 			name="DEB_NR_auswaehlen"
@@ -164,10 +312,122 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="f6417016-63de-4f3b-aacf-ea03213a87c6"
-			name="Beitrag_Vorschreibungen_aufrufen"
-			ref="beb633bd-8262-4a0c-9161-da06b767e45d"
+			id="e2042eb8-7fe2-4037-a29a-bf262e88b1df"
+			name="neue_Beitragsmodifikation_anlegen_speichern_Meldung"
+			ref="133f305d-8b90-4739-b81f-f24640fd07ad"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f689dae5-8a7f-4a19-aa94-15444c6faae7"
+			name="neue_Beitragsmodifikation_anlegen"
+			ref="6a949b8a-a837-4875-b1ec-453b4c19b1b2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Modifikation_Code"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="ba7d0aab-6920-4bb3-bbcf-a271717daef2"
+					variablename="Modifikation_Code">
+					</var>
+					<var
+					dataname="Datum_von_unformatiert"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="8f34434b-c839-431b-a9a1-b0ecf4d36e41"
+					variablename="Datum_von_unformatiert">
+					</var>
+					<var
+					dataname="Datum_bis_unformatiert"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="253a69db-44b0-4a80-bcfd-ee8ed7c50bfa"
+					variablename="Datum_bis_unformatiert">
+					</var>
+					<var
+					dataname="Modifikationsgrund_Code"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="d967bdea-cccc-40a7-8ec8-66d2526fadfa"
+					variablename="Modifikationsgrund_Code">
+					</var>
+					<var
+					dataname="Zusatztext"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="9d0607d4-a25c-435a-b785-b93a0065790e"
+					variablename="Zusatztext">
+					</var>
+					<var
+					dataname="Beitrag_Sparte"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="013db42e-3092-4cdb-91b5-59125ae85170"
+					variablename="Beitrag_Sparte">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ff2bd460-9fa9-4a29-98a1-dde8e9526dbd"
+			name="neue_Beitragsmodifikation_pruefen"
+			ref="45484372-3d74-4a84-b00b-4061ad2145c1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="b87cf8af-6d72-41a1-a400-43f6be48dacc"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Beitrag_Sparte"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="c146c30a-30a7-4310-ae74-6542c4ef5ae7"
+					variablename="Beitrag_Sparte">
+					</var>
+					<var
+					dataname="Modifikation_Typ"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="ec5324a3-3f4a-4c04-9520-d13883a45efe"
+					variablename="Modifikation_Typ">
+					</var>
+					<var
+					dataname="Modifikation_Bezeichnung"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="7560c896-5a15-4136-83fe-d13caf475405"
+					variablename="Modifikation_Bezeichnung">
+					</var>
+					<var
+					dataname="Datum_von"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="86a7a9f7-9bee-4614-af59-515e0a211acc"
+					variablename="Datum_von">
+					</var>
+					<var
+					dataname="Datum_bis"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="8cfd97ec-a1a3-41ab-82f1-40e3f661285f"
+					variablename="Datum_bis">
+					</var>
+					<var
+					dataname="Beitrag_Bezeichnung"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="c8081682-ae06-4a17-8b50-842b6b26303b"
+					variablename="Beitrag_Bezeichnung">
+					</var>
+					<var
+					dataname="Modifikationsgrund_Code"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="83644851-a800-4e3d-9134-1959fa9200de"
+					variablename="Modifikationsgrund_Code">
+					</var>
+					<var
+					dataname="Modifikationsgrund_Bezeichnung"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="2ebb6e02-d819-46f4-b109-ffe8079d3a6e"
+					variablename="Modifikationsgrund_Bezeichnung">
+					</var>
+					<var
+					dataname="Zusatztext"
+					datasourceid="8f95f99b-16a1-475b-ac80-5c00737d7b80"
+					variableid="5a2e9204-0661-4738-9192-b2f569567767"
+					variablename="Zusatztext">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -189,10 +449,6 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="f6417016-63de-4f3b-aacf-ea03213a87c6"
-						name="Beitrag_Vorschreibungen_aufrufen">
-						</testmodule>
-						<testmodule
 						id="0a5f8b2a-cde4-49f0-98dd-b63327934f30"
 						name="Beitrag_Beitragsmodifikation_aufrufen">
 						</testmodule>
@@ -202,15 +458,15 @@
 						</testmodule>
 						<testmodule
 						id="2df0840b-b3c1-4e14-aabb-1e92966d6251"
-						name="Aktive_Beitragsmodifikationen_aufrufen">
+						name="Beitragsmodifikationen_ohne_geloeschte_aufrufen">
 						</testmodule>
 						<testmodule
-						id="2b6c074e-36d1-489a-8f92-8ba228471579"
-						name="pruefen_keine_aktiven_Beitragsmodifikationen">
+						id="b9fb819e-4ebe-4b4a-ba7e-0519c78bec5c"
+						name="Beitragsmodifikation_pruefen_keine_Zeile_vorhanden">
 						</testmodule>
 						<testmodule
 						id="79878421-942f-4b0b-a23f-df111b70c8bd"
-						name="Vorschreibungen_DEB_NR_aufrufen">
+						name="Vorschreibungen_mit_Deb_Nr_aufrufen">
 						</testmodule>
 						<testmodule
 						id="524b4520-2e46-4d7f-b4e1-cd9b783499f4"
@@ -220,14 +476,42 @@
 						id="3c623ea3-2c63-48c8-947d-9fa8740f6e70"
 						name="pruefen_Vorschreibungen_ohne_Beitragsmodifikation">
 						</testmodule>
-						<teardown
-						id="9d266643-6158-464b-a74b-3e84fb74a1db"
-						name="teardown">
-							<testmodule
-							id="4e2535a8-30bc-41d4-a197-879ef594121e"
-							name="Close_C_CRM">
-							</testmodule>
-						</teardown>
+					</testcase>
+					<testcase
+					id="bd3ac324-1268-481d-aa61-e94b352e24c6"
+					name="Beitragsmodifikation_durchführen">
+						<testmodule
+						id="afb50b8d-aaa5-4734-b22d-9c47cf0ab339"
+						name="Beitrag_Beitragsmodifikation_aufrufen">
+						</testmodule>
+						<testmodule
+						id="4a9cc2f6-6e21-44d9-af96-df9804ff6e55"
+						name="DEB_NR_auswaehlen">
+						</testmodule>
+						<testmodule
+						id="f689dae5-8a7f-4a19-aa94-15444c6faae7"
+						name="neue_Beitragsmodifikation_anlegen">
+						</testmodule>
+						<testmodule
+						id="13d21827-05cd-42fb-84d1-b1a5b757bdf8"
+						name="neue_Beitragsmodifikation_anlegen_Eingaben_pruefen">
+						</testmodule>
+						<testmodule
+						id="e2042eb8-7fe2-4037-a29a-bf262e88b1df"
+						name="neue_Beitragsmodifikation_anlegen_speichern_Meldung">
+						</testmodule>
+						<testmodule
+						id="1b21f356-d8d4-49a6-a776-d2e96ba70bad"
+						name="Beitragsmodifikationen_ohne_geloeschte_aufrufen">
+						</testmodule>
+						<testmodule
+						id="479d0708-4bdb-4fdc-9b0a-995a7de4c813"
+						name="Tagesdatum_ermitteln">
+						</testmodule>
+						<testmodule
+						id="ff2bd460-9fa9-4a29-98a1-dde8e9526dbd"
+						name="neue_Beitragsmodifikation_pruefen">
+						</testmodule>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -245,8 +529,14 @@
 			<testcontainer
 			id="8f95f99b-16a1-475b-ac80-5c00737d7b80">
 			</testcontainer>
+			<testcontainer
+			id="bd3ac324-1268-481d-aa61-e94b352e24c6">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

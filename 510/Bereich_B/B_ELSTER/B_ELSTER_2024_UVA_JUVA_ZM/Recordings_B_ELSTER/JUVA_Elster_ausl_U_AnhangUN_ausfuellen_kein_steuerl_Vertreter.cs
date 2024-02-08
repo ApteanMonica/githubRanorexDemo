@@ -200,137 +200,143 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_B_ELSTER
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1000,00') on item 'DlgElsterUN.DfSumme'.", repo.DlgElsterUN.DfSummeInfo, new RecordItemIndex(26));
             Validate.AttributeContains(repo.DlgElsterUN.DfSummeInfo, "Text", "1000,00");
             
-            // D ergänzende Angaben (eric-Fehler bei Befüllung - Feldbez. geändert), Exception bei Eingabe von Nachkommastellen
-            Report.Log(ReportLevel.Info, "Section", "D ergänzende Angaben (eric-Fehler bei Befüllung - Feldbez. geändert), Exception bei Eingabe von Nachkommastellen", new RecordItemIndex(27));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgElsterUN.DfBefoerderungslfg' at Center.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(28));
-            repo.DlgElsterUN.DfBefoerderungslfg.DoubleClick();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.DfBefoerderungslfg'.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(29));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.DfBefoerderungslfg);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.DfBefoerderungslfg'.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(30));
-            Validate.AttributeEqual(repo.DlgElsterUN.DfBefoerderungslfgInfo, "Text", "");
-            
             // steuerlicher_Vertreter
-            Report.Log(ReportLevel.Info, "Section", "steuerlicher_Vertreter", new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Section", "steuerlicher_Vertreter", new RecordItemIndex(27));
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgElsterUN.CbUnterschrieben'.", repo.DlgElsterUN.CbUnterschriebenInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgElsterUN.CbUnterschrieben'.", repo.DlgElsterUN.CbUnterschriebenInfo, new RecordItemIndex(28));
             repo.DlgElsterUN.CbUnterschrieben.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(29));
             repo.DlgElsterUN.GroupBox2.CbBevollmaechtigter.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(30));
             repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter' at Center.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter' at Center.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(31));
             repo.DlgElsterUN.GroupBox2.CbBevollmaechtigter.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(32));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter' at Center.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(33));
+            repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(34));
+            Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, "Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(35));
+            Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, "Checked", "False");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(36));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter' at Center.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(37));
-            repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfName'.", repo.DlgElsterUN.GroupBox2.DfNameInfo, new RecordItemIndex(37));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfName);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(38));
-            Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(38));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(39));
-            Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfStrasse'.", repo.DlgElsterUN.GroupBox2.DfStrasseInfo, new RecordItemIndex(39));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfStrasse);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(40));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfName'.", repo.DlgElsterUN.GroupBox2.DfNameInfo, new RecordItemIndex(41));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfName);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfHausnummer'.", repo.DlgElsterUN.GroupBox2.DfHausnummerInfo, new RecordItemIndex(41));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfHausnummer);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(42));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfStrasse'.", repo.DlgElsterUN.GroupBox2.DfStrasseInfo, new RecordItemIndex(43));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfStrasse);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfHausnummerzusatz'.", repo.DlgElsterUN.GroupBox2.DfHausnummerzusatzInfo, new RecordItemIndex(43));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfHausnummerzusatz);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(44));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfHausnummer'.", repo.DlgElsterUN.GroupBox2.DfHausnummerInfo, new RecordItemIndex(45));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfHausnummer);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfAdressergaenzung'.", repo.DlgElsterUN.GroupBox2.DfAdressergaenzungInfo, new RecordItemIndex(45));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfAdressergaenzung);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(46));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfHausnummerzusatz'.", repo.DlgElsterUN.GroupBox2.DfHausnummerzusatzInfo, new RecordItemIndex(47));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfHausnummerzusatz);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfOrt'.", repo.DlgElsterUN.GroupBox2.DfOrtInfo, new RecordItemIndex(47));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfOrt);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(48));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfAdressergaenzung'.", repo.DlgElsterUN.GroupBox2.DfAdressergaenzungInfo, new RecordItemIndex(49));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfAdressergaenzung);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfEmail'.", repo.DlgElsterUN.GroupBox2.DfEmailInfo, new RecordItemIndex(49));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfEmail);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(50));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfOrt'.", repo.DlgElsterUN.GroupBox2.DfOrtInfo, new RecordItemIndex(51));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfOrt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfTelefon'.", repo.DlgElsterUN.GroupBox2.DfTelefonInfo, new RecordItemIndex(51));
+            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfTelefon);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(52));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfEmail'.", repo.DlgElsterUN.GroupBox2.DfEmailInfo, new RecordItemIndex(53));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfEmail);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(54));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.GroupBox2.DfTelefon'.", repo.DlgElsterUN.GroupBox2.DfTelefonInfo, new RecordItemIndex(55));
-            Keyboard.PrepareFocus(repo.DlgElsterUN.GroupBox2.DfTelefon);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(56));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.CbUnterschrieben'.", repo.DlgElsterUN.CbUnterschriebenInfo, new RecordItemIndex(57));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.CbUnterschrieben'.", repo.DlgElsterUN.CbUnterschriebenInfo, new RecordItemIndex(53));
             Validate.AttributeEqual(repo.DlgElsterUN.CbUnterschriebenInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(58));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbBevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, new RecordItemIndex(54));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.CbBevollmaechtigterInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(59));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigter'.", repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, new RecordItemIndex(55));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.CbEmpfangsbevollmaechtigterInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfName'.", repo.DlgElsterUN.GroupBox2.DfNameInfo, new RecordItemIndex(60));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfName'.", repo.DlgElsterUN.GroupBox2.DfNameInfo, new RecordItemIndex(56));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfNameInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfStrasse'.", repo.DlgElsterUN.GroupBox2.DfStrasseInfo, new RecordItemIndex(61));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfStrasse'.", repo.DlgElsterUN.GroupBox2.DfStrasseInfo, new RecordItemIndex(57));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfStrasseInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfHausnummer'.", repo.DlgElsterUN.GroupBox2.DfHausnummerInfo, new RecordItemIndex(62));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfHausnummer'.", repo.DlgElsterUN.GroupBox2.DfHausnummerInfo, new RecordItemIndex(58));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfHausnummerInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfHausnummerzusatz'.", repo.DlgElsterUN.GroupBox2.DfHausnummerzusatzInfo, new RecordItemIndex(63));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfHausnummerzusatz'.", repo.DlgElsterUN.GroupBox2.DfHausnummerzusatzInfo, new RecordItemIndex(59));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfHausnummerzusatzInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfAdressergaenzung'.", repo.DlgElsterUN.GroupBox2.DfAdressergaenzungInfo, new RecordItemIndex(64));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfAdressergaenzung'.", repo.DlgElsterUN.GroupBox2.DfAdressergaenzungInfo, new RecordItemIndex(60));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfAdressergaenzungInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfOrt'.", repo.DlgElsterUN.GroupBox2.DfOrtInfo, new RecordItemIndex(65));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfOrt'.", repo.DlgElsterUN.GroupBox2.DfOrtInfo, new RecordItemIndex(61));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfOrtInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfEmail'.", repo.DlgElsterUN.GroupBox2.DfEmailInfo, new RecordItemIndex(66));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfEmail'.", repo.DlgElsterUN.GroupBox2.DfEmailInfo, new RecordItemIndex(62));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfEmailInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfTelefon'.", repo.DlgElsterUN.GroupBox2.DfTelefonInfo, new RecordItemIndex(67));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.GroupBox2.DfTelefon'.", repo.DlgElsterUN.GroupBox2.DfTelefonInfo, new RecordItemIndex(63));
             Validate.AttributeEqual(repo.DlgElsterUN.GroupBox2.DfTelefonInfo, "Text", "");
+            
+            // D ergänzende Angaben löschen (wenn vorausgefüllt)
+            Report.Log(ReportLevel.Info, "Section", "D ergänzende Angaben löschen (wenn vorausgefüllt)", new RecordItemIndex(64));
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgElsterUN.DfBefoerderungslfg'.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(65));
+            repo.DlgElsterUN.DfBefoerderungslfg.Element.SetAttributeValue("Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.DfBefoerderungslfg'.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(66));
+            Validate.AttributeEqual(repo.DlgElsterUN.DfBefoerderungslfgInfo, "Text", "");
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgElsterUN.DfBefoerderungslfg' at Center.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(67));
+            //repo.DlgElsterUN.DfBefoerderungslfg.DoubleClick();
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgElsterUN.DfBefoerderungslfg'.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(68));
+            //Keyboard.PrepareFocus(repo.DlgElsterUN.DfBefoerderungslfg);
+            //Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgElsterUN.DfBefoerderungslfg'.", repo.DlgElsterUN.DfBefoerderungslfgInfo, new RecordItemIndex(69));
+            //Validate.AttributeEqual(repo.DlgElsterUN.DfBefoerderungslfgInfo, "Text", "");
             
         }
 

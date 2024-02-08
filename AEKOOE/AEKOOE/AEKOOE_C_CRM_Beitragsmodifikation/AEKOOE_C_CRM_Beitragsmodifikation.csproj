@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -93,32 +94,32 @@
     <Compile Include="AssemblyInfo.cs">
       <id>56aa7315-f85e-4919-9955-98927a61cc71</id>
     </Compile>
-    <Compile Include="DEB_NR_auswaehlen.cs">
-      <BoundTo>58a86914-5ce1-428e-a8f9-14f43269ea2c</BoundTo>
-      <DependentUpon>DEB_NR_auswaehlen.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0aa59384-b9c8-4d57-8e7a-337961aff158</id>
-    </Compile>
-    <Compile Include="DEB_NR_auswaehlen.UserCode.cs">
-      <BoundTo>58a86914-5ce1-428e-a8f9-14f43269ea2c</BoundTo>
-      <DependentUpon>DEB_NR_auswaehlen.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>2b40765a-aaef-4648-a8e9-ab9e2f81ced4</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>b3110652-9fc5-4800-b45f-08eb54443525</id>
     </Compile>
-    <Compile Include="Recordings\aktive_Beitragsmodifikationen_aufrufen.cs">
+    <Compile Include="Recordings\Beitragsmodifikationen_ohne_geloeschte_aufrufen.cs">
       <BoundTo>8d6020c9-bab3-4fed-a1a7-057b43345351</BoundTo>
-      <DependentUpon>aktive_Beitragsmodifikationen_aufrufen.rxrec</DependentUpon>
+      <DependentUpon>Beitragsmodifikationen_ohne_geloeschte_aufrufen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>3882eade-3839-4008-8960-b14717ea4123</id>
     </Compile>
-    <Compile Include="Recordings\aktive_Beitragsmodifikationen_aufrufen.UserCode.cs">
+    <Compile Include="Recordings\Beitragsmodifikationen_ohne_geloeschte_aufrufen.UserCode.cs">
       <BoundTo>8d6020c9-bab3-4fed-a1a7-057b43345351</BoundTo>
-      <DependentUpon>aktive_Beitragsmodifikationen_aufrufen.rxrec</DependentUpon>
+      <DependentUpon>Beitragsmodifikationen_ohne_geloeschte_aufrufen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6d1665df-1d1a-40bb-b341-ab49f6031b29</id>
+    </Compile>
+    <Compile Include="Recordings\Beitragsmodifikation_pruefen_keine_Zeile_vorhanden.cs">
+      <BoundTo>2bc98dd5-2e12-433d-b7ba-08b0aeb590ec</BoundTo>
+      <DependentUpon>Beitragsmodifikation_pruefen_keine_Zeile_vorhanden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48cd2538-3400-4d34-9223-8049577787e7</id>
+    </Compile>
+    <Compile Include="Recordings\Beitragsmodifikation_pruefen_keine_Zeile_vorhanden.UserCode.cs">
+      <BoundTo>2bc98dd5-2e12-433d-b7ba-08b0aeb590ec</BoundTo>
+      <DependentUpon>Beitragsmodifikation_pruefen_keine_Zeile_vorhanden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3767bbde-2140-4b7d-ac21-c6b278aabe1e</id>
     </Compile>
     <Compile Include="Recordings\Beitrag_Beitragsmodifikation_aufrufen.cs">
       <DependentUpon>Beitrag_Beitragsmodifikation_aufrufen.rxrec</DependentUpon>
@@ -156,17 +157,65 @@
       <id>86375078-74ff-4532-83ee-733ea5579cae</id>
       <BoundTo>50e60e62-bb50-40aa-9b83-a0b7897cf6e4</BoundTo>
     </Compile>
-    <Compile Include="Recordings\pruefen_keine_aktiven_Beitragsmodifikationen.cs">
-      <BoundTo>b4b0e532-9d4e-4c55-9433-dcaeccee20b2</BoundTo>
-      <DependentUpon>pruefen_keine_aktiven_Beitragsmodifikationen.rxrec</DependentUpon>
+    <Compile Include="Recordings\DEB_NR_auswaehlen.cs">
+      <DependentUpon>DEB_NR_auswaehlen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>f235434e-309e-4a34-841a-1c2b61a59a3a</id>
+      <id>0aa59384-b9c8-4d57-8e7a-337961aff158</id>
+      <BoundTo>58a86914-5ce1-428e-a8f9-14f43269ea2c</BoundTo>
     </Compile>
-    <Compile Include="Recordings\pruefen_keine_aktiven_Beitragsmodifikationen.UserCode.cs">
-      <BoundTo>b4b0e532-9d4e-4c55-9433-dcaeccee20b2</BoundTo>
-      <DependentUpon>pruefen_keine_aktiven_Beitragsmodifikationen.rxrec</DependentUpon>
+    <Compile Include="Recordings\DEB_NR_auswaehlen.UserCode.cs">
+      <DependentUpon>DEB_NR_auswaehlen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>751a4ae7-0d00-44d1-8c2b-b3280b7859c1</id>
+      <id>2b40765a-aaef-4648-a8e9-ab9e2f81ced4</id>
+      <BoundTo>58a86914-5ce1-428e-a8f9-14f43269ea2c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_anlegen.cs">
+      <BoundTo>89dabbfe-da63-4dd9-a88a-b0098412b53e</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_anlegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cf12f5a-51fa-4acc-977a-60823ba42afa</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_anlegen.UserCode.cs">
+      <BoundTo>89dabbfe-da63-4dd9-a88a-b0098412b53e</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_anlegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5656a900-b5f5-4157-b889-2d906c008811</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_anlegen_Eingaben_pruefen.cs">
+      <BoundTo>38d9815d-e1ea-4ead-85fd-7f816678ec7c</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_anlegen_Eingaben_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2f360502-be2f-4c00-9bbb-b22a4365cff7</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_anlegen_Eingaben_pruefen.UserCode.cs">
+      <BoundTo>38d9815d-e1ea-4ead-85fd-7f816678ec7c</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_anlegen_Eingaben_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>158d3ea3-d596-4b62-b6bd-14d8fa7bc0ee</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_anlegen_speichern_Meldung.cs">
+      <BoundTo>729cb1cb-84ba-4b73-b1e7-dfb269c84f6d</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_anlegen_speichern_Meldung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2304cef4-61f4-42e1-a873-df055c24876c</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_anlegen_speichern_Meldung.UserCode.cs">
+      <BoundTo>729cb1cb-84ba-4b73-b1e7-dfb269c84f6d</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_anlegen_speichern_Meldung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd02b5d8-508f-48df-97cb-7793ddce0f9d</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_pruefen.cs">
+      <BoundTo>a35c8d10-0feb-43f3-b88c-ac46f0cbb7aa</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c774b5b7-37d9-416a-ae12-624790910583</id>
+    </Compile>
+    <Compile Include="Recordings\neue_Beitragsmodifikation_pruefen.UserCode.cs">
+      <BoundTo>a35c8d10-0feb-43f3-b88c-ac46f0cbb7aa</BoundTo>
+      <DependentUpon>neue_Beitragsmodifikation_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af072399-aeaa-4356-b97e-2c42bb222541</id>
     </Compile>
     <Compile Include="Recordings\pruefen_Vorschreibungen_ohne_Beitragsmodifikation.cs">
       <BoundTo>dae679e9-2858-4dfb-a10e-9a6406634e15</BoundTo>
@@ -180,15 +229,27 @@
       <UserCode>true</UserCode>
       <id>4097c618-5490-4f25-9ddd-4777bcac3e78</id>
     </Compile>
-    <Compile Include="Recordings\Vorschreibungen_DEB_NR_aufrufen.cs">
+    <Compile Include="Recordings\Tagesdatum_ermitteln.cs">
+      <BoundTo>0a2c037d-2a48-4f36-ab15-b6be7ec45120</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bfec6f79-5abb-4fec-a440-cee02765d6b2</id>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>0a2c037d-2a48-4f36-ab15-b6be7ec45120</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>88b9b921-58e7-45d2-957f-308d1e50ae66</id>
+    </Compile>
+    <Compile Include="Recordings\Vorschreibungen_mit_Deb_Nr_aufrufen.cs">
       <BoundTo>a435733a-d070-4b3a-9cbf-168c3f605a05</BoundTo>
-      <DependentUpon>Vorschreibungen_DEB_NR_aufrufen.rxrec</DependentUpon>
+      <DependentUpon>Vorschreibungen_mit_Deb_Nr_aufrufen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f45ee6a3-6171-4422-92c3-88055aa9445b</id>
     </Compile>
-    <Compile Include="Recordings\Vorschreibungen_DEB_NR_aufrufen.UserCode.cs">
+    <Compile Include="Recordings\Vorschreibungen_mit_Deb_Nr_aufrufen.UserCode.cs">
       <BoundTo>a435733a-d070-4b3a-9cbf-168c3f605a05</BoundTo>
-      <DependentUpon>Vorschreibungen_DEB_NR_aufrufen.rxrec</DependentUpon>
+      <DependentUpon>Vorschreibungen_mit_Deb_Nr_aufrufen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ad7e3727-cd59-4483-ac31-e2cd65729b0d</id>
     </Compile>
@@ -243,15 +304,15 @@
     <None Include="app.config">
       <id>9f602508-322e-4676-8ceb-857c5df6091c</id>
     </None>
-    <None Include="DEB_NR_auswaehlen.rxrec">
-      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
-      <id>58a86914-5ce1-428e-a8f9-14f43269ea2c</id>
-      <recordtableid>e9e43580-5603-444b-ab74-75e9816a4350</recordtableid>
-    </None>
-    <None Include="Recordings\aktive_Beitragsmodifikationen_aufrufen.rxrec">
+    <None Include="Recordings\Beitragsmodifikationen_ohne_geloeschte_aufrufen.rxrec">
       <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
       <id>8d6020c9-bab3-4fed-a1a7-057b43345351</id>
       <recordtableid>419dd2e0-dd75-4c0b-a705-9f2dc64db2a7</recordtableid>
+    </None>
+    <None Include="Recordings\Beitragsmodifikation_pruefen_keine_Zeile_vorhanden.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>2bc98dd5-2e12-433d-b7ba-08b0aeb590ec</id>
+      <recordtableid>7d37fd1c-a62e-453c-9e20-d6a1d4d23bf5</recordtableid>
     </None>
     <None Include="Recordings\Beitrag_Beitragsmodifikation_aufrufen.rxrec">
       <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
@@ -268,17 +329,42 @@
       <recordtableid>650049b8-291f-45b1-b8d1-eb5f926bc175</recordtableid>
       <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
     </None>
-    <None Include="Recordings\pruefen_keine_aktiven_Beitragsmodifikationen.rxrec">
+    <None Include="Recordings\DEB_NR_auswaehlen.rxrec">
       <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
-      <id>b4b0e532-9d4e-4c55-9433-dcaeccee20b2</id>
-      <recordtableid>49afb2ce-feb8-4f74-8948-65865326dad1</recordtableid>
+      <id>58a86914-5ce1-428e-a8f9-14f43269ea2c</id>
+      <recordtableid>e9e43580-5603-444b-ab74-75e9816a4350</recordtableid>
+    </None>
+    <None Include="Recordings\neue_Beitragsmodifikation_anlegen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>89dabbfe-da63-4dd9-a88a-b0098412b53e</id>
+      <recordtableid>6a949b8a-a837-4875-b1ec-453b4c19b1b2</recordtableid>
+    </None>
+    <None Include="Recordings\neue_Beitragsmodifikation_anlegen_Eingaben_pruefen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>38d9815d-e1ea-4ead-85fd-7f816678ec7c</id>
+      <recordtableid>f9d4b616-d381-43fe-82c0-c8c5e461a5ec</recordtableid>
+    </None>
+    <None Include="Recordings\neue_Beitragsmodifikation_anlegen_speichern_Meldung.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>729cb1cb-84ba-4b73-b1e7-dfb269c84f6d</id>
+      <recordtableid>133f305d-8b90-4739-b81f-f24640fd07ad</recordtableid>
+    </None>
+    <None Include="Recordings\neue_Beitragsmodifikation_pruefen.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>a35c8d10-0feb-43f3-b88c-ac46f0cbb7aa</id>
+      <recordtableid>45484372-3d74-4a84-b00b-4061ad2145c1</recordtableid>
     </None>
     <None Include="Recordings\pruefen_Vorschreibungen_ohne_Beitragsmodifikation.rxrec">
       <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
       <id>dae679e9-2858-4dfb-a10e-9a6406634e15</id>
       <recordtableid>f191841c-d888-412a-a8ef-315f7b4cddb5</recordtableid>
     </None>
-    <None Include="Recordings\Vorschreibungen_DEB_NR_aufrufen.rxrec">
+    <None Include="Recordings\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
+      <id>0a2c037d-2a48-4f36-ab15-b6be7ec45120</id>
+      <recordtableid>90954d30-4b5b-4602-b6dd-db3e636cce92</recordtableid>
+    </None>
+    <None Include="Recordings\Vorschreibungen_mit_Deb_Nr_aufrufen.rxrec">
       <BoundTo>9d7ada3b-763f-48c9-8fcd-e81c4355b6dc</BoundTo>
       <id>a435733a-d070-4b3a-9cbf-168c3f605a05</id>
       <recordtableid>37997705-713d-4158-a4ca-a29be22cb228</recordtableid>
@@ -308,6 +394,12 @@
     <Folder Include="Recordings">
       <id>77ebe47f-de3a-464a-aa65-1a0d18bbd566</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{6D205850-19C5-4988-B756-4D3147D22026}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

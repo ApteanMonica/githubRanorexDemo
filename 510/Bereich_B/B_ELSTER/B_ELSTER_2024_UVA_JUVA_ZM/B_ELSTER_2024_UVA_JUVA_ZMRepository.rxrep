@@ -3947,7 +3947,7 @@ AAAASUVORK5CYII=
 			refimgid="4f1638e0-dec5-4af0-bb32-7b04677fca42"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form/titlebar[@accessiblerole='TitleBar']
+				/form[@title~'TEST.PDF']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -3957,7 +3957,7 @@ AAAASUVORK5CYII=
 			refimgid="9106238f-162f-4657-90af-89dfe386f72f"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+				/form[@title~'TEST.PDF']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
 			</item>
 			<item
 			addcaps="menuitem,accessible"
@@ -3967,7 +3967,7 @@ AAAASUVORK5CYII=
 			refimgid="7fdfeed9-c257-4155-b0f6-4152c682117d"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form/?/?/menuitem[@accessiblename='Anzeige']
+				/form[@title~'TEST.PDF']/?/?/menuitem[@accessiblename='Anzeige']
 			</item>
 			<item
 			addcaps="button"
@@ -3977,7 +3977,7 @@ AAAASUVORK5CYII=
 			refimgid="868c1af4-4184-412a-a846-6ff03f730ff0"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form/?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']
+				/form[@title~'TEST.PDF']/?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']
 			</item>
 			<item
 			addcaps="unknown,nativewindow"
@@ -3987,7 +3987,7 @@ AAAASUVORK5CYII=
 			refimgid="1a53da8e-8eec-488c-9bc7-704e341a2774"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form/element[@instance='0']/element[@instance='0']
+				/form[@title~'TEST.PDF']/element[@instance='0']/element[@instance='0']
 			</item>
 			<item
 			addcaps="unknown,nativewindow"
@@ -6063,7 +6063,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEvHkyf8PhyI32L1G
 wtMAAAAASUVORK5CYII=
 				</image>
-				/form/element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']
+				/form[@title~'TEST.PDF']/element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']
 			</item>
 			<item
 			addcaps="unknown,nativewindow"
@@ -6073,10 +6073,10 @@ wtMAAAAASUVORK5CYII=
 			refimgid="9156e042-6450-48b6-a013-dc3c5b2c903f"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form/element[@instance='1']/element[@instance='0']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']
+				/form[@title~'TEST.PDF']/element[@instance='1']/element[@instance='0']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']
 			</item>
 			<basepath>
-				/form
+				/form[@title~'TEST.PDF']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
@@ -6176,6 +6176,65 @@ DsQBlSsOGwAAAKtJREFUOE9j+P//P0UYzrAJyP6/ZsVMojFWAxjAXMIApwEgADJkx8Hz/8va5/7P
 qJr4PzK75b9XbNl/mDwI4DUABAi5hKABIAAyZNnGff8jc5r/e8aWk+YCGMDlEqJdAMNTF64nzgUw
 DSAAos+dOwfG6ACnATANyIY0dE4iLgy6OqpBgmCA7gp0gNUAqCAYbD8IcQVJLkA2AARg3iHJBaRg
 DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="21574776-a8ec-41c5-9806-e482c67e4328"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="d37248a5-3aeb-4c75-9235-e31c6a547fbf"
+			name="UmsatzsteuerVoranmeldung"
+			refimgid="de75ed31-03e3-4e34-b325-44f27c7d5c3d"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="c828822b-1c55-4140-8c94-270563733049"
+			name="LabelMeldungstext"
+			refimgid="7413c332-feeb-43b6-8eda-5377bfee8276"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1af28bb6-9e64-42df-b883-75f9e7875cd4"
+			name="Button0"
+			refimgid="eb95286b-d7c1-47f3-b4dc-e1e551a89746"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

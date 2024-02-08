@@ -82,11 +82,11 @@ namespace AEKOOE_C_CRM_Beitragsmodifikation.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.ButtonPb3_Beitrag' at Center.", repo.MdiCRM.ButtonPb3_BeitragInfo, new RecordItemIndex(0));
             repo.MdiCRM.ButtonPb3_Beitrag.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.Menue_links.Button2Beitragsmodifikation'", repo.MdiCRM.Menue_links.Button2BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.MdiCRM.Menue_links.Button2BeitragsmodifikationInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.Menue_links.Button_Beitragsmodifikation'", repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Menue_links.Button2Beitragsmodifikation' at Center.", repo.MdiCRM.Menue_links.Button2BeitragsmodifikationInfo, new RecordItemIndex(2));
-            repo.MdiCRM.Menue_links.Button2Beitragsmodifikation.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiCRM.Menue_links.Button_Beitragsmodifikation' at Center.", repo.MdiCRM.Menue_links.Button_BeitragsmodifikationInfo, new RecordItemIndex(2));
+            repo.MdiCRM.Menue_links.Button_Beitragsmodifikation.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiCRM.TitleLabel_Beitragsmodifikation'", repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.MdiCRM.TitleLabel_BeitragsmodifikationInfo.WaitForExists(60000);
