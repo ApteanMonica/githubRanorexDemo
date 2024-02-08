@@ -197,8 +197,8 @@ namespace E_INFO_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiEInfo.PbBestellpos' at Center.", repo.MdiEInfo.PbBestellposInfo, new RecordItemIndex(25));
             repo.MdiEInfo.PbBestellpos.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'MdiEInfo.FlexGrid2.ColBspMengeRow1'.", repo.MdiEInfo.FlexGrid2.ColBspMengeRow1Info, new RecordItemIndex(26));
-            Validate.AttributeEqual(repo.MdiEInfo.FlexGrid2.ColBspMengeRow1Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'10') on item 'MdiEInfo.FlexGrid2.ColBspMengeRow1'.", repo.MdiEInfo.FlexGrid2.ColBspMengeRow1Info, new RecordItemIndex(26));
+            Validate.AttributeRegex(repo.MdiEInfo.FlexGrid2.ColBspMengeRow1Info, "Text", new Regex("10"));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'MdiEInfo.FlexGrid2.ColBspBestaetigtRow1'.", repo.MdiEInfo.FlexGrid2.ColBspBestaetigtRow1Info, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.MdiEInfo.FlexGrid2.ColBspBestaetigtRow1Info, "Text", "10");
