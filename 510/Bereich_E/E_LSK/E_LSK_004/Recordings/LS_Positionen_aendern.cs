@@ -187,8 +187,8 @@ namespace E_LSK_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='56,50') on item 'MdiLSR.FrmKopf.DfWertBetrag'.", repo.MdiLSR.FrmKopf.DfWertBetragInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.MdiLSR.FrmKopf.DfWertBetragInfo, "Text", "56,50");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiLSR.frmKopf_Rech.Row3Column0' at Center.", repo.MdiLSR.frmKopf_Rech.Row3Column0Info, new RecordItemIndex(14));
-            repo.MdiLSR.frmKopf_Rech.Row3Column0.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiLSR.FrmKopf.Row3Column0' at Center.", repo.MdiLSR.FrmKopf.Row3Column0Info, new RecordItemIndex(14));
+            repo.MdiLSR.FrmKopf.Row3Column0.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.FrmKopf.Menge' at CenterRight.", repo.MdiLSR.FrmKopf.MengeInfo, new RecordItemIndex(15));
             repo.MdiLSR.FrmKopf.Menge.Click(Location.CenterRight);

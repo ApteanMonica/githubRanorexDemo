@@ -288,7 +288,6 @@ namespace E_LSK_004
             RepoItemInfo _lieferantInfo;
             RepoItemInfo _dfrechstatusInfo;
             RepoItemInfo _lieferscheineInfo;
-            RepoItemInfo _collskstatusrow1Info;
             RepoItemInfo _dfdifferenzInfo;
             RepoItemInfo _rechnung1Info;
             RepoItemInfo _colartnrrow2Info;
@@ -302,6 +301,10 @@ namespace E_LSK_004
             RepoItemInfo _intbelegnrInfo;
             RepoItemInfo _rabatt1Info;
             RepoItemInfo _collsksummerow1Info;
+            RepoItemInfo _collskstatusrow1Info;
+            RepoItemInfo _row2column0Info;
+            RepoItemInfo _row1column0Info;
+            RepoItemInfo _row3column0Info;
 
             /// <summary>
             /// Creates a new FrmKopf  folder.
@@ -313,7 +316,6 @@ namespace E_LSK_004
                 _lieferantInfo = new RepoItemInfo(this, "Lieferant", "?/?/text[@controlname='dfAdr_nr_lsk']/text[@accessiblename='Lieferant']", "", 30000, null, "b5c8f0b6-ba7a-419b-92ee-0bc9780cadc9");
                 _dfrechstatusInfo = new RepoItemInfo(this, "DfRechStatus", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfRech_status']", "", 30000, null, "d0784220-cae0-465a-b169-b4991ec68c5c");
                 _lieferscheineInfo = new RepoItemInfo(this, "Lieferscheine", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfLsk_summe']/text[@accessiblename='Lieferscheine']", "", 30000, null, "e5cadc27-4942-4bcb-bc20-d4cd88f99d28");
-                _collskstatusrow1Info = new RepoItemInfo(this, "ColLskStatusRow1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/container[@controlname='tblLsk']/element[@controlname='mainGrid']//cell[@accessiblename='colLsk_status Row 1']", "", 30000, null, "c68ecc4b-6b51-4aeb-b939-66654b033e1c");
                 _dfdifferenzInfo = new RepoItemInfo(this, "DfDifferenz", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/?/?/text[@controlname='dfDifferenz']", "", 30000, null, "38877122-7de5-4398-a172-cb132f4e23ea");
                 _rechnung1Info = new RepoItemInfo(this, "Rechnung1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']//text[@accessiblename='Rechnung']", "", 30000, null, "dae741ff-6767-42d6-9b69-afb2e29ec321");
                 _colartnrrow2Info = new RepoItemInfo(this, "ColArtNrRow2", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/container[@controlname='tblLsp']/element[@controlname='mainGrid']//cell[@accessiblename='colArt_nr Row 2']", "", 30000, null, "45f479e9-4d4e-4e47-8d7e-0a953891a01b");
@@ -327,6 +329,10 @@ namespace E_LSK_004
                 _intbelegnrInfo = new RepoItemInfo(this, "IntBelegnr", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']//text[@accessiblename='int. Belegnr.']", "", 30000, null, "53fafced-3f19-45f1-b8f7-71f75f3b21df");
                 _rabatt1Info = new RepoItemInfo(this, "Rabatt1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPagePos']/?/?/form[@controlname='frmPosition']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPos']/?/?/text[@controlname='dfLsp_rabatt1']", "", 30000, null, "92ce9c23-5791-45cc-bb92-902545520456");
                 _collsksummerow1Info = new RepoItemInfo(this, "ColLskSummeRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_summe Row 1']", "", 30000, null, "c18c517b-fd10-45a0-851b-a14d5d154336");
+                _collskstatusrow1Info = new RepoItemInfo(this, "ColLskStatusRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_status Row 1']", "", 30000, null, "4e6666f7-7f92-4dd2-a985-04f51ef5784c");
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "b22015f3-5321-4b7d-bacd-8a2c7837d817");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']/container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "20c43b2b-becf-4cab-bf61-efe31b2946e3");
+                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/tabpagelist[@controlname='tabLSR']/tabpage[@controlname='tabPagePos']/container[@controlname='SubForm_frmPosition']/form[@controlname='frmPosition']/container[@controlname='ClientArea']/container[@controlname='tblLsp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "5a3d39fc-e72e-4963-bf4d-6b8497ba5f15");
             }
 
             /// <summary>
@@ -446,30 +452,6 @@ namespace E_LSK_004
                 get
                 {
                     return _lieferscheineInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColLskStatusRow1 item.
-            /// </summary>
-            [RepositoryItem("c68ecc4b-6b51-4aeb-b939-66654b033e1c")]
-            public virtual Ranorex.Cell ColLskStatusRow1
-            {
-                get
-                {
-                    return _collskstatusrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColLskStatusRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("c68ecc4b-6b51-4aeb-b939-66654b033e1c")]
-            public virtual RepoItemInfo ColLskStatusRow1Info
-            {
-                get
-                {
-                    return _collskstatusrow1Info;
                 }
             }
 
@@ -784,6 +766,102 @@ namespace E_LSK_004
                     return _collsksummerow1Info;
                 }
             }
+
+            /// <summary>
+            /// The ColLskStatusRow1 item.
+            /// </summary>
+            [RepositoryItem("4e6666f7-7f92-4dd2-a985-04f51ef5784c")]
+            public virtual Ranorex.Cell ColLskStatusRow1
+            {
+                get
+                {
+                    return _collskstatusrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskStatusRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("4e6666f7-7f92-4dd2-a985-04f51ef5784c")]
+            public virtual RepoItemInfo ColLskStatusRow1Info
+            {
+                get
+                {
+                    return _collskstatusrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item.
+            /// </summary>
+            [RepositoryItem("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
+            public virtual Ranorex.Cell Row2Column0
+            {
+                get
+                {
+                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
+            public virtual RepoItemInfo Row2Column0Info
+            {
+                get
+                {
+                    return _row2column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("20c43b2b-becf-4cab-bf61-efe31b2946e3")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("20c43b2b-becf-4cab-bf61-efe31b2946e3")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row3Column0 item.
+            /// </summary>
+            [RepositoryItem("5a3d39fc-e72e-4963-bf4d-6b8497ba5f15")]
+            public virtual Ranorex.Cell Row3Column0
+            {
+                get
+                {
+                    return _row3column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row3Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("5a3d39fc-e72e-4963-bf4d-6b8497ba5f15")]
+            public virtual RepoItemInfo Row3Column0Info
+            {
+                get
+                {
+                    return _row3column0Info;
+                }
+            }
         }
 
         /// <summary>
@@ -910,9 +988,6 @@ namespace E_LSK_004
         [RepositoryFolder("66d47d4c-536e-4829-bf0d-a3f44b2bd146")]
         public partial class FrmKopf_RechFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _row2column0Info;
-            RepoItemInfo _row3column0Info;
-            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new frmKopf_Rech  folder.
@@ -920,9 +995,6 @@ namespace E_LSK_004
             public FrmKopf_RechFolder(RepoGenBaseFolder parentFolder) :
                     base("frmKopf_Rech", ".//form[@controlname='frmKopf']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmKopf']/form[@controlname='frmKopf']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpRech']", parentFolder, 30000, null, false, "66d47d4c-536e-4829-bf0d-a3f44b2bd146", "")
             {
-                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "b22015f3-5321-4b7d-bacd-8a2c7837d817");
-                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "94e46138-6021-47e6-b470-621e57113fa6");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='frame5']/container[@controlname='tblLsk']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "a7b933a1-2c68-4a1c-8536-71e8e719e942");
             }
 
             /// <summary>
@@ -946,78 +1018,6 @@ namespace E_LSK_004
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row2Column0 item.
-            /// </summary>
-            [RepositoryItem("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
-            public virtual Ranorex.Cell Row2Column0
-            {
-                get
-                {
-                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row2Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("b22015f3-5321-4b7d-bacd-8a2c7837d817")]
-            public virtual RepoItemInfo Row2Column0Info
-            {
-                get
-                {
-                    return _row2column0Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row3Column0 item.
-            /// </summary>
-            [RepositoryItem("94e46138-6021-47e6-b470-621e57113fa6")]
-            public virtual Ranorex.Cell Row3Column0
-            {
-                get
-                {
-                    return _row3column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row3Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("94e46138-6021-47e6-b470-621e57113fa6")]
-            public virtual RepoItemInfo Row3Column0Info
-            {
-                get
-                {
-                    return _row3column0Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("a7b933a1-2c68-4a1c-8536-71e8e719e942")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("a7b933a1-2c68-4a1c-8536-71e8e719e942")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
                 }
             }
         }
